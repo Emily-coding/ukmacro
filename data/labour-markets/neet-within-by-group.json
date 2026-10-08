@@ -1,0 +1,47 @@
+{
+ "slug": "neet-within-by-group",
+ "category": "labour-markets",
+ "title": "Contributions to the change in the NEET rate aged 16-24, 2019 to 2026 Q2",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "Percentage points",
+ "source": "ONS Young people not in education, employment or training (NEET) table 1, seasonally adjusted; ukmacro calculations",
+ "note": "Groups: men and women aged 16-17 and 18-24. Base = 2019 average. Midpoint weights, so the parts add up to the total change. The within-group part splits exactly into unemployed and economically inactive NEETs, except in quarters where ONS suppressed one part (grey). Within-group contributions only, by group.",
+ "series": [
+  {
+   "key": "unemployed",
+   "label": "Unemployed NEETs",
+   "slot": 1
+  },
+  {
+   "key": "inactive",
+   "label": "Economically inactive NEETs",
+   "slot": 2
+  }
+ ],
+ "data_through": "Women 18-24",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Men 16-17",
+   "unemployed": -0.084,
+   "inactive": 0.185
+  },
+  {
+   "date": "Men 18-24",
+   "unemployed": 0.531,
+   "inactive": 0.633
+  },
+  {
+   "date": "Women 16-17",
+   "unemployed": -0.02,
+   "inactive": 0.128
+  },
+  {
+   "date": "Women 18-24",
+   "unemployed": 0.328,
+   "inactive": 0.185
+  }
+ ],
+ "theme": "blue-amber"
+}

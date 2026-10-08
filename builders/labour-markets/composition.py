@@ -109,7 +109,7 @@ def decompose(cells: dict, ages: list[str]) -> list[dict]:
     return out
 
 
-def workings(cells: dict, ages: list[str], quarter: str) -> list[dict]:
+def workings(cells: dict, ages: list[str], quarter: str, measure: str = "emp_rate") -> list[dict]:
     """Group-by-group calculation for one quarter vs the base year (for checking by hand)."""
     keys = [k for k in cells if k[1] in ages]
     base_qs = [q for q in cells[keys[0]]["pop"] if q.startswith(BASE_YEAR)]
@@ -129,7 +129,7 @@ def workings(cells: dict, ages: list[str], quarter: str) -> list[dict]:
         rows.append({
             "group": f"{k[0]} {k[1]}",
             "pop_share_2019_%": round(s0[k], 2), f"pop_share_{quarter}_%": round(st[k], 2),
-            "emp_rate_2019_%": round(e0[k], 1), f"emp_rate_{quarter}_%": round(et[k], 1),
+            f"{measure}_2019_%": round(e0[k], 1), f"{measure}_{quarter}_%": round(et[k], 1),
             "composition_pp": round((st[k] - s0[k]) / 100 * ((e0[k] + et[k]) / 2 - rate0), 3),
             "within_pp": round((et[k] - e0[k]) * (s0[k] + st[k]) / 2 / 100, 3),
         })
@@ -155,13 +155,20 @@ def build() -> list[Path]:
                      [{"key": "actual", "label": "Actual"},
                       {"key": "fixed_mix", "label": "Holding the age/sex mix at 2019"}],
                      [{k: r[k] for k in ("date", "actual", "fixed_mix")} for r in rows], note)
+        # for 16+, split the within-group part: 16-64 and 65+ often move in opposite
+        # directions, and a near-zero total would otherwise hide that
+        older = lambda r: round(sum(v for g, v in r["_within_by_group"].items() if g.endswith("65+")), 2)  # noqa: E731
+        within_series = ([{"key": "within_16_64", "label": "Within-group: aged 16-64"},
+                          {"key": "within_65plus", "label": "Within-group: aged 65+"}] if "65+" in ages
+                         else [{"key": "within", "label": "Within-group employment rates"}])
         decomp = chart(f"emp-decomposition-{slug}",
                        f"Change in the employment rate {label} since {BASE_YEAR}: composition vs within-group",
                        "Percentage points", "stacked-bar",
-                       [{"key": "composition", "label": "Composition (age/sex mix)"},
-                        {"key": "within", "label": "Within-group employment rates"},
-                        {"key": "change", "label": "Total change", "mark": "line"}],
-                       [{k: r[k] for k in ("date", "composition", "within", "change")}
+                       [{"key": "composition", "label": "Composition (age/sex mix)"}] + within_series
+                       + [{"key": "change", "label": "Total change", "mark": "line"}],
+                       [{"date": r["date"], "composition": r["composition"], "within": r["within"],
+                         "within_16_64": round(r["within"] - older(r), 2), "within_65plus": older(r),
+                         "change": r["change"]}
                         for r in rows if r["date"] >= f"{BASE_YEAR}-Q1"], note)
         groups = [{"group": g, "within": last["_within_by_group"][g],
                    "composition": last["_composition_by_group"][g]} for g in last["_within_by_group"]]

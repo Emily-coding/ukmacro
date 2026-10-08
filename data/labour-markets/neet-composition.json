@@ -1,0 +1,255 @@
+{
+ "slug": "neet-composition",
+ "category": "labour-markets",
+ "title": "NEET rate aged 16-24: actual vs 2019 age/sex mix",
+ "type": "line",
+ "freq": "Q",
+ "units": "% of 16-24s",
+ "source": "ONS Young people not in education, employment or training (NEET) table 1, seasonally adjusted; ukmacro calculations",
+ "note": "Groups: men and women aged 16-17 and 18-24. Base = 2019 average. Midpoint weights, so the parts add up to the total change. The within-group part splits exactly into unemployed and economically inactive NEETs, except in quarters where ONS suppressed one part (grey).",
+ "series": [
+  {
+   "key": "actual",
+   "label": "Actual"
+  },
+  {
+   "key": "fixed_mix",
+   "label": "Holding the age/sex mix at 2019"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-Q1",
+   "actual": 12.85,
+   "fixed_mix": 12.89
+  },
+  {
+   "date": "2015-Q2",
+   "actual": 12.66,
+   "fixed_mix": 12.68
+  },
+  {
+   "date": "2015-Q3",
+   "actual": 11.8,
+   "fixed_mix": 11.83
+  },
+  {
+   "date": "2015-Q4",
+   "actual": 11.87,
+   "fixed_mix": 11.89
+  },
+  {
+   "date": "2016-Q1",
+   "actual": 12.0,
+   "fixed_mix": 12.02
+  },
+  {
+   "date": "2016-Q2",
+   "actual": 11.73,
+   "fixed_mix": 11.74
+  },
+  {
+   "date": "2016-Q3",
+   "actual": 11.99,
+   "fixed_mix": 11.99
+  },
+  {
+   "date": "2016-Q4",
+   "actual": 11.51,
+   "fixed_mix": 11.5
+  },
+  {
+   "date": "2017-Q1",
+   "actual": 11.17,
+   "fixed_mix": 11.15
+  },
+  {
+   "date": "2017-Q2",
+   "actual": 11.15,
+   "fixed_mix": 11.15
+  },
+  {
+   "date": "2017-Q3",
+   "actual": 11.25,
+   "fixed_mix": 11.22
+  },
+  {
+   "date": "2017-Q4",
+   "actual": 11.26,
+   "fixed_mix": 11.23
+  },
+  {
+   "date": "2018-Q1",
+   "actual": 11.36,
+   "fixed_mix": 11.34
+  },
+  {
+   "date": "2018-Q2",
+   "actual": 11.12,
+   "fixed_mix": 11.09
+  },
+  {
+   "date": "2018-Q3",
+   "actual": 10.86,
+   "fixed_mix": 10.84
+  },
+  {
+   "date": "2018-Q4",
+   "actual": 11.33,
+   "fixed_mix": 11.32
+  },
+  {
+   "date": "2019-Q1",
+   "actual": 11.15,
+   "fixed_mix": 11.13
+  },
+  {
+   "date": "2019-Q2",
+   "actual": 11.54,
+   "fixed_mix": 11.53
+  },
+  {
+   "date": "2019-Q3",
+   "actual": 11.53,
+   "fixed_mix": 11.54
+  },
+  {
+   "date": "2019-Q4",
+   "actual": 10.75,
+   "fixed_mix": 10.77
+  },
+  {
+   "date": "2020-Q1",
+   "actual": 11.45,
+   "fixed_mix": 11.48
+  },
+  {
+   "date": "2020-Q2",
+   "actual": 11.62,
+   "fixed_mix": 11.68
+  },
+  {
+   "date": "2020-Q3",
+   "actual": 11.18,
+   "fixed_mix": 11.25
+  },
+  {
+   "date": "2020-Q4",
+   "actual": 11.77,
+   "fixed_mix": 11.85
+  },
+  {
+   "date": "2021-Q1",
+   "actual": 10.71,
+   "fixed_mix": 10.79
+  },
+  {
+   "date": "2021-Q2",
+   "actual": 9.69,
+   "fixed_mix": 9.77
+  },
+  {
+   "date": "2021-Q3",
+   "actual": 10.16,
+   "fixed_mix": 10.26
+  },
+  {
+   "date": "2021-Q4",
+   "actual": 10.35,
+   "fixed_mix": 10.43
+  },
+  {
+   "date": "2022-Q1",
+   "actual": 10.59,
+   "fixed_mix": 10.67
+  },
+  {
+   "date": "2022-Q2",
+   "actual": 10.54,
+   "fixed_mix": 10.64
+  },
+  {
+   "date": "2022-Q3",
+   "actual": 10.39,
+   "fixed_mix": 10.49
+  },
+  {
+   "date": "2022-Q4",
+   "actual": 11.86,
+   "fixed_mix": 11.96
+  },
+  {
+   "date": "2023-Q1",
+   "actual": 11.58,
+   "fixed_mix": 11.69
+  },
+  {
+   "date": "2023-Q2",
+   "actual": 11.71,
+   "fixed_mix": 11.81
+  },
+  {
+   "date": "2023-Q3",
+   "actual": 11.87,
+   "fixed_mix": 11.99
+  },
+  {
+   "date": "2023-Q4",
+   "actual": 12.11,
+   "fixed_mix": 12.22
+  },
+  {
+   "date": "2024-Q1",
+   "actual": 12.87,
+   "fixed_mix": 12.99
+  },
+  {
+   "date": "2024-Q2",
+   "actual": 12.6,
+   "fixed_mix": 12.73
+  },
+  {
+   "date": "2024-Q3",
+   "actual": 12.95,
+   "fixed_mix": 13.08
+  },
+  {
+   "date": "2024-Q4",
+   "actual": 13.31,
+   "fixed_mix": 13.45
+  },
+  {
+   "date": "2025-Q1",
+   "actual": 12.33,
+   "fixed_mix": 12.48
+  },
+  {
+   "date": "2025-Q2",
+   "actual": 12.8,
+   "fixed_mix": 12.96
+  },
+  {
+   "date": "2025-Q3",
+   "actual": 12.64,
+   "fixed_mix": 12.79
+  },
+  {
+   "date": "2025-Q4",
+   "actual": 12.81,
+   "fixed_mix": 12.96
+  },
+  {
+   "date": "2026-Q1",
+   "actual": 13.46,
+   "fixed_mix": 13.59
+  },
+  {
+   "date": "2026-Q2",
+   "actual": 13.01,
+   "fixed_mix": 13.13
+  }
+ ],
+ "theme": "blue-amber"
+}

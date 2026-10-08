@@ -137,6 +137,12 @@ only: RTI has no split by sex) over ONS mid-year population estimates, and compa
 LFS and RTI at the latest common quarter. Per-group workings for both are in
 `data/labour-markets/*-composition-workings-*.csv`.
 
+`neet.py` does the same for the NEET rate (16-24): four groups (men and women x
+16-17 and 18-24) from ONS NEET table 1, with the within-group part split into
+unemployed and economically inactive NEETs. In five quarters ONS suppressed one
+part for 16-17s; those quarters show the within-group part unsplit (grey) rather
+than deriving the suppressed figure.
+
 ## Rules
 
 **A failed fetch is a failed run.** If a source fails, the chart is still written

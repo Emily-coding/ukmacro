@@ -15,10 +15,11 @@ from ukmacro.builder import run  # noqa: E402
 
 import composition  # noqa: E402  (age/sex composition of the employment rate, + PNGs)
 import composition_rti  # noqa: E402  (the same with HMRC PAYE RTI, + LFS vs RTI comparison)
+import neet  # noqa: E402  (the same for the NEET rate, 16-24)
 
 if __name__ == "__main__":
     status = run(HERE / "config.yaml")
-    for step in (composition.build, composition_rti.build):
+    for step in (composition.build, composition_rti.build, neet.build):
         try:
             step()
         except Exception as e:  # noqa: BLE001 — keep the other charts; still fail the run

@@ -11,6 +11,9 @@ House style, used for every PNG:
     marks     2pt lines, hairline horizontal gridlines only, no chart border,
               legend above the plot, direct value labels at line ends
 
+A series can set "slot": n to pin its colour, so one category keeps the same colour
+across related charts, or "color": "neutral" for a grey (e.g. data not available).
+
 Chart types: line, bar (single series), stacked-bar (positive and negative parts stack
 away from zero; a series with "mark": "line" is drawn as a line on top), grouped-hbar.
 """
@@ -115,9 +118,16 @@ def _frame(chart: dict, left: float = 0.065):
 
 
 def _legend(fig, handles, labels):
-    if len(handles) >= 2:  # one series needs no legend: the title names it
-        fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.058, 0.86), ncol=len(handles),
-                   frameon=False, fontsize=11, labelcolor=TEXT_2, handlelength=1.6, columnspacing=1.8)
+    if len(handles) < 2:  # one series needs no legend: the title names it
+        return
+    ncol = len(handles)
+    if sum(len(lab) + 8 for lab in labels) > 130:  # too wide for one row: wrap to two, plot moves down
+        ncol = (len(handles) + 1) // 2
+        for ax in fig.axes:
+            x0, y0, w, h = ax.get_position().bounds
+            ax.set_position([x0, y0, w, h - 0.05])
+    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.058, 0.86), ncol=ncol,
+               frameon=False, fontsize=11, labelcolor=TEXT_2, handlelength=1.6, columnspacing=1.8)
 
 
 def _period_ticks(ax, dates: list[str]):
@@ -151,7 +161,7 @@ def _line(chart):
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) for d in chart["data"]]
         (h,) = ax.plot(x, [y if y is not None else float("nan") for y in ys],
-                       color=SERIES[i], linewidth=2, solid_capstyle="round")
+                       color=SERIES[s.get("slot", i)], linewidth=2, solid_capstyle="round")
         handles.append(h)
         last = max(j for j, y in enumerate(ys) if y is not None)
         ax.annotate(f"{ys[last]:.1f}".replace("-", "\u2212"), (last, ys[last]), xytext=(6, 0), textcoords="offset points",
@@ -171,19 +181,21 @@ def _bars(chart):
     width = 0.72 if len(x) > 20 else 0.6
     for s in chart["series"]:
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
-        if s.get("mark") == "line":
-            (h,) = ax.plot(x, ys, color=INK, linewidth=1.6, marker="o", markersize=4.5,
+        if s.get("mark") == "line":  # missing periods break the line rather than drop to zero
+            line_ys = [d.get(s["key"]) if d.get(s["key"]) is not None else float("nan") for d in chart["data"]]
+            (h,) = ax.plot(x, line_ys, color=INK, linewidth=1.6, marker="o", markersize=4.5,
                            markerfacecolor=INK, markeredgecolor=SURFACE, markeredgewidth=1.2, zorder=4)
         else:
             bottoms = [pos[j] if y >= 0 else neg[j] for j, y in enumerate(ys)]
-            h = ax.bar(x, ys, bottom=bottoms, width=width, color=SERIES[slot],
+            colour = BASELINE if s.get("color") == "neutral" else SERIES[s.get("slot", slot)]
+            h = ax.bar(x, ys, bottom=bottoms, width=width, color=colour,
                        edgecolor=SURFACE, linewidth=1.0, zorder=3)  # 2px surface gap between segments
             for j, y in enumerate(ys):
                 if y >= 0:
                     pos[j] += y
                 else:
                     neg[j] += y
-            slot += 1
+            slot += s.get("color") != "neutral"
         handles.append(h)
         labels.append(s["label"])
     ax.axhline(0, color=BASELINE, linewidth=0.9, zorder=2)
@@ -205,7 +217,7 @@ def _grouped_hbar(chart):
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
         pos = [c + (i - (n - 1) / 2) * h_bar for c in range(len(cats))]
-        handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=SERIES[i], zorder=3))
+        handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=SERIES[s.get("slot", i)], zorder=3))
         for p, y in zip(pos, ys):
             ax.annotate(f"{y:+.2f}".replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
                         ha="left" if y >= 0 else "right", va="center", fontsize=10, color=TEXT_2)
@@ -220,9 +232,28 @@ def _grouped_hbar(chart):
     return fig
 
 
+def _fill_periods(chart: dict) -> dict:
+    """Insert empty rows for missing quarters/months so the x-axis is a true timeline."""
+    dates = [d["date"] for d in chart["data"]]
+    if chart["type"] == "grouped-hbar" or not dates:
+        return chart
+    if all(len(d) == 7 and d[5] == "Q" for d in dates):
+        step = lambda d: f"{d[:4]}-Q{int(d[6]) % 4 + 1}" if d[6] != "4" else f"{int(d[:4]) + 1}-Q1"  # noqa: E731
+    elif all(len(d) == 7 and d[4] == "-" and d[5:].isdigit() for d in dates):
+        step = lambda d: f"{d[:4]}-{int(d[5:]) + 1:02d}" if d[5:] != "12" else f"{int(d[:4]) + 1}-01"  # noqa: E731
+    else:
+        return chart
+    have = {d["date"]: d for d in chart["data"]}
+    full, d = [], dates[0]
+    while d <= dates[-1]:
+        full.append(have.get(d, {"date": d}))
+        d = step(d)
+    return {**chart, "data": full}
+
+
 RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": _grouped_hbar}
 
 
 def render(chart: dict, path: Path, theme: str | None = None) -> Path:
     use_theme(theme or DEFAULT_THEME)
-    return _save(RENDERERS[chart["type"]](chart), path)
+    return _save(RENDERERS[chart["type"]](_fill_periods(chart)), path)

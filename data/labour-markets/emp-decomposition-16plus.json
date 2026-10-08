@@ -13,8 +13,12 @@
    "label": "Composition (age/sex mix)"
   },
   {
-   "key": "within",
-   "label": "Within-group employment rates"
+   "key": "within_16_64",
+   "label": "Within-group: aged 16-64"
+  },
+  {
+   "key": "within_65plus",
+   "label": "Within-group: aged 65+"
   },
   {
    "key": "change",
@@ -29,180 +33,240 @@
    "date": "2019-Q1",
    "composition": 0.07,
    "within": -0.21,
+   "within_16_64": -0.15,
+   "within_65plus": -0.06,
    "change": -0.14
   },
   {
    "date": "2019-Q2",
    "composition": 0.02,
    "within": 0.07,
+   "within_16_64": -0.02,
+   "within_65plus": 0.09,
    "change": 0.09
   },
   {
    "date": "2019-Q3",
    "composition": -0.02,
    "within": -0.08,
+   "within_16_64": -0.07,
+   "within_65plus": -0.01,
    "change": -0.09
   },
   {
    "date": "2019-Q4",
    "composition": -0.07,
    "within": 0.21,
+   "within_16_64": 0.23,
+   "within_65plus": -0.02,
    "change": 0.14
   },
   {
    "date": "2020-Q1",
    "composition": -0.09,
    "within": 0.06,
+   "within_16_64": -0.1,
+   "within_65plus": 0.16,
    "change": -0.03
   },
   {
    "date": "2020-Q2",
    "composition": -0.13,
    "within": -0.62,
+   "within_16_64": -0.5,
+   "within_65plus": -0.12,
    "change": -0.75
   },
   {
    "date": "2020-Q3",
    "composition": -0.18,
    "within": -1.14,
+   "within_16_64": -1.1,
+   "within_65plus": -0.04,
    "change": -1.31
   },
   {
    "date": "2020-Q4",
    "composition": -0.2,
    "within": -1.34,
+   "within_16_64": -1.3,
+   "within_65plus": -0.04,
    "change": -1.54
   },
   {
    "date": "2021-Q1",
    "composition": -0.23,
    "within": -1.3,
+   "within_16_64": -1.22,
+   "within_65plus": -0.08,
    "change": -1.53
   },
   {
    "date": "2021-Q2",
    "composition": -0.29,
    "within": -1.11,
+   "within_16_64": -0.98,
+   "within_65plus": -0.13,
    "change": -1.4
   },
   {
    "date": "2021-Q3",
    "composition": -0.3,
    "within": -0.69,
+   "within_16_64": -0.73,
+   "within_65plus": 0.04,
    "change": -0.99
   },
   {
    "date": "2021-Q4",
    "composition": -0.36,
    "within": -0.78,
+   "within_16_64": -0.7,
+   "within_65plus": -0.08,
    "change": -1.14
   },
   {
    "date": "2022-Q1",
    "composition": -0.38,
    "within": -0.77,
+   "within_16_64": -0.64,
+   "within_65plus": -0.13,
    "change": -1.15
   },
   {
    "date": "2022-Q2",
    "composition": -0.41,
    "within": -0.53,
+   "within_16_64": -0.7,
+   "within_65plus": 0.17,
    "change": -0.94
   },
   {
    "date": "2022-Q3",
    "composition": -0.41,
    "within": -0.78,
+   "within_16_64": -0.75,
+   "within_65plus": -0.03,
    "change": -1.19
   },
   {
    "date": "2022-Q4",
    "composition": -0.45,
    "within": -0.61,
+   "within_16_64": -0.62,
+   "within_65plus": 0.01,
    "change": -1.05
   },
   {
    "date": "2023-Q1",
    "composition": -0.45,
    "within": -0.38,
+   "within_16_64": -0.49,
+   "within_65plus": 0.11,
    "change": -0.83
   },
   {
    "date": "2023-Q2",
    "composition": -0.48,
    "within": -0.54,
+   "within_16_64": -0.59,
+   "within_65plus": 0.05,
    "change": -1.02
   },
   {
    "date": "2023-Q3",
    "composition": -0.51,
    "within": -0.64,
+   "within_16_64": -0.78,
+   "within_65plus": 0.14,
    "change": -1.15
   },
   {
    "date": "2023-Q4",
    "composition": -0.51,
    "within": -0.77,
+   "within_16_64": -0.84,
+   "within_65plus": 0.07,
    "change": -1.28
   },
   {
    "date": "2024-Q1",
    "composition": -0.53,
    "within": -0.98,
+   "within_16_64": -1.08,
+   "within_65plus": 0.1,
    "change": -1.5
   },
   {
    "date": "2024-Q2",
    "composition": -0.57,
    "within": -0.9,
+   "within_16_64": -1.06,
+   "within_65plus": 0.16,
    "change": -1.47
   },
   {
    "date": "2024-Q3",
    "composition": -0.62,
    "within": -0.48,
+   "within_16_64": -0.73,
+   "within_65plus": 0.25,
    "change": -1.1
   },
   {
    "date": "2024-Q4",
    "composition": -0.65,
    "within": -0.44,
+   "within_16_64": -0.72,
+   "within_65plus": 0.28,
    "change": -1.09
   },
   {
    "date": "2025-Q1",
    "composition": -0.67,
    "within": -0.35,
+   "within_16_64": -0.65,
+   "within_65plus": 0.3,
    "change": -1.01
   },
   {
    "date": "2025-Q2",
    "composition": -0.72,
    "within": -0.08,
+   "within_16_64": -0.46,
+   "within_65plus": 0.38,
    "change": -0.81
   },
   {
    "date": "2025-Q3",
    "composition": -0.75,
    "within": -0.25,
+   "within_16_64": -0.65,
+   "within_65plus": 0.4,
    "change": -0.99
   },
   {
    "date": "2025-Q4",
    "composition": -0.76,
    "within": -0.25,
+   "within_16_64": -0.74,
+   "within_65plus": 0.49,
    "change": -1.01
   },
   {
    "date": "2026-Q1",
    "composition": -0.78,
    "within": -0.11,
+   "within_16_64": -0.68,
+   "within_65plus": 0.57,
    "change": -0.9
   },
   {
    "date": "2026-Q2",
    "composition": -0.84,
    "within": -0.08,
+   "within_16_64": -0.61,
+   "within_65plus": 0.53,
    "change": -0.92
   }
  ],
