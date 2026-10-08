@@ -11,10 +11,10 @@
   work in the 16+ rate. LFS population weights moved with the migration revisions,
   and those weights *are* sᵢ, so flag the vintage.
 - ~~Employment composition~~ done (builders/labour-markets/composition.py).
-- ~~NEETs~~ done (builders/labour-markets/neet.py). Possible extension: the same decomposition on the ONS quarterly NEET release
-  (16-17, 18-24, by sex), then split by reason (unemployed / long-term sick /
-  caring).
-- HMRC RTI payrolled employees as a cross-check on the LFS.
+- ~~NEETs~~ done (builders/labour-markets/neet.py). Possible extension: split
+  inactive NEETs by reason (long-term sick / caring / other); needs the LFS
+  inactivity-reason tables for 16-24s.
+- ~~HMRC RTI as a cross-check~~ done (builders/labour-markets/composition_rti.py).
 
 ### GDP
 - OBR forecast vs outturn: parse the Historical official forecasts database
