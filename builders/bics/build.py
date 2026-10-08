@@ -61,6 +61,7 @@ def breakdown_sort_key(b: str):
 
 
 def slug(text: str) -> str:
+    """'Wholesale and retail trade; ...' -> 'wholesale-and-retail-trade-...' (chart column keys)."""
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
@@ -142,7 +143,9 @@ def compute(spec: dict, rows: list[tuple[int, str, str, float]]) -> dict[tuple[i
         req = (needed | excl) & in_wave[w]
         if not req & needed or any(a not in vals for a in req):
             continue
-        s = lambda labels: sum(vals[a] for a in labels if a in vals)  # noqa: E731
+        def s(labels):  # sum of these answers in this cell
+            return sum(vals[a] for a in labels if a in vals)
+
         if measure == "net":
             v = s(up) - s(down)
         elif measure == "complement":
@@ -201,6 +204,8 @@ def version_breaks(used: dict) -> list[dict]:
 
 
 def chart_json(spec: dict, meta: list[dict], values: dict, waves: dict, used: dict) -> dict:
+    """One series as a chart file: one column per breakdown, one row per wave, dated
+    by the end of the wave's reference period."""
     breakdowns = sorted({b for _, b in values}, key=breakdown_sort_key)
     by_wave: dict[int, dict] = {}
     for (w, b), v in values.items():
@@ -241,6 +246,8 @@ def wanted_waves(cfg: dict, store: bics.Store) -> tuple[set[int], list[str]]:
 
 
 def harvest(cfg: dict, store: bics.Store, local_dir: Path | None) -> list[str]:
+    """Download (or read from `local_dir`) every wave file not yet harvested that is
+    needed. Returns problems to report (questions that couldn't be located)."""
     index = bics.list_waves()
     # newest wave first: its question log says where every other question last appeared
     bics.fetch_waves(store, {max(index)}, index, local_dir)
@@ -257,6 +264,8 @@ def harvest(cfg: dict, store: bics.Store, local_dir: Path | None) -> list[str]:
 # ---------------------------------------------------------------- main
 
 def main(fetch: bool = True, local_dir: Path | None = None) -> int:
+    """Harvest, then build every series in series.yaml. Returns the exit code: 1 if
+    anything failed (the other series are still written)."""
     failures = []
     cfg = yaml.safe_load((HERE / "series.yaml").read_text())
     defaults = cfg.get("defaults", {})

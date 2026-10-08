@@ -41,8 +41,10 @@ def get(url: str, *, timeout: int = 60, retries: int = 3, backoff: float = 3.0) 
 
 
 def get_json(url: str, **kw):
+    """GET and parse JSON."""
     return json.loads(get(url, **kw))
 
 
 def get_text(url: str, encoding: str = "utf-8", **kw) -> str:
+    """GET and decode as text."""
     return get(url, **kw).decode(encoding)

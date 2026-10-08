@@ -62,6 +62,7 @@ def _expected_keys(spec: dict) -> list[tuple[str, str]]:
 
 
 def _transform(obs: list, chart: dict) -> list:
+    """Apply the chart's `start` (drop earlier dates) and `rebase` (index = 100 then)."""
     if chart.get("start"):
         obs = [o for o in obs if o[0] >= chart["start"]]
     if chart.get("rebase"):
@@ -73,6 +74,9 @@ def _transform(obs: list, chart: dict) -> list:
 
 
 def build_chart(chart: dict, category: str, lg: LastGood, failures: list[str]) -> dict:
+    """Fetch every series in one chart spec and assemble the chart file. A series that
+    fails is served from last-good (tagged `_source: last-good`) and the failure is
+    appended to `failures`."""
     series, columns = [], {}
     releases = []
     for spec in chart["series"]:
@@ -120,6 +124,8 @@ def build_chart(chart: dict, category: str, lg: LastGood, failures: list[str]) -
 
 
 def run(config_path: Path) -> int:
+    """Build every chart in a category's config.yaml. Returns the exit code (1 if any
+    fetch failed, after writing everything that could be written)."""
     cfg = yaml.safe_load(Path(config_path).read_text())
     category = cfg["category"]
     out_dir = REPO / "data" / category

@@ -30,6 +30,7 @@ FREQ_KEY = {"A": "years", "Q": "quarters", "M": "months"}
 
 
 def _load_cache() -> dict:
+    """{'CDID/DATASET': site path} from ons_uris.json."""
     return json.loads(URI_CACHE.read_text()) if URI_CACHE.exists() else {}
 
 
@@ -52,6 +53,7 @@ def resolve_uri(cdid: str, dataset: str) -> str:
 
 
 def _norm_date(raw: str, freq: str) -> str:
+    """ONS date labels -> 'YYYY', 'YYYY-Qn' or 'YYYY-MM'."""
     raw = raw.strip()
     if freq == "A":
         return raw

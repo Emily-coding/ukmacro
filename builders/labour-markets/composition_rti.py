@@ -17,9 +17,7 @@ decomposition as composition.py.
 
 from __future__ import annotations
 
-import csv
 import io
-import json
 import re
 import sys
 from pathlib import Path
@@ -32,17 +30,20 @@ sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(HERE))
 
 import composition as lfs  # noqa: E402
-from ukmacro import charts, nomis  # noqa: E402
+from ukmacro import nomis  # noqa: E402
 from ukmacro.http import get, get_text  # noqa: E402
 
 RTI_PAGE = ("https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/"
             "datasets/realtimeinformationstatisticsreferencetableseasonallyadjusted")
 RTI_SHEET = "28. Employees (Age)"
+# RTI age band -> our group label (RTI's "0 to 17" is set against the 16-17 population)
 RTI_BANDS = {"0 to 17": "16-17", "18 to 24": "18-24", "25 to 34": "25-34",
              "35 to 49": "35-49", "50 to 64": "50-64", "65 and over": "65+"}
 # Nomis NM_2002_1 (mid-year population estimates) age codes making up each band
 POP_CODES = {"16-17": [204], "18-24": [205], "25-34": [7, 8], "35-49": [9, 10, 11],
              "50-64": [208], "65+": [209]}
+MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august",
+          "september", "october", "november", "december"]
 SOURCE = ("HMRC PAYE Real Time Information (ONS, seasonally adjusted); ONS mid-year population "
           "estimates (Nomis); ONS Labour Force Survey; ukmacro calculations")
 
@@ -59,12 +60,10 @@ def fetch_rti() -> dict[str, dict[str, float]]:
     for r in rows[hi + 1:]:
         if not r or not r[0]:
             continue
-        m = re.match(r"([A-Za-z]+) (\d{4})", str(r[0]).strip())
-        if not m:
+        m = re.match(r"([A-Za-z]+) (\d{4})", str(r[0]).strip())  # e.g. "August 2026"
+        if not m or m.group(1).lower() not in MONTHS:
             continue
-        month = ["january", "february", "march", "april", "may", "june", "july", "august",
-                 "september", "october", "november", "december"].index(m.group(1).lower()) + 1
-        key = f"{m.group(2)}-{month:02d}"
+        key = f"{m.group(2)}-{MONTHS.index(m.group(1).lower()) + 1:02d}"
         for j, band in cols.items():
             if r[j] not in (None, ""):
                 out[band][key] = float(r[j])
@@ -85,15 +84,15 @@ def fetch_population() -> tuple[dict[str, dict[int, float]], int]:
 
 
 def monthly_population(pop: dict[int, float], months: list[str]) -> dict[str, float]:
-    """Linear between mid-years (taken as June); after the last estimate, extend at the
-    last year's growth rate."""
+    """Population for each month: linear between mid-year estimates (taken as June),
+    and after the latest estimate, extended at that last year's growth rate."""
     years = sorted(pop)
     out = {}
     for m in months:
         y, mo = int(m[:4]), int(m[5:])
-        t = y + (mo - 6) / 12  # years since the reference point
-        lo = max([yy for yy in years if yy <= t], default=years[0])
-        if lo == years[-1]:
+        t = y + (mo - 6) / 12  # time in years, with June of year y = y
+        lo = max([yy for yy in years if yy <= t], default=years[0])  # estimate at or before t
+        if lo == years[-1]:  # beyond the latest estimate: project
             g = pop[years[-1]] / pop[years[-2]]
             out[m] = pop[lo] * g ** (t - lo)
         else:
@@ -111,6 +110,8 @@ def to_quarters(series: dict[str, float]) -> dict[str, float]:
 
 
 def rti_cells() -> tuple[dict, int]:
+    """RTI cells in the same shape as composition.fetch_cells(), by age only, quarterly;
+    plus the latest mid-year population estimate year (later months are projected)."""
     rti = fetch_rti()
     pop, latest_year = fetch_population()
     cells = {}
@@ -132,9 +133,11 @@ def lfs_age_only(cells: dict) -> dict:
     return out
 
 
-def build() -> None:
+def build(lcells: dict | None = None) -> None:
+    """Build the RTI charts. `lcells` are the LFS cells, if composition.build() has
+    already fetched them."""
     rcells, latest_pop_year = rti_cells()
-    lcells = lfs.fetch_cells()
+    lcells = lcells or lfs.fetch_cells()
     lage = lfs_age_only(lcells)
     projected = f"Population after mid-{latest_pop_year} is projected at that year's growth rate."
     for ages, label, slug in [(lfs.AGES, "aged 16 and over", "16plus"), (lfs.AGES[:-1], "aged 16-64", "16-64")]:
@@ -142,7 +145,7 @@ def build() -> None:
         note = ("RTI counts payrolled employees only (no self-employed) and has no split by sex, so "
                 "groups are six age bands. Base = 2019 average; months averaged to quarters. "
                 + projected)
-        decomp = lfs.chart(
+        lfs.publish(lfs.chart(
             f"rti-decomposition-{slug}",
             f"Change in the payrolled employee rate {label} since 2019 (RTI): composition vs within-group",
             "Percentage points", "stacked-bar",
@@ -150,17 +153,16 @@ def build() -> None:
              {"key": "within", "label": "Within-group payroll rates"},
              {"key": "change", "label": "Total change", "mark": "line"}],
             [{k: r[k] for k in ("date", "composition", "within", "change")}
-             for r in rti_rows if r["date"] >= "2019-Q1"], note)
-        decomp["source"] = SOURCE
+             for r in rti_rows if r["date"] >= f"{lfs.BASE_YEAR}-Q1"], note, source=SOURCE))
 
-        # like-for-like comparison at the latest quarter both sources have
+        # like-for-like comparison at the latest quarter all three versions have
         lfs_rows = {r["date"]: r for r in lfs.decompose(lcells, ages)}
         lage_rows = {r["date"]: r for r in lfs.decompose(lage, ages)}
         rti_by_q = {r["date"]: r for r in rti_rows}
         q = max(set(lfs_rows) & set(lage_rows) & set(rti_by_q))
         versions = [("LFS, age x sex (12 groups)", lfs_rows[q]), ("LFS, age only (6 groups)", lage_rows[q]),
                     ("RTI, age only (6 groups)", rti_by_q[q])]
-        compare = lfs.chart(
+        lfs.publish(lfs.chart(
             f"composition-lfs-vs-rti-{slug}",
             f"Change in the employment rate {label}, 2019 to {q.replace('-', ' ')}: LFS vs RTI",
             "Percentage points", "grouped-hbar",
@@ -171,24 +173,10 @@ def build() -> None:
              for part, field in (("Total change", "change"), ("Composition", "composition"),
                                  ("Within-group", "within"))],
             "LFS = employment (employees + self-employed) / LFS population. RTI = payrolled "
-            "employees / ONS mid-year population. Base = 2019 average. " + projected)
-        compare["source"] = SOURCE
+            "employees / ONS mid-year population. Base = 2019 average. " + projected, source=SOURCE))
 
-        for c in (decomp, compare):
-            js, png = lfs.DATA / f"{c['slug']}.json", lfs.IMG / f"{c['slug']}.png"
-            c["theme"] = charts.DEFAULT_THEME
-            text = json.dumps(c, indent=1) + "\n"
-            if png.exists() and js.exists() and js.read_text() == text:
-                continue
-            js.write_text(text)
-            charts.render(c, png)
-
-        # workings for the RTI version
-        rows_w = lfs.workings(rcells, ages, rti_rows[-1]["date"])
-        with (lfs.DATA / f"rti-composition-workings-{slug}.csv").open("w", newline="") as f:
-            wr = csv.DictWriter(f, fieldnames=list(rows_w[0]))
-            wr.writeheader()
-            wr.writerows(rows_w)
+        lfs.write_csv(lfs.workings(rcells, ages, rti_rows[-1]["date"]),
+                      lfs.DATA / f"rti-composition-workings-{slug}.csv")
         last = rti_rows[-1]
         print(f"[composition-rti] {label}: {last['date']} change {last['change']:+.2f}pp = "
               f"composition {last['composition']:+.2f} + within {last['within']:+.2f}")

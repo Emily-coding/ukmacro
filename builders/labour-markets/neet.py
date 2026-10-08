@@ -14,9 +14,7 @@ ONS reweighted the data from Jan-Mar 2019, so the 2019 base sits after that brea
 
 from __future__ import annotations
 
-import csv
 import io
-import json
 import re
 import sys
 from pathlib import Path
@@ -29,7 +27,6 @@ sys.path.insert(0, str(REPO))
 sys.path.insert(0, str(HERE))
 
 import composition as lfs  # noqa: E402
-from ukmacro import charts  # noqa: E402
 from ukmacro.http import get, get_text  # noqa: E402
 
 PAGE = ("https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/datasets/"
@@ -71,12 +68,14 @@ def fetch_cells() -> dict[str, dict]:
 
 
 def build() -> None:
+    """Build the NEET charts and workings."""
     cells = fetch_cells()
     rows = lfs.decompose(cells["total"], AGES)
     by_q = {k: {r["date"]: r for r in lfs.decompose(cells[k], AGES)} for k in ("unemployed", "inactive")}
+    # the within-group part split by reason; where ONS suppressed one part, keep it unsplit
     data = []
     for r in rows:
-        if r["date"] < "2019-Q1":
+        if r["date"] < f"{lfs.BASE_YEAR}-Q1":
             continue
         u, i = by_q["unemployed"].get(r["date"]), by_q["inactive"].get(r["date"])
         split = u is not None and i is not None
@@ -88,48 +87,40 @@ def build() -> None:
     note = ("Groups: men and women aged 16-17 and 18-24. Base = 2019 average. Midpoint weights, so the "
             "parts add up to the total change. The within-group part splits exactly into unemployed "
             "and economically inactive NEETs, except in quarters where ONS suppressed one part (grey).")
-    decomp = lfs.chart("neet-decomposition", "Change in the NEET rate aged 16-24 since 2019: composition vs within-group",
+    lfs.publish(lfs.chart("neet-decomposition", "Change in the NEET rate aged 16-24 since 2019: composition vs within-group",
                        "Percentage points", "stacked-bar",
                        [{"key": "composition", "label": "Composition (age/sex mix)"},
                         {"key": "within_unemployed", "label": "Within-group: unemployed NEETs"},
                         {"key": "within_inactive", "label": "Within-group: inactive NEETs"},
                         {"key": "within_suppressed", "label": "Within-group (split suppressed)", "color": "neutral"},
                         {"key": "change", "label": "Total change", "mark": "line"}],
-                       data, note)
-    line = lfs.chart("neet-composition", "NEET rate aged 16-24: actual vs 2019 age/sex mix", "% of 16-24s", "line",
+                       data, note, source=SOURCE))
+    lfs.publish(lfs.chart("neet-composition", "NEET rate aged 16-24: actual vs 2019 age/sex mix", "% of 16-24s", "line",
                      [{"key": "actual", "label": "Actual"},
                       {"key": "fixed_mix", "label": "Holding the age/sex mix at 2019"}],
-                     [{k: r[k] for k in ("date", "actual", "fixed_mix")} for r in rows], note)
+                     [{k: r[k] for k in ("date", "actual", "fixed_mix")} for r in rows], note, source=SOURCE))
     last = rows[-1]
-    within = {k: by_q[k][last["date"]]["_within_by_group"] for k in ("unemployed", "inactive")}
-    groups = lfs.chart("neet-within-by-group",
-                       f"Contributions to the change in the NEET rate aged 16-24, 2019 to {last['date'].replace('-', ' ')}",
+    # by group for the latest quarter with a reason split (the latest may be suppressed)
+    split_q = max(q for q in by_q["unemployed"] if q in by_q["inactive"])
+    within = {k: by_q[k][split_q]["_within_by_group"] for k in ("unemployed", "inactive")}
+    lfs.publish(lfs.chart("neet-within-by-group",
+                       f"Contributions to the change in the NEET rate aged 16-24, {lfs.BASE_YEAR} to {split_q.replace('-', ' ')}",
                        "Percentage points", "grouped-hbar",
                        [{"key": "unemployed", "label": "Unemployed NEETs", "slot": 1},   # same colours as
                         {"key": "inactive", "label": "Economically inactive NEETs", "slot": 2}],  # the decomposition
                        [{"date": g, "unemployed": within["unemployed"][g], "inactive": within["inactive"][g]}
-                        for g in last["_within_by_group"]],
-                       note + " Within-group contributions only, by group.")
-    for c in (decomp, line, groups):
-        c["source"] = SOURCE
-        c["theme"] = charts.DEFAULT_THEME
-        js, png = lfs.DATA / f"{c['slug']}.json", lfs.IMG / f"{c['slug']}.png"
-        text = json.dumps(c, indent=1) + "\n"
-        if png.exists() and js.exists() and js.read_text() == text:
-            continue
-        js.write_text(text)
-        charts.render(c, png)
+                        for g in within["unemployed"]],
+                       note + " Within-group contributions only, by group.", source=SOURCE))
 
-    rows_w = lfs.workings(cells["total"], AGES, last["date"], measure="neet_rate")
-    with (lfs.DATA / "neet-composition-workings.csv").open("w", newline="") as f:
-        wr = csv.DictWriter(f, fieldnames=list(rows_w[0]))
-        wr.writeheader()
-        wr.writerows(rows_w)
+    lfs.write_csv(lfs.workings(cells["total"], AGES, last["date"], measure="neet_rate"),
+                  lfs.DATA / "neet-composition-workings.csv")
     d = data[-1]
-    print(f"[neet] quarters: {len(data)} since 2019, {sum(x['within_suppressed'] is not None for x in data)} without a reason split")
-    print(f"[neet] {last['date']}: NEET rate {last['actual']:.1f}%, change {d['change']:+.2f}pp = composition "
-          f"{d['composition']:+.2f} + within unemployed {d['within_unemployed']:+.2f} "
-          f"+ within inactive {d['within_inactive']:+.2f}")
+    unsplit = sum(x["within_suppressed"] is not None for x in data)
+    print(f"[neet] quarters: {len(data)} since {lfs.BASE_YEAR}, {unsplit} without a reason split")
+    split = (f"within unemployed {d['within_unemployed']:+.2f} + within inactive {d['within_inactive']:+.2f}"
+             if d["within_suppressed"] is None else f"within {d['within_suppressed']:+.2f} (split suppressed)")
+    print(f"[neet] {last['date']}: NEET rate {last['actual']:.1f}%, change {d['change']:+.2f}pp = "
+          f"composition {d['composition']:+.2f} + {split}")
 
 
 if __name__ == "__main__":

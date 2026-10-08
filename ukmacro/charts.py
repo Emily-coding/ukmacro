@@ -13,6 +13,7 @@ House style, used for every PNG:
 
 A series can set "slot": n to pin its colour, so one category keeps the same colour
 across related charts, or "color": "neutral" for a grey (e.g. data not available).
+Series beyond the fourth are grey (see _colour).
 
 Chart types: line, bar (single series), stacked-bar (positive and negative parts stack
 away from zero; a series with "mark": "line" is drawn as a line on top), grouped-hbar.
@@ -97,6 +98,16 @@ use_theme(DEFAULT_THEME)
 
 # ---------------------------------------------------------------- frame
 
+def _colour(series: dict, position: int) -> str:
+    """A series' colour: "color": "neutral" -> grey; else its pinned "slot", else its
+    position. Past the palette (more than 4 series) it is grey too: rather than invent
+    more colours, extra series become context (e.g. UK in colour, other countries grey)."""
+    slot = series.get("slot", position)
+    if series.get("color") == "neutral" or slot >= len(SERIES):
+        return BASELINE
+    return SERIES[slot]
+
+
 def _frame(chart: dict, left: float = 0.065):
     """Figure with title, units line and source footer; returns (fig, ax).
     `left` widens the plot's left margin (for long category labels)."""
@@ -118,10 +129,13 @@ def _frame(chart: dict, left: float = 0.065):
 
 
 def _legend(fig, handles, labels):
-    if len(handles) < 2:  # one series needs no legend: the title names it
+    """Legend in a row above the plot. One series needs none (the title names it).
+    If the labels won't fit on one row (roughly 130 characters including the colour
+    keys), wrap onto two rows and shrink the plot to make room."""
+    if len(handles) < 2:
         return
     ncol = len(handles)
-    if sum(len(lab) + 8 for lab in labels) > 130:  # too wide for one row: wrap to two, plot moves down
+    if sum(len(lab) + 8 for lab in labels) > 130:
         ncol = (len(handles) + 1) // 2
         for ax in fig.axes:
             x0, y0, w, h = ax.get_position().bounds
@@ -131,8 +145,11 @@ def _legend(fig, handles, labels):
 
 
 def _period_ticks(ax, dates: list[str]):
-    """Label the first period of each year only (dates like 2019-Q1 / 2019-01 / 2019)."""
-    idx = [i for i, d in enumerate(dates) if len(d) == 4 or d.endswith(("-Q1", "-01"))]
+    """Label the first period of each year with the year (works for any date format
+    starting YYYY: 2019, 2019-Q1, 2019-01, 2019-01-31). At most about 12 labels."""
+    idx = [i for i, d in enumerate(dates) if i == 0 or d[:4] != dates[i - 1][:4]]
+    if len(idx) > 1 and dates[0][4:] not in ("", "-Q1", "-01"):
+        idx = idx[1:]  # the first period isn't the start of its year: label from the next year
     step = max(1, len(idx) // 12)
     idx = idx[::step]
     ax.set_xticks(idx, [dates[i][:4] for i in idx])
@@ -154,21 +171,49 @@ def _save(fig, path: Path) -> Path:
 # ---------------------------------------------------------------- chart types
 
 def _line(chart):
+    """Lines, one per series. Each line ends in a direct label: its latest value for a
+    coloured series, its name for a grey context series (greys can't be told apart by
+    colour). Labels that would overlap are spread apart vertically."""
     fig, ax = _frame(chart)
     dates = [d["date"] for d in chart["data"]]
     x = range(len(dates))
-    handles = []
+    handles, ends = [], []
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) for d in chart["data"]]
+        colour = _colour(s, i)
         (h,) = ax.plot(x, [y if y is not None else float("nan") for y in ys],
-                       color=SERIES[s.get("slot", i)], linewidth=2, solid_capstyle="round")
+                       color=colour, linewidth=2, solid_capstyle="round",
+                       zorder=3 if colour != BASELINE else 2)  # coloured lines above grey ones
         handles.append(h)
-        last = max(j for j, y in enumerate(ys) if y is not None)
-        ax.annotate(f"{ys[last]:.1f}".replace("-", "\u2212"), (last, ys[last]), xytext=(6, 0), textcoords="offset points",
-                    va="center", fontsize=10.5, color=TEXT_2)
+        present = [j for j, y in enumerate(ys) if y is not None]
+        if present:
+            j = present[-1]
+            text = s["label"] if colour == BASELINE else f"{ys[j]:.1f}".replace("-", "\u2212")
+            ends.append((j, ys[j], text))
     _period_ticks(ax, dates)
+    _end_labels(fig, ax, ends)
     _legend(fig, handles, [s["label"] for s in chart["series"]])
     return fig
+
+
+def _end_labels(fig, ax, ends: list[tuple[int, float, str]], min_gap_pt: float = 13):
+    """Place labels just right of each line's last point, nudging them apart so no two
+    are closer than `min_gap_pt` points vertically (the dot each one names stays put)."""
+    if not ends:
+        return
+    fig.canvas.draw()  # fix the axis limits so data -> screen positions are final
+    to_pt = 72 / fig.dpi
+    placed = []  # (index into ends, label y in points)
+    for k, (j, y, _) in sorted(enumerate(ends), key=lambda e: e[1][1]):
+        y_pt = ax.transData.transform((j, y))[1] * to_pt
+        if placed and y_pt - placed[-1][1] < min_gap_pt:
+            y_pt = placed[-1][1] + min_gap_pt
+        placed.append((k, y_pt))
+    for k, y_pt in placed:
+        j, y, text = ends[k]
+        dy = y_pt - ax.transData.transform((j, y))[1] * to_pt
+        ax.annotate(text, (j, y), xytext=(6, dy), textcoords="offset points",
+                    va="center", fontsize=10.5, color=TEXT_2, annotation_clip=False)
 
 
 def _bars(chart):
@@ -180,22 +225,21 @@ def _bars(chart):
     handles, labels, slot = [], [], 0
     width = 0.72 if len(x) > 20 else 0.6
     for s in chart["series"]:
-        ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
+        ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]  # a missing bar is drawn as nothing
         if s.get("mark") == "line":  # missing periods break the line rather than drop to zero
             line_ys = [d.get(s["key"]) if d.get(s["key"]) is not None else float("nan") for d in chart["data"]]
             (h,) = ax.plot(x, line_ys, color=INK, linewidth=1.6, marker="o", markersize=4.5,
                            markerfacecolor=INK, markeredgecolor=SURFACE, markeredgewidth=1.2, zorder=4)
         else:
             bottoms = [pos[j] if y >= 0 else neg[j] for j, y in enumerate(ys)]
-            colour = BASELINE if s.get("color") == "neutral" else SERIES[s.get("slot", slot)]
-            h = ax.bar(x, ys, bottom=bottoms, width=width, color=colour,
+            h = ax.bar(x, ys, bottom=bottoms, width=width, color=_colour(s, slot),
                        edgecolor=SURFACE, linewidth=1.0, zorder=3)  # 2px surface gap between segments
             for j, y in enumerate(ys):
                 if y >= 0:
                     pos[j] += y
                 else:
                     neg[j] += y
-            slot += s.get("color") != "neutral"
+            slot += s.get("color") != "neutral"  # a grey series doesn't use up a colour
         handles.append(h)
         labels.append(s["label"])
     ax.axhline(0, color=BASELINE, linewidth=0.9, zorder=2)
@@ -217,7 +261,7 @@ def _grouped_hbar(chart):
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
         pos = [c + (i - (n - 1) / 2) * h_bar for c in range(len(cats))]
-        handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=SERIES[s.get("slot", i)], zorder=3))
+        handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=_colour(s, i), zorder=3))
         for p, y in zip(pos, ys):
             ax.annotate(f"{y:+.2f}".replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
                         ha="left" if y >= 0 else "right", va="center", fontsize=10, color=TEXT_2)
@@ -237,12 +281,13 @@ def _fill_periods(chart: dict) -> dict:
     dates = [d["date"] for d in chart["data"]]
     if chart["type"] == "grouped-hbar" or not dates:
         return chart
+    # `step` gives the next period after d
     if all(len(d) == 7 and d[5] == "Q" for d in dates):
         step = lambda d: f"{d[:4]}-Q{int(d[6]) % 4 + 1}" if d[6] != "4" else f"{int(d[:4]) + 1}-Q1"  # noqa: E731
     elif all(len(d) == 7 and d[4] == "-" and d[5:].isdigit() for d in dates):
         step = lambda d: f"{d[:4]}-{int(d[5:]) + 1:02d}" if d[5:] != "12" else f"{int(d[:4]) + 1}-01"  # noqa: E731
     else:
-        return chart
+        return chart  # annual or irregular dates (e.g. BICS waves): leave as they are
     have = {d["date"]: d for d in chart["data"]}
     full, d = [], dates[0]
     while d <= dates[-1]:
@@ -255,5 +300,6 @@ RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": 
 
 
 def render(chart: dict, path: Path, theme: str | None = None) -> Path:
+    """Render a chart (common JSON format) to a PNG at `path`; returns the path."""
     use_theme(theme or DEFAULT_THEME)
     return _save(RENDERERS[chart["type"]](_fill_periods(chart)), path)

@@ -100,6 +100,7 @@ def question_id(question: str, population: str, weighting: str) -> str:
 
 
 def breakdown_group(b: str) -> str:
+    """'total', 'size' (e.g. '10 - 49', 'All size bands excluding 0 - 9') or 'industry'."""
     if b == "All businesses":
         return "total"
     return "size" if SIZE_BANDS.match(b) else "industry"
@@ -116,6 +117,7 @@ def _num(v) -> float | None:
 
 
 def _wave_no(v) -> int | None:
+    """'Wave 163' -> 163."""
     m = re.search(r"(\d+)", str(v or ""))
     return int(m.group(1)) if m else None
 
@@ -178,7 +180,7 @@ def read_wave(path: Path) -> tuple[list[dict], dict[int, dict]]:
                 continue
             w = _wave_no(r[1])
             b = re.sub(r"\s+", " ", str(r[2] or "")).strip()
-            b = b[:1].upper() + b[1:].lower()  # older files Title-Case some names
+            b = b[:1].upper() + b[1:].lower()  # older files Title-Case some names ("All Businesses")
             for j, ans in enumerate(header[3:], start=3):
                 v = _num(r[j]) if ans and j < len(r) else None
                 if v is not None:
@@ -207,20 +209,26 @@ def read_question_log(path: Path) -> list[dict]:
         hdr = [str(c or "").strip() for c in rows[hi]]
         qcol = hdr.index("Question")
         wave_cols = [(j, int(h)) for j, h in enumerate(hdr) if h.isdigit()]
-        get = lambda r, col: str(r[hdr.index(col)] or "").strip() if col in hdr and hdr.index(col) < len(r) else ""  # noqa: E731
+
+        def cell(r, col):  # a named column's text, or "" if absent
+            j = hdr.index(col) if col in hdr else len(r)
+            return str(r[j] or "").strip() if j < len(r) else ""
+
         for r in rows[hi + 1:]:
             if not r or qcol >= len(r) or not r[qcol]:
                 continue
             asked = [w for j, w in wave_cols if j < len(r) and str(r[j] or "").strip()]
-            out.append({"section": get(r, "Section"), "subsection": get(r, "Sub-Section"),
-                        "question": generic_question(r[qcol]), "rotation": get(r, "Rotation"),
+            out.append({"section": cell(r, "Section"), "subsection": cell(r, "Sub-Section"),
+                        "question": generic_question(r[qcol]), "rotation": cell(r, "Rotation"),
                         "waves": asked})
     return out
 
 
 def last_asked(log: list[dict], question: str) -> int | None:
     """The last wave in which a question containing `question` was asked."""
-    loose = lambda t: re.sub(r"[^a-z0-9\[\] ]", "", norm(t))  # noqa: E731 — log and sheets differ in commas
+    def loose(t):  # the log and the sheets differ in commas and quotes, so drop punctuation
+        return re.sub(r"[^a-z0-9\[\] ]", "", norm(t))
+
     q = loose(question)
     waves = [max(e["waves"]) for e in log if e["waves"] and q in loose(e["question"])]
     return max(waves) if waves else None
@@ -249,6 +257,7 @@ class Store:
 
     @staticmethod
     def _read_csv(path: Path, key: str) -> dict:
+        """CSV rows keyed by one column ({} if the file doesn't exist yet)."""
         if not path.exists():
             return {}
         with path.open(newline="") as f:
@@ -267,6 +276,8 @@ class Store:
         return out
 
     def _write(self, qid: str, rows: list[tuple[int, str, str, float]], answers: list[str]) -> None:
+        """Write one question's harvest file, wide: wave, breakdown, one column per answer
+        (current answers first, then any older wordings)."""
         cells: dict[tuple[int, str], dict[str, float]] = {}
         for w, b, a, v in rows:
             cells.setdefault((w, b), {})[a] = v
@@ -291,15 +302,15 @@ class Store:
             qid = question_id(t["question"], t["population"], t["weighting"])
             old = self.catalogue.get(qid, {})
             existing = self.load(qid)
-            if wave >= int(old.get("source_wave", 0)):
+            newest = wave >= int(old.get("source_wave", 0))  # is this file newer than the stored copy?
+            if newest:  # it replaces every wave it covers
                 new_waves = {r[0] for r in t["rows"]}
                 rows = [r for r in existing if r[0] not in new_waves] + t["rows"]
-            else:
+            else:       # it only fills in waves the stored copy lacks
                 have = {r[0] for r in existing}
                 rows = existing + [r for r in t["rows"] if r[0] not in have]
             self._write(qid, rows, t["answers"])
             all_waves = sorted({r[0] for r in rows})
-            newest = wave >= int(old.get("source_wave", 0))
             # answers: union over time, newest wording first, so renamed options stay visible
             old_ans = [a for a in old.get("answers", "").split(" | ") if a]
             answers = list(dict.fromkeys(t["answers"] + old_ans if newest else old_ans + t["answers"]))
@@ -317,6 +328,7 @@ class Store:
         return len(tables)
 
     def save(self) -> None:
+        """Write the catalogue, wave dates, question log and state."""
         cols = ["id", "question", "population", "weighting", "answers",
                 "first_wave", "last_wave", "n_waves", "source_wave", "sheet"]
         with (self.root / "catalogue.csv").open("w", newline="") as f:
