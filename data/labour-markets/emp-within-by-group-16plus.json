@@ -1,0 +1,54 @@
+{
+ "slug": "emp-within-by-group-16plus",
+ "category": "labour-markets",
+ "title": "Contributions to the change in the employment rate aged 16 and over, 2019 to 2026 Q2",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "Percentage points",
+ "source": "ONS Labour Force Survey (LMS), seasonally adjusted; ukmacro calculations",
+ "note": "Groups: men and women by age band. Base = 2019 average. Midpoint (Shapley) weights, so composition + within-group = total change exactly. Within-group contributions only: each group's rate change weighted by its population share.",
+ "series": [
+  {
+   "key": "Men",
+   "label": "Men"
+  },
+  {
+   "key": "Women",
+   "label": "Women"
+  }
+ ],
+ "data_through": "65+",
+ "status": "ok",
+ "data": [
+  {
+   "date": "16-17",
+   "Men": -0.044,
+   "Women": -0.073
+  },
+  {
+   "date": "18-24",
+   "Men": -0.158,
+   "Women": -0.186
+  },
+  {
+   "date": "25-34",
+   "Men": -0.209,
+   "Women": 0.21
+  },
+  {
+   "date": "35-49",
+   "Men": -0.156,
+   "Women": 0.099
+  },
+  {
+   "date": "50-64",
+   "Men": -0.167,
+   "Women": 0.081
+  },
+  {
+   "date": "65+",
+   "Men": 0.248,
+   "Women": 0.277
+  }
+ ]
+}

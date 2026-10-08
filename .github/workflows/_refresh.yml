@@ -37,6 +37,7 @@ jobs:
           git config user.name "ukmacro-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/${{ inputs.category }} ukmacro/ons_uris.json
+          if [ -d img/${{ inputs.category }} ]; then git add img/${{ inputs.category }}; fi
           git diff --cached --quiet && { echo "no changes"; exit 0; }
           git commit -m "${{ inputs.category }}: refresh data"
           # several category jobs can finish together: rebase and retry, don't fail

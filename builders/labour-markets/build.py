@@ -13,5 +13,13 @@ sys.path.insert(0, str(HERE.parent.parent))  # repo root, so `ukmacro` imports
 
 from ukmacro.builder import run  # noqa: E402
 
+import composition  # noqa: E402  (age/sex composition of the employment rate, + PNGs)
+
 if __name__ == "__main__":
-    sys.exit(run(HERE / "config.yaml"))
+    status = run(HERE / "config.yaml")
+    try:
+        composition.build()
+    except Exception as e:  # noqa: BLE001 — keep the headline charts; still fail the run
+        print(f"composition failed: {e}", file=sys.stderr)
+        status = 1
+    sys.exit(status)

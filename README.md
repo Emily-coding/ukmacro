@@ -108,6 +108,27 @@ of `ukmacro/builder.py`.
 Dates are `YYYY`, `YYYY-Qn` or `YYYY-MM` for every source. `next_release` comes
 from the ONS series metadata.
 
+## Charts as PNGs
+
+`ukmacro/charts.py` renders any chart JSON to a PNG in one house style. Charts so
+far: the employment-rate composition analysis (`img/labour-markets/emp-*.png`).
+
+- 30 x 15 cm at 200 dpi (2362 x 1181 px), 256-colour PNG, about 60 KB each
+- Font: Source Sans 3 (open licence, bundled in `assets/fonts/`, so output matches on any machine)
+- Series colours in fixed order: blue `#2a78d6`, orange `#eb6834`, aqua `#1baf7a`,
+  yellow `#eda100`. Totals in ink `#0b0b0b`. Background `#fcfcfb`, text `#0b0b0b` /
+  `#52514e`, axes and source `#898781`, gridlines `#e1e0d9`
+
+## Employment composition
+
+`builders/labour-markets/composition.py` splits the change in the employment rate
+since 2019 into a **composition** effect (the age x sex population mix shifting) and a
+**within-group** effect (employment rates changing inside each group). It uses 12 LFS
+groups (men and women x 16-17, 18-24, 25-34, 35-49, 50-64, 65+) and midpoint weights,
+so the two parts add up to the total exactly. The rebuilt aggregate rates match the
+published ones (16+ to 0.01pp). Women 65+ is derived as the 16+ total minus the other
+bands, because ONS publishes no age-band series for that group.
+
 ## Rules
 
 **A failed fetch is a failed run.** If a source fails, the chart is still written

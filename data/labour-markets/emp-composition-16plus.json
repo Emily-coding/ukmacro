@@ -1,0 +1,254 @@
+{
+ "slug": "emp-composition-16plus",
+ "category": "labour-markets",
+ "title": "Employment rate aged 16 and over: actual vs 2019 population mix",
+ "type": "line",
+ "freq": "Q",
+ "units": "%",
+ "source": "ONS Labour Force Survey (LMS), seasonally adjusted; ukmacro calculations",
+ "note": "Groups: men and women by age band. Base = 2019 average. Midpoint (Shapley) weights, so composition + within-group = total change exactly.",
+ "series": [
+  {
+   "key": "actual",
+   "label": "Actual"
+  },
+  {
+   "key": "fixed_mix",
+   "label": "Holding the age/sex mix at 2019"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-Q1",
+   "actual": 60.04,
+   "fixed_mix": 59.54
+  },
+  {
+   "date": "2015-Q2",
+   "actual": 59.83,
+   "fixed_mix": 59.37
+  },
+  {
+   "date": "2015-Q3",
+   "actual": 60.14,
+   "fixed_mix": 59.7
+  },
+  {
+   "date": "2015-Q4",
+   "actual": 60.4,
+   "fixed_mix": 60.0
+  },
+  {
+   "date": "2016-Q1",
+   "actual": 60.37,
+   "fixed_mix": 59.97
+  },
+  {
+   "date": "2016-Q2",
+   "actual": 60.58,
+   "fixed_mix": 60.21
+  },
+  {
+   "date": "2016-Q3",
+   "actual": 60.6,
+   "fixed_mix": 60.29
+  },
+  {
+   "date": "2016-Q4",
+   "actual": 60.61,
+   "fixed_mix": 60.28
+  },
+  {
+   "date": "2017-Q1",
+   "actual": 60.71,
+   "fixed_mix": 60.42
+  },
+  {
+   "date": "2017-Q2",
+   "actual": 60.86,
+   "fixed_mix": 60.57
+  },
+  {
+   "date": "2017-Q3",
+   "actual": 60.79,
+   "fixed_mix": 60.54
+  },
+  {
+   "date": "2017-Q4",
+   "actual": 60.86,
+   "fixed_mix": 60.64
+  },
+  {
+   "date": "2018-Q1",
+   "actual": 61.15,
+   "fixed_mix": 60.95
+  },
+  {
+   "date": "2018-Q2",
+   "actual": 61.16,
+   "fixed_mix": 60.98
+  },
+  {
+   "date": "2018-Q3",
+   "actual": 61.14,
+   "fixed_mix": 61.02
+  },
+  {
+   "date": "2018-Q4",
+   "actual": 61.4,
+   "fixed_mix": 61.29
+  },
+  {
+   "date": "2019-Q1",
+   "actual": 61.52,
+   "fixed_mix": 61.45
+  },
+  {
+   "date": "2019-Q2",
+   "actual": 61.75,
+   "fixed_mix": 61.73
+  },
+  {
+   "date": "2019-Q3",
+   "actual": 61.57,
+   "fixed_mix": 61.58
+  },
+  {
+   "date": "2019-Q4",
+   "actual": 61.8,
+   "fixed_mix": 61.87
+  },
+  {
+   "date": "2020-Q1",
+   "actual": 61.63,
+   "fixed_mix": 61.72
+  },
+  {
+   "date": "2020-Q2",
+   "actual": 60.91,
+   "fixed_mix": 61.04
+  },
+  {
+   "date": "2020-Q3",
+   "actual": 60.34,
+   "fixed_mix": 60.52
+  },
+  {
+   "date": "2020-Q4",
+   "actual": 60.11,
+   "fixed_mix": 60.31
+  },
+  {
+   "date": "2021-Q1",
+   "actual": 60.13,
+   "fixed_mix": 60.36
+  },
+  {
+   "date": "2021-Q2",
+   "actual": 60.26,
+   "fixed_mix": 60.56
+  },
+  {
+   "date": "2021-Q3",
+   "actual": 60.66,
+   "fixed_mix": 60.97
+  },
+  {
+   "date": "2021-Q4",
+   "actual": 60.52,
+   "fixed_mix": 60.88
+  },
+  {
+   "date": "2022-Q1",
+   "actual": 60.51,
+   "fixed_mix": 60.89
+  },
+  {
+   "date": "2022-Q2",
+   "actual": 60.72,
+   "fixed_mix": 61.13
+  },
+  {
+   "date": "2022-Q3",
+   "actual": 60.47,
+   "fixed_mix": 60.88
+  },
+  {
+   "date": "2022-Q4",
+   "actual": 60.61,
+   "fixed_mix": 61.05
+  },
+  {
+   "date": "2023-Q1",
+   "actual": 60.83,
+   "fixed_mix": 61.28
+  },
+  {
+   "date": "2023-Q2",
+   "actual": 60.64,
+   "fixed_mix": 61.12
+  },
+  {
+   "date": "2023-Q3",
+   "actual": 60.51,
+   "fixed_mix": 61.02
+  },
+  {
+   "date": "2023-Q4",
+   "actual": 60.38,
+   "fixed_mix": 60.89
+  },
+  {
+   "date": "2024-Q1",
+   "actual": 60.15,
+   "fixed_mix": 60.68
+  },
+  {
+   "date": "2024-Q2",
+   "actual": 60.19,
+   "fixed_mix": 60.75
+  },
+  {
+   "date": "2024-Q3",
+   "actual": 60.56,
+   "fixed_mix": 61.18
+  },
+  {
+   "date": "2024-Q4",
+   "actual": 60.57,
+   "fixed_mix": 61.21
+  },
+  {
+   "date": "2025-Q1",
+   "actual": 60.64,
+   "fixed_mix": 61.3
+  },
+  {
+   "date": "2025-Q2",
+   "actual": 60.85,
+   "fixed_mix": 61.57
+  },
+  {
+   "date": "2025-Q3",
+   "actual": 60.66,
+   "fixed_mix": 61.41
+  },
+  {
+   "date": "2025-Q4",
+   "actual": 60.65,
+   "fixed_mix": 61.4
+  },
+  {
+   "date": "2026-Q1",
+   "actual": 60.76,
+   "fixed_mix": 61.54
+  },
+  {
+   "date": "2026-Q2",
+   "actual": 60.74,
+   "fixed_mix": 61.57
+  }
+ ]
+}

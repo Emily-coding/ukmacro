@@ -10,7 +10,9 @@
   spreadsheet). Decide 16+ vs 16-64 first: ageing does most of the compositional
   work in the 16+ rate. LFS population weights moved with the migration revisions,
   and those weights *are* sᵢ, so flag the vintage.
-- **NEETs**: the same decomposition on the ONS quarterly NEET release
+- ~~Employment composition~~ done (builders/labour-markets/composition.py).
+- **NEETs**: ONS publishes NEET only as a spreadsheet (no time series), so this needs
+  a spreadsheet parser for the quarterly NEET release. Then the same decomposition on the ONS quarterly NEET release
   (16-17, 18-24, by sex), then split by reason (unemployed / long-term sick /
   caring).
 - HMRC RTI payrolled employees as a cross-check on the LFS.
