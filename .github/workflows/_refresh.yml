@@ -1,0 +1,49 @@
+name: refresh (reusable)
+
+# Shared job for every category: run builders/<category>/build.py, commit only the
+# category's data folder, and only if it changed. Each category has its own small
+# caller workflow so it gets its own schedule, run history and red/green status.
+
+on:
+  workflow_call:
+    inputs:
+      category:
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: refresh-${{ inputs.category }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Build ${{ inputs.category }}
+        run: python builders/${{ inputs.category }}/build.py
+      # always(): a failed fetch still writes charts from last-good.json and the job
+      # still goes red (the build step's exit 1 decides that), so publish regardless.
+      - name: Commit if changed
+        if: always()
+        run: |
+          git config user.name "uk-macro-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/${{ inputs.category }} ukmacro/ons_uris.json
+          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          git commit -m "${{ inputs.category }}: refresh data"
+          # several category jobs can finish together: rebase and retry, don't fail
+          for i in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            echo "push rejected (attempt $i), rebasing on latest main"
+            git pull --rebase --autostash origin main
+          done
+          echo "push still failing after 5 attempts" >&2
+          exit 1

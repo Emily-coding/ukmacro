@@ -1,0 +1,56 @@
+# Labour markets — headline charts. LFS-based series carry the ONS reliability
+# caveat (falling response rates, reweighting); see README.
+category: labour-markets
+title: Labour markets
+
+charts:
+  - slug: lm-rates
+    title: Employment and inactivity rates, aged 16-64
+    units: "%"
+    freq: M
+    start: "2015-01"
+    source: ONS Labour Force Survey (LMS)
+    note: Rolling three-month averages, dated by the final month. LFS estimates are official statistics in development.
+    series:
+      - {source: ons, key: employment, label: Employment rate, cdid: LF24, dataset: LMS}
+      - {source: ons, key: inactivity, label: Inactivity rate, cdid: LF2S, dataset: LMS}
+
+  - slug: unemployment
+    title: Unemployment rate, aged 16+
+    units: "%"
+    freq: M
+    start: "2015-01"
+    source: ONS Labour Force Survey (LMS)
+    series:
+      - {source: ons, key: unemployment, label: Unemployment rate, cdid: MGSX, dataset: LMS}
+
+  - slug: vacancies
+    title: Vacancies
+    units: Thousands
+    freq: M
+    start: "2015-01"
+    source: ONS Vacancy Survey
+    series:
+      - {source: ons, key: vacancies, label: Vacancies, cdid: AP2Y, dataset: LMS}
+
+  - slug: pay-growth
+    title: Average weekly earnings growth, whole economy
+    units: "% year on year, 3-month average"
+    freq: M
+    start: "2015-01"
+    source: ONS Average Weekly Earnings
+    note: Total pay, nominal.
+    series:
+      - {source: ons, key: awe_total, label: Total pay, cdid: KAC3, dataset: LMS}
+
+  - slug: unemployment-g7
+    title: Unemployment rate, G7
+    units: "% of labour force, 15+"
+    freq: M
+    source: OECD harmonised unemployment rates
+    series:
+      - source: oecd
+        flow: "OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0"
+        key: "{areas}..._Z.Y._T.Y_GE15..M"
+        start: "2019-01"
+        areas: {GBR: United Kingdom, USA: United States, DEU: Germany, FRA: France, ITA: Italy, JPN: Japan, CAN: Canada}

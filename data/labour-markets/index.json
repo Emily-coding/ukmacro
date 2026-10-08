@@ -1,0 +1,41 @@
+{
+ "category": "labour-markets",
+ "title": "Labour markets",
+ "charts": [
+  {
+   "slug": "lm-rates",
+   "title": "Employment and inactivity rates, aged 16-64",
+   "data_through": "2026-06",
+   "next_release": "2026-10-20",
+   "status": "ok"
+  },
+  {
+   "slug": "unemployment",
+   "title": "Unemployment rate, aged 16+",
+   "data_through": "2026-06",
+   "next_release": "2026-10-20",
+   "status": "ok"
+  },
+  {
+   "slug": "vacancies",
+   "title": "Vacancies",
+   "data_through": "2026-07",
+   "next_release": "2026-10-20",
+   "status": "ok"
+  },
+  {
+   "slug": "pay-growth",
+   "title": "Average weekly earnings growth, whole economy",
+   "data_through": "2026-07",
+   "next_release": "2026-10-20",
+   "status": "ok"
+  },
+  {
+   "slug": "unemployment-g7",
+   "title": "Unemployment rate, G7",
+   "data_through": "2026-09",
+   "next_release": null,
+   "status": "ok"
+  }
+ ]
+}

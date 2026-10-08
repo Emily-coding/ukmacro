@@ -1,0 +1,244 @@
+{
+ "slug": "trade-balance",
+ "category": "trade",
+ "title": "Trade balance, goods and services",
+ "type": "bar",
+ "freq": "M",
+ "units": "\u00a3 million, current prices",
+ "source": "ONS UK trade",
+ "note": null,
+ "series": [
+  {
+   "key": "balance",
+   "label": "Trade balance",
+   "_source": "live",
+   "_date": "2026-07",
+   "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbj/mret"
+  }
+ ],
+ "data_through": "2026-07",
+ "next_release": "2026-10-15",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2022-01",
+   "balance": -10899.0
+  },
+  {
+   "date": "2022-02",
+   "balance": -7112.0
+  },
+  {
+   "date": "2022-03",
+   "balance": -7384.0
+  },
+  {
+   "date": "2022-04",
+   "balance": -5840.0
+  },
+  {
+   "date": "2022-05",
+   "balance": -6255.0
+  },
+  {
+   "date": "2022-06",
+   "balance": -6375.0
+  },
+  {
+   "date": "2022-07",
+   "balance": -1380.0
+  },
+  {
+   "date": "2022-08",
+   "balance": 1478.0
+  },
+  {
+   "date": "2022-09",
+   "balance": 4942.0
+  },
+  {
+   "date": "2022-10",
+   "balance": 7253.0
+  },
+  {
+   "date": "2022-11",
+   "balance": 4556.0
+  },
+  {
+   "date": "2022-12",
+   "balance": -731.0
+  },
+  {
+   "date": "2023-01",
+   "balance": -1530.0
+  },
+  {
+   "date": "2023-02",
+   "balance": -1451.0
+  },
+  {
+   "date": "2023-03",
+   "balance": -1161.0
+  },
+  {
+   "date": "2023-04",
+   "balance": -616.0
+  },
+  {
+   "date": "2023-05",
+   "balance": -5454.0
+  },
+  {
+   "date": "2023-06",
+   "balance": -2953.0
+  },
+  {
+   "date": "2023-07",
+   "balance": -1748.0
+  },
+  {
+   "date": "2023-08",
+   "balance": -3289.0
+  },
+  {
+   "date": "2023-09",
+   "balance": -1628.0
+  },
+  {
+   "date": "2023-10",
+   "balance": -5735.0
+  },
+  {
+   "date": "2023-11",
+   "balance": -3343.0
+  },
+  {
+   "date": "2023-12",
+   "balance": -3233.0
+  },
+  {
+   "date": "2024-01",
+   "balance": -1126.0
+  },
+  {
+   "date": "2024-02",
+   "balance": -1081.0
+  },
+  {
+   "date": "2024-03",
+   "balance": -2314.0
+  },
+  {
+   "date": "2024-04",
+   "balance": -5124.0
+  },
+  {
+   "date": "2024-05",
+   "balance": -2888.0
+  },
+  {
+   "date": "2024-06",
+   "balance": -3274.0
+  },
+  {
+   "date": "2024-07",
+   "balance": -2712.0
+  },
+  {
+   "date": "2024-08",
+   "balance": 1986.0
+  },
+  {
+   "date": "2024-09",
+   "balance": 2218.0
+  },
+  {
+   "date": "2024-10",
+   "balance": -3149.0
+  },
+  {
+   "date": "2024-11",
+   "balance": -3282.0
+  },
+  {
+   "date": "2024-12",
+   "balance": -18.0
+  },
+  {
+   "date": "2025-01",
+   "balance": -1548.0
+  },
+  {
+   "date": "2025-02",
+   "balance": -4513.0
+  },
+  {
+   "date": "2025-03",
+   "balance": -2967.0
+  },
+  {
+   "date": "2025-04",
+   "balance": -3895.0
+  },
+  {
+   "date": "2025-05",
+   "balance": -3280.0
+  },
+  {
+   "date": "2025-06",
+   "balance": -4109.0
+  },
+  {
+   "date": "2025-07",
+   "balance": -1750.0
+  },
+  {
+   "date": "2025-08",
+   "balance": -1798.0
+  },
+  {
+   "date": "2025-09",
+   "balance": -4137.0
+  },
+  {
+   "date": "2025-10",
+   "balance": -5844.0
+  },
+  {
+   "date": "2025-11",
+   "balance": -4758.0
+  },
+  {
+   "date": "2025-12",
+   "balance": -866.0
+  },
+  {
+   "date": "2026-01",
+   "balance": 1498.0
+  },
+  {
+   "date": "2026-02",
+   "balance": -5757.0
+  },
+  {
+   "date": "2026-03",
+   "balance": -10467.0
+  },
+  {
+   "date": "2026-04",
+   "balance": -7539.0
+  },
+  {
+   "date": "2026-05",
+   "balance": -3464.0
+  },
+  {
+   "date": "2026-06",
+   "balance": -5537.0
+  },
+  {
+   "date": "2026-07",
+   "balance": -3450.0
+  }
+ ]
+}

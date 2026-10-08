@@ -1,0 +1,15 @@
+name: labour-markets
+
+on:
+  schedule:
+    - cron: "35 7 * * 1-5"   # weekdays, after the ONS 07:00 release slot
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/_refresh.yml
+    with:
+      category: labour-markets

@@ -1,0 +1,261 @@
+{
+ "slug": "investment-level",
+ "category": "investment",
+ "title": "Business investment and total investment",
+ "type": "line",
+ "freq": "Q",
+ "units": "Index, 2019 Q4 = 100",
+ "source": "ONS Business investment / Quarterly National Accounts",
+ "note": "Chained volume measures, seasonally adjusted. Total is all gross fixed capital formation (business, government and dwellings).",
+ "series": [
+  {
+   "key": "business",
+   "label": "Business investment",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/npel/qna"
+  },
+  {
+   "key": "total_gfcf",
+   "label": "Total investment (GFCF)",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/npqt/cxnv"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "next_release": "2026-11-12",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-Q1",
+   "business": 90.993,
+   "total_gfcf": 90.099
+  },
+  {
+   "date": "2015-Q2",
+   "business": 90.452,
+   "total_gfcf": 89.865
+  },
+  {
+   "date": "2015-Q3",
+   "business": 89.396,
+   "total_gfcf": 88.62
+  },
+  {
+   "date": "2015-Q4",
+   "business": 94.721,
+   "total_gfcf": 91.552
+  },
+  {
+   "date": "2016-Q1",
+   "business": 94.957,
+   "total_gfcf": 93.13
+  },
+  {
+   "date": "2016-Q2",
+   "business": 98.872,
+   "total_gfcf": 94.934
+  },
+  {
+   "date": "2016-Q3",
+   "business": 103.391,
+   "total_gfcf": 98.727
+  },
+  {
+   "date": "2016-Q4",
+   "business": 98.173,
+   "total_gfcf": 96.847
+  },
+  {
+   "date": "2017-Q1",
+   "business": 99.802,
+   "total_gfcf": 97.539
+  },
+  {
+   "date": "2017-Q2",
+   "business": 98.145,
+   "total_gfcf": 99.366
+  },
+  {
+   "date": "2017-Q3",
+   "business": 99.266,
+   "total_gfcf": 100.037
+  },
+  {
+   "date": "2017-Q4",
+   "business": 101.203,
+   "total_gfcf": 101.92
+  },
+  {
+   "date": "2018-Q1",
+   "business": 101.653,
+   "total_gfcf": 100.942
+  },
+  {
+   "date": "2018-Q2",
+   "business": 98.298,
+   "total_gfcf": 98.895
+  },
+  {
+   "date": "2018-Q3",
+   "business": 96.038,
+   "total_gfcf": 98.18
+  },
+  {
+   "date": "2018-Q4",
+   "business": 97.434,
+   "total_gfcf": 98.57
+  },
+  {
+   "date": "2019-Q1",
+   "business": 100.283,
+   "total_gfcf": 102.147
+  },
+  {
+   "date": "2019-Q2",
+   "business": 100.828,
+   "total_gfcf": 101.475
+  },
+  {
+   "date": "2019-Q3",
+   "business": 100.621,
+   "total_gfcf": 101.73
+  },
+  {
+   "date": "2019-Q4",
+   "business": 100.0,
+   "total_gfcf": 100.0
+  },
+  {
+   "date": "2020-Q1",
+   "business": 98.551,
+   "total_gfcf": 96.827
+  },
+  {
+   "date": "2020-Q2",
+   "business": 78.249,
+   "total_gfcf": 79.359
+  },
+  {
+   "date": "2020-Q3",
+   "business": 90.958,
+   "total_gfcf": 92.408
+  },
+  {
+   "date": "2020-Q4",
+   "business": 96.765,
+   "total_gfcf": 97.822
+  },
+  {
+   "date": "2021-Q1",
+   "business": 92.427,
+   "total_gfcf": 95.416
+  },
+  {
+   "date": "2021-Q2",
+   "business": 96.95,
+   "total_gfcf": 100.317
+  },
+  {
+   "date": "2021-Q3",
+   "business": 96.837,
+   "total_gfcf": 101.039
+  },
+  {
+   "date": "2021-Q4",
+   "business": 100.151,
+   "total_gfcf": 103.621
+  },
+  {
+   "date": "2022-Q1",
+   "business": 102.738,
+   "total_gfcf": 107.211
+  },
+  {
+   "date": "2022-Q2",
+   "business": 103.846,
+   "total_gfcf": 106.938
+  },
+  {
+   "date": "2022-Q3",
+   "business": 102.918,
+   "total_gfcf": 107.304
+  },
+  {
+   "date": "2022-Q4",
+   "business": 101.368,
+   "total_gfcf": 106.148
+  },
+  {
+   "date": "2023-Q1",
+   "business": 104.477,
+   "total_gfcf": 108.756
+  },
+  {
+   "date": "2023-Q2",
+   "business": 103.839,
+   "total_gfcf": 106.234
+  },
+  {
+   "date": "2023-Q3",
+   "business": 101.422,
+   "total_gfcf": 104.622
+  },
+  {
+   "date": "2023-Q4",
+   "business": 102.363,
+   "total_gfcf": 105.466
+  },
+  {
+   "date": "2024-Q1",
+   "business": 102.821,
+   "total_gfcf": 106.781
+  },
+  {
+   "date": "2024-Q2",
+   "business": 104.84,
+   "total_gfcf": 106.427
+  },
+  {
+   "date": "2024-Q3",
+   "business": 105.405,
+   "total_gfcf": 107.212
+  },
+  {
+   "date": "2024-Q4",
+   "business": 103.862,
+   "total_gfcf": 107.02
+  },
+  {
+   "date": "2025-Q1",
+   "business": 108.778,
+   "total_gfcf": 109.885
+  },
+  {
+   "date": "2025-Q2",
+   "business": 107.16,
+   "total_gfcf": 110.317
+  },
+  {
+   "date": "2025-Q3",
+   "business": 109.837,
+   "total_gfcf": 111.156
+  },
+  {
+   "date": "2025-Q4",
+   "business": 107.518,
+   "total_gfcf": 110.781
+  },
+  {
+   "date": "2026-Q1",
+   "business": 110.745,
+   "total_gfcf": 112.731
+  },
+  {
+   "date": "2026-Q2",
+   "business": 112.687,
+   "total_gfcf": 113.79
+  }
+ ]
+}

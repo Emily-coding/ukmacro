@@ -1,0 +1,121 @@
+{
+ "slug": "gdp-growth",
+ "category": "gdp",
+ "title": "Real GDP growth",
+ "type": "bar",
+ "freq": "Q",
+ "units": "% change",
+ "source": "ONS Quarterly National Accounts",
+ "note": null,
+ "series": [
+  {
+   "key": "qoq",
+   "label": "Quarter on quarter",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ihyq/qna"
+  },
+  {
+   "key": "yoy",
+   "label": "Year on year",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ihyr/qna"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "next_release": "2026-11-12",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2022-Q1",
+   "qoq": 0.9,
+   "yoy": 11.3
+  },
+  {
+   "date": "2022-Q2",
+   "qoq": 0.6,
+   "yoy": 4.6
+  },
+  {
+   "date": "2022-Q3",
+   "qoq": 0.1,
+   "yoy": 2.9
+  },
+  {
+   "date": "2022-Q4",
+   "qoq": 0.3,
+   "yoy": 1.8
+  },
+  {
+   "date": "2023-Q1",
+   "qoq": 0.1,
+   "yoy": 1.1
+  },
+  {
+   "date": "2023-Q2",
+   "qoq": 0.0,
+   "yoy": 0.6
+  },
+  {
+   "date": "2023-Q3",
+   "qoq": -0.2,
+   "yoy": 0.3
+  },
+  {
+   "date": "2023-Q4",
+   "qoq": -0.3,
+   "yoy": -0.2
+  },
+  {
+   "date": "2024-Q1",
+   "qoq": 0.7,
+   "yoy": 0.4
+  },
+  {
+   "date": "2024-Q2",
+   "qoq": 0.6,
+   "yoy": 0.9
+  },
+  {
+   "date": "2024-Q3",
+   "qoq": 0.2,
+   "yoy": 1.3
+  },
+  {
+   "date": "2024-Q4",
+   "qoq": 0.4,
+   "yoy": 1.9
+  },
+  {
+   "date": "2025-Q1",
+   "qoq": 0.6,
+   "yoy": 1.8
+  },
+  {
+   "date": "2025-Q2",
+   "qoq": 0.0,
+   "yoy": 1.1
+  },
+  {
+   "date": "2025-Q3",
+   "qoq": 0.2,
+   "yoy": 1.2
+  },
+  {
+   "date": "2025-Q4",
+   "qoq": 0.0,
+   "yoy": 0.8
+  },
+  {
+   "date": "2026-Q1",
+   "qoq": 0.6,
+   "yoy": 0.8
+  },
+  {
+   "date": "2026-Q2",
+   "qoq": 0.5,
+   "yoy": 1.4
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+# Trade — headline charts.
+category: trade
+title: Trade
+
+charts:
+  - slug: trade-flows
+    title: Exports and imports of goods and services
+    units: "£ million, current prices"
+    freq: M
+    start: "2018-01"
+    source: ONS UK trade
+    note: Balance of payments basis, seasonally adjusted. Includes precious metals, which can swing monthly figures.
+    series:
+      - {source: ons, key: exports, label: Exports, cdid: IKBH, dataset: MRET}
+      - {source: ons, key: imports, label: Imports, cdid: IKBI, dataset: MRET}
+
+  - slug: trade-balance
+    title: Trade balance, goods and services
+    units: "£ million, current prices"
+    freq: M
+    start: "2022-01"
+    type: bar
+    source: ONS UK trade
+    series:
+      - {source: ons, key: balance, label: Trade balance, cdid: IKBJ, dataset: MRET}

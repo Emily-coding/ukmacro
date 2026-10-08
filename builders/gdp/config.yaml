@@ -1,0 +1,49 @@
+# GDP — headline charts. Series codes verified against live ONS/OECD 2026-10-08.
+category: gdp
+title: GDP
+
+charts:
+  - slug: gdp-level
+    title: Real GDP and GDP per head
+    units: "Index, 2019 Q4 = 100"
+    freq: Q
+    start: "2015-Q1"
+    rebase: "2019-Q4"
+    source: ONS Quarterly National Accounts
+    note: Chained volume measures, seasonally adjusted. The gap between the lines is population growth.
+    series:
+      - {source: ons, key: gdp, label: GDP, cdid: ABMI, dataset: QNA}
+      - {source: ons, key: gdp_per_head, label: GDP per head, cdid: IHXW, dataset: QNA}
+
+  - slug: gdp-growth
+    title: Real GDP growth
+    units: "% change"
+    freq: Q
+    start: "2022-Q1"
+    type: bar
+    source: ONS Quarterly National Accounts
+    series:
+      - {source: ons, key: qoq, label: Quarter on quarter, cdid: IHYQ, dataset: QNA}
+      - {source: ons, key: yoy, label: Year on year, cdid: IHYR, dataset: QNA}
+
+  - slug: gdp-monthly
+    title: Monthly GDP
+    units: Index (ONS reference year = 100)
+    freq: M
+    start: "2022-01"
+    source: ONS Monthly GDP estimate
+    note: Monthly gross value added at basic prices, chained volume, seasonally adjusted. Volatile month to month; ONS leads on the three-month-on-three-month change.
+    series:
+      - {source: ons, key: gva, label: Monthly GDP (GVA), cdid: ECY2, dataset: MGDP}
+
+  - slug: gdp-g7
+    title: Real GDP since the pandemic, G7
+    units: "% change since 2019 Q4"
+    freq: Q
+    source: OECD Quarterly National Accounts
+    series:
+      - source: oecd
+        flow: "OECD.SDD.NAD,DSD_NAMAIN1@DF_QNA_EXPENDITURE_GROWTH_OECD,"
+        key: "Q.Y.{areas}.S1.S1.B1GQ._Z._Z._Z.PC.L.GCM.T0102"
+        start: "2020-Q1"
+        areas: {GBR: United Kingdom, USA: United States, DEU: Germany, FRA: France, ITA: Italy, JPN: Japan, CAN: Canada}

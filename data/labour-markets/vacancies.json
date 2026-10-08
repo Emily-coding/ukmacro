@@ -1,0 +1,580 @@
+{
+ "slug": "vacancies",
+ "category": "labour-markets",
+ "title": "Vacancies",
+ "type": "line",
+ "freq": "M",
+ "units": "Thousands",
+ "source": "ONS Vacancy Survey",
+ "note": null,
+ "series": [
+  {
+   "key": "vacancies",
+   "label": "Vacancies",
+   "_source": "live",
+   "_date": "2026-07",
+   "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms"
+  }
+ ],
+ "data_through": "2026-07",
+ "next_release": "2026-10-20",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-01",
+   "vacancies": 721.0
+  },
+  {
+   "date": "2015-02",
+   "vacancies": 729.0
+  },
+  {
+   "date": "2015-03",
+   "vacancies": 726.0
+  },
+  {
+   "date": "2015-04",
+   "vacancies": 727.0
+  },
+  {
+   "date": "2015-05",
+   "vacancies": 730.0
+  },
+  {
+   "date": "2015-06",
+   "vacancies": 744.0
+  },
+  {
+   "date": "2015-07",
+   "vacancies": 744.0
+  },
+  {
+   "date": "2015-08",
+   "vacancies": 742.0
+  },
+  {
+   "date": "2015-09",
+   "vacancies": 740.0
+  },
+  {
+   "date": "2015-10",
+   "vacancies": 741.0
+  },
+  {
+   "date": "2015-11",
+   "vacancies": 745.0
+  },
+  {
+   "date": "2015-12",
+   "vacancies": 747.0
+  },
+  {
+   "date": "2016-01",
+   "vacancies": 746.0
+  },
+  {
+   "date": "2016-02",
+   "vacancies": 745.0
+  },
+  {
+   "date": "2016-03",
+   "vacancies": 742.0
+  },
+  {
+   "date": "2016-04",
+   "vacancies": 746.0
+  },
+  {
+   "date": "2016-05",
+   "vacancies": 748.0
+  },
+  {
+   "date": "2016-06",
+   "vacancies": 753.0
+  },
+  {
+   "date": "2016-07",
+   "vacancies": 756.0
+  },
+  {
+   "date": "2016-08",
+   "vacancies": 756.0
+  },
+  {
+   "date": "2016-09",
+   "vacancies": 765.0
+  },
+  {
+   "date": "2016-10",
+   "vacancies": 757.0
+  },
+  {
+   "date": "2016-11",
+   "vacancies": 753.0
+  },
+  {
+   "date": "2016-12",
+   "vacancies": 744.0
+  },
+  {
+   "date": "2017-01",
+   "vacancies": 759.0
+  },
+  {
+   "date": "2017-02",
+   "vacancies": 766.0
+  },
+  {
+   "date": "2017-03",
+   "vacancies": 789.0
+  },
+  {
+   "date": "2017-04",
+   "vacancies": 787.0
+  },
+  {
+   "date": "2017-05",
+   "vacancies": 792.0
+  },
+  {
+   "date": "2017-06",
+   "vacancies": 793.0
+  },
+  {
+   "date": "2017-07",
+   "vacancies": 801.0
+  },
+  {
+   "date": "2017-08",
+   "vacancies": 806.0
+  },
+  {
+   "date": "2017-09",
+   "vacancies": 811.0
+  },
+  {
+   "date": "2017-10",
+   "vacancies": 816.0
+  },
+  {
+   "date": "2017-11",
+   "vacancies": 815.0
+  },
+  {
+   "date": "2017-12",
+   "vacancies": 809.0
+  },
+  {
+   "date": "2018-01",
+   "vacancies": 806.0
+  },
+  {
+   "date": "2018-02",
+   "vacancies": 808.0
+  },
+  {
+   "date": "2018-03",
+   "vacancies": 808.0
+  },
+  {
+   "date": "2018-04",
+   "vacancies": 822.0
+  },
+  {
+   "date": "2018-05",
+   "vacancies": 841.0
+  },
+  {
+   "date": "2018-06",
+   "vacancies": 849.0
+  },
+  {
+   "date": "2018-07",
+   "vacancies": 853.0
+  },
+  {
+   "date": "2018-08",
+   "vacancies": 853.0
+  },
+  {
+   "date": "2018-09",
+   "vacancies": 862.0
+  },
+  {
+   "date": "2018-10",
+   "vacancies": 856.0
+  },
+  {
+   "date": "2018-11",
+   "vacancies": 848.0
+  },
+  {
+   "date": "2018-12",
+   "vacancies": 845.0
+  },
+  {
+   "date": "2019-01",
+   "vacancies": 836.0
+  },
+  {
+   "date": "2019-02",
+   "vacancies": 837.0
+  },
+  {
+   "date": "2019-03",
+   "vacancies": 837.0
+  },
+  {
+   "date": "2019-04",
+   "vacancies": 837.0
+  },
+  {
+   "date": "2019-05",
+   "vacancies": 835.0
+  },
+  {
+   "date": "2019-06",
+   "vacancies": 835.0
+  },
+  {
+   "date": "2019-07",
+   "vacancies": 830.0
+  },
+  {
+   "date": "2019-08",
+   "vacancies": 827.0
+  },
+  {
+   "date": "2019-09",
+   "vacancies": 809.0
+  },
+  {
+   "date": "2019-10",
+   "vacancies": 800.0
+  },
+  {
+   "date": "2019-11",
+   "vacancies": 799.0
+  },
+  {
+   "date": "2019-12",
+   "vacancies": 800.0
+  },
+  {
+   "date": "2020-01",
+   "vacancies": 808.0
+  },
+  {
+   "date": "2020-02",
+   "vacancies": 788.0
+  },
+  {
+   "date": "2020-03",
+   "vacancies": 635.0
+  },
+  {
+   "date": "2020-04",
+   "vacancies": 476.0
+  },
+  {
+   "date": "2020-05",
+   "vacancies": 343.0
+  },
+  {
+   "date": "2020-06",
+   "vacancies": 384.0
+  },
+  {
+   "date": "2020-07",
+   "vacancies": 445.0
+  },
+  {
+   "date": "2020-08",
+   "vacancies": 499.0
+  },
+  {
+   "date": "2020-09",
+   "vacancies": 530.0
+  },
+  {
+   "date": "2020-10",
+   "vacancies": 549.0
+  },
+  {
+   "date": "2020-11",
+   "vacancies": 586.0
+  },
+  {
+   "date": "2020-12",
+   "vacancies": 603.0
+  },
+  {
+   "date": "2021-01",
+   "vacancies": 609.0
+  },
+  {
+   "date": "2021-02",
+   "vacancies": 621.0
+  },
+  {
+   "date": "2021-03",
+   "vacancies": 660.0
+  },
+  {
+   "date": "2021-04",
+   "vacancies": 771.0
+  },
+  {
+   "date": "2021-05",
+   "vacancies": 883.0
+  },
+  {
+   "date": "2021-06",
+   "vacancies": 983.0
+  },
+  {
+   "date": "2021-07",
+   "vacancies": 1068.0
+  },
+  {
+   "date": "2021-08",
+   "vacancies": 1132.0
+  },
+  {
+   "date": "2021-09",
+   "vacancies": 1208.0
+  },
+  {
+   "date": "2021-10",
+   "vacancies": 1229.0
+  },
+  {
+   "date": "2021-11",
+   "vacancies": 1244.0
+  },
+  {
+   "date": "2021-12",
+   "vacancies": 1245.0
+  },
+  {
+   "date": "2022-01",
+   "vacancies": 1254.0
+  },
+  {
+   "date": "2022-02",
+   "vacancies": 1259.0
+  },
+  {
+   "date": "2022-03",
+   "vacancies": 1277.0
+  },
+  {
+   "date": "2022-04",
+   "vacancies": 1293.0
+  },
+  {
+   "date": "2022-05",
+   "vacancies": 1294.0
+  },
+  {
+   "date": "2022-06",
+   "vacancies": 1272.0
+  },
+  {
+   "date": "2022-07",
+   "vacancies": 1257.0
+  },
+  {
+   "date": "2022-08",
+   "vacancies": 1235.0
+  },
+  {
+   "date": "2022-09",
+   "vacancies": 1216.0
+  },
+  {
+   "date": "2022-10",
+   "vacancies": 1170.0
+  },
+  {
+   "date": "2022-11",
+   "vacancies": 1138.0
+  },
+  {
+   "date": "2022-12",
+   "vacancies": 1108.0
+  },
+  {
+   "date": "2023-01",
+   "vacancies": 1101.0
+  },
+  {
+   "date": "2023-02",
+   "vacancies": 1089.0
+  },
+  {
+   "date": "2023-03",
+   "vacancies": 1065.0
+  },
+  {
+   "date": "2023-04",
+   "vacancies": 1040.0
+  },
+  {
+   "date": "2023-05",
+   "vacancies": 1029.0
+  },
+  {
+   "date": "2023-06",
+   "vacancies": 1018.0
+  },
+  {
+   "date": "2023-07",
+   "vacancies": 999.0
+  },
+  {
+   "date": "2023-08",
+   "vacancies": 984.0
+  },
+  {
+   "date": "2023-09",
+   "vacancies": 958.0
+  },
+  {
+   "date": "2023-10",
+   "vacancies": 951.0
+  },
+  {
+   "date": "2023-11",
+   "vacancies": 923.0
+  },
+  {
+   "date": "2023-12",
+   "vacancies": 910.0
+  },
+  {
+   "date": "2024-01",
+   "vacancies": 895.0
+  },
+  {
+   "date": "2024-02",
+   "vacancies": 893.0
+  },
+  {
+   "date": "2024-03",
+   "vacancies": 885.0
+  },
+  {
+   "date": "2024-04",
+   "vacancies": 885.0
+  },
+  {
+   "date": "2024-05",
+   "vacancies": 872.0
+  },
+  {
+   "date": "2024-06",
+   "vacancies": 867.0
+  },
+  {
+   "date": "2024-07",
+   "vacancies": 853.0
+  },
+  {
+   "date": "2024-08",
+   "vacancies": 840.0
+  },
+  {
+   "date": "2024-09",
+   "vacancies": 828.0
+  },
+  {
+   "date": "2024-10",
+   "vacancies": 810.0
+  },
+  {
+   "date": "2024-11",
+   "vacancies": 805.0
+  },
+  {
+   "date": "2024-12",
+   "vacancies": 798.0
+  },
+  {
+   "date": "2025-01",
+   "vacancies": 793.0
+  },
+  {
+   "date": "2025-02",
+   "vacancies": 775.0
+  },
+  {
+   "date": "2025-03",
+   "vacancies": 759.0
+  },
+  {
+   "date": "2025-04",
+   "vacancies": 738.0
+  },
+  {
+   "date": "2025-05",
+   "vacancies": 730.0
+  },
+  {
+   "date": "2025-06",
+   "vacancies": 727.0
+  },
+  {
+   "date": "2025-07",
+   "vacancies": 738.0
+  },
+  {
+   "date": "2025-08",
+   "vacancies": 729.0
+  },
+  {
+   "date": "2025-09",
+   "vacancies": 728.0
+  },
+  {
+   "date": "2025-10",
+   "vacancies": 730.0
+  },
+  {
+   "date": "2025-11",
+   "vacancies": 739.0
+  },
+  {
+   "date": "2025-12",
+   "vacancies": 734.0
+  },
+  {
+   "date": "2026-01",
+   "vacancies": 725.0
+  },
+  {
+   "date": "2026-02",
+   "vacancies": 718.0
+  },
+  {
+   "date": "2026-03",
+   "vacancies": 713.0
+  },
+  {
+   "date": "2026-04",
+   "vacancies": 710.0
+  },
+  {
+   "date": "2026-05",
+   "vacancies": 711.0
+  },
+  {
+   "date": "2026-06",
+   "vacancies": 706.0
+  },
+  {
+   "date": "2026-07",
+   "vacancies": 702.0
+  }
+ ]
+}

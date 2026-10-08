@@ -1,0 +1,17 @@
+{
+ "ABMI/QNA": "/economy/grossdomesticproductgdp/timeseries/abmi/qna",
+ "AP2Y/LMS": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms",
+ "ECY2/MGDP": "/economy/grossdomesticproductgdp/timeseries/ecy2/mgdp",
+ "IHXW/QNA": "/economy/grossdomesticproductgdp/timeseries/ihxw/qna",
+ "IHYQ/QNA": "/economy/grossdomesticproductgdp/timeseries/ihyq/qna",
+ "IHYR/QNA": "/economy/grossdomesticproductgdp/timeseries/ihyr/qna",
+ "IKBH/MRET": "/economy/nationalaccounts/balanceofpayments/timeseries/ikbh/mret",
+ "IKBI/MRET": "/economy/nationalaccounts/balanceofpayments/timeseries/ikbi/mret",
+ "IKBJ/MRET": "/economy/nationalaccounts/balanceofpayments/timeseries/ikbj/mret",
+ "KAC3/LMS": "/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kac3/lms",
+ "LF24/LMS": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/lf24/lms",
+ "LF2S/LMS": "/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms",
+ "MGSX/LMS": "/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms",
+ "NPEL/QNA": "/economy/grossdomesticproductgdp/timeseries/npel/qna",
+ "NPQT/CXNV": "/economy/grossdomesticproductgdp/timeseries/npqt/cxnv"
+}

@@ -1,0 +1,261 @@
+{
+ "slug": "gdp-level",
+ "category": "gdp",
+ "title": "Real GDP and GDP per head",
+ "type": "line",
+ "freq": "Q",
+ "units": "Index, 2019 Q4 = 100",
+ "source": "ONS Quarterly National Accounts",
+ "note": "Chained volume measures, seasonally adjusted. The gap between the lines is population growth.",
+ "series": [
+  {
+   "key": "gdp",
+   "label": "GDP",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/qna"
+  },
+  {
+   "key": "gdp_per_head",
+   "label": "GDP per head",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ihxw/qna"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "next_release": "2026-11-12",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-Q1",
+   "gdp": 90.749,
+   "gdp_per_head": 93.141
+  },
+  {
+   "date": "2015-Q2",
+   "gdp": 91.237,
+   "gdp_per_head": 93.474
+  },
+  {
+   "date": "2015-Q3",
+   "gdp": 91.643,
+   "gdp_per_head": 93.702
+  },
+  {
+   "date": "2015-Q4",
+   "gdp": 92.148,
+   "gdp_per_head": 94.035
+  },
+  {
+   "date": "2016-Q1",
+   "gdp": 92.642,
+   "gdp_per_head": 94.349
+  },
+  {
+   "date": "2016-Q2",
+   "gdp": 93.327,
+   "gdp_per_head": 94.863
+  },
+  {
+   "date": "2016-Q3",
+   "gdp": 93.668,
+   "gdp_per_head": 95.072
+  },
+  {
+   "date": "2016-Q4",
+   "gdp": 94.245,
+   "gdp_per_head": 95.528
+  },
+  {
+   "date": "2017-Q1",
+   "gdp": 95.318,
+   "gdp_per_head": 96.489
+  },
+  {
+   "date": "2017-Q2",
+   "gdp": 96.242,
+   "gdp_per_head": 97.289
+  },
+  {
+   "date": "2017-Q3",
+   "gdp": 96.952,
+   "gdp_per_head": 97.888
+  },
+  {
+   "date": "2017-Q4",
+   "gdp": 97.763,
+   "gdp_per_head": 98.582
+  },
+  {
+   "date": "2018-Q1",
+   "gdp": 97.817,
+   "gdp_per_head": 98.525
+  },
+  {
+   "date": "2018-Q2",
+   "gdp": 97.993,
+   "gdp_per_head": 98.573
+  },
+  {
+   "date": "2018-Q3",
+   "gdp": 98.328,
+   "gdp_per_head": 98.792
+  },
+  {
+   "date": "2018-Q4",
+   "gdp": 98.47,
+   "gdp_per_head": 98.801
+  },
+  {
+   "date": "2019-Q1",
+   "gdp": 99.004,
+   "gdp_per_head": 99.21
+  },
+  {
+   "date": "2019-Q2",
+   "gdp": 99.223,
+   "gdp_per_head": 99.305
+  },
+  {
+   "date": "2019-Q3",
+   "gdp": 99.84,
+   "gdp_per_head": 99.876
+  },
+  {
+   "date": "2019-Q4",
+   "gdp": 100.0,
+   "gdp_per_head": 100.0
+  },
+  {
+   "date": "2020-Q1",
+   "gdp": 97.172,
+   "gdp_per_head": 97.127
+  },
+  {
+   "date": "2020-Q2",
+   "gdp": 77.808,
+   "gdp_per_head": 77.738
+  },
+  {
+   "date": "2020-Q3",
+   "gdp": 90.93,
+   "gdp_per_head": 90.772
+  },
+  {
+   "date": "2020-Q4",
+   "gdp": 92.165,
+   "gdp_per_head": 91.923
+  },
+  {
+   "date": "2021-Q1",
+   "gdp": 91.191,
+   "gdp_per_head": 90.867
+  },
+  {
+   "date": "2021-Q2",
+   "gdp": 97.561,
+   "gdp_per_head": 97.127
+  },
+  {
+   "date": "2021-Q3",
+   "gdp": 99.222,
+   "gdp_per_head": 98.525
+  },
+  {
+   "date": "2021-Q4",
+   "gdp": 100.6,
+   "gdp_per_head": 99.638
+  },
+  {
+   "date": "2022-Q1",
+   "gdp": 101.469,
+   "gdp_per_head": 100.238
+  },
+  {
+   "date": "2022-Q2",
+   "gdp": 102.038,
+   "gdp_per_head": 100.533
+  },
+  {
+   "date": "2022-Q3",
+   "gdp": 102.142,
+   "gdp_per_head": 100.295
+  },
+  {
+   "date": "2022-Q4",
+   "gdp": 102.436,
+   "gdp_per_head": 100.257
+  },
+  {
+   "date": "2023-Q1",
+   "gdp": 102.588,
+   "gdp_per_head": 100.067
+  },
+  {
+   "date": "2023-Q2",
+   "gdp": 102.631,
+   "gdp_per_head": 99.781
+  },
+  {
+   "date": "2023-Q3",
+   "gdp": 102.471,
+   "gdp_per_head": 99.382
+  },
+  {
+   "date": "2023-Q4",
+   "gdp": 102.206,
+   "gdp_per_head": 98.887
+  },
+  {
+   "date": "2024-Q1",
+   "gdp": 102.954,
+   "gdp_per_head": 99.372
+  },
+  {
+   "date": "2024-Q2",
+   "gdp": 103.593,
+   "gdp_per_head": 99.743
+  },
+  {
+   "date": "2024-Q3",
+   "gdp": 103.77,
+   "gdp_per_head": 99.829
+  },
+  {
+   "date": "2024-Q4",
+   "gdp": 104.144,
+   "gdp_per_head": 100.105
+  },
+  {
+   "date": "2025-Q1",
+   "gdp": 104.769,
+   "gdp_per_head": 100.628
+  },
+  {
+   "date": "2025-Q2",
+   "gdp": 104.776,
+   "gdp_per_head": 100.542
+  },
+  {
+   "date": "2025-Q3",
+   "gdp": 104.967,
+   "gdp_per_head": 100.675
+  },
+  {
+   "date": "2025-Q4",
+   "gdp": 104.978,
+   "gdp_per_head": 100.637
+  },
+  {
+   "date": "2026-Q1",
+   "gdp": 105.651,
+   "gdp_per_head": 101.237
+  },
+  {
+   "date": "2026-Q2",
+   "gdp": 106.214,
+   "gdp_per_head": 101.722
+  }
+ ]
+}

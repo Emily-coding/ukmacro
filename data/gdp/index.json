@@ -1,0 +1,34 @@
+{
+ "category": "gdp",
+ "title": "GDP",
+ "charts": [
+  {
+   "slug": "gdp-level",
+   "title": "Real GDP and GDP per head",
+   "data_through": "2026-Q2",
+   "next_release": "2026-11-12",
+   "status": "ok"
+  },
+  {
+   "slug": "gdp-growth",
+   "title": "Real GDP growth",
+   "data_through": "2026-Q2",
+   "next_release": "2026-11-12",
+   "status": "ok"
+  },
+  {
+   "slug": "gdp-monthly",
+   "title": "Monthly GDP",
+   "data_through": "2026-07",
+   "next_release": "2026-10-15",
+   "status": "ok"
+  },
+  {
+   "slug": "gdp-g7",
+   "title": "Real GDP since the pandemic, G7",
+   "data_through": "2026-Q2",
+   "next_release": null,
+   "status": "ok"
+  }
+ ]
+}

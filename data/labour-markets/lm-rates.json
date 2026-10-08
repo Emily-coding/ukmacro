@@ -1,0 +1,721 @@
+{
+ "slug": "lm-rates",
+ "category": "labour-markets",
+ "title": "Employment and inactivity rates, aged 16-64",
+ "type": "line",
+ "freq": "M",
+ "units": "%",
+ "source": "ONS Labour Force Survey (LMS)",
+ "note": "Rolling three-month averages, dated by the final month. LFS estimates are official statistics in development.",
+ "series": [
+  {
+   "key": "employment",
+   "label": "Employment rate",
+   "_source": "live",
+   "_date": "2026-06",
+   "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/lf24/lms"
+  },
+  {
+   "key": "inactivity",
+   "label": "Inactivity rate",
+   "_source": "live",
+   "_date": "2026-06",
+   "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms"
+  }
+ ],
+ "data_through": "2026-06",
+ "next_release": "2026-10-20",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-01",
+   "employment": 73.4,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2015-02",
+   "employment": 73.4,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-03",
+   "employment": 73.4,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-04",
+   "employment": 73.3,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-05",
+   "employment": 73.4,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-06",
+   "employment": 73.5,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-07",
+   "employment": 73.5,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2015-08",
+   "employment": 73.7,
+   "inactivity": 22.0
+  },
+  {
+   "date": "2015-09",
+   "employment": 73.9,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2015-10",
+   "employment": 74.0,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2015-11",
+   "employment": 74.1,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2015-12",
+   "employment": 74.0,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2016-01",
+   "employment": 74.1,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2016-02",
+   "employment": 74.1,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2016-03",
+   "employment": 74.1,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2016-04",
+   "employment": 74.3,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2016-05",
+   "employment": 74.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2016-06",
+   "employment": 74.5,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2016-07",
+   "employment": 74.4,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2016-08",
+   "employment": 74.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2016-09",
+   "employment": 74.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2016-10",
+   "employment": 74.4,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2016-11",
+   "employment": 74.5,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2016-12",
+   "employment": 74.5,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2017-01",
+   "employment": 74.6,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2017-02",
+   "employment": 74.7,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2017-03",
+   "employment": 74.7,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2017-04",
+   "employment": 74.8,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2017-05",
+   "employment": 75.0,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2017-06",
+   "employment": 75.2,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2017-07",
+   "employment": 75.1,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2017-08",
+   "employment": 74.9,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2017-09",
+   "employment": 75.0,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2017-10",
+   "employment": 75.2,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2017-11",
+   "employment": 75.1,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2017-12",
+   "employment": 75.2,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2018-01",
+   "employment": 75.3,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2018-02",
+   "employment": 75.5,
+   "inactivity": 21.2
+  },
+  {
+   "date": "2018-03",
+   "employment": 75.5,
+   "inactivity": 21.1
+  },
+  {
+   "date": "2018-04",
+   "employment": 75.5,
+   "inactivity": 21.1
+  },
+  {
+   "date": "2018-05",
+   "employment": 75.4,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2018-06",
+   "employment": 75.4,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2018-07",
+   "employment": 75.4,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2018-08",
+   "employment": 75.4,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2018-09",
+   "employment": 75.6,
+   "inactivity": 21.1
+  },
+  {
+   "date": "2018-10",
+   "employment": 75.6,
+   "inactivity": 21.1
+  },
+  {
+   "date": "2018-11",
+   "employment": 75.7,
+   "inactivity": 21.1
+  },
+  {
+   "date": "2018-12",
+   "employment": 76.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2019-01",
+   "employment": 76.0,
+   "inactivity": 20.8
+  },
+  {
+   "date": "2019-02",
+   "employment": 75.9,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2019-03",
+   "employment": 76.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2019-04",
+   "employment": 76.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2019-05",
+   "employment": 76.1,
+   "inactivity": 20.7
+  },
+  {
+   "date": "2019-06",
+   "employment": 76.0,
+   "inactivity": 20.8
+  },
+  {
+   "date": "2019-07",
+   "employment": 75.9,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2019-08",
+   "employment": 76.0,
+   "inactivity": 20.8
+  },
+  {
+   "date": "2019-09",
+   "employment": 76.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2019-10",
+   "employment": 76.2,
+   "inactivity": 20.7
+  },
+  {
+   "date": "2019-11",
+   "employment": 76.4,
+   "inactivity": 20.6
+  },
+  {
+   "date": "2019-12",
+   "employment": 76.4,
+   "inactivity": 20.5
+  },
+  {
+   "date": "2020-01",
+   "employment": 76.5,
+   "inactivity": 20.3
+  },
+  {
+   "date": "2020-02",
+   "employment": 75.9,
+   "inactivity": 20.7
+  },
+  {
+   "date": "2020-03",
+   "employment": 75.7,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2020-04",
+   "employment": 75.5,
+   "inactivity": 21.2
+  },
+  {
+   "date": "2020-05",
+   "employment": 75.4,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2020-06",
+   "employment": 75.2,
+   "inactivity": 21.2
+  },
+  {
+   "date": "2020-07",
+   "employment": 75.0,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2020-08",
+   "employment": 74.6,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2020-09",
+   "employment": 74.5,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2020-10",
+   "employment": 74.5,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2020-11",
+   "employment": 74.3,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2020-12",
+   "employment": 74.3,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2021-01",
+   "employment": 74.5,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2021-02",
+   "employment": 74.4,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2021-03",
+   "employment": 74.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2021-04",
+   "employment": 74.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2021-05",
+   "employment": 74.7,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2021-06",
+   "employment": 74.8,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2021-07",
+   "employment": 74.9,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2021-08",
+   "employment": 75.1,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2021-09",
+   "employment": 75.0,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2021-10",
+   "employment": 75.0,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2021-11",
+   "employment": 75.1,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2021-12",
+   "employment": 75.1,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2022-01",
+   "employment": 75.0,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2022-02",
+   "employment": 75.1,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2022-03",
+   "employment": 75.2,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2022-04",
+   "employment": 75.4,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2022-05",
+   "employment": 75.0,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2022-06",
+   "employment": 74.9,
+   "inactivity": 22.2
+  },
+  {
+   "date": "2022-07",
+   "employment": 75.0,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2022-08",
+   "employment": 75.0,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2022-09",
+   "employment": 75.0,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2022-10",
+   "employment": 75.0,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2022-11",
+   "employment": 75.1,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2022-12",
+   "employment": 75.2,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2023-01",
+   "employment": 75.1,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2023-02",
+   "employment": 75.3,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2023-03",
+   "employment": 75.5,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2023-04",
+   "employment": 75.4,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2023-05",
+   "employment": 75.2,
+   "inactivity": 21.4
+  },
+  {
+   "date": "2023-06",
+   "employment": 74.9,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2023-07",
+   "employment": 74.7,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2023-08",
+   "employment": 74.9,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2023-09",
+   "employment": 74.9,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2023-10",
+   "employment": 74.9,
+   "inactivity": 22.0
+  },
+  {
+   "date": "2023-11",
+   "employment": 74.9,
+   "inactivity": 22.0
+  },
+  {
+   "date": "2023-12",
+   "employment": 74.7,
+   "inactivity": 22.0
+  },
+  {
+   "date": "2024-01",
+   "employment": 74.6,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2024-02",
+   "employment": 74.5,
+   "inactivity": 22.0
+  },
+  {
+   "date": "2024-03",
+   "employment": 74.4,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2024-04",
+   "employment": 74.4,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2024-05",
+   "employment": 74.5,
+   "inactivity": 22.1
+  },
+  {
+   "date": "2024-06",
+   "employment": 74.7,
+   "inactivity": 21.9
+  },
+  {
+   "date": "2024-07",
+   "employment": 75.0,
+   "inactivity": 21.8
+  },
+  {
+   "date": "2024-08",
+   "employment": 75.0,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2024-09",
+   "employment": 74.9,
+   "inactivity": 21.7
+  },
+  {
+   "date": "2024-10",
+   "employment": 74.8,
+   "inactivity": 21.6
+  },
+  {
+   "date": "2024-11",
+   "employment": 75.0,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2024-12",
+   "employment": 75.0,
+   "inactivity": 21.5
+  },
+  {
+   "date": "2025-01",
+   "employment": 75.1,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2025-02",
+   "employment": 75.1,
+   "inactivity": 21.3
+  },
+  {
+   "date": "2025-03",
+   "employment": 75.1,
+   "inactivity": 21.2
+  },
+  {
+   "date": "2025-04",
+   "employment": 75.2,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2025-05",
+   "employment": 75.3,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2025-06",
+   "employment": 75.2,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2025-07",
+   "employment": 75.1,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2025-08",
+   "employment": 75.1,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2025-09",
+   "employment": 74.9,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2025-10",
+   "employment": 75.1,
+   "inactivity": 20.8
+  },
+  {
+   "date": "2025-11",
+   "employment": 75.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2025-12",
+   "employment": 75.1,
+   "inactivity": 20.7
+  },
+  {
+   "date": "2026-01",
+   "employment": 75.0,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2026-02",
+   "employment": 75.0,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2026-03",
+   "employment": 75.1,
+   "inactivity": 21.0
+  },
+  {
+   "date": "2026-04",
+   "employment": 75.1,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2026-05",
+   "employment": 75.1,
+   "inactivity": 20.9
+  },
+  {
+   "date": "2026-06",
+   "employment": 75.1,
+   "inactivity": 20.9
+  }
+ ]
+}

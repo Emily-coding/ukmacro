@@ -1,0 +1,13 @@
+{
+ "category": "investment",
+ "title": "Investment",
+ "charts": [
+  {
+   "slug": "investment-level",
+   "title": "Business investment and total investment",
+   "data_through": "2026-Q2",
+   "next_release": "2026-11-12",
+   "status": "ok"
+  }
+ ]
+}

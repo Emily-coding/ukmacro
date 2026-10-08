@@ -1,0 +1,20 @@
+{
+ "category": "trade",
+ "title": "Trade",
+ "charts": [
+  {
+   "slug": "trade-flows",
+   "title": "Exports and imports of goods and services",
+   "data_through": "2026-07",
+   "next_release": "2026-10-15",
+   "status": "ok"
+  },
+  {
+   "slug": "trade-balance",
+   "title": "Trade balance, goods and services",
+   "data_through": "2026-07",
+   "next_release": "2026-10-15",
+   "status": "ok"
+  }
+ ]
+}
