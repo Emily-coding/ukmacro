@@ -1,4 +1,4 @@
-# uk-macro
+# ukmacro
 
 Automatically refreshed chart data for the UK economy in four areas: **GDP**,
 **labour markets**, **investment** and **trade**. Data comes from the ONS, the OECD

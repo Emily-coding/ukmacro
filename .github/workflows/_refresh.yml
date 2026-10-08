@@ -34,7 +34,7 @@ jobs:
       - name: Commit if changed
         if: always()
         run: |
-          git config user.name "uk-macro-bot"
+          git config user.name "ukmacro-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/${{ inputs.category }} ukmacro/ons_uris.json
           git diff --cached --quiet && { echo "no changes"; exit 0; }

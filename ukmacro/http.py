@@ -13,7 +13,7 @@ import urllib.error
 import urllib.request
 
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; uk-macro/0.1; +https://github.com/) "
+    "Mozilla/5.0 (compatible; ukmacro/0.1; +https://github.com/) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 )
 
