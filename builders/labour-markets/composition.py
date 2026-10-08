@@ -7,6 +7,9 @@ the change splits exactly into two parts (midpoint / Shapley weights, so there i
 no leftover interaction term):
 
     composition  = sum_i (s_it - s_i0) * (e_i0 + e_it) / 2   population mix shifting (ageing, sex)
+                 = sum_i (s_it - s_i0) * ((e_i0 + e_it) / 2 - E_0)   (same total, as shares sum to 1;
+                   this form is used per group, so a growing group with a below-average
+                   employment rate shows as a negative contribution)
     within-group = sum_i (e_it - e_i0) * (s_i0 + s_it) / 2   rates changing inside each group
 
 Groups: men and women x 16-17, 18-24, 25-34, 35-49, 50-64, 65+ (LFS, seasonally
@@ -19,6 +22,7 @@ Writes chart JSON to data/labour-markets/ and PNGs to img/labour-markets/.
 
 from __future__ import annotations
 
+import csv
 import json
 import sys
 from pathlib import Path
@@ -90,7 +94,7 @@ def decompose(cells: dict, ages: list[str]) -> list[dict]:
         if q < START:
             continue
         s, e = mix(q)
-        comp = {k: (s[k] - s0[k]) * (e0[k] + e[k]) / 2 for k in keys}
+        comp = {k: (s[k] - s0[k]) * ((e0[k] + e[k]) / 2 - rate0) for k in keys}
         within = {k: (e[k] - e0[k]) * (s0[k] + s[k]) / 2 for k in keys}
         out.append({
             "date": q,
@@ -103,6 +107,33 @@ def decompose(cells: dict, ages: list[str]) -> list[dict]:
             "_composition_by_group": {f"{k[0]} {k[1]}": round(v, 3) for k, v in comp.items()},
         })
     return out
+
+
+def workings(cells: dict, ages: list[str], quarter: str) -> list[dict]:
+    """Group-by-group calculation for one quarter vs the base year (for checking by hand)."""
+    keys = [k for k in cells if k[1] in ages]
+    base_qs = [q for q in cells[keys[0]]["pop"] if q.startswith(BASE_YEAR)]
+
+    def share_rate(q):
+        tot = sum(cells[k]["pop"][q] for k in keys)
+        return ({k: cells[k]["pop"][q] / tot * 100 for k in keys},
+                {k: cells[k]["emp"][q] / cells[k]["pop"][q] * 100 for k in keys})
+
+    base = [share_rate(q) for q in base_qs]
+    s0 = {k: sum(b[0][k] for b in base) / len(base) for k in keys}
+    e0 = {k: sum(b[1][k] for b in base) / len(base) for k in keys}
+    st, et = share_rate(quarter)
+    rate0 = sum(s0[k] * e0[k] for k in keys) / 100
+    rows = []
+    for k in keys:
+        rows.append({
+            "group": f"{k[0]} {k[1]}",
+            "pop_share_2019_%": round(s0[k], 2), f"pop_share_{quarter}_%": round(st[k], 2),
+            "emp_rate_2019_%": round(e0[k], 1), f"emp_rate_{quarter}_%": round(et[k], 1),
+            "composition_pp": round((st[k] - s0[k]) / 100 * ((e0[k] + et[k]) / 2 - rate0), 3),
+            "within_pp": round((et[k] - e0[k]) * (s0[k] + st[k]) / 2 / 100, 3),
+        })
+    return rows
 
 
 def chart(slug: str, title: str, units: str, kind: str, series: list[dict], data: list[dict], note: str) -> dict:
@@ -154,6 +185,11 @@ def build() -> list[Path]:
                 continue
             js.write_text(text)
             written.append(charts.render(c, png))
+        rows_w = workings(cells, ages, last["date"])
+        with (DATA / f"emp-composition-workings-{slug}.csv").open("w", newline="") as f:
+            wr = csv.DictWriter(f, fieldnames=list(rows_w[0]))
+            wr.writeheader()
+            wr.writerows(rows_w)
         print(f"[composition] {label}: {last['date']} change {last['change']:+.2f}pp = "
               f"composition {last['composition']:+.2f} + within {last['within']:+.2f}")
     return written

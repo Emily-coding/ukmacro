@@ -1,0 +1,210 @@
+{
+ "slug": "rti-decomposition-16-64",
+ "category": "labour-markets",
+ "title": "Change in the payrolled employee rate aged 16-64 since 2019 (RTI): composition vs within-group",
+ "type": "stacked-bar",
+ "freq": "Q",
+ "units": "Percentage points",
+ "source": "HMRC PAYE Real Time Information (ONS, seasonally adjusted); ONS mid-year population estimates (Nomis); ONS Labour Force Survey; ukmacro calculations",
+ "note": "RTI counts payrolled employees only (no self-employed) and has no split by sex, so groups are six age bands. Base = 2019 average; months averaged to quarters. Population after mid-2025 is projected at that year's growth rate.",
+ "series": [
+  {
+   "key": "composition",
+   "label": "Composition (age mix)"
+  },
+  {
+   "key": "within",
+   "label": "Within-group payroll rates"
+  },
+  {
+   "key": "change",
+   "label": "Total change",
+   "mark": "line"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2019-Q1",
+   "composition": 0.02,
+   "within": -0.04,
+   "change": -0.02
+  },
+  {
+   "date": "2019-Q2",
+   "composition": 0.01,
+   "within": -0.03,
+   "change": -0.02
+  },
+  {
+   "date": "2019-Q3",
+   "composition": -0.01,
+   "within": -0.01,
+   "change": -0.02
+  },
+  {
+   "date": "2019-Q4",
+   "composition": -0.02,
+   "within": 0.08,
+   "change": 0.06
+  },
+  {
+   "date": "2020-Q1",
+   "composition": -0.04,
+   "within": 0.18,
+   "change": 0.14
+  },
+  {
+   "date": "2020-Q2",
+   "composition": -0.05,
+   "within": -1.17,
+   "change": -1.23
+  },
+  {
+   "date": "2020-Q3",
+   "composition": -0.07,
+   "within": -1.69,
+   "change": -1.76
+  },
+  {
+   "date": "2020-Q4",
+   "composition": -0.08,
+   "within": -1.99,
+   "change": -2.07
+  },
+  {
+   "date": "2021-Q1",
+   "composition": -0.1,
+   "within": -1.91,
+   "change": -2.01
+  },
+  {
+   "date": "2021-Q2",
+   "composition": -0.12,
+   "within": -1.24,
+   "change": -1.35
+  },
+  {
+   "date": "2021-Q3",
+   "composition": -0.12,
+   "within": -0.4,
+   "change": -0.52
+  },
+  {
+   "date": "2021-Q4",
+   "composition": -0.12,
+   "within": -0.01,
+   "change": -0.13
+  },
+  {
+   "date": "2022-Q1",
+   "composition": -0.12,
+   "within": 0.37,
+   "change": 0.25
+  },
+  {
+   "date": "2022-Q2",
+   "composition": -0.12,
+   "within": 0.5,
+   "change": 0.37
+  },
+  {
+   "date": "2022-Q3",
+   "composition": -0.12,
+   "within": 0.59,
+   "change": 0.48
+  },
+  {
+   "date": "2022-Q4",
+   "composition": -0.11,
+   "within": 0.7,
+   "change": 0.59
+  },
+  {
+   "date": "2023-Q1",
+   "composition": -0.1,
+   "within": 0.72,
+   "change": 0.62
+  },
+  {
+   "date": "2023-Q2",
+   "composition": -0.09,
+   "within": 0.69,
+   "change": 0.6
+  },
+  {
+   "date": "2023-Q3",
+   "composition": -0.09,
+   "within": 0.63,
+   "change": 0.54
+  },
+  {
+   "date": "2023-Q4",
+   "composition": -0.09,
+   "within": 0.67,
+   "change": 0.59
+  },
+  {
+   "date": "2024-Q1",
+   "composition": -0.09,
+   "within": 0.62,
+   "change": 0.53
+  },
+  {
+   "date": "2024-Q2",
+   "composition": -0.09,
+   "within": 0.54,
+   "change": 0.45
+  },
+  {
+   "date": "2024-Q3",
+   "composition": -0.09,
+   "within": 0.45,
+   "change": 0.36
+  },
+  {
+   "date": "2024-Q4",
+   "composition": -0.1,
+   "within": 0.43,
+   "change": 0.33
+  },
+  {
+   "date": "2025-Q1",
+   "composition": -0.11,
+   "within": 0.29,
+   "change": 0.19
+  },
+  {
+   "date": "2025-Q2",
+   "composition": -0.11,
+   "within": 0.16,
+   "change": 0.05
+  },
+  {
+   "date": "2025-Q3",
+   "composition": -0.12,
+   "within": 0.07,
+   "change": -0.04
+  },
+  {
+   "date": "2025-Q4",
+   "composition": -0.12,
+   "within": -0.05,
+   "change": -0.17
+  },
+  {
+   "date": "2026-Q1",
+   "composition": -0.13,
+   "within": -0.13,
+   "change": -0.26
+  },
+  {
+   "date": "2026-Q2",
+   "composition": -0.13,
+   "within": -0.27,
+   "change": -0.41
+  }
+ ],
+ "theme": "blue-amber"
+}

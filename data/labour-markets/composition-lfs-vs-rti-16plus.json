@@ -1,0 +1,47 @@
+{
+ "slug": "composition-lfs-vs-rti-16plus",
+ "category": "labour-markets",
+ "title": "Change in the employment rate aged 16 and over, 2019 to 2026 Q2: LFS vs RTI",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "Percentage points",
+ "source": "HMRC PAYE Real Time Information (ONS, seasonally adjusted); ONS mid-year population estimates (Nomis); ONS Labour Force Survey; ukmacro calculations",
+ "note": "LFS = employment (employees + self-employed) / LFS population. RTI = payrolled employees / ONS mid-year population. Base = 2019 average. Population after mid-2025 is projected at that year's growth rate.",
+ "series": [
+  {
+   "key": "lfs_age_sex",
+   "label": "LFS, age x sex (12 groups)"
+  },
+  {
+   "key": "lfs_age",
+   "label": "LFS, age only (6 groups)"
+  },
+  {
+   "key": "rti_age",
+   "label": "RTI, age only (6 groups)"
+  }
+ ],
+ "data_through": "Within-group",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Total change",
+   "lfs_age_sex": -0.92,
+   "lfs_age": -0.92,
+   "rti_age": -0.65
+  },
+  {
+   "date": "Composition",
+   "lfs_age_sex": -0.84,
+   "lfs_age": -0.84,
+   "rti_age": -0.81
+  },
+  {
+   "date": "Within-group",
+   "lfs_age_sex": -0.08,
+   "lfs_age": -0.08,
+   "rti_age": 0.17
+  }
+ ],
+ "theme": "blue-amber"
+}

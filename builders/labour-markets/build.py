@@ -14,12 +14,14 @@ sys.path.insert(0, str(HERE.parent.parent))  # repo root, so `ukmacro` imports
 from ukmacro.builder import run  # noqa: E402
 
 import composition  # noqa: E402  (age/sex composition of the employment rate, + PNGs)
+import composition_rti  # noqa: E402  (the same with HMRC PAYE RTI, + LFS vs RTI comparison)
 
 if __name__ == "__main__":
     status = run(HERE / "config.yaml")
-    try:
-        composition.build()
-    except Exception as e:  # noqa: BLE001 — keep the headline charts; still fail the run
-        print(f"composition failed: {e}", file=sys.stderr)
-        status = 1
+    for step in (composition.build, composition_rti.build):
+        try:
+            step()
+        except Exception as e:  # noqa: BLE001 — keep the other charts; still fail the run
+            print(f"{step.__module__} failed: {e}", file=sys.stderr)
+            status = 1
     sys.exit(status)

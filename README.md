@@ -132,6 +132,11 @@ so the two parts add up to the total exactly. The rebuilt aggregate rates match 
 published ones (16+ to 0.01pp). Women 65+ is derived as the 16+ total minus the other
 bands, because ONS publishes no age-band series for that group.
 
+`composition_rti.py` repeats this with HMRC PAYE RTI payrolled employees (by age
+only: RTI has no split by sex) over ONS mid-year population estimates, and compares
+LFS and RTI at the latest common quarter. Per-group workings for both are in
+`data/labour-markets/*-composition-workings-*.csv`.
+
 ## Rules
 
 **A failed fetch is a failed run.** If a source fails, the chart is still written

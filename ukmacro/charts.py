@@ -94,10 +94,11 @@ use_theme(DEFAULT_THEME)
 
 # ---------------------------------------------------------------- frame
 
-def _frame(chart: dict):
-    """Figure with title, units line and source footer; returns (fig, ax)."""
+def _frame(chart: dict, left: float = 0.065):
+    """Figure with title, units line and source footer; returns (fig, ax).
+    `left` widens the plot's left margin (for long category labels)."""
     fig = plt.figure(figsize=SIZE, dpi=DPI)
-    ax = fig.add_axes([0.065, 0.17, 0.89, 0.62])
+    ax = fig.add_axes([left, 0.17, 0.955 - left, 0.62])
     fig.text(0.065, 0.93, chart["title"], fontsize=16, fontweight="semibold", color=INK, va="baseline")
     fig.text(0.065, 0.875, chart["units"], fontsize=11.5, color=TEXT_2, va="baseline")
     foot = f"Source: {chart['source']}."
@@ -193,7 +194,8 @@ def _bars(chart):
 
 def _grouped_hbar(chart):
     """Categories down the side (data[].date holds the category), one bar per series."""
-    fig, ax = _frame(chart)
+    longest = max(len(str(d["date"])) for d in chart["data"])
+    fig, ax = _frame(chart, left=max(0.065, 0.02 + longest * 0.0062))  # room for category labels
     ax.grid(axis="y", visible=False)
     ax.grid(axis="x", color=GRID, linewidth=0.6)
     cats = [d["date"] for d in chart["data"]]
