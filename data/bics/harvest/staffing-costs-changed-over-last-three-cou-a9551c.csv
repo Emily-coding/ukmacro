@@ -1,0 +1,381 @@
+wave,breakdown,Costs have increased,Costs have stayed the same,Costs have decreased,Not sure,Not applicable
+55,0 - 9,29.7,40.3,1.1,5.7,23.3
+55,10 - 49,61.5,28.1,1.8,5.3,3.2
+55,100 - 249,63.0,28.3,1.5,6.3,
+55,250 +,58.1,26.5,1.4,12.7,1.3
+55,50 - 99,65.8,25.4,1.8,5.5,1.5
+55,Accommodation and food service activities,66.6,19.5,,9.0,4.7
+55,Administrative and support service activities,22.3,40.1,1.0,5.6,31.1
+55,All businesses,33.1,38.9,1.1,5.7,21.1
+55,All size bands excluding 0 - 9,61.9,27.8,1.8,5.6,2.9
+55,"Arts, entertainment and recreation",20.5,41.0,,4.9,33.5
+55,Construction,33.5,34.8,,6.7,24.9
+55,Education,21.8,54.5,,,22.6
+55,Human health and social work activities,34.6,52.4,,1.3,11.4
+55,Information and communication,21.0,46.3,3.1,6.2,23.4
+55,Manufacturing,28.7,43.6,4.2,6.1,17.4
+55,Other service activities,28.4,39.7,,20.3,11.5
+55,"Professional, scientific and technical activities",26.3,50.4,1.5,1.7,20.0
+55,Real estate activities,15.4,39.2,8.0,5.0,32.4
+55,Transportation and storage,45.7,13.1,,7.6,33.5
+55,Wholesale and retail trade; repair of motor vehicles and motorcycles,39.3,37.2,,5.6,17.6
+60,0 - 9,28.9,41.5,2.3,7.3,19.9
+60,10 - 49,59.7,28.7,2.2,5.5,3.9
+60,100 - 249,64.7,25.4,1.4,7.0,1.5
+60,250 +,58.3,24.7,2.2,13.7,1.1
+60,50 - 99,67.1,23.0,1.8,6.6,1.5
+60,Accommodation and food service activities,62.9,19.2,4.3,7.5,6.1
+60,Administrative and support service activities,24.6,46.7,1.7,5.0,21.9
+60,All businesses,32.3,40.1,2.3,7.1,18.2
+60,All size bands excluding 0 - 9,60.5,27.9,2.1,5.9,3.5
+60,"Arts, entertainment and recreation",15.5,31.2,,15.4,37.5
+60,Construction,29.2,45.0,1.6,12.1,12.0
+60,Education,43.4,33.6,0.0,,22.3
+60,Human health and social work activities,37.7,41.2,,5.1,15.9
+60,Information and communication,24.7,43.2,1.7,7.7,22.7
+60,Manufacturing,29.2,45.2,6.8,4.2,14.7
+60,Other service activities,41.2,17.6,5.5,15.8,20.0
+60,"Professional, scientific and technical activities",24.3,46.7,2.5,5.2,21.3
+60,Real estate activities,29.7,45.5,,4.2,20.3
+60,Transportation and storage,35.3,30.2,,7.0,27.4
+60,Wholesale and retail trade; repair of motor vehicles and motorcycles,37.6,38.8,2.2,5.1,16.3
+67,0 - 9,24.6,48.1,1.9,6.5,19.0
+67,10 - 49,47.9,40.3,2.3,6.3,3.1
+67,100 - 249,50.7,36.7,3.2,7.8,1.7
+67,250 +,48.0,34.1,2.2,14.4,1.2
+67,50 - 99,53.1,35.6,3.5,6.2,1.5
+67,Accommodation and food service activities,42.0,37.3,4.0,8.4,8.2
+67,Administrative and support service activities,20.2,50.1,2.5,2.5,24.6
+67,All businesses,27.1,47.2,2.0,6.5,17.3
+67,All size bands excluding 0 - 9,48.5,39.6,2.5,6.6,2.9
+67,"Arts, entertainment and recreation",16.2,47.0,,1.0,35.6
+67,Construction,34.3,42.5,1.5,8.3,13.4
+67,Education,34.5,43.9,,,20.5
+67,Human health and social work activities,45.9,36.1,4.6,4.3,9.1
+67,Information and communication,21.4,47.6,2.7,7.4,20.7
+67,Manufacturing,24.1,50.4,,3.7,21.2
+67,Other service activities,19.7,48.8,,12.0,19.3
+67,"Professional, scientific and technical activities",17.9,56.3,1.9,3.9,20.1
+67,Real estate activities,41.1,52.3,0.0,,5.9
+67,Transportation and storage,18.8,43.4,,19.9,17.7
+67,Wholesale and retail trade; repair of motor vehicles and motorcycles,32.3,44.3,2.4,7.7,13.3
+74,0 - 9,22.1,51.0,2.2,6.3,18.4
+74,10 - 49,49.9,38.4,3.7,5.4,2.7
+74,100 - 249,46.5,40.1,4.3,8.1,1.1
+74,250 +,44.5,36.6,3.3,14.1,1.5
+74,50 - 99,51.9,37.2,3.9,5.6,1.4
+74,Accommodation and food service activities,43.9,37.8,3.5,6.8,8.0
+74,Administrative and support service activities,20.3,50.1,2.5,4.9,22.1
+74,All businesses,25.1,49.6,2.3,6.2,16.7
+74,All size bands excluding 0 - 9,49.8,38.3,3.7,5.8,2.4
+74,"Arts, entertainment and recreation",25.6,34.8,,3.2,35.8
+74,Construction,25.0,48.9,4.6,4.8,16.7
+74,Education,24.9,36.8,,6.7,31.6
+74,Human health and social work activities,11.6,51.0,5.7,6.4,25.3
+74,Information and communication,17.5,52.8,1.9,10.1,17.7
+74,Manufacturing,32.1,53.4,3.0,5.6,5.9
+74,Other service activities,28.2,44.5,,22.2,4.6
+74,"Professional, scientific and technical activities",20.6,56.7,1.3,3.3,18.0
+74,Real estate activities,29.5,54.2,,,15.7
+74,Transportation and storage,19.7,51.5,,8.2,20.6
+74,Wholesale and retail trade; repair of motor vehicles and motorcycles,27.8,48.7,1.8,7.4,14.3
+80,0 - 9,25.4,48.4,1.9,6.7,17.6
+80,10 - 49,53.4,35.8,2.6,5.4,2.8
+80,100 - 249,50.6,36.7,3.0,8.4,1.3
+80,250 +,48.8,34.3,2.4,12.7,1.8
+80,50 - 99,54.1,35.7,2.7,6.0,1.6
+80,Accommodation and food service activities,53.3,34.3,,3.2,8.6
+80,Administrative and support service activities,20.7,50.3,2.4,9.7,16.8
+80,All businesses,28.5,47.0,1.9,6.6,15.9
+80,All size bands excluding 0 - 9,53.2,35.8,2.6,5.8,2.6
+80,"Arts, entertainment and recreation",17.5,51.5,,2.8,28.0
+80,Construction,24.6,49.7,,8.4,16.4
+80,Education,36.2,39.6,1.0,7.9,15.3
+80,Human health and social work activities,52.7,40.2,0.0,1.1,6.0
+80,Information and communication,16.8,48.8,2.8,7.7,24.0
+80,Manufacturing,29.3,47.7,1.3,6.3,15.4
+80,Other service activities,24.2,48.5,0.0,9.3,18.0
+80,"Professional, scientific and technical activities",24.5,52.4,1.8,4.4,16.9
+80,Real estate activities,34.7,37.8,,9.1,17.7
+80,Transportation and storage,23.4,40.6,6.1,15.7,14.2
+80,Wholesale and retail trade; repair of motor vehicles and motorcycles,32.0,46.1,3.2,5.2,13.5
+86,0 - 9,26.0,49.8,1.9,5.6,16.7
+86,10 - 49,54.7,34.4,2.7,5.4,2.8
+86,100 - 249,57.0,31.0,3.5,7.3,1.2
+86,250 +,46.5,35.9,2.4,13.2,2.0
+86,50 - 99,58.3,30.5,3.7,5.6,1.8
+86,Accommodation and food service activities,55.6,32.2,6.5,2.8,3.0
+86,Administrative and support service activities,30.4,45.7,2.1,7.0,14.8
+86,All businesses,29.3,48.0,2.0,5.6,15.1
+86,All size bands excluding 0 - 9,54.9,34.0,2.8,5.7,2.7
+86,"Arts, entertainment and recreation",17.6,42.2,4.4,1.9,33.9
+86,Construction,27.1,52.8,,8.3,11.5
+86,Education,23.8,63.3,11.1,1.5,
+86,Human health and social work activities,38.8,52.7,,1.8,6.3
+86,Information and communication,19.5,46.8,3.2,6.6,23.9
+86,Manufacturing,32.0,49.5,1.7,3.9,12.9
+86,Other service activities,45.8,42.2,,11.8,0.0
+86,"Professional, scientific and technical activities",20.7,55.7,1.7,2.6,19.3
+86,Real estate activities,28.2,26.3,4.0,,40.6
+86,Transportation and storage,21.2,52.1,,2.7,23.8
+86,Wholesale and retail trade; repair of motor vehicles and motorcycles,32.6,45.3,,8.9,12.4
+93,0 - 9,17.3,56.5,1.9,4.4,20.0
+93,10 - 49,40.7,46.4,4.1,5.6,3.3
+93,100 - 249,37.4,48.2,5.1,7.7,1.6
+93,250 +,30.0,49.8,3.6,14.8,1.7
+93,50 - 99,40.2,46.4,5.0,6.4,2.1
+93,Accommodation and food service activities,30.8,54.4,1.4,8.3,5.2
+93,Administrative and support service activities,21.3,50.6,2.8,4.3,21.1
+93,All businesses,19.8,55.4,2.1,4.5,18.1
+93,All size bands excluding 0 - 9,40.2,46.6,4.2,6.0,3.0
+93,"Arts, entertainment and recreation",17.2,40.9,,2.8,39.0
+93,Construction,21.0,55.8,2.6,4.4,16.2
+93,Education,19.1,63.6,,4.4,12.2
+93,Human health and social work activities,25.7,60.8,,1.6,11.7
+93,Information and communication,19.4,50.6,4.4,3.8,21.8
+93,Manufacturing,23.8,55.6,,5.1,14.5
+93,Other service activities,19.2,73.7,0.0,3.8,3.3
+93,"Professional, scientific and technical activities",14.1,60.5,2.4,3.0,20.0
+93,Real estate activities,23.7,62.0,,4.1,9.5
+93,Transportation and storage,10.6,60.2,,1.4,27.4
+93,Wholesale and retail trade; repair of motor vehicles and motorcycles,20.6,51.1,2.3,6.8,19.2
+100,0 - 9,17.3,58.7,2.0,3.7,18.3
+100,10 - 49,40.8,47.3,3.7,5.1,3.1
+100,100 - 249,34.2,50.0,5.4,8.1,2.3
+100,250 +,28.9,49.9,3.6,15.7,1.9
+100,50 - 99,39.1,48.6,4.3,6.2,1.8
+100,Accommodation and food service activities,33.3,59.3,,2.4,4.1
+100,Administrative and support service activities,24.4,49.5,2.5,2.6,20.9
+100,All businesses,19.8,57.5,2.2,4.0,16.6
+100,All size bands excluding 0 - 9,40.0,47.6,3.8,5.6,2.9
+100,"Arts, entertainment and recreation",4.1,44.5,2.7,3.3,45.5
+100,Construction,19.1,59.6,1.5,4.9,14.9
+100,Education,4.1,70.3,5.2,,19.9
+100,Human health and social work activities,16.4,52.8,11.6,12.4,6.8
+100,Information and communication,18.0,54.2,1.8,6.6,19.3
+100,Manufacturing,22.5,57.1,4.1,6.5,9.8
+100,Other service activities,27.2,58.0,,6.5,8.0
+100,"Professional, scientific and technical activities",15.1,61.2,1.6,2.8,19.3
+100,Real estate activities,23.9,47.2,,3.7,24.3
+100,Transportation and storage,18.2,50.3,1.7,4.7,25.2
+100,Wholesale and retail trade; repair of motor vehicles and motorcycles,20.9,61.3,2.0,1.9,13.9
+103,0 - 9,18.6,54.5,3.4,4.7,18.8
+103,10 - 49,34.4,52.8,4.8,4.6,3.4
+103,100 - 249,30.7,54.8,5.3,7.5,1.7
+103,250 +,27.7,52.1,4.0,14.3,1.8
+103,50 - 99,34.0,53.4,5.6,5.6,1.5
+103,Accommodation and food service activities,25.6,57.7,4.6,4.5,7.5
+103,Administrative and support service activities,18.9,49.9,5.1,4.3,21.9
+103,All businesses,20.3,54.3,3.6,4.7,17.1
+103,All size bands excluding 0 - 9,34.0,52.9,4.9,5.1,3.1
+103,"Arts, entertainment and recreation",10.5,29.1,3.4,5.3,51.7
+103,Construction,19.6,54.4,3.1,5.6,17.3
+103,Education,18.5,56.5,5.6,,18.6
+103,Human health and social work activities,36.3,46.9,7.6,8.6,
+103,Information and communication,17.4,57.6,3.3,6.3,15.4
+103,Manufacturing,24.3,52.4,3.7,3.0,16.6
+103,Other service activities,21.7,55.1,6.7,6.7,9.8
+103,"Professional, scientific and technical activities",17.4,61.7,2.5,2.2,16.2
+103,Real estate activities,44.6,33.3,1.3,3.5,17.3
+103,Transportation and storage,22.9,44.2,1.7,3.3,27.9
+103,Wholesale and retail trade; repair of motor vehicles and motorcycles,18.6,56.2,3.4,6.5,15.2
+109,0 - 9,28.8,47.4,1.6,3.5,18.8
+109,10 - 49,59.4,30.4,3.5,4.2,2.5
+109,100 - 249,58.3,30.0,4.2,6.5,1.0
+109,250 +,50.9,31.6,3.8,12.7,1.0
+109,50 - 99,62.7,28.4,3.4,4.6,
+109,Accommodation and food service activities,62.1,30.6,2.0,2.4,2.9
+109,Administrative and support service activities,33.5,42.5,,2.6,20.8
+109,All businesses,32.1,45.5,1.8,3.6,17.0
+109,All size bands excluding 0 - 9,59.6,30.2,3.6,4.4,2.3
+109,"Arts, entertainment and recreation",38.0,28.7,,6.1,27.1
+109,Construction,25.7,51.1,1.8,5.1,16.2
+109,Education,31.0,52.3,6.1,,10.5
+109,Human health and social work activities,57.6,33.5,,,7.9
+109,Information and communication,23.8,50.0,4.0,5.2,17.0
+109,Manufacturing,33.8,45.1,2.1,1.3,17.7
+109,Other service activities,49.5,39.0,3.7,,7.5
+109,"Professional, scientific and technical activities",21.9,58.4,2.4,2.3,15.0
+109,Real estate activities,23.6,50.1,,,25.4
+109,Transportation and storage,22.5,45.0,1.4,7.2,23.9
+109,Wholesale and retail trade; repair of motor vehicles and motorcycles,32.9,38.6,,4.8,22.8
+115,0 - 9,17.7,56.5,2.9,4.1,18.9
+115,10 - 49,36.8,50.9,4.2,4.4,3.7
+115,100 - 249,32.6,53.5,5.1,7.0,1.8
+115,250 +,26.1,54.1,4.9,13.9,1.0
+115,50 - 99,36.6,52.2,3.9,5.4,1.8
+115,Accommodation and food service activities,36.3,50.4,1.0,8.1,4.2
+115,Administrative and support service activities,15.2,58.3,2.1,2.8,21.6
+115,All businesses,19.7,55.9,3.0,4.2,17.2
+115,All size bands excluding 0 - 9,36.5,51.2,4.2,4.7,3.4
+115,"Arts, entertainment and recreation",20.7,30.2,4.2,12.8,32.1
+115,Construction,18.7,56.8,3.5,4.4,16.7
+115,Education,13.6,67.7,6.1,6.6,6.0
+115,Human health and social work activities,36.1,48.5,7.2,,7.3
+115,Information and communication,22.7,56.0,3.5,2.0,15.7
+115,Manufacturing,18.9,46.9,6.3,4.1,23.8
+115,Other service activities,10.3,81.6,,4.0,3.9
+115,"Professional, scientific and technical activities",15.2,61.6,2.7,1.7,18.8
+115,Real estate activities,13.8,69.5,1.1,0.0,15.6
+115,Transportation and storage,15.7,49.1,3.1,3.4,28.7
+115,Wholesale and retail trade; repair of motor vehicles and motorcycles,21.1,53.4,2.6,6.3,16.5
+121,0 - 9,17.1,55.1,2.3,4.5,20.9
+121,10 - 49,32.0,56.0,4.9,4.2,2.9
+121,100 - 249,27.3,58.0,6.3,6.7,1.7
+121,250 +,23.0,57.7,4.6,13.5,1.1
+121,50 - 99,31.0,57.2,5.1,5.1,1.7
+121,Accommodation and food service activities,25.7,56.1,4.2,4.8,9.1
+121,Administrative and support service activities,21.9,46.6,2.4,4.7,24.5
+121,All businesses,18.7,55.2,2.6,4.5,19.0
+121,All size bands excluding 0 - 9,31.6,56.3,4.9,4.5,2.7
+121,"Arts, entertainment and recreation",21.2,33.2,4.2,4.4,37.0
+121,Construction,15.7,57.9,,7.4,18.1
+121,Education,23.5,58.8,11.4,,6.1
+121,Human health and social work activities,19.3,65.6,,10.3,4.6
+121,Information and communication,15.2,53.0,4.6,5.4,21.8
+121,Manufacturing,22.0,56.4,3.6,5.3,12.7
+121,Other service activities,20.0,59.7,3.1,5.8,11.5
+121,"Professional, scientific and technical activities",19.1,58.1,2.3,2.2,18.3
+121,Real estate activities,27.4,40.8,10.4,1.0,20.5
+121,Transportation and storage,12.2,48.4,,7.0,32.1
+121,Wholesale and retail trade; repair of motor vehicles and motorcycles,16.2,60.3,1.5,2.8,19.2
+127,0 - 9,20.5,51.0,3.4,4.0,21.2
+127,10 - 49,37.0,50.7,5.5,3.7,3.1
+127,100 - 249,30.3,55.2,5.7,7.8,1.0
+127,250 +,26.9,53.4,4.8,13.2,1.7
+127,50 - 99,33.9,54.1,5.6,4.9,1.4
+127,Accommodation and food service activities,33.1,46.1,3.4,9.0,8.4
+127,Administrative and support service activities,21.1,51.1,5.9,4.2,17.7
+127,All businesses,22.2,51.0,3.6,4.0,19.2
+127,All size bands excluding 0 - 9,36.3,51.3,5.5,4.1,2.8
+127,"Arts, entertainment and recreation",18.8,35.8,3.0,2.5,39.8
+127,Construction,20.0,49.6,7.1,4.4,18.9
+127,Education,27.5,43.1,14.7,,14.4
+127,Human health and social work activities,25.2,38.4,,,35.5
+127,Information and communication,16.9,48.9,2.8,5.3,26.0
+127,Manufacturing,24.3,56.8,1.7,1.2,16.0
+127,Other service activities,23.3,56.3,0.0,10.1,10.2
+127,"Professional, scientific and technical activities",18.8,53.1,4.6,1.2,22.3
+127,Real estate activities,28.4,45.6,,4.4,21.4
+127,Transportation and storage,35.7,45.7,,3.4,14.9
+127,Wholesale and retail trade; repair of motor vehicles and motorcycles,20.4,57.7,1.0,4.6,16.3
+133,0 - 9,35.6,34.4,1.6,5.7,22.7
+133,10 - 49,77.1,14.4,1.9,4.0,2.6
+133,100 - 249,74.1,16.1,2.1,6.4,1.3
+133,250 +,65.4,19.1,2.5,11.7,1.3
+133,50 - 99,78.9,14.4,2.4,3.1,1.2
+133,Accommodation and food service activities,73.8,13.2,,3.9,8.2
+133,Administrative and support service activities,47.0,32.4,,4.9,15.4
+133,All businesses,40.0,32.2,1.6,5.6,20.5
+133,All size bands excluding 0 - 9,77.0,14.6,2.0,4.1,2.4
+133,"Arts, entertainment and recreation",23.1,27.8,,15.2,33.8
+133,Construction,32.7,35.2,,5.1,26.1
+133,Education,45.0,32.1,7.4,,15.0
+133,Human health and social work activities,49.8,38.5,0.0,,11.1
+133,Information and communication,24.3,45.5,1.1,9.7,19.4
+133,Manufacturing,45.6,24.9,2.2,6.6,20.7
+133,Other service activities,31.0,38.1,7.3,10.3,13.4
+133,"Professional, scientific and technical activities",33.6,37.0,3.1,4.0,22.3
+133,Real estate activities,38.8,33.5,,0.0,27.6
+133,Transportation and storage,37.8,28.4,,9.4,24.3
+133,Wholesale and retail trade; repair of motor vehicles and motorcycles,43.2,29.0,1.5,4.9,21.4
+139,0 - 9,22.3,48.0,2.9,6.1,20.7
+139,10 - 49,49.1,39.2,4.0,4.3,3.4
+139,100 - 249,41.4,45.8,3.8,7.2,1.8
+139,250 +,37.5,44.8,3.7,12.6,1.4
+139,50 - 99,46.2,43.0,3.6,5.4,1.9
+139,Accommodation and food service activities,41.2,41.7,1.9,8.8,6.4
+139,Administrative and support service activities,23.7,46.4,2.9,5.4,21.6
+139,All businesses,25.1,47.1,3.0,5.9,18.9
+139,All size bands excluding 0 - 9,48.3,39.9,4.0,4.6,3.1
+139,"Arts, entertainment and recreation",12.0,47.6,2.1,15.0,23.3
+139,Construction,20.4,48.1,3.8,6.3,21.5
+139,Education,30.1,56.5,1.1,6.1,6.2
+139,Human health and social work activities,24.8,53.9,,5.5,15.1
+139,Information and communication,22.0,54.1,1.3,6.5,16.2
+139,Manufacturing,32.0,42.3,1.2,4.4,20.1
+139,Other service activities,17.0,50.8,4.5,13.7,14.0
+139,"Professional, scientific and technical activities",22.2,49.9,2.7,3.9,21.3
+139,Real estate activities,29.2,34.6,0.0,4.8,31.4
+139,Transportation and storage,20.6,43.5,2.4,4.5,28.9
+139,Wholesale and retail trade; repair of motor vehicles and motorcycles,29.0,44.4,5.7,4.2,16.8
+145,0 - 9,22.8,47.2,2.7,5.7,21.6
+145,10 - 49,35.6,51.5,4.7,4.5,3.7
+145,100 - 249,29.6,56.3,5.6,6.9,1.6
+145,250 +,23.8,55.2,4.9,14.7,1.5
+145,50 - 99,32.8,55.2,5.4,5.3,1.3
+145,Accommodation and food service activities,19.9,50.8,5.8,11.1,12.4
+145,Administrative and support service activities,24.6,49.7,1.6,4.4,19.7
+145,All businesses,24.0,47.7,2.9,5.6,19.7
+145,All size bands excluding 0 - 9,34.9,52.1,4.8,4.8,3.3
+145,"Arts, entertainment and recreation",18.9,29.7,2.8,16.3,32.3
+145,Construction,23.7,48.7,1.9,5.1,20.5
+145,Education,20.9,61.3,,6.3,11.1
+145,Human health and social work activities,34.7,35.6,4.9,5.6,19.3
+145,Information and communication,17.9,47.7,4.0,5.8,24.6
+145,Manufacturing,28.8,45.5,5.3,4.5,16.0
+145,Other service activities,36.3,46.7,,8.6,8.4
+145,"Professional, scientific and technical activities",21.9,49.4,3.3,2.7,22.7
+145,Real estate activities,21.0,41.4,,5.1,32.5
+145,Transportation and storage,34.5,49.6,,1.5,14.1
+145,Wholesale and retail trade; repair of motor vehicles and motorcycles,23.3,48.5,3.0,6.5,18.8
+151,0 - 9,22.3,46.5,2.4,5.7,23.1
+151,10 - 49,42.0,47.2,2.8,4.9,3.2
+151,100 - 249,32.4,53.8,4.8,7.5,1.5
+151,250 +,25.9,52.1,5.2,15.0,1.7
+151,50 - 99,36.3,51.2,4.3,6.1,2.2
+151,Accommodation and food service activities,27.6,55.2,2.3,4.4,10.5
+151,Administrative and support service activities,22.3,46.6,3.5,3.8,23.8
+151,All businesses,24.3,46.7,2.5,5.6,20.9
+151,All size bands excluding 0 - 9,40.8,47.9,3.0,5.2,3.0
+151,"Arts, entertainment and recreation",9.6,31.6,6.7,19.0,33.2
+151,Construction,25.2,45.3,1.6,6.9,21.0
+151,Education,41.5,51.3,,,6.3
+151,Human health and social work activities,26.8,44.3,4.8,5.7,18.4
+151,Information and communication,17.6,46.9,3.5,3.7,28.3
+151,Manufacturing,24.3,49.4,2.3,7.1,16.9
+151,Other service activities,35.3,46.9,0.0,3.0,14.8
+151,"Professional, scientific and technical activities",22.1,52.0,1.6,4.0,20.3
+151,Real estate activities,11.0,58.7,0.0,,29.5
+151,Transportation and storage,16.9,45.0,,11.5,26.3
+151,Wholesale and retail trade; repair of motor vehicles and motorcycles,29.9,39.8,3.7,5.3,21.3
+157,0 - 9,32.9,34.7,2.0,4.5,25.8
+157,10 - 49,66.3,22.6,2.5,5.3,3.2
+157,100 - 249,61.8,26.2,3.0,7.8,1.2
+157,250 +,54.4,26.8,3.5,13.9,1.3
+157,50 - 99,63.3,25.8,3.0,6.3,1.5
+157,Accommodation and food service activities,64.3,15.6,2.2,5.1,12.7
+157,Administrative and support service activities,36.8,31.8,,3.5,27.4
+157,All businesses,36.5,33.5,2.1,4.7,23.3
+157,All size bands excluding 0 - 9,65.5,23.2,2.6,5.8,2.9
+157,"Arts, entertainment and recreation",35.2,21.1,,6.4,37.0
+157,Construction,29.2,25.2,2.1,7.7,35.9
+157,Education,32.4,51.6,5.0,1.2,9.8
+157,Human health and social work activities,43.3,43.2,,1.0,12.1
+157,Information and communication,21.3,45.4,3.1,3.1,27.2
+157,Manufacturing,43.3,28.1,4.1,5.0,19.6
+157,Other service activities,60.0,33.0,2.3,,4.5
+157,"Professional, scientific and technical activities",26.4,47.8,3.6,2.9,19.2
+157,Real estate activities,21.2,49.1,0.0,,29.3
+157,Transportation and storage,37.0,20.1,,5.6,37.3
+157,Wholesale and retail trade; repair of motor vehicles and motorcycles,43.2,31.2,1.3,6.7,17.7
+163,0 - 9,22.2,47.0,1.3,3.2,26.2
+163,10 - 49,38.6,48.9,3.4,5.2,3.9
+163,100 - 249,32.8,52.8,3.2,9.5,1.7
+163,250 +,29.4,49.8,3.0,16.2,1.5
+163,50 - 99,34.7,53.0,3.5,6.6,2.3
+163,Accommodation and food service activities,35.3,44.6,2.4,7.2,10.5
+163,Administrative and support service activities,20.7,50.9,1.8,1.7,25.0
+163,All businesses,23.9,47.3,1.6,3.5,23.8
+163,All size bands excluding 0 - 9,37.7,49.5,3.4,5.8,3.6
+163,"Arts, entertainment and recreation",19.3,49.4,,11.3,19.4
+163,Construction,21.5,42.4,2.0,3.4,30.8
+163,Education,29.2,53.3,,1.3,16.0
+163,Human health and social work activities,10.9,58.6,,,29.6
+163,Information and communication,13.7,47.4,1.3,4.0,33.6
+163,Manufacturing,31.4,44.7,,3.5,19.7
+163,Other service activities,33.4,57.2,3.4,0.0,5.9
+163,"Professional, scientific and technical activities",23.0,49.8,1.9,2.0,23.3
+163,Real estate activities,28.7,42.9,,,27.7
+163,Transportation and storage,30.9,26.7,1.8,3.5,37.0
+163,Wholesale and retail trade; repair of motor vehicles and motorcycles,23.3,50.9,1.2,4.4,20.2

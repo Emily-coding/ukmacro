@@ -33,6 +33,15 @@
 - Comtrade (needs a free key → repo secret) for other countries' minerals trade.
 - Headline trade excluding precious metals.
 
+### BICS
+- Labour-market health indicators from outside BICS (BICS hasn't asked about
+  sickness since the pandemic): ONS inactivity due to long-term sickness, and the
+  ONS sickness absence estimates. These go in the labour-markets builder.
+- Pandemic-era questions that only exist in per-wave sheets (no time-series sheet)
+  aren't harvested. Add a per-wave parser only if one is needed.
+- Possible further series: prices paid and price expectations, main concern,
+  skills in high demand, variable hours contracts, support for unpaid carers.
+
 ### Infrastructure
 - A static preview page reading `data/*/index.json`.
 - Create the GitHub repo, push, and run each workflow once by hand

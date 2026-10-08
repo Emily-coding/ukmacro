@@ -1,0 +1,18 @@
+name: bics
+
+# BICS waves come out fortnightly on Thursdays at 07:00 UK time. A daily check is
+# cheap: the builder reads the wave list and only downloads waves it hasn't seen.
+
+on:
+  schedule:
+    - cron: "50 7 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/_refresh.yml
+    with:
+      category: bics

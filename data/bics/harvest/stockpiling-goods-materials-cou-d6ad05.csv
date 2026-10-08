@@ -1,0 +1,148 @@
+wave,breakdown,Industry/Size Band,Yes,No,Not sure
+24,Currently trading,,3.4,93.3,3.3
+24,Not permanently stopped trading,,3.4,93.3,3.3
+25,Currently trading,,4.1,93.1,2.8
+25,Not permanently stopped trading,,3.9,93.0,3.1
+25,Temporarily closed or paused trading,,3.2,92.6,4.2
+26,Currently trading,,3.5,94.0,2.6
+26,Not permanently stopped trading,,3.4,93.6,3.0
+26,Temporarily closed or paused trading,,3.1,92.3,4.5
+27,Currently trading,,3.2,94.4,2.3
+27,Not permanently stopped trading,,2.9,94.5,2.6
+27,Temporarily closed or paused trading,,1.6,94.7,3.7
+28,Currently trading,,4.2,92.4,3.4
+28,Not permanently stopped trading,,3.9,92.5,3.7
+28,Temporarily closed or paused trading,,2.7,92.8,4.5
+29,Currently trading,,3.5,92.7,3.8
+29,Not permanently stopped trading,,3.1,93.1,3.8
+29,Temporarily closed or paused trading,,1.1,95.0,3.9
+31,Currently trading,,3.2,92.4,4.4
+31,Not permanently stopped trading,,2.9,92.4,4.7
+31,Temporarily closed or paused trading,,2.1,92.3,7.1
+33,Currently trading,,4.0,91.8,4.2
+33,Not permanently stopped trading,,3.7,91.8,4.6
+33,Temporarily closed or paused trading,,0.0,91.5,8.5
+35,Currently trading,,4.7,91.2,4.0
+35,Not permanently stopped trading,,4.4,91.6,4.0
+35,Temporarily closed or paused trading,,1.2,95.4,3.4
+37,Currently trading,,4.3,90.8,4.9
+37,Not permanently stopped trading,,4.0,91.0,5.0
+37,Temporarily closed or paused trading,,0.0,93.6,6.4
+39,Currently trading,,5.3,90.0,4.8
+39,Not permanently stopped trading,,4.9,90.1,5.1
+39,Temporarily closed or paused trading,,0.0,91.3,8.7
+42,Currently trading,,5.1,91.4,3.5
+42,Not permanently stopped trading,,4.9,91.6,3.4
+42,Temporarily closed or paused trading,,0.0,98.3,1.6
+44,Currently trading,,5.8,90.1,4.1
+44,Not permanently stopped trading,,5.7,90.2,4.0
+44,Temporarily closed or paused trading,,5.1,91.6,3.4
+46,Currently trading,,4.8,91.2,4.1
+46,Not permanently stopped trading,,4.6,91.2,4.2
+46,Temporarily closed or paused trading,,2.2,92.3,5.5
+48,Currently trading,,4.4,90.8,4.9
+48,Not permanently stopped trading,,4.1,91.0,4.9
+48,Temporarily closed or paused trading,,4.8,93.8,6.0
+50,Currently trading,,4.3,91.3,4.4
+50,Not permanently stopped trading,,4.2,91.4,4.5
+50,Temporarily closed or paused trading,,1.4,92.6,6.0
+52,Currently trading,,6.1,88.6,5.3
+52,Not permanently stopped trading,,5.8,88.7,5.5
+55,Currently trading,,6.3,87.2,6.5
+55,Not permanently stopped trading,,6.1,87.4,6.5
+57,Currently trading,,6.2,86.1,7.7
+57,Not permanently stopped trading,,6.1,85.9,8.0
+59,Currently trading,,5.6,87.2,7.2
+59,Not permanently stopped trading,,5.5,87.4,7.1
+60,Currently trading,,6.1,85.9,7.9
+60,Not permanently stopped trading,,5.9,86.2,7.9
+63,Currently trading,,5.2,88.3,6.4
+63,Not permanently stopped trading,,5.0,88.2,6.8
+65,Currently trading,,5.4,85.7,8.9
+65,Not permanently stopped trading,,5.2,85.9,8.9
+67,Currently trading,,5.6,86.8,7.6
+67,Not permanently stopped trading,,5.4,87.1,7.5
+69,Currently trading,,5.7,84.8,9.5
+69,Not permanently stopped trading,,5.5,85.1,9.4
+71,Currently trading,,5.6,85.8,8.6
+71,Not permanently stopped trading,,5.4,86.1,8.5
+74,Currently trading,,6.8,84.5,8.7
+74,Not permanently stopped trading,,6.5,84.9,8.5
+76,Currently trading,,4.6,84.6,10.9
+76,Not permanently stopped trading,,4.4,84.3,11.3
+78,Currently trading,,5.5,87.0,7.5
+78,Not permanently stopped trading,,5.3,86.9,7.7
+80,Currently trading,,5.1,86.4,8.5
+80,Not permanently stopped trading,,5.1,86.3,8.6
+82,Currently trading,,4.1,88.3,7.5
+82,Not permanently stopped trading,,4.0,88.3,7.7
+84,Currently trading,,4.7,87.9,7.4
+84,Not permanently stopped trading,,4.6,88.1,7.4
+86,Currently trading,,4.1,88.4,7.5
+86,Not permanently stopped trading,,4.0,88.4,7.6
+89,Currently trading,,4.1,89.8,6.2
+89,Not permanently stopped trading,,3.9,89.9,6.2
+91,Currently trading,,4.4,89.5,6.0
+91,Not permanently stopped trading,,4.4,89.4,6.2
+93,Currently trading,,4.5,88.9,6.6
+93,Not permanently stopped trading,,4.3,88.9,6.8
+95,Currently trading,,3.8,87.8,8.4
+95,Not permanently stopped trading,,3.8,87.9,8.3
+97,Currently trading,,4.0,89.1,6.9
+97,Not permanently stopped trading,,3.9,89.1,7.0
+100,Currently trading,,3.6,89.6,6.9
+100,Not permanently stopped trading,,3.6,89.7,6.7
+105,Currently trading,,7.6,87.9,4.6
+105,Not permanently stopped trading,,7.5,88.0,4.4
+111,Currently trading,,8.5,87.5,4.0
+111,Not permanently stopped trading,,8.2,87.7,4.1
+117,Currently trading,,7.5,87.7,4.8
+117,Not permanently stopped trading,,7.3,87.9,4.8
+118,Currently trading,,8.5,86.5,4.9
+118,Not permanently stopped trading,,8.2,86.6,5.2
+120,Currently trading,,5.8,88.8,5.4
+120,Not permanently stopped trading,,5.6,88.8,5.6
+122,Currently trading,,6.3,87.7,6.0
+122,Not permanently stopped trading,,6.1,88.1,5.9
+124,Currently trading,,7.9,87.8,4.2
+124,Not permanently stopped trading,,7.6,88.2,4.2
+126,Currently trading,,6.6,88.5,4.9
+126,Not permanently stopped trading,,6.4,88.5,5.1
+128,Currently trading,,6.0,87.5,6.4
+128,Not permanently stopped trading,,5.8,87.9,6.3
+130,Currently trading,,7.1,87.1,5.8
+130,Not permanently stopped trading,,7.0,87.1,5.9
+132,Currently trading,,6.2,88.5,5.3
+132,Not permanently stopped trading,,6.0,88.5,5.5
+134,Currently trading,,7.7,86.4,5.9
+134,Not permanently stopped trading,,7.5,86.5,6.0
+136,Currently trading,,7.2,86.1,6.7
+136,Not permanently stopped trading,,6.9,85.8,7.3
+138,Currently trading,,7.0,87.6,5.4
+138,Not permanently stopped trading,,6.8,87.7,5.5
+140,Currently trading,,6.9,86.5,6.6
+140,Not permanently stopped trading,,6.8,86.5,6.7
+142,Currently trading,,6.7,86.6,6.7
+142,Not permanently stopped trading,,6.5,86.9,6.6
+144,Currently trading,,6.3,87.9,5.9
+144,Not permanently stopped trading,,6.1,88.0,5.9
+146,Currently trading,,6.4,86.9,6.6
+146,Not permanently stopped trading,,6.3,87.2,6.5
+148,Currently trading,,7.6,85.7,6.8
+148,Not permanently stopped trading,,7.3,85.7,7.0
+150,Currently trading,,6.9,87.6,5.4
+150,Not permanently stopped trading,,6.8,87.6,5.6
+152,Currently trading,,5.3,88.8,5.9
+152,Not permanently stopped trading,,5.1,88.9,6.0
+154,Currently trading,,7.6,86.9,5.5
+154,Not permanently stopped trading,,7.3,86.9,5.8
+156,Currently trading,,7.0,85.7,7.2
+156,Not permanently stopped trading,,7.0,85.8,7.2
+158,Currently trading,,6.9,88.1,5.0
+158,Not permanently stopped trading,,6.7,88.2,5.1
+160,Currently trading,,7.3,87.6,5.0
+160,Not permanently stopped trading,,7.1,87.5,5.3
+162,Currently trading,,7.3,85.7,7.0
+162,Not permanently stopped trading,,7.0,85.9,7.1
+164,Currently trading,,7.0,86.8,6.2
+164,Not permanently stopped trading,,6.9,86.9,6.1

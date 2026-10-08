@@ -1,0 +1,870 @@
+section,subsection,question,rotation,first_wave,last_wave,n_waves,waves
+Energy prices,Energy prices,How concerned is your business about energy prices?,Every wave,165,165,1,165
+Energy prices,Fuel prices,How concerned is your business about increases in fuel prices?,Every wave,165,165,1,165
+Environment,Climate change,"For which, if any, of the following effects of climate change has your business assessed risks?",Every 6 waves,165,165,1,165
+Environment,Climate change,"Which of the following effects of climate change, if any, has your business taken action to adapt to?",Every 6 waves,165,165,1,165
+Environment,Climate change,"Which of the following reasons, if any, have prevented your business from taking action against any of these climate change effects?",Every 6 waves,165,165,1,165
+Environment,Net-zero carbon emissions,Is your business concerned about the impact nature or biodiversity risks may have on the business?,Every 6 waves,165,165,1,165
+Environment,Net-zero carbon emissions,Is your business concerned about the impact climate change may have on the business?,Every 6 waves,165,165,1,165
+Environment,Net-zero carbon emissions,"Which of the following actions, if any, has your business taken to protect the environment?",Every 6 waves,165,165,1,165
+Environment,Net-zero carbon emissions,"Which of the following actions, if any, has your business taken to reduce carbon emissions?",Every 6 waves,165,165,1,165
+Environment,Net-zero carbon emissions,"What barriers, if any, prevent action being taken by your business to tackle environmental issues?",Every 6 waves,165,165,1,165
+Environment,Weather impact,"Which of the following severe weather events, if any, has your business been impacted by in the last 12 months?",Every 6 waves,165,165,1,165
+Environment,Weather impact,How has your business been impacted by severe weather events in the last 12 months?,Every 6 waves,165,165,1,165
+Exporting,Export,Has your business exported goods or services in the last 12 months?,Every other wave,165,165,1,165
+International trade,US tariffs,"What impact, if any, did the United States tariffs have on your business in the last month?",Every other wave,165,165,1,165
+Supply chain risk,Factors impacting supply chains,"Which of the following factors, if any, is your business concerned about impacting supply chains over the next 12 months?",Every other wave,165,165,1,165
+Supply chain risk,Factors impacting supply chains,How does your business expect these factors to impact supply chains?,Every other wave,165,165,1,165
+Supply chain risk,Supply chain resilience,"Which of the following actions, if any, did your business take to increase supply chain resilience in the last 12 months?",Every other wave,165,165,1,165
+Supply chain risk,Supply chain resilience,"Which of the following actions, if any, does your business plan to take to increase supply chain resilience over the next 12 months?",Every other wave,165,165,1,165
+Technology,Artificial Intelligence,"Which of the following artificial intelligence technologies, if any, does your business currently use?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,What does your business currently use artificial intelligence technologies for?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,To what extent does your business use artificial intelligence technologies in its business operations?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"Approximately, what proportion of your workforce, if any, currently use artificial intelligence technologies as part of their daily work?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,How did your business adopt these artificial intelligence technologies?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"In the last 12 months, what was the approximate value of your business’s investment in adopting artificial intelligence technologies?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"What roles, if any, have been most impacted by artificial intelligence technologies your business has adopted?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,What has been your business's approach to integrating artificial intelligence technology related skills into your workforce?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"What proportion of your workforce, if any, have received training in the use of artificial intelligence technologies?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"What impact, if any, have artificial intelligence technologies had on your business's overall workforce headcount?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"Which factors, if any, have influenced your use of artificial intelligence technologies in your business?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"Which of the following artificial intelligence technologies, if any, does your business plan to adopt within the next three months?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,What does your business plan to adopt artificial intelligence technologies for?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"What roles, if any, do you expect to be most impacted by any artificial intelligence technologies your business is planning to adopt in the next three months?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,What will be your business's approach to integrating your planned artificial intelligence technology related skills into your workforce?,Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"What impact, if any, do you expect the artificial intelligence technologies your business is planning to adopt will have on your overall workforce headcount?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"In the last three months, which of the following factors, if any, have prevented or delayed your business from adopting artificial intelligence technologies?",Every 6 waves,165,165,1,165
+Technology,Artificial Intelligence,"Which of the following, if any, regulatory concerns have prevented or delayed your business from adopting artificial intelligence technologies?",Every 6 waves,165,165,1,165
+Trading status,Trading,Which of the following statements best describes your business's trading status?,Every wave,165,165,1,165
+Comments,Comments,Please tell us anything else about your business's current situation relating to topics covered in this survey,Every wave,165,165,1,165
+Business Operations,Cash Reserves,How long do you expect your business's cash reserves will last?,Every other wave,102,164,19,102 104 106 108 110 112 114 116 123 129 135 141 147 154 156 158 160 162 164
+Business Operations,Concern,"Which of the following, if any, will be the main concern for your business in [month] [year]?",Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Business Operations,Debt,How much confidence does your business have that it will meet its current debt obligations?,Every 6 waves,103,164,14,103 109 115 123 129 135 141 147 154 156 158 160 162 164
+Business Operations,Insolvency,What is your business's risk of insolvency?,Every other wave,102,164,19,102 104 106 108 110 112 114 116 123 129 135 141 147 154 156 158 160 162 164
+Business Operations,Performance,"How would you describe your business’s overall performance in [month] [year], compared with the same calendar month last year?",Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Business Operations,Performance,How do you expect your business’s overall performance to change over the next 12 months?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Energy prices,Energy prices,How concerned is your business about energy prices?,Every wave,153,164,11,153 154 156 157 158 159 160 161 162 163 164
+Energy prices,Fuel prices,How concerned is your business about increases in fuel prices?,Every wave,157,164,8,157 158 159 160 161 162 163 164
+Prices,Bought/Sold,How did the prices of goods or services bought by your business in [month] [year] compare with the previous calendar month?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Prices,Bought/Sold,How did the prices of goods or services sold by your business in [month] [year] compare with the previous calendar month?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Prices,Bought/Sold,What are your business's expectations for the prices of goods or services sold in [month] [year]?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Prices,Bought/Sold,"Which of the following factors, if any, are causing your business to consider raising prices in [month] [year]?",Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Stock,Stock Levels,How did your business's stock levels of raw materials in [month] [year] compare with the previous calendar month?,Every other wave,117,164,25,117 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Stock,Stock Levels,How did your business's stock levels of finished goods in [month] [year] compare with the previous calendar month?,Every other wave,117,164,25,117 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Stock,Stockpiling,Is your business stockpiling any goods or materials?,Every other wave,105,164,27,105 111 117 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Supply chains,Global Supply Chains,Did your business experience any global supply chain disruption in [month] [year]?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Supply chains,Global Supply Chains,What was the main reason for global supply chain disruption?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Supply chains,UK Procurement,"Was your business able to get the materials, goods or services it needed from within the UK in [month] [year]?",Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Trade,Export/Import,Did your business export or import any goods or services in [month] [year]?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Trading status,Trading status,Which of the following statements best describes your business's trading status?,Every wave,102,164,63,102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164
+Turnover,Activity,How did your business’s turnover in [month] [year] compare with the previous calendar month?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Turnover,Activity,"Which of the following challenges, if any, are currently impacting your business's turnover?",Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Turnover,Activity,What are your business’s expectations for turnover in [month] [year]?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Turnover,Demand,How did your business’s domestic demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Turnover,Demand,How did your business’s international demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Workforce trends,Employees,What are your business’s expectations for the number of employees in [month] [year]?,Every other wave,102,164,32,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162 164
+Workforce trends,Recruitment,Did your business experience any difficulties recruiting employees in [month] [year]?,Every other wave,102,164,35,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 151 152 154 156 157 158 160 162 163 164
+Workforce trends,Worker shortages,Is your business currently experiencing a shortage of workers?,Every 6 waves,102,164,35,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 151 152 154 156 157 158 160 162 163 164
+Comments,Comments,Please tell us anything else about your business's current situation relating to topics covered in this survey,Every wave,102,164,63,102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164
+Exporting,Export,Has your business exported goods or services in the last 12 months?,Every other wave,107,163,19,107 113 119 125 131 137 139 141 143 145 147 149 151 153 155 157 159 161 163
+Importing,Import,Has your business imported goods or services in the last 12 months?,Every other wave,107,163,19,107 113 119 125 131 137 139 141 143 145 147 149 151 153 155 157 159 161 163
+International trade,US tariffs,"What impact, if any, did the United States tariffs have on your business in the last month?",Every other wave,131,163,17,131 133 135 137 139 141 143 145 147 149 151 153 155 157 159 161 163
+International trade,US tariffs,"What impact, if any, do you expect the United States tariffs to have on your business in the next month?",Every other wave,131,163,17,131 133 135 137 139 141 143 145 147 149 151 153 155 157 159 161 163
+Supply chain risk,Factors impacting supply chains,"Which of the following factors, if any, is your business concerned about impacting supply chains over the next 12 months?",Every other wave,117,163,12,117 123 129 135 141 147 153 155 157 159 161 163
+Supply chain risk,Factors impacting supply chains,How does your business expect these factors to impact supply chains?,Every other wave,117,163,12,117 123 129 135 141 147 153 155 157 159 161 163
+Supply chain risk,Supply chain resilience,"Which of the following actions, if any, did your business take to increase supply chain resilience in the last 12 months?",Every other wave,117,163,12,117 123 129 135 141 147 153 155 157 159 161 163
+Supply chain risk,Supply chain resilience,"Which of the following actions, if any, does your business plan to take to increase supply chain resilience over the next 12 months?",Every other wave,117,163,12,117 123 129 135 141 147 153 155 157 159 161 163
+Workforce management,Contracts/VHC,"Which of the following contract arrangements, if any, does your business currently use for workers?",Every 6 waves,157,163,2,157 163
+Workforce management,Substitution clauses,"In the last 12 months, has your business had substitution clauses in its contracts?",Every 6 waves,127,163,6,127 133 145 151 157 163
+Workforce management,Substitution clauses,"In the last 12 months, approximately what percentage of contractors have used substitution clauses to complete their work?",Every 6 waves,127,163,6,127 133 145 151 157 163
+Workforce management,Support for carers,"Does your business offer additional support to employees who are unpaid carers, beyond the statutory week of unpaid carer's leave?",Every 6 waves,133,163,5,133 135 145 149 163
+Workforce management,Support for carers,What additional support does your business offer to employees who are unpaid carers?,Every 6 waves,133,163,5,133 135 145 149 163
+Workforce management,Support for carers,"Approximately, how many days of paid carer’s leave does your business offer employees in a 12 month period?",Every 6 waves,163,163,1,163
+Workforce trends,Costs,How have your business’s staffing costs changed over the last three months?,Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,Costs,How does your business expect staffing costs to change over the next three months?,Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,Costs,How does your business plan to adapt to any future increases in employment costs?,Every 6 waves,117,163,8,117 127 133 139 145 151 157 163
+Workforce trends,Recruitment,Which of the following employees has your business had difficulties recruiting in [month] [year]?,Every 6 waves,109,163,10,109 115 121 127 133 139 145 151 157 163
+Workforce trends,Recruitment,Why did your business experience difficulties recruiting employees in [month] [year]?,Every 6 waves,109,163,10,109 115 121 127 133 139 145 151 157 163
+Workforce trends,Worker shortages,"Which of the following challenges, if any, has your business experienced due to a shortage of workers?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,Skills,"Which of the following skills, if any, has your business had a high demand for in the last 12 months?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,Skills,"Which of the following skills, if any, does your workforce require extra support or training in?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,Skills,"Which of the following skills, if any, do you expect your business to have a high demand for over the next 12 months?",Every 6 waves,157,163,2,157 163
+Workforce trends,Skills,What impact is not meeting skills demand likely to have on your business's growth over the next 12 months?,Every 6 waves,157,163,2,157 163
+Workforce trends,Skills,"Which types of training, if any, does your business provide to employees?",Every 6 waves,157,163,2,157 163
+Workforce trends,Skills,"Which of the following, if any, are barriers to your business providing more training to employees?",Every 6 waves,157,163,2,157 163
+Workforce trends,Wages,"On average, how did employees’ hourly wages in [month] [year] compare with employees’ hourly wages in the previous calendar month?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,WFH,"Is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,WFH,"Why is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Workforce trends,WFH,Why is your business not intending to use increased homeworking as a permanent business model going forward?,Every 6 waves,103,163,11,103 109 115 121 127 133 139 145 151 157 163
+Trade,Export/Import,"Did your business experience an increase in any of the following exporting challenges in [month] [year], compared with the previous calendar month?",Every other wave,102,162,31,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162
+Trade,Export/Import,"Did your business experience an increase in any of the following importing challenges in [month] [year], compared with the previous calendar month?",Every other wave,102,162,31,102 104 106 108 110 112 114 116 118 120 122 124 126 128 130 132 134 136 138 140 142 144 146 148 150 152 154 156 158 160 162
+Domestic trade,Sending goods GB to NI,Has your business sent goods from GB to Northern Ireland in the last 12 months?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,Sending goods GB to NI,"In [month] [year], how did the volume of goods your business sent from GB to Northern Ireland compare with the previous calendar month?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,Sending goods GB to NI,Please give more details about why the volume of goods sent from GB to Northern Ireland changed in [month] [year],Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,Sending goods NI to GB,Has your business sent goods from Northern Ireland to GB in the last 12 months?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,Sending goods NI to GB,"In [month] [year], how did the volume of goods your business sent from Northern Ireland to GB compare with the previous calendar month?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,Sending goods NI to GB,Please give more details about why the volume of goods sent from Northern Ireland to GB changed in [month] [year],Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,UK trade,"In the last 12 months, has your business purchased goods or services from suppliers in other UK nations?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,UK trade,"In the last 12 months, which of the following goods or services has your business purchased from suppliers in other UK nations?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,UK trade,"In the last 12 months, has your business sold goods or services to customers in other UK nations?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Domestic trade,UK trade,"In the last 12 months, which of the following challenges, if any, has your business experienced when selling goods or services to customers in other UK nations?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,Where has your business exported goods or services to in the last three months?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,Has your business had any extra costs directly related to changes in export regulations due to the end of the EU transition period?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,How did your business's exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,How did your business's cost of exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,How did the time spent on exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Export,"Which of the following support options has your business benefited from, to help with exporting challenges?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Rules of origin,Does your business currently meet the rules of origin to access preferential tariffs on exports?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Exporting,Rules of origin,Why does your business not currently meet the rules of origin to access preferential tariffs on exports?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,Where has your business imported goods or services from in the last three months?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,Has your business had any extra costs directly related to changes in import regulations due to the end of the EU transition period?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,How did your business's importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,How did your business's cost of importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,How did the time spent on importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Importing,Import,"Which of the following support options would your business benefit from, to help with importing challenges?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+International trade,EU trade,"Was your business able to get the materials, goods or services it needed from the EU in [month] [year]?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+International trade,EU trade,Does your business intend to open any new branches or subsidiaries in the EU in the next 12 months?,Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+International trade,US trade,"Was your business able to get the materials, goods or services it needed from the US in [month] [year]?",Every 6 waves,137,161,7,137 139 141 143 149 155 161
+International trade,US trade,Does your business intend to open any new branches or subsidiaries in the US in the next 12 months?,Every 6 waves,137,161,7,137 139 141 143 149 155 161
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Does your business manufacture, import or distribute products for the GB market that use a CE or UKCA marking?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Approximately, what proportion of the products your business manufactures, imports or distributes for the GB market currently use the UKCA marking instead of, or in addition to, the CE marking?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Approximately, what proportion of the products that your business intends to manufacture, import or distribute for the GB market on or after [month] [year] will use the UKCA marking instead of, or in addition to, the CE marking?",Every 6 waves,107,161,10,107 113 119 125 131 137 143 149 155 161
+Capital Expenditure,Capital expenditure,What are your business's expectations for capital expenditure between [month] [year] and [month] [year]?,Every 6 waves,105,160,11,105 111 117 118 124 130 136 142 148 154 160
+Capital Expenditure,Capital expenditure,Why is your business expecting to authorise capital expenditure between [month] [year] and [month] [year]?,Every 6 waves,105,160,11,105 111 117 118 124 130 136 142 148 154 160
+Capital Expenditure,Capital expenditure,"Which of the following, if any, do you expect to limit your business’s capital expenditure between [month] [year] and [month] [year]?",Every 6 waves,105,160,11,105 111 117 118 124 130 136 142 148 154 160
+Capital Expenditure,Full expensing,Did your business invest in plant and machinery between [month] [year] and [month] [year]?,Every 6 waves,105,160,11,105 111 117 118 124 130 136 142 148 154 160
+Capital Expenditure,Full expensing,Did your business use the full expensing capital allowance on qualifying plant and machinery investments between [month] [year] and [month] [year]?,Every 6 waves,105,160,11,105 111 117 118 124 130 136 142 148 154 160
+Energy prices,Energy prices,"Which of the following energy supplies, if any, does your business directly pay for?",Every other wave,153,160,5,153 154 156 158 160
+Energy prices,Energy prices,"Approximately, what proportion of your gas prices are currently fixed or hedged?",Every other wave,154,160,4,154 156 158 160
+Energy prices,Energy prices,"Approximately, what proportion of your electricity prices are currently fixed or hedged?",Every other wave,154,160,4,154 156 158 160
+Energy prices,Energy prices,When does your business expect your current gas energy contract to end?,Every other wave,154,160,4,154 156 158 160
+Energy prices,Energy prices,When does your business expect your current electricity energy contract to end?,Every other wave,154,160,4,154 156 158 160
+Energy prices,Energy prices,"Approximately, what proportion of your business’s total purchases of energy, materials, goods and services was accounted for by energy in [month][year]?",Every other wave,154,160,4,154 156 158 160
+Environment,Climate change,"For which, if any, of the following effects of climate change has your business assessed risks?",Every 6 waves,159,159,1,159
+Environment,Climate change,"Which, if any, of the following effects of climate change has your business taken action to adapt to?",Every 6 waves,159,159,1,159
+Environment,Climate change,"Which, if any, of the following reasons have prevented your business from taking action against any of these climate change effects?",Every 6 waves,159,159,1,159
+Environment,Net-zero carbon emissions,Is your business concerned about the impact nature or biodiversity risks may have on the business?,Every 6 waves,141,159,4,141 147 153 159
+Environment,Net-zero carbon emissions,"What barriers, if any, prevent action being taken by your business to tackle environmental issues?",Every 6 waves,141,159,4,141 147 153 159
+Environment,Net-zero carbon emissions,Is your business concerned about the impact climate change may have on the business?,Every 6 waves,159,159,1,159
+Environment,Net-zero carbon emissions,"Which of the following actions, if any, has your business taken to protect the environment?",Every 6 waves,159,159,1,159
+Environment,Net-zero carbon emissions,"Which of the following actions, if any, has your business taken to reduce carbon emissions?",Every 6 waves,159,159,1,159
+Environment,Weather impact,"Which of the following severe weather events, if any, has your business been impacted by in the last 12 months?",Every 6 waves,117,159,6,117 135 141 147 153 159
+Environment,Weather impact,How has your business been impacted by severe weather events in the last 12 months?,Every 6 waves,117,159,6,117 135 141 147 153 159
+Technology,Artificial Intelligence,"Which of the following artificial intelligence technologies, if any, does your business currently use?",Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,What does your business currently use artificial intelligence technologies for?,Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,How did your business adopt these artificial intelligence technologies?,Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,"Which of the following artificial intelligence technologies, if any, does your business plan to adopt within the next three months?",Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,What does your business plan to adopt artificial intelligence technologies for?,Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,"In the last three months, which of the following factors, if any, have prevented or delayed your business from adopting artificial intelligence technologies?",Every 6 waves,105,159,10,105 111 117 123 129 135 141 147 153 159
+Technology,Artificial Intelligence,"What roles, if any, have been most impacted by artificial intelligence technologies your business has adopted?",Every 6 waves,141,159,4,141 147 153 159
+Technology,Artificial Intelligence,"Which factors, if any, have influenced your use of artificial intelligence technologies in your business?",Every 6 waves,147,159,3,147 153 159
+Technology,Artificial Intelligence,What has been your business's approach to integrating artificial intelligence technology related skills into your workforce?,Every 6 waves,147,159,3,147 153 159
+Technology,Artificial Intelligence,"Which of the following, if any, regulatory concerns have prevented or delayed your business from adopting artificial intelligence technologies?",Every 6 waves,147,159,3,147 153 159
+Technology,Artificial Intelligence,"What impact, if any, have artificial intelligence technologies had on your business's overall workforce headcount?",Every 6 waves,141,159,4,141 147 153 159
+Technology,Artificial Intelligence,"What roles, if any, do you expect to be most impacted by any artificial intelligence technologies your business is planning to adopt in the next three months?",Every 6 waves,141,159,4,141 147 153 159
+Technology,Artificial Intelligence,What will be your business's approach to integrating your planned artificial intelligence technology related skills into your workforce?,Every 6 waves,141,159,4,141 147 153 159
+Technology,Artificial Intelligence,To what extent does your business use artificial intelligence technologies in its business operations?,Every 6 waves,159,159,1,159
+Technology,Artificial Intelligence,"Approximately, what proportion of your workforce, if any, currently use artificial intelligence technologies as part of their daily work?",Every 6 waves,159,159,1,159
+Technology,Artificial Intelligence,"In the last 12 months, what was the approximate value of your business’s investment in adopting artificial intelligence technologies?",Every 6 waves,159,159,1,159
+Technology,Artificial Intelligence,"What proportion of your workforce, if any, have received training in the use of artificial intelligence technologies?",Every 6 waves,159,159,1,159
+Technology,Artificial Intelligence,"What impact, if any, do you expect the artificial intelligence technologies your business is planning to adopt will have on your overall workforce headcount?",Every 6 waves,141,159,4,141 147 153 159
+UK economy outlook,Confidence,How much confidence does your business have that the UK business environment will create favourable conditions for investment in the next 12 months?,Every 6 waves,107,159,10,107 113 119 125 131 137 143 147 153 159
+UK economy outlook,Confidence,How much confidence does your business have that the UK economy will grow in the next 12 months?,Every 6 waves,107,159,10,107 113 119 125 131 137 143 147 153 159
+UK economy outlook,Confidence,How much confidence do you have in your business’s outlook for growth over the next 12 months?,Every 6 waves,107,159,10,107 113 119 125 131 137 143 147 153 159
+Technology,Cloud computing services,"Which of the following, if any, does your business use cloud computing services for?",Every 6 waves,157,157,1,157
+Technology,Cloud computing services,Does your business pay for access to cloud based software?,Every 6 waves,157,157,1,157
+Technology,Cloud computing services,"For accounting purposes, how does your business usually record spending on cloud based software that is used for more than one year?",Every 6 waves,157,157,1,157
+Technology,Cloud computing services,"In the last 12 months, has your business purchased data from an external organisation?",Every 6 waves,157,157,1,157
+Technology,Cloud computing services,"At the time of purchase, was your business the only organisation with the right to use the data?",Every 6 waves,157,157,1,157
+Comments,Occupational Groups,Which of the following occupational groups best represents your position at your business?,Once a year,121,157,2,121 157
+Supply chain risk,Utilities,Are your business's gas prices fixed or hedged?,One-off,153,153,1,153
+Supply chain risk,Utilities,Are your business's electricity prices fixed or hedged?,One-off,153,153,1,153
+Workforce management,Changes to contracts,Has your business made permanent changes to any employees’ employment contracts in the last 12 months?,Every 6 waves,133,151,4,133 135 145 151
+Workforce management,Changes to contracts,How did your business change employees’ employment contract in the last 12 months?,Every 6 waves,133,151,4,133 135 145 151
+Workforce management,Collective redundancy,Has your business gone through a collective redundancy consultation in the last 12 months?,Every other wave,121,151,7,121 123 125 127 133 145 151
+Workforce management,Collective redundancy,"Approximately, how many redundancies did your business make following this collective redundancy consultation process?",Every other wave,121,151,7,121 123 125 127 133 145 151
+Workforce management,Collective redundancy,"Approximately, how many redundancies was your business considering before the collective redundancy consultation process?",Every other wave,121,151,7,121 123 125 127 133 145 151
+Workforce management,Contracts/VHC,Does your business currently employ anyone on any of the following contracts?,Every 6 waves,121,151,6,121 127 133 139 145 151
+Workforce management,Contracts/VHC,"Approximately, what percentage of your business's workforce is employed under a variable hours contract?",Every 6 waves,121,151,6,121 127 133 139 145 151
+Workforce management,Labour market / Probation,Does your business have a probation policy in place for new employees?,Every 6 waves,117,151,7,117 121 127 133 139 145 151
+Workforce management,Labour market / Probation,How long is a typical probationary period for new employees at your business?,Every 6 waves,117,151,7,117 121 127 133 139 145 151
+Workforce management,TUPE,Has your business gone through the Transfer of Undertakings (Protection of Employment) process in the last five years?,Every 6 waves,123,151,6,123 127 129 133 145 151
+Workforce management,TUPE,"Approximately, how often has your business gone through the Transfer of Undertakings (Protection of Employment) process in the last five years?",Every 6 waves,123,151,6,123 127 129 133 145 151
+Workforce management,TUPE,"Approximately, what percentage of your employees were transferred by Transfer of Undertakings (Protection of Employment) the last time your business went through the process?",Every 6 waves,123,151,6,123 127 129 133 145 151
+Workforce management,Working Time Regulation,"Approximately, what percentage of your business's workforce are currently opted out of the Working Time Regulation?",Every 6 waves,127,151,4,127 133 145 151
+International trade,Freeports,Does your business plan to import or export goods to or from UK Freeports in the next 12 months?,Annual,149,149,1,149
+International trade,Freeports,Why is your business not planning to import or export goods from UK Freeports within the next 12 months?,Annual,149,149,1,149
+Workforce management,Pregnancy loss,"What types of support, if any, does your business offer to employees affected by a pregnancy loss before 24 weeks?",One-off,149,149,1,149
+Workforce management,Redundancy,"Approximately, how many staff within your business's workforce have been made redundant in the past 12 months?",One-off,147,147,1,147
+Workforce management,Redundancy,How do your business's redundancy payments typically compare to the statutory minimum pay?,One-off,147,147,1,147
+Workforce management,Variable hours,"In the last six months, how often has your business had to change work schedules with less than one week's notice due to sudden changes in customer demand?",One-off,147,147,1,147
+Workforce management,Variable hours,How often does your business carry out a workforce planning cycle?,One-off,147,147,1,147
+Workforce management,Variable hours,"Approximately, how many total staff hours does your business spend on workforce planning during each planning cycle?",One-off,147,147,1,147
+Workforce management,Variable hours,"Which of the following type of digital tools, if any, does your business use for workforce planning?",One-off,147,147,1,147
+Cryptocurrency,Assets,Does your business currently hold any cryptocurrencies as part of its assets?,Every 6 waves,121,145,2,121 145
+Cryptocurrency,Transactions,"Has your business used, accepted, or conducted any transactions involving cryptocurrencies in the last 12 months?",Every 6 waves,121,145,2,121 145
+Business Operations,Operational level,"In the last 12 months, approximately what percentage of your business's total annual expenses were fixed costs?",One-off,139,139,1,139
+Business Operations,Operational level,"In the last 12 months, has your business experienced any change in the volume of goods produced, or services provided?",One-off,139,139,1,139
+Business Operations,Operational level,"What effect, if any, has this change had on your business's average cost per unit?",One-off,139,139,1,139
+Business Operations,Operational level,At what geographical level does your business primarily operate?,One-off,139,139,1,139
+Business Operations,Operational level,How many locations does your business currently operate from?,One-off,139,139,1,139
+Business Operations,Operational level,"In the last 12 months, how were prices for your business's goods or services set?",One-off,139,139,1,139
+Business Operations,Operational level,How do your business's prices vary across different locations?,One-off,139,139,1,139
+Business Operations,Operational level,Does your business conduct any online sales?,One-off,139,139,1,139
+Business Operations,Operational level,Has your business developed any new or significantly improved goods or services in the last 12 months?,One-off,139,139,1,139
+Business Operations,Operational level,Has your business implemented any new or significantly improved production techniques in the last 12 months?,One-off,139,139,1,139
+Market positioning,Market competition,"In the last 12 months, how intense has competition been in your business's market?",One-off,139,139,1,139
+Market positioning,Market competition,"Approximately, how many other businesses currently offer similar goods or services to your business?",One-off,139,139,1,139
+Market positioning,Market competition,"For your business's main good or service, how many suppliers could provide the key input?",One-off,139,139,1,139
+Market positioning,Market competition,"In the last 12 months, how important has maintaining low prices been to your business’s ability to remain competitive?",One-off,139,139,1,139
+Market positioning,Market competition,"Which of the following factors, if any, would make it difficult for startups to succeed in your industry?",One-off,139,139,1,139
+Market positioning,Market strategy,To what extent can your business’s goods or services be customised to meet individual needs?,One-off,139,139,1,139
+Market positioning,Market strategy,Which of the following best describes the overall market positioning of your business’s goods or services?,One-off,139,139,1,139
+Technology,Data Analysis,"Which of the following types of data analysis, if any, does your business use to support its operations?",One-off,139,139,1,139
+Workforce management,Changes to contracts,"In the last 12 months, what percentage of your business's workforce were dismissed and rehired with new employment contract terms?",Every other wave,133,133,1,133
+Workforce management,Changes to contracts,"In the last 12 months, what percentage of your business's workforce were dismissed and replaced with new employees on new employment contract terms?",Every other wave,133,133,1,133
+Private equity funding,Private equity funding,Is your business currently either fully or partly owned by a private equity firm or fund?,One-off,123,123,1,123
+Private equity funding,Private equity funding,Has your business ever received private equity funding?,One-off,123,123,1,123
+Workforce management,Contracts/VHC,Does your business employ anyone on a variable hours contract?,Every 6 waves,117,117,1,117
+Business Operations,Industrial action,Was your business affected by industrial action in [month] [year]?,Every 6 waves,103,115,3,103 109 115
+Business Operations,Industrial action,How was your business affected by industrial action in [month] [year]?,Every 6 waves,103,115,3,103 109 115
+Workforce trends,Redundancies,Does your business expect to make any of your workforce redundant over the next three months?,Every 6 waves,103,115,3,103 109 115
+Workforce trends,Redundancies,When do you expect these redundancies to happen?,Every 6 waves,103,115,3,103 109 115
+Workforce trends,Redundancies,Why is your business making these redundancies?,Every 6 waves,103,115,3,103 109 115
+Prices,Input prices,How much of your business's input price increases have been passed on to customers over the last six months?,One-off,102,102,1,102
+Trading Status,,Which of the following statements best describes your business's trading status?,Every wave,54,101,48,54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101
+Exporting,Activity,Which of the following statements best describes your business's exporting status?,Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Activity,Has your business exported goods or services in the last 12 months?,Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+,Activity,Where has your business exported goods or services to in the last three months?,Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+,Activity,Has your business had any extra costs directly related to changes in export regulations due to the end of the EU transition period?,TBC,101,101,1,101
+,Activity,How did your business's exporting in [month] [year] compare with this calendar month last year?,Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Challenges,"Did your business experience an increase in any of the following exporting challenges in [month] [year], compared with the previous calendar month?",Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Challenges,"Which of the following support options has your business benefitted from, to help with exporting challenges?",Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+Importing,Activity,Which of the following statements best describes your business's importing status?,Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Activity,Has your business imported goods or services in the last 12 months?,Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+,Activity,Where has your business imported goods or services from in the last three months?,Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+,Activity,Has your business had any extra costs directly related to changes in import regulations due to the end of the EU transition period?,TBC,101,101,1,101
+,Activity,How did your business's importing in [month] [year] compare with this calendar month last year?,Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Challenges,"Did your business experience an increase in any of the following importing challenges in [month] [year], compared with the previous calendar month?",Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Challenges,"Which of the following support options would your business benefit from, to help with importing challenges?",Every 6 waves,56,101,9,56 63 68 73 79 85 90 96 101
+,Changes,Changes,Every 6 waves,54,101,10,54 61 62 66 72 77 83 90 96 101
+,Changes,"Was your business able to get the materials, goods or services it needed from within the UK in [month] [year]?",Every other wave,54,101,26,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 99 101
+,Global Supply Chains,Did your business experience any global supply chain disruption in [month] [year]?,Every other wave,54,101,25,54 56 58 61 62 63 64 66 68 70 73 75 77 79 81 83 85 88 90 92 94 96 98 99 101
+,Global Supply Chains,What was the main reason for global supply chain disruption?,Every 4 waves,63,101,12,63 66 70 73 77 81 85 88 90 94 98 101
+,Shortages,Is your business currently experiencing a shortage of workers?,Every other wave,54,101,24,54 56 58 61 62 63 64 66 70 72 73 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Shortages,How has the shortage of workers affected your business?,Every other wave,54,101,24,54 56 58 61 62 63 64 66 70 72 73 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Wages,"On average, how did employees’ hourly wages in [month] [year] compare with employees’ hourly wages in the previous calendar month?",Every other wave,61,101,20,61 62 65 68 70 72 75 77 79 81 83 85 87 90 92 94 96 98 99 101
+,Redundancies,Does your business expect to make any of your workforce redundant over the next three months?,Every 6 waves,57,101,8,57 65 72 79 85 90 96 101
+,Redundancies,When do you expect these redundancies to happen?,Every 6 waves,57,101,8,57 65 72 79 85 90 96 101
+,Redundancies,Why is your business making these redundancies?,Every 6 waves,57,101,8,57 65 72 79 85 90 96 101
+,Site closures,Is your business intending to permanently close any business sites in the next three months?,Every 8 waves,57,101,7,57 65 73 81 88 96 101
+,Site closures,Where in the UK are the sites that will permanently close in the next three months?,Every 8 waves,57,101,7,57 65 73 81 88 96 101
+,Site closures,How do you expect closing these sites to affect your workforce?,Every 8 waves,57,101,7,57 65 73 81 88 96 101
+Workforce Characteristics,,How has the number of workers from within the EU at [Ru Name] changed compared with this calendar month last year?,Every 6 waves,59,101,8,59 66 71 76 82 89 95 101
+,,How has the number of workers from outside the EU at your business changed compared with this calendar month last year?,Every 6 waves,59,101,8,59 66 71 76 82 89 95 101
+Industrial Action,,Was your business affected by industrial action in [month] [year]?,Every other wave,61,101,21,61 62 63 65 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 101
+,,How was your business affected by industrial action in [month] [year]?,Every other wave,61,101,21,61 62 63 65 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 101
+,Comments,Please tell us anything else about your business's current situation relating to topics covered in this survey,Every wave,54,101,48,54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101
+Turnover,Activity,How does your business’s turnover in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Activity,"Which of the following challenges, if any, are currently impacting your business's turnover?",Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Activity,What are your business’s expectations for turnover in [month] [year]?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Concern,"Which of the following, if any, will be the main concern for your business in [month] [year]?",Every other wave,54,100,25,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 95 97 100
+Prices,Bought/Sold,How did the prices of goods or services bought by your business's in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Bought/Sold,How did the prices of goods or services sold by your business in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Bought/Sold,What are your business's expectations for prices of goods or services sold in [month] [year]?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Bought/Sold,"Which of the following factors, if any, are causing your business to consider raising prices in [month] [year]?",Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Demand,How does your business’s domestic demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Demand,How does your business’s international demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Wholesale energy,Has your business been affected by recent increases in energy prices?,Every other wave,54,100,23,54 55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+Stock,Stock Levels,How does your business's stock levels of raw materials in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Stock Levels,How does your business's stock levels of finished goods in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Stockpiling,Is your business stockpiling any goods or materials?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Capital expenditure,What are your business's expectations for capital expenditure over the next three months?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Capital expenditure,Why is your business expecting to authorise capital expenditure in [month] [year]?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Capital expenditure,"Which of the following, if any, do you expect to limit your business’s capital expenditure in [month] [year]?",Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Full expensing,Did your business invest in plant and machinery between [month] and [month] [year]?,Quarterly,86,100,3,86 93 100
+,Full expensing,Did your business use the full expensing capital allowance on qualifying plant and machinery investments between [month] and [month] [year]?,Quarterly,86,100,3,86 93 100
+Workforce,Trends,"In [month] [year], approximately what percentage of your business's workforce were:",Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Trends,How does the number of employees at your business in [month] [year] compare with the previous calendar month?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Trends,What are your business’s expectations for the number of employees in [month] [year]?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Staff Costs Trends,How has your business’s staffing costs changed over the last three months?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Staff Costs Trends,How does your business expect staffing costs to change over the next three months?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Recruitment,Did your business experience any difficulties recruiting employees in [month] [year]?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Recruitment,Which of the following employees has your business had difficulties in recruiting?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Recruitment,Why did your business experience difficulties in recruiting employees?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+Business Confidence,Cash reserves,How long do you expect your business's cash reserves will last?,Quarterly,55,100,8,55 60 67 74 80 86 93 100
+,Debt,"In [month] [year], how did your business's debt repayments compare with turnover?",Every other wave,57,100,17,57 63 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Debt,How much confidence does your business have that it will meet its current debt obligations?,Every other wave,57,100,17,57 63 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Insolvency,What is your business's risk of insolvency?,Every other wave,57,100,17,57 63 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Performance,"How would you describe your business’s overall performance in [month] [year], compared with this calendar month last year?",Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Performance,How do you expect your business’s overall performance to change over the next 12 months?,Every other wave,55,100,22,55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97 100
+,Border Performance,How did your business's cost of exporting in [month] [year] compare with this calendar month last year?,Every 6 waves,58,99,8,58 64 70 75 81 87 94 99
+,Border Performance,How did the time spent on exporting in [month] [year] compare with this calendar month last year?,Every 6 waves,58,99,8,58 64 70 75 81 87 94 99
+,Border Performance,How did your business's cost of importing in [month] [year] compare with this calendar month last year?,Every 6 waves,58,99,8,58 64 70 75 81 87 94 99
+,Border Performance,How did the time spent on importing in [month] [year] compare with this calendar month last year?,Every 6 waves,58,99,8,58 64 70 75 81 87 94 99
+Intra-UK trade,Intra-flow,"In the last 12 months, has your business purchased goods or services from suppliers in other UK nations?",Every 6 waves,94,99,2,94 99
+,Intra-flow,"In the last 12 months, which of the following goods or services has your business purchased from suppliers in other UK nation",Every 6 waves,94,99,2,94 99
+,Intra-flow,"In the last 12 months, has your business sold goods or services to customers in other UK nations?",Every 6 waves,63,99,7,63 68 75 81 88 95 99
+,Intra-flow,"In the last 12 months, which of the following challenges, if any, has your business experienced when selling goods or services to customers in other UK nations?",Every 6 waves,63,99,7,63 68 75 81 88 95 99
+,Changes,"Was your business able to get the materials, goods or services it needed from the EU in [month] [year]?",Every 6 waves,54,99,9,54 56 63 70 75 81 88 94 99
+Sending Goods,NI to GB,Has your business sent goods from Northern Ireland to GB in the last 12 months?,Every 6 waves,58,99,8,58 64 70 75 81 88 94 99
+,NI to GB,"In [month] [year], how did the volume of goods your business sent from Northern Ireland to GB compare with the previous calendar month?",Every 6 waves,58,99,8,58 64 70 75 81 88 94 99
+,NI to GB,Please give more details about why the volume of goods sent from Northern Ireland to GB changed in [month] [year],Every 6 waves,58,99,8,58 64 70 75 81 88 94 99
+,GB to NI,Has your business's sent goods from GB to Northern Ireland in the last 12 months?,Every other,54,99,25,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 99
+,GB to NI,How did the volume of goods your business sent from GB to Northern Ireland compare with [next month] [year]?,Every other,54,99,25,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 99
+,GB to NI,Please give more details about why the volume of goods sent from GB to Northern Ireland changed in [month] [year],Every other,54,99,25,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 88 90 92 94 96 98 99
+Operational Performance,WFH,"Is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 4 waves,54,99,11,54 58 63 69 75 79 83 88 92 96 99
+,WFH,"Why is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 4 waves,54,99,10,54 58 69 75 79 83 88 92 96 99
+,WFH,Why is your business not intending to use increased homeworking as a permanent business model going forward?,Every 4 waves,54,99,10,54 58 69 75 79 83 88 92 96 99
+,Skills,"Which, if any, of the following skills has your business had a high demand for in the last 12 months?",Every 6 waves,58,99,7,58 69 75 81 87 94 99
+,Skills,"Which, if any, of the following skills does your workforce require extra support or training in?",Every 6 waves,58,99,7,58 69 75 81 87 94 99
+,Activity,"In [month] [year], did your business export to additional countries compared with this calendar month last year?",Quarterly [TBC],98,98,1,98
+,Activity,"In [month] [year], did your business import from additional countries compared with this calendar month last year?",Quarterly [TBC],98,98,1,98
+,AI,"Which, if any, of the following artificial intelligence technologies does your business currently use?",Quarterly,92,98,2,92 98
+,AI,What does your business currently use artificial intelligence technologies for?,Quarterly,92,98,2,92 98
+,AI,How did your business adopt these artificial intelligence technologies?,Quarterly,92,98,2,92 98
+,AI,"Which, if any, of the following artificial intelligence technologies does your business plan to adopt within the next 3 months?",Quarterly,92,98,2,92 98
+,AI,What does your business plan to adopt artificial intelligence technologies for?,Quarterly,92,98,2,92 98
+,AI,"In the last 3 months, which, if any, of the following factors have prevented or delayed your business in the adoption of artificial intelligence technologies?",Quarterly,92,98,2,92 98
+,Wholesale energy,"In which of the following ways, if any, has your business been affected by price rises?",Every other wave,54,97,22,54 55 57 59 60 63 65 67 69 71 74 76 78 80 82 84 86 89 91 93 95 97
+,,"Where in the UK are your sites temporarily or permanently closed, if any?",Every 6 waves,54,96,9,54 58 63 69 72 77 83 90 96
+,Activity,Have you changed where you have exported your goods or services to in the last three months?,Every 6 waves,56,96,8,56 63 68 73 79 85 90 96
+,Challenges,What was the main cause of these exporting challenges?,Every other wave,54,96,23,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96
+,Challenges,How much disruption to your business have these challenges caused?,Every 6 waves,56,96,8,56 63 68 73 79 85 90 96
+,Activity,Have you changed where you have sourced your imports of goods or services from in the last three months?,Every 6 waves,56,96,8,56 63 68 73 79 85 90 96
+,Challenges,What was the main cause of these importing challenges?,Every other wave,54,96,23,54 56 58 61 62 63 64 66 68 70 72 73 75 77 79 81 83 85 87 90 92 94 96
+,Challenges,How much disruption to your business have these challenges caused?,Every 6 waves,56,96,8,56 63 68 73 79 85 90 96
+UKCA,,"Does your business manufacture, import, or distribute products that require either a CE marking or a UKCA marking?",Every 6 waves,61,96,10,61 62 64 66 68 70 75 81 88 96
+,,To what extent is your business currently using UKCA marking for its products that require either a CE or a UKCA marking?,One-Off,96,96,1,96
+,,To what extent is your business planning to use UKCA marking in [month] [year] for its products that require either a CE or a UKCA marking?,One-Off,96,96,1,96
+Supply Chains,Changes,Has your business had any extra costs due to the end of the EU transition period?,Every 6 waves,54,96,9,54 61 62 66 72 77 83 90 96
+,Changes,How much disruption to your business have these challenges caused?,Every 6 waves,54,96,9,54 61 62 66 72 77 83 90 96
+,Stockpiling,Where is your business sourcing these stockpiled goods or materials from?,Every 6 waves,57,95,7,57 63 69 76 82 89 95
+,Stockpiling,Which of the following goods or materials is your business stockpiling?,Every 6 waves,57,95,7,57 63 69 76 82 89 95
+,Stockpiling,Where are the stockpiled goods or materials being stored?,Every 6 waves,57,95,7,57 63 69 76 82 89 95
+,,"Which of the following actions, if any, has your business taken to protect the environment?",Every 6 waves,59,95,7,59 66 71 76 82 89 95
+,,"Which of the following actions, if any, have you taken to reduce your business's carbon emissions?",Every 6 waves,59,95,7,59 66 71 76 82 89 95
+,,Is [Ru Name] concerned about the impact climate change may have on the business?,Every 6 waves,66,95,6,66 71 76 82 89 95
+,,"Which of the following barriers, if any, have prevented your business from taking action to reduce its carbon emissions?",TBC,95,95,1,95
+,,To what extent are climate change impacts considered in your business's investment plans?,TBC,95,95,1,95
+,Rules of Origin,Does your business currently use rules of origin to access lower or zero tariffs on exports?,Every 6 waves,54,94,9,54 61 62 66 72 77 83 87 94
+,Rules of Origin,How has using rules of origin when exporting to the EU changed the amount of administration for your business?,Every 6 waves,54,94,9,54 61 62 66 72 77 83 87 94
+,Rules of Origin,Why does your business not currently use rules of origin to access lower or zero tariffs?,Every 6 waves,54,94,9,54 61 62 66 72 77 83 87 94
+,Capital Scrappage,Did your business scrap any capital assets earlier than intended in [month] [year]?,Every 6 waves,55,93,6,55 60 67 74 80 93
+,Capital Scrappage,Please explain in more detail what type of assets your business scrapped early and why,Every 6 waves,55,93,6,55 60 67 74 80 93
+Freeports,,Does your business plan to import or export goods to or from UK freeports in the next 12 months?,One-Off,92,92,1,92
+,,Why is your business not planning to import or export goods to or from UK freeports in the next 12 months?,One-Off,92,92,1,92
+,WFH trends,"On average, how many days a week do your business's employees currently work from home?",One-Off,63,92,2,63 92
+,WFH trends,What are your business's expectations for the number of days a week employees will work from home in the next 12 months?,One-Off,63,92,2,63 92
+,,Is your business aware that most CE marked products need to be UKCA marked from 1 [month] [year]?,Every 6 waves,61,88,9,61 62 64 66 68 70 75 81 88
+,,"Is your business using, or intending to use, the UKCA marking by 1 [month] [year]?",Every 6 waves,61,88,9,61 62 64 66 68 70 75 81 88
+,,Why is your business not currently using the UKCA marking?,One-Off,88,88,1,88
+Environmental action,,"For which, if any, of the following effects of climate change has your business assessed risks?",One-Off,88,88,1,88
+,,"Which, if any, of the following effects of climate change has your business taken action to adapt to?",One-Off,88,88,1,88
+,,"Which, if any of the following reasons have prevented your business from taking action against any of these climate change effects?",One-Off,88,88,1,88
+,Employment contracts,"Which of the following agreements, if any, does your business use in contracts of employment for current employees?",One-Off,87,87,1,87
+,Employment contracts,"Approximately, what percentage of your business's current employees have these agreements in their contracts of employment?",One-Off,87,87,1,87
+,Employment contracts,"In the last 12 months, has your business had any job applicants with one of these agreements in their current or most recent roles?",One-Off,87,87,1,87
+,Super-deduction,Did your business invest in capital expenditure between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Super-deduction,Did your business use the super-deduction incentive between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Super-deduction,How did the super-deduction incentive affect your business's expected capital expenditure between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Super-deduction,"Approximately, how much higher was your business's level of total capital expenditure between 1 [month] [year] and 31 [month] [year]?",One-Off,86,86,1,86
+,Super-deduction,"Approximately, how much of this higher capital expenditure was brought forward from future years after [month] [year] because of the super-deduction incentive?",One-Off,86,86,1,86
+,Full expensing,Does your business expect to invest in capital expenditure between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Full expensing,Does your business expect to use the three-year full expensing capital allowance between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Full expensing,How does your business expect the full expensing capital allowance to affect your business's capital expenditure between 1 [month] [year] and 31 [month] [year]?,One-Off,86,86,1,86
+,Full expensing,"Approximately, how much higher does your business expect the level of total capital expenditure to be between 1 [month] [year] and 31 [month] [year]?",One-Off,86,86,1,86
+,Full expensing,"Approximately, how much of this higher capital expenditure will be brought forward from future years, after [month] [year] because of the full expensing capital allowance?",One-Off,86,86,1,86
+Artificial Intelligence,AI,Does your business currently use any of the following artificial intelligence applications?,One-Off,80,80,1,80
+,AI,Does your business plan to use any of the following artificial intelligence applications?,One-Off,80,80,1,80
+,AI,"What does your business currently use, or plan to use, artificial intelligence applications for?",One-Off,80,80,1,80
+,CPI,"Approximately, what does your business think the current annual CPI inflation rate is in the UK?",TBC,71,76,3,71 74 76
+,CPI,"Approximately, what does your business expect the annual CPI inflation rate will be in the UK 12 months from now?",TBC,71,76,3,71 74 76
+,CPI,"Approximately, what does your business expect the annual CPI inflation rate will be in the UK three years from now?",TBC,71,76,3,71 74 76
+,Cashflow,"What change, if any, has your business seen in the number of late payments from customers over the last 6 months?",TBC,76,76,1,76
+,Passing costs,How much of your business's input price increases have been passed on to customers over the last 6 months?,TBC,76,76,1,76
+,Costs,"What actions, if any, has your business taken to reduce energy costs in the last three months?",TBC,68,75,2,68 75
+,Costs,"What actions, if any, does your business plan to take to reduce your energy costs in the next three months?",TBC,68,75,2,68 75
+,Costs,Why is your business not planning to take action to reduce energy costs in the next three months?,TBC,75,75,1,75
+,Safety,"Is your business using, or intending to use, any of the following safety measures in the workplace?",Discontinued,54,72,6,54 61 62 67 70 72
+,Safety,Is your business providing regular coronavirus (COVID-19) testing for its workforce?,Discontinued,54,72,6,54 61 62 67 70 72
+,Safety,What percentage of your workforce are receiving regular coronavirus (COVID-19) testing?,Discontinued,54,72,6,54 61 62 67 70 72
+,Interest rates,How much of your business’s existing debt is exposed to interest rate changes?,One-Off,71,71,1,71
+,Interest rates,What percentage of your business's existing debt do you expect to refinance in the next 12 months?,One-Off,71,71,1,71
+,Interest rates,How are you expecting your business's amount of borrowing to change in the next 12 months?,One-Off,71,71,1,71
+,Census,"Does your business use, or plan to use, the England and Wales census results as part of your business decisions or planning?",One-Off,71,71,1,71
+,Costs,To what extent has your business already passed through higher costs to prices?,One-Off,66,69,2,66 69
+,KWh price,What price per KWh does your business expect to pay for gas from 1 [month] [year]?,One-Off,69,69,1,69
+,KWh price,When does your business expect the gas contract to end?,One-Off,69,69,1,69
+,KWh price,What price per KWh does your business expect to pay for electricity from 1 [month] [year]?,One-Off,69,69,1,69
+,KWh price,When does your business expect the electricity contract to end?,One-Off,69,69,1,69
+,Survival,How much confidence does your business have that it will survive the next three months?,One-off,69,69,1,69
+,,"Overall, how prepared is your business for the mandatory use of UKCA marking for most CE marked products from 1 [month] [year]?",One-Off,66,66,1,66
+Energy,Contract type,Are your business's electricity prices fixed or hedged?,Discontinued,64,66,2,64 66
+,Contract type,Are your business's gas prices fixed or hedged?,Discontinued,64,66,2,64 66
+,Costs,How frequently does your business pay its gas bills?,One-Off,66,66,1,66
+,Contracts,How much do you expect your business's gas bill to increase once your fixed contract ends?,One-Off,66,66,1,66
+,Contracts,"If your business had a fixed price contract for gas end within the last 12 months, what were the new arrangements made with your supplier?",One-Off,66,66,1,66
+,Costs,How frequently does your business pay its electricity bills?,One-Off,66,66,1,66
+,Contracts,How much do you expect your business's electricity bill to increase once your fixed contract ends?,One-Off,66,66,1,66
+,Contracts,"If your business had a fixed price contract for electricity end within the last 12 months, what were the new arrangements made with your supplier?",One-Off,66,66,1,66
+,Bought/Sold,"On average, how much did the prices of goods or services sold by your business increase in [month] [year], compared with the previous calendar month?",Ad-hoc,65,65,1,65
+,Management,"In which of the following ways, if any, is your business currently improving its management practices?",One-Off,64,64,1,64
+,Management,What is currently the main challenge for improving the way your business is managed?,One-Off,64,64,1,64
+,Online sales,"Approximately, what percentage of your business's turnover came from online sales in [month] [year]?",One-Off,63,63,1,63
+,Online sales,What are your business's expectations for the percentage of turnover from online sales in the next 12 months?,One-Off,63,63,1,63
+,Changes,Has your business moved any operations from the UK to the EU in the last 12 months?,One-Off,63,63,1,63
+Research and Development,,Did [Ru Name] carry out any in-house Research and Development in [year]?,One-Off,63,63,1,63
+,,"For your in-house R&D in [year], has your business submitted, or does it intend to submit, a claim for R&D tax credits?",One-Off,63,63,1,63
+,Wages,How did existing employees' average hourly wages in [month] [year] compare with the previous calendar month?,One-Off,61,62,2,61 62
+,Wages,Has your business provided employees with a one-off cost of living payment?,One-Off,61,62,2,61 62
+,,Have any of the following been used to assess the impact of climate change on your business's ability to operate?,TBC,59,59,1,59
+,Challenges,Did your business experience any challenges with exporting goods or services in [month] [year]?,One-Off,58,58,1,58
+,Challenges,Please explain in more detail the main cause of these exporting challenges,One-Off,58,58,1,58
+,Challenges,Did your business experience any challenges with importing in [month] [year]?,One-Off,58,58,1,58
+,Challenges,Please explain in more detail the main cause of these importing challenges,One-Off,58,58,1,58
+,Global Supply Chains,Please give more details about how your business has been affected by global supply chain disruption,Ad-hoc,54,58,2,54 58
+Innovation,,How has [Ru Name]'s innovation changed since [month] [year]?,One-Off,56,56,1,56
+,,"In which of the following areas, if any, did your business increase innovation since [month] [year]?",One-Off,56,56,1,56
+,,"In which of the following areas, if any, did your business make adjustments to support innovations since [month] [year]?",One-Off,56,56,1,56
+Comments,Occupations,Which of the following occupational groups best represents your position at [Ru Name]?,One-Off,55,55,1,55
+Trading status,,Which of the following statements best describes your business's trading status?,,2,53,52,2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
+Turnover,,How does your business's turnover over the last month compare with normal expectations for this time of year?,,1,53,39,1 2 3 4 5 8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 48 49 50 51 53
+,,What was the main reason for this change to your business's turnover over the last month?,,1,53,31,1 2 3 4 5 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 48 49 50 51 53
+,,What are your expectations about turnover for the next month?,,1,53,47,1 2 3 4 5 6 7 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 48 49 50 51 53
+Exporting,,Which of the following best describes your business's exporting status?,,20,53,28,20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,Has your business exported goods or services in the last 12 months?,,37,53,11,37 38 39 40 41 43 45 47 49 51 53
+,,Have you experienced any of the following challenges with exporting goods or services over the last month?,,4,53,37,4 5 6 8 10 12 14 16 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,What was the main cause of these exporting challenges?,,21,53,27,21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,How much disruption to your business have these challenges caused?,,21,53,24,21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 45 49 53
+,,"Which of the following support options has your business benefitted from, to help with exporting challenges?",,28,53,20,28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,Where has your business exported goods or services to in the last two months?,,4,53,31,4 5 6 7 8 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 49 53
+,,Have you changed where you have exported your goods or services to in the last two months?,,20,53,21,20 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 45 49 53
+,,How does your business's exporting over the last month compare with normal expectations for this time of year?,,1,53,45,1 2 3 4 6 7 8 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,How does the cost of exporting over the last month compare with normal expectations for this time of year?,,39,53,8,39 41 43 45 47 49 51 53
+,,How does the time spent on exporting over the last month compare with normal expectations for this time of year?,,39,53,8,39 41 43 45 47 49 51 53
+Rules of origin,,Does your business currently use rules of origin to access lower or zero tariffs on exports?,,30,53,9,30 32 34 36 38 40 45 49 53
+,,How has using rules of origin when exporting to the EU changed the amount of administration for your business?,,30,53,9,30 32 34 36 38 40 45 49 53
+,,Why does your business not currently use rules of origin to access lower or zero tariffs?,,30,53,9,30 32 34 36 38 40 45 49 53
+Importing,,Which of the following best describes your business's importing status?,,35,53,13,35 36 37 38 39 40 41 43 45 47 49 51 53
+,,Has your business imported goods or services in the last 12 months?,,37,53,11,37 38 39 40 41 43 45 47 49 51 53
+,,Have you experienced any of the following challenges with importing over the last month?,,4,53,38,4 5 6 7 8 10 12 14 16 18 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,What was the main cause of these importing challenges?,,21,53,27,21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,How much disruption to your business have these challenges caused?,,21,53,24,21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 45 49 53
+,,"Which of the following support options would your business benefit from, to help with importing challenges?",,4,53,36,4 5 6 7 8 10 12 14 16 18 20 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 43 45 47 49 51 53
+,,Where has your business imported goods or services from in the last two months?,,4,53,29,4 5 6 7 8 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 45 49 53
+,,Have you changed where you have sourced your imports of goods or services from in the last two months?,,22,53,23,22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 45 49 53
+,,How does your business's importing over the last month compare with normal expectations for this time of year?,,1,53,47,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 49 51 53
+,,How does the cost of importing over the last month compare with normal expectations for this time of year?,,39,53,8,39 41 43 45 47 49 51 53
+,,How does the time spent on importing over the last month compare with normal expectations for this time of year?,,39,53,8,39 41 43 45 47 49 51 53
+Production and Suppliers,,Has your business experienced global supply chain disruption over the last month?,,47,53,4,47 49 51 53
+,,Which of the following is the main concern for your business over the next month?,,51,53,2,51 53
+Access to Financial Support,,How long do you think your business's cash reserves will last?,,4,53,38,4 5 6 7 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 35 37 39 41 43 45 47 49 51 53
+,,How much confidence does your business have that it will survive the next three months?,,14,53,31,14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 35 37 39 41 43 45 47 48 49 51 53
+,,"Over the last month, how did your business's debt repayments compare with turnover?",,18,53,17,18 20 22 24 27 29 31 33 35 37 39 41 43 47 49 51 53
+,,How much confidence does your business have that it will meet its current debt obligations?,,27,53,13,27 29 31 33 35 37 39 41 43 47 49 51 53
+,,What is your business's risk of insolvency?,,11,53,31,11 12 13 15 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 37 39 41 43 45 47 49 51 53
+Operational performance,,"In the last two weeks, approximately what percentage of your business's workforce were:",,5,53,49,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53
+,,"Is your business using, or intending to use, increased homeworking as a permanent business model going forward?",,14,53,18,14 16 18 20 22 24 29 33 35 37 39 41 43 45 47 49 51 53
+,,"Why is your business using, or intending to use, increased homeworking as a permanent business model going forward?",,14,53,18,14 16 18 20 22 24 29 33 35 37 39 41 43 45 47 49 51 53
+,,Why is your business not intending to use increased homeworking as a permanent business model going forward?,,14,53,17,14 16 18 20 22 24 29 33 35 37 41 43 45 47 49 51 53
+,,How do existing employees' hourly wages over the last month compare with normal expectations for this time of year?,,45,53,5,45 47 49 51 53
+,,How do new employees' hourly wages over the last month compare with normal expectations for this time of year?,,45,53,5,45 47 49 51 53
+,,Is your business paying sick leave for the voluntary self-isolation of employees testing positive for coronavirus (COVID-19)?,,53,53,1,53
+Net Zero,,"Which of the following actions, if any, have you taken to reduce your business's carbon emissions?",,27,53,7,27 28 33 41 45 49 53
+,,"Which of the following actions, if any, has your business taken to protect the environment?",,53,53,1,53
+,,Please explain the reason for your business's paused trading status,,42,52,5,42 43 48 50 52
+UK Conformity Assessed (UKCA) marking,,"Does your business manufacture, import, or distribute products that require either a CE marking or the new UKCA marking?",,32,52,11,32 34 36 38 40 42 44 46 48 50 52
+,,Are you aware that most CE marked products need to be UKCA marked from 1 [month] [year]?,,32,52,11,32 34 36 38 40 42 44 46 48 50 52
+,,"Is your business using, or intending to use, the UKCA marking by 1 [month] [year]?",,32,52,11,32 34 36 38 40 42 44 46 48 50 52
+,,Has your business been affected by recent increases in energy prices?,,52,52,1,52
+,,"In which of the following ways, if any, has your business been affected by price rises?",,52,52,1,52
+,,Are your business's electricity costs fixed or hedged?,,52,52,1,52
+,,Are your business's gas costs fixed or hedged?,,52,52,1,52
+Supply Chains,,Has your business had any extra costs due to the end of the EU transition period?,,24,52,19,24 25 26 27 28 29 30 31 32 33 35 37 39 42 44 46 48 50 52
+,,"Was your business able to get the materials, goods or services it needed from the EU over the last month?",,24,52,19,24 25 26 27 28 29 30 31 32 33 35 37 39 42 44 46 48 50 52
+,,"Was your business able to get the materials, goods or services it needed from within the UK over the last month?",,1,52,30,1 2 3 4 5 6 7 8 9 10 11 12 13 15 17 19 21 22 23 24 25 35 37 39 42 44 46 48 50 52
+,,Has your business made changes to supply chains due to the end of the EU transition period?,,22,52,21,22 23 24 25 26 27 28 29 30 31 32 33 35 37 39 42 44 46 48 50 52
+,,Were these changes to supply chains made as a result of a new UK trade agreement?,,28,52,13,28 29 30 31 32 33 35 37 39 44 48 50 52
+,,In which of the following ways has your business changed supply chains due to the end of the EU transition period?,,22,52,21,22 23 24 25 26 27 28 29 30 31 32 33 35 37 39 42 44 46 48 50 52
+Sending goods to / from Northern Ireland,,Has your business sent goods from GB to Northern Ireland in the last 12 months?,,23,52,18,23 24 25 26 27 28 30 32 34 36 38 40 42 44 46 48 50 52
+,,"Over the last month, has the volume of goods your business would normally send from GB to Northern Ireland changed?",,23,52,18,23 24 25 26 27 28 30 32 34 36 38 40 42 44 46 48 50 52
+,,Please give more details about why the volume of goods your business sent from GB to Northern Ireland changed over the last month,,42,52,6,42 44 46 48 50 52
+,,"What route did your business mainly use, over the last 12 months, to send goods from GB to Northern Ireland?",,23,52,13,23 24 25 26 27 28 30 32 34 36 40 46 52
+,,Has your business sent goods from Northern Ireland to GB in the last 12 months?,,30,52,12,30 32 34 36 38 40 42 44 46 48 50 52
+,,"In the last two weeks, has the volume of goods your business would normally send from Northern Ireland to GB changed?",,30,52,12,30 32 34 36 38 40 42 44 46 48 50 52
+,,Please give more details about why the volume of goods your business sent from Northern Ireland to GB changed over the last month,,42,52,6,42 44 46 48 50 52
+Stock and Capital Expenditure,,Is your business stockpiling any goods or materials?,,11,52,27,11 13 15 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 39 42 44 46 48 50 52
+,,"Over the last month, has your business scrapped any capital assets earlier than intended?",,35,52,5,35 39 44 48 52
+,,Please explain in more detail what type of assets your business scrapped early and why,,35,52,6,35 37 39 44 48 52
+,,How do your business’s stock levels over the last month compare to normal expectations for this time of year?,,8,52,33,8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 39 42 44 46 48 50 52
+,,"Over the last month, what has had the greatest impact to your business's stock levels?",,18,52,23,18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 39 42 44 46 48 50 52
+,,How does your business's capital expenditure for the last two weeks compare to normal expectations for this time of year?,,7,52,12,7 25 27 29 31 33 35 37 39 44 48 52
+,,What was the main reason for this change in your business's capital expenditure?,,7,52,10,7 29 31 33 35 37 39 44 48 52
+,,Please explain in more detail how your business's capital expenditure has been affected,,7,52,12,7 25 27 29 31 33 35 37 39 44 48 52
+,,How do you expect the super-deduction allowance to affect your business's capital expenditure in the next three months?,,52,52,1,52
+"Prices of materials, goods & services",,"How did the prices of materials, goods or services bought by your business change over the last month, compared with normal price fluctuations?",,1,52,42,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,Please explain the reason for selecting '[Untitled answer]' (bought follow up),,1,52,42,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,"How did the prices of goods or services sold by your business change over the last month, compared with normal price fluctuations?",,1,52,42,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,Please explain the reason for selecting '[Untitled answer]' (sold follow up),,1,52,41,1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,Has your business had an increase in demand for goods or services sold over the last month?,,11,52,21,11 13 15 17 19 21 23 25 27 29 31 34 36 38 40 42 44 46 48 50 52
+,,Is your business providing regular coronavirus (COVID-19) testing for its workforce?,,25,52,18,25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,What percentage of your workforce are receiving regular coronavirus (COVID-19) testing?,,25,52,18,25 26 27 28 29 30 31 32 34 36 38 40 42 44 46 48 50 52
+,,Is your business currently experiencing a shortage of workers?,,42,52,8,42 44 46 48 49 50 51 52
+,,How has the shortage of workers affected your business?,,42,52,8,42 44 46 48 49 50 51 52
+,,How does your business's ability to fill vacancies in the last month compare to normal expectations for this time of year?,,36,52,9,36 38 40 42 44 46 48 50 52
+,,Why did your business find filling vacancies more difficult over the last month?,,36,52,9,36 38 40 42 44 46 48 50 52
+,,"Is your business collecting, or intending to collect, contact details for the purpose of contact tracing at your sites?",,30,52,9,30 32 34 36 38 40 44 48 52
+Workforce characteristics,,"How has the number of workers from within the EU at your business changed, compared with normal expectations for this time of year?",,15,52,14,15 16 17 18 19 20 21 22 32 36 40 44 48 52
+,,"How has the number of workers from outside the EU at your business changed, compared with normal expectations for this time of year?",,36,52,5,36 40 44 48 52
+,,"Where in the UK are your sites temporarily or permanently closed, if any?",,9,51,39,9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 45 47 48 49 51
+,,"Overall, how prepared is your business for the introduction of full customs controls for goods imported from the EU from 1 [month] [year]?",,45,51,2,45 51
+,,How much disruption to your business do you expect the introduction of full customs controls to cause?,,45,51,2,45 51
+,,Please give more details about how your business has been affected by global supply chain disruption,,47,51,2,47 51
+,,Has your business received any government-backed loans or finance agreements during the coronavirus (COVID-19) pandemic?,,17,51,26,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39 41 43 45 47 48 49 51
+,,Has your business received payment from any of the following grants or schemes in the last month?,,41,51,7,41 43 45 47 48 49 51
+,,Did the support received from any of the initiatives or schemes help your business to continue trading?,,31,51,8,31 33 35 37 39 43 47 51
+,,How has your business's risk of insolvency changed in the last two months?,,11,51,24,11 12 13 15 18 19 20 21 22 23 24 25 26 27 28 29 30 32 34 37 39 41 47 51
+,,When do you expect your workforce to return to their normal place of work?,,29,51,11,29 31 33 35 39 41 43 45 47 49 51
+,,What percentage of your workforce do you expect to return to their normal place of work in the time period you selected?,,29,51,11,29 31 33 35 39 41 43 45 47 49 51
+,,"Which, if any, of the following skills have you experienced an increase in demand for in the last 12 months?",,30,51,6,30 34 38 43 47 51
+,,"Which, if any, of the following skills does your workforce require extra support or training in?",,34,51,5,34 38 43 47 51
+,,Has your business been affected by recent increases in wholesale gas prices?,,42,50,4,42 43 46 50
+,,Does your business intend to open any new branches or subsidiaries in the EU in the next 12 months?,,24,50,10,24 26 28 30 32 35 37 39 46 50
+,,Please explain this difference in stock levels in more detail,,8,50,29,8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 39 46 50
+,,Where are you sourcing these stockpiled goods or materials from?,,42,50,3,42 46 50
+,,Which of the following goods or materials are you stockpiling?,,11,50,23,11 13 15 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 42 46 50
+,,Where are the stockpiled goods or materials being stored?,,11,50,21,11 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35 37 42 46 50
+,,"Is your business using, or intending to use, any of the following safety measures in the workplace?",,5,50,28,5 6 7 8 9 10 11 12 13 14 26 27 28 29 30 31 32 34 36 38 40 42 44 46 47 48 49 50
+,,How has the implementation of these safety measures affected your operating costs?,,8,50,10,8 9 10 11 12 13 14 47 48 50
+,,"You said that [Other]% of your workforce were classified as ""other"". Please describe what this includes",,6,50,10,6 7 8 9 10 11 12 13 44 50
+,,Approximately what percentage of your business's workforce are: (Age),,50,50,1,50
+,,Is your business intending to permanently close any business sites in the next three months?,,10,50,19,10 12 14 15 16 18 20 22 24 26 28 30 32 34 36 38 42 46 50
+,,Where in the UK are the sites that will permanently close in the next three months?,,14,50,17,14 15 16 18 20 22 24 26 28 30 32 34 36 38 42 46 50
+,,"Over the last month, applicants for your business’s vacancies have been in which of the following age categories?",,50,50,1,50
+,,Does your business expect to make any of your workforce redundant over the next three months?,,20,50,26,20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 42 44 46 48 50
+,,Approximately what percentage of your workforce do you expect to be made redundant over the next three months?,,16,50,30,16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 42 44 46 48 50
+,,Has your business made changes to how it conducts international trade in services due to the coronavirus (COVID-19) pandemic or the end of the EU transition period?,,49,49,1,49
+,,Has your business experienced a change in the number of cancellations from customers over the last month?,,46,49,3,46 47 49
+,,"Which of the following actions, if any, does your business intend to take in the next 12 months to reduce carbon emissions?",,27,49,5,27 28 33 45 49
+,,To what extent do you expect your business's UK distribution demands will be met by logistics services in the next two weeks?,,47,48,2,47 48
+,,Has your business experienced any unexpected changes to financial or operational activities in the last two weeks?,,47,48,2,47 48
+,,Please give more details about any unexpected changes to financial or operational activities in the last two weeks,,47,48,2,47 48
+,,Is your business expecting any financial or operational activities to be affected by the coronavirus (COVID-19) pandemic in the next two weeks?,,47,48,2,47 48
+,,Please give more details about which financial or operational activities you expect to be affected in the next two weeks,,47,48,2,47 48
+,,"How does your business's staff turnover for the last month, compare to normal expectations for this time of year?",,40,48,4,40 42 44 48
+,,When do you expect these redundancies to happen?,,16,48,22,16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 32 34 36 38 40 44 48
+,,Why is your business making these redundancies?,,28,48,10,28 29 30 32 34 36 38 40 44 48
+,,Is your business experiencing any challenges when trading with customers in other UK nations?,,43,47,2,43 47
+,,"In the last 12 months, approximately what percentage of your sales of materials, goods and services were to customers in other UK nations?",,47,47,1,47
+,,How much disruption to your business have these challenges caused?,,42,46,2,42 46
+,,What were the reasons for this change in the volume of goods sent from GB to Northern Ireland?,,23,46,13,23 24 25 26 27 28 30 32 34 36 38 40 46
+,,"Has the overall of choice of suppliers for sourcing your business's materials, goods or services changed since the start of the coronavirus (COVID-19) pandemic?",,12,43,3,12 13 43
+,,Has the number of businesses selling similar goods or services as your business changed since the start of the coronavirus (COVID-19) pandemic?,,12,43,3,12 13 43
+,,Are your business's gas costs fixed or hedged?,,43,43,1,43
+,,Does your business's fixed price contract or hedging cover all or only part of your gas costs?,,43,43,1,43
+,,Are your business's electricity costs fixed or hedged?,,43,43,1,43
+,,Does your business's fixed price contract or hedging cover all or only part of your electricity costs?,,43,43,1,43
+,,Has the coronavirus (COVID-19) pandemic affected your business's plans for expanding the business?,,12,43,3,12 13 43
+,,Did your business have any employees on furlough at the end of the Coronavirus Job Retention Scheme?,,42,42,1,42
+,,"Following the end of the Coronavirus Job Retention Scheme, approximately what percentage of those furloughed employees have:",,42,42,1,42
+,,Which of the following best describes your business's use of the GB landbridge over the last 12 months?,,41,41,1,41
+,,"Of those partially and fully furloughed, what percentage are fully furloughed?",,14,41,28,14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41
+,,Do any of the following prevent action being taken by your business to reduce its carbon emissions?,,41,41,1,41
+,,Have any of the following been used to assess the impact of climate change on your business's ability to operate?,,41,41,1,41
+,,Where in the UK are your business's sites located?,,9,40,32,9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,"In the last two weeks, how has your business's profits compared with normal expectations for this time of year?",,14,40,27,14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,Let us know anything else that will help us understand your business's exporting in the last two weeks,,4,40,37,4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,What are your expectations about your business's sales from exports in the next 12 months?,,18,40,23,18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,Let us know anything else that will help us understand your business's importing in the last two weeks,,4,40,37,4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,"Has your business sent, or intended to send, goods from GB to Northern Ireland in the last two weeks?",,23,40,12,23 24 25 26 27 28 30 32 34 36 38 40
+,,Has your business changed the main route for sending goods from GB to Northern Ireland in the last two weeks?,,23,40,11,23 24 25 26 27 28 30 32 34 36 40
+,,What were the reasons for this change in route?,,23,40,11,23 24 25 26 27 28 30 32 34 36 40
+,,"Has your business sent, or intended to send, goods from Northern Ireland to GB in the last two weeks?",,30,40,6,30 32 34 36 38 40
+,,What were the reasons for this change in the volume of goods sent from Northern Ireland to GB?,,30,40,6,30 32 34 36 38 40
+,,"In the last two weeks, approximately what percentage of your workforce have:",,6,40,35,6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,"In the next two weeks, approximately what percentage of your workforce will:",,6,40,35,6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+,,Has your business furloughed any of its workforce since the start of the coronavirus (COVID-19) pandemic?,,40,40,1,40
+,,Has your business provided additional training or support for your furloughed workforce after their return to work?,,34,40,3,34 36 40
+,,"Which of the following methods is your business using, or intending to use, to collect details for contact tracing?",,30,40,6,30 32 34 36 38 40
+,,Why is your business not intending to collect details for contact tracing?,,36,40,3,36 38 40
+,,"If your business has employees working abroad, where are they based?",,40,40,1,40
+,,Has your business applied for any of the following grants?,,17,39,19,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,Has your business received any of the following grants?,,17,39,19,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,Has your business received any of these other grants?,,17,39,19,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,"Which governments in the UK provided the small business grant, or grants?",,17,39,19,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,"Which governments in the UK provided the sector-specific grant, or grants?",,17,39,19,17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,"Is your business using, or intending to use, any of the following schemes or incentives?",,5,39,31,5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 33 35 37 39
+,,"Over the last month, how did your business's debt repayments compare with normal expectations for this time of year?",,18,39,11,18 20 22 24 27 29 31 33 35 37 39
+,,"Over the next month, how do you expect your business's debt repayments to change?",,18,39,11,18 20 22 24 27 29 31 33 35 37 39
+,,What is your business's main consideration when deciding who can return to their normal place of work?,,39,39,1,39
+,,Would your business be prepared to pay for lateral flow device tests for its employees?,,30,39,5,30 33 35 37 39
+,,How do you expect closing these sites to affect your workforce?,,10,38,16,10 12 14 15 16 18 20 22 24 26 28 30 32 34 36 38
+,,Which of the following would encourage your business to use the NHS COVID-19 app QR code posters?,,36,38,2,36 38
+,,Has your business received any support from your local public health team or local authority in relation to the NHS COVID-19 app QR code posters?,,30,38,5,30 32 34 36 38
+Innovation,,How has your business's innovation changed since the start of the coronavirus (COVID-19) pandemic?,,38,38,1,38
+,,"Since the start of the coronavirus (COVID-19) pandemic, which of the following did your business innovate?",,38,38,1,38
+,,How do you expect these innovations to affect your business’s productivity over the next 12 months?,,38,38,1,38
+,,"What are your expectations for your business’s innovation over the next 12 months, compared with before the coronavirus (COVID-19) pandemic?",,38,38,1,38
+,,"Since the start of the coronavirus (COVID-19) pandemic, has your business reduced the terms and conditions of any of your workforce?",,37,37,1,37
+,,"Since the start of the coronavirus (COVID-19) pandemic, approximately what percentage of your workforce have had their terms and conditions reduced?",,37,37,1,37
+,,"Expectations about changes in prices of materials, goods or services needs for next two weeks",,1,36,25,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 34 36
+,,Has your business provided any training to your workforce while they have been furloughed?,,34,36,2,34 36
+,,Main reason for this change to the numbers of workers from within the EU at your business?,,15,36,10,15 16 17 18 19 20 21 22 32 36
+,,Main reason for this change to the numbers of workers from outside the EU at your business?,,36,36,1,36
+,,How much disruption has the change in number of works from the EU caused?,,36,36,1,36
+,,Has your business's international trade in services changed in the last 12 months?,,31,35,3,31 33 35
+,,How does your business's international trade in services in the last two weeks compare to normal expectations for this time of year?,,31,35,3,31 33 35
+,,Which storage solutions are you using for stockpiling these goods or materials?,,11,35,19,11 13 15 17 18 19 20 21 22 23 24 25 26 27 28 29 31 33 35
+,,Please tell us more information about the goods or materials you are stockpiling,,18,35,15,18 19 20 21 22 23 24 25 26 27 28 29 31 33 35
+,,Has your business exported goods or services in the last 12 months?,,4,34,31,4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+,,Has your business imported goods or services in the last 12 months?,,4,34,31,4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+,,Did your business import goods or services more than 12 months ago?,,6,34,21,6 7 8 9 10 11 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34
+,,Has your business completed a risk assessment related to coronavirus (COVID-19) in the last 12 months?,,31,34,3,31 32 34
+,,When was your business's risk assessment related to coronavirus (COVID-19) last reviewed?,,31,34,3,31 32 34
+,,Would these new branches or subsidiaries be for any of the following?,,30,32,2,30 32
+,,"Which, if any, of the following sources have you used for advice or support to adapt your business for coronavirus (COVID-19)?",,31,32,2,31 32
+,,Has your business had more staff working from home as a result of the coronavirus (COVID-19) pandemic?,,14,30,6,14 16 18 20 22 30
+,,Does your business intend to provide coronavirus (COVID-19) vaccinations for its workforce?,,27,29,2,27 29
+,,Any plan to change use of commercial and business space over the next 12 months?,,29,29,1,29
+,,"Which of the following support options would your business benefit from, to help with exporting challenges?",,4,27,17,4 5 6 7 8 10 12 14 16 18 20 22 23 24 25 26 27
+,,Do you expect to recruit new workers from countries in the EU or EEA in the next 12 months?,,19,26,6,19 20 21 22 24 26
+,,Understand what the new immigration system for recruiting from EU/EEA means for your business?,,19,26,6,19 20 21 22 24 26
+,,Which of the following reasons best describes why your business does not fully understand what the immigration system for recruiting EU or EEA citizens means for the business?,,19,26,6,19 20 21 22 24 26
+,,"Please explain why your business was not able to get the materials, goods or services needed",,1,25,21,1 2 3 4 5 6 7 8 9 10 11 12 13 15 17 19 21 22 23 24 25
+,,"In the last two weeks, did your business use logistics services to distribute goods or services produced, within the UK?",,7,25,14,7 8 10 11 12 13 15 17 19 21 22 23 24 25
+,,Did the logistics services used in the last two weeks meet your business's UK distribution demands?,,7,25,14,7 8 10 11 12 13 15 17 19 21 22 23 24 25
+,,To what extent do you expect that your business's UK distribution demands will be met by logistics services in the next two weeks?,,7,25,14,7 8 10 11 12 13 15 17 19 21 22 23 24 25
+,,"Has your business had more staff working from home in the last two weeks, compared to normal expectations for this time of year?",,24,24,1,24
+,,How has the increase in homeworking affected the productivity of your workforce?,,14,24,6,14 16 18 20 22 24
+,,"In the last two weeks, how has the coronavirus (COVID-19) pandemic affected your business's turnover, compared with normal expectations for this time of year?",,1,23,23,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+,,Please explain in more detail how the coronavirus (COVID-19) pandemic affected turnover in the last two weeks,,1,23,23,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+,,How has the coronavirus (COVID-19) pandemic affected your business's capital expenditure?,,9,23,8,9 11 13 15 17 19 21 23
+,,Please explain in more detail how the coronavirus (COVID-19) pandemic has affected capital expenditure,,9,23,8,9 11 13 15 17 19 21 23
+,,"Expectations about changes in prices of materials, goods or services will sell over next two weeks",,1,23,23,1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+,,Why have these sites temporarily or permanently closed?,,16,22,7,16 17 18 19 20 21 22
+,,Are you expecting to temporarily or permanently close any sites in the next two weeks?,,16,22,7,16 17 18 19 20 21 22
+,,Where in the UK are you expecting your sites to temporarily or permanently close in the next two weeks?,,16,22,7,16 17 18 19 20 21 22
+,,Why are you expecting these sites to temporarily or permanently close?,,16,22,7,16 17 18 19 20 21 22
+,,Is your business intending to make changes to supply chains in preparation for the end of the EU transition period?,,18,21,4,18 19 20 21
+,,In which of the following ways is your business planning to change supply chains in preparation for the end of the EU transition period?,,18,21,4,18 19 20 21
+,,How prepared are your plans to ensure supply chain continuity for the end of the EU transition period?,,18,21,4,18 19 20 21
+,,"Overall, how prepared is your business for the end of the EU transition period?",,18,21,4,18 19 20 21
+,,Which of the following is preventing your business from being fully prepared for the end of the EU transition period?,,18,21,4,18 19 20 21
+,,"Which, if any, of the following professions have you found it more difficult to retain staff, or recruit for, since the start of the coronavirus (COVID-19) pandemic?",,17,21,3,17 19 21
+,,Why is your business not intending to apply for the Job Retention Bonus?,,14,17,4,14 15 16 17
+,,Does your business operate in the hospitality sector?,,17,17,1,17
+,,What change in operating hours has your business implemented due to local or national lockdown regulations?,,17,17,1,17
+,,"Overall, how has this change in operating hours affected trade?",,17,17,1,17
+,,"Overall, how has the change in operating hours affected footfall?",,11,17,5,11 12 13 16 17
+,,Has your business applied for the Development Bank of Wales COVID-19 Business Loan Scheme?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Which government offered the business grants that your business applied for?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Which of the following Welsh Government grants has your business applied for?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business received funds from any of the following Welsh Government grants?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Which of the following Scottish Government grants has your business applied for?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business received funds from any of the following Scottish Government grants?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Which of the following Northern Ireland Executive grants did your business apply for?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Which of the following UK Government (England only) grants has your business applied for?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business received funds from any of the following UK Government (England only) grants?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business received funds from any of the following Northern Ireland Executive grants?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business received funds from any of the following schemes?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Does your business expect to use the Coronavirus Job Retention Scheme (CJRS) in the next two weeks?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Is your business intending to apply for any of the following schemes?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,"If any of your premises are required to close due to lockdown regulations, do you intend to apply for the ""Job Support Scheme (JSS) Expansion for Closed Business Premises""?",,16,16,1,16
+,,"How helpful do you expect the ""Job Support Scheme (JSS) Expansion for Closed Business Premises"" will be in preventing redundancies at your business in the next three months?",,16,16,1,16
+,,"Why will your business not apply for the ""Job Support Scheme (JSS) Expansion for Closed Business Premises""?",,16,16,1,16
+,,Is your business intending to apply for the standard Job Support Scheme (JSS)?,,15,16,2,15 16
+,,How helpful do you expect the Job Support Scheme (JSS) will be in preventing redundancies at your business in the next three months?,,15,16,2,15 16
+,,Approximately what percentage of your workforce are you intending to use the Job Support Scheme (JSS) for?,,15,16,2,15 16
+,,Why is your business not intending to use the Job Support Scheme (JSS)?,,15,16,2,15 16
+,,Is your business using any of the following initiatives?,,3,16,14,3 4 5 6 7 8 9 10 11 12 13 14 15 16
+,,Is your business intending to use any of the following initiatives?,,2,16,15,2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+,,Did the support received from any of the initiatives or schemes help your business to continue trading?,,4,16,13,4 5 6 7 8 9 10 11 12 13 14 15 16
+,,Please describe any other support from government that you think could help your business,,3,16,14,3 4 5 6 7 8 9 10 11 12 13 14 15 16
+,,Has your business made any insurance claims as a result of the coronavirus (COVID-19) pandemic?,,16,16,1,16
+,,Have you received funds from any insurance claims made as a result of the coronavirus (COVID-19) pandemic?,,16,16,1,16
+,,Has your business received any financial assistance from banks or building societies?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,Did the financial assistance from banks or building societies help your business continue trading?,,5,16,12,5 6 7 8 9 10 11 12 13 14 15 16
+,,"Is your business providing top-ups to any furloughed workers' pay, above the combined employer and Coronavirus Job Retention Scheme (CJRS) 80% contribution?",,6,16,11,6 7 8 9 10 11 12 13 14 15 16
+,,"Of those on furlough leave, approximately what percentage of workers have had their pay topped up, above the combined employer and Coronavirus Job Retention Scheme (CJRS) 80% contribution?",,6,16,11,6 7 8 9 10 11 12 13 14 15 16
+,,Please describe your experience of applying for these schemes,,5,15,11,5 6 7 8 9 10 11 12 13 14 15
+,,"Is your business aware of the ""COVID-19 safer workplaces"" government guidance?",,14,14,1,14
+,,How do you expect the implementation of these safety measures to affect your operating costs?,,8,14,7,8 9 10 11 12 13 14
+,,"If your business has completed a coronavirus (COVID-19) risk assessment, how easy or difficult was it to complete?",,14,14,1,14
+,,Is your business collecting test and trace contact details from customers?,,14,14,1,14
+,,What method are you using to collect test and trace contact details from customers?,,14,14,1,14
+,,Why is your business not collecting test and trace contact details from customers?,,14,14,1,14
+,,How much confidence does your business have in knowing what action to take if an employee or customer tests positive for coronavirus (COVID-19)?,,14,14,1,14
+,,How many external job vacancies is your business actively recruiting for?,,6,13,8,6 7 8 9 10 11 12 13
+,,"Of the [Number of external job vacancies] external job vacancies, how many were new in the last two weeks?",,6,13,8,6 7 8 9 10 11 12 13
+,,Was your business planning to expand its business before the coronavirus (COVID-19) pandemic?,,12,13,2,12 13
+,,Has your business experienced any of the following challenges with selling goods or services online since the start of the coronavirus (COVID-19) pandemic?,,12,13,2,12 13
+,,"In the last two weeks, how has the coronavirus (COVID-19) pandemic affected customer interest in your business's goods or services, compared with normal expectations for this time of year?",,12,13,2,12 13
+,,"Does your business have outstanding invoice payments due to you, as a result of the coronavirus (COVID-19) pandemic?",,12,12,1,12
+,,What is the approximate value of invoice payments that is owed to the business?,,12,12,1,12
+,,Has your business fallen behind on invoice payments as a result of the coronavirus (COVID-19) pandemic?,,12,12,1,12
+,,What is the approximate value of invoice payments that the business owes?,,12,12,1,12
+,,"Has your business issued credit notes or vouchers to customers for postponed or cancelled bookings, services or events, due to the coronavirus (COVID-19) pandemic?",,12,12,1,12
+,,"What is the approximate value of issued vouchers or credit notes, that customers have not yet redeemed?",,12,12,1,12
+,,Has your business exported goods or services during the coronavirus (COVID-19) pandemic?,,4,11,8,4 5 6 7 8 9 10 11
+,,Please give more details about how your business has diversified to produce or provide new goods or services,,9,10,2,9 10
+,,"Overall, how has the coronavirus (COVID-19) pandemic affected the prices of goods or services sold by your business?",,10,10,1,10
+,,Which of the following affected your business's decision to adjust prices back to normal?,,10,10,1,10
+,,What did your business use as a guide to change its pricing?,,10,10,1,10
+,,Please give more details about how prices changed,,10,10,1,10
+,,"Has your business postponed or cancelled any bookings, services or events sold to customers, due to the coronavirus (COVID-19) pandemic?",,9,10,2,9 10
+,,"How is your business managing postponed or cancelled bookings, services or events sold to customers?",,9,10,2,9 10
+,,"Has your business changed its approach for managing postponed or cancelled bookings, services or events since the start of the coronavirus (COVID-19) pandemic?",,9,10,2,9 10
+,,"Which of the following affected your business's decision to change its approach for managing postponed or cancelled bookings, services or events?",,9,10,2,9 10
+,,What did your business use as a guide to change its approach?,,9,10,2,9 10
+,,How has your business's exporting of goods or services been affected by the coronavirus (COVID-19) pandemic in the last two weeks?,,3,9,5,3 4 5 7 9
+,,Has your business diversified to produce or provide new goods or services as a result of the coronavirus (COVID-19) pandemic?,,9,9,1,9
+,,"Prior to the coronavirus (COVID-19) pandemic, did your business sell goods or services online?",,6,9,4,6 7 8 9
+,,Has your business started selling goods or services online during the coronavirus (COVID-19) pandemic?,,6,9,4,6 7 8 9
+,,How have your business's online sales of goods or services changed in the last two weeks?,,5,9,5,5 6 7 8 9
+,,Has your business used any of the following online services to support business operations during the coronavirus (COVID-19) pandemic?,,5,9,5,5 6 7 8 9
+,,Does your business expect to start exporting goods or services in the next two weeks?,,4,8,5,4 5 6 7 8
+,,Which countries in the EU does your business normally export to?,,4,8,5,4 5 6 7 8
+,,Which countries outside of the EU does your business normally export to?,,4,8,5,4 5 6 7 8
+,,Does your business normally export directly or through a distributor?,,4,8,5,4 5 6 7 8
+,,What are your expectations about your business's exporting of goods or services in the next two weeks?,,2,8,7,2 3 4 5 6 7 8
+,,Does your business expect to start importing goods or services in the next two weeks?,,4,8,5,4 5 6 7 8
+,,Which countries in the EU does your business normally import from?,,4,8,5,4 5 6 7 8
+,,Which countries outside the EU does your business normally import from?,,4,8,5,4 5 6 7 8
+,,Does your business normally import directly or through a distributor?,,4,8,5,4 5 6 7 8
+,,Does your business expect to start importing goods or services again in the next two weeks?,,2,8,6,2 4 5 6 7 8
+,,What are your expectations about your business's importing of goods or services in the next two weeks?,,4,8,5,4 5 6 7 8
+,,"Of those working remotely or at their normal place of work, approximately what percentage were working in the following ways:",,8,8,1,8
+,,"When your business was still trading, where was most of its business activity carried out?",,3,7,5,3 4 5 6 7
+,,Where in the UK did your business carry out its business activity?,,3,7,5,3 4 5 6 7
+,,Where in England did your business carry out its business activity?,,3,7,5,3 4 5 6 7
+,,How has the coronavirus (COVID-19) pandemic affected your business’s stock levels in the last two weeks?,,7,7,1,7
+,,Did your business restart trading in the last two weeks after a temporary closure or pause in trading?,,4,5,2,4 5
+,,Is your business continuing a temporary closure or pause in trading that started in the last two weeks?,,4,5,2,4 5
+,,Is your business intending to start trading again in the next two weeks?,,5,5,1,5
+,,When does your business intend to start trading again?,,5,5,1,5
+,,Where does your business carry out most of its business activity?,,2,5,4,2 3 4 5
+,,Where in England does your business carry out its business activity?,,2,5,4,2 3 4 5
+,,Has your business imported goods or services during the coronavirus (COVID-19) pandemic?,,5,5,1,5
+,,"What are your expectations about your business's importing of materials, goods or services in the next two weeks?",,1,5,5,1 2 3 4 5
+,,Which government offered your business the accredited loans and finance agreements that you have applied for?,,5,5,1,5
+,,Roughly what percentage of your business's workforce will return to their normal workplace in the next two weeks from the following situations?,,5,5,1,5
+,,Which of the following safety measures does your business intend to put in place when trading again?,,5,5,1,5
+,,Was your business's workforce able to meet the demands of the business in the last two weeks?,,1,5,5,1 2 3 4 5
+,,Which of the following measures has your business taken to cope with the impact of coronavirus (COVID-19) on its workforce?,,2,5,4,2 3 4 5
+,,"In the last two weeks, roughly what proportion of your business's workforce was working in the following ways?",,2,5,4,2 3 4 5
+,,"In the last two weeks, roughly what proportion of your business's workforce were in the following situations?",,2,5,2,2 5
+,,Do you expect your business's workforce size to change over the next two weeks due to the coronavirus (COVID-19) pandemic?,,2,5,2,2 5
+,,Were there any other unexpected changes to financial or operational activities for your business in the last two weeks?,,1,5,5,1 2 3 4 5
+,,Please give more details about any other unexpected changes to financial or operational activities in the last two weeks,,1,5,5,1 2 3 4 5
+,,Are you expecting any other financial and/or operational activities at your business to be affected by the coronavirus (COVID-19) pandemic over the next two weeks?,,1,5,5,1 2 3 4 5
+,,Please give more details about which other financial and/or operational activities at your business you think will be affected in the next two weeks,,1,5,5,1 2 3 4 5
+,,Where in the UK does your business carry out its business activity?,,2,4,3,2 3 4
+,,Was the financial performance of your business within normal expectations in the last two weeks?,,1,4,4,1 2 3 4
+,,Please explain in more detail why this affected your business's turnover,,2,4,3,2 3 4
+,,Has your business exported goods or services during the coronavirus (COVID-19) outbreak?,,4,4,1,4
+,,Has your business imported goods or services during the coronavirus (COVID-19) outbreak?,,4,4,1,4
+,,"Of the initiatives applied for, which has your business received?",,3,4,2,3 4
+,,Please describe your experience of applying for these initiatives,,3,4,2,3 4
+,,Has your business’s ability to access financial resources changed in the last two weeks?,,1,4,4,1 2 3 4
+,,"At the time of temporary closure or pause in trade, roughly what percentage of your business's workforce were furloughed or made redundant?",,2,4,3,2 3 4
+,,"In the last two weeks, roughly what proportion of your business's workforce was furloughed, off sick due to coronavirus or has been made redundant?",,1,4,3,1 3 4
+,,Do you expect your business's workforce size to change over the next two weeks due to the coronavirus (COVID-19) outbreak?,,1,4,3,1 3 4
+,,Please explain in more detail how your business's exporting has been affected,,1,3,3,1 2 3
+,,Please explain in more detail how your business's importing has been affected,,1,3,3,1 2 3
+,,How confident are you that your business has the financial resources to continue to operate throughout the coronavirus (COVID-19) outbreak?,,1,3,3,1 2 3
+,,"If applicable, why do you think your business will not have any other issues due to coronavirus (COVID-19) over the next two weeks?",,1,3,3,1 2 3
+,,Please explain in more detail why your business's turnover was affected,,1,1,1,1
+,,What measures has your business taken to cope with the impact of coronavirus (COVID-19) on your workforce?,,1,1,1,1
+Business Operations,Cash Reserves,How long do you expect your business's cash reserves will last?,Every other wave,,,0,
+Business Operations,Concern,"Which of the following, if any, will be the main concern for your business in [month] [year]?",Every other wave,,,0,
+Business Operations,Debt,How much confidence does your business have that it will meet its current debt obligations?,Every other wave,,,0,
+Business Operations,Insolvency,What is your business's risk of insolvency?,Every other wave,,,0,
+Business Operations,Performance,"How would you describe your business’s overall performance in [month] [year], compared with the same calendar month last year?",Every other wave,,,0,
+Business Operations,Performance,How do you expect your business’s overall performance to change over the next 12 months?,Every other wave,,,0,
+Capital Expenditure,Capital expenditure,What are your business's expectations for capital expenditure between [month] [year] and [month] [year]?,Every 6 waves,,,0,
+Capital Expenditure,Capital expenditure,Why is your business expecting to authorise capital expenditure between [month] [year] and [month] [year]?,Every 6 waves,,,0,
+Capital Expenditure,Capital expenditure,"Which of the following, if any, do you expect to limit your business’s capital expenditure between [month] [year] and [month] [year]?",Every 6 waves,,,0,
+Capital Expenditure,Full expensing,Did your business invest in plant and machinery between [month] [year] and [month] [year]?,Every 6 waves,,,0,
+Capital Expenditure,Full expensing,Did your business use the full expensing capital allowance on qualifying plant and machinery investments between [month] [year] and [month] [year]?,Every 6 waves,,,0,
+Cryptocurrency,Assets,Does your business currently hold any cryptocurrencies as part of its assets?,Annually,,,0,
+Cryptocurrency,Transactions,"Has your business used, accepted, or conducted any transactions involving cryptocurrencies in the last 12 months?",Annually,,,0,
+Domestic trade,Sending goods GB to NI,Has your business sent goods from GB to Northern Ireland in the last 12 months?,Every 6 waves,,,0,
+Domestic trade,Sending goods GB to NI,"In [month] [year], how did the volume of goods your business sent from GB to Northern Ireland compare with the previous calendar month?",Every 6 waves,,,0,
+Domestic trade,Sending goods GB to NI,Please give more details about why the volume of goods sent from GB to Northern Ireland changed in [month] [year],Every 6 waves,,,0,
+Domestic trade,Sending goods NI to GB,Has your business sent goods from Northern Ireland to GB in the last 12 months?,Every 6 waves,,,0,
+Domestic trade,Sending goods NI to GB,"In [month] [year], how did the volume of goods your business sent from Northern Ireland to GB compare with the previous calendar month?",Every 6 waves,,,0,
+Domestic trade,Sending goods NI to GB,Please give more details about why the volume of goods sent from Northern Ireland to GB changed in [month] [year],Every 6 waves,,,0,
+Domestic trade,UK trade,"In the last 12 months, has your business purchased goods or services from suppliers in other UK nations?",Every 6 waves,,,0,
+Domestic trade,UK trade,"In the last 12 months, which of the following goods or services has your business purchased from suppliers in other UK nations?",Every 6 waves,,,0,
+Domestic trade,UK trade,"In the last 12 months, has your business sold goods or services to customers in other UK nations?",Every 6 waves,,,0,
+Domestic trade,UK trade,"In the last 12 months, which of the following challenges, if any, has your business experienced when selling goods or services to customers in other UK nations?",Every 6 waves,,,0,
+Exporting,Export,Where has your business exported goods or services to in the last three months?,Every 6 waves,,,0,
+Exporting,Export,Has your business had any extra costs directly related to changes in export regulations due to the end of the EU transition period?,Annually,,,0,
+Exporting,Export,How did your business's exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Exporting,Export,How did your business's cost of exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Exporting,Export,How did the time spent on exporting in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Exporting,Export,"Which of the following support options has your business benefited from, to help with exporting challenges?",Every 6 waves,,,0,
+Exporting,Rules of origin,Does your business currently meet the rules of origin to access preferential tariffs on exports?,Every 6 waves,,,0,
+Exporting,Rules of origin,Why does your business not currently meet the rules of origin to access preferential tariffs on exports?,Every 6 waves,,,0,
+Importing,Import,Has your business imported goods or services in the last 12 months?,Every other wave,,,0,
+Importing,Import,Where has your business imported goods or services from in the last three months?,Every 6 waves,,,0,
+Importing,Import,Has your business had any extra costs directly related to changes in import regulations due to the end of the EU transition period?,Annually,,,0,
+Importing,Import,How did your business's importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Importing,Import,How did your business's cost of importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Importing,Import,How did the time spent on importing in [month] [year] compare with the same calendar month last year?,Every 6 waves,,,0,
+Importing,Import,"Which of the following support options would your business benefit from, to help with importing challenges?",Every 6 waves,,,0,
+International trade,EU trade,"Was your business able to get the materials, goods or services it needed from the EU in [month] [year]?",Annually,,,0,
+International trade,EU trade,Does your business intend to open any new branches or subsidiaries in the EU in the next 12 months?,Annually,,,0,
+International trade,Freeports,Does your business plan to import or export goods to or from UK Freeports in the next 12 months?,Annually,,,0,
+International trade,Freeports,Why is your business not planning to import or export goods from UK Freeports within the next 12 months?,Annually,,,0,
+International trade,US tariffs,"What impact, if any, do you expect the United States tariffs to have on your business in the next month?",Every 6 waves,,,0,
+International trade,US trade,"Was your business able to get the materials, goods or services it needed from the US in [month] [year]?",Annually,,,0,
+International trade,US trade,Does your business intend to open any new branches or subsidiaries in the US in the next 12 months?,Every 6 waves,,,0,
+Prices,Bought/Sold,How did the prices of goods or services bought by your business in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Prices,Bought/Sold,How did the prices of goods or services sold by your business in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Prices,Bought/Sold,What are your business's expectations for the prices of goods or services sold in [month] [year]?,Every other wave,,,0,
+Prices,Bought/Sold,"Which of the following factors, if any, are causing your business to consider raising prices in [month] [year]?",Every other wave,,,0,
+Stock,Stock Levels,How did your business's stock levels of raw materials in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Stock,Stock Levels,How did your business's stock levels of finished goods in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Stock,Stockpiling,Is your business stockpiling any goods or materials?,Every other wave,,,0,
+Supply chains,Global Supply Chains,Did your business experience any global supply chain disruption in [month] [year]?,Every other wave,,,0,
+Supply chains,Global Supply Chains,What was the main reason for global supply chain disruption?,Every other wave,,,0,
+Supply chains,UK Procurement,"Was your business able to get the materials, goods or services it needed from within the UK in [month] [year]?",Every other wave,,,0,
+Trade,Export/Import,Did your business export or import any goods or services in [month] [year]?,Every other wave,,,0,
+Trade,Export/Import,"Did your business experience an increase in any of the following exporting challenges in [month] [year], compared with the previous calendar month?",Quarterly,,,0,
+Trade,Export/Import,"Did your business experience an increase in any of the following importing challenges in [month] [year], compared with the previous calendar month?",Quarterly,,,0,
+Turnover,Activity,How did your business’s turnover in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Turnover,Activity,"Which of the following challenges, if any, are currently impacting your business's turnover?",Every other wave,,,0,
+Turnover,Activity,What are your business’s expectations for turnover in [month] [year]?,Every other wave,,,0,
+Turnover,Demand,How did your business’s domestic demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+Turnover,Demand,How did your business’s international demand for goods and services in [month] [year] compare with the previous calendar month?,Every other wave,,,0,
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Does your business manufacture, import or distribute products for the GB market that use a CE or UKCA marking?",Every 6 waves,,,0,
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Approximately, what proportion of the products your business manufactures, imports or distributes for the GB market currently use the UKCA marking instead of, or in addition to, the CE marking?",Every 6 waves,,,0,
+UK Conformity Assessed (UKCA) marking,UKCA Markings,"Approximately, what proportion of the products that your business intends to manufacture, import or distribute for the GB market on or after [month] [year] will use the UKCA marking instead of, or in addition to, the CE marking?",Every 6 waves,,,0,
+Workforce management,Contracts/VHC,"Which of the following contract arrangements, if any, does your business currently use for workers?",Every 6 waves,,,0,
+Workforce management,Substitution clauses,"In the last 12 months, has your business had substitution clauses in its contracts?",Every 6 waves,,,0,
+Workforce management,Substitution clauses,"In the last 12 months, approximately what percentage of contractors have used substitution clauses to complete their work?",Every 6 waves,,,0,
+Workforce management,Support for carers,"Does your business offer additional support to employees who are unpaid carers, beyond the statutory week of unpaid carer's leave?",Every 6 waves,,,0,
+Workforce management,Support for carers,What additional support does your business offer to employees who are unpaid carers?,Every 6 waves,,,0,
+Workforce management,Support for carers,"Approximately, how many days of paid carer’s leave does your business offer employees in a 12 month period?",Every 6 waves,,,0,
+Workforce trends,Costs,How have your business’s staffing costs changed over the last three months?,Every 6 waves,,,0,
+Workforce trends,Costs,How does your business expect staffing costs to change over the next three months?,Every 6 waves,,,0,
+Workforce trends,Costs,How does your business plan to adapt to any future increases in employment costs?,Every 6 waves,,,0,
+Workforce trends,Employees,What are your business’s expectations for the number of employees in [month] [year]?,Every other wave,,,0,
+Workforce trends,Recruitment,Did your business experience any difficulties recruiting employees in [month] [year]?,Every other wave,,,0,
+Workforce trends,Recruitment,Which of the following employees has your business had difficulties recruiting in [month] [year]?,Every 6 waves,,,0,
+Workforce trends,Recruitment,Why did your business experience difficulties recruiting employees in [month] [year]?,Every 6 waves,,,0,
+Workforce trends,Shortages,Is your business currently experiencing a shortage of workers?,Every other wave,,,0,
+Workforce trends,Shortages,"Which of the following challenges, if any, has your business experienced due to a shortage of workers?",Every 6 waves,,,0,
+Workforce trends,Skills,"Which of the following skills, if any, has your business had a high demand for in the last 12 months?",Every 6 waves,,,0,
+Workforce trends,Skills,"Which of the following skills, if any, does your workforce require extra support or training in?",Every 6 waves,,,0,
+Workforce trends,Skills,"Which of the following skills, if any, do you expect your business to have a high demand for over the next 12 months?",Every 6 waves,,,0,
+Workforce trends,Skills,What impact is not meeting skills demand likely to have on your business's growth over the next 12 months?,Every 6 waves,,,0,
+Workforce trends,Skills,"Which types of training, if any, does your business provide to employees?",Every 6 waves,,,0,
+Workforce trends,Skills,"Which of the following, if any, are barriers to your business providing more training to employees?",Every 6 waves,,,0,
+Workforce trends,Wages,"On average, how did employees’ hourly wages in [month] [year] compare with employees’ hourly wages in the previous calendar month?",Every 6 waves,,,0,
+Workforce trends,WFH,"Is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 6 waves,,,0,
+Workforce trends,WFH,"Why is your business using, or intending to use, increased homeworking as a permanent business model going forward?",Every 6 waves,,,0,
+Workforce trends,WFH,Why is your business not intending to use increased homeworking as a permanent business model going forward?,Every 6 waves,,,0,
+Occupation,Occupational Groups,Which of the following occupational groups best represents your position at your business?,Once a year,,,0,

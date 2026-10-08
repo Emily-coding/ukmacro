@@ -1,0 +1,324 @@
+{
+ "slug": "employment_costs_investment",
+ "category": "bics",
+ "topic": "costs",
+ "title": "Response to higher employment costs: reduce spending on investment",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
+ "note": null,
+ "measure": "share",
+ "answers": [
+  "Reduce spending on investment"
+ ],
+ "exclude": null,
+ "breaks": null,
+ "versions": [
+  {
+   "version": 1,
+   "question": "How does your business plan to adapt to any future increases in employment costs?",
+   "population": "As a percentage of businesses not permanently stopped trading",
+   "weighting": "count",
+   "waves_used": "117-163 (8)"
+  }
+ ],
+ "version_breaks": [],
+ "series": [
+  {
+   "key": "all-businesses",
+   "label": "All businesses",
+   "group": "total"
+  },
+  {
+   "key": "0-9",
+   "label": "0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "10-49",
+   "label": "10 - 49",
+   "group": "size"
+  },
+  {
+   "key": "50-99",
+   "label": "50 - 99",
+   "group": "size"
+  },
+  {
+   "key": "100-249",
+   "label": "100 - 249",
+   "group": "size"
+  },
+  {
+   "key": "250",
+   "label": "250 +",
+   "group": "size"
+  },
+  {
+   "key": "all-size-bands-excluding-0-9",
+   "label": "All size bands excluding 0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "accommodation-and-food-service-activities",
+   "label": "Accommodation and food service activities",
+   "group": "industry"
+  },
+  {
+   "key": "administrative-and-support-service-activities",
+   "label": "Administrative and support service activities",
+   "group": "industry"
+  },
+  {
+   "key": "arts-entertainment-and-recreation",
+   "label": "Arts, entertainment and recreation",
+   "group": "industry"
+  },
+  {
+   "key": "construction",
+   "label": "Construction",
+   "group": "industry"
+  },
+  {
+   "key": "education",
+   "label": "Education",
+   "group": "industry"
+  },
+  {
+   "key": "human-health-and-social-work-activities",
+   "label": "Human health and social work activities",
+   "group": "industry"
+  },
+  {
+   "key": "information-and-communication",
+   "label": "Information and communication",
+   "group": "industry"
+  },
+  {
+   "key": "manufacturing",
+   "label": "Manufacturing",
+   "group": "industry"
+  },
+  {
+   "key": "other-service-activities",
+   "label": "Other service activities",
+   "group": "industry"
+  },
+  {
+   "key": "professional-scientific-and-technical-activities",
+   "label": "Professional, scientific and technical activities",
+   "group": "industry"
+  },
+  {
+   "key": "real-estate-activities",
+   "label": "Real estate activities",
+   "group": "industry"
+  },
+  {
+   "key": "transportation-and-storage",
+   "label": "Transportation and storage",
+   "group": "industry"
+  },
+  {
+   "key": "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles",
+   "label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+   "group": "industry"
+  }
+ ],
+ "data_through": "2026-07-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2024-08-31",
+   "wave": 117,
+   "0-9": 3.2,
+   "10-49": 8.1,
+   "100-249": 5.4,
+   "250": 5.1,
+   "50-99": 7.6,
+   "accommodation-and-food-service-activities": 9.5,
+   "administrative-and-support-service-activities": 1.2,
+   "all-businesses": 3.7,
+   "all-size-bands-excluding-0-9": 7.9,
+   "arts-entertainment-and-recreation": 5.3,
+   "construction": 2.6,
+   "human-health-and-social-work-activities": 1.4,
+   "information-and-communication": 2.7,
+   "manufacturing": 7.2,
+   "professional-scientific-and-technical-activities": 2.2,
+   "real-estate-activities": 7.2,
+   "transportation-and-storage": 3.3,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 5.3
+  },
+  {
+   "date": "2025-01-31",
+   "wave": 127,
+   "0-9": 10.4,
+   "10-49": 18.5,
+   "100-249": 13.4,
+   "250": 9.6,
+   "50-99": 14.7,
+   "accommodation-and-food-service-activities": 22.0,
+   "administrative-and-support-service-activities": 7.7,
+   "all-businesses": 11.2,
+   "all-size-bands-excluding-0-9": 17.8,
+   "arts-entertainment-and-recreation": 6.2,
+   "construction": 6.3,
+   "education": 10.1,
+   "human-health-and-social-work-activities": 3.2,
+   "information-and-communication": 6.8,
+   "manufacturing": 20.2,
+   "other-service-activities": 9.2,
+   "professional-scientific-and-technical-activities": 10.8,
+   "real-estate-activities": 13.7,
+   "transportation-and-storage": 8.1,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 15.0
+  },
+  {
+   "date": "2025-04-30",
+   "wave": 133,
+   "0-9": 7.7,
+   "10-49": 16.1,
+   "100-249": 12.8,
+   "250": 9.6,
+   "50-99": 15.2,
+   "accommodation-and-food-service-activities": 14.3,
+   "administrative-and-support-service-activities": 5.1,
+   "all-businesses": 8.5,
+   "all-size-bands-excluding-0-9": 15.8,
+   "arts-entertainment-and-recreation": 3.8,
+   "construction": 3.3,
+   "education": 9.3,
+   "human-health-and-social-work-activities": 10.3,
+   "information-and-communication": 7.1,
+   "manufacturing": 13.9,
+   "other-service-activities": 14.5,
+   "professional-scientific-and-technical-activities": 8.8,
+   "real-estate-activities": 7.7,
+   "transportation-and-storage": 9.1,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 10.6
+  },
+  {
+   "date": "2025-07-31",
+   "wave": 139,
+   "0-9": 9.3,
+   "10-49": 15.6,
+   "100-249": 10.7,
+   "250": 8.8,
+   "50-99": 14.5,
+   "accommodation-and-food-service-activities": 16.0,
+   "administrative-and-support-service-activities": 9.3,
+   "all-businesses": 9.9,
+   "all-size-bands-excluding-0-9": 15.2,
+   "arts-entertainment-and-recreation": 5.8,
+   "construction": 6.2,
+   "education": 8.6,
+   "human-health-and-social-work-activities": 13.6,
+   "information-and-communication": 13.6,
+   "manufacturing": 12.9,
+   "other-service-activities": 7.6,
+   "professional-scientific-and-technical-activities": 6.9,
+   "real-estate-activities": 13.6,
+   "transportation-and-storage": 7.8,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 11.8
+  },
+  {
+   "date": "2025-10-31",
+   "wave": 145,
+   "0-9": 9.7,
+   "10-49": 15.7,
+   "100-249": 10.3,
+   "250": 7.8,
+   "50-99": 14.3,
+   "accommodation-and-food-service-activities": 12.4,
+   "administrative-and-support-service-activities": 7.8,
+   "all-businesses": 10.3,
+   "all-size-bands-excluding-0-9": 15.3,
+   "arts-entertainment-and-recreation": 7.5,
+   "construction": 4.2,
+   "education": 6.7,
+   "human-health-and-social-work-activities": 11.3,
+   "information-and-communication": 7.0,
+   "manufacturing": 18.2,
+   "other-service-activities": 17.3,
+   "professional-scientific-and-technical-activities": 8.4,
+   "real-estate-activities": 1.3,
+   "transportation-and-storage": 16.1,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 16.1
+  },
+  {
+   "date": "2026-01-31",
+   "wave": 151,
+   "0-9": 8.3,
+   "10-49": 14.5,
+   "100-249": 9.4,
+   "250": 6.7,
+   "50-99": 12.6,
+   "accommodation-and-food-service-activities": 8.1,
+   "administrative-and-support-service-activities": 12.6,
+   "all-businesses": 9.0,
+   "all-size-bands-excluding-0-9": 14.0,
+   "arts-entertainment-and-recreation": 5.5,
+   "construction": 4.0,
+   "education": 7.1,
+   "human-health-and-social-work-activities": 11.8,
+   "information-and-communication": 11.6,
+   "manufacturing": 12.8,
+   "other-service-activities": 12.2,
+   "professional-scientific-and-technical-activities": 8.0,
+   "real-estate-activities": 9.3,
+   "transportation-and-storage": 9.4,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 10.2
+  },
+  {
+   "date": "2026-04-30",
+   "wave": 157,
+   "0-9": 7.0,
+   "10-49": 14.1,
+   "100-249": 9.3,
+   "250": 6.7,
+   "50-99": 11.0,
+   "accommodation-and-food-service-activities": 10.6,
+   "administrative-and-support-service-activities": 3.5,
+   "all-businesses": 7.7,
+   "all-size-bands-excluding-0-9": 13.4,
+   "arts-entertainment-and-recreation": 10.4,
+   "construction": 5.3,
+   "education": 11.5,
+   "human-health-and-social-work-activities": 8.4,
+   "information-and-communication": 7.4,
+   "manufacturing": 6.7,
+   "other-service-activities": 16.7,
+   "professional-scientific-and-technical-activities": 9.2,
+   "real-estate-activities": 9.6,
+   "transportation-and-storage": 2.6,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 8.2
+  },
+  {
+   "date": "2026-07-31",
+   "wave": 163,
+   "0-9": 8.7,
+   "10-49": 11.5,
+   "100-249": 7.8,
+   "250": 6.0,
+   "50-99": 9.9,
+   "accommodation-and-food-service-activities": 10.5,
+   "administrative-and-support-service-activities": 7.6,
+   "all-businesses": 9.0,
+   "all-size-bands-excluding-0-9": 11.1,
+   "arts-entertainment-and-recreation": 12.2,
+   "construction": 8.3,
+   "education": 18.4,
+   "human-health-and-social-work-activities": 8.4,
+   "information-and-communication": 7.7,
+   "manufacturing": 7.7,
+   "other-service-activities": 5.8,
+   "professional-scientific-and-technical-activities": 8.0,
+   "real-estate-activities": 7.7,
+   "transportation-and-storage": 7.3,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 11.3
+  }
+ ]
+}

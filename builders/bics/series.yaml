@@ -1,0 +1,244 @@
+# BICS curated series: edit this file to change what goes in data/bics/bics_series.csv.
+#
+# To add a series:
+#   1. Find the question in data/bics/catalogue.csv (one row per question ever asked,
+#      with its answer options and the waves it covers).
+#   2. Copy a few distinctive words of the question into `question:` and the answer
+#      option(s) you want into `answers:`.
+#   3. Run  .venv/bin/python builders/bics/build.py --no-fetch  and check for errors.
+#      If the match is ambiguous or an answer is misspelt, the error lists the options.
+#
+# Fields:
+#   id         short name, used as the file name and in the CSV
+#   label      chart title
+#   topic      grouping: labour, costs, ai, wfh, health, ...
+#   question   any part of the question text (matching ignores case and punctuation;
+#              months and years appear as [month] [year])
+#   answers    list of answers to add up. For measure: net, give {up: [...], down: [...]}.
+#              End an answer with * to match every answer starting with that text.
+#   measure    share (default) | complement (100 minus the answers) | net (up minus down)
+#   exclude    answers to remove from the base before computing, e.g. [Not sure, Not applicable]
+#   weighting  count (default: each business counts once) | employment (weighted by
+#              headcount). Only some questions have employment weighting; see catalogue.
+#   population part of the "As a percentage of ..." text, only needed if a question
+#              is asked of two different groups
+#   breakdowns all (default: total + every industry + every size band) or a list
+#   note, breaks  free text carried into the chart file
+#
+# Questions that ONS reworded or re-based: list `versions`, preferred first. Each
+# version takes the series' fields unless it sets its own (question, population,
+# answers, exclude, ...). Where versions cover the same wave, the earlier one wins.
+#   wave       the wave file to read this version from. Only needed for an old
+#              version; otherwise the builder uses the last wave that asked the question.
+#   exclude    also works as a re-base: [Business did not experience*] turns
+#              "% of all businesses" into "% of businesses that did experience it".
+#
+# Joining versions does not make their levels comparable. Each chart file lists
+# `version_breaks` and the CSV has a `version` column: check the levels either side.
+#
+# Which file to download is worked out automatically: the newest wave's question log
+# says where each question was last asked, and only that file is fetched.
+#
+# Every series is published for "All businesses", each industry and each size band.
+# BICS percentages are shares of businesses (a sole trader counts the same as a large
+# firm) unless weighting: employment. Compare "All businesses" with the
+# "250 +" or "All size bands excluding 0 - 9" lines before drawing conclusions.
+
+defaults:
+  weighting: count
+  breakdowns: all
+
+series:
+
+  # ---------------------------------------------------------------- labour market
+  - id: worker_shortage
+    label: Businesses experiencing a shortage of workers
+    topic: labour
+    question: currently experiencing a shortage of workers
+    population: As a percentage of businesses not permanently stopped trading
+    answers: [Yes]
+
+  - id: worker_shortage_10plus
+    label: Businesses experiencing a shortage of workers (10+ employees)
+    topic: labour
+    question: currently experiencing a shortage of workers
+    population: with 10 or more employees
+    wave: 162   # the question log doesn't distinguish this version; it is in even waves
+    answers: [Yes]
+
+  - id: recruitment_difficulty
+    label: Businesses with difficulty recruiting employees
+    topic: labour
+    question: experience any difficulties recruiting employees
+    answers: [Yes]
+
+  # Recruitment difficulties by type and reason, joined across three questionnaire
+  # versions. Waves 55-100 and 163 ask only firms that had difficulties. Waves 109-151
+  # appear to include a broader group (probably also firms "not sure" whether they had
+  # difficulties: identical numbers are published under both descriptions), and come in
+  # 15-25 points lower. That segment can't be converted reliably (the filter question
+  # wasn't asked in those waves), so it is kept as published, with the break flagged.
+  - id: recruit_type_skilled
+    label: "Firms with recruitment difficulties: struggling to recruit skilled, manual or technical employees"
+    topic: labour
+    answers: ["Skilled, manual or technical employees"]
+    versions: &recruit_type_versions
+      - question: which of the following employees has your business had difficulties recruiting in [month] [year]
+      - question: which, if any, of the following employees has your business had difficulties recruiting in [month] [year]
+        wave: 157
+        exclude: [Business did not experience any difficulties*]   # all firms -> firms with difficulties
+      - question: which of the following employees has your business had difficulties in recruiting
+        population: that had difficulties recruiting employees
+        wave: 100
+
+  - id: recruit_type_professional
+    label: "Firms with recruitment difficulties: struggling to recruit professional or managerial employees"
+    topic: labour
+    answers: [Professional or managerial employees]
+    versions: *recruit_type_versions
+
+  - id: recruit_type_unskilled
+    label: "Firms with recruitment difficulties: struggling to recruit semi-skilled or unskilled employees"
+    topic: labour
+    answers: [Semi-skilled or unskilled employees]
+    versions: *recruit_type_versions
+
+  - id: recruit_reason_qualified
+    label: "Firms with recruitment difficulties: lack of qualified applicants"
+    topic: labour
+    answers: [Lack of qualified applicants*]
+    versions: &recruit_reason_versions
+      - question: why did your business experience difficulties recruiting employees in [month] [year]
+        population: that experienced difficulties recruiting employees
+      - question: why did your business experience difficulties recruiting employees in [month] [year]
+        population: that had difficulties recruiting employees
+        wave: 145
+      - question: why did your business experience difficulties recruiting employees in [month] [year]
+        population: or not sure if they were experiencing difficulties
+        wave: 157
+      - question: why did your business experience difficulties in recruiting employees
+        population: that had difficulties recruiting employees
+        wave: 100
+
+  - id: recruit_reason_applications
+    label: "Firms with recruitment difficulties: low number of applications"
+    topic: labour
+    answers: [Low number of applications*]
+    versions: *recruit_reason_versions
+
+  - id: recruit_reason_pay
+    label: "Firms with recruitment difficulties: cannot offer an attractive pay package"
+    topic: labour
+    answers: [Business cannot offer an attractive pay package*]
+    versions: *recruit_reason_versions
+
+  - id: employee_expectations_net
+    label: Expected number of employees, net balance (increase minus decrease)
+    topic: labour
+    question: expectations for the number of employees
+    measure: net
+    answers: {up: [Number of employees will increase], down: [Number of employees will decrease]}
+
+  - id: hourly_wages_net
+    label: Hourly wages vs previous month, net balance (increased minus decreased)
+    topic: labour
+    question: hourly wages in [month] [year] compare
+    measure: net
+    answers: {up: [Wages increased], down: [Wages decreased]}
+
+  # ---------------------------------------------------------------- costs
+  - id: staffing_costs_net
+    label: Staffing costs over the last three months, net balance
+    topic: costs
+    question: staffing costs changed over the last three months
+    measure: net
+    answers: {up: [Costs have increased], down: [Costs have decreased]}
+
+  - id: staffing_costs_expected_net
+    label: Expected staffing costs over the next three months, net balance
+    topic: costs
+    question: expect staffing costs to change over the next three months
+    measure: net
+    answers: {up: [Costs will increase], down: [Costs will decrease]}
+
+  - id: employment_costs_absorb
+    label: "Response to higher employment costs: absorb within profit margins"
+    topic: costs
+    question: adapt to any future increases in employment costs
+    answers: [Absorb within profit margins]
+
+  - id: employment_costs_prices
+    label: "Response to higher employment costs: increase prices"
+    topic: costs
+    question: adapt to any future increases in employment costs
+    answers: [Increase prices]
+
+  - id: employment_costs_headcount
+    label: "Response to higher employment costs: reduce number of employees"
+    topic: costs
+    question: adapt to any future increases in employment costs
+    answers: [Reduce number of employees]
+
+  - id: employment_costs_wage_restraint
+    label: "Response to higher employment costs: reduce wage increases for other employees"
+    topic: costs
+    question: adapt to any future increases in employment costs
+    answers: [Reduce wage increases*]
+
+  - id: employment_costs_investment
+    label: "Response to higher employment costs: reduce spending on investment"
+    topic: costs
+    question: adapt to any future increases in employment costs
+    answers: [Reduce spending on investment]
+
+  # ---------------------------------------------------------------- AI
+  - id: ai_use
+    label: Businesses currently using AI
+    topic: ai
+    question: artificial intelligence technologies, if any, does your business currently use
+    measure: complement
+    answers: [Business does not currently use artificial intelligence*]
+    exclude: [Not sure]
+    note: 100 minus "does not currently use AI", with "not sure" removed from the base.
+
+  - id: ai_plan
+    label: Businesses planning to adopt AI in the next three months
+    topic: ai
+    question: artificial intelligence technologies, if any, does your business plan to adopt
+    measure: complement
+    answers: [Business does not plan to*]
+    exclude: [Not sure]
+
+  - id: ai_headcount_down
+    label: "AI adopters: AI has reduced overall headcount"
+    topic: ai
+    question: impact, if any, have artificial intelligence technologies had on your business's overall workforce headcount
+    answers: [Reduced headcount]
+
+  # ---------------------------------------------------------------- working from home
+  - id: wfh_permanent
+    label: Businesses using or intending to use increased homeworking permanently
+    topic: wfh
+    question: is your business using, or intending to use, increased homeworking as a permanent business model
+    answers: [Yes]
+
+  - id: wfh_permanent_empweighted
+    label: Increased homeworking permanently (weighted by employment)
+    topic: wfh
+    question: is your business using, or intending to use increased homeworking as a permanent business model
+    weighting: employment
+    answers: [Yes]
+
+  - id: wfh_reason_productivity
+    label: "Homeworking reason: increased productivity (share of businesses using it)"
+    topic: wfh
+    question: why is your business using, or intending to use, increased homeworking
+    answers: [Increased productivity]
+
+  # ---------------------------------------------------------------- health (closest BICS has)
+  - id: wfh_reason_sickness
+    label: "Homeworking reason: reduced sickness absence (share of businesses using it)"
+    topic: health
+    question: why is your business using, or intending to use, increased homeworking
+    answers: [Reduced sickness absence]
+    note: BICS has not asked directly about sickness absence since the pandemic.

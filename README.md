@@ -1,7 +1,8 @@
 # ukmacro
 
 Automatically refreshed chart data for the UK economy in four areas: **GDP**,
-**labour markets**, **investment** and **trade**. Data comes from the ONS, the OECD
+**labour markets**, **investment** and **trade**, plus a cleaned, continuously
+updated dataset built from the ONS **Business Insights and Conditions Survey (BICS)**. Data comes from the ONS, the OECD
 (for international comparisons), the Bank of England and the OBR. The layout is
 modelled on [econvitals/econvitals-data](https://github.com/econvitals/econvitals-data).
 
@@ -22,6 +23,7 @@ ukmacro/                 shared source clients + the chart builder
   obr.py                 OBR spreadsheet downloads (no API: scrapes /download/ links)
   lastgood.py            last-good store (see below)
   builder.py             config.yaml -> chart JSON
+  bics.py                BICS wave download, parsing and the harvest store
 builders/<area>/
   config.yaml            which charts, which series: edit this to add a chart
   build.py               runs the config; bespoke analyses go here too
@@ -33,6 +35,46 @@ scripts/check_sources.py one known-good request per source: run when something g
 .github/workflows/       one workflow per area, sharing _refresh.yml
 NEXT.md                  to-do list + "Decided against"
 ```
+
+## BICS dataset
+
+BICS is published as one spreadsheet per fortnightly wave, with questions rotating
+in and out. The `bics` builder turns it into continuous series:
+
+1. **Harvest (automatic, minimal downloads).** Each wave file carries the full
+   history of every question it asks, so only the newest file asking a question is
+   needed. The builder reads the newest wave's question log (which records the
+   waves every question was asked in) and downloads just those files. After that,
+   it takes each new wave as it is published, one file a fortnight. Sheets are
+   merged into `data/bics/harvest/`, one CSV per question, and newer files win
+   where they overlap, which picks up ONS revisions.
+2. **Menus.** `data/bics/question_log.csv` lists every question BICS has ever
+   asked and in which waves. `data/bics/catalogue.csv` lists the questions
+   harvested so far, with population, weighting (by count or employment) and
+   answer options.
+3. **Curate (you edit this).** `builders/bics/series.yaml` lists the series you
+   want: a few words of the question, the answers to add up, and a measure
+   (share, net balance, or 100 minus). Instructions are at the top of the file.
+   Every series is built for all businesses, each industry and each size band.
+   Reworded questions can be joined as `versions`. Where a series switches version,
+   the chart file lists a `version_breaks` entry and the CSV's `version` column
+   changes: check the levels either side before reading a trend across it.
+
+Outputs:
+- `data/bics/bics_series.csv`: the complete curated dataset, long format
+  (`series_id, topic, label, measure, weighting, wave, ref_start, ref_end, group, breakdown, value, version`)
+- `data/bics/series/<id>.json`: one chart file per series, one column per breakdown
+- `data/bics/index.json`: series list with coverage and the latest total
+
+```r
+bics <- read.csv("https://raw.githubusercontent.com/Emily-coding/ukmacro/main/data/bics/bics_series.csv")
+```
+
+Caveats: values are percentages of *businesses* (a sole trader counts the same as
+a large employer) unless `weighting: employment`. Points are irregular because
+questions rotate, and are dated by the survey's reference period (two weeks early
+on, a calendar month later). Suppressed cells (`[c]`) are dropped, and a
+combined measure is left blank where any of its parts was suppressed.
 
 ## Running locally
 

@@ -29,6 +29,10 @@ def get(url: str, *, timeout: int = 60, retries: int = 3, backoff: float = 3.0) 
             # 4xx other than rate-limiting is our mistake (bad code, bad path): fail fast
             if (e.code < 500 and e.code != 429) or attempt == retries:
                 raise
+            if e.code == 429:  # rate-limited (ONS does this): wait as asked, or a minute
+                ra = e.headers.get("Retry-After", "")
+                time.sleep(int(ra) if ra.isdigit() else 60 * attempt)
+                continue
         except (urllib.error.URLError, TimeoutError):
             if attempt == retries:
                 raise

@@ -1,0 +1,165 @@
+wave,breakdown,Industry/Size Band,Business has no cash reserves,Less than one month,One to three months,Four to six months,More than six months,Not sure
+7,Currently trading,,4.2,3.8,27.5,20.7,28.0,15.8
+7,Not permanently stopped trading,,6.0,6.2,29.4,18.5,24.2,15.7
+7,Temporarily closed or paused trading,,9.4,11.0,33.3,14.1,16.6,15.6
+8,Currently trading,,4.5,5.5,25.0,20.2,27.4,17.3
+8,Not permanently stopped trading,,6.5,6.8,27.4,19.5,23.8,16.0
+8,Temporarily closed or paused trading,,12.0,10.2,33.9,17.5,13.9,12.5
+9,Currently trading,,6.8,5.2,25.7,19.6,27.1,15.6
+9,Not permanently stopped trading,,7.5,6.1,26.6,18.8,24.9,16.1
+9,Temporarily closed or paused trading,,10.7,9.8,30.2,15.4,15.7,18.2
+10,Currently trading,,5.8,5.7,27.5,17.8,25.6,17.5
+10,Not permanently stopped trading,,7.3,6.0,27.7,18.1,24.3,16.7
+10,Temporarily closed or paused trading,,14.8,7.1,28.3,19.7,17.8,12.3
+11,Currently trading,,6.6,4.9,25.0,17.7,26.9,18.8
+11,Not permanently stopped trading,,8.2,5.7,25.3,16.9,26.2,17.6
+11,Temporarily closed or paused trading,,16.1,9.8,27.1,12.9,22.5,11.6
+12,Currently trading,,6.2,4.3,26.4,20.1,22.5,20.6
+12,Not permanently stopped trading,,7.3,5.3,26.1,20.4,21.3,19.6
+12,Temporarily closed or paused trading,,13.5,10.9,24.8,21.9,14.8,14.1
+13,Currently trading,,9.4,3.4,26.2,19.2,21.1,20.7
+13,Not permanently stopped trading,,10.2,4.2,26.2,18.0,21.0,20.5
+13,Temporarily closed or paused trading,,15.3,9.0,26.2,10.5,20.0,19.0
+14,Currently trading,,6.8,6.5,28.0,13.6,25.2,19.9
+14,Not permanently stopped trading,,7.5,6.9,26.9,13.6,24.6,20.5
+14,Temporarily closed or paused trading,,12.1,10.0,18.9,14.1,20.4,24.3
+15,Currently trading,,8.9,3.8,24.5,18.4,25.3,19.0
+15,Not permanently stopped trading,,8.8,4.3,25.3,17.3,24.9,19.3
+15,Temporarily closed or paused trading,,8.1,8.0,31.4,8.9,21.9,21.6
+16,Currently trading,,8.0,5.8,24.9,18.0,25.2,18.0
+16,Not permanently stopped trading,,9.0,6.4,24.8,17.8,24.3,17.8
+16,Temporarily closed or paused trading,,15.8,10.1,23.8,16.0,17.5,16.8
+17,Currently trading,,9.3,5.9,23.9,15.3,25.1,20.6
+17,Not permanently stopped trading,,11.2,6.6,25.2,14.7,22.7,19.5
+17,Temporarily closed or paused trading,,20.8,10.4,31.7,11.8,11.3,14.0
+18,Currently trading,,9.2,5.3,24.6,16.3,24.8,19.8
+18,Not permanently stopped trading,,10.5,7.2,26.4,15.2,21.6,19.2
+18,Temporarily closed or paused trading,,15.2,14.1,32.9,10.9,10.0,16.8
+19,Currently trading,,8.5,5.1,24.5,15.2,25.1,21.5
+19,Not permanently stopped trading,,9.6,5.8,26.5,14.9,23.0,20.2
+19,Temporarily closed or paused trading,,14.7,9.6,35.9,13.3,12.8,13.7
+20,Currently trading,,7.7,6.3,26.8,16.8,24.5,18.0
+20,Not permanently stopped trading,,8.9,6.8,27.8,16.5,22.4,17.5
+20,Temporarily closed or paused trading,,16.5,10.3,34.2,14.6,9.6,14.9
+21,Currently trading,,7.2,5.3,25.3,16.8,26.6,18.8
+21,Not permanently stopped trading,,10.1,6.7,28.0,15.5,22.3,17.5
+21,Temporarily closed or paused trading,,17.6,10.4,34.8,12.0,11.1,14.1
+22,Currently trading,,7.8,4.6,26.4,15.9,24.4,20.8
+22,Not permanently stopped trading,,9.7,6.4,28.9,15.2,20.4,19.4
+22,Temporarily closed or paused trading,,15.0,11.3,35.7,13.2,9.5,15.3
+23,Currently trading,,8.8,4.5,26.1,16.4,24.2,19.9
+23,Not permanently stopped trading,,10.7,5.6,28.3,15.7,20.9,18.9
+23,Temporarily closed or paused trading,,16.0,8.6,34.7,13.8,11.1,15.7
+24,Currently trading,,8.0,4.2,26.9,16.5,26.6,17.8
+24,Not permanently stopped trading,,9.8,5.0,29.1,16.4,23.0,16.8
+24,Temporarily closed or paused trading,,14.9,7.2,35.3,16.1,12.7,13.9
+25,Currently trading,,8.7,5.1,26.8,16.2,25.0,18.2
+25,Not permanently stopped trading,,10.3,6.7,27.8,15.3,21.9,18.0
+25,Temporarily closed or paused trading,,15.0,11.5,30.8,12.8,12.3,17.6
+26,Currently trading,,8.9,4.5,25.3,15.6,25.9,19.9
+26,Not permanently stopped trading,,10.8,5.3,26.4,15.0,23.3,19.1
+26,Temporarily closed or paused trading,,16.7,8.0,30.1,13.2,15.2,16.8
+27,Currently trading,,10.2,5.2,26.4,16.3,25.2,16.7
+27,Not permanently stopped trading,,12.1,5.6,27.0,15.8,23.0,16.5
+27,Temporarily closed or paused trading,,18.5,6.8,29.3,14.0,15.7,15.7
+28,Currently trading,,9.5,4.0,27.4,15.2,25.8,18.3
+28,Not permanently stopped trading,,10.8,5.4,27.7,15.2,23.5,17.4
+28,Temporarily closed or paused trading,,16.3,11.0,29.2,15.5,14.2,13.9
+29,Currently trading,,9.4,5.1,28.1,15.2,26.3,16.0
+29,Not permanently stopped trading,,10.6,5.6,27.8,14.8,25.1,16.1
+29,Temporarily closed or paused trading,,18.0,8.5,26.1,12.9,17.9,16.6
+30,Currently trading,,10.0,4.6,28.2,14.6,24.1,18.5
+30,Not permanently stopped trading,,10.9,4.8,27.7,14.1,23.3,19.2
+30,Temporarily closed or paused trading,,16.8,6.0,24.2,10.7,18.5,23.7
+31,Currently trading,,9.8,4.4,28.3,16.1,24.2,17.2
+31,Not permanently stopped trading,,10.8,4.4,28.6,15.4,23.8,17.0
+31,Temporarily closed or paused trading,,19.9,3.8,32.1,9.1,20.3,14.8
+32,Currently trading,,10.0,4.2,27.0,15.7,26.7,16.4
+32,Not permanently stopped trading,,11.1,4.4,27.2,15.1,25.9,16.4
+32,Temporarily closed or paused trading,,21.6,5.9,30.2,8.8,17.6,16.0
+33,Currently trading,,8.5,4.4,28.1,14.5,26.1,18.4
+33,Not permanently stopped trading,,9.3,4.5,28.2,13.8,25.6,18.5
+33,Temporarily closed or paused trading,,17.6,5.5,28.9,7.6,21.5,19.0
+35,Currently trading,,9.9,4.2,24.5,14.3,28.6,18.5
+35,Not permanently stopped trading,,10.9,4.2,23.9,14.1,27.9,19.0
+35,Temporarily closed or paused trading,,20.4,4.5,18.0,11.6,21.7,23.7
+37,Currently trading,,9.5,3.3,24.3,15.6,25.9,21.3
+37,Not permanently stopped trading,,9.5,3.3,24.1,15.4,25.6,22.1
+37,Temporarily closed or paused trading,,9.1,2.6,21.6,12.9,21.8,32.1
+39,Currently trading,,9.3,3.5,22.8,13.3,27.0,24.1
+39,Not permanently stopped trading,,9.9,3.6,22.5,13.0,26.6,24.5
+39,Temporarily closed or paused trading,,18.2,4.4,19.1,8.5,21.2,28.6
+41,Currently trading,,11.0,4.2,21.8,14.2,27.7,21.0
+41,Not permanently stopped trading,,11.4,4.2,21.6,13.7,27.7,21.4
+41,Temporarily closed or paused trading,,19.3,3.8,17.5,3.8,27.6,27.9
+43,Currently trading,,11.8,3.9,21.7,14.7,29.8,18.2
+43,Not permanently stopped trading,,12.4,3.9,21.5,14.3,28.9,18.9
+43,Temporarily closed or paused trading,,23.9,4.7,19.6,7.3,13.8,30.7
+45,Currently trading,,12.5,3.5,22.1,12.8,28.4,20.6
+45,Not permanently stopped trading,,13.1,3.5,21.8,12.6,27.9,21.1
+45,Temporarily closed or paused trading,,21.9,3.0,16.8,8.8,19.9,29.6
+47,Currently trading,,10.3,5.0,24.4,13.7,28.5,18.0
+47,Not permanently stopped trading,,11.4,5.2,23.8,13.9,27.1,18.6
+47,Temporarily closed or paused trading,,25.5,7.3,16.1,15.7,10.2,25.2
+49,Currently trading,,9.9,4.6,21.3,13.7,30.2,20.3
+49,Not permanently stopped trading,,10.3,4.5,21.5,13.1,30.0,20.6
+49,Temporarily closed or paused trading,,16.2,3.2,26.2,2.7,24.8,26.8
+51,Currently trading,,9.8,5.3,22.4,13.8,29.7,19.0
+51,Not permanently stopped trading,,10.7,5.2,22.3,13.5,29.4,18.9
+51,Temporarily closed or paused trading,,30.8,4.1,19.5,7.0,22.4,16.3
+53,Currently trading,,9.1,6.0,24.1,12.8,30.6,17.5
+53,Not permanently stopped trading,,10.1,5.8,24.3,12.7,29.9,17.1
+55,Currently trading,,11.0,5.5,22.7,12.0,30.2,18.6
+55,Not permanently stopped trading,,11.8,5.5,22.3,12.1,29.8,18.5
+60,Currently trading,,11.9,6.7,20.4,11.8,29.1,20.2
+60,Not permanently stopped trading,,12.5,6.8,20.2,11.5,29.0,20.0
+67,Currently trading,,12.4,6.4,22.0,13.9,25.8,19.5
+67,Not permanently stopped trading,,12.9,6.7,21.6,13.7,25.7,19.4
+74,Currently trading,,11.4,4.9,19.3,11.5,29.6,23.4
+74,Not permanently stopped trading,,11.5,4.8,18.9,11.4,29.9,23.5
+80,Currently trading,,10.8,4.6,19.0,12.0,29.7,23.8
+80,Not permanently stopped trading,,11.4,4.5,18.7,11.8,29.7,24.0
+86,Currently trading,,11.6,4.4,19.0,12.8,28.7,23.5
+86,Not permanently stopped trading,,12.3,4.4,18.8,12.6,28.6,23.3
+93,Currently trading,,11.4,4.1,18.9,14.2,25.8,25.5
+93,Not permanently stopped trading,,12.0,4.2,18.7,13.9,26.1,25.1
+100,Currently trading,,11.7,5.5,21.2,11.4,28.1,22.1
+100,Not permanently stopped trading,,11.8,5.5,21.2,11.4,27.9,22.2
+102,Currently trading,,12.3,7.5,21.8,12.0,25.7,20.8
+102,Not permanently stopped trading,,13.0,7.3,21.4,12.3,25.2,20.8
+104,Currently trading,,12.7,5.5,21.2,12.7,30.1,17.9
+104,Not permanently stopped trading,,13.3,5.4,20.8,12.8,29.8,17.9
+106,Currently trading,,11.1,7.1,22.6,12.8,28.4,18.0
+106,Not permanently stopped trading,,11.8,7.2,22.0,12.7,28.0,18.2
+108,Currently trading,,10.7,7.0,22.6,12.9,29.4,17.5
+108,Not permanently stopped trading,,11.4,7.0,22.2,12.7,29.0,17.7
+110,Currently trading,,11.6,6.3,21.8,12.8,29.7,17.8
+110,Not permanently stopped trading,,12.0,6.3,21.4,12.8,29.4,18.2
+112,Currently trading,,11.3,6.4,21.7,13.7,29.8,17.0
+112,Not permanently stopped trading,,12.0,6.3,21.0,13.6,29.7,17.5
+114,Currently trading,,11.4,6.6,23.9,12.1,28.7,17.4
+114,Not permanently stopped trading,,12.3,6.4,23.5,11.8,28.5,17.5
+116,Currently trading,,11.1,7.2,23.5,14.3,27.9,16.1
+116,Not permanently stopped trading,,11.7,7.0,23.2,13.9,27.3,16.8
+123,Currently trading,,15.3,6.3,20.1,13.0,29.1,16.1
+123,Not permanently stopped trading,,16.2,6.1,20.1,13.0,28.3,16.2
+129,Currently trading,,13.8,6.5,20.9,11.6,26.5,20.7
+129,Not permanently stopped trading,,14.5,6.6,20.6,11.3,26.3,20.7
+135,Currently trading,,15.6,7.2,19.0,13.2,26.2,18.9
+135,Not permanently stopped trading,,16.5,7.0,18.8,13.0,25.8,18.9
+141,Currently trading,,16.6,6.1,18.7,11.3,25.8,21.5
+141,Not permanently stopped trading,,16.9,6.1,18.5,11.2,25.7,21.5
+147,Currently trading,,13.9,5.8,22.6,12.9,23.8,21.0
+147,Not permanently stopped trading,,14.6,5.9,22.1,12.6,23.6,21.1
+154,Currently trading,,14.7,6.2,19.5,12.1,19.8,27.7
+154,Not permanently stopped trading,,15.3,6.1,19.0,12.3,19.4,27.9
+156,Currently trading,,16.1,7.5,18.5,10.5,22.2,25.2
+156,Not permanently stopped trading,,16.7,7.3,18.3,10.6,22.0,25.1
+158,Currently trading,,16.6,6.6,20.9,11.4,20.5,24.0
+158,Not permanently stopped trading,,17.4,6.5,20.5,11.1,20.4,24.1
+160,Currently trading,,15.8,7.0,19.1,11.3,24.0,22.8
+160,Not permanently stopped trading,,16.4,6.9,19.0,11.0,23.6,23.1
+162,Currently trading,,16.2,6.3,20.5,12.2,22.1,22.8
+162,Not permanently stopped trading,,17.3,6.1,19.7,12.1,22.0,22.8
+164,Currently trading,,14.6,7.0,21.4,12.5,22.2,22.2
+164,Not permanently stopped trading,,15.5,6.9,20.9,12.4,22.2,22.1
