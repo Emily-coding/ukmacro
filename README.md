@@ -115,9 +115,12 @@ far: the employment-rate composition analysis (`img/labour-markets/emp-*.png`).
 
 - 30 x 15 cm at 200 dpi (2362 x 1181 px), 256-colour PNG, about 60 KB each
 - Font: Source Sans 3 (open licence, bundled in `assets/fonts/`, so output matches on any machine)
-- Series colours in fixed order: blue `#2a78d6`, orange `#eb6834`, aqua `#1baf7a`,
-  yellow `#eda100`. Totals in ink `#0b0b0b`. Background `#fcfcfb`, text `#0b0b0b` /
-  `#52514e`, axes and source `#898781`, gridlines `#e1e0d9`
+- Colours: the "blue-amber" theme, built from the Blue, Yellow Vivid and Blue Grey
+  scales of svengraziani/ui-design's professional UI palettes. Series in fixed order:
+  blue `#186FAF`, amber `#DE911D`, teal `#27AB83`, red `#BA2525`. Totals in `#102A43`.
+  White background, text `#102A43` / `#486581`, axes and source `#627D98`, gridlines
+  `#D9E2EC`. Every series pair passes a colour-blind check. Other themes are in
+  `THEMES` in `charts.py`; change `DEFAULT_THEME` to switch.
 
 ## Employment composition
 

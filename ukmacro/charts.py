@@ -4,13 +4,10 @@ House style, used for every PNG:
     size      30 x 15 cm at 200 dpi (2362 x 1181 px), saved as a 256-colour PNG
     font      Source Sans 3 (SIL Open Font License, in assets/fonts/), so output is
               identical on a laptop and on GitHub Actions
-    colours   series slots, in this fixed order:
-                1 blue #2a78d6   2 orange #eb6834   3 aqua #1baf7a   4 yellow #eda100
-              (the first slots of a colour-blind-validated categorical palette; colour
-              follows the series' position in the chart, never its value)
-              totals / reference lines in ink #0b0b0b
-              surface #fcfcfb, primary text #0b0b0b, secondary #52514e,
-              muted (axes, source) #898781, gridlines #e1e0d9, zero line #c3c2b7
+    colours   a theme from THEMES (DEFAULT_THEME is used unless render() is given
+              one): series colours in fixed order (colour follows the series' position
+              in the chart, never its value), totals / reference lines in the theme's
+              ink, and its grey scale for text, axes and gridlines
     marks     2pt lines, hairline horizontal gridlines only, no chart border,
               legend above the plot, direct value labels at line ends
 
@@ -35,34 +32,64 @@ FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
 for f in FONTS.glob("*.ttf"):
     font_manager.fontManager.addfont(str(f))
 
-SERIES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948"]
-INK = "#0b0b0b"
-SURFACE = "#fcfcfb"
-TEXT_2 = "#52514e"
-MUTED = "#898781"
-GRID = "#e1e0d9"
-BASELINE = "#c3c2b7"
+# Colour themes. Series colours are used in this fixed order; neutrals carry all
+# text, axes and gridlines. "reference" is the dataviz skill's validated palette; the
+# others are built from the "Professional UI colour palettes" scales (Refactoring UI
+# style) by svengraziani/ui-design: one or two strong hues for data plus the matching
+# grey scale. Every series pair below passes a colour-blind check (worst simulated
+# separation >= 8 in OKLab x100; normal-vision separation >= 15).
+THEMES = {
+    "reference": {
+        "series": ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"],
+        "ink": "#0b0b0b", "text_2": "#52514e", "muted": "#898781",
+        "grid": "#e1e0d9", "baseline": "#c3c2b7", "surface": "#fcfcfb"},
+    # Blue + Yellow Vivid + Blue Grey (palette 2), teal as the third series
+    "blue-amber": {
+        "series": ["#186FAF", "#DE911D", "#27AB83", "#BA2525"],
+        "ink": "#102A43", "text_2": "#486581", "muted": "#627D98",
+        "grid": "#D9E2EC", "baseline": "#9FB3C8", "surface": "#FFFFFF"},
+    # Cyan + Warm Grey (palette 7), amber and red as supporting series
+    "cyan-warm": {
+        "series": ["#0E7C86", "#DE911D", "#BA2525", "#486581"],
+        "ink": "#27241D", "text_2": "#625D52", "muted": "#857F72",
+        "grid": "#E8E6E1", "baseline": "#B8B2A7", "surface": "#FAF9F7"},
+    # Blue Vivid + Cool Grey (palette 8), red vivid and teal as supporting series
+    "blue-red": {
+        "series": ["#0967D2", "#E12D39", "#27AB83", "#DE911D"],
+        "ink": "#1F2933", "text_2": "#52606D", "muted": "#7B8794",
+        "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
+}
+DEFAULT_THEME = "blue-amber"
 
 CM = 1 / 2.54
 SIZE = (30 * CM, 15 * CM)
 DPI = 200
 
-plt.rcParams.update({
-    "font.family": "Source Sans 3",
-    "font.size": 11,
-    "axes.edgecolor": BASELINE,
-    "axes.labelcolor": TEXT_2,
-    "xtick.color": MUTED,
-    "ytick.color": MUTED,
-    "xtick.labelcolor": TEXT_2,
-    "ytick.labelcolor": TEXT_2,
-    "xtick.labelsize": 10.5,
-    "ytick.labelsize": 10.5,
-    "axes.titlesize": 16,
-    "figure.facecolor": SURFACE,
-    "axes.facecolor": SURFACE,
-    "savefig.facecolor": SURFACE,
-})
+
+def use_theme(name: str) -> None:
+    """Switch every colour used below (they are module-level so the drawing code stays short)."""
+    global SERIES, INK, TEXT_2, MUTED, GRID, BASELINE, SURFACE
+    t = THEMES[name]
+    SERIES, INK, TEXT_2, MUTED = t["series"], t["ink"], t["text_2"], t["muted"]
+    GRID, BASELINE, SURFACE = t["grid"], t["baseline"], t["surface"]
+    plt.rcParams.update({
+        "font.family": "Source Sans 3",
+        "font.size": 11,
+        "axes.edgecolor": BASELINE,
+        "axes.labelcolor": TEXT_2,
+        "xtick.color": MUTED,
+        "ytick.color": MUTED,
+        "xtick.labelcolor": TEXT_2,
+        "ytick.labelcolor": TEXT_2,
+        "xtick.labelsize": 10.5,
+        "ytick.labelsize": 10.5,
+        "figure.facecolor": SURFACE,
+        "axes.facecolor": SURFACE,
+        "savefig.facecolor": SURFACE,
+    })
+
+
+use_theme(DEFAULT_THEME)
 
 
 # ---------------------------------------------------------------- frame
@@ -194,5 +221,6 @@ def _grouped_hbar(chart):
 RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": _grouped_hbar}
 
 
-def render(chart: dict, path: Path) -> Path:
+def render(chart: dict, path: Path, theme: str | None = None) -> Path:
+    use_theme(theme or DEFAULT_THEME)
     return _save(RENDERERS[chart["type"]](chart), path)

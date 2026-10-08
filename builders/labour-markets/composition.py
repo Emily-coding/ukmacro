@@ -146,6 +146,7 @@ def build() -> list[Path]:
                                 "weighted by its population share.")
         for c in (line, decomp, by_group):
             js, png = DATA / f"{c['slug']}.json", IMG / f"{c['slug']}.png"
+            c["theme"] = charts.DEFAULT_THEME  # so a theme change also triggers a re-render
             text = json.dumps(c, indent=1) + "\n"
             # re-render only when the data changed: PNG bytes vary slightly between
             # machines, and an unchanged chart shouldn't produce a daily commit
