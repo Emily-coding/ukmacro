@@ -34,64 +34,184 @@
    "versions": 1
   },
   {
-   "id": "recruit_type_skilled",
+   "id": "recruit_type_skilled_2021_23",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: struggling to recruit skilled, manual or technical employees",
-   "n_waves": 18,
+   "title": "Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)",
+   "n_waves": 8,
    "first": "2022-03-31",
+   "data_through": "2023-12-31",
+   "latest_total": 42.7,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_professional_2021_23",
+   "topic": "labour",
+   "title": "Hard to recruit: professional or managerial employees (% of firms with difficulties, 2021-23)",
+   "n_waves": 8,
+   "first": "2022-03-31",
+   "data_through": "2023-12-31",
+   "latest_total": 21.8,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_unskilled_2021_23",
+   "topic": "labour",
+   "title": "Hard to recruit: semi-skilled or unskilled employees (% of firms with difficulties, 2021-23)",
+   "n_waves": 8,
+   "first": "2022-03-31",
+   "data_through": "2023-12-31",
+   "latest_total": 35.9,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_skilled_2024_26",
+   "topic": "labour",
+   "title": "Hard to recruit: skilled, manual or technical employees (2024-26 basis)",
+   "n_waves": 9,
+   "first": "2024-04-30",
+   "data_through": "2026-04-30",
+   "latest_total": 30.91,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_professional_2024_26",
+   "topic": "labour",
+   "title": "Hard to recruit: professional or managerial employees (2024-26 basis)",
+   "n_waves": 9,
+   "first": "2024-04-30",
+   "data_through": "2026-04-30",
+   "latest_total": 12.27,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_unskilled_2024_26",
+   "topic": "labour",
+   "title": "Hard to recruit: semi-skilled or unskilled employees (2024-26 basis)",
+   "n_waves": 9,
+   "first": "2024-04-30",
+   "data_through": "2026-04-30",
+   "latest_total": 16.82,
+   "versions": 1
+  },
+  {
+   "id": "recruit_type_skilled_2026",
+   "topic": "labour",
+   "title": "Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 43.2,
-   "versions": 3
+   "versions": 1
   },
   {
-   "id": "recruit_type_professional",
+   "id": "recruit_type_professional_2026",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: struggling to recruit professional or managerial employees",
-   "n_waves": 18,
-   "first": "2022-03-31",
+   "title": "Hard to recruit: professional or managerial employees (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 18.8,
-   "versions": 3
+   "versions": 1
   },
   {
-   "id": "recruit_type_unskilled",
+   "id": "recruit_type_unskilled_2026",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: struggling to recruit semi-skilled or unskilled employees",
-   "n_waves": 18,
-   "first": "2022-03-31",
+   "title": "Hard to recruit: semi-skilled or unskilled employees (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 37.0,
-   "versions": 3
+   "versions": 1
   },
   {
-   "id": "recruit_reason_qualified",
+   "id": "recruit_reason_qualified_2021_23",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: lack of qualified applicants",
-   "n_waves": 25,
+   "title": "Recruitment difficulty reason: lack of qualified applicants (% of firms with difficulties, 2021-23)",
+   "n_waves": 15,
    "first": "2021-09-19",
+   "data_through": "2023-12-31",
+   "latest_total": 57.1,
+   "versions": 1
+  },
+  {
+   "id": "recruit_reason_applications_2021_23",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: low number of applications (% of firms with difficulties, 2021-23)",
+   "n_waves": 15,
+   "first": "2021-09-19",
+   "data_through": "2023-12-31",
+   "latest_total": 36.8,
+   "versions": 1
+  },
+  {
+   "id": "recruit_reason_pay_2021_23",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: cannot offer an attractive pay package (% of firms with difficulties, 2021-23)",
+   "n_waves": 17,
+   "first": "2021-07-25",
+   "data_through": "2023-12-31",
+   "latest_total": 29.4,
+   "versions": 1
+  },
+  {
+   "id": "recruit_reason_qualified_2024_26",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: lack of qualified applicants (2024-26 basis)",
+   "n_waves": 8,
+   "first": "2024-04-30",
+   "data_through": "2026-01-31",
+   "latest_total": 33.6,
+   "versions": 2
+  },
+  {
+   "id": "recruit_reason_applications_2024_26",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: low number of applications (2024-26 basis)",
+   "n_waves": 8,
+   "first": "2024-04-30",
+   "data_through": "2026-01-31",
+   "latest_total": 17.4,
+   "versions": 2
+  },
+  {
+   "id": "recruit_reason_pay_2024_26",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: cannot offer an attractive pay package (2024-26 basis)",
+   "n_waves": 8,
+   "first": "2024-04-30",
+   "data_through": "2026-01-31",
+   "latest_total": 16.3,
+   "versions": 2
+  },
+  {
+   "id": "recruit_reason_qualified_2026",
+   "topic": "labour",
+   "title": "Recruitment difficulty reason: lack of qualified applicants (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 68.8,
-   "versions": 4
+   "versions": 1
   },
   {
-   "id": "recruit_reason_applications",
+   "id": "recruit_reason_applications_2026",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: low number of applications",
-   "n_waves": 25,
-   "first": "2021-09-19",
+   "title": "Recruitment difficulty reason: low number of applications (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 43.1,
-   "versions": 4
+   "versions": 1
   },
   {
-   "id": "recruit_reason_pay",
+   "id": "recruit_reason_pay_2026",
    "topic": "labour",
-   "title": "Firms with recruitment difficulties: cannot offer an attractive pay package",
-   "n_waves": 27,
-   "first": "2021-07-25",
+   "title": "Recruitment difficulty reason: cannot offer an attractive pay package (% of firms with difficulties, from 2026)",
+   "n_waves": 1,
+   "first": "2026-07-31",
    "data_through": "2026-07-31",
    "latest_total": 27.6,
-   "versions": 4
+   "versions": 1
   },
   {
    "id": "employee_expectations_net",

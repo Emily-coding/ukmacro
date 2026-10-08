@@ -1,0 +1,257 @@
+{
+ "slug": "recruit_type_skilled_2021_23",
+ "category": "bics",
+ "topic": "labour",
+ "title": "Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
+ "note": null,
+ "measure": "share",
+ "answers": [
+  "Skilled, manual or technical employees"
+ ],
+ "exclude": null,
+ "breaks": null,
+ "versions": [
+  {
+   "version": 1,
+   "question": "Which of the following employees has your business had difficulties in recruiting?",
+   "population": "As a percentage of businesses not permanently stopped trading that had difficulties recruiting employees",
+   "weighting": "count",
+   "waves_used": "55-100 (8)"
+  }
+ ],
+ "version_breaks": [],
+ "series": [
+  {
+   "key": "all-businesses",
+   "label": "All businesses",
+   "group": "total"
+  },
+  {
+   "key": "0-9",
+   "label": "0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "10-49",
+   "label": "10 - 49",
+   "group": "size"
+  },
+  {
+   "key": "50-99",
+   "label": "50 - 99",
+   "group": "size"
+  },
+  {
+   "key": "100-249",
+   "label": "100 - 249",
+   "group": "size"
+  },
+  {
+   "key": "250",
+   "label": "250 +",
+   "group": "size"
+  },
+  {
+   "key": "all-size-bands-excluding-0-9",
+   "label": "All size bands excluding 0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "accommodation-and-food-service-activities",
+   "label": "Accommodation and food service activities",
+   "group": "industry"
+  },
+  {
+   "key": "administrative-and-support-service-activities",
+   "label": "Administrative and support service activities",
+   "group": "industry"
+  },
+  {
+   "key": "arts-entertainment-and-recreation",
+   "label": "Arts, entertainment and recreation",
+   "group": "industry"
+  },
+  {
+   "key": "construction",
+   "label": "Construction",
+   "group": "industry"
+  },
+  {
+   "key": "education",
+   "label": "Education",
+   "group": "industry"
+  },
+  {
+   "key": "human-health-and-social-work-activities",
+   "label": "Human health and social work activities",
+   "group": "industry"
+  },
+  {
+   "key": "information-and-communication",
+   "label": "Information and communication",
+   "group": "industry"
+  },
+  {
+   "key": "other-service-activities",
+   "label": "Other service activities",
+   "group": "industry"
+  },
+  {
+   "key": "professional-scientific-and-technical-activities",
+   "label": "Professional, scientific and technical activities",
+   "group": "industry"
+  },
+  {
+   "key": "real-estate-activities",
+   "label": "Real estate activities",
+   "group": "industry"
+  },
+  {
+   "key": "water-supply-sewerage-waste-management-and-remediation-activities",
+   "label": "Water supply, sewerage, waste management and remediation activities",
+   "group": "industry"
+  },
+  {
+   "key": "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles",
+   "label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+   "group": "industry"
+  }
+ ],
+ "data_through": "2023-12-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2022-03-31",
+   "wave": 55,
+   "0-9": 55.0,
+   "10-49": 40.6,
+   "100-249": 44.6,
+   "250": 45.6,
+   "50-99": 40.0,
+   "all-businesses": 50.1,
+   "all-size-bands-excluding-0-9": 41.1,
+   "arts-entertainment-and-recreation": 36.0,
+   "construction": 98.0,
+   "education": 42.5,
+   "human-health-and-social-work-activities": 35.9,
+   "other-service-activities": 79.0,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 52.3
+  },
+  {
+   "date": "2022-06-30",
+   "wave": 60,
+   "0-9": 51.8,
+   "10-49": 35.1,
+   "100-249": 42.2,
+   "250": 44.4,
+   "50-99": 42.4,
+   "accommodation-and-food-service-activities": 26.3,
+   "all-businesses": 47.2,
+   "all-size-bands-excluding-0-9": 36.9,
+   "construction": 88.8,
+   "information-and-communication": 47.1,
+   "professional-scientific-and-technical-activities": 41.4,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 45.2
+  },
+  {
+   "date": "2022-09-30",
+   "wave": 67,
+   "0-9": 55.7,
+   "10-49": 36.4,
+   "100-249": 42.8,
+   "250": 44.7,
+   "50-99": 41.7,
+   "accommodation-and-food-service-activities": 29.4,
+   "administrative-and-support-service-activities": 48.6,
+   "all-businesses": 51.2,
+   "all-size-bands-excluding-0-9": 38.0,
+   "construction": 98.7,
+   "professional-scientific-and-technical-activities": 39.4,
+   "water-supply-sewerage-waste-management-and-remediation-activities": 39.2,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 48.6
+  },
+  {
+   "date": "2022-12-31",
+   "wave": 74,
+   "0-9": 50.7,
+   "10-49": 40.0,
+   "100-249": 43.7,
+   "250": 45.0,
+   "50-99": 40.4,
+   "accommodation-and-food-service-activities": 18.2,
+   "all-businesses": 47.7,
+   "all-size-bands-excluding-0-9": 40.6,
+   "construction": 88.2,
+   "human-health-and-social-work-activities": 28.8,
+   "professional-scientific-and-technical-activities": 36.0,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 45.2
+  },
+  {
+   "date": "2023-03-31",
+   "wave": 80,
+   "0-9": 45.5,
+   "10-49": 36.4,
+   "100-249": 42.1,
+   "250": 44.4,
+   "50-99": 40.0,
+   "accommodation-and-food-service-activities": 18.8,
+   "all-businesses": 43.0,
+   "all-size-bands-excluding-0-9": 37.6,
+   "construction": 86.2,
+   "information-and-communication": 38.2,
+   "other-service-activities": 71.0,
+   "professional-scientific-and-technical-activities": 29.2,
+   "water-supply-sewerage-waste-management-and-remediation-activities": 65.9,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 59.3
+  },
+  {
+   "date": "2023-06-30",
+   "wave": 86,
+   "0-9": 40.5,
+   "10-49": 39.9,
+   "100-249": 41.5,
+   "250": 45.1,
+   "50-99": 40.5,
+   "all-businesses": 40.5,
+   "all-size-bands-excluding-0-9": 40.5,
+   "professional-scientific-and-technical-activities": 16.9,
+   "water-supply-sewerage-waste-management-and-remediation-activities": 55.9,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 53.4
+  },
+  {
+   "date": "2023-09-30",
+   "wave": 93,
+   "0-9": 50.9,
+   "10-49": 38.6,
+   "100-249": 39.7,
+   "250": 41.9,
+   "50-99": 41.8,
+   "all-businesses": 46.7,
+   "all-size-bands-excluding-0-9": 39.2,
+   "education": 44.9,
+   "professional-scientific-and-technical-activities": 15.5,
+   "water-supply-sewerage-waste-management-and-remediation-activities": 67.0
+  },
+  {
+   "date": "2023-12-31",
+   "wave": 100,
+   "0-9": 43.9,
+   "10-49": 39.3,
+   "100-249": 45.9,
+   "250": 44.9,
+   "50-99": 39.1,
+   "administrative-and-support-service-activities": 45.1,
+   "all-businesses": 42.7,
+   "all-size-bands-excluding-0-9": 40.1,
+   "professional-scientific-and-technical-activities": 21.2,
+   "real-estate-activities": 40.4,
+   "water-supply-sewerage-waste-management-and-remediation-activities": 35.9,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 57.7
+  }
+ ]
+}

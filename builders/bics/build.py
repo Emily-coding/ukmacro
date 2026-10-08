@@ -173,6 +173,9 @@ def build_series(spec: dict, store: bics.Store) -> tuple[dict, dict, list[dict]]
     for i, ver in enumerate(versions_of(spec), start=1):
         q = find_question(ver, store.catalogue)
         vals = compute(ver, store.load(q["id"]))
+        if ver.get("waves"):  # [from, to] inclusive; to may be left out for open-ended
+            lo, hi = (list(ver["waves"]) + [None])[:2]
+            vals = {k: v for k, v in vals.items() if k[0] >= lo and (hi is None or k[0] <= hi)}
         for k, v in vals.items():
             if k not in values:  # earlier versions take priority where they overlap
                 values[k], used[k] = v, i

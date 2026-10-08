@@ -23,6 +23,7 @@
 #   population part of the "As a percentage of ..." text, only needed if a question
 #              is asked of two different groups
 #   breakdowns all (default: total + every industry + every size band) or a list
+#   waves      [from, to]: keep only these waves (inclusive); [from] = open-ended
 #   note, breaks  free text carried into the chart file
 #
 # Questions that ONS reworded or re-based: list `versions`, preferred first. Each
@@ -72,65 +73,124 @@ series:
     question: experience any difficulties recruiting employees
     answers: [Yes]
 
-  # Recruitment difficulties by type and reason, joined across three questionnaire
-  # versions. Waves 55-100 and 163 ask only firms that had difficulties. Waves 109-151
-  # appear to include a broader group (probably also firms "not sure" whether they had
-  # difficulties: identical numbers are published under both descriptions), and come in
-  # 15-25 points lower. That segment can't be converted reliably (the filter question
-  # wasn't asked in those waves), so it is kept as published, with the break flagged.
-  - id: recruit_type_skilled
-    label: "Firms with recruitment difficulties: struggling to recruit skilled, manual or technical employees"
+  # Recruitment difficulties by type and reason. ONS changed who these follow-up
+  # questions are asked of, and levels shift 15-25 points between periods, so each
+  # period is its own series rather than one joined line:
+  #   2021-23 (waves to 100)  firms that had difficulties
+  #   2024-26 (waves 109-157) a broader group, probably also firms "not sure" whether
+  #                           they had difficulties; "which employees" is re-based to
+  #                           firms with difficulties using its own "did not
+  #                           experience" answer, but still runs lower
+  #   from Jul 2026 (163+)    firms that had difficulties again
+  # The 2021-23 and 2026 series share a base, so their levels are comparable.
+  # Wave 157 of the "why" question is left out: it is published on the 2024-26 base
+  # but its level matches the 2026 base, so it can't be placed in either series.
+
+  # which types of employee are hard to recruit
+  - &recruit_type_2021
+    id: recruit_type_skilled_2021_23
+    label: "Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)"
     topic: labour
     answers: ["Skilled, manual or technical employees"]
-    versions: &recruit_type_versions
-      - question: which of the following employees has your business had difficulties recruiting in [month] [year]
-      - question: which, if any, of the following employees has your business had difficulties recruiting in [month] [year]
-        wave: 157
-        exclude: [Business did not experience any difficulties*]   # all firms -> firms with difficulties
-      - question: which of the following employees has your business had difficulties in recruiting
-        population: that had difficulties recruiting employees
-        wave: 100
-
-  - id: recruit_type_professional
-    label: "Firms with recruitment difficulties: struggling to recruit professional or managerial employees"
-    topic: labour
+    question: which of the following employees has your business had difficulties in recruiting
+    population: that had difficulties recruiting employees
+    wave: 100
+  - <<: *recruit_type_2021
+    id: recruit_type_professional_2021_23
+    label: "Hard to recruit: professional or managerial employees (% of firms with difficulties, 2021-23)"
     answers: [Professional or managerial employees]
-    versions: *recruit_type_versions
-
-  - id: recruit_type_unskilled
-    label: "Firms with recruitment difficulties: struggling to recruit semi-skilled or unskilled employees"
-    topic: labour
+  - <<: *recruit_type_2021
+    id: recruit_type_unskilled_2021_23
+    label: "Hard to recruit: semi-skilled or unskilled employees (% of firms with difficulties, 2021-23)"
     answers: [Semi-skilled or unskilled employees]
-    versions: *recruit_type_versions
 
-  - id: recruit_reason_qualified
-    label: "Firms with recruitment difficulties: lack of qualified applicants"
+  - &recruit_type_2024
+    id: recruit_type_skilled_2024_26
+    label: "Hard to recruit: skilled, manual or technical employees (2024-26 basis)"
+    topic: labour
+    answers: ["Skilled, manual or technical employees"]
+    question: which, if any, of the following employees has your business had difficulties recruiting in [month] [year]
+    wave: 157
+    exclude: [Business did not experience any difficulties*]   # all firms -> firms with difficulties
+  - <<: *recruit_type_2024
+    id: recruit_type_professional_2024_26
+    label: "Hard to recruit: professional or managerial employees (2024-26 basis)"
+    answers: [Professional or managerial employees]
+  - <<: *recruit_type_2024
+    id: recruit_type_unskilled_2024_26
+    label: "Hard to recruit: semi-skilled or unskilled employees (2024-26 basis)"
+    answers: [Semi-skilled or unskilled employees]
+
+  - &recruit_type_2026
+    id: recruit_type_skilled_2026
+    label: "Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, from 2026)"
+    topic: labour
+    answers: ["Skilled, manual or technical employees"]
+    question: which of the following employees has your business had difficulties recruiting in [month] [year]
+  - <<: *recruit_type_2026
+    id: recruit_type_professional_2026
+    label: "Hard to recruit: professional or managerial employees (% of firms with difficulties, from 2026)"
+    answers: [Professional or managerial employees]
+  - <<: *recruit_type_2026
+    id: recruit_type_unskilled_2026
+    label: "Hard to recruit: semi-skilled or unskilled employees (% of firms with difficulties, from 2026)"
+    answers: [Semi-skilled or unskilled employees]
+
+  # why recruitment was difficult
+  - &recruit_reason_2021
+    id: recruit_reason_qualified_2021_23
+    label: "Recruitment difficulty reason: lack of qualified applicants (% of firms with difficulties, 2021-23)"
     topic: labour
     answers: [Lack of qualified applicants*]
-    versions: &recruit_reason_versions
-      - question: why did your business experience difficulties recruiting employees in [month] [year]
-        population: that experienced difficulties recruiting employees
+    question: why did your business experience difficulties in recruiting employees
+    population: that had difficulties recruiting employees
+    wave: 100
+  - <<: *recruit_reason_2021
+    id: recruit_reason_applications_2021_23
+    label: "Recruitment difficulty reason: low number of applications (% of firms with difficulties, 2021-23)"
+    answers: [Low number of applications*]
+  - <<: *recruit_reason_2021
+    id: recruit_reason_pay_2021_23
+    label: "Recruitment difficulty reason: cannot offer an attractive pay package (% of firms with difficulties, 2021-23)"
+    answers: [Business cannot offer an attractive pay package*]
+
+  - &recruit_reason_2024
+    id: recruit_reason_qualified_2024_26
+    label: "Recruitment difficulty reason: lack of qualified applicants (2024-26 basis)"
+    topic: labour
+    answers: [Lack of qualified applicants*]
+    versions:   # same numbers published under two base descriptions; the 157 file adds wave 151
       - question: why did your business experience difficulties recruiting employees in [month] [year]
         population: that had difficulties recruiting employees
         wave: 145
       - question: why did your business experience difficulties recruiting employees in [month] [year]
         population: or not sure if they were experiencing difficulties
         wave: 157
-      - question: why did your business experience difficulties in recruiting employees
-        population: that had difficulties recruiting employees
-        wave: 100
-
-  - id: recruit_reason_applications
-    label: "Firms with recruitment difficulties: low number of applications"
-    topic: labour
+        waves: [109, 151]
+  - <<: *recruit_reason_2024
+    id: recruit_reason_applications_2024_26
+    label: "Recruitment difficulty reason: low number of applications (2024-26 basis)"
     answers: [Low number of applications*]
-    versions: *recruit_reason_versions
-
-  - id: recruit_reason_pay
-    label: "Firms with recruitment difficulties: cannot offer an attractive pay package"
-    topic: labour
+  - <<: *recruit_reason_2024
+    id: recruit_reason_pay_2024_26
+    label: "Recruitment difficulty reason: cannot offer an attractive pay package (2024-26 basis)"
     answers: [Business cannot offer an attractive pay package*]
-    versions: *recruit_reason_versions
+
+  - &recruit_reason_2026
+    id: recruit_reason_qualified_2026
+    label: "Recruitment difficulty reason: lack of qualified applicants (% of firms with difficulties, from 2026)"
+    topic: labour
+    answers: [Lack of qualified applicants*]
+    question: why did your business experience difficulties recruiting employees in [month] [year]
+    population: that experienced difficulties recruiting employees
+  - <<: *recruit_reason_2026
+    id: recruit_reason_applications_2026
+    label: "Recruitment difficulty reason: low number of applications (% of firms with difficulties, from 2026)"
+    answers: [Low number of applications*]
+  - <<: *recruit_reason_2026
+    id: recruit_reason_pay_2026
+    label: "Recruitment difficulty reason: cannot offer an attractive pay package (% of firms with difficulties, from 2026)"
+    answers: [Business cannot offer an attractive pay package*]
 
   - id: employee_expectations_net
     label: Expected number of employees, net balance (increase minus decrease)

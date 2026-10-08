@@ -1,0 +1,86 @@
+{
+ "slug": "recruit_reason_applications_2026",
+ "category": "bics",
+ "topic": "labour",
+ "title": "Recruitment difficulty reason: low number of applications (% of firms with difficulties, from 2026)",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
+ "note": null,
+ "measure": "share",
+ "answers": [
+  "Low number of applications*"
+ ],
+ "exclude": null,
+ "breaks": null,
+ "versions": [
+  {
+   "version": 1,
+   "question": "Why did your business experience difficulties recruiting employees in [month] [year]?",
+   "population": "As a percentage of businesses not permanently stopped trading that experienced difficulties recruiting employees",
+   "weighting": "count",
+   "waves_used": "163-163 (1)"
+  }
+ ],
+ "version_breaks": [],
+ "series": [
+  {
+   "key": "all-businesses",
+   "label": "All businesses",
+   "group": "total"
+  },
+  {
+   "key": "0-9",
+   "label": "0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "10-49",
+   "label": "10 - 49",
+   "group": "size"
+  },
+  {
+   "key": "50-99",
+   "label": "50 - 99",
+   "group": "size"
+  },
+  {
+   "key": "100-249",
+   "label": "100 - 249",
+   "group": "size"
+  },
+  {
+   "key": "250",
+   "label": "250 +",
+   "group": "size"
+  },
+  {
+   "key": "all-size-bands-excluding-0-9",
+   "label": "All size bands excluding 0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "human-health-and-social-work-activities",
+   "label": "Human health and social work activities",
+   "group": "industry"
+  }
+ ],
+ "data_through": "2026-07-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2026-07-31",
+   "wave": 163,
+   "0-9": 40.7,
+   "10-49": 51.8,
+   "100-249": 44.4,
+   "250": 40.4,
+   "50-99": 44.4,
+   "all-businesses": 43.1,
+   "all-size-bands-excluding-0-9": 49.6,
+   "human-health-and-social-work-activities": 57.1
+  }
+ ]
+}
