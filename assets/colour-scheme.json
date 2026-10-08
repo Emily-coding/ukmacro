@@ -1,0 +1,28 @@
+{
+ "name": "blue-amber",
+ "font": "Source Sans 3 (assets/fonts/)",
+ "png": {
+  "width_cm": 30,
+  "height_cm": 15,
+  "dpi": 200
+ },
+ "series": {
+  "1_blue": "#186FAF",
+  "2_amber": "#DE911D",
+  "3_teal": "#27AB83",
+  "4_red": "#BA2525"
+ },
+ "neutral_bar": "#9FB3C8",
+ "text": {
+  "primary": "#102A43",
+  "secondary": "#486581",
+  "axes_and_source": "#627D98"
+ },
+ "lines": {
+  "total_or_reference": "#102A43",
+  "gridlines": "#D9E2EC",
+  "zero_line": "#9FB3C8"
+ },
+ "background": "#FFFFFF",
+ "source": "Blue, Yellow Vivid, Teal, Red and Blue Grey scales from svengraziani/ui-design professional UI palettes"
+}

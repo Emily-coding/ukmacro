@@ -120,7 +120,8 @@ far: the employment-rate composition analysis (`img/labour-markets/emp-*.png`).
   blue `#186FAF`, amber `#DE911D`, teal `#27AB83`, red `#BA2525`. Totals in `#102A43`.
   White background, text `#102A43` / `#486581`, axes and source `#627D98`, gridlines
   `#D9E2EC`. Every series pair passes a colour-blind check. Other themes are in
-  `THEMES` in `charts.py`; change `DEFAULT_THEME` to switch.
+  `THEMES` in `charts.py`; change `DEFAULT_THEME` to switch. The scheme, with R and
+  Python snippets for reuse, is in `assets/colour-scheme.md` (and `.json`).
 
 ## Employment composition
 
