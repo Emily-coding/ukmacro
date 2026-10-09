@@ -1,0 +1,325 @@
+{
+ "slug": "ai-trade-services-full-exports-option2",
+ "category": "trade",
+ "title": "UK exports of AI-relevant services, full tier, East Asia by country",
+ "type": "line",
+ "freq": "Q",
+ "units": "\u00a3 billion per quarter",
+ "source": "ONS UK trade in services: service type by partner country (not seasonally adjusted); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Quarterly, not seasonally adjusted. ",
+ "series": [
+  {
+   "key": "China incl. Hong Kong",
+   "label": "China incl. Hong Kong"
+  },
+  {
+   "key": "Japan",
+   "label": "Japan"
+  },
+  {
+   "key": "South Korea",
+   "label": "South Korea"
+  },
+  {
+   "key": "Taiwan",
+   "label": "Taiwan"
+  }
+ ],
+ "data_through": "2026-Q1",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016-Q1",
+   "China incl. Hong Kong": 0.62,
+   "Japan": 0.46,
+   "South Korea": 0.23,
+   "Taiwan": 0.11
+  },
+  {
+   "date": "2016-Q2",
+   "China incl. Hong Kong": 0.7,
+   "Japan": 0.12,
+   "South Korea": 0.16,
+   "Taiwan": 0.03
+  },
+  {
+   "date": "2016-Q3",
+   "China incl. Hong Kong": 0.74,
+   "Japan": 0.56,
+   "South Korea": 0.15,
+   "Taiwan": 0.11
+  },
+  {
+   "date": "2016-Q4",
+   "China incl. Hong Kong": 0.88,
+   "Japan": 0.68,
+   "South Korea": 0.18,
+   "Taiwan": 0.14
+  },
+  {
+   "date": "2017-Q1",
+   "China incl. Hong Kong": 0.73,
+   "Japan": 0.52,
+   "South Korea": 0.2,
+   "Taiwan": 0.11
+  },
+  {
+   "date": "2017-Q2",
+   "China incl. Hong Kong": 1.34,
+   "Japan": 0.53,
+   "South Korea": 0.2,
+   "Taiwan": 0.09
+  },
+  {
+   "date": "2017-Q3",
+   "China incl. Hong Kong": 0.98,
+   "Japan": 0.55,
+   "South Korea": 0.19,
+   "Taiwan": 0.13
+  },
+  {
+   "date": "2017-Q4",
+   "China incl. Hong Kong": 0.89,
+   "Japan": 0.48,
+   "South Korea": 0.3,
+   "Taiwan": 0.11
+  },
+  {
+   "date": "2018-Q1",
+   "China incl. Hong Kong": 0.91,
+   "Japan": 0.58,
+   "South Korea": 0.04,
+   "Taiwan": 0.22
+  },
+  {
+   "date": "2018-Q2",
+   "China incl. Hong Kong": 0.95,
+   "Japan": 0.56,
+   "South Korea": 0.26,
+   "Taiwan": 0.06
+  },
+  {
+   "date": "2018-Q3",
+   "China incl. Hong Kong": 1.12,
+   "Japan": 0.63,
+   "South Korea": 0.05,
+   "Taiwan": 0.16
+  },
+  {
+   "date": "2018-Q4",
+   "China incl. Hong Kong": 1.41,
+   "Japan": 0.65,
+   "South Korea": 0.4,
+   "Taiwan": 0.22
+  },
+  {
+   "date": "2019-Q1",
+   "China incl. Hong Kong": 1.04,
+   "Japan": 0.64,
+   "South Korea": 0.23,
+   "Taiwan": 0.14
+  },
+  {
+   "date": "2019-Q2",
+   "China incl. Hong Kong": 1.23,
+   "Japan": 0.6,
+   "South Korea": 0.28,
+   "Taiwan": 0.18
+  },
+  {
+   "date": "2019-Q3",
+   "China incl. Hong Kong": 1.28,
+   "Japan": 0.75,
+   "South Korea": 0.33,
+   "Taiwan": 0.15
+  },
+  {
+   "date": "2019-Q4",
+   "China incl. Hong Kong": 1.38,
+   "Japan": 0.65,
+   "South Korea": 0.34,
+   "Taiwan": 0.16
+  },
+  {
+   "date": "2020-Q1",
+   "China incl. Hong Kong": 1.5,
+   "Japan": 0.72,
+   "South Korea": 0.29,
+   "Taiwan": 0.18
+  },
+  {
+   "date": "2020-Q2",
+   "China incl. Hong Kong": 1.24,
+   "Japan": 0.61,
+   "South Korea": 0.27,
+   "Taiwan": 0.16
+  },
+  {
+   "date": "2020-Q3",
+   "China incl. Hong Kong": 1.29,
+   "Japan": 0.66,
+   "South Korea": 0.23,
+   "Taiwan": 0.17
+  },
+  {
+   "date": "2020-Q4",
+   "China incl. Hong Kong": 1.45,
+   "Japan": 0.71,
+   "South Korea": 0.28,
+   "Taiwan": 0.17
+  },
+  {
+   "date": "2021-Q1",
+   "China incl. Hong Kong": 1.15,
+   "Japan": 0.69,
+   "South Korea": 0.24,
+   "Taiwan": 0.21
+  },
+  {
+   "date": "2021-Q2",
+   "China incl. Hong Kong": 1.26,
+   "Japan": 0.71,
+   "South Korea": 0.24,
+   "Taiwan": 0.69
+  },
+  {
+   "date": "2021-Q3",
+   "China incl. Hong Kong": 1.28,
+   "Japan": 0.82,
+   "South Korea": 0.23,
+   "Taiwan": 0.24
+  },
+  {
+   "date": "2021-Q4",
+   "China incl. Hong Kong": 1.43,
+   "Japan": 0.73,
+   "South Korea": 0.25,
+   "Taiwan": 0.25
+  },
+  {
+   "date": "2022-Q1",
+   "China incl. Hong Kong": 1.21,
+   "Japan": 0.15,
+   "South Korea": 0.27,
+   "Taiwan": 0.3
+  },
+  {
+   "date": "2022-Q2",
+   "China incl. Hong Kong": 1.42,
+   "Japan": 0.82,
+   "South Korea": 0.37,
+   "Taiwan": 0.22
+  },
+  {
+   "date": "2022-Q3",
+   "China incl. Hong Kong": 1.36,
+   "Japan": 0.31,
+   "South Korea": 0.43,
+   "Taiwan": 0.25
+  },
+  {
+   "date": "2022-Q4",
+   "China incl. Hong Kong": 1.75,
+   "Japan": 0.79,
+   "South Korea": 0.43,
+   "Taiwan": 0.25
+  },
+  {
+   "date": "2023-Q1",
+   "China incl. Hong Kong": 1.41,
+   "Japan": 1.05,
+   "South Korea": 0.41,
+   "Taiwan": 0.21
+  },
+  {
+   "date": "2023-Q2",
+   "China incl. Hong Kong": 1.27,
+   "Japan": 1.01,
+   "South Korea": 0.33,
+   "Taiwan": 0.23
+  },
+  {
+   "date": "2023-Q3",
+   "China incl. Hong Kong": 1.22,
+   "Japan": 0.91,
+   "South Korea": 0.31,
+   "Taiwan": 0.15
+  },
+  {
+   "date": "2023-Q4",
+   "China incl. Hong Kong": 1.38,
+   "Japan": 1.03,
+   "South Korea": 0.36,
+   "Taiwan": 0.12
+  },
+  {
+   "date": "2024-Q1",
+   "China incl. Hong Kong": 1.24,
+   "Japan": 1.18,
+   "South Korea": 0.52,
+   "Taiwan": 0.09
+  },
+  {
+   "date": "2024-Q2",
+   "China incl. Hong Kong": 1.41,
+   "Japan": 1.23,
+   "South Korea": 0.45,
+   "Taiwan": 0.35
+  },
+  {
+   "date": "2024-Q3",
+   "China incl. Hong Kong": 1.48,
+   "Japan": 1.0,
+   "South Korea": 0.41,
+   "Taiwan": 0.35
+  },
+  {
+   "date": "2024-Q4",
+   "China incl. Hong Kong": 1.69,
+   "Japan": 1.22,
+   "South Korea": 0.49,
+   "Taiwan": 0.44
+  },
+  {
+   "date": "2025-Q1",
+   "China incl. Hong Kong": 1.38,
+   "Japan": 1.07,
+   "South Korea": 0.34,
+   "Taiwan": 0.2
+  },
+  {
+   "date": "2025-Q2",
+   "China incl. Hong Kong": 1.57,
+   "Japan": 1.14,
+   "South Korea": 0.24,
+   "Taiwan": 0.14
+  },
+  {
+   "date": "2025-Q3",
+   "China incl. Hong Kong": 1.53,
+   "Japan": 1.04,
+   "South Korea": 0.3,
+   "Taiwan": 0.12
+  },
+  {
+   "date": "2025-Q4",
+   "China incl. Hong Kong": 1.67,
+   "Japan": 1.13,
+   "South Korea": 0.3,
+   "Taiwan": 0.12
+  },
+  {
+   "date": "2026-Q1",
+   "China incl. Hong Kong": 1.91,
+   "Japan": 1.15,
+   "South Korea": 0.41,
+   "Taiwan": 0.24
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 5
+}

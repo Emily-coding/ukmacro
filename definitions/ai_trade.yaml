@@ -39,6 +39,7 @@ services_tiers:
 # ONS series IDs (CDIDs, QNA dataset): type -> {EU|NonEU}_{exports|imports}_{CP|CVM}
 services_series:
   telecoms_computer_information:
+    ebops: "9"   # service type code in the services-by-country file
     name: Telecoms, computer and information services
     EU_exports_CP: P5Y3
     EU_exports_CVM: P5W5
@@ -49,6 +50,7 @@ services_series:
     NonEU_imports_CP: P5Z3
     NonEU_imports_CVM: P5X5
   intellectual_property:
+    ebops: "8"   # service type code in the services-by-country file
     name: Charges for the use of intellectual property
     EU_exports_CP: P5XY
     EU_exports_CVM: P5W2
@@ -59,6 +61,7 @@ services_series:
     NonEU_imports_CP: P5YY
     NonEU_imports_CVM: P5X2
   other_business:
+    ebops: "10"   # service type code in the services-by-country file
     name: Other business services
     EU_exports_CP: P5Y6
     EU_exports_CVM: P5W8
@@ -69,6 +72,7 @@ services_series:
     NonEU_imports_CP: P5Z6
     NonEU_imports_CVM: P5X8
   personal_cultural:
+    ebops: "11"   # service type code in the services-by-country file
     name: Personal, cultural and recreational services
     EU_exports_CP: P5Y9
     EU_exports_CVM: P5WB
@@ -100,3 +104,23 @@ products:
   - {id: robots, label: "Industrial robots", cpa: "28.9", hs6: ["847950"]}
   - {id: handling_robots, label: "Handling robots", cpa: "28.2", hs6: ["842870"], from: 2022}
   - {id: drones, label: "Unmanned aircraft (drones)", cpa: "30.3", hs6: ["880621", "880622", "880623", "880624", "880629", "880691", "880692", "880693", "880694", "880699"], from: 2022}
+
+# --------------------------------------------------------------------- countries
+# Partner groups for the country split (services by country, and products).
+# Services: ONS "UK trade in services: service type by partner country" (quarterly, not
+# seasonally adjusted); EU = its "Total EU27" row; rest of world = world total minus the
+# named groups. Products: HMRC, where EU vs non-EU comes from the flow type and non-EU
+# countries from HMRC country codes. HMRC records EU trade by country of dispatch, so
+# goods made in East Asia but shipped via the EU count as EU.
+# https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/datasets/uktradeinservicesservicetypebypartnercountrynonseasonallyadjusted
+country_groups:
+  option1:   # EU, US, East Asia, rest of world
+    EU: [EU]
+    US: [US]
+    East Asia: [CN, HK, MO, JP, KR, TW]
+    Rest of world: [REST]
+  option2:   # East Asia broken out
+    China incl. Hong Kong: [CN, HK, MO]
+    Japan: [JP]
+    South Korea: [KR]
+    Taiwan: [TW]
