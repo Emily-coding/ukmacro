@@ -310,7 +310,7 @@
    "n_waves": 13,
    "first": "2023-08-31",
    "data_through": "2026-08-31",
-   "latest_total": 38.27,
+   "latest_total": 35.9,
    "versions": 1
   },
   {
@@ -320,17 +320,87 @@
    "n_waves": 13,
    "first": "2023-08-31",
    "data_through": "2026-08-31",
-   "latest_total": 32.99,
+   "latest_total": 28.8,
+   "versions": 1
+  },
+  {
+   "id": "ai_type_llm",
+   "topic": "ai",
+   "title": "AI used: text generation (large language models)",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 19.0,
+   "versions": 1
+  },
+  {
+   "id": "ai_type_visual",
+   "topic": "ai",
+   "title": "AI used: visual content creation",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 14.4,
+   "versions": 1
+  },
+  {
+   "id": "ai_type_data",
+   "topic": "ai",
+   "title": "AI used: data processing (machine learning)",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 8.5,
+   "versions": 1
+  },
+  {
+   "id": "ai_type_image",
+   "topic": "ai",
+   "title": "AI used: image processing (machine learning)",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 5.0,
    "versions": 1
   },
   {
    "id": "ai_headcount_down",
    "topic": "ai",
-   "title": "AI adopters: AI has reduced overall headcount",
+   "title": "AI users: AI has reduced overall headcount",
    "n_waves": 5,
    "first": "2025-08-31",
    "data_through": "2026-08-31",
    "latest_total": 5.5,
+   "versions": 1
+  },
+  {
+   "id": "ai_headcount_up",
+   "topic": "ai",
+   "title": "AI users: AI has increased overall headcount",
+   "n_waves": 5,
+   "first": "2025-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 1.0,
+   "versions": 1
+  },
+  {
+   "id": "ai_expect_headcount_down",
+   "topic": "ai",
+   "title": "Planning to adopt AI: expect it to reduce headcount",
+   "n_waves": 5,
+   "first": "2025-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 5.7,
+   "versions": 1
+  },
+  {
+   "id": "ai_expect_headcount_up",
+   "topic": "ai",
+   "title": "Planning to adopt AI: expect it to increase headcount",
+   "n_waves": 5,
+   "first": "2025-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 3.0,
    "versions": 1
   },
   {

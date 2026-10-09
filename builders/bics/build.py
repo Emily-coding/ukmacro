@@ -11,6 +11,8 @@ and write
     data/bics/bics_series.csv      the complete curated dataset, long format
     data/bics/series/<id>.json     one chart file per series
     data/bics/index.json           list of series with freshness
+    data/bics/charts/<slug>.json   charts listed under `charts:` in series.yaml,
+    img/bics/<slug>.png            with their PNGs in the house style
 
 Measures (set per series in series.yaml):
     share       sum of the listed answers                          (% of businesses)
@@ -45,7 +47,7 @@ sys.path.insert(0, str(REPO))
 
 import yaml  # noqa: E402
 
-from ukmacro import bics  # noqa: E402
+from ukmacro import bics, charts  # noqa: E402
 
 OUT = REPO / "data" / "bics"
 SOURCE = "ONS Business Insights and Conditions Survey (BICS), weighted estimates"
@@ -228,6 +230,38 @@ def chart_json(spec: dict, meta: list[dict], values: dict, waves: dict, used: di
     }
 
 
+# ---------------------------------------------------------------- charts
+
+def build_charts(cfg: dict, built: dict[str, dict]) -> list[str]:
+    """Draw each chart in series.yaml's `charts:` section from the series just built:
+    one line per {id, breakdown}, dated by the end of each wave's reference period.
+    Writes data/bics/charts/<slug>.json and img/bics/<slug>.png. Returns problems."""
+    problems = []
+    for spec in cfg.get("charts", []):
+        lines, columns = [], {}
+        for line in spec["series"]:
+            sid, breakdown = line["id"], line.get("breakdown", "All businesses")
+            if sid not in built:
+                problems.append(f"chart {spec['slug']}: series {sid!r} was not built")
+                continue
+            key = f"{sid}__{slug(breakdown)}"
+            columns[key] = {d["date"]: d.get(slug(breakdown)) for d in built[sid]["data"]}
+            lines.append({"key": key, "label": line.get("label", built[sid]["title"])})
+        dates = sorted({d for col in columns.values() for d in col if d})
+        data = [{"date": d, **{k: col.get(d) for k, col in columns.items()}} for d in dates]
+        if not data:
+            problems.append(f"chart {spec['slug']}: no data")
+            continue
+        chart = {"slug": spec["slug"], "category": "bics", "title": spec["title"], "type": "line",
+                 "freq": "irregular (BICS waves)", "units": spec["units"], "source": SOURCE,
+                 "note": spec.get("note"), "series": lines, "data_through": dates[-1],
+                 "status": "ok", "data": data}
+        charts.publish(chart, OUT / "charts" / f"{spec['slug']}.json",
+                       REPO / "img" / "bics" / f"{spec['slug']}.png")
+        print(f"[bics] chart {spec['slug']}: {len(lines)} lines, {len(data)} waves")
+    return problems
+
+
 # ---------------------------------------------------------------- harvesting
 
 def wanted_waves(cfg: dict, store: bics.Store) -> tuple[set[int], list[str]]:
@@ -280,7 +314,7 @@ def main(fetch: bool = True, local_dir: Path | None = None) -> int:
 
     series_dir = OUT / "series"
     series_dir.mkdir(parents=True, exist_ok=True)
-    long_rows, index, written = [], [], set()
+    long_rows, index, written, built = [], [], set(), {}
 
     for raw in cfg["series"]:
         spec = {**defaults, **raw}
@@ -290,6 +324,7 @@ def main(fetch: bool = True, local_dir: Path | None = None) -> int:
             failures.append(f"{spec['id']}: {e}")
             continue
         chart = chart_json(spec, meta, values, store.waves, used)
+        built[spec["id"]] = chart
         (series_dir / f"{spec['id']}.json").write_text(json.dumps(chart, indent=1) + "\n")
         written.add(f"{spec['id']}.json")
         weighting = meta[0]["weighting"]
@@ -321,6 +356,8 @@ def main(fetch: bool = True, local_dir: Path | None = None) -> int:
         {"category": "bics", "title": "Business Insights and Conditions Survey",
          "latest_published": store.state.get("latest_published"),
          "series": index}, indent=1) + "\n")
+
+    failures += build_charts(cfg, built)
 
     if failures:
         print(f"\n{len(failures)} problem(s):", *failures, sep="\n  ", file=sys.stderr)

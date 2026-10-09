@@ -159,7 +159,13 @@ def _legend(fig, handles, labels):
 
 def _period_ticks(ax, dates: list[str]):
     """Label the first period of each year with the year (works for any date format
-    starting YYYY: 2019, 2019-Q1, 2019-01, 2019-01-31). At most about 12 labels."""
+    starting YYYY: 2019, 2019-Q1, 2019-01, 2019-01-31). At most about 12 labels.
+    A short series of exact dates (8 points or fewer) gets every point labelled 'Mon YYYY'."""
+    if len(dates) <= 8 and all(len(d) == 10 for d in dates):  # a few dated points: label each one
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        ax.set_xticks(range(len(dates)), [f"{months[int(d[5:7]) - 1]} {d[:4]}" for d in dates])
+        ax.set_xlim(-0.6, len(dates) - 0.4)
+        return
     idx = [i for i, d in enumerate(dates) if i == 0 or d[:4] != dates[i - 1][:4]]
     if len(idx) > 1 and dates[0][4:] not in ("", "-Q1", "-01"):
         idx = idx[1:]  # the first period isn't the start of its year: label from the next year

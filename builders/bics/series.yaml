@@ -258,8 +258,9 @@ series:
     question: artificial intelligence technologies, if any, does your business currently use
     measure: complement
     answers: [Business does not currently use artificial intelligence*]
-    exclude: [Not sure]
-    note: 100 minus "does not currently use AI", with "not sure" removed from the base.
+    note: >-
+      100 minus "does not currently use AI", as published: "not sure" stays in the base
+      (unsure firms may well differ from those that answered).
 
   - id: ai_plan
     label: Businesses planning to adopt AI in the next three months
@@ -267,13 +268,53 @@ series:
     question: artificial intelligence technologies, if any, does your business plan to adopt
     measure: complement
     answers: [Business does not plan to*]
-    exclude: [Not sure]
 
-  - id: ai_headcount_down
-    label: "AI adopters: AI has reduced overall headcount"
+  # AI series are shares as ONS publishes them: "not sure" (and "not applicable") stay
+  # in the base, as unsure firms may well differ from those that answered.
+
+  # which kinds of AI (each as % of all businesses)
+  - &ai_type
+    id: ai_type_llm
+    label: "AI used: text generation (large language models)"
+    topic: ai
+    question: artificial intelligence technologies, if any, does your business currently use
+    answers: [Text generation using Large Language Models]
+  - <<: *ai_type
+    id: ai_type_visual
+    label: "AI used: visual content creation"
+    answers: [Visual content creation]
+  - <<: *ai_type
+    id: ai_type_data
+    label: "AI used: data processing (machine learning)"
+    answers: [Data processing using machine learning]
+  - <<: *ai_type
+    id: ai_type_image
+    label: "AI used: image processing (machine learning)"
+    answers: [Image processing using machine learning]
+
+  # AI and jobs. Asked of firms using AI or unsure whether they do (about 30% answer
+  # "not applicable" and 10-15% "not sure"; most of the rest say "no change").
+  - &ai_headcount
+    id: ai_headcount_down
+    label: "AI users: AI has reduced overall headcount"
     topic: ai
     question: impact, if any, have artificial intelligence technologies had on your business's overall workforce headcount
     answers: [Reduced headcount]
+  - <<: *ai_headcount
+    id: ai_headcount_up
+    label: "AI users: AI has increased overall headcount"
+    answers: [Increased headcount]
+  # expected impact, asked of firms planning to adopt AI (or unsure whether they will)
+  - &ai_expect
+    id: ai_expect_headcount_down
+    label: "Planning to adopt AI: expect it to reduce headcount"
+    topic: ai
+    question: impact, if any, do you expect the artificial intelligence technologies your business is planning
+    answers: [Expect headcount to reduce]
+  - <<: *ai_expect
+    id: ai_expect_headcount_up
+    label: "Planning to adopt AI: expect it to increase headcount"
+    answers: [Expect headcount to increase]
 
   # ---------------------------------------------------------------- working from home
   - id: wfh_permanent
@@ -302,3 +343,48 @@ series:
     question: why is your business using, or intending to use, increased homeworking
     answers: [Reduced sickness absence]
     note: BICS has not asked directly about sickness absence since the pandemic.
+
+
+# ------------------------------------------------------------------- charts
+# Charts drawn from the series above, saved as data/bics/charts/<slug>.json and
+# img/bics/<slug>.png in the house style. Each line is one series for one breakdown
+# (default "All businesses"). To add a chart, copy one of these.
+#   series: list of {id, label} (label is optional: defaults to the series label);
+#           add `breakdown: "250 +"` to a line to plot a size band or industry.
+
+charts:
+  - slug: bics-ai-adoption
+    title: "AI adoption: businesses using AI and planning to adopt it"
+    units: "% of businesses"
+    series:
+      - {id: ai_use, label: Currently using AI}
+      - {id: ai_plan, label: Planning to adopt AI in the next three months}
+    note: >-
+      Share of businesses, each counted once whatever its size, so mostly small firms.
+      As published: firms answering "not sure" are included in the base.
+
+  - slug: bics-ai-types
+    title: Which kinds of AI businesses use
+    units: "% of businesses"
+    series:
+      - {id: ai_type_llm, label: Text generation (large language models)}
+      - {id: ai_type_visual, label: Visual content creation}
+      - {id: ai_type_data, label: Data processing (machine learning)}
+      - {id: ai_type_image, label: Image processing (machine learning)}
+    note: >-
+      Businesses can use more than one kind, so the lines don't add up. As published:
+      firms answering "not sure" are included in the base.
+
+  - slug: bics-ai-headcount
+    title: "AI and jobs: effect on headcount, reported and expected"
+    units: "% of businesses asked"
+    series:
+      - {id: ai_headcount_down, label: "AI users: AI has reduced headcount"}
+      - {id: ai_expect_headcount_down, label: "Planning to adopt: expect AI to reduce headcount"}
+      - {id: ai_headcount_up, label: "AI users: AI has increased headcount"}
+      - {id: ai_expect_headcount_up, label: "Planning to adopt: expect AI to increase headcount"}
+    note: >-
+      Reported impact: % of firms using AI or unsure whether they do. Expected impact:
+      % of firms planning to adopt AI in the next three months or unsure. As published:
+      "not sure" and "not applicable" are included in the base. Most firms in both
+      groups report or expect no change.

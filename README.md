@@ -67,6 +67,8 @@ Outputs:
   (`series_id, topic, label, measure, weighting, wave, ref_start, ref_end, group, breakdown, value, version`)
 - `data/bics/series/<id>.json`: one chart file per series, one column per breakdown
 - `data/bics/index.json`: series list with coverage and the latest total
+- `data/bics/charts/` and `img/bics/`: charts defined in the `charts:` section of
+  `series.yaml` (e.g. AI adoption, kinds of AI, AI and headcount), as PNGs
 
 ```r
 bics <- read.csv("https://raw.githubusercontent.com/Emily-coding/ukmacro/main/data/bics/bics_series.csv")

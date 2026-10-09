@@ -1,0 +1,128 @@
+{
+ "slug": "bics-ai-types",
+ "category": "bics",
+ "title": "Which kinds of AI businesses use",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Businesses can use more than one kind, so the lines don't add up. As published: firms answering \"not sure\" are included in the base.",
+ "series": [
+  {
+   "key": "ai_type_llm__all-businesses",
+   "label": "Text generation (large language models)"
+  },
+  {
+   "key": "ai_type_visual__all-businesses",
+   "label": "Visual content creation"
+  },
+  {
+   "key": "ai_type_data__all-businesses",
+   "label": "Data processing (machine learning)"
+  },
+  {
+   "key": "ai_type_image__all-businesses",
+   "label": "Image processing (machine learning)"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2023-08-31",
+   "ai_type_llm__all-businesses": 5.1,
+   "ai_type_visual__all-businesses": 3.4,
+   "ai_type_data__all-businesses": 3.0,
+   "ai_type_image__all-businesses": 1.5
+  },
+  {
+   "date": "2023-11-30",
+   "ai_type_llm__all-businesses": 5.5,
+   "ai_type_visual__all-businesses": 3.5,
+   "ai_type_data__all-businesses": 2.7,
+   "ai_type_image__all-businesses": 1.8
+  },
+  {
+   "date": "2024-02-29",
+   "ai_type_llm__all-businesses": 7.1,
+   "ai_type_visual__all-businesses": 5.0,
+   "ai_type_data__all-businesses": 4.9,
+   "ai_type_image__all-businesses": 2.3
+  },
+  {
+   "date": "2024-05-31",
+   "ai_type_llm__all-businesses": 6.3,
+   "ai_type_visual__all-businesses": 4.9,
+   "ai_type_data__all-businesses": 4.1,
+   "ai_type_image__all-businesses": 2.3
+  },
+  {
+   "date": "2024-08-31",
+   "ai_type_llm__all-businesses": 7.3,
+   "ai_type_visual__all-businesses": 5.5,
+   "ai_type_data__all-businesses": 4.4,
+   "ai_type_image__all-businesses": 2.2
+  },
+  {
+   "date": "2024-11-30",
+   "ai_type_llm__all-businesses": 7.7,
+   "ai_type_visual__all-businesses": 6.2,
+   "ai_type_data__all-businesses": 5.4,
+   "ai_type_image__all-businesses": 2.6
+  },
+  {
+   "date": "2025-02-28",
+   "ai_type_llm__all-businesses": 8.2,
+   "ai_type_visual__all-businesses": 7.0,
+   "ai_type_data__all-businesses": 5.3,
+   "ai_type_image__all-businesses": 3.5
+  },
+  {
+   "date": "2025-05-31",
+   "ai_type_llm__all-businesses": 11.2,
+   "ai_type_visual__all-businesses": 7.8,
+   "ai_type_data__all-businesses": 6.4,
+   "ai_type_image__all-businesses": 3.4
+  },
+  {
+   "date": "2025-08-31",
+   "ai_type_llm__all-businesses": 12.0,
+   "ai_type_visual__all-businesses": 10.4,
+   "ai_type_data__all-businesses": 6.9,
+   "ai_type_image__all-businesses": 4.2
+  },
+  {
+   "date": "2025-11-30",
+   "ai_type_llm__all-businesses": 13.4,
+   "ai_type_visual__all-businesses": 12.0,
+   "ai_type_data__all-businesses": 7.4,
+   "ai_type_image__all-businesses": 4.3
+  },
+  {
+   "date": "2026-02-28",
+   "ai_type_llm__all-businesses": 15.9,
+   "ai_type_visual__all-businesses": 13.3,
+   "ai_type_data__all-businesses": 7.7,
+   "ai_type_image__all-businesses": 4.0
+  },
+  {
+   "date": "2026-05-31",
+   "ai_type_llm__all-businesses": 17.1,
+   "ai_type_visual__all-businesses": 14.4,
+   "ai_type_data__all-businesses": 7.6,
+   "ai_type_image__all-businesses": 4.6
+  },
+  {
+   "date": "2026-08-31",
+   "ai_type_llm__all-businesses": 19.0,
+   "ai_type_visual__all-businesses": 14.4,
+   "ai_type_data__all-businesses": 8.5,
+   "ai_type_image__all-businesses": 5.0
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
+}

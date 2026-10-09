@@ -1,0 +1,94 @@
+{
+ "slug": "bics-ai-adoption",
+ "category": "bics",
+ "title": "AI adoption: businesses using AI and planning to adopt it",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Share of businesses, each counted once whatever its size, so mostly small firms. As published: firms answering \"not sure\" are included in the base.",
+ "series": [
+  {
+   "key": "ai_use__all-businesses",
+   "label": "Currently using AI"
+  },
+  {
+   "key": "ai_plan__all-businesses",
+   "label": "Planning to adopt AI in the next three months"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2023-08-31",
+   "ai_use__all-businesses": 16.3,
+   "ai_plan__all-businesses": 18.9
+  },
+  {
+   "date": "2023-11-30",
+   "ai_use__all-businesses": 15.4,
+   "ai_plan__all-businesses": 17.0
+  },
+  {
+   "date": "2024-02-29",
+   "ai_use__all-businesses": 21.0,
+   "ai_plan__all-businesses": 20.6
+  },
+  {
+   "date": "2024-05-31",
+   "ai_use__all-businesses": 19.8,
+   "ai_plan__all-businesses": 19.1
+  },
+  {
+   "date": "2024-08-31",
+   "ai_use__all-businesses": 21.4,
+   "ai_plan__all-businesses": 19.7
+  },
+  {
+   "date": "2024-11-30",
+   "ai_use__all-businesses": 23.9,
+   "ai_plan__all-businesses": 20.6
+  },
+  {
+   "date": "2025-02-28",
+   "ai_use__all-businesses": 25.3,
+   "ai_plan__all-businesses": 23.4
+  },
+  {
+   "date": "2025-05-31",
+   "ai_use__all-businesses": 27.3,
+   "ai_plan__all-businesses": 25.6
+  },
+  {
+   "date": "2025-08-31",
+   "ai_use__all-businesses": 31.5,
+   "ai_plan__all-businesses": 25.6
+  },
+  {
+   "date": "2025-11-30",
+   "ai_use__all-businesses": 32.6,
+   "ai_plan__all-businesses": 29.5
+  },
+  {
+   "date": "2026-02-28",
+   "ai_use__all-businesses": 34.9,
+   "ai_plan__all-businesses": 31.5
+  },
+  {
+   "date": "2026-05-31",
+   "ai_use__all-businesses": 34.7,
+   "ai_plan__all-businesses": 31.0
+  },
+  {
+   "date": "2026-08-31",
+   "ai_use__all-businesses": 35.9,
+   "ai_plan__all-businesses": 28.8
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
+}
