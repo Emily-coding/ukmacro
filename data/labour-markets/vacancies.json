@@ -577,5 +577,9 @@
    "vacancies": 702.0
   }
  ],
- "theme": "blue-amber"
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
 }

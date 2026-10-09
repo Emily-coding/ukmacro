@@ -258,5 +258,9 @@
    "gdp_per_head": 101.722
   }
  ],
- "theme": "blue-amber"
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
 }

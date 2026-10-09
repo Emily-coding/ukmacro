@@ -323,5 +323,9 @@
    "can": 11.917109243
   }
  ],
- "theme": "blue-amber"
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
 }

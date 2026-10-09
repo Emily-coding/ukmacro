@@ -266,5 +266,9 @@
    "change": -0.96
   }
  ],
- "theme": "blue-amber"
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ]
 }

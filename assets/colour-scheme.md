@@ -27,7 +27,7 @@ Rules:
   OKLab x100, normal-vision separation >= 15).
 
 Font: Source Sans 3 (open licence, `assets/fonts/`). Titles semibold 16pt, units
-11.5pt, legend 11pt, ticks 10.5pt, source 9pt. PNGs: 30 x 15 cm at 200 dpi.
+11.5pt, legend 11pt, ticks 10.5pt, source 9pt. PNGs: 25 x 15 cm at 200 dpi.
 
 Built from the Blue, Yellow Vivid, Teal, Red and Blue Grey scales of
 svengraziani/ui-design's professional UI palettes.
@@ -50,7 +50,7 @@ theme_ukmacro <- function(base_size = 11) {
       plot.background = ggplot2::element_rect(fill = "#FFFFFF", colour = NA))
 }
 # ggplot(...) + scale_colour_manual(values = ukmacro_cols) + theme_ukmacro()
-# ggsave("chart.png", width = 30, height = 15, units = "cm", dpi = 200)
+# ggsave("chart.png", width = 25, height = 15, units = "cm", dpi = 200)
 ```
 
 ## Python (matplotlib)

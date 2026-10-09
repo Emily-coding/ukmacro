@@ -115,7 +115,7 @@ from the ONS series metadata.
 `ukmacro/charts.py` renders any chart JSON to a PNG in one house style. Every chart
 gets a PNG in `img/<category>/`, re-rendered only when its data changes.
 
-- 30 x 15 cm at 200 dpi (2362 x 1181 px), 256-colour PNG, about 60 KB each
+- 25 x 15 cm at 200 dpi (1969 x 1181 px), 256-colour PNG, about 60 KB each
 - Font: Source Sans 3 (open licence, bundled in `assets/fonts/`, so output matches on any machine)
 - Colours: the "blue-amber" theme, built from the Blue, Yellow Vivid and Blue Grey
   scales of svengraziani/ui-design's professional UI palettes. Series in fixed order:

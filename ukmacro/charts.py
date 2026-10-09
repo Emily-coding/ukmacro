@@ -1,7 +1,7 @@
 """Render chart JSON (the repo's common chart format) to PNG.
 
 House style, used for every PNG:
-    size      30 x 15 cm at 200 dpi (2362 x 1181 px), saved as a 256-colour PNG
+    size      25 x 15 cm at 200 dpi (1969 x 1181 px), saved as a 256-colour PNG
     font      Source Sans 3 (SIL Open Font License, in assets/fonts/), so output is
               identical on a laptop and on GitHub Actions
     colours   a theme from THEMES (DEFAULT_THEME is used unless render() is given
@@ -67,8 +67,18 @@ THEMES = {
 }
 DEFAULT_THEME = "blue-amber"
 
-CM = 1 / 2.54
-SIZE = (30 * CM, 15 * CM)
+# Figure size. Layout below is in centimetres (margins) and scales with the width
+# (how much text fits per line), so changing the size keeps the layout intact.
+WIDTH_CM, HEIGHT_CM = 25, 15
+SIZE = (WIDTH_CM / 2.54, HEIGHT_CM / 2.54)
+LEFT_CM, RIGHT_CM = 1.95, 1.35          # plot margins
+TEXT_SCALE = (WIDTH_CM - LEFT_CM - RIGHT_CM) / 26.7  # usable width relative to the original 30 cm design
+
+
+def _x(cm: float) -> float:
+    """A horizontal position in cm from the left edge, as a figure fraction."""
+    return cm / WIDTH_CM
+
 DPI = 200
 
 
@@ -110,17 +120,18 @@ def _colour(series: dict, position: int) -> str:
     return SERIES[slot]
 
 
-def _frame(chart: dict, left: float = 0.065):
+def _frame(chart: dict, left_cm: float = LEFT_CM):
     """Figure with title, units line and source footer; returns (fig, ax).
-    `left` widens the plot's left margin (for long category labels)."""
+    `left_cm` widens the plot's left margin (for long category labels)."""
     fig = plt.figure(figsize=SIZE, dpi=DPI)
-    ax = fig.add_axes([left, 0.17, 0.955 - left, 0.62])
-    fig.text(0.065, 0.93, chart["title"], fontsize=16, fontweight="semibold", color=INK, va="baseline")
-    fig.text(0.065, 0.875, chart["units"], fontsize=11.5, color=TEXT_2, va="baseline")
+    ax = fig.add_axes([_x(left_cm), 0.17, 1 - _x(left_cm) - _x(RIGHT_CM), 0.62])
+    fig.text(_x(LEFT_CM), 0.93, chart["title"], fontsize=16, fontweight="semibold", color=INK, va="baseline")
+    fig.text(_x(LEFT_CM), 0.875, chart["units"], fontsize=11.5, color=TEXT_2, va="baseline")
     foot = f"Source: {chart['source']}."
     if chart.get("note"):
         foot += f" {chart['note']}"
-    fig.text(0.065, 0.035, "\n".join(textwrap.wrap(foot, 190)), fontsize=9, color=MUTED, va="bottom")
+    fig.text(_x(LEFT_CM), 0.035, "\n".join(textwrap.wrap(foot, int(190 * TEXT_SCALE))),
+             fontsize=9, color=MUTED, va="bottom")
     for side in ("top", "right", "left"):
         ax.spines[side].set_visible(False)
     ax.spines["bottom"].set_color(BASELINE)
@@ -133,16 +144,16 @@ def _frame(chart: dict, left: float = 0.065):
 def _legend(fig, handles, labels):
     """Legend in a row above the plot. One series needs none (the title names it).
     If the labels won't fit on one row (roughly 130 characters including the colour
-    keys), wrap onto two rows and shrink the plot to make room."""
+    keys at 30 cm wide, scaled to the width), wrap onto two rows and shrink the plot."""
     if len(handles) < 2:
         return
     ncol = len(handles)
-    if sum(len(lab) + 8 for lab in labels) > 130:
+    if sum(len(lab) + 8 for lab in labels) > 130 * TEXT_SCALE:
         ncol = (len(handles) + 1) // 2
         for ax in fig.axes:
             x0, y0, w, h = ax.get_position().bounds
             ax.set_position([x0, y0, w, h - 0.05])
-    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(0.058, 0.86), ncol=ncol,
+    fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(_x(LEFT_CM - 0.2), 0.86), ncol=ncol,
                frameon=False, fontsize=11, labelcolor=TEXT_2, handlelength=1.6, columnspacing=1.8)
 
 
@@ -274,7 +285,7 @@ def _bars(chart):
 def _grouped_hbar(chart):
     """Categories down the side (data[].date holds the category), one bar per series."""
     longest = max(len(str(d["date"])) for d in chart["data"])
-    fig, ax = _frame(chart, left=max(0.065, 0.02 + longest * 0.0062))  # room for category labels
+    fig, ax = _frame(chart, left_cm=max(LEFT_CM, 0.6 + longest * 0.186))  # room for category labels
     ax.grid(axis="y", visible=False)
     ax.grid(axis="x", color=GRID, linewidth=0.6)
     cats = [d["date"] for d in chart["data"]]
@@ -331,9 +342,10 @@ def render(chart: dict, path: Path, theme: str | None = None) -> Path:
 def publish(chart: dict, json_path: Path, png_path: Path) -> None:
     """Write a chart's JSON and its PNG. The PNG is only re-rendered when the JSON
     changed: PNG bytes vary slightly between machines, and an unchanged chart
-    shouldn't produce a daily commit. The theme is stored in the JSON so that a
-    theme change also counts as a change."""
+    shouldn't produce a daily commit. The theme and size are stored in the JSON so
+    that changing either also counts as a change."""
     chart["theme"] = DEFAULT_THEME
+    chart["size_cm"] = [WIDTH_CM, HEIGHT_CM]
     text = json.dumps(chart, indent=1) + "\n"
     if png_path.exists() and json_path.exists() and json_path.read_text() == text:
         return
