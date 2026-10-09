@@ -1,0 +1,188 @@
+# Definition of AI by product (CPA 2008), following the ONS AI thematic account.
+#
+# Source: ONS, "Measuring artificial intelligence in the UK economy using a thematic
+# account", methodology article, 21 September 2026 (not official statistics; the
+# account is in development, with experimental estimates targeted for Q1 2028).
+# https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/methodologies/measuringartificialintelligenceintheukeconomyusingathematicaccount
+# Contains public sector information licensed under the Open Government Licence v3.0.
+#
+# How ONS built the list: textual analysis of ~5,860 AI company descriptions (DSIT AI
+# sector study 2024), with each AI product mapped to the broad CPA product groups used
+# in the UK supply and use tables (SUTs).
+#
+# IMPORTANT for analysis:
+# - These are BROAD product groups that contain both AI and non-AI output. ONS gives no
+#   AI shares or weights for any code yet (methods "direct, proportional, modelled or
+#   hybrid" to be agreed by Q1 2027). Summing whole codes therefore measures the
+#   AI-RELEVANT economy (an upper bound), not AI itself.
+# - 23 categories are used for the 2023 SUTs: the 25 rows below minus H49.3-H49.5 and
+#   H53, excluded because robotaxi and drone delivery services did not operate in 2023
+#   (`in_sut_2023: false`). F41, F42 and F43 count as three categories.
+# - SIC industry codes are not used to define AI: ONS says SIC is "not a reliable
+#   indicator" for inclusion. SIC 2026 adds 62.131 (general-purpose AI software), which
+#   ONS has not yet adopted.
+
+name: AI-relevant products (ONS AI thematic account, CPA 2008)
+source:
+  publisher: Office for National Statistics
+  title: Measuring artificial intelligence in the UK economy using a thematic account
+  published: 2026-09-21
+  url: https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/methodologies/measuringartificialintelligenceintheukeconomyusingathematicaccount
+  status: methodology in development; not official statistics
+
+# The conceptual definition (SNA 2025, an "of which" category of computer software)
+definition: >-
+  Artificial intelligence refers to capabilities of a computer program, or system
+  controlled by a computer program, of recognition, reasoning, communication, and
+  prediction emulating human recognition, reasoning, and communication.
+
+# The account's scope, as grouped in the article (by product, not by CPA code)
+scope:
+  infrastructure: [AI hyperscale or AI factory, "cloud services (IaaS, PaaS, FaaS, SaaS)", AI model hubs]
+  goods: ["AI chips (GPU, TPU)", AI hardware, AI embedded electrical goods, autonomous robotics,
+          autonomous vehicles, autonomous drones]
+  direct_services: [AI development and training, natural language applications, perceptual systems,
+                    autonomous and agentic systems, knowledge generation]
+  supporting_services: [AI implementation, AI security and assurance, AI product design]
+  also_included: >-
+    Robotics and drones (systems controlled by a computer program); deployment services
+    (AI strategy, deployment, security); downstream AI use (e.g. medical diagnosis,
+    education, recruitment) as users contributing to AI sector GVA.
+
+# Accounting treatment noted in the article
+treatment: >-
+  Payments for licensed access to AI (including most cloud services) are intermediate
+  consumption; AI non-financial assets created (e.g. own-account models) add to GVA.
+
+cpa:
+  - code: C26
+    name: Computer, electronic and optical products
+    in_sut_2023: true
+    ai_products:
+      - AI chips, servers and storage manufacturing
+      - AI-enabled sensors, 3D and 4D cameras
+      - AI embedded medical devices
+      - other AI embedded electrical products (including smartphones)
+  - code: C27
+    name: Electrical equipment
+    in_sut_2023: true
+    ai_products:
+      - AI embedded or autonomous electrical equipment (including domestic appliances)
+  - code: C28
+    name: Machinery and equipment not elsewhere classified
+    in_sut_2023: true
+    ai_products: [autonomous robotics]
+  - code: C29
+    name: Motor vehicles, trailers and semi-trailers
+    in_sut_2023: true
+    ai_products: [autonomous motor vehicles (civilian)]
+  - code: C30.1
+    name: Ships and boats
+    in_sut_2023: true
+    ai_products: [autonomous water-based drones and boats (civilian or military)]
+  - code: C30.3
+    name: Air and spacecraft and related machinery
+    in_sut_2023: true
+    ai_products: [autonomous drones (civilian or military)]
+  - code: C30 Other
+    covers: [C30.2, C30.4, C30.9]
+    name: Other transport equipment
+    in_sut_2023: true
+    ai_products:
+      - autonomous (driverless) trains
+      - autonomous military fighting vehicles
+  - code: F41
+    name: Construction (buildings)
+    in_sut_2023: true
+    ai_products: &dc [construction of data centres, AI hyperscale and AI factory facilities]
+  - code: F42
+    name: Construction (civil engineering)
+    in_sut_2023: true
+    ai_products: *dc
+  - code: F43
+    name: Construction (specialised construction activities)
+    in_sut_2023: true
+    ai_products: *dc
+  - code: H49.3-H49.5
+    name: Land transport services and transport services via pipelines, excluding rail transport
+    in_sut_2023: false   # robotaxis not operating in 2023
+    ai_products: [robotaxi services]
+  - code: H53
+    name: Postal and courier services
+    in_sut_2023: false   # drone deliveries not operating in 2023
+    ai_products: [autonomous drone delivery services]
+  - code: J58
+    name: Publishing services
+    in_sut_2023: true
+    ai_products:
+      - hosted AI applications
+      - online AI tools
+      - AI platforms
+      - generative-AI assistants
+      - standard AI application software
+      - licensing and API access to AI models, software components, Software Development Kits (SDKs) or algorithms
+  - code: J61
+    name: Telecommunications services
+    in_sut_2023: true
+    ai_products: [networks (broadband internet access services over wired networks)]
+  - code: J62
+    name: Computer programming, consultancy and related services
+    in_sut_2023: true
+    ai_products:
+      - AI strategy, implementation, model selection, software and system advice
+      - bespoke AI software and application development, and client-specific machine learning (ML) integration
+      - own-account AI software originals, proprietary models and algorithmic IP
+      - managed AI and IT operations, security operations, monitoring and platform management
+      - AI systems architecture, Internet of Things (IoT) and edge systems, network and security design
+  - code: J63
+    name: Information services
+    in_sut_2023: true
+    ai_products:
+      - AI SaaS and leased hosted applications in a managed computing environment
+      - AI search, information retrieval, decision-support, intelligence feeds
+      - AI data processing, extraction, analytics and specialised reports
+      - AI cloud infrastructure, model hosting, data storage and management, MLOps and DevOps
+      - AI-curated datasets, databases, knowledge graphs and smart map data
+      - data centres and AI hyperscale
+  - code: M70
+    name: Services of head offices; management consulting services
+    in_sut_2023: true
+    ai_products: [AI transformation, business-process redesign and operating-model consulting]
+  - code: M71
+    name: Architectural and engineering services; technical testing and analysis services
+    in_sut_2023: true
+    ai_products: [AI inspection, predictive maintenance, visual quality control and technical diagnostics]
+  - code: M72
+    name: Scientific research and development services
+    in_sut_2023: true
+    ai_products:
+      - AI R&D, model experimentation, robotics and autonomous-system R&D, materials discovery
+      - AI drug discovery, genomics and biotech AI, clinical and pharmaceutical R&D
+  - code: M73
+    name: Advertising and market research services
+    in_sut_2023: true
+    ai_products:
+      - AI marketing automation, content generation, employment services campaign optimisation, ad-tech
+      - AI market intelligence, sentiment analysis, consumer and competitive insights
+  - code: M74
+    name: Other professional, scientific and technical services
+    in_sut_2023: true
+    ai_products:
+      - AI cybersecurity advisory, threat intelligence, governance and risk advisory
+      - AI translation, dubbing, subtitling, speech-to-text and localisation
+  - code: N78
+    name: Employment services
+    in_sut_2023: true
+    ai_products: [AI-enabled recruitment, talent sourcing and candidate matching]
+  - code: N82
+    name: Office administrative, office support and other business support services
+    in_sut_2023: true
+    ai_products: [AI customer-service automation, virtual agents, contact-centre support]
+  - code: P85
+    name: Education services
+    in_sut_2023: true
+    ai_products: [AI training, AI tutors, exam-prep platforms, IT/AI upskilling]
+  - code: Q86
+    name: Human health services
+    in_sut_2023: true
+    ai_products: [AI diagnostics, medical-image interpretation, laboratory analytics]
