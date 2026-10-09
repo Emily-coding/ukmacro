@@ -180,10 +180,10 @@ total investment (the OECD has no harmonised business investment series).
 - **Products** (HMRC, by commodity code): chips, servers, storage, graphics cards,
   phones, network equipment, sensors, cameras, scanners, robots, drones. Values,
   units and value per unit; not seasonally adjusted.
-- **By partner** (EU, US, East Asia, rest of world; and East Asia by country): services
+- **By partner** (EU, US, East Asia, rest of world): services
   use partner shares from the ONS by-country file applied to the latest QNA totals
-  (suppressed partner values interpolated); products use HMRC country codes and are
-  seasonally adjusted with STL.
+  (suppressed partner values interpolated); products use HMRC country codes. Both
+  are charted as rolling four-quarter totals.
 All are upper bounds (whole product groups). EU imports have a break in 2022 Q1.
 Key AI dates (`definitions/ai_events.yaml`) are drawn as vertical lines on the AI charts.
 Outputs: `data/trade/ai/*.csv` and charts in `img/trade/ai/`.

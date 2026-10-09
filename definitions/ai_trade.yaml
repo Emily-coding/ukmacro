@@ -141,7 +141,7 @@ coverage:
   - {ons: "AI software, IT, information, consulting, R&D, other services (J, M, N, P, Q)", products: [], note: "services: covered by the services tiers"}
 
 # --------------------------------------------------------------------- countries
-# Partner groups for the country split (services by country, and products).
+# Partner groups for the country split (one chart set per option) (services by country, and products).
 # Services: ONS "UK trade in services: service type by partner country" (quarterly, not
 # seasonally adjusted); EU = its "Total EU27" row; rest of world = world total minus the
 # named groups. Products: HMRC, where EU vs non-EU comes from the flow type and non-EU
@@ -154,8 +154,5 @@ country_groups:
     US: [US]
     East Asia: [CN, HK, MO, JP, KR, TW]
     Rest of world: [REST]
-  option2:   # East Asia broken out
-    China incl. Hong Kong: [CN, HK, MO]
-    Japan: [JP]
-    South Korea: [KR]
-    Taiwan: [TW]
+# (An East Asia-by-country option was tried and dropped: too small to read. To bring
+# it back, add e.g. option2: {China incl. Hong Kong: [CN, HK, MO], Japan: [JP], ...}.)

@@ -294,7 +294,7 @@ def services_by_country() -> list[dict]:
     out = []
     for tier, spec in DEFS["services_tiers"].items():
         for flow in ("exports", "imports"):
-            for option in ("option1", "option2"):
+            for option in DEFS["country_groups"]:
                 parts = [by_type(t, flow, option) for t in spec["types"]]
                 for group in group_members(option):
                     qs = sorted(set.intersection(*(set(p.get(group, {})) for p in parts)))
@@ -326,7 +326,7 @@ def products_by_country() -> list[dict]:
         quarters = sorted(q for q, ms in months.items() if len(ms) == 3
                           and not (p.get("from") and int(q[:4]) < p["from"]))
         for flow in ("exports", "imports"):
-            for option in ("option1", "option2"):
+            for option in DEFS["country_groups"]:
                 named = {}
                 for group, members in group_members(option).items():
                     if members == ["REST"]:
@@ -356,11 +356,10 @@ def country_charts(rows: list[dict]) -> list[dict]:
     (tier or products) x flow x grouping option, as ROLLING FOUR-QUARTER TOTALS (£bn) so
     that services and products are treated the same way. Returns rows (quarterly value
     and rolling total) for a CSV."""
-    titles = {"option1": "by partner", "option2": "East Asia by country"}
     sources = {"services": "ONS trade in services by type (QNA), split by partner using shares from ONS trade "
                            "in services by partner country; ukmacro calculations",
                "product": "HMRC Overseas Trade Statistics; ukmacro calculations"}
-    groups_of = {o: list(group_members(o)) for o in ("option1", "option2")}
+    groups_of = {o: list(group_members(o)) for o in DEFS["country_groups"]}
     # products total: products with a full series only (smartphones are inside mobile
     # phones; codes created in 2022 would put a break in the total)
     total_products = [p["id"] for p in DEFS["products"] if p["id"] != "smartphones" and not p.get("from")]
@@ -370,7 +369,7 @@ def country_charts(rows: list[dict]) -> list[dict]:
     out_rows = []
     for kind, slug_part, what, items in blocks:
         for flow in ("exports", "imports"):
-            for option in ("option1", "option2"):
+            for option in DEFS["country_groups"]:
                 sums: dict = {}
                 for r in rows:
                     if r["kind"] == kind and r["item"] in items and r["flow"] == flow and r["option"] == option:
@@ -396,7 +395,7 @@ def country_charts(rows: list[dict]) -> list[dict]:
                              "vacuum cleaners (incl. robotic), industrial robots. EU trade is recorded by country "
                              "of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
                 publish(chart(f"ai-trade-{kind}-{slug_part}-{flow}-{option}",
-                              f"UK {flow} of {what}, {titles[option]}",
+                              f"UK {flow} of {what}, by partner",
                               "£ billion, rolling four-quarter total", "line",
                               [{"key": g, "label": g} for g in groups_of[option]],
                               data, note, sources[kind]))
