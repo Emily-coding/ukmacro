@@ -252,9 +252,13 @@ def build_charts(cfg: dict, built: dict[str, dict]) -> list[str]:
         if not data:
             problems.append(f"chart {spec['slug']}: no data")
             continue
+        events = None
+        if spec.get("events"):  # key AI dates as vertical lines (definitions/ai_events.yaml)
+            events = [{"date": str(e["date"]), "label": e["label"]} for e in
+                      yaml.safe_load((REPO / "definitions" / "ai_events.yaml").read_text())["events"]]
         chart = {"slug": spec["slug"], "category": "bics", "title": spec["title"], "type": "line",
                  "freq": "irregular (BICS waves)", "units": spec["units"], "source": SOURCE,
-                 "note": spec.get("note"), "series": lines, "data_through": dates[-1],
+                 "note": spec.get("note"), "series": lines, "events": events, "data_through": dates[-1],
                  "status": "ok", "data": data}
         charts.publish(chart, OUT / "charts" / f"{spec['slug']}.json",
                        REPO / "img" / "bics" / f"{spec['slug']}.png")

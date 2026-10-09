@@ -1,0 +1,673 @@
+option,group,flow,quarter,value_gbp_m,value_sa_gbp_m
+option1,EU,exports,2016-Q1,949.5,1002.2
+option1,EU,exports,2016-Q2,928.1,1013.3
+option1,EU,exports,2016-Q3,1001.9,1042.0
+option1,EU,exports,2016-Q4,1263.3,1060.3
+option1,EU,exports,2017-Q1,980.0,1038.4
+option1,EU,exports,2017-Q2,978.5,1054.6
+option1,EU,exports,2017-Q3,996.5,1027.3
+option1,EU,exports,2017-Q4,1192.3,1016.2
+option1,EU,exports,2018-Q1,1032.0,1100.8
+option1,EU,exports,2018-Q2,996.3,1060.4
+option1,EU,exports,2018-Q3,1041.8,1064.9
+option1,EU,exports,2018-Q4,1274.6,1099.9
+option1,EU,exports,2019-Q1,1299.8,1397.1
+option1,EU,exports,2019-Q2,1055.8,1113.0
+option1,EU,exports,2019-Q3,1129.9,1144.2
+option1,EU,exports,2019-Q4,1178.8,1022.8
+option1,EU,exports,2020-Q1,974.9,1059.1
+option1,EU,exports,2020-Q2,910.2,955.4
+option1,EU,exports,2020-Q3,1080.3,1094.2
+option1,EU,exports,2020-Q4,1290.3,1119.0
+option1,EU,exports,2021-Q1,753.3,812.0
+option1,EU,exports,2021-Q2,945.6,993.0
+option1,EU,exports,2021-Q3,914.5,946.5
+option1,EU,exports,2021-Q4,1067.7,923.6
+option1,EU,exports,2022-Q1,887.3,921.5
+option1,EU,exports,2022-Q2,941.8,999.9
+option1,EU,exports,2022-Q3,1146.0,1215.8
+option1,EU,exports,2022-Q4,1273.9,1122.0
+option1,EU,exports,2023-Q1,1111.8,1079.0
+option1,EU,exports,2023-Q2,1018.5,1111.2
+option1,EU,exports,2023-Q3,996.0,1076.9
+option1,EU,exports,2023-Q4,1178.1,1089.2
+option1,EU,exports,2024-Q1,927.8,814.6
+option1,EU,exports,2024-Q2,890.6,999.0
+option1,EU,exports,2024-Q3,922.8,1019.5
+option1,EU,exports,2024-Q4,1040.3,1011.3
+option1,EU,exports,2025-Q1,984.2,781.1
+option1,EU,exports,2025-Q2,1025.8,1182.4
+option1,EU,exports,2025-Q3,1188.7,1341.4
+option1,EU,exports,2025-Q4,1454.0,1491.5
+option1,EU,exports,2026-Q1,2313.0,1658.3
+option1,EU,exports,2026-Q2,1600.0,1894.1
+option1,US,exports,2016-Q1,137.6,141.9
+option1,US,exports,2016-Q2,144.9,144.6
+option1,US,exports,2016-Q3,144.4,143.5
+option1,US,exports,2016-Q4,151.5,147.3
+option1,US,exports,2017-Q1,144.9,149.8
+option1,US,exports,2017-Q2,158.8,160.4
+option1,US,exports,2017-Q3,149.9,148.5
+option1,US,exports,2017-Q4,180.7,173.4
+option1,US,exports,2018-Q1,138.0,143.1
+option1,US,exports,2018-Q2,140.5,143.5
+option1,US,exports,2018-Q3,155.5,153.9
+option1,US,exports,2018-Q4,159.2,151.2
+option1,US,exports,2019-Q1,151.7,158.4
+option1,US,exports,2019-Q2,152.1,155.3
+option1,US,exports,2019-Q3,154.8,153.4
+option1,US,exports,2019-Q4,201.5,189.4
+option1,US,exports,2020-Q1,151.5,159.1
+option1,US,exports,2020-Q2,139.9,142.3
+option1,US,exports,2020-Q3,166.5,167.2
+option1,US,exports,2020-Q4,177.6,164.8
+option1,US,exports,2021-Q1,151.6,160.9
+option1,US,exports,2021-Q2,173.6,174.7
+option1,US,exports,2021-Q3,150.8,151.8
+option1,US,exports,2021-Q4,167.7,155.0
+option1,US,exports,2022-Q1,142.2,151.9
+option1,US,exports,2022-Q2,155.1,155.0
+option1,US,exports,2022-Q3,214.3,216.9
+option1,US,exports,2022-Q4,171.5,159.0
+option1,US,exports,2023-Q1,156.5,169.3
+option1,US,exports,2023-Q2,179.4,173.5
+option1,US,exports,2023-Q3,186.2,192.7
+option1,US,exports,2023-Q4,200.5,189.0
+option1,US,exports,2024-Q1,191.5,213.9
+option1,US,exports,2024-Q2,194.9,170.5
+option1,US,exports,2024-Q3,187.0,199.6
+option1,US,exports,2024-Q4,189.1,182.4
+option1,US,exports,2025-Q1,179.3,207.0
+option1,US,exports,2025-Q2,195.6,158.2
+option1,US,exports,2025-Q3,195.1,214.6
+option1,US,exports,2025-Q4,227.6,223.8
+option1,US,exports,2026-Q1,194.0,230.9
+option1,US,exports,2026-Q2,322.0,240.1
+option1,East Asia,exports,2016-Q1,123.3,131.8
+option1,East Asia,exports,2016-Q2,129.0,130.2
+option1,East Asia,exports,2016-Q3,140.3,135.0
+option1,East Asia,exports,2016-Q4,137.9,134.4
+option1,East Asia,exports,2017-Q1,126.5,130.1
+option1,East Asia,exports,2017-Q2,124.0,128.7
+option1,East Asia,exports,2017-Q3,112.8,110.0
+option1,East Asia,exports,2017-Q4,87.8,85.1
+option1,East Asia,exports,2018-Q1,71.5,71.1
+option1,East Asia,exports,2018-Q2,110.0,117.0
+option1,East Asia,exports,2018-Q3,127.3,126.2
+option1,East Asia,exports,2018-Q4,100.4,96.8
+option1,East Asia,exports,2019-Q1,122.8,117.5
+option1,East Asia,exports,2019-Q2,96.6,105.0
+option1,East Asia,exports,2019-Q3,108.1,108.0
+option1,East Asia,exports,2019-Q4,112.0,108.7
+option1,East Asia,exports,2020-Q1,99.2,96.3
+option1,East Asia,exports,2020-Q2,76.7,81.4
+option1,East Asia,exports,2020-Q3,78.8,79.7
+option1,East Asia,exports,2020-Q4,98.5,91.9
+option1,East Asia,exports,2021-Q1,88.2,89.6
+option1,East Asia,exports,2021-Q2,109.1,112.7
+option1,East Asia,exports,2021-Q3,110.3,113.2
+option1,East Asia,exports,2021-Q4,120.8,110.8
+option1,East Asia,exports,2022-Q1,115.4,120.2
+option1,East Asia,exports,2022-Q2,132.6,135.6
+option1,East Asia,exports,2022-Q3,128.4,129.3
+option1,East Asia,exports,2022-Q4,151.2,140.4
+option1,East Asia,exports,2023-Q1,123.9,129.3
+option1,East Asia,exports,2023-Q2,101.6,103.8
+option1,East Asia,exports,2023-Q3,115.3,116.9
+option1,East Asia,exports,2023-Q4,122.3,116.7
+option1,East Asia,exports,2024-Q1,112.1,112.9
+option1,East Asia,exports,2024-Q2,121.0,121.1
+option1,East Asia,exports,2024-Q3,150.2,156.3
+option1,East Asia,exports,2024-Q4,144.3,141.9
+option1,East Asia,exports,2025-Q1,121.1,118.3
+option1,East Asia,exports,2025-Q2,181.8,176.6
+option1,East Asia,exports,2025-Q3,174.9,187.1
+option1,East Asia,exports,2025-Q4,238.7,243.0
+option1,East Asia,exports,2026-Q1,303.7,287.5
+option1,East Asia,exports,2026-Q2,370.3,346.3
+option1,Rest of world,exports,2016-Q1,285.7,295.3
+option1,Rest of world,exports,2016-Q2,249.8,294.6
+option1,Rest of world,exports,2016-Q3,304.2,294.7
+option1,Rest of world,exports,2016-Q4,408.5,351.5
+option1,Rest of world,exports,2017-Q1,451.7,468.7
+option1,Rest of world,exports,2017-Q2,347.5,393.3
+option1,Rest of world,exports,2017-Q3,277.0,270.0
+option1,Rest of world,exports,2017-Q4,316.2,280.2
+option1,Rest of world,exports,2018-Q1,276.4,288.5
+option1,Rest of world,exports,2018-Q2,255.1,277.6
+option1,Rest of world,exports,2018-Q3,275.6,270.6
+option1,Rest of world,exports,2018-Q4,274.4,250.1
+option1,Rest of world,exports,2019-Q1,331.2,345.1
+option1,Rest of world,exports,2019-Q2,262.4,275.2
+option1,Rest of world,exports,2019-Q3,281.8,277.8
+option1,Rest of world,exports,2019-Q4,273.3,255.0
+option1,Rest of world,exports,2020-Q1,234.8,249.0
+option1,Rest of world,exports,2020-Q2,200.5,203.9
+option1,Rest of world,exports,2020-Q3,250.9,247.0
+option1,Rest of world,exports,2020-Q4,268.7,254.3
+option1,Rest of world,exports,2021-Q1,242.5,259.1
+option1,Rest of world,exports,2021-Q2,262.4,260.3
+option1,Rest of world,exports,2021-Q3,269.9,271.5
+option1,Rest of world,exports,2021-Q4,286.6,271.5
+option1,Rest of world,exports,2022-Q1,259.6,273.6
+option1,Rest of world,exports,2022-Q2,303.6,296.7
+option1,Rest of world,exports,2022-Q3,391.2,403.5
+option1,Rest of world,exports,2022-Q4,396.8,377.8
+option1,Rest of world,exports,2023-Q1,320.1,332.7
+option1,Rest of world,exports,2023-Q2,342.7,331.8
+option1,Rest of world,exports,2023-Q3,319.8,335.1
+option1,Rest of world,exports,2023-Q4,374.4,358.5
+option1,Rest of world,exports,2024-Q1,354.3,364.8
+option1,Rest of world,exports,2024-Q2,453.6,433.9
+option1,Rest of world,exports,2024-Q3,375.4,399.8
+option1,Rest of world,exports,2024-Q4,429.5,412.3
+option1,Rest of world,exports,2025-Q1,469.2,479.7
+option1,Rest of world,exports,2025-Q2,445.8,422.2
+option1,Rest of world,exports,2025-Q3,526.5,568.5
+option1,Rest of world,exports,2025-Q4,636.0,612.5
+option1,Rest of world,exports,2026-Q1,633.7,644.1
+option1,Rest of world,exports,2026-Q2,754.9,708.0
+option2,China incl. Hong Kong,exports,2016-Q1,101.4,107.1
+option2,China incl. Hong Kong,exports,2016-Q2,106.5,102.9
+option2,China incl. Hong Kong,exports,2016-Q3,107.4,109.6
+option2,China incl. Hong Kong,exports,2016-Q4,111.4,105.8
+option2,China incl. Hong Kong,exports,2017-Q1,98.6,104.5
+option2,China incl. Hong Kong,exports,2017-Q2,101.8,100.9
+option2,China incl. Hong Kong,exports,2017-Q3,83.4,83.9
+option2,China incl. Hong Kong,exports,2017-Q4,58.9,55.1
+option2,China incl. Hong Kong,exports,2018-Q1,50.7,53.9
+option2,China incl. Hong Kong,exports,2018-Q2,82.8,84.0
+option2,China incl. Hong Kong,exports,2018-Q3,98.6,98.2
+option2,China incl. Hong Kong,exports,2018-Q4,71.9,66.3
+option2,China incl. Hong Kong,exports,2019-Q1,93.1,99.0
+option2,China incl. Hong Kong,exports,2019-Q2,59.9,62.4
+option2,China incl. Hong Kong,exports,2019-Q3,74.5,72.6
+option2,China incl. Hong Kong,exports,2019-Q4,76.4,69.6
+option2,China incl. Hong Kong,exports,2020-Q1,58.6,64.7
+option2,China incl. Hong Kong,exports,2020-Q2,55.0,57.1
+option2,China incl. Hong Kong,exports,2020-Q3,56.6,55.1
+option2,China incl. Hong Kong,exports,2020-Q4,72.7,66.1
+option2,China incl. Hong Kong,exports,2021-Q1,61.5,65.3
+option2,China incl. Hong Kong,exports,2021-Q2,83.7,86.8
+option2,China incl. Hong Kong,exports,2021-Q3,81.0,81.6
+option2,China incl. Hong Kong,exports,2021-Q4,87.2,80.0
+option2,China incl. Hong Kong,exports,2022-Q1,89.7,93.5
+option2,China incl. Hong Kong,exports,2022-Q2,84.3,86.1
+option2,China incl. Hong Kong,exports,2022-Q3,82.4,83.0
+option2,China incl. Hong Kong,exports,2022-Q4,89.8,84.1
+option2,China incl. Hong Kong,exports,2023-Q1,78.6,80.8
+option2,China incl. Hong Kong,exports,2023-Q2,73.7,75.5
+option2,China incl. Hong Kong,exports,2023-Q3,77.3,79.2
+option2,China incl. Hong Kong,exports,2023-Q4,81.2,77.7
+option2,China incl. Hong Kong,exports,2024-Q1,69.9,69.1
+option2,China incl. Hong Kong,exports,2024-Q2,72.0,72.3
+option2,China incl. Hong Kong,exports,2024-Q3,80.9,85.8
+option2,China incl. Hong Kong,exports,2024-Q4,85.0,83.1
+option2,China incl. Hong Kong,exports,2025-Q1,70.0,67.1
+option2,China incl. Hong Kong,exports,2025-Q2,115.8,112.9
+option2,China incl. Hong Kong,exports,2025-Q3,117.5,129.4
+option2,China incl. Hong Kong,exports,2025-Q4,173.7,174.1
+option2,China incl. Hong Kong,exports,2026-Q1,232.8,216.0
+option2,China incl. Hong Kong,exports,2026-Q2,288.0,271.1
+option2,Japan,exports,2016-Q1,7.5,9.9
+option2,Japan,exports,2016-Q2,6.9,8.7
+option2,Japan,exports,2016-Q3,12.0,9.0
+option2,Japan,exports,2016-Q4,10.4,8.8
+option2,Japan,exports,2017-Q1,13.4,16.6
+option2,Japan,exports,2017-Q2,5.8,7.0
+option2,Japan,exports,2017-Q3,7.3,5.8
+option2,Japan,exports,2017-Q4,6.3,5.7
+option2,Japan,exports,2018-Q1,5.5,6.4
+option2,Japan,exports,2018-Q2,6.5,7.5
+option2,Japan,exports,2018-Q3,9.7,8.1
+option2,Japan,exports,2018-Q4,8.5,8.1
+option2,Japan,exports,2019-Q1,8.7,9.3
+option2,Japan,exports,2019-Q2,9.6,10.8
+option2,Japan,exports,2019-Q3,11.4,9.9
+option2,Japan,exports,2019-Q4,10.9,10.8
+option2,Japan,exports,2020-Q1,13.3,13.5
+option2,Japan,exports,2020-Q2,8.8,10.1
+option2,Japan,exports,2020-Q3,6.3,5.7
+option2,Japan,exports,2020-Q4,10.5,9.9
+option2,Japan,exports,2021-Q1,11.5,11.2
+option2,Japan,exports,2021-Q2,10.2,12.4
+option2,Japan,exports,2021-Q3,15.5,14.6
+option2,Japan,exports,2021-Q4,15.3,14.0
+option2,Japan,exports,2022-Q1,14.0,13.9
+option2,Japan,exports,2022-Q2,21.8,24.0
+option2,Japan,exports,2022-Q3,14.9,15.0
+option2,Japan,exports,2022-Q4,23.0,20.6
+option2,Japan,exports,2023-Q1,19.7,20.5
+option2,Japan,exports,2023-Q2,11.9,12.2
+option2,Japan,exports,2023-Q3,17.2,18.5
+option2,Japan,exports,2023-Q4,16.7,14.7
+option2,Japan,exports,2024-Q1,16.2,17.0
+option2,Japan,exports,2024-Q2,20.1,19.1
+option2,Japan,exports,2024-Q3,31.1,35.8
+option2,Japan,exports,2024-Q4,27.4,24.2
+option2,Japan,exports,2025-Q1,20.8,21.8
+option2,Japan,exports,2025-Q2,30.2,27.3
+option2,Japan,exports,2025-Q3,22.4,27.3
+option2,Japan,exports,2025-Q4,31.9,28.0
+option2,Japan,exports,2026-Q1,31.5,32.9
+option2,Japan,exports,2026-Q2,35.4,30.5
+option2,South Korea,exports,2016-Q1,11.7,12.8
+option2,South Korea,exports,2016-Q2,10.8,12.1
+option2,South Korea,exports,2016-Q3,15.3,12.5
+option2,South Korea,exports,2016-Q4,12.2,12.0
+option2,South Korea,exports,2017-Q1,11.3,12.8
+option2,South Korea,exports,2017-Q2,12.5,13.1
+option2,South Korea,exports,2017-Q3,16.0,14.3
+option2,South Korea,exports,2017-Q4,18.2,16.8
+option2,South Korea,exports,2018-Q1,10.7,12.6
+option2,South Korea,exports,2018-Q2,15.4,15.1
+option2,South Korea,exports,2018-Q3,13.4,13.2
+option2,South Korea,exports,2018-Q4,15.2,13.2
+option2,South Korea,exports,2019-Q1,13.8,16.5
+option2,South Korea,exports,2019-Q2,20.4,19.1
+option2,South Korea,exports,2019-Q3,16.4,17.7
+option2,South Korea,exports,2019-Q4,17.6,14.6
+option2,South Korea,exports,2020-Q1,20.8,24.9
+option2,South Korea,exports,2020-Q2,8.0,7.2
+option2,South Korea,exports,2020-Q3,5.9,6.7
+option2,South Korea,exports,2020-Q4,8.4,6.8
+option2,South Korea,exports,2021-Q1,6.1,7.4
+option2,South Korea,exports,2021-Q2,8.0,7.3
+option2,South Korea,exports,2021-Q3,5.7,6.4
+option2,South Korea,exports,2021-Q4,10.0,8.1
+option2,South Korea,exports,2022-Q1,5.7,7.1
+option2,South Korea,exports,2022-Q2,11.1,10.3
+option2,South Korea,exports,2022-Q3,7.9,7.9
+option2,South Korea,exports,2022-Q4,9.5,8.1
+option2,South Korea,exports,2023-Q1,6.0,7.6
+option2,South Korea,exports,2023-Q2,7.3,6.8
+option2,South Korea,exports,2023-Q3,9.7,9.2
+option2,South Korea,exports,2023-Q4,7.6,7.0
+option2,South Korea,exports,2024-Q1,6.4,8.1
+option2,South Korea,exports,2024-Q2,8.2,7.4
+option2,South Korea,exports,2024-Q3,11.4,10.5
+option2,South Korea,exports,2024-Q4,11.2,10.9
+option2,South Korea,exports,2025-Q1,15.8,19.6
+option2,South Korea,exports,2025-Q2,18.6,16.5
+option2,South Korea,exports,2025-Q3,14.8,13.3
+option2,South Korea,exports,2025-Q4,16.7,17.4
+option2,South Korea,exports,2026-Q1,14.8,18.1
+option2,South Korea,exports,2026-Q2,22.1,19.0
+option2,Taiwan,exports,2016-Q1,2.7,4.0
+option2,Taiwan,exports,2016-Q2,4.8,4.4
+option2,Taiwan,exports,2016-Q3,5.7,4.1
+option2,Taiwan,exports,2016-Q4,3.9,4.2
+option2,Taiwan,exports,2017-Q1,3.2,4.1
+option2,Taiwan,exports,2017-Q2,3.8,3.7
+option2,Taiwan,exports,2017-Q3,6.1,4.9
+option2,Taiwan,exports,2017-Q4,4.5,4.8
+option2,Taiwan,exports,2018-Q1,4.5,5.0
+option2,Taiwan,exports,2018-Q2,5.3,5.4
+option2,Taiwan,exports,2018-Q3,5.6,4.8
+option2,Taiwan,exports,2018-Q4,4.9,5.2
+option2,Taiwan,exports,2019-Q1,7.2,7.2
+option2,Taiwan,exports,2019-Q2,6.7,7.1
+option2,Taiwan,exports,2019-Q3,5.9,5.4
+option2,Taiwan,exports,2019-Q4,7.1,7.6
+option2,Taiwan,exports,2020-Q1,6.5,6.0
+option2,Taiwan,exports,2020-Q2,4.9,5.3
+option2,Taiwan,exports,2020-Q3,10.0,9.2
+option2,Taiwan,exports,2020-Q4,6.9,7.6
+option2,Taiwan,exports,2021-Q1,9.1,8.5
+option2,Taiwan,exports,2021-Q2,7.2,7.9
+option2,Taiwan,exports,2021-Q3,8.1,6.9
+option2,Taiwan,exports,2021-Q4,8.2,9.5
+option2,Taiwan,exports,2022-Q1,6.0,5.7
+option2,Taiwan,exports,2022-Q2,15.4,16.2
+option2,Taiwan,exports,2022-Q3,23.2,19.4
+option2,Taiwan,exports,2022-Q4,29.0,33.7
+option2,Taiwan,exports,2023-Q1,19.6,19.5
+option2,Taiwan,exports,2023-Q2,8.8,9.0
+option2,Taiwan,exports,2023-Q3,11.2,9.4
+option2,Taiwan,exports,2023-Q4,16.9,19.2
+option2,Taiwan,exports,2024-Q1,19.6,20.1
+option2,Taiwan,exports,2024-Q2,20.8,21.0
+option2,Taiwan,exports,2024-Q3,26.8,22.9
+option2,Taiwan,exports,2024-Q4,20.7,23.4
+option2,Taiwan,exports,2025-Q1,14.6,14.9
+option2,Taiwan,exports,2025-Q2,17.2,17.2
+option2,Taiwan,exports,2025-Q3,20.1,17.5
+option2,Taiwan,exports,2025-Q4,16.4,18.4
+option2,Taiwan,exports,2026-Q1,24.6,24.9
+option2,Taiwan,exports,2026-Q2,24.8,24.6
+option1,EU,imports,2016-Q1,1753.1,1907.6
+option1,EU,imports,2016-Q2,1658.9,1893.5
+option1,EU,imports,2016-Q3,2215.3,2112.7
+option1,EU,imports,2016-Q4,2328.9,1991.6
+option1,EU,imports,2017-Q1,1900.3,2014.2
+option1,EU,imports,2017-Q2,1866.9,2126.4
+option1,EU,imports,2017-Q3,2082.1,2050.9
+option1,EU,imports,2017-Q4,2633.9,2238.2
+option1,EU,imports,2018-Q1,2163.9,2244.6
+option1,EU,imports,2018-Q2,2111.0,2401.0
+option1,EU,imports,2018-Q3,2037.5,2063.6
+option1,EU,imports,2018-Q4,2576.5,2174.7
+option1,EU,imports,2019-Q1,2142.0,2183.5
+option1,EU,imports,2019-Q2,1575.3,1793.1
+option1,EU,imports,2019-Q3,1861.3,1908.1
+option1,EU,imports,2019-Q4,2130.1,1782.8
+option1,EU,imports,2020-Q1,1841.9,1905.1
+option1,EU,imports,2020-Q2,1639.2,1856.2
+option1,EU,imports,2020-Q3,1748.5,1754.2
+option1,EU,imports,2020-Q4,1974.2,1677.9
+option1,EU,imports,2021-Q1,1231.0,1297.2
+option1,EU,imports,2021-Q2,1069.2,1174.3
+option1,EU,imports,2021-Q3,960.1,957.0
+option1,EU,imports,2021-Q4,1103.9,970.9
+option1,EU,imports,2022-Q1,1803.9,1906.0
+option1,EU,imports,2022-Q2,2008.8,2127.6
+option1,EU,imports,2022-Q3,2362.7,2350.3
+option1,EU,imports,2022-Q4,2666.6,2455.4
+option1,EU,imports,2023-Q1,2457.2,2519.0
+option1,EU,imports,2023-Q2,2339.8,2431.9
+option1,EU,imports,2023-Q3,2165.8,2162.8
+option1,EU,imports,2023-Q4,2131.6,2124.5
+option1,EU,imports,2024-Q1,2079.6,2008.9
+option1,EU,imports,2024-Q2,2127.5,2130.6
+option1,EU,imports,2024-Q3,2437.0,2470.2
+option1,EU,imports,2024-Q4,2214.4,2400.8
+option1,EU,imports,2025-Q1,2741.8,2508.1
+option1,EU,imports,2025-Q2,2376.5,2268.4
+option1,EU,imports,2025-Q3,2486.7,2563.0
+option1,EU,imports,2025-Q4,2372.8,2802.4
+option1,EU,imports,2026-Q1,3456.6,2992.7
+option1,EU,imports,2026-Q2,3755.9,3414.8
+option1,US,imports,2016-Q1,296.1,279.7
+option1,US,imports,2016-Q2,264.4,285.1
+option1,US,imports,2016-Q3,265.1,275.8
+option1,US,imports,2016-Q4,305.9,287.2
+option1,US,imports,2017-Q1,310.1,295.3
+option1,US,imports,2017-Q2,265.0,287.2
+option1,US,imports,2017-Q3,287.9,294.6
+option1,US,imports,2017-Q4,301.4,284.6
+option1,US,imports,2018-Q1,300.1,287.5
+option1,US,imports,2018-Q2,293.4,318.6
+option1,US,imports,2018-Q3,344.1,346.8
+option1,US,imports,2018-Q4,365.2,347.8
+option1,US,imports,2019-Q1,352.7,340.6
+option1,US,imports,2019-Q2,284.1,308.1
+option1,US,imports,2019-Q3,328.1,326.3
+option1,US,imports,2019-Q4,352.2,338.4
+option1,US,imports,2020-Q1,341.8,332.7
+option1,US,imports,2020-Q2,314.8,334.7
+option1,US,imports,2020-Q3,310.6,305.5
+option1,US,imports,2020-Q4,316.8,313.4
+option1,US,imports,2021-Q1,325.3,325.9
+option1,US,imports,2021-Q2,299.5,305.3
+option1,US,imports,2021-Q3,336.6,323.8
+option1,US,imports,2021-Q4,315.3,321.7
+option1,US,imports,2022-Q1,310.0,314.6
+option1,US,imports,2022-Q2,370.9,378.9
+option1,US,imports,2022-Q3,393.9,362.9
+option1,US,imports,2022-Q4,469.8,490.1
+option1,US,imports,2023-Q1,497.0,507.1
+option1,US,imports,2023-Q2,391.2,421.4
+option1,US,imports,2023-Q3,429.4,371.6
+option1,US,imports,2023-Q4,358.7,363.2
+option1,US,imports,2024-Q1,381.3,392.7
+option1,US,imports,2024-Q2,323.9,381.7
+option1,US,imports,2024-Q3,531.7,428.5
+option1,US,imports,2024-Q4,653.2,646.4
+option1,US,imports,2025-Q1,536.1,557.1
+option1,US,imports,2025-Q2,582.9,751.7
+option1,US,imports,2025-Q3,827.3,618.4
+option1,US,imports,2025-Q4,650.7,627.2
+option1,US,imports,2026-Q1,574.4,604.1
+option1,US,imports,2026-Q2,465.6,659.1
+option1,East Asia,imports,2016-Q1,1051.8,1300.1
+option1,East Asia,imports,2016-Q2,1232.6,1327.6
+option1,East Asia,imports,2016-Q3,1406.2,1418.4
+option1,East Asia,imports,2016-Q4,2023.1,1487.9
+option1,East Asia,imports,2017-Q1,1669.0,2066.8
+option1,East Asia,imports,2017-Q2,1480.0,1614.6
+option1,East Asia,imports,2017-Q3,1552.3,1594.6
+option1,East Asia,imports,2017-Q4,2147.8,1529.8
+option1,East Asia,imports,2018-Q1,1376.0,1705.2
+option1,East Asia,imports,2018-Q2,1607.1,1774.2
+option1,East Asia,imports,2018-Q3,2068.9,2161.6
+option1,East Asia,imports,2018-Q4,2817.4,1951.7
+option1,East Asia,imports,2019-Q1,2217.2,2746.1
+option1,East Asia,imports,2019-Q2,1743.7,1954.1
+option1,East Asia,imports,2019-Q3,1846.4,1967.9
+option1,East Asia,imports,2019-Q4,3188.8,2155.5
+option1,East Asia,imports,2020-Q1,1646.3,1994.5
+option1,East Asia,imports,2020-Q2,1935.0,2189.1
+option1,East Asia,imports,2020-Q3,2167.6,2351.1
+option1,East Asia,imports,2020-Q4,3516.7,2429.9
+option1,East Asia,imports,2021-Q1,2030.9,2369.2
+option1,East Asia,imports,2021-Q2,2050.1,2316.8
+option1,East Asia,imports,2021-Q3,2086.2,2283.9
+option1,East Asia,imports,2021-Q4,3175.6,2288.4
+option1,East Asia,imports,2022-Q1,2298.3,2531.9
+option1,East Asia,imports,2022-Q2,2395.4,2715.9
+option1,East Asia,imports,2022-Q3,2864.1,3166.5
+option1,East Asia,imports,2022-Q4,3059.2,2265.0
+option1,East Asia,imports,2023-Q1,2234.4,2396.2
+option1,East Asia,imports,2023-Q2,2001.6,2260.3
+option1,East Asia,imports,2023-Q3,2131.8,2361.4
+option1,East Asia,imports,2023-Q4,3444.1,2562.6
+option1,East Asia,imports,2024-Q1,2117.1,2289.3
+option1,East Asia,imports,2024-Q2,2009.3,2254.4
+option1,East Asia,imports,2024-Q3,1489.0,1647.5
+option1,East Asia,imports,2024-Q4,2751.9,2045.7
+option1,East Asia,imports,2025-Q1,1623.4,1772.3
+option1,East Asia,imports,2025-Q2,1814.3,2016.0
+option1,East Asia,imports,2025-Q3,1893.7,2095.0
+option1,East Asia,imports,2025-Q4,2912.4,2163.3
+option1,East Asia,imports,2026-Q1,1998.8,2208.0
+option1,East Asia,imports,2026-Q2,2091.7,2298.1
+option1,Rest of world,imports,2016-Q1,525.9,585.6
+option1,Rest of world,imports,2016-Q2,678.3,604.8
+option1,Rest of world,imports,2016-Q3,578.6,641.7
+option1,Rest of world,imports,2016-Q4,696.9,630.5
+option1,Rest of world,imports,2017-Q1,509.3,552.8
+option1,Rest of world,imports,2017-Q2,732.6,698.5
+option1,Rest of world,imports,2017-Q3,619.2,656.9
+option1,Rest of world,imports,2017-Q4,795.1,721.5
+option1,Rest of world,imports,2018-Q1,674.9,715.3
+option1,Rest of world,imports,2018-Q2,618.7,628.7
+option1,Rest of world,imports,2018-Q3,700.8,712.2
+option1,Rest of world,imports,2018-Q4,767.4,699.1
+option1,Rest of world,imports,2019-Q1,685.4,708.0
+option1,Rest of world,imports,2019-Q2,631.4,683.7
+option1,Rest of world,imports,2019-Q3,704.7,683.0
+option1,Rest of world,imports,2019-Q4,722.9,664.2
+option1,Rest of world,imports,2020-Q1,629.7,642.3
+option1,Rest of world,imports,2020-Q2,445.1,505.9
+option1,Rest of world,imports,2020-Q3,716.7,673.6
+option1,Rest of world,imports,2020-Q4,608.9,557.1
+option1,Rest of world,imports,2021-Q1,646.1,640.7
+option1,Rest of world,imports,2021-Q2,577.2,687.7
+option1,Rest of world,imports,2021-Q3,740.3,698.8
+option1,Rest of world,imports,2021-Q4,761.8,687.6
+option1,Rest of world,imports,2022-Q1,819.0,789.7
+option1,Rest of world,imports,2022-Q2,607.5,729.7
+option1,Rest of world,imports,2022-Q3,905.1,894.3
+option1,Rest of world,imports,2022-Q4,982.1,867.1
+option1,Rest of world,imports,2023-Q1,1069.6,996.1
+option1,Rest of world,imports,2023-Q2,871.3,1043.4
+option1,Rest of world,imports,2023-Q3,741.4,784.0
+option1,Rest of world,imports,2023-Q4,756.3,651.5
+option1,Rest of world,imports,2024-Q1,865.1,777.1
+option1,Rest of world,imports,2024-Q2,733.9,865.8
+option1,Rest of world,imports,2024-Q3,787.7,896.5
+option1,Rest of world,imports,2024-Q4,1147.7,966.7
+option1,Rest of world,imports,2025-Q1,1197.8,1041.4
+option1,Rest of world,imports,2025-Q2,910.1,1051.0
+option1,Rest of world,imports,2025-Q3,1246.1,1531.7
+option1,Rest of world,imports,2025-Q4,1495.9,1234.7
+option1,Rest of world,imports,2026-Q1,982.6,823.8
+option1,Rest of world,imports,2026-Q2,1293.7,1461.1
+option2,China incl. Hong Kong,imports,2016-Q1,868.9,1092.7
+option2,China incl. Hong Kong,imports,2016-Q2,1014.2,1111.6
+option2,China incl. Hong Kong,imports,2016-Q3,1210.6,1201.6
+option2,China incl. Hong Kong,imports,2016-Q4,1746.1,1261.4
+option2,China incl. Hong Kong,imports,2017-Q1,1463.0,1836.6
+option2,China incl. Hong Kong,imports,2017-Q2,1263.7,1402.3
+option2,China incl. Hong Kong,imports,2017-Q3,1368.4,1394.2
+option2,China incl. Hong Kong,imports,2017-Q4,1873.0,1306.2
+option2,China incl. Hong Kong,imports,2018-Q1,1178.2,1473.5
+option2,China incl. Hong Kong,imports,2018-Q2,1386.3,1556.9
+option2,China incl. Hong Kong,imports,2018-Q3,1847.8,1928.3
+option2,China incl. Hong Kong,imports,2018-Q4,2532.4,1712.4
+option2,China incl. Hong Kong,imports,2019-Q1,2019.3,2515.2
+option2,China incl. Hong Kong,imports,2019-Q2,1511.1,1723.8
+option2,China incl. Hong Kong,imports,2019-Q3,1596.2,1714.0
+option2,China incl. Hong Kong,imports,2019-Q4,2879.9,1894.8
+option2,China incl. Hong Kong,imports,2020-Q1,1437.1,1736.7
+option2,China incl. Hong Kong,imports,2020-Q2,1612.4,1858.0
+option2,China incl. Hong Kong,imports,2020-Q3,1847.9,2025.4
+option2,China incl. Hong Kong,imports,2020-Q4,3110.8,2103.7
+option2,China incl. Hong Kong,imports,2021-Q1,1814.1,2103.1
+option2,China incl. Hong Kong,imports,2021-Q2,1781.5,2047.9
+option2,China incl. Hong Kong,imports,2021-Q3,1848.0,2034.7
+option2,China incl. Hong Kong,imports,2021-Q4,2883.3,2043.5
+option2,China incl. Hong Kong,imports,2022-Q1,2031.9,2234.5
+option2,China incl. Hong Kong,imports,2022-Q2,2035.2,2343.9
+option2,China incl. Hong Kong,imports,2022-Q3,2593.9,2869.2
+option2,China incl. Hong Kong,imports,2022-Q4,2725.1,1974.8
+option2,China incl. Hong Kong,imports,2023-Q1,2014.5,2180.5
+option2,China incl. Hong Kong,imports,2023-Q2,1705.9,1944.9
+option2,China incl. Hong Kong,imports,2023-Q3,1923.0,2142.9
+option2,China incl. Hong Kong,imports,2023-Q4,3152.0,2281.6
+option2,China incl. Hong Kong,imports,2024-Q1,1878.2,2057.7
+option2,China incl. Hong Kong,imports,2024-Q2,1756.3,1985.5
+option2,China incl. Hong Kong,imports,2024-Q3,1264.2,1412.9
+option2,China incl. Hong Kong,imports,2024-Q4,2460.9,1769.5
+option2,China incl. Hong Kong,imports,2025-Q1,1430.5,1584.9
+option2,China incl. Hong Kong,imports,2025-Q2,1554.2,1740.5
+option2,China incl. Hong Kong,imports,2025-Q3,1565.4,1757.2
+option2,China incl. Hong Kong,imports,2025-Q4,2536.1,1809.9
+option2,China incl. Hong Kong,imports,2026-Q1,1663.0,1868.0
+option2,China incl. Hong Kong,imports,2026-Q2,1696.3,1878.0
+option2,Japan,imports,2016-Q1,13.2,14.4
+option2,Japan,imports,2016-Q2,12.6,12.6
+option2,Japan,imports,2016-Q3,15.2,14.4
+option2,Japan,imports,2016-Q4,19.4,18.7
+option2,Japan,imports,2017-Q1,17.1,18.8
+option2,Japan,imports,2017-Q2,26.2,26.5
+option2,Japan,imports,2017-Q3,30.5,28.9
+option2,Japan,imports,2017-Q4,27.0,25.3
+option2,Japan,imports,2018-Q1,18.2,20.2
+option2,Japan,imports,2018-Q2,29.8,30.5
+option2,Japan,imports,2018-Q3,28.7,27.3
+option2,Japan,imports,2018-Q4,28.0,25.5
+option2,Japan,imports,2019-Q1,25.0,27.8
+option2,Japan,imports,2019-Q2,18.2,18.9
+option2,Japan,imports,2019-Q3,23.4,22.7
+option2,Japan,imports,2019-Q4,25.8,22.9
+option2,Japan,imports,2020-Q1,23.6,25.9
+option2,Japan,imports,2020-Q2,19.5,20.2
+option2,Japan,imports,2020-Q3,20.7,20.7
+option2,Japan,imports,2020-Q4,26.5,23.8
+option2,Japan,imports,2021-Q1,13.2,14.8
+option2,Japan,imports,2021-Q2,20.5,20.3
+option2,Japan,imports,2021-Q3,15.8,15.4
+option2,Japan,imports,2021-Q4,14.6,13.4
+option2,Japan,imports,2022-Q1,14.0,16.6
+option2,Japan,imports,2022-Q2,17.7,16.7
+option2,Japan,imports,2022-Q3,17.8,16.7
+option2,Japan,imports,2022-Q4,19.6,18.9
+option2,Japan,imports,2023-Q1,16.2,19.1
+option2,Japan,imports,2023-Q2,20.9,20.1
+option2,Japan,imports,2023-Q3,28.5,26.4
+option2,Japan,imports,2023-Q4,41.7,39.8
+option2,Japan,imports,2024-Q1,27.9,31.4
+option2,Japan,imports,2024-Q2,18.5,19.1
+option2,Japan,imports,2024-Q3,14.7,13.4
+option2,Japan,imports,2024-Q4,14.1,13.3
+option2,Japan,imports,2025-Q1,12.2,13.2
+option2,Japan,imports,2025-Q2,13.4,14.9
+option2,Japan,imports,2025-Q3,17.9,16.1
+option2,Japan,imports,2025-Q4,19.2,17.8
+option2,Japan,imports,2026-Q1,18.4,19.1
+option2,Japan,imports,2026-Q2,15.7,18.7
+option2,South Korea,imports,2016-Q1,90.0,83.7
+option2,South Korea,imports,2016-Q2,102.1,118.0
+option2,South Korea,imports,2016-Q3,66.1,94.2
+option2,South Korea,imports,2016-Q4,82.6,55.8
+option2,South Korea,imports,2017-Q1,70.2,70.7
+option2,South Korea,imports,2017-Q2,32.2,31.2
+option2,South Korea,imports,2017-Q3,20.9,29.4
+option2,South Korea,imports,2017-Q4,51.7,38.8
+option2,South Korea,imports,2018-Q1,27.9,30.6
+option2,South Korea,imports,2018-Q2,21.2,17.3
+option2,South Korea,imports,2018-Q3,12.8,17.5
+option2,South Korea,imports,2018-Q4,10.6,8.7
+option2,South Korea,imports,2019-Q1,15.5,19.1
+option2,South Korea,imports,2019-Q2,57.0,39.1
+option2,South Korea,imports,2019-Q3,24.9,33.1
+option2,South Korea,imports,2019-Q4,38.4,35.9
+option2,South Korea,imports,2020-Q1,21.1,26.7
+option2,South Korea,imports,2020-Q2,140.7,88.2
+option2,South Korea,imports,2020-Q3,85.4,106.7
+option2,South Korea,imports,2020-Q4,105.5,107.5
+option2,South Korea,imports,2021-Q1,96.0,120.5
+option2,South Korea,imports,2021-Q2,127.3,81.7
+option2,South Korea,imports,2021-Q3,83.3,105.1
+option2,South Korea,imports,2021-Q4,115.6,112.6
+option2,South Korea,imports,2022-Q1,124.1,144.0
+option2,South Korea,imports,2022-Q2,174.6,121.6
+option2,South Korea,imports,2022-Q3,91.4,119.8
+option2,South Korea,imports,2022-Q4,111.5,104.4
+option2,South Korea,imports,2023-Q1,62.3,73.8
+option2,South Korea,imports,2023-Q2,124.8,91.1
+option2,South Korea,imports,2023-Q3,42.8,50.0
+option2,South Korea,imports,2023-Q4,87.6,81.5
+option2,South Korea,imports,2024-Q1,83.2,105.0
+option2,South Korea,imports,2024-Q2,118.9,94.9
+option2,South Korea,imports,2024-Q3,82.3,84.6
+option2,South Korea,imports,2024-Q4,96.2,89.5
+option2,South Korea,imports,2025-Q1,32.3,42.2
+option2,South Korea,imports,2025-Q2,83.5,73.5
+option2,South Korea,imports,2025-Q3,107.6,96.2
+option2,South Korea,imports,2025-Q4,89.7,83.9
+option2,South Korea,imports,2026-Q1,83.4,112.8
+option2,South Korea,imports,2026-Q2,110.0,108.1
+option2,Taiwan,imports,2016-Q1,79.6,95.9
+option2,Taiwan,imports,2016-Q2,103.6,105.8
+option2,Taiwan,imports,2016-Q3,114.3,124.6
+option2,Taiwan,imports,2016-Q4,175.0,130.9
+option2,Taiwan,imports,2017-Q1,118.7,140.8
+option2,Taiwan,imports,2017-Q2,158.0,167.3
+option2,Taiwan,imports,2017-Q3,132.5,138.9
+option2,Taiwan,imports,2017-Q4,196.2,149.3
+option2,Taiwan,imports,2018-Q1,151.7,177.6
+option2,Taiwan,imports,2018-Q2,169.8,186.2
+option2,Taiwan,imports,2018-Q3,179.7,180.8
+option2,Taiwan,imports,2018-Q4,246.3,191.0
+option2,Taiwan,imports,2019-Q1,157.3,182.6
+option2,Taiwan,imports,2019-Q2,157.4,178.2
+option2,Taiwan,imports,2019-Q3,201.9,194.1
+option2,Taiwan,imports,2019-Q4,244.7,192.3
+option2,Taiwan,imports,2020-Q1,164.6,189.9
+option2,Taiwan,imports,2020-Q2,162.5,190.8
+option2,Taiwan,imports,2020-Q3,213.5,200.5
+option2,Taiwan,imports,2020-Q4,273.9,218.7
+option2,Taiwan,imports,2021-Q1,107.5,122.7
+option2,Taiwan,imports,2021-Q2,120.7,139.0
+option2,Taiwan,imports,2021-Q3,139.2,132.0
+option2,Taiwan,imports,2021-Q4,162.1,132.0
+option2,Taiwan,imports,2022-Q1,128.4,143.6
+option2,Taiwan,imports,2022-Q2,167.9,188.4
+option2,Taiwan,imports,2022-Q3,161.0,159.0
+option2,Taiwan,imports,2022-Q4,202.9,167.1
+option2,Taiwan,imports,2023-Q1,141.3,154.5
+option2,Taiwan,imports,2023-Q2,150.0,166.2
+option2,Taiwan,imports,2023-Q3,137.6,138.9
+option2,Taiwan,imports,2023-Q4,162.9,134.3
+option2,Taiwan,imports,2024-Q1,127.7,138.5
+option2,Taiwan,imports,2024-Q2,115.5,126.3
+option2,Taiwan,imports,2024-Q3,127.8,131.0
+option2,Taiwan,imports,2024-Q4,180.7,149.8
+option2,Taiwan,imports,2025-Q1,148.3,159.6
+option2,Taiwan,imports,2025-Q2,163.2,176.3
+option2,Taiwan,imports,2025-Q3,202.9,210.8
+option2,Taiwan,imports,2025-Q4,267.5,223.2
+option2,Taiwan,imports,2026-Q1,234.1,250.5
+option2,Taiwan,imports,2026-Q2,269.5,287.7

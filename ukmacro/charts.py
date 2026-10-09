@@ -11,6 +11,9 @@ House style, used for every PNG:
     marks     2pt lines, hairline horizontal gridlines only, no chart border,
               legend above the plot, direct value labels at line ends
 
+A chart can set "events": [{"date": "YYYY-MM-DD", "label": ...}] for thin vertical
+reference lines (e.g. product launches).
+
 A series can set "slot": n to pin its colour, so one category keeps the same colour
 across related charts, or "color": "neutral" for a grey (e.g. data not available).
 Series beyond the fourth are grey (see _colour).
@@ -66,7 +69,7 @@ THEMES = {
         "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
 }
 DEFAULT_THEME = "blue-amber"
-STYLE_VERSION = 5  # bump when the drawing code changes, so every PNG is redrawn
+STYLE_VERSION = 8  # bump when the drawing code changes, so every PNG is redrawn
 
 # Figure size. Layout below is in centimetres (margins) and scales with the width
 # (how much text fits per line), so changing the size keeps the layout intact.
@@ -125,14 +128,16 @@ def _frame(chart: dict, left_cm: float = LEFT_CM):
     """Figure with title, units line and source footer; returns (fig, ax).
     `left_cm` widens the plot's left margin (for long category labels)."""
     fig = plt.figure(figsize=SIZE, dpi=DPI)
-    ax = fig.add_axes([_x(left_cm), 0.17, 1 - _x(left_cm) - _x(RIGHT_CM), 0.62])
-    fig.text(_x(LEFT_CM), 0.93, chart["title"], fontsize=16, fontweight="semibold", color=INK, va="baseline")
-    fig.text(_x(LEFT_CM), 0.875, chart["units"], fontsize=11.5, color=TEXT_2, va="baseline")
     foot = f"Source: {chart['source']}."
     if chart.get("note"):
         foot += f" {chart['note']}"
-    fig.text(_x(LEFT_CM), 0.035, "\n".join(textwrap.wrap(foot, int(190 * TEXT_SCALE))),
-             fontsize=9, color=MUTED, va="bottom")
+    foot_lines = textwrap.wrap(foot, int(190 * TEXT_SCALE))
+    # room below the plot: footer lines (~0.026 of the height each) plus two-line date labels
+    bottom = 0.035 + 0.026 * len(foot_lines) + 0.105
+    ax = fig.add_axes([_x(left_cm), bottom, 1 - _x(left_cm) - _x(RIGHT_CM), 0.79 - bottom])
+    fig.text(_x(LEFT_CM), 0.93, chart["title"], fontsize=16, fontweight="semibold", color=INK, va="baseline")
+    fig.text(_x(LEFT_CM), 0.875, chart["units"], fontsize=11.5, color=TEXT_2, va="baseline")
+    fig.text(_x(LEFT_CM), 0.035, "\n".join(foot_lines), fontsize=9, color=MUTED, va="bottom")
     for side in ("top", "right", "left"):
         ax.spines[side].set_visible(False)
     ax.spines["bottom"].set_color(BASELINE)
@@ -217,6 +222,45 @@ def _period_ticks(ax, dates: list[str]):
     ax.set_xticks(picks, labels)
 
 
+def _event_index(event_date: str, dates: list[str]) -> int | None:
+    """Position on the x-axis for an event (YYYY-MM-DD): the period containing it for
+    quarterly / monthly / annual data, or the first observation on or after it for
+    exact dates (e.g. survey waves). None if it falls outside the chart."""
+    y, m = event_date[:4], int(event_date[5:7])
+    for key in (f"{y}-Q{(m - 1) // 3 + 1}", f"{y}-{m:02d}", y):
+        if key in dates:
+            return dates.index(key)
+    if dates and len(dates[0]) == 10:  # exact dates
+        later = [i for i, d in enumerate(dates) if d >= event_date]
+        return later[0] if later and event_date >= dates[0] else None
+    return None
+
+
+def _events(ax, chart: dict, dates: list[str]) -> None:
+    """Thin vertical reference lines for chart["events"] ([{date, label}]), labelled at
+    the top of the plot: to the right of the line, or to the left near the right edge.
+    A label that would overlap another moves down a row."""
+    to_pt = 72 / ax.figure.dpi
+    rows: list[list[tuple[float, float]]] = []  # text spans (points) already used on each row
+    for ev in chart.get("events") or []:
+        i = _event_index(str(ev["date"]), dates)
+        if i is None:
+            continue
+        ax.axvline(i, color=MUTED, linewidth=0.9, zorder=1)
+        right_side = i > 0.7 * (len(dates) - 1)
+        x = ax.transData.transform((i, 0))[0] * to_pt
+        width = len(ev["label"]) * 5.2  # rough width of the label at 9.5pt
+        span = (x - 4 - width, x - 4) if right_side else (x + 4, x + 4 + width)
+        row = next((r for r, used in enumerate(rows)
+                    if all(span[1] < a or span[0] > b for a, b in used)), len(rows))
+        if row == len(rows):
+            rows.append([])
+        rows[row].append(span)
+        ax.annotate(ev["label"], (i, 1), xycoords=("data", "axes fraction"),
+                    xytext=(-4 if right_side else 4, -4 - 13 * row), textcoords="offset points",
+                    ha="right" if right_side else "left", va="top", fontsize=9.5, color=MUTED)
+
+
 def _save(fig, path: Path) -> Path:
     """Save as a palette PNG: flat colours quantise cleanly and the file stays small."""
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -252,6 +296,7 @@ def _line(chart):
             text = s["label"] if colour == BASELINE else f"{ys[j]:.1f}".replace("-", "\u2212")
             ends.append((j, ys[j], text))
     _period_ticks(ax, dates)
+    _events(ax, chart, dates)
     _end_labels(fig, ax, ends)
     # grey context lines are named at their ends, so they stay out of the legend
     keep = [i for i, s in enumerate(chart["series"]) if _colour(s, i) != BASELINE]
@@ -326,6 +371,7 @@ def _bars(chart):
         labels.append(s["label"])
     ax.axhline(0, color=BASELINE, linewidth=0.9, zorder=2)
     _period_ticks(ax, dates)
+    _events(ax, chart, dates)
     _legend(fig, handles, labels)
     return fig
 

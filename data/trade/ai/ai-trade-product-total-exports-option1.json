@@ -5,8 +5,8 @@
  "type": "line",
  "freq": "Q",
  "units": "\u00a3 billion per quarter",
- "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
- "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Quarterly, not seasonally adjusted. East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. EU trade is recorded by country of dispatch, so goods routed via the EU count as EU. EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. ",
+ "source": "HMRC Overseas Trade Statistics; seasonally adjusted by ukmacro (STL); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Seasonally adjusted. East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. Products: chips, servers, storage, graphics cards, mobile phones, network equipment, cameras, medical scanners, industrial robots. EU trade is recorded by country of dispatch, so goods routed via the EU count as EU. EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. ",
  "series": [
   {
    "key": "EU",
@@ -25,302 +25,312 @@
    "label": "Rest of world"
   }
  ],
+ "events": [
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT public launch"
+  },
+  {
+   "date": "2026-06-09",
+   "label": "Mythos-class model public (Claude Fable 5)"
+  }
+ ],
  "data_through": "2026-Q2",
  "status": "ok",
  "data": [
   {
    "date": "2016-Q1",
-   "EU": 0.95,
-   "US": 0.14,
-   "East Asia": 0.12,
-   "Rest of world": 0.29
-  },
-  {
-   "date": "2016-Q2",
-   "EU": 0.93,
-   "US": 0.14,
-   "East Asia": 0.13,
-   "Rest of world": 0.25
-  },
-  {
-   "date": "2016-Q3",
    "EU": 1.0,
    "US": 0.14,
-   "East Asia": 0.14,
+   "East Asia": 0.13,
    "Rest of world": 0.3
   },
   {
+   "date": "2016-Q2",
+   "EU": 1.01,
+   "US": 0.14,
+   "East Asia": 0.13,
+   "Rest of world": 0.29
+  },
+  {
+   "date": "2016-Q3",
+   "EU": 1.04,
+   "US": 0.14,
+   "East Asia": 0.13,
+   "Rest of world": 0.29
+  },
+  {
    "date": "2016-Q4",
-   "EU": 1.26,
+   "EU": 1.06,
    "US": 0.15,
-   "East Asia": 0.14,
-   "Rest of world": 0.41
+   "East Asia": 0.13,
+   "Rest of world": 0.35
   },
   {
    "date": "2017-Q1",
-   "EU": 0.98,
-   "US": 0.14,
+   "EU": 1.04,
+   "US": 0.15,
    "East Asia": 0.13,
-   "Rest of world": 0.45
+   "Rest of world": 0.47
   },
   {
    "date": "2017-Q2",
-   "EU": 0.98,
+   "EU": 1.05,
+   "US": 0.16,
+   "East Asia": 0.13,
+   "Rest of world": 0.39
+  },
+  {
+   "date": "2017-Q3",
+   "EU": 1.03,
+   "US": 0.15,
+   "East Asia": 0.11,
+   "Rest of world": 0.27
+  },
+  {
+   "date": "2017-Q4",
+   "EU": 1.02,
+   "US": 0.17,
+   "East Asia": 0.09,
+   "Rest of world": 0.28
+  },
+  {
+   "date": "2018-Q1",
+   "EU": 1.1,
+   "US": 0.14,
+   "East Asia": 0.07,
+   "Rest of world": 0.29
+  },
+  {
+   "date": "2018-Q2",
+   "EU": 1.06,
+   "US": 0.14,
+   "East Asia": 0.12,
+   "Rest of world": 0.28
+  },
+  {
+   "date": "2018-Q3",
+   "EU": 1.06,
+   "US": 0.15,
+   "East Asia": 0.13,
+   "Rest of world": 0.27
+  },
+  {
+   "date": "2018-Q4",
+   "EU": 1.1,
+   "US": 0.15,
+   "East Asia": 0.1,
+   "Rest of world": 0.25
+  },
+  {
+   "date": "2019-Q1",
+   "EU": 1.4,
    "US": 0.16,
    "East Asia": 0.12,
    "Rest of world": 0.35
   },
   {
-   "date": "2017-Q3",
-   "EU": 1.0,
-   "US": 0.15,
-   "East Asia": 0.11,
-   "Rest of world": 0.28
-  },
-  {
-   "date": "2017-Q4",
-   "EU": 1.19,
-   "US": 0.18,
-   "East Asia": 0.09,
-   "Rest of world": 0.32
-  },
-  {
-   "date": "2018-Q1",
-   "EU": 1.03,
-   "US": 0.14,
-   "East Asia": 0.07,
-   "Rest of world": 0.28
-  },
-  {
-   "date": "2018-Q2",
-   "EU": 1.0,
-   "US": 0.14,
-   "East Asia": 0.11,
-   "Rest of world": 0.26
-  },
-  {
-   "date": "2018-Q3",
-   "EU": 1.04,
-   "US": 0.16,
-   "East Asia": 0.13,
-   "Rest of world": 0.28
-  },
-  {
-   "date": "2018-Q4",
-   "EU": 1.27,
-   "US": 0.16,
-   "East Asia": 0.1,
-   "Rest of world": 0.27
-  },
-  {
-   "date": "2019-Q1",
-   "EU": 1.3,
-   "US": 0.15,
-   "East Asia": 0.12,
-   "Rest of world": 0.33
-  },
-  {
    "date": "2019-Q2",
-   "EU": 1.06,
-   "US": 0.15,
-   "East Asia": 0.1,
-   "Rest of world": 0.26
+   "EU": 1.11,
+   "US": 0.16,
+   "East Asia": 0.11,
+   "Rest of world": 0.28
   },
   {
    "date": "2019-Q3",
-   "EU": 1.13,
+   "EU": 1.14,
    "US": 0.15,
    "East Asia": 0.11,
    "Rest of world": 0.28
   },
   {
    "date": "2019-Q4",
-   "EU": 1.18,
-   "US": 0.2,
+   "EU": 1.02,
+   "US": 0.19,
    "East Asia": 0.11,
-   "Rest of world": 0.27
+   "Rest of world": 0.26
   },
   {
    "date": "2020-Q1",
-   "EU": 0.97,
-   "US": 0.15,
+   "EU": 1.06,
+   "US": 0.16,
    "East Asia": 0.1,
-   "Rest of world": 0.23
+   "Rest of world": 0.25
   },
   {
    "date": "2020-Q2",
-   "EU": 0.91,
+   "EU": 0.96,
    "US": 0.14,
    "East Asia": 0.08,
    "Rest of world": 0.2
   },
   {
    "date": "2020-Q3",
-   "EU": 1.08,
+   "EU": 1.09,
    "US": 0.17,
    "East Asia": 0.08,
    "Rest of world": 0.25
   },
   {
    "date": "2020-Q4",
-   "EU": 1.29,
-   "US": 0.18,
-   "East Asia": 0.1,
-   "Rest of world": 0.27
+   "EU": 1.12,
+   "US": 0.16,
+   "East Asia": 0.09,
+   "Rest of world": 0.25
   },
   {
    "date": "2021-Q1",
-   "EU": 0.75,
-   "US": 0.15,
+   "EU": 0.81,
+   "US": 0.16,
    "East Asia": 0.09,
-   "Rest of world": 0.24
+   "Rest of world": 0.26
   },
   {
    "date": "2021-Q2",
-   "EU": 0.95,
+   "EU": 0.99,
    "US": 0.17,
    "East Asia": 0.11,
    "Rest of world": 0.26
   },
   {
    "date": "2021-Q3",
-   "EU": 0.91,
+   "EU": 0.95,
    "US": 0.15,
    "East Asia": 0.11,
    "Rest of world": 0.27
   },
   {
    "date": "2021-Q4",
-   "EU": 1.07,
-   "US": 0.17,
-   "East Asia": 0.12,
-   "Rest of world": 0.29
+   "EU": 0.92,
+   "US": 0.16,
+   "East Asia": 0.11,
+   "Rest of world": 0.27
   },
   {
    "date": "2022-Q1",
-   "EU": 0.89,
-   "US": 0.14,
+   "EU": 0.92,
+   "US": 0.15,
    "East Asia": 0.12,
    "Rest of world": 0.27
   },
   {
    "date": "2022-Q2",
-   "EU": 0.95,
+   "EU": 1.0,
    "US": 0.16,
-   "East Asia": 0.13,
-   "Rest of world": 0.31
+   "East Asia": 0.14,
+   "Rest of world": 0.3
   },
   {
    "date": "2022-Q3",
-   "EU": 1.15,
+   "EU": 1.22,
    "US": 0.22,
    "East Asia": 0.13,
-   "Rest of world": 0.39
-  },
-  {
-   "date": "2022-Q4",
-   "EU": 1.28,
-   "US": 0.17,
-   "East Asia": 0.15,
    "Rest of world": 0.4
   },
   {
-   "date": "2023-Q1",
+   "date": "2022-Q4",
    "EU": 1.12,
    "US": 0.16,
-   "East Asia": 0.12,
+   "East Asia": 0.14,
+   "Rest of world": 0.38
+  },
+  {
+   "date": "2023-Q1",
+   "EU": 1.08,
+   "US": 0.17,
+   "East Asia": 0.13,
    "Rest of world": 0.33
   },
   {
    "date": "2023-Q2",
-   "EU": 1.02,
-   "US": 0.18,
+   "EU": 1.11,
+   "US": 0.17,
    "East Asia": 0.1,
-   "Rest of world": 0.35
-  },
-  {
-   "date": "2023-Q3",
-   "EU": 1.0,
-   "US": 0.19,
-   "East Asia": 0.12,
    "Rest of world": 0.33
   },
   {
-   "date": "2023-Q4",
-   "EU": 1.19,
-   "US": 0.2,
+   "date": "2023-Q3",
+   "EU": 1.08,
+   "US": 0.19,
    "East Asia": 0.12,
-   "Rest of world": 0.38
+   "Rest of world": 0.34
+  },
+  {
+   "date": "2023-Q4",
+   "EU": 1.09,
+   "US": 0.19,
+   "East Asia": 0.12,
+   "Rest of world": 0.36
   },
   {
    "date": "2024-Q1",
-   "EU": 0.94,
-   "US": 0.19,
+   "EU": 0.81,
+   "US": 0.21,
    "East Asia": 0.11,
-   "Rest of world": 0.38
+   "Rest of world": 0.36
   },
   {
    "date": "2024-Q2",
-   "EU": 0.9,
-   "US": 0.2,
+   "EU": 1.0,
+   "US": 0.17,
    "East Asia": 0.12,
-   "Rest of world": 0.49
+   "Rest of world": 0.43
   },
   {
    "date": "2024-Q3",
-   "EU": 0.93,
-   "US": 0.19,
-   "East Asia": 0.15,
-   "Rest of world": 0.38
+   "EU": 1.02,
+   "US": 0.2,
+   "East Asia": 0.16,
+   "Rest of world": 0.4
   },
   {
    "date": "2024-Q4",
-   "EU": 1.05,
-   "US": 0.19,
+   "EU": 1.01,
+   "US": 0.18,
    "East Asia": 0.14,
-   "Rest of world": 0.47
+   "Rest of world": 0.41
   },
   {
    "date": "2025-Q1",
-   "EU": 1.0,
-   "US": 0.18,
+   "EU": 0.78,
+   "US": 0.21,
    "East Asia": 0.12,
-   "Rest of world": 0.54
+   "Rest of world": 0.48
   },
   {
    "date": "2025-Q2",
-   "EU": 1.04,
-   "US": 0.2,
+   "EU": 1.18,
+   "US": 0.16,
    "East Asia": 0.18,
-   "Rest of world": 0.51
+   "Rest of world": 0.42
   },
   {
    "date": "2025-Q3",
-   "EU": 1.21,
-   "US": 0.2,
-   "East Asia": 0.18,
+   "EU": 1.34,
+   "US": 0.21,
+   "East Asia": 0.19,
    "Rest of world": 0.57
   },
   {
    "date": "2025-Q4",
-   "EU": 1.48,
-   "US": 0.23,
+   "EU": 1.49,
+   "US": 0.22,
    "East Asia": 0.24,
-   "Rest of world": 0.71
+   "Rest of world": 0.61
   },
   {
    "date": "2026-Q1",
-   "EU": 2.33,
-   "US": 0.2,
-   "East Asia": 0.31,
-   "Rest of world": 0.72
+   "EU": 1.66,
+   "US": 0.23,
+   "East Asia": 0.29,
+   "Rest of world": 0.64
   },
   {
    "date": "2026-Q2",
-   "EU": 1.62,
-   "US": 0.33,
-   "East Asia": 0.37,
-   "Rest of world": 0.81
+   "EU": 1.89,
+   "US": 0.24,
+   "East Asia": 0.35,
+   "Rest of world": 0.71
   }
  ],
  "theme": "blue-amber",
@@ -328,5 +338,5 @@
   25,
   15
  ],
- "style_version": 5
+ "style_version": 8
 }

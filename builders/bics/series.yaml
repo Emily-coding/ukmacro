@@ -349,11 +349,13 @@ series:
 # Charts drawn from the series above, saved as data/bics/charts/<slug>.json and
 # img/bics/<slug>.png in the house style. Each line is one series for one breakdown
 # (default "All businesses"). To add a chart, copy one of these.
+#   events: true draws the key AI dates in definitions/ai_events.yaml as vertical lines
 #   series: list of {id, label} (label is optional: defaults to the series label);
 #           add `breakdown: "250 +"` to a line to plot a size band or industry.
 
 charts:
   - slug: bics-ai-adoption
+    events: true   # key AI dates from definitions/ai_events.yaml
     title: "AI adoption: businesses using AI and planning to adopt it"
     units: "% of businesses"
     series:
@@ -364,6 +366,7 @@ charts:
       As published: firms answering "not sure" are included in the base.
 
   - slug: bics-ai-types
+    events: true   # key AI dates from definitions/ai_events.yaml
     title: Which kinds of AI businesses use
     units: "% of businesses"
     series:
@@ -376,6 +379,7 @@ charts:
       firms answering "not sure" are included in the base.
 
   - slug: bics-ai-headcount
+    events: true   # key AI dates from definitions/ai_events.yaml
     title: "AI and jobs: effect on headcount, reported and expected"
     units: "% of businesses asked"
     series:

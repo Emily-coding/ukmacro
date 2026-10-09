@@ -17,6 +17,16 @@
    "label": "Planning to adopt AI in the next three months"
   }
  ],
+ "events": [
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT public launch"
+  },
+  {
+   "date": "2026-06-09",
+   "label": "Mythos-class model public (Claude Fable 5)"
+  }
+ ],
  "data_through": "2026-08-31",
  "status": "ok",
  "data": [
@@ -91,5 +101,5 @@
   25,
   15
  ],
- "style_version": 4
+ "style_version": 8
 }

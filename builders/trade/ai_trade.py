@@ -13,9 +13,11 @@ BOUND: whole product groups containing AI and non-AI output.
 3. Products: HMRC Overseas Trade Statistics for selected commodity codes, EU / non-EU,
    not seasonally adjusted. Values, quantities and value per unit; no official volumes.
    Products are goods: a narrow subset INSIDE the goods tiers, so the two are never added.
-4. By country: services tiers (ONS services by partner country) and products (HMRC)
-   by partner group (definitions/ai_trade.yaml `country_groups`), values only, not
-   seasonally adjusted. Goods tiers stay EU / non-EU (no crosswalk).
+4. By country: services tiers and products by partner group (definitions/ai_trade.yaml
+   `country_groups`), values only. Services: partner shares from the ONS by-country file
+   applied to the latest QNA EU / non-EU totals (seasonally adjusted). Products: HMRC,
+   seasonally adjusted here with STL. Goods tiers stay EU / non-EU (no crosswalk).
+Key AI dates (definitions/ai_events.yaml) are drawn as vertical lines on the charts.
 
 All quarterly from 2016 Q1. Values in £m; volumes and prices as indices, 2019 = 100.
 
@@ -23,6 +25,7 @@ Outputs:
     data/trade/ai/ai_trade_tiers.csv      goods and services tiers, long format
     data/trade/ai/ai_trade_products.csv   product layer, long format
     data/trade/ai/ai_trade_by_country.csv services tiers and products by partner group
+    data/trade/ai/ai_trade_products_by_country_sa.csv  products total, unadjusted and adjusted
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
 
@@ -45,6 +48,8 @@ from ukmacro import charts, ons  # noqa: E402
 from ukmacro.http import get_json, get_text  # noqa: E402
 
 DEFS = yaml.safe_load((REPO / "definitions" / "ai_trade.yaml").read_text())
+EVENTS = [{"date": str(e["date"]), "label": e["label"]}
+          for e in yaml.safe_load((REPO / "definitions" / "ai_events.yaml").read_text())["events"]]
 OUT = REPO / "data" / "trade" / "ai"
 IMG = REPO / "img" / "trade" / "ai"
 START = "2016-Q1"
@@ -128,15 +133,19 @@ def tier_rows(kind, tier, partner, flow, value, volume) -> list[dict]:
 
 # ---------------------------------------------------------------- 2. services (QNA)
 
+_QNA: dict[str, dict[str, float]] = {}
+
+
+def qna(cdid: str) -> dict[str, float]:
+    """A quarterly QNA series from START, fetched once per run."""
+    if cdid not in _QNA:
+        _QNA[cdid] = {q: v for q, v in ons.fetch(cdid, "QNA", "Q")["obs"] if q >= START}
+    return _QNA[cdid]
+
+
 def services_tiers() -> list[dict]:
     series = DEFS["services_series"]
-    cache = {}
-
-    def get(cdid):
-        if cdid not in cache:
-            cache[cdid] = {q: v for q, v in ons.fetch(cdid, "QNA", "Q")["obs"] if q >= START}
-        return cache[cdid]
-
+    get = qna
     rows = []
     for tier, spec in DEFS["services_tiers"].items():
         for partner, flow, _ in LINES:
@@ -197,9 +206,16 @@ def group_members(option: str) -> dict[str, list[str]]:
 
 
 def services_by_country() -> list[dict]:
-    """Services tiers by partner group, quarterly, not seasonally adjusted (£m).
-    Rest of world = world total minus the named groups. Suppressed cells ('C') count
-    as zero, which slightly understates small partners."""
+    """Services tiers by partner group, quarterly (£m), consistent with the EU / non-EU
+    tier charts. The by-country file (published earlier, before the latest revisions)
+    gives each partner's SHARE of non-EU trade; those shares are applied to the latest
+    QNA totals, which are seasonally adjusted:
+        EU            = QNA EU
+        non-EU group  = QNA non-EU x (group / (world - EU) in the by-country file)
+        rest of world = QNA non-EU - named non-EU groups
+    Done for each service type, then summed into tiers. Where ONS suppressed a partner's
+    value ('C'), its share is interpolated from the neighbouring quarters (rest of world
+    absorbs the difference). Quarters run to the latest one both sources have."""
     import openpyxl
 
     from ukmacro.http import get
@@ -216,31 +232,73 @@ def services_by_country() -> list[dict]:
         if not r or not r[0]:
             continue
         flow, typ, country = str(r[0]).lower(), str(r[1]).strip(), str(r[3]).strip()
-        cells[(flow, typ, country)] = {q: (float(r[j]) if isinstance(r[j], (int, float)) else 0.0)
+        # None = suppressed ('C') or not available, kept distinct from a true zero
+        cells[(flow, typ, country)] = {q: (float(r[j]) if isinstance(r[j], (int, float)) else None)
                                        for j, q in qcols.items()}
-    quarters = sorted(set(qcols.values()))
     series = DEFS["services_series"]
+
+    def interpolate(shares: dict[str, float | None]) -> dict[str, float]:
+        """Fill missing shares linearly from the nearest known quarters (flat at the ends)."""
+        qs = sorted(shares)
+        known = [i for i, q in enumerate(qs) if shares[q] is not None]
+        out = {}
+        for i, q in enumerate(qs):
+            if shares[q] is not None or not known:
+                out[q] = shares[q] or 0.0
+                continue
+            lo = max((k for k in known if k < i), default=None)
+            hi = min((k for k in known if k > i), default=None)
+            if lo is None or hi is None:
+                out[q] = shares[qs[lo if hi is None else hi]]
+            else:
+                w = (i - lo) / (hi - lo)
+                out[q] = shares[qs[lo]] * (1 - w) + shares[qs[hi]] * w
+        return out
+
+    def by_type(t: str, flow: str, option: str) -> dict[str, dict[str, float]]:
+        """{group: {quarter: £m}} for one service type, benchmarked to QNA."""
+        code, cdids = series[t]["ebops"], series[t]
+        eu_q, non_q = qna(cdids[f"EU_{flow}_CP"]), qna(cdids[f"NonEU_{flow}_CP"])
+        cf = lambda c: cells.get((flow, code, c), {})  # noqa: E731
+        quarters = sorted(set(qcols.values()) & set(eu_q) & set(non_q))
+        groups = group_members(option)
+        # each named non-EU group's share of non-EU trade; suppressed -> interpolated
+        shares = {}
+        for group, members in groups.items():
+            if members in (["EU"], ["REST"]):
+                continue
+            raw = {}
+            for q in quarters:
+                world, eu = cf(SVC_WORLD).get(q), cf(SVC_EU).get(q)
+                vals = [cf(m).get(q) for m in members]
+                ok = world is not None and eu is not None and world - eu > 0
+                # a member absent from the file (e.g. Macao, inside "Other Asia") counts as zero;
+                # a suppressed member makes the whole group's share unknown for that quarter
+                suppressed = any(v is None and (flow, code, m) in cells for v, m in zip(vals, members))
+                raw[q] = (sum(v or 0.0 for v in vals) / (world - eu)) if ok and not suppressed else None
+            shares[group] = interpolate(raw)
+        out: dict = {}
+        for q in quarters:
+            named = 0.0
+            for group, members in groups.items():
+                if members == ["EU"]:
+                    out.setdefault(group, {})[q] = eu_q[q]
+                elif members != ["REST"]:
+                    out.setdefault(group, {})[q] = non_q[q] * shares[group][q]
+                    named += non_q[q] * shares[group][q]
+            if "Rest of world" in groups:
+                out.setdefault("Rest of world", {})[q] = non_q[q] - named
+        return out
+
     out = []
     for tier, spec in DEFS["services_tiers"].items():
-        types = [series[t]["ebops"] for t in spec["types"]]
-
-        def total(flow, country):
-            return {q: sum(cells.get((flow, t, country), {}).get(q, 0.0) for t in types) for q in quarters}
-
         for flow in ("exports", "imports"):
-            world = total(flow, SVC_WORLD)
             for option in ("option1", "option2"):
-                named = {}
-                for group, members in group_members(option).items():
-                    if members == ["REST"]:
-                        continue
-                    parts = [total(flow, SVC_EU if m == "EU" else m) for m in members]
-                    named[group] = {q: sum(p[q] for p in parts) for q in quarters}
-                if "Rest of world" in group_members(option):
-                    named["Rest of world"] = {q: world[q] - sum(v[q] for v in named.values()) for q in quarters}
-                for group, vals in named.items():
-                    out += [{"kind": "services", "item": tier, "option": option, "group": group,
-                             "flow": flow, "quarter": q, "value_gbp_m": round(v, 1)} for q, v in vals.items()]
+                parts = [by_type(t, flow, option) for t in spec["types"]]
+                for group in group_members(option):
+                    qs = sorted(set.intersection(*(set(p.get(group, {})) for p in parts)))
+                    out += [{"kind": "services", "item": tier, "option": option, "group": group, "flow": flow,
+                             "quarter": q, "value_gbp_m": round(sum(p[group][q] for p in parts), 1)} for q in qs]
     return out
 
 
@@ -284,42 +342,75 @@ def products_by_country() -> list[dict]:
     return out
 
 
-def country_charts(rows: list[dict]) -> None:
+def seasonal_adjust(series: dict[str, float]) -> dict[str, float]:
+    """STL seasonal adjustment of a quarterly series (statsmodels STL, period 4,
+    robust to outliers), on logs when all values are positive (multiplicative
+    seasonality, as in trade data), otherwise on levels."""
+    import numpy as np
+    from statsmodels.tsa.seasonal import STL
+
+    qs = sorted(series)
+    y = np.array([series[q] for q in qs], dtype=float)
+    if len(y) < 12:
+        return dict(series)  # too short to estimate seasonality reliably
+    use_log = (y > 0).all()
+    fit = STL(np.log(y) if use_log else y, period=4, robust=True).fit()
+    adj = (np.log(y) if use_log else y) - fit.seasonal
+    return {q: float(np.exp(v) if use_log else v) for q, v in zip(qs, adj)}
+
+
+def country_charts(rows: list[dict]) -> list[dict]:
     """Services tiers and the selected-products total, by partner group: one chart per
-    (tier or products) x flow x grouping option, values in £bn, quarterly."""
+    (tier or products) x flow x grouping option, values in £bn, quarterly. Services are
+    seasonally adjusted (via the QNA totals); the products total is seasonally adjusted
+    here with STL. Returns the products-total rows (unadjusted and adjusted) for a CSV."""
     titles = {"option1": "by partner", "option2": "East Asia by country"}
-    note = UPPER_BOUND + "Quarterly, not seasonally adjusted. "
-    sources = {"services": "ONS UK trade in services: service type by partner country (not seasonally "
-                           "adjusted); ukmacro calculations",
-               "product": "HMRC Overseas Trade Statistics; ukmacro calculations"}
+    sources = {"services": "ONS trade in services by type (QNA, seasonally adjusted), split by partner using "
+                           "shares from ONS trade in services by partner country; ukmacro calculations",
+               "product": "HMRC Overseas Trade Statistics; seasonally adjusted by ukmacro (STL); "
+                          "ukmacro calculations"}
     groups_of = {o: list(group_members(o)) for o in ("option1", "option2")}
-    # what to chart: each services tier, and the products total (smartphones excluded:
-    # they are already inside mobile phones)
+    # products total: products with a full series only (smartphones are inside mobile
+    # phones; codes created in 2022 would put a break in the total)
+    total_products = [p["id"] for p in DEFS["products"] if p["id"] != "smartphones" and not p.get("from")]
     blocks = [("services", t, "AI-relevant services, " + DEFS["services_tiers"][t]["label"].split(":")[0].lower()
                + " tier", [t]) for t in DEFS["services_tiers"]]
-    blocks.append(("product", "total", "selected AI-relevant products (goods)",
-                   [p["id"] for p in DEFS["products"] if p["id"] != "smartphones"]))
+    blocks.append(("product", "total", "selected AI-relevant products (goods)", total_products))
+    sa_rows = []
     for kind, slug_part, what, items in blocks:
         for flow in ("exports", "imports"):
             for option in ("option1", "option2"):
                 sums: dict = {}
                 for r in rows:
                     if r["kind"] == kind and r["item"] in items and r["flow"] == flow and r["option"] == option:
-                        key = (r["quarter"], r["group"])
-                        sums[key] = sums.get(key, 0.0) + r["value_gbp_m"]
-                quarters = sorted({q for q, _ in sums})
-                data = [{"date": q, **{g: round(sums.get((q, g), 0.0) / 1000, 2) for g in groups_of[option]}}
-                        for q in quarters]
-                extra = ("East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. "
-                         if option == "option1" else "")
+                        sums.setdefault(r["group"], {})
+                        sums[r["group"]][r["quarter"]] = sums[r["group"]].get(r["quarter"], 0.0) + r["value_gbp_m"]
                 if kind == "product":
-                    extra += ("EU trade is recorded by country of dispatch, so goods routed via the EU count "
-                              "as EU. " + EU_BREAK)
+                    adjusted = {g: seasonal_adjust(v) for g, v in sums.items()}
+                    sa_rows += [{"option": option, "group": g, "flow": flow, "quarter": q,
+                                 "value_gbp_m": round(v[q], 1), "value_sa_gbp_m": round(adjusted[g][q], 1)}
+                                for g, v in sums.items() for q in sorted(v)]
+                    sums = adjusted
+                quarters = sorted({q for v in sums.values() for q in v})
+                data = [{"date": q, **{g: round(sums.get(g, {}).get(q, 0.0) / 1000, 2) for g in groups_of[option]}}
+                        for q in quarters]
+                note = UPPER_BOUND + "Seasonally adjusted. "
+                if option == "option1":
+                    note += "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. "
+                if kind == "services":
+                    note += ("Partner shares from the by-country file are applied to the latest QNA EU and "
+                             "non-EU totals, so these match the EU / non-EU charts; suppressed partner values "
+                             "are interpolated. ")
+                else:
+                    note += ("Products: chips, servers, storage, graphics cards, mobile phones, network "
+                             "equipment, cameras, medical scanners, industrial robots. EU trade is recorded by "
+                             "country of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
                 publish(chart(f"ai-trade-{kind}-{slug_part}-{flow}-{option}",
                               f"UK {flow} of {what}, {titles[option]}",
                               "£ billion per quarter", "line",
                               [{"key": g, "label": g} for g in groups_of[option]],
-                              data, note + extra, sources[kind]))
+                              data, note, sources[kind]))
+    return sa_rows
 
 
 # ---------------------------------------------------------------- charts
@@ -327,6 +418,7 @@ def country_charts(rows: list[dict]) -> None:
 def chart(slug, title, units, kind, series, data, note, source, freq="Q") -> dict:
     return {"slug": slug, "category": "trade", "title": title, "type": kind, "freq": freq,
             "units": units, "source": source, "note": note, "series": series,
+            "events": EVENTS if kind != "grouped-hbar" else None,
             "data_through": data[-1]["date"] if data else None, "status": "ok", "data": data}
 
 
@@ -406,7 +498,7 @@ def build() -> None:
     product_charts(prods)
     by_country = services_by_country() + products_by_country()
     write_csv(by_country, OUT / "ai_trade_by_country.csv")
-    country_charts(by_country)
+    write_csv(country_charts(by_country), OUT / "ai_trade_products_by_country_sa.csv")
     for kind in ("goods", "services"):
         for tier in DEFS[f"{kind}_tiers"]:
             last = [r for r in tiers if r["kind"] == kind and r["tier"] == tier]

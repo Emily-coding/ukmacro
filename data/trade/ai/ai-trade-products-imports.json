@@ -17,6 +17,7 @@
    "label": "Non-EU"
   }
  ],
+ "events": null,
  "data_through": "Semiconductor-based sensors",
  "status": "ok",
  "data": [
@@ -96,5 +97,5 @@
   25,
   15
  ],
- "style_version": 5
+ "style_version": 8
 }
