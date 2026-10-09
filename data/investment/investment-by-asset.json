@@ -1,0 +1,368 @@
+{
+ "slug": "investment-by-asset",
+ "category": "investment",
+ "title": "Business investment by asset",
+ "type": "line",
+ "freq": "Q",
+ "units": "Index, 2019 Q4 = 100",
+ "source": "ONS Business investment",
+ "note": "Non-government investment by asset, excluding dwellings: together these make up business investment. Chained volume measures, seasonally adjusted.",
+ "series": [
+  {
+   "key": "ipp",
+   "label": "Intellectual property (software, R&D)",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/edra/cxnv"
+  },
+  {
+   "key": "buildings",
+   "label": "Other buildings and structures",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/edqz/cxnv"
+  },
+  {
+   "key": "ict_machinery",
+   "label": "ICT equipment and other machinery",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/edop/cxnv"
+  },
+  {
+   "key": "transport",
+   "label": "Transport equipment",
+   "_source": "live",
+   "_date": "2026-Q2",
+   "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/edoh/cxnv"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "next_release": "2026-11-12",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2015-Q1",
+   "ipp": 78.805,
+   "buildings": 81.246,
+   "ict_machinery": 97.071,
+   "transport": 189.055
+  },
+  {
+   "date": "2015-Q2",
+   "ipp": 82.246,
+   "buildings": 93.092,
+   "ict_machinery": 98.15,
+   "transport": 109.606
+  },
+  {
+   "date": "2015-Q3",
+   "ipp": 80.088,
+   "buildings": 91.261,
+   "ict_machinery": 102.426,
+   "transport": 104.879
+  },
+  {
+   "date": "2015-Q4",
+   "ipp": 81.758,
+   "buildings": 96.38,
+   "ict_machinery": 108.658,
+   "transport": 130.501
+  },
+  {
+   "date": "2016-Q1",
+   "ipp": 84.003,
+   "buildings": 83.59,
+   "ict_machinery": 108.918,
+   "transport": 172.752
+  },
+  {
+   "date": "2016-Q2",
+   "ipp": 84.744,
+   "buildings": 99.022,
+   "ict_machinery": 107.852,
+   "transport": 159.893
+  },
+  {
+   "date": "2016-Q3",
+   "ipp": 87.681,
+   "buildings": 104.357,
+   "ict_machinery": 109.731,
+   "transport": 176.636
+  },
+  {
+   "date": "2016-Q4",
+   "ipp": 89.723,
+   "buildings": 97.923,
+   "ict_machinery": 108.442,
+   "transport": 123.115
+  },
+  {
+   "date": "2017-Q1",
+   "ipp": 89.805,
+   "buildings": 98.182,
+   "ict_machinery": 109.126,
+   "transport": 141.906
+  },
+  {
+   "date": "2017-Q2",
+   "ipp": 89.636,
+   "buildings": 88.999,
+   "ict_machinery": 107.039,
+   "transport": 163.854
+  },
+  {
+   "date": "2017-Q3",
+   "ipp": 91.959,
+   "buildings": 91.502,
+   "ict_machinery": 107.651,
+   "transport": 152.775
+  },
+  {
+   "date": "2017-Q4",
+   "ipp": 93.235,
+   "buildings": 91.476,
+   "ict_machinery": 110.508,
+   "transport": 163.548
+  },
+  {
+   "date": "2018-Q1",
+   "ipp": 95.29,
+   "buildings": 99.793,
+   "ict_machinery": 112.012,
+   "transport": 116.743
+  },
+  {
+   "date": "2018-Q2",
+   "ipp": 94.843,
+   "buildings": 101.775,
+   "ict_machinery": 107.572,
+   "transport": 76.292
+  },
+  {
+   "date": "2018-Q3",
+   "ipp": 93.608,
+   "buildings": 86.245,
+   "ict_machinery": 106.031,
+   "transport": 126.33
+  },
+  {
+   "date": "2018-Q4",
+   "ipp": 93.939,
+   "buildings": 92.002,
+   "ict_machinery": 102.67,
+   "transport": 128.99
+  },
+  {
+   "date": "2019-Q1",
+   "ipp": 95.797,
+   "buildings": 100.496,
+   "ict_machinery": 104.354,
+   "transport": 116.514
+  },
+  {
+   "date": "2019-Q2",
+   "ipp": 96.935,
+   "buildings": 97.052,
+   "ict_machinery": 105.362,
+   "transport": 128.664
+  },
+  {
+   "date": "2019-Q3",
+   "ipp": 99.184,
+   "buildings": 97.798,
+   "ict_machinery": 101.533,
+   "transport": 118.963
+  },
+  {
+   "date": "2019-Q4",
+   "ipp": 100.0,
+   "buildings": 100.0,
+   "ict_machinery": 100.0,
+   "transport": 100.0
+  },
+  {
+   "date": "2020-Q1",
+   "ipp": 95.215,
+   "buildings": 99.28,
+   "ict_machinery": 100.166,
+   "transport": 111.271
+  },
+  {
+   "date": "2020-Q2",
+   "ipp": 94.208,
+   "buildings": 64.311,
+   "ict_machinery": 75.227,
+   "transport": 51.397
+  },
+  {
+   "date": "2020-Q3",
+   "ipp": 94.586,
+   "buildings": 81.319,
+   "ict_machinery": 86.095,
+   "transport": 122.044
+  },
+  {
+   "date": "2020-Q4",
+   "ipp": 97.242,
+   "buildings": 85.978,
+   "ict_machinery": 100.518,
+   "transport": 127.65
+  },
+  {
+   "date": "2021-Q1",
+   "ipp": 101.801,
+   "buildings": 83.879,
+   "ict_machinery": 90.132,
+   "transport": 77.057
+  },
+  {
+   "date": "2021-Q2",
+   "ipp": 104.103,
+   "buildings": 88.3,
+   "ict_machinery": 102.152,
+   "transport": 74.034
+  },
+  {
+   "date": "2021-Q3",
+   "ipp": 103.49,
+   "buildings": 78.764,
+   "ict_machinery": 113.142,
+   "transport": 88.385
+  },
+  {
+   "date": "2021-Q4",
+   "ipp": 106.533,
+   "buildings": 81.427,
+   "ict_machinery": 113.042,
+   "transport": 104.592
+  },
+  {
+   "date": "2022-Q1",
+   "ipp": 109.592,
+   "buildings": 83.241,
+   "ict_machinery": 124.989,
+   "transport": 82.778
+  },
+  {
+   "date": "2022-Q2",
+   "ipp": 105.163,
+   "buildings": 87.671,
+   "ict_machinery": 116.518,
+   "transport": 128.263
+  },
+  {
+   "date": "2022-Q3",
+   "ipp": 105.254,
+   "buildings": 83.802,
+   "ict_machinery": 118.792,
+   "transport": 126.062
+  },
+  {
+   "date": "2022-Q4",
+   "ipp": 104.188,
+   "buildings": 81.97,
+   "ict_machinery": 110.206,
+   "transport": 143.226
+  },
+  {
+   "date": "2023-Q1",
+   "ipp": 107.715,
+   "buildings": 90.395,
+   "ict_machinery": 108.212,
+   "transport": 133.754
+  },
+  {
+   "date": "2023-Q2",
+   "ipp": 111.634,
+   "buildings": 82.069,
+   "ict_machinery": 106.168,
+   "transport": 142.25
+  },
+  {
+   "date": "2023-Q3",
+   "ipp": 108.56,
+   "buildings": 82.048,
+   "ict_machinery": 101.036,
+   "transport": 142.48
+  },
+  {
+   "date": "2023-Q4",
+   "ipp": 108.685,
+   "buildings": 81.789,
+   "ict_machinery": 103.059,
+   "transport": 150.498
+  },
+  {
+   "date": "2024-Q1",
+   "ipp": 107.375,
+   "buildings": 85.099,
+   "ict_machinery": 106.801,
+   "transport": 140.05
+  },
+  {
+   "date": "2024-Q2",
+   "ipp": 110.909,
+   "buildings": 86.34,
+   "ict_machinery": 97.999,
+   "transport": 165.767
+  },
+  {
+   "date": "2024-Q3",
+   "ipp": 110.08,
+   "buildings": 91.071,
+   "ict_machinery": 102.533,
+   "transport": 143.8
+  },
+  {
+   "date": "2024-Q4",
+   "ipp": 111.077,
+   "buildings": 87.025,
+   "ict_machinery": 100.187,
+   "transport": 140.203
+  },
+  {
+   "date": "2025-Q1",
+   "ipp": 112.579,
+   "buildings": 94.394,
+   "ict_machinery": 112.459,
+   "transport": 136.031
+  },
+  {
+   "date": "2025-Q2",
+   "ipp": 111.687,
+   "buildings": 95.342,
+   "ict_machinery": 109.724,
+   "transport": 121.604
+  },
+  {
+   "date": "2025-Q3",
+   "ipp": 113.135,
+   "buildings": 97.768,
+   "ict_machinery": 122.477,
+   "transport": 106.028
+  },
+  {
+   "date": "2025-Q4",
+   "ipp": 112.851,
+   "buildings": 102.504,
+   "ict_machinery": 110.587,
+   "transport": 85.457
+  },
+  {
+   "date": "2026-Q1",
+   "ipp": 114.177,
+   "buildings": 103.615,
+   "ict_machinery": 111.393,
+   "transport": 116.035
+  },
+  {
+   "date": "2026-Q2",
+   "ipp": 115.206,
+   "buildings": 109.954,
+   "ict_machinery": 114.229,
+   "transport": 101.607
+  }
+ ],
+ "theme": "blue-amber"
+}

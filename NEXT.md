@@ -17,15 +17,16 @@
 - ~~HMRC RTI as a cross-check~~ done (builders/labour-markets/composition_rti.py).
 
 ### GDP
-- OBR forecast vs outturn: parse the Historical official forecasts database
-  (`obr.find("historical-official-forecasts")`, already reachable) and plot each
-  EFO vintage's GDP path against the ONS outturn.
+- OBR forecast vs outturn: `obr.historical_forecasts("UKGDP")` already reads the
+  database; reuse the investment chart's method (builders/investment/analysis.py).
 
 ### Investment
-- Business investment by asset (ONS business investment release).
-- OBR business investment forecast vintages (same database as above).
-- BoE Decision Maker Panel investment expectations.
-- Business investment as a share of GDP, G7 comparison (OECD).
+- ~~By asset, OBR forecasts vs outturn, DMP expectations, G7~~ done
+  (builders/investment/).
+- Business investment as a share of GDP (needs current-price series).
+- DMP: other investment questions (uncertainty, hurdle rates, finance) are in the
+  quarterly file; the monthly file has NICs and National Living Wage reactions,
+  which would pair with the BICS employment-cost series.
 
 ### Trade
 - **Critical minerals**: `builders/trade/minerals.yaml` mapping each mineral

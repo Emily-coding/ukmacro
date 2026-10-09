@@ -14,3 +14,34 @@ charts:
     series:
       - {source: ons, key: business, label: Business investment, cdid: NPEL, dataset: QNA}
       - {source: ons, key: total_gfcf, label: Total investment (GFCF), cdid: NPQT, dataset: CXNV}
+
+  - slug: investment-by-asset
+    title: Business investment by asset
+    units: "Index, 2019 Q4 = 100"
+    freq: Q
+    start: "2015-Q1"
+    rebase: "2019-Q4"
+    source: ONS Business investment
+    note: >-
+      Non-government investment by asset, excluding dwellings: together these make up
+      business investment. Chained volume measures, seasonally adjusted.
+    series:
+      - {source: ons, key: ipp, label: "Intellectual property (software, R&D)", cdid: EDRA, dataset: CXNV}
+      - {source: ons, key: buildings, label: Other buildings and structures, cdid: EDQZ, dataset: CXNV}
+      - {source: ons, key: ict_machinery, label: ICT equipment and other machinery, cdid: EDOP, dataset: CXNV}
+      - {source: ons, key: transport, label: Transport equipment, cdid: EDOH, dataset: CXNV}
+
+  - slug: investment-g7
+    title: Total investment since the pandemic, G7
+    units: "% change since 2019 Q4"
+    freq: Q
+    source: OECD Quarterly National Accounts
+    note: >-
+      Total gross fixed capital formation (business, government and housing): the OECD
+      has no harmonised business investment series.
+    series:
+      - source: oecd
+        flow: "OECD.SDD.NAD,DSD_NAMAIN1@DF_QNA_EXPENDITURE_GROWTH_OECD,"
+        key: "Q.Y.{areas}.S1.S1.P51G._Z._T._Z.PC.L.GCM.T0102"
+        start: "2020-Q1"
+        areas: {GBR: United Kingdom, USA: United States, DEU: Germany, FRA: France, ITA: Italy, JPN: Japan, CAN: Canada}

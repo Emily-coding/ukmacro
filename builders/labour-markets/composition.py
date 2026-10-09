@@ -30,7 +30,6 @@ group-by-group workings CSV for checking the arithmetic by hand.
 from __future__ import annotations
 
 import csv
-import json
 import sys
 from pathlib import Path
 
@@ -171,17 +170,8 @@ def chart(slug: str, title: str, units: str, kind: str, series: list[dict], data
 
 
 def publish(c: dict) -> None:
-    """Write the chart JSON and its PNG. The PNG is only re-rendered when the JSON
-    changed: PNG bytes vary slightly between machines, and an unchanged chart
-    shouldn't produce a daily commit. The theme is stored in the JSON so that a
-    theme change also counts as a change."""
-    c["theme"] = charts.DEFAULT_THEME
-    js, png = DATA / f"{c['slug']}.json", IMG / f"{c['slug']}.png"
-    text = json.dumps(c, indent=1) + "\n"
-    if png.exists() and js.exists() and js.read_text() == text:
-        return
-    js.write_text(text)
-    charts.render(c, png)
+    """Write a chart's JSON and PNG into this category's folders (see charts.publish)."""
+    charts.publish(c, DATA / f"{c['slug']}.json", IMG / f"{c['slug']}.png")
 
 
 def write_csv(rows: list[dict], path: Path) -> None:

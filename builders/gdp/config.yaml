@@ -24,7 +24,7 @@ charts:
     source: ONS Quarterly National Accounts
     series:
       - {source: ons, key: qoq, label: Quarter on quarter, cdid: IHYQ, dataset: QNA}
-      - {source: ons, key: yoy, label: Year on year, cdid: IHYR, dataset: QNA}
+      - {source: ons, key: yoy, label: Year on year, cdid: IHYR, dataset: QNA, mark: line}
 
   - slug: gdp-monthly
     title: Monthly GDP

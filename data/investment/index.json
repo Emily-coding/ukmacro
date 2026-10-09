@@ -8,6 +8,20 @@
    "data_through": "2026-Q2",
    "next_release": "2026-11-12",
    "status": "ok"
+  },
+  {
+   "slug": "investment-by-asset",
+   "title": "Business investment by asset",
+   "data_through": "2026-Q2",
+   "next_release": "2026-11-12",
+   "status": "ok"
+  },
+  {
+   "slug": "investment-g7",
+   "title": "Total investment since the pandemic, G7",
+   "data_through": "2026-Q2",
+   "next_release": null,
+   "status": "ok"
   }
  ]
 }

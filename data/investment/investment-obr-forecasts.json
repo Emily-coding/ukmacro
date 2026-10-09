@@ -1,0 +1,221 @@
+{
+ "slug": "investment-obr-forecasts",
+ "category": "investment",
+ "title": "Business investment: OBR forecasts vs outturn",
+ "type": "line",
+ "freq": "A",
+ "units": "Index, 2019 = 100",
+ "source": "OBR Historical official forecasts database; ONS Business investment; ukmacro calculations",
+ "note": "A forecast made in year Y starts from today's ONS outturn for Y-1 and applies the OBR's growth rates from Y onwards, so the gap from the outturn is the error in forecast growth (separate from later data revisions). Grey lines are earlier spring forecasts.",
+ "series": [
+  {
+   "key": "outturn",
+   "label": "Outturn (ONS, latest data)"
+  },
+  {
+   "key": "march_2026",
+   "label": "OBR March 2026",
+   "slot": 1
+  },
+  {
+   "key": "march_2025",
+   "label": "March 2025",
+   "color": "neutral"
+  },
+  {
+   "key": "march_2024",
+   "label": "March 2024",
+   "color": "neutral"
+  },
+  {
+   "key": "march_2023",
+   "label": "March 2023",
+   "color": "neutral"
+  },
+  {
+   "key": "march_2022",
+   "label": "March 2022",
+   "color": "neutral"
+  },
+  {
+   "key": "march_2021",
+   "label": "March 2021",
+   "color": "neutral"
+  },
+  {
+   "key": "march_2020",
+   "label": "March 2020",
+   "color": "neutral"
+  }
+ ],
+ "data_through": "2030",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016",
+   "outturn": 98.4,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2017",
+   "outturn": 99.2,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2018",
+   "outturn": 97.9,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2019",
+   "outturn": 100.0,
+   "march_2020": 100.0,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2020",
+   "outturn": 90.7,
+   "march_2020": 100.0,
+   "march_2021": 90.7,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2021",
+   "outturn": 96.2,
+   "march_2020": 101.8,
+   "march_2021": 88.7,
+   "march_2022": 96.2,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2022",
+   "outturn": 102.3,
+   "march_2020": 104.8,
+   "march_2021": 103.4,
+   "march_2022": 106.3,
+   "march_2023": 102.3,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2023",
+   "outturn": 102.6,
+   "march_2020": 107.3,
+   "march_2021": 106.4,
+   "march_2022": 112.3,
+   "march_2023": 99.4,
+   "march_2024": 102.6,
+   "march_2025": null,
+   "march_2026": null
+  },
+  {
+   "date": "2024",
+   "outturn": 103.8,
+   "march_2020": 109.8,
+   "march_2021": 104.0,
+   "march_2022": 116.3,
+   "march_2023": 100.7,
+   "march_2024": 97.4,
+   "march_2025": 103.8,
+   "march_2026": null
+  },
+  {
+   "date": "2025",
+   "outturn": 107.9,
+   "march_2020": null,
+   "march_2021": 109.3,
+   "march_2022": 122.7,
+   "march_2023": 106.8,
+   "march_2024": 98.7,
+   "march_2025": 103.5,
+   "march_2026": 107.9
+  },
+  {
+   "date": "2026",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": 128.1,
+   "march_2023": 108.8,
+   "march_2024": 101.2,
+   "march_2025": 105.4,
+   "march_2026": 106.8
+  },
+  {
+   "date": "2027",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": 106.8,
+   "march_2024": 103.2,
+   "march_2025": 107.2,
+   "march_2026": 107.2
+  },
+  {
+   "date": "2028",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": 104.5,
+   "march_2025": 108.8,
+   "march_2026": 108.1
+  },
+  {
+   "date": "2029",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": 110.5,
+   "march_2026": 109.2
+  },
+  {
+   "date": "2030",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": 110.6
+  }
+ ],
+ "theme": "blue-amber"
+}

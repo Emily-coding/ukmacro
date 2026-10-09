@@ -19,6 +19,7 @@
    "key": "yoy",
    "label": "Year on year",
    "_source": "live",
+   "mark": "line",
    "_date": "2026-Q2",
    "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ihyr/qna"
   }
@@ -117,5 +118,6 @@
    "qoq": 0.5,
    "yoy": 1.4
   }
- ]
+ ],
+ "theme": "blue-amber"
 }

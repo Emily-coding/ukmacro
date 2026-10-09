@@ -38,3 +38,38 @@ def save_new(pattern: str, dest: Path, suffix: str = ".xlsx") -> list[Path]:
             path.write_bytes(get(url))
             new.append(path)
     return new
+
+
+# ---------------------------------------------------------------- historical forecasts
+
+def historical_forecasts(sheet: str) -> dict[str, dict[int, float]]:
+    """One variable from the OBR's Historical official forecasts database: every
+    forecast (EFO) vintage's annual figures, {'March 2026': {2024: 2.5, 2025: 4.3, ...}}.
+
+    Sheets are named by variable (e.g. 'Businessinv', 'UKGDP'); rows are forecast
+    vintages, columns are years. The database's own 'Outturn data' row is left out:
+    use current ONS data for outturns.
+    """
+    import io
+
+    import openpyxl
+
+    url = find("historical-official-forecasts-database")
+    if not url:
+        raise LookupError("OBR historical forecasts database link not found on the data page")
+    wb = openpyxl.load_workbook(io.BytesIO(get(next(iter(url.values())), timeout=180)),
+                                read_only=True, data_only=True)
+    rows = list(wb[sheet].iter_rows(values_only=True))
+    hi = next(i for i, r in enumerate(rows) if r and sum(str(c).isdigit() for c in r if c) > 5)
+    years = {j: int(c) for j, c in enumerate(rows[hi]) if str(c or "").isdigit()}
+    out = {}
+    for r in rows[hi + 1:]:
+        label = str(r[0] or "").strip() if r else ""
+        if not re.match(r"^[A-Z][a-z]+ \d{4}$", label):  # vintages look like "March 2026"
+            continue
+        vals = {y: float(r[j]) for j, y in years.items() if j < len(r) and isinstance(r[j], (int, float))}
+        if vals:
+            out[label] = vals
+    if not out:
+        raise ValueError(f"OBR sheet {sheet!r}: no forecast vintages found")
+    return out

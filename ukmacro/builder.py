@@ -2,8 +2,8 @@
 
 A category's `config.yaml` lists charts; each chart lists series from one of the
 source clients. For every chart this writes `data/<category>/<slug>.json` in one
-common format, plus `data/<category>/index.json` (the chart list with freshness)
-and `data/<category>/last-good.json`.
+common format and `img/<category>/<slug>.png`, plus `data/<category>/index.json`
+(the chart list with freshness) and `data/<category>/last-good.json`.
 
 Series spec, by source:
     ons:  {source: ons, key, label, cdid, dataset}
@@ -12,8 +12,9 @@ Series spec, by source:
           area becomes its own series (keyed by lower-cased area code).
     boe:  {source: boe, key, label, code}
 
-Chart options: slug, title, units, freq (A/Q/M), type (line/bar), start, rebase
-(a date: divide by the value then and multiply by 100), source, note.
+Chart options: slug, title, units, freq (A/Q/M), type (line/bar/stacked-bar), start,
+rebase (a date: divide by the value then and multiply by 100), source, note.
+A series can set `mark: line` to be drawn as a line over the bars of a bar chart.
 """
 
 from __future__ import annotations
@@ -26,7 +27,7 @@ from pathlib import Path
 
 import yaml
 
-from . import boe, oecd, ons
+from . import boe, charts, oecd, ons
 from .lastgood import LastGood
 
 REPO = Path(__file__).resolve().parent.parent
@@ -98,6 +99,7 @@ def build_chart(chart: dict, category: str, lg: LastGood, failures: list[str]) -
             obs = _transform(obs, chart)
             columns[key] = dict(obs)
             series.append({"key": key, "label": label, "_source": source,
+                           **({"mark": spec["mark"]} if spec.get("mark") else {}),
                            "_date": obs[-1][0] if obs else None,
                            "source_url": meta.get("source_url")})
             if meta.get("next_release"):
@@ -136,7 +138,7 @@ def run(config_path: Path) -> int:
 
     for chart in cfg["charts"]:
         result = build_chart(chart, category, lg, failures)
-        (out_dir / f"{chart['slug']}.json").write_text(json.dumps(result, indent=1) + "\n")
+        charts.publish(result, out_dir / f"{chart['slug']}.json", REPO / "img" / category / f"{chart['slug']}.png")
         index.append({k: result[k] for k in ("slug", "title", "data_through", "next_release", "status")})
         print(f"[{category}] {chart['slug']}: {result['status']}, through {result['data_through']}")
 

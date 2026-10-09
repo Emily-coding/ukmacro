@@ -15,13 +15,15 @@ A series can set "slot": n to pin its colour, so one category keeps the same col
 across related charts, or "color": "neutral" for a grey (e.g. data not available).
 Series beyond the fourth are grey (see _colour).
 
-Chart types: line, bar (single series), stacked-bar (positive and negative parts stack
-away from zero; a series with "mark": "line" is drawn as a line on top), grouped-hbar.
+Chart types: line; bar (several series sit side by side); stacked-bar (positive and
+negative parts stack away from zero); in both bar types a series with "mark": "line" is
+drawn as a line on top; grouped-hbar (categories down the side).
 """
 
 from __future__ import annotations
 
 import io
+import json
 import textwrap
 from pathlib import Path
 
@@ -192,38 +194,53 @@ def _line(chart):
             ends.append((j, ys[j], text))
     _period_ticks(ax, dates)
     _end_labels(fig, ax, ends)
-    _legend(fig, handles, [s["label"] for s in chart["series"]])
+    # grey context lines are named at their ends, so they stay out of the legend
+    keep = [i for i, s in enumerate(chart["series"]) if _colour(s, i) != BASELINE]
+    _legend(fig, [handles[i] for i in keep], [chart["series"][i]["label"] for i in keep])
     return fig
 
 
 def _end_labels(fig, ax, ends: list[tuple[int, float, str]], min_gap_pt: float = 13):
-    """Place labels just right of each line's last point, nudging them apart so no two
-    are closer than `min_gap_pt` points vertically (the dot each one names stays put)."""
+    """Place labels just right of each line's last point. Labels that would overlap
+    (their text spans the same horizontal space and they are closer than `min_gap_pt`
+    vertically) are nudged upwards; labels on lines that end in different places are
+    left where they are."""
     if not ends:
         return
     fig.canvas.draw()  # fix the axis limits so data -> screen positions are final
     to_pt = 72 / fig.dpi
-    placed = []  # (index into ends, label y in points)
-    for k, (j, y, _) in sorted(enumerate(ends), key=lambda e: e[1][1]):
-        y_pt = ax.transData.transform((j, y))[1] * to_pt
-        if placed and y_pt - placed[-1][1] < min_gap_pt:
-            y_pt = placed[-1][1] + min_gap_pt
-        placed.append((k, y_pt))
-    for k, y_pt in placed:
-        j, y, text = ends[k]
-        dy = y_pt - ax.transData.transform((j, y))[1] * to_pt
+    char_pt = 5.6  # rough width of one character at 10.5pt
+    placed = []  # (x0, x1, y) in points of labels already placed
+    final = {}
+    for k, (j, y, text) in sorted(enumerate(ends), key=lambda e: e[1][1]):
+        x_pt, y_pt = (v * to_pt for v in ax.transData.transform((j, y)))
+        x0, x1 = x_pt + 6, x_pt + 6 + len(text) * char_pt
+        # move up past every label it collides with; labels are placed bottom-up, so
+        # one pass over them in height order is enough (no loop that could fail to end)
+        for px0, px1, py in sorted(placed, key=lambda p: p[2]):
+            if x0 < px1 and px0 < x1 and py - min_gap_pt < y_pt < py + min_gap_pt - 0.01:
+                y_pt = py + min_gap_pt
+        placed.append((x0, x1, y_pt))
+        final[k] = y_pt
+    for k, (j, y, text) in enumerate(ends):
+        dy = final[k] - ax.transData.transform((j, y))[1] * to_pt
         ax.annotate(text, (j, y), xytext=(6, dy), textcoords="offset points",
                     va="center", fontsize=10.5, color=TEXT_2, annotation_clip=False)
 
 
 def _bars(chart):
-    """bar / stacked-bar: bars stack away from zero by sign; 'mark: line' series overlay."""
+    """bar / stacked-bar. In a stacked-bar chart, bars stack away from zero by sign; in
+    a plain bar chart, several series sit side by side. Either way a series with
+    "mark": "line" is drawn as a line (in ink) on top."""
     fig, ax = _frame(chart)
     dates = [d["date"] for d in chart["data"]]
     x = list(range(len(dates)))
+    stacked = chart["type"] == "stacked-bar"
+    bar_series = [s for s in chart["series"] if s.get("mark") != "line"]
+    n_side = 1 if stacked else max(1, len(bar_series))
+    width = (0.72 if len(x) > 20 else 0.6) / n_side
     pos, neg = [0.0] * len(x), [0.0] * len(x)
     handles, labels, slot = [], [], 0
-    width = 0.72 if len(x) > 20 else 0.6
     for s in chart["series"]:
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]  # a missing bar is drawn as nothing
         if s.get("mark") == "line":  # missing periods break the line rather than drop to zero
@@ -231,14 +248,20 @@ def _bars(chart):
             (h,) = ax.plot(x, line_ys, color=INK, linewidth=1.6, marker="o", markersize=4.5,
                            markerfacecolor=INK, markeredgecolor=SURFACE, markeredgewidth=1.2, zorder=4)
         else:
-            bottoms = [pos[j] if y >= 0 else neg[j] for j, y in enumerate(ys)]
-            h = ax.bar(x, ys, bottom=bottoms, width=width, color=_colour(s, slot),
-                       edgecolor=SURFACE, linewidth=1.0, zorder=3)  # 2px surface gap between segments
-            for j, y in enumerate(ys):
-                if y >= 0:
-                    pos[j] += y
-                else:
-                    neg[j] += y
+            if stacked:
+                xs = x
+                bottoms = [pos[j] if y >= 0 else neg[j] for j, y in enumerate(ys)]
+                for j, y in enumerate(ys):
+                    if y >= 0:
+                        pos[j] += y
+                    else:
+                        neg[j] += y
+            else:  # side by side, centred on the period
+                k = bar_series.index(s)
+                xs = [j + (k - (n_side - 1) / 2) * width for j in x]
+                bottoms = [0.0] * len(x)
+            h = ax.bar(xs, ys, bottom=bottoms, width=width, color=_colour(s, slot),
+                       edgecolor=SURFACE, linewidth=1.0, zorder=3)  # surface gap between segments
             slot += s.get("color") != "neutral"  # a grey series doesn't use up a colour
         handles.append(h)
         labels.append(s["label"])
@@ -303,3 +326,18 @@ def render(chart: dict, path: Path, theme: str | None = None) -> Path:
     """Render a chart (common JSON format) to a PNG at `path`; returns the path."""
     use_theme(theme or DEFAULT_THEME)
     return _save(RENDERERS[chart["type"]](_fill_periods(chart)), path)
+
+
+def publish(chart: dict, json_path: Path, png_path: Path) -> None:
+    """Write a chart's JSON and its PNG. The PNG is only re-rendered when the JSON
+    changed: PNG bytes vary slightly between machines, and an unchanged chart
+    shouldn't produce a daily commit. The theme is stored in the JSON so that a
+    theme change also counts as a change."""
+    chart["theme"] = DEFAULT_THEME
+    text = json.dumps(chart, indent=1) + "\n"
+    if png_path.exists() and json_path.exists() and json_path.read_text() == text:
+        return
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(text)
+    if chart.get("type") in RENDERERS and chart.get("series") and chart.get("data"):
+        render(chart, png_path)

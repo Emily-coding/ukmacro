@@ -20,7 +20,9 @@ ukmacro/                 shared source clients + the chart builder
   boe.py                 Bank of England statistics database (CSV)
   nomis.py               Nomis (APS/LFS breakdowns)
   hmrc_trade.py          HMRC uktradeinfo (trade by CN8 code x country)
-  obr.py                 OBR spreadsheet downloads (no API: scrapes /download/ links)
+  obr.py                 OBR spreadsheet downloads (no API: scrapes /download/ links),
+                         incl. the historical forecasts database
+  dmp.py                 Decision Maker Panel spreadsheets
   lastgood.py            last-good store (see below)
   builder.py             config.yaml -> chart JSON
   bics.py                BICS wave download, parsing and the harvest store
@@ -110,8 +112,8 @@ from the ONS series metadata.
 
 ## Charts as PNGs
 
-`ukmacro/charts.py` renders any chart JSON to a PNG in one house style. Charts so
-far: the employment-rate composition analysis (`img/labour-markets/emp-*.png`).
+`ukmacro/charts.py` renders any chart JSON to a PNG in one house style. Every chart
+gets a PNG in `img/<category>/`, re-rendered only when its data changes.
 
 - 30 x 15 cm at 200 dpi (2362 x 1181 px), 256-colour PNG, about 60 KB each
 - Font: Source Sans 3 (open licence, bundled in `assets/fonts/`, so output matches on any machine)
@@ -143,6 +145,24 @@ LFS and RTI at the latest common quarter. Per-group workings for both are in
 unemployed and economically inactive NEETs. In five quarters ONS suppressed one
 part for 16-17s; those quarters show the within-group part unsplit (grey) rather
 than deriving the suppressed figure.
+
+## Investment
+
+Headline charts (config.yaml): business vs total investment, business investment by
+asset (intellectual property, buildings, ICT and machinery, transport; non-government
+investment by asset excluding dwellings, which sums to business investment), and G7
+total investment (the OECD has no harmonised business investment series).
+
+`builders/investment/analysis.py`:
+- **Asset contributions**: each asset's contribution to the change in business
+  investment since 2019 Q4, in % points of the 2019 Q4 level.
+- **OBR forecasts vs outturn**: each spring forecast since 2020 (OBR Historical
+  official forecasts database). A forecast made in year Y starts from today's ONS
+  outturn for Y-1 and chains the OBR's growth rates from Y, so the gap from the
+  outturn is the forecast error in growth, separate from data revisions.
+- **Firms' expectations vs outturn**: Decision Maker Panel expected growth in firms'
+  capital spending over the next year, plotted at the quarter it refers to, against
+  actual business investment growth.
 
 ## Rules
 
