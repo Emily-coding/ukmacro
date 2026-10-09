@@ -166,6 +166,23 @@ total investment (the OECD has no harmonised business investment series).
   capital spending over the next year, plotted at the quarter it refers to, against
   actual business investment growth.
 
+## AI-relevant trade
+
+`builders/trade/ai_trade.py`, with tiers and product codes in
+`definitions/ai_trade.yaml` (built on the ONS AI thematic account's CPA list in
+`definitions/ai_cpa.yaml`). Quarterly from 2016, EU vs non-EU:
+- **Goods tiers** (ONS MQ10, exact CPA, seasonally adjusted): core = 26.1-26.3 and
+  26.5-26.7; extended = all of C26-C28; full = C26-C30. Values, volumes (CVM) and
+  implied prices.
+- **Services tiers** (ONS QNA broad service types, seasonally adjusted): core = telecoms,
+  computer and information plus IP charges; extended adds other business services;
+  full adds personal and cultural. Approximates the CPA tiers.
+- **Products** (HMRC, by commodity code): chips, servers, storage, graphics cards,
+  phones, network equipment, sensors, cameras, scanners, robots, drones. Values,
+  units and value per unit; not seasonally adjusted.
+All are upper bounds (whole product groups). EU imports have a break in 2022 Q1.
+Outputs: `data/trade/ai/*.csv` and charts in `img/trade/ai/`.
+
 ## Rules
 
 **A failed fetch is a failed run.** If a source fails, the chart is still written

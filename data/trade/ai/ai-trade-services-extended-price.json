@@ -1,0 +1,332 @@
+{
+ "slug": "ai-trade-services-extended-price",
+ "category": "trade",
+ "title": "AI-relevant services trade: implied prices: extended tier",
+ "type": "line",
+ "freq": "Q",
+ "units": "Implied price index, 2019 = 100",
+ "source": "ONS trade in services by type (QNA), seasonally adjusted; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Volumes are chained volume measures summed across codes; prices are value / volume. Services use broad ONS service types, which approximate the CPA tiers. Tier: Extended: adds other business services (R&D, consulting, engineering, advertising...).",
+ "series": [
+  {
+   "key": "EU_exports",
+   "label": "EU exports"
+  },
+  {
+   "key": "NonEU_exports",
+   "label": "Non-EU exports"
+  },
+  {
+   "key": "EU_imports",
+   "label": "EU imports"
+  },
+  {
+   "key": "NonEU_imports",
+   "label": "Non-EU imports"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016-Q1",
+   "EU_exports": 91.9,
+   "NonEU_exports": 92.4,
+   "EU_imports": 94.5,
+   "NonEU_imports": 92.3
+  },
+  {
+   "date": "2016-Q2",
+   "EU_exports": 94.8,
+   "NonEU_exports": 93.3,
+   "EU_imports": 96.3,
+   "NonEU_imports": 89.2
+  },
+  {
+   "date": "2016-Q3",
+   "EU_exports": 94.5,
+   "NonEU_exports": 90.5,
+   "EU_imports": 97.2,
+   "NonEU_imports": 95.0
+  },
+  {
+   "date": "2016-Q4",
+   "EU_exports": 96.7,
+   "NonEU_exports": 97.2,
+   "EU_imports": 97.9,
+   "NonEU_imports": 96.3
+  },
+  {
+   "date": "2017-Q1",
+   "EU_exports": 97.2,
+   "NonEU_exports": 96.6,
+   "EU_imports": 97.1,
+   "NonEU_imports": 97.4
+  },
+  {
+   "date": "2017-Q2",
+   "EU_exports": 97.1,
+   "NonEU_exports": 97.5,
+   "EU_imports": 98.0,
+   "NonEU_imports": 91.8
+  },
+  {
+   "date": "2017-Q3",
+   "EU_exports": 96.8,
+   "NonEU_exports": 93.6,
+   "EU_imports": 100.9,
+   "NonEU_imports": 99.6
+  },
+  {
+   "date": "2017-Q4",
+   "EU_exports": 97.7,
+   "NonEU_exports": 100.2,
+   "EU_imports": 100.8,
+   "NonEU_imports": 100.6
+  },
+  {
+   "date": "2018-Q1",
+   "EU_exports": 95.5,
+   "NonEU_exports": 97.2,
+   "EU_imports": 102.4,
+   "NonEU_imports": 102.8
+  },
+  {
+   "date": "2018-Q2",
+   "EU_exports": 97.8,
+   "NonEU_exports": 97.1,
+   "EU_imports": 102.4,
+   "NonEU_imports": 97.5
+  },
+  {
+   "date": "2018-Q3",
+   "EU_exports": 100.0,
+   "NonEU_exports": 97.3,
+   "EU_imports": 97.2,
+   "NonEU_imports": 97.7
+  },
+  {
+   "date": "2018-Q4",
+   "EU_exports": 98.4,
+   "NonEU_exports": 101.5,
+   "EU_imports": 93.2,
+   "NonEU_imports": 95.5
+  },
+  {
+   "date": "2019-Q1",
+   "EU_exports": 100.2,
+   "NonEU_exports": 99.7,
+   "EU_imports": 99.2,
+   "NonEU_imports": 99.7
+  },
+  {
+   "date": "2019-Q2",
+   "EU_exports": 100.2,
+   "NonEU_exports": 100.6,
+   "EU_imports": 102.9,
+   "NonEU_imports": 99.0
+  },
+  {
+   "date": "2019-Q3",
+   "EU_exports": 101.6,
+   "NonEU_exports": 98.9,
+   "EU_imports": 100.7,
+   "NonEU_imports": 101.2
+  },
+  {
+   "date": "2019-Q4",
+   "EU_exports": 98.0,
+   "NonEU_exports": 100.8,
+   "EU_imports": 97.2,
+   "NonEU_imports": 100.2
+  },
+  {
+   "date": "2020-Q1",
+   "EU_exports": 99.6,
+   "NonEU_exports": 99.3,
+   "EU_imports": 98.6,
+   "NonEU_imports": 99.0
+  },
+  {
+   "date": "2020-Q2",
+   "EU_exports": 102.1,
+   "NonEU_exports": 102.4,
+   "EU_imports": 103.4,
+   "NonEU_imports": 100.6
+  },
+  {
+   "date": "2020-Q3",
+   "EU_exports": 103.3,
+   "NonEU_exports": 100.8,
+   "EU_imports": 100.2,
+   "NonEU_imports": 101.1
+  },
+  {
+   "date": "2020-Q4",
+   "EU_exports": 103.5,
+   "NonEU_exports": 106.5,
+   "EU_imports": 98.4,
+   "NonEU_imports": 101.7
+  },
+  {
+   "date": "2021-Q1",
+   "EU_exports": 101.4,
+   "NonEU_exports": 100.8,
+   "EU_imports": 96.8,
+   "NonEU_imports": 96.1
+  },
+  {
+   "date": "2021-Q2",
+   "EU_exports": 100.8,
+   "NonEU_exports": 101.8,
+   "EU_imports": 95.7,
+   "NonEU_imports": 93.7
+  },
+  {
+   "date": "2021-Q3",
+   "EU_exports": 102.9,
+   "NonEU_exports": 101.6,
+   "EU_imports": 100.5,
+   "NonEU_imports": 101.0
+  },
+  {
+   "date": "2021-Q4",
+   "EU_exports": 102.7,
+   "NonEU_exports": 105.1,
+   "EU_imports": 106.9,
+   "NonEU_imports": 111.1
+  },
+  {
+   "date": "2022-Q1",
+   "EU_exports": 106.7,
+   "NonEU_exports": 107.8,
+   "EU_imports": 106.7,
+   "NonEU_imports": 105.6
+  },
+  {
+   "date": "2022-Q2",
+   "EU_exports": 108.6,
+   "NonEU_exports": 108.7,
+   "EU_imports": 111.1,
+   "NonEU_imports": 110.7
+  },
+  {
+   "date": "2022-Q3",
+   "EU_exports": 110.3,
+   "NonEU_exports": 109.4,
+   "EU_imports": 110.8,
+   "NonEU_imports": 111.6
+  },
+  {
+   "date": "2022-Q4",
+   "EU_exports": 112.6,
+   "NonEU_exports": 114.1,
+   "EU_imports": 109.9,
+   "NonEU_imports": 112.4
+  },
+  {
+   "date": "2023-Q1",
+   "EU_exports": 114.4,
+   "NonEU_exports": 115.1,
+   "EU_imports": 116.4,
+   "NonEU_imports": 115.3
+  },
+  {
+   "date": "2023-Q2",
+   "EU_exports": 113.6,
+   "NonEU_exports": 114.4,
+   "EU_imports": 115.9,
+   "NonEU_imports": 116.4
+  },
+  {
+   "date": "2023-Q3",
+   "EU_exports": 114.8,
+   "NonEU_exports": 114.5,
+   "EU_imports": 114.4,
+   "NonEU_imports": 115.4
+  },
+  {
+   "date": "2023-Q4",
+   "EU_exports": 115.6,
+   "NonEU_exports": 116.7,
+   "EU_imports": 112.3,
+   "NonEU_imports": 115.2
+  },
+  {
+   "date": "2024-Q1",
+   "EU_exports": 115.3,
+   "NonEU_exports": 117.5,
+   "EU_imports": 115.5,
+   "NonEU_imports": 114.6
+  },
+  {
+   "date": "2024-Q2",
+   "EU_exports": 118.5,
+   "NonEU_exports": 117.5,
+   "EU_imports": 117.5,
+   "NonEU_imports": 118.1
+  },
+  {
+   "date": "2024-Q3",
+   "EU_exports": 116.4,
+   "NonEU_exports": 116.8,
+   "EU_imports": 117.0,
+   "NonEU_imports": 117.8
+  },
+  {
+   "date": "2024-Q4",
+   "EU_exports": 116.0,
+   "NonEU_exports": 117.3,
+   "EU_imports": 120.1,
+   "NonEU_imports": 123.4
+  },
+  {
+   "date": "2025-Q1",
+   "EU_exports": 117.6,
+   "NonEU_exports": 118.5,
+   "EU_imports": 125.1,
+   "NonEU_imports": 122.7
+  },
+  {
+   "date": "2025-Q2",
+   "EU_exports": 119.1,
+   "NonEU_exports": 120.3,
+   "EU_imports": 122.6,
+   "NonEU_imports": 124.3
+  },
+  {
+   "date": "2025-Q3",
+   "EU_exports": 119.9,
+   "NonEU_exports": 120.1,
+   "EU_imports": 122.9,
+   "NonEU_imports": 124.2
+  },
+  {
+   "date": "2025-Q4",
+   "EU_exports": 121.2,
+   "NonEU_exports": 122.8,
+   "EU_imports": 122.9,
+   "NonEU_imports": 125.8
+  },
+  {
+   "date": "2026-Q1",
+   "EU_exports": 120.7,
+   "NonEU_exports": 122.2,
+   "EU_imports": 125.6,
+   "NonEU_imports": 123.9
+  },
+  {
+   "date": "2026-Q2",
+   "EU_exports": 121.7,
+   "NonEU_exports": 123.2,
+   "EU_imports": 124.3,
+   "NonEU_imports": 126.1
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 5
+}

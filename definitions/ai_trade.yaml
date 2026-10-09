@@ -1,0 +1,102 @@
+# AI-relevant trade: tiers and product codes, built on the ONS AI thematic account
+# definition (definitions/ai_cpa.yaml). Edit here to change what is counted; the
+# builder is builders/trade/ai_trade.py.
+#
+# Every tier is an UPPER BOUND: whole product groups containing AI and non-AI output.
+# Construction (CPA F41-F43, data centres) is left out: trade data only has generic
+# "construction services", with nothing identifying data centres. Data-centre
+# equipment (servers, power, cooling) is in the goods tiers.
+
+# --------------------------------------------------------------------- goods
+# ONS "UK trade in goods by CPA" (MQ10): exact CPA, EU / non-EU / world, current prices
+# (CP) and chained volume measures (CVM), seasonally adjusted. Finest level = 3-digit.
+# https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/datasets/uktradeingoodsbyclassificationofproductbyactivity
+goods_tiers:
+  core:
+    label: "Core: AI hardware (chips, computers, phones, sensors, medical, cameras)"
+    cpa: ["26.1", "26.2", "26.3", "26.5", "26.6", "26.7"]
+  extended:
+    label: "Extended: all electronics, electrical equipment and machinery"
+    cpa: ["26", "27", "28"]          # broad version: includes data-centre power and cooling
+  full:
+    label: "Full ONS list: adds vehicles, ships, aircraft and other transport"
+    cpa: ["26", "27", "28", "29", "30"]
+
+# --------------------------------------------------------------------- services
+# ONS trade in services by broad type (EBOPS), EU / non-EU, CP and CVM, seasonally
+# adjusted (QNA dataset). No CPA detail exists, so these tiers APPROXIMATE the CPA ones.
+services_tiers:
+  core:
+    label: "Core: telecoms, computer and information services; IP charges"
+    types: [telecoms_computer_information, intellectual_property]
+  extended:
+    label: "Extended: adds other business services (R&D, consulting, engineering, advertising...)"
+    types: [telecoms_computer_information, intellectual_property, other_business]
+  full:
+    label: "Full: adds personal, cultural and recreational services (education, health)"
+    types: [telecoms_computer_information, intellectual_property, other_business, personal_cultural]
+
+# ONS series IDs (CDIDs, QNA dataset): type -> {EU|NonEU}_{exports|imports}_{CP|CVM}
+services_series:
+  telecoms_computer_information:
+    name: Telecoms, computer and information services
+    EU_exports_CP: P5Y3
+    EU_exports_CVM: P5W5
+    EU_imports_CP: P5Y4
+    EU_imports_CVM: P5W6
+    NonEU_exports_CP: P5Z2
+    NonEU_exports_CVM: P5X4
+    NonEU_imports_CP: P5Z3
+    NonEU_imports_CVM: P5X5
+  intellectual_property:
+    name: Charges for the use of intellectual property
+    EU_exports_CP: P5XY
+    EU_exports_CVM: P5W2
+    EU_imports_CP: P5XZ
+    EU_imports_CVM: P5W3
+    NonEU_exports_CP: P5YX
+    NonEU_exports_CVM: P5WZ
+    NonEU_imports_CP: P5YY
+    NonEU_imports_CVM: P5X2
+  other_business:
+    name: Other business services
+    EU_exports_CP: P5Y6
+    EU_exports_CVM: P5W8
+    EU_imports_CP: P5Y7
+    EU_imports_CVM: P5W9
+    NonEU_exports_CP: P5Z5
+    NonEU_exports_CVM: P5X7
+    NonEU_imports_CP: P5Z6
+    NonEU_imports_CVM: P5X8
+  personal_cultural:
+    name: Personal, cultural and recreational services
+    EU_exports_CP: P5Y9
+    EU_exports_CVM: P5WB
+    EU_imports_CP: P5YA
+    EU_imports_CVM: P5WC
+    NonEU_exports_CP: P5Z8
+    NonEU_exports_CVM: P5XA
+    NonEU_imports_CP: P5Z9
+    NonEU_imports_CVM: P5XB
+
+# --------------------------------------------------------------------- products
+# HMRC Overseas Trade Statistics, selected directly by commodity code (HS6 = the first
+# six digits of the 8-digit code), so no crosswalk is needed. Values, quantities
+# (supplementary units, e.g. number of items) and net mass; no official volumes or
+# prices. `from: 2022` marks codes created in the 2022 HS revision (no earlier series).
+products:
+  - {id: chips_processors, label: "Processors and controllers (chips)", cpa: "26.1", hs6: ["854231"]}
+  - {id: chips_memory, label: "Memory chips", cpa: "26.1", hs6: ["854232"]}
+  - {id: servers, label: "Processing units (incl. servers)", cpa: "26.2", hs6: ["847150"]}
+  - {id: storage, label: "Storage units", cpa: "26.2", hs6: ["847170"]}
+  - {id: computer_assemblies, label: "Computer electronic assemblies (incl. graphics cards)", cpa: "26.2", hs6: ["847330"]}
+  - {id: mobile_phones, label: "Mobile phones (incl. smartphones)", cpa: "26.3", hs6: ["851712", "851713", "851714"]}  # 851712 split into 851713/14 in 2022
+  - {id: smartphones, label: "Smartphones", cpa: "26.3", hs6: ["851713"], from: 2022}
+  - {id: network_equipment, label: "Network equipment (switches, routers)", cpa: "26.3", hs6: ["851762"]}
+  - {id: sensors, label: "Semiconductor-based sensors", cpa: "26.1", hs6: ["854151"], from: 2022}
+  - {id: cameras, label: "Digital and video cameras", cpa: "26.7", hs6: ["852580", "852589"]}  # 852580 renumbered 852589 in 2022
+  - {id: mri_ultrasound, label: "MRI and ultrasound scanners", cpa: "26.6", hs6: ["901812", "901813"]}
+  - {id: ct_scanners, label: "CT scanners", cpa: "26.6", hs6: ["902212"]}
+  - {id: robots, label: "Industrial robots", cpa: "28.9", hs6: ["847950"]}
+  - {id: handling_robots, label: "Handling robots", cpa: "28.2", hs6: ["842870"], from: 2022}
+  - {id: drones, label: "Unmanned aircraft (drones)", cpa: "30.3", hs6: ["880621", "880622", "880623", "880624", "880629", "880691", "880692", "880693", "880694", "880699"], from: 2022}

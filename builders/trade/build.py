@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Builder for this category: headline charts come from config.yaml.
+"""Trade builder.
 
-Bespoke analyses (e.g. a decomposition that needs more than plotting a series)
-go below `run(...)` as their own functions writing into the same data/ folder.
+1. Headline charts from config.yaml (exports, imports, trade balance).
+2. ai_trade.py: AI-relevant trade in goods and services (tiers, EU / non-EU, values,
+   volumes and prices) and a product layer from HMRC; see definitions/ai_trade.yaml.
+
+If the AI trade analysis fails the headline charts still publish, but the run exits 1.
 """
 
 import sys
@@ -13,5 +16,13 @@ sys.path.insert(0, str(HERE.parent.parent))  # repo root, so `ukmacro` imports
 
 from ukmacro.builder import run  # noqa: E402
 
+import ai_trade  # noqa: E402
+
 if __name__ == "__main__":
-    sys.exit(run(HERE / "config.yaml"))
+    status = run(HERE / "config.yaml")
+    try:
+        ai_trade.build()
+    except Exception as e:  # noqa: BLE001
+        print(f"ai_trade failed: {e}", file=sys.stderr)
+        status = 1
+    sys.exit(status)

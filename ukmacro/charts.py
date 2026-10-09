@@ -66,7 +66,7 @@ THEMES = {
         "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
 }
 DEFAULT_THEME = "blue-amber"
-STYLE_VERSION = 4  # bump when the drawing code changes, so every PNG is redrawn
+STYLE_VERSION = 5  # bump when the drawing code changes, so every PNG is redrawn
 
 # Figure size. Layout below is in centimetres (margins) and scales with the width
 # (how much text fits per line), so changing the size keeps the layout intact.
@@ -340,12 +340,14 @@ def _grouped_hbar(chart):
     n = len(chart["series"])
     h_bar = 0.8 / n
     handles = []
+    # show "+" only when the chart has negative values (i.e. the sign carries information)
+    signed = any((d.get(s["key"]) or 0) < 0 for d in chart["data"] for s in chart["series"])
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
         pos = [c + (i - (n - 1) / 2) * h_bar for c in range(len(cats))]
         handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=_colour(s, i), zorder=3))
         for p, y in zip(pos, ys):
-            ax.annotate(f"{y:+.2f}".replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
+            ax.annotate((f"{y:+.2f}" if signed else f"{y:.2f}").replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
                         ha="left" if y >= 0 else "right", va="center", fontsize=10, color=TEXT_2)
     ax.set_yticks(range(len(cats)), cats)
     ax.invert_yaxis()

@@ -1,0 +1,100 @@
+{
+ "slug": "ai-trade-products-imports",
+ "category": "trade",
+ "title": "UK imports of selected AI-relevant products, 2025 Q3 to 2026 Q2",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "\u00a3 billion, last four quarters",
+ "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Products selected by HMRC commodity code; each still includes non-AI items (e.g. all processors, all phones). EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. ",
+ "series": [
+  {
+   "key": "EU",
+   "label": "EU"
+  },
+  {
+   "key": "NonEU",
+   "label": "Non-EU"
+  }
+ ],
+ "data_through": "Semiconductor-based sensors",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Mobile phones (incl. smartphones)",
+   "EU": 0.51,
+   "NonEU": 7.6
+  },
+  {
+   "date": "Network equipment (switches, routers)",
+   "EU": 4.1,
+   "NonEU": 3.47
+  },
+  {
+   "date": "Processing units (incl. servers)",
+   "EU": 4.67,
+   "NonEU": 2.55
+  },
+  {
+   "date": "Computer electronic assemblies (incl. graphics cards)",
+   "EU": 0.54,
+   "NonEU": 0.88
+  },
+  {
+   "date": "Digital and video cameras",
+   "EU": 0.62,
+   "NonEU": 0.71
+  },
+  {
+   "date": "Storage units",
+   "EU": 0.61,
+   "NonEU": 0.61
+  },
+  {
+   "date": "Processors and controllers (chips)",
+   "EU": 0.49,
+   "NonEU": 0.26
+  },
+  {
+   "date": "Memory chips",
+   "EU": 0.14,
+   "NonEU": 0.2
+  },
+  {
+   "date": "MRI and ultrasound scanners",
+   "EU": 0.2,
+   "NonEU": 0.08
+  },
+  {
+   "date": "Unmanned aircraft (drones)",
+   "EU": 0.04,
+   "NonEU": 0.14
+  },
+  {
+   "date": "CT scanners",
+   "EU": 0.1,
+   "NonEU": 0.03
+  },
+  {
+   "date": "Industrial robots",
+   "EU": 0.08,
+   "NonEU": 0.04
+  },
+  {
+   "date": "Handling robots",
+   "EU": 0.03,
+   "NonEU": 0.02
+  },
+  {
+   "date": "Semiconductor-based sensors",
+   "EU": 0.0,
+   "NonEU": 0.01
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 5
+}
