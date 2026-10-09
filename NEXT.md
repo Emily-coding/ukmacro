@@ -29,6 +29,17 @@
   which would pair with the BICS employment-cost series.
 
 ### Trade
+- **AI trade (builders/trade/ai_trade.py): still to do**
+  - Look over the redrawn by-partner charts (rolling four-quarter totals) and the
+    fuller products total; fix any layout problems.
+  - Decide whether the EU / non-EU tier charts (quarterly, ONS seasonally adjusted)
+    should also move to rolling four-quarter totals, to match the by-partner charts.
+  - Possibly add an EU-by-country table (Netherlands, Germany, Ireland, Sweden...),
+    since "EU" mixes entrepot trade, real EU assembly and one-off IP flows. Checked
+    2026-10-09: Ireland is small in both services and products; the Netherlands
+    (goods distribution hub) and a 2024 jump in IP-charge exports to Sweden matter more.
+  - Confirm the scheduled workflow can commit new data (first live run around the
+    mid-October releases).
 - **Critical minerals**: `builders/trade/minerals.yaml` mapping each mineral
   (BGS Critical Minerals Intelligence Centre list) to CN8 codes, pulled monthly
   from uktradeinfo by partner country. Building the code mapping is the real work.
