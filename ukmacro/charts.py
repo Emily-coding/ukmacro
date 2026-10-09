@@ -66,6 +66,7 @@ THEMES = {
         "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
 }
 DEFAULT_THEME = "blue-amber"
+STYLE_VERSION = 4  # bump when the drawing code changes, so every PNG is redrawn
 
 # Figure size. Layout below is in centimetres (margins) and scales with the width
 # (how much text fits per line), so changing the size keeps the layout intact.
@@ -157,22 +158,63 @@ def _legend(fig, handles, labels):
                frameon=False, fontsize=11, labelcolor=TEXT_2, handlelength=1.6, columnspacing=1.8)
 
 
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MAX_LABELS = 16            # roughly how many quarterly date labels fit across a 25 cm chart
+MAX_HALF_YEAR_LABELS = 24  # half-year labels are mostly short ("Q3", "Jul"), so more fit
+
+
 def _period_ticks(ax, dates: list[str]):
-    """Label the first period of each year with the year (works for any date format
-    starting YYYY: 2019, 2019-Q1, 2019-01, 2019-01-31). At most about 12 labels.
-    A short series of exact dates (8 points or fewer) gets every point labelled 'Mon YYYY'."""
-    if len(dates) <= 8 and all(len(d) == 10 for d in dates):  # a few dated points: label each one
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        ax.set_xticks(range(len(dates)), [f"{months[int(d[5:7]) - 1]} {d[:4]}" for d in dates])
-        ax.set_xlim(-0.6, len(dates) - 0.4)
+    """Date labels on the x-axis, as fine as fits: every quarter, else every half-year
+    (Q1/Q3, Jan/Jul), else every year. The year is written under the first label of
+    each year (e.g. "Q1" over "2024", then "Q3"). Works for quarters (2024-Q1), months
+    (2024-01), exact dates (2024-01-31, e.g. BICS waves) and years."""
+    n = len(dates)
+    ax.set_xlim(-0.6, n - 0.4)
+    if not dates:
         return
-    idx = [i for i, d in enumerate(dates) if i == 0 or d[:4] != dates[i - 1][:4]]
-    if len(idx) > 1 and dates[0][4:] not in ("", "-Q1", "-01"):
-        idx = idx[1:]  # the first period isn't the start of its year: label from the next year
-    step = max(1, len(idx) // 12)
-    idx = idx[::step]
-    ax.set_xticks(idx, [dates[i][:4] for i in idx])
-    ax.set_xlim(-0.6, len(dates) - 0.4)
+
+    def kind(d):
+        if len(d) == 7 and d[5] == "Q":
+            return "Q"
+        if len(d) == 7:
+            return "M"
+        return "D" if len(d) == 10 else "A"
+
+    k = kind(dates[0])
+    if k == "A":
+        step = max(1, -(-n // MAX_LABELS))
+        ax.set_xticks(range(0, n, step), [dates[i] for i in range(0, n, step)])
+        return
+
+    def sub(d):  # position within the year: quarter number, or month number
+        return int(d[6]) if k == "Q" else int(d[5:7])
+
+    def text(d):
+        return f"Q{d[6]}" if k == "Q" else MONTHS[int(d[5:7]) - 1]
+
+    if k == "D":  # irregular exact dates: label every point if they fit, else every other
+        picks = list(range(0, n, max(1, -(-n // MAX_LABELS))))
+    else:
+        per_year = 4 if k == "Q" else 12
+        options = ([(1, 2, 3, 4), (1, 3)] if k == "Q" else [(1, 4, 7, 10), (1, 7)]) + [(1,)]
+        picks = None
+        for keep in options:  # finest spacing that fits
+            cand = [i for i, d in enumerate(dates) if sub(d) in keep]
+            # quarterly labels need room; half-year ones are short ("Q3", "Jul"), so more fit
+            limit = {4: MAX_LABELS, 2: MAX_HALF_YEAR_LABELS}.get(len(keep), MAX_LABELS * per_year)
+            if len(cand) <= limit:
+                picks = cand
+                break
+        if len(keep) == 1:  # only one label per year fits: show just the year (thinned if needed)
+            picks = picks[::max(1, -(-len(picks) // MAX_LABELS))]
+            ax.set_xticks(picks, [dates[i][:4] for i in picks])
+            return
+    labels, last_year = [], None
+    for i in picks:
+        year = dates[i][:4]
+        labels.append(f"{text(dates[i])}\n{year}" if year != last_year else text(dates[i]))
+        last_year = year
+    ax.set_xticks(picks, labels)
 
 
 def _save(fig, path: Path) -> Path:
@@ -352,6 +394,7 @@ def publish(chart: dict, json_path: Path, png_path: Path) -> None:
     that changing either also counts as a change."""
     chart["theme"] = DEFAULT_THEME
     chart["size_cm"] = [WIDTH_CM, HEIGHT_CM]
+    chart["style_version"] = STYLE_VERSION
     text = json.dumps(chart, indent=1) + "\n"
     if png_path.exists() and json_path.exists() and json_path.read_text() == text:
         return
