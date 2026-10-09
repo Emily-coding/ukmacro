@@ -37,6 +37,11 @@
    "NonEU": 2.55
   },
   {
+   "date": "Laptops and tablets",
+   "EU": 1.36,
+   "NonEU": 5.26
+  },
+  {
    "date": "Computer electronic assemblies (incl. graphics cards)",
    "EU": 0.54,
    "NonEU": 0.88
@@ -52,9 +57,34 @@
    "NonEU": 0.61
   },
   {
+   "date": "Other computer units (incl. accelerator units)",
+   "EU": 0.51,
+   "NonEU": 0.42
+  },
+  {
+   "date": "Electro-diagnostic and medical X-ray equipment",
+   "EU": 0.73,
+   "NonEU": 0.16
+  },
+  {
+   "date": "Other integrated circuits (incl. some AI accelerators)",
+   "EU": 0.33,
+   "NonEU": 0.42
+  },
+  {
    "date": "Processors and controllers (chips)",
    "EU": 0.49,
    "NonEU": 0.26
+  },
+  {
+   "date": "Computer systems",
+   "EU": 0.31,
+   "NonEU": 0.2
+  },
+  {
+   "date": "Vacuum cleaners (incl. robotic)",
+   "EU": 0.05,
+   "NonEU": 0.44
   },
   {
    "date": "Memory chips",

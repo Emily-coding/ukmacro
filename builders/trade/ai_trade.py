@@ -15,8 +15,8 @@ BOUND: whole product groups containing AI and non-AI output.
    Products are goods: a narrow subset INSIDE the goods tiers, so the two are never added.
 4. By country: services tiers and products by partner group (definitions/ai_trade.yaml
    `country_groups`), values only. Services: partner shares from the ONS by-country file
-   applied to the latest QNA EU / non-EU totals (seasonally adjusted). Products: HMRC,
-   seasonally adjusted here with STL. Goods tiers stay EU / non-EU (no crosswalk).
+   applied to the latest QNA EU / non-EU totals. Products: HMRC. Both are charted as
+   rolling four-quarter totals. Goods tiers stay EU / non-EU (no crosswalk).
 Key AI dates (definitions/ai_events.yaml) are drawn as vertical lines on the charts.
 
 All quarterly from 2016 Q1. Values in £m; volumes and prices as indices, 2019 = 100.
@@ -25,7 +25,8 @@ Outputs:
     data/trade/ai/ai_trade_tiers.csv      goods and services tiers, long format
     data/trade/ai/ai_trade_products.csv   product layer, long format
     data/trade/ai/ai_trade_by_country.csv services tiers and products by partner group
-    data/trade/ai/ai_trade_products_by_country_sa.csv  products total, unadjusted and adjusted
+    data/trade/ai/ai_trade_by_country_rolling.csv  by-partner chart series, quarterly and rolling 4Q
+    data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
 
@@ -342,33 +343,23 @@ def products_by_country() -> list[dict]:
     return out
 
 
-def seasonal_adjust(series: dict[str, float]) -> dict[str, float]:
-    """STL seasonal adjustment of a quarterly series (statsmodels STL, period 4,
-    robust to outliers), on logs when all values are positive (multiplicative
-    seasonality, as in trade data), otherwise on levels."""
-    import numpy as np
-    from statsmodels.tsa.seasonal import STL
-
+def rolling4(series: dict[str, float]) -> dict[str, float]:
+    """Rolling four-quarter total (this quarter and the three before), from the fourth
+    quarter on. Removes seasonal swings without a seasonal model, and isn't thrown by
+    one-off timing shifts such as phone launches moving between quarters."""
     qs = sorted(series)
-    y = np.array([series[q] for q in qs], dtype=float)
-    if len(y) < 12:
-        return dict(series)  # too short to estimate seasonality reliably
-    use_log = (y > 0).all()
-    fit = STL(np.log(y) if use_log else y, period=4, robust=True).fit()
-    adj = (np.log(y) if use_log else y) - fit.seasonal
-    return {q: float(np.exp(v) if use_log else v) for q, v in zip(qs, adj)}
+    return {qs[i]: sum(series[q] for q in qs[i - 3:i + 1]) for i in range(3, len(qs))}
 
 
 def country_charts(rows: list[dict]) -> list[dict]:
     """Services tiers and the selected-products total, by partner group: one chart per
-    (tier or products) x flow x grouping option, values in £bn, quarterly. Services are
-    seasonally adjusted (via the QNA totals); the products total is seasonally adjusted
-    here with STL. Returns the products-total rows (unadjusted and adjusted) for a CSV."""
+    (tier or products) x flow x grouping option, as ROLLING FOUR-QUARTER TOTALS (£bn) so
+    that services and products are treated the same way. Returns rows (quarterly value
+    and rolling total) for a CSV."""
     titles = {"option1": "by partner", "option2": "East Asia by country"}
-    sources = {"services": "ONS trade in services by type (QNA, seasonally adjusted), split by partner using "
-                           "shares from ONS trade in services by partner country; ukmacro calculations",
-               "product": "HMRC Overseas Trade Statistics; seasonally adjusted by ukmacro (STL); "
-                          "ukmacro calculations"}
+    sources = {"services": "ONS trade in services by type (QNA), split by partner using shares from ONS trade "
+                           "in services by partner country; ukmacro calculations",
+               "product": "HMRC Overseas Trade Statistics; ukmacro calculations"}
     groups_of = {o: list(group_members(o)) for o in ("option1", "option2")}
     # products total: products with a full series only (smartphones are inside mobile
     # phones; codes created in 2022 would put a break in the total)
@@ -376,7 +367,7 @@ def country_charts(rows: list[dict]) -> list[dict]:
     blocks = [("services", t, "AI-relevant services, " + DEFS["services_tiers"][t]["label"].split(":")[0].lower()
                + " tier", [t]) for t in DEFS["services_tiers"]]
     blocks.append(("product", "total", "selected AI-relevant products (goods)", total_products))
-    sa_rows = []
+    out_rows = []
     for kind, slug_part, what, items in blocks:
         for flow in ("exports", "imports"):
             for option in ("option1", "option2"):
@@ -385,32 +376,83 @@ def country_charts(rows: list[dict]) -> list[dict]:
                     if r["kind"] == kind and r["item"] in items and r["flow"] == flow and r["option"] == option:
                         sums.setdefault(r["group"], {})
                         sums[r["group"]][r["quarter"]] = sums[r["group"]].get(r["quarter"], 0.0) + r["value_gbp_m"]
-                if kind == "product":
-                    adjusted = {g: seasonal_adjust(v) for g, v in sums.items()}
-                    sa_rows += [{"option": option, "group": g, "flow": flow, "quarter": q,
-                                 "value_gbp_m": round(v[q], 1), "value_sa_gbp_m": round(adjusted[g][q], 1)}
-                                for g, v in sums.items() for q in sorted(v)]
-                    sums = adjusted
-                quarters = sorted({q for v in sums.values() for q in v})
-                data = [{"date": q, **{g: round(sums.get(g, {}).get(q, 0.0) / 1000, 2) for g in groups_of[option]}}
+                rolled = {g: rolling4(v) for g, v in sums.items()}
+                out_rows += [{"kind": kind, "item": slug_part, "option": option, "group": g, "flow": flow,
+                              "quarter": q, "value_gbp_m": round(v[q], 1),
+                              "rolling_4q_gbp_m": round(rolled[g][q], 1) if q in rolled[g] else None}
+                             for g, v in sums.items() for q in sorted(v)]
+                quarters = sorted({q for v in rolled.values() for q in v})
+                data = [{"date": q, **{g: round(rolled.get(g, {}).get(q, 0.0) / 1000, 1) for g in groups_of[option]}}
                         for q in quarters]
-                note = UPPER_BOUND + "Seasonally adjusted. "
+                note = UPPER_BOUND + "Rolling four-quarter totals (each point = the latest four quarters), which remove seasonal swings. "
                 if option == "option1":
                     note += "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. "
                 if kind == "services":
                     note += ("Partner shares from the by-country file are applied to the latest QNA EU and "
-                             "non-EU totals, so these match the EU / non-EU charts; suppressed partner values "
-                             "are interpolated. ")
+                             "non-EU totals; suppressed partner values are interpolated. ")
                 else:
-                    note += ("Products: chips, servers, storage, graphics cards, mobile phones, network "
-                             "equipment, cameras, medical scanners, industrial robots. EU trade is recorded by "
-                             "country of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
+                    note += ("Products: chips, computers and servers, storage, graphics cards, laptops and tablets, "
+                             "mobile phones, network equipment, cameras, medical scanners and diagnostics, "
+                             "vacuum cleaners (incl. robotic), industrial robots. EU trade is recorded by country "
+                             "of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
                 publish(chart(f"ai-trade-{kind}-{slug_part}-{flow}-{option}",
                               f"UK {flow} of {what}, {titles[option]}",
-                              "£ billion per quarter", "line",
+                              "£ billion, rolling four-quarter total", "line",
                               [{"key": g, "label": g} for g in groups_of[option]],
                               data, note, sources[kind]))
-    return sa_rows
+    return out_rows
+
+
+# ---------------------------------------------------------------- 5. summary tables
+
+def product_summary(rows: list[dict], base: str = "2019", latest: str = "2025") -> list[dict]:
+    """Calendar-year change for each product: imports and exports (£bn), units and value
+    per unit. Products created in 2022 use 2022 as their base year."""
+    out = []
+    for p in DEFS["products"]:
+        b = str(p["from"]) if p.get("from") and int(p["from"]) > int(base) else base
+
+        def year(flow, y, field):
+            return sum((r[field] or 0) for r in rows if r["product"] == p["id"] and r["flow"] == flow
+                       and r["quarter"].startswith(y))
+
+        imp_b, imp_l = year("imports", b, "value_gbp_m"), year("imports", latest, "value_gbp_m")
+        exp_b, exp_l = year("exports", b, "value_gbp_m"), year("exports", latest, "value_gbp_m")
+        u_b, u_l = year("imports", b, "units"), year("imports", latest, "units")
+        pct = lambda a, z: round((z / a - 1) * 100) if a else None  # noqa: E731
+        out.append({
+            "product": p["label"], "hs6": " ".join(p["hs6"]), "cpa": p["cpa"], "base_year": b,
+            "imports_base_gbp_bn": round(imp_b / 1000, 2), f"imports_{latest}_gbp_bn": round(imp_l / 1000, 2),
+            "imports_change_pct": pct(imp_b, imp_l),
+            "import_units_change_pct": pct(u_b, u_l) if u_b and u_l else None,
+            "import_value_per_unit_base_gbp": round(imp_b * 1e6 / u_b) if u_b else None,
+            f"import_value_per_unit_{latest}_gbp": round(imp_l * 1e6 / u_l) if u_l else None,
+            "exports_base_gbp_bn": round(exp_b / 1000, 2), f"exports_{latest}_gbp_bn": round(exp_l / 1000, 2),
+            "exports_change_pct": pct(exp_b, exp_l),
+        })
+    return out
+
+
+def write_markdown_tables(summary: list[dict], path: Path) -> None:
+    """Human-readable product summary and ONS coverage, for checking and sharing."""
+    lines = ["# AI-relevant products: summary of changes", "",
+             "Calendar years; imports and exports in £bn (HMRC). Upper bounds: each code also contains "
+             "non-AI items. Products created in the 2022 code revision compare 2022 with 2025.", "",
+             "| Product | Codes | Base | Imports base | Imports 2025 | Change | Units change | £/unit base | £/unit 2025 | Exports base | Exports 2025 | Change |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+    f = lambda v, suf="": "–" if v is None else f"{v:,}{suf}"  # noqa: E731
+    for r in summary:
+        lines.append(f"| {r['product']} | {r['hs6']} | {r['base_year']} | {r['imports_base_gbp_bn']:.2f} | "
+                     f"{r['imports_2025_gbp_bn']:.2f} | {f(r['imports_change_pct'], '%')} | "
+                     f"{f(r['import_units_change_pct'], '%')} | {f(r['import_value_per_unit_base_gbp'])} | "
+                     f"{f(r['import_value_per_unit_2025_gbp'])} | {r['exports_base_gbp_bn']:.2f} | "
+                     f"{r['exports_2025_gbp_bn']:.2f} | {f(r['exports_change_pct'], '%')} |")
+    lines += ["", "# Coverage of the ONS AI product list", "",
+              "| ONS AI product | Covered by | Note |", "|---|---|---|"]
+    labels = {p["id"]: p["label"] for p in DEFS["products"]}
+    for c in DEFS["coverage"]:
+        lines.append(f"| {c['ons']} | {', '.join(labels[i] for i in c['products']) or '–'} | {c.get('note', '')} |")
+    path.write_text("\n".join(lines) + "\n")
 
 
 # ---------------------------------------------------------------- charts
@@ -498,7 +540,10 @@ def build() -> None:
     product_charts(prods)
     by_country = services_by_country() + products_by_country()
     write_csv(by_country, OUT / "ai_trade_by_country.csv")
-    write_csv(country_charts(by_country), OUT / "ai_trade_products_by_country_sa.csv")
+    write_csv(country_charts(by_country), OUT / "ai_trade_by_country_rolling.csv")
+    summary = product_summary(prods)
+    write_csv(summary, OUT / "ai_products_summary.csv")
+    write_markdown_tables(summary, OUT / "ai_products_summary.md")
     for kind in ("goods", "services"):
         for tier in DEFS[f"{kind}_tiers"]:
             last = [r for r in tiers if r["kind"] == kind and r["tier"] == tier]

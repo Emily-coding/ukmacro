@@ -1,0 +1,22 @@
+product,hs6,cpa,base_year,imports_base_gbp_bn,imports_2025_gbp_bn,imports_change_pct,import_units_change_pct,import_value_per_unit_base_gbp,import_value_per_unit_2025_gbp,exports_base_gbp_bn,exports_2025_gbp_bn,exports_change_pct
+Processors and controllers (chips),854231,26.1,2019,0.62,0.73,17,,,,0.52,0.21,-59
+Memory chips,854232,26.1,2019,0.15,0.14,-5,-75,2,7,0.07,0.09,24
+Other integrated circuits (incl. some AI accelerators),854239,26.1,2019,0.52,0.61,18,,,,0.52,0.48,-9
+Processing units (incl. servers),847150,26.2,2019,1.78,5.5,208,-45,247,1389,1.01,1.58,56
+Computer systems,847149,26.2,2019,1.03,0.94,-9,-71,325,1008,0.22,0.25,13
+Other computer units (incl. accelerator units),847180,26.2,2019,0.52,0.93,79,14,72,114,0.52,0.51,-2
+Storage units,847170,26.2,2019,1.3,1.2,-8,-40,85,132,0.51,0.51,1
+Computer electronic assemblies (incl. graphics cards),847330,26.2,2019,1.6,1.19,-26,,,,0.75,0.78,4
+Laptops and tablets,847130,26.2,2019,5.88,6.36,8,-7,282,329,0.86,0.87,1
+Mobile phones (incl. smartphones),851712 851713 851714,26.3,2019,8.26,8.28,0,-11,286,323,1.18,1.32,12
+Smartphones,851713,26.3,2022,9.2,8.22,-11,-4,369,342,1.03,1.24,21
+"Network equipment (switches, routers)",851762,26.3,2019,5.93,6.9,16,,,,2.11,2.73,30
+Semiconductor-based sensors,854151,26.1,2022,0.02,0.01,-10,,,,0.02,0.03,103
+Digital and video cameras,852580 852589,26.7,2019,0.82,1.21,47,16,59,75,0.36,0.4,12
+MRI and ultrasound scanners,901812 901813,26.6,2019,0.18,0.26,45,,,,0.28,0.45,59
+CT scanners,902212,26.6,2019,0.05,0.13,172,372,7757,4466,0.04,0.07,93
+Electro-diagnostic and medical X-ray equipment,901819 902214,26.6,2019,0.32,0.79,149,-64,4031,27910,0.63,0.35,-45
+Vacuum cleaners (incl. robotic),850811,27.5,2019,0.39,0.49,26,42,53,47,0.05,0.07,41
+Industrial robots,847950,28.9,2019,0.07,0.13,93,,,,0.08,0.1,17
+Handling robots,842870,28.2,2022,0.01,0.04,192,,,,0.0,0.02,816
+Unmanned aircraft (drones),880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,30.3,2022,0.07,0.19,160,175,801,759,0.02,0.3,1709

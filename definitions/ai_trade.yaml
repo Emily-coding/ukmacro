@@ -88,22 +88,57 @@ services_series:
 # six digits of the 8-digit code), so no crosswalk is needed. Values, quantities
 # (supplementary units, e.g. number of items) and net mass; no official volumes or
 # prices. `from: 2022` marks codes created in the 2022 HS revision (no earlier series).
+#
+# Inclusion rule: a code is included when the ONS AI product is a type of device with
+# its own trade code (phones, drones, robots, scanners...). It is left out when only
+# "autonomous"/"AI" distinguishes the product within a broad code (cars, ships, trains,
+# armoured vehicles), because then the code is essentially all non-AI. See `coverage`.
 products:
+  # C26: AI chips, servers and storage
   - {id: chips_processors, label: "Processors and controllers (chips)", cpa: "26.1", hs6: ["854231"]}
   - {id: chips_memory, label: "Memory chips", cpa: "26.1", hs6: ["854232"]}
+  - {id: chips_other, label: "Other integrated circuits (incl. some AI accelerators)", cpa: "26.1", hs6: ["854239"]}
   - {id: servers, label: "Processing units (incl. servers)", cpa: "26.2", hs6: ["847150"]}
+  - {id: computer_systems, label: "Computer systems", cpa: "26.2", hs6: ["847149"]}
+  - {id: computer_units_other, label: "Other computer units (incl. accelerator units)", cpa: "26.2", hs6: ["847180"]}
   - {id: storage, label: "Storage units", cpa: "26.2", hs6: ["847170"]}
   - {id: computer_assemblies, label: "Computer electronic assemblies (incl. graphics cards)", cpa: "26.2", hs6: ["847330"]}
+  # C26: other AI-embedded devices (incl. smartphones)
+  - {id: laptops_tablets, label: "Laptops and tablets", cpa: "26.2", hs6: ["847130"]}
   - {id: mobile_phones, label: "Mobile phones (incl. smartphones)", cpa: "26.3", hs6: ["851712", "851713", "851714"]}  # 851712 split into 851713/14 in 2022
   - {id: smartphones, label: "Smartphones", cpa: "26.3", hs6: ["851713"], from: 2022}
   - {id: network_equipment, label: "Network equipment (switches, routers)", cpa: "26.3", hs6: ["851762"]}
+  # C26: AI-enabled sensors, 3D/4D cameras
   - {id: sensors, label: "Semiconductor-based sensors", cpa: "26.1", hs6: ["854151"], from: 2022}
   - {id: cameras, label: "Digital and video cameras", cpa: "26.7", hs6: ["852580", "852589"]}  # 852580 renumbered 852589 in 2022
+  # C26: AI-embedded medical devices
   - {id: mri_ultrasound, label: "MRI and ultrasound scanners", cpa: "26.6", hs6: ["901812", "901813"]}
   - {id: ct_scanners, label: "CT scanners", cpa: "26.6", hs6: ["902212"]}
+  - {id: medical_diagnostics, label: "Electro-diagnostic and medical X-ray equipment", cpa: "26.6", hs6: ["901819", "902214"]}
+  # C27: AI-embedded or autonomous electrical equipment (incl. domestic appliances)
+  - {id: vacuum_cleaners, label: "Vacuum cleaners (incl. robotic)", cpa: "27.5", hs6: ["850811"]}
+  # C28: autonomous robotics
   - {id: robots, label: "Industrial robots", cpa: "28.9", hs6: ["847950"]}
   - {id: handling_robots, label: "Handling robots", cpa: "28.2", hs6: ["842870"], from: 2022}
+  # C30.3: autonomous drones
   - {id: drones, label: "Unmanned aircraft (drones)", cpa: "30.3", hs6: ["880621", "880622", "880623", "880624", "880629", "880691", "880692", "880693", "880694", "880699"], from: 2022}
+
+# Every AI product in the ONS article, and how it is covered by the product layer.
+coverage:
+  - {ons: "AI chips, servers and storage manufacturing (C26)", products: [chips_processors, chips_memory, chips_other, servers, computer_systems, computer_units_other, storage, computer_assemblies]}
+  - {ons: "AI-enabled sensors, 3D and 4D cameras (C26)", products: [sensors, cameras], note: "sensors only from 2022 (new code)"}
+  - {ons: "AI embedded medical devices (C26)", products: [mri_ultrasound, ct_scanners, medical_diagnostics]}
+  - {ons: "Other AI embedded electrical products, incl. smartphones (C26)", products: [mobile_phones, smartphones, laptops_tablets, network_equipment]}
+  - {ons: "AI embedded or autonomous electrical equipment, incl. domestic appliances (C27)", products: [vacuum_cleaners], note: "only robotic appliances have an identifiable code (inside vacuum cleaners); other smart appliances cannot be separated"}
+  - {ons: "Autonomous robotics (C28)", products: [robots, handling_robots], note: "handling robots only from 2022 (new code)"}
+  - {ons: "Autonomous motor vehicles, civilian (C29)", products: [], note: "not covered: no code distinguishes autonomous cars from all cars"}
+  - {ons: "Autonomous water-based drones and boats (C30.1)", products: [], note: "not covered: no specific code"}
+  - {ons: "Autonomous drones, civilian or military (C30.3)", products: [drones], note: "only from 2022 (new code)"}
+  - {ons: "Autonomous (driverless) trains (C30 other)", products: [], note: "not covered: no specific code"}
+  - {ons: "Autonomous military fighting vehicles (C30 other)", products: [], note: "not covered: code 8710 is all armoured vehicles (defence purchases, not AI)"}
+  - {ons: "Construction of data centres (F41-F43)", products: [], note: "not goods trade"}
+  - {ons: "Robotaxi and drone delivery services (H49.3-H49.5, H53)", products: [], note: "services; not operating in 2023"}
+  - {ons: "AI software, IT, information, consulting, R&D, other services (J, M, N, P, Q)", products: [], note: "services: covered by the services tiers"}
 
 # --------------------------------------------------------------------- countries
 # Partner groups for the country split (services by country, and products).
