@@ -1,13 +1,22 @@
-# Key AI dates, drawn as thin vertical lines on the AI charts (trade and BICS).
+# Key dates, drawn as thin vertical lines on the AI charts (trade and BICS).
 # Add or edit freely: date (YYYY-MM-DD) and a short label. A line is drawn in the
 # period containing the date; dates outside a chart's range are skipped.
+# The two shocks before ChatGPT mark the start of the inflationary impulse, which
+# lifts current-price trade values and implied prices independently of AI.
 events:
+  - date: 2020-03-23
+    label: Covid-19 lockdown
+    source: UK government announcement, 23 March 2020
+  - date: 2022-02-24
+    label: Russia invades Ukraine
+    source: 24 February 2022
   - date: 2022-11-30
-    label: ChatGPT public launch
+    label: ChatGPT launch
     source: OpenAI announcement, 30 November 2022
-  - date: 2026-06-09
-    label: Mythos-class model public (Claude Fable 5)
-    source: >-
-      Wikipedia "Claude Mythos", citing CNBC and Politico, 9 June 2026. Claude Mythos
-      itself was not publicly released (preview to selected firms via Project
-      Glasswing, 7 April 2026); Claude Fable 5, a Mythos-class model, was.
+# Parked (not drawn): too recent to show anything yet. Uncomment to bring it back.
+#  - date: 2026-06-09
+#    label: Mythos-class model public (Claude Fable 5)
+#    source: >-
+#      Wikipedia "Claude Mythos", citing CNBC and Politico, 9 June 2026. Claude Mythos
+#      itself was not publicly released (preview to selected firms via Project
+#      Glasswing, 7 April 2026); Claude Fable 5, a Mythos-class model, was.

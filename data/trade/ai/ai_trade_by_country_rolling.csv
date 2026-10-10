@@ -1059,7 +1059,7 @@ product,total,option1,US,exports,2023-Q3,264.6,988.8
 product,total,option1,US,exports,2023-Q4,268.2,1009.1
 product,total,option1,US,exports,2024-Q1,251.6,1039.8
 product,total,option1,US,exports,2024-Q2,260.0,1044.4
-product,total,option1,US,exports,2024-Q3,248.1,1027.9
+product,total,option1,US,exports,2024-Q3,248.1,1027.8
 product,total,option1,US,exports,2024-Q4,256.5,1016.2
 product,total,option1,US,exports,2025-Q1,246.3,1010.9
 product,total,option1,US,exports,2025-Q2,259.9,1010.8
@@ -1230,7 +1230,7 @@ product,total,option1,US,imports,2024-Q2,403.9,1861.3
 product,total,option1,US,imports,2024-Q3,651.2,2005.1
 product,total,option1,US,imports,2024-Q4,782.2,2307.4
 product,total,option1,US,imports,2025-Q1,776.7,2614.1
-product,total,option1,US,imports,2025-Q2,716.0,2926.1
+product,total,option1,US,imports,2025-Q2,716.0,2926.2
 product,total,option1,US,imports,2025-Q3,943.9,3218.8
 product,total,option1,US,imports,2025-Q4,781.1,3217.7
 product,total,option1,US,imports,2026-Q1,729.4,3170.4
@@ -1262,7 +1262,7 @@ product,total,option1,East Asia,imports,2021-Q4,5246.2,16758.1
 product,total,option1,East Asia,imports,2022-Q1,4129.8,16775.8
 product,total,option1,East Asia,imports,2022-Q2,3956.8,17070.5
 product,total,option1,East Asia,imports,2022-Q3,4594.7,17927.6
-product,total,option1,East Asia,imports,2022-Q4,4739.5,17420.9
+product,total,option1,East Asia,imports,2022-Q4,4739.5,17420.8
 product,total,option1,East Asia,imports,2023-Q1,3525.0,16816.0
 product,total,option1,East Asia,imports,2023-Q2,3157.7,16016.9
 product,total,option1,East Asia,imports,2023-Q3,3361.3,14783.5

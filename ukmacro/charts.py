@@ -69,7 +69,7 @@ THEMES = {
         "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
 }
 DEFAULT_THEME = "blue-amber"
-STYLE_VERSION = 8  # bump when the drawing code changes, so every PNG is redrawn
+STYLE_VERSION = 9  # bump when the drawing code changes, so every PNG is redrawn
 
 # Figure size. Layout below is in centimetres (margins) and scales with the width
 # (how much text fits per line), so changing the size keeps the layout intact.
@@ -237,28 +237,43 @@ def _event_index(event_date: str, dates: list[str]) -> int | None:
 
 
 def _events(ax, chart: dict, dates: list[str]) -> None:
-    """Thin vertical reference lines for chart["events"] ([{date, label}]), labelled at
-    the top of the plot: to the right of the line, or to the left near the right edge.
-    A label that would overlap another moves down a row."""
-    to_pt = 72 / ax.figure.dpi
+    """Thin vertical reference lines for chart["events"] ([{date, label}]). Labels sit
+    in a band above the data (the y-axis is extended to make room), beside their line:
+    to the right, or to the left near the right edge. A label that would overlap another
+    moves down a row, and labels have a background so other lines don't run through them."""
+    events = [(i, ev["label"]) for ev in chart.get("events") or []
+              if (i := _event_index(str(ev["date"]), dates)) is not None]
+    if not events:
+        return
+    fig = ax.figure
+    fig.canvas.draw()  # final axis limits and a renderer to measure the labels with
+    renderer = fig.canvas.get_renderer()
+    to_pt = 72 / fig.dpi
     rows: list[list[tuple[float, float]]] = []  # text spans (points) already used on each row
-    for ev in chart.get("events") or []:
-        i = _event_index(str(ev["date"]), dates)
-        if i is None:
-            continue
+    placed = []
+    for i, label in events:
         ax.axvline(i, color=MUTED, linewidth=0.9, zorder=1)
         right_side = i > 0.7 * (len(dates) - 1)
         x = ax.transData.transform((i, 0))[0] * to_pt
-        width = len(ev["label"]) * 5.2  # rough width of the label at 9.5pt
+        probe = ax.text(0, 0, label, fontsize=9.5)
+        width = probe.get_window_extent(renderer).width * to_pt + 6  # plus a little space
+        probe.remove()
         span = (x - 4 - width, x - 4) if right_side else (x + 4, x + 4 + width)
         row = next((r for r, used in enumerate(rows)
                     if all(span[1] < a or span[0] > b for a, b in used)), len(rows))
         if row == len(rows):
             rows.append([])
         rows[row].append(span)
-        ax.annotate(ev["label"], (i, 1), xycoords=("data", "axes fraction"),
+        placed.append((i, label, right_side, row))
+    # extend the top of the y-axis so the data stay below the label band
+    band = (6 + 13 * len(rows) + 4) / (ax.get_window_extent(renderer).height * to_pt)
+    lo, hi = ax.get_ylim()
+    ax.set_ylim(lo, (hi - band * lo) / (1 - band))
+    for i, label, right_side, row in placed:
+        ax.annotate(label, (i, 1), xycoords=("data", "axes fraction"),
                     xytext=(-4 if right_side else 4, -4 - 13 * row), textcoords="offset points",
-                    ha="right" if right_side else "left", va="top", fontsize=9.5, color=MUTED)
+                    ha="right" if right_side else "left", va="top", fontsize=9.5, color=MUTED,
+                    zorder=4, bbox={"boxstyle": "square,pad=0.1", "fc": SURFACE, "ec": "none"})
 
 
 def _save(fig, path: Path) -> Path:
