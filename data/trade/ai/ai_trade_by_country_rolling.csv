@@ -1059,7 +1059,7 @@ product,total,option1,US,exports,2023-Q3,264.6,988.8
 product,total,option1,US,exports,2023-Q4,268.2,1009.1
 product,total,option1,US,exports,2024-Q1,251.6,1039.8
 product,total,option1,US,exports,2024-Q2,260.0,1044.4
-product,total,option1,US,exports,2024-Q3,248.1,1027.8
+product,total,option1,US,exports,2024-Q3,248.1,1027.9
 product,total,option1,US,exports,2024-Q4,256.5,1016.2
 product,total,option1,US,exports,2025-Q1,246.3,1010.9
 product,total,option1,US,exports,2025-Q2,259.9,1010.8
@@ -1230,7 +1230,7 @@ product,total,option1,US,imports,2024-Q2,403.9,1861.3
 product,total,option1,US,imports,2024-Q3,651.2,2005.1
 product,total,option1,US,imports,2024-Q4,782.2,2307.4
 product,total,option1,US,imports,2025-Q1,776.7,2614.1
-product,total,option1,US,imports,2025-Q2,716.0,2926.2
+product,total,option1,US,imports,2025-Q2,716.0,2926.1
 product,total,option1,US,imports,2025-Q3,943.9,3218.8
 product,total,option1,US,imports,2025-Q4,781.1,3217.7
 product,total,option1,US,imports,2026-Q1,729.4,3170.4
@@ -1262,7 +1262,7 @@ product,total,option1,East Asia,imports,2021-Q4,5246.2,16758.1
 product,total,option1,East Asia,imports,2022-Q1,4129.8,16775.8
 product,total,option1,East Asia,imports,2022-Q2,3956.8,17070.5
 product,total,option1,East Asia,imports,2022-Q3,4594.7,17927.6
-product,total,option1,East Asia,imports,2022-Q4,4739.5,17420.8
+product,total,option1,East Asia,imports,2022-Q4,4739.5,17420.9
 product,total,option1,East Asia,imports,2023-Q1,3525.0,16816.0
 product,total,option1,East Asia,imports,2023-Q2,3157.7,16016.9
 product,total,option1,East Asia,imports,2023-Q3,3361.3,14783.5
@@ -1390,7 +1390,7 @@ product,total,option1-origin,US,imports,2022-Q2,546.7,1913.2
 product,total,option1-origin,US,imports,2022-Q3,578.6,2046.2
 product,total,option1-origin,US,imports,2022-Q4,655.6,2257.2
 product,total,option1-origin,US,imports,2023-Q1,735.5,2516.4
-product,total,option1-origin,US,imports,2023-Q2,645.8,2615.4
+product,total,option1-origin,US,imports,2023-Q2,645.8,2615.5
 product,total,option1-origin,US,imports,2023-Q3,597.9,2634.8
 product,total,option1-origin,US,imports,2023-Q4,561.6,2540.8
 product,total,option1-origin,US,imports,2024-Q1,566.5,2371.7
@@ -1400,7 +1400,7 @@ product,total,option1-origin,US,imports,2024-Q4,888.8,2723.8
 product,total,option1-origin,US,imports,2025-Q1,942.7,3100.1
 product,total,option1-origin,US,imports,2025-Q2,856.9,3458.9
 product,total,option1-origin,US,imports,2025-Q3,1090.1,3778.6
-product,total,option1-origin,US,imports,2025-Q4,886.1,3775.8
+product,total,option1-origin,US,imports,2025-Q4,886.1,3775.9
 product,total,option1-origin,US,imports,2026-Q1,874.5,3707.6
 product,total,option1-origin,US,imports,2026-Q2,808.8,3659.5
 product,total,option1-origin,East Asia,imports,2016-Q1,2524.5,
@@ -1466,7 +1466,7 @@ product,total,option1-origin,Rest of world,imports,2020-Q2,698.2,3660.7
 product,total,option1-origin,Rest of world,imports,2020-Q3,1002.4,3678.8
 product,total,option1-origin,Rest of world,imports,2020-Q4,910.8,3503.8
 product,total,option1-origin,Rest of world,imports,2021-Q1,887.3,3498.8
-product,total,option1-origin,Rest of world,imports,2021-Q2,764.4,3564.9
+product,total,option1-origin,Rest of world,imports,2021-Q2,764.4,3565.0
 product,total,option1-origin,Rest of world,imports,2021-Q3,937.4,3500.0
 product,total,option1-origin,Rest of world,imports,2021-Q4,970.8,3560.0
 product,total,option1-origin,Rest of world,imports,2022-Q1,1122.7,3795.3
@@ -1478,12 +1478,12 @@ product,total,option1-origin,Rest of world,imports,2023-Q2,1307.1,5520.6
 product,total,option1-origin,Rest of world,imports,2023-Q3,1146.0,5389.4
 product,total,option1-origin,Rest of world,imports,2023-Q4,1164.8,5132.0
 product,total,option1-origin,Rest of world,imports,2024-Q1,1306.1,4923.9
-product,total,option1-origin,Rest of world,imports,2024-Q2,1215.0,4831.8
+product,total,option1-origin,Rest of world,imports,2024-Q2,1215.0,4831.9
 product,total,option1-origin,Rest of world,imports,2024-Q3,1293.9,4979.7
 product,total,option1-origin,Rest of world,imports,2024-Q4,1803.6,5618.5
 product,total,option1-origin,Rest of world,imports,2025-Q1,1926.6,6239.1
 product,total,option1-origin,Rest of world,imports,2025-Q2,1560.5,6584.6
-product,total,option1-origin,Rest of world,imports,2025-Q3,2039.8,7330.5
+product,total,option1-origin,Rest of world,imports,2025-Q3,2039.8,7330.6
 product,total,option1-origin,Rest of world,imports,2025-Q4,2264.1,7791.0
 product,total,option1-origin,Rest of world,imports,2026-Q1,1873.1,7737.5
 product,total,option1-origin,Rest of world,imports,2026-Q2,2412.7,8589.6
@@ -1549,14 +1549,14 @@ product,imf-hardware,option1,US,exports,2020-Q1,90.0,453.1
 product,imf-hardware,option1,US,exports,2020-Q2,89.2,424.2
 product,imf-hardware,option1,US,exports,2020-Q3,95.1,409.1
 product,imf-hardware,option1,US,exports,2020-Q4,121.1,395.3
-product,imf-hardware,option1,US,exports,2021-Q1,98.1,403.5
+product,imf-hardware,option1,US,exports,2021-Q1,98.1,403.4
 product,imf-hardware,option1,US,exports,2021-Q2,111.2,425.5
 product,imf-hardware,option1,US,exports,2021-Q3,109.3,439.7
 product,imf-hardware,option1,US,exports,2021-Q4,116.7,435.3
 product,imf-hardware,option1,US,exports,2022-Q1,94.8,432.0
 product,imf-hardware,option1,US,exports,2022-Q2,110.1,430.9
 product,imf-hardware,option1,US,exports,2022-Q3,122.2,443.8
-product,imf-hardware,option1,US,exports,2022-Q4,121.9,449.0
+product,imf-hardware,option1,US,exports,2022-Q4,121.9,448.9
 product,imf-hardware,option1,US,exports,2023-Q1,108.6,462.8
 product,imf-hardware,option1,US,exports,2023-Q2,120.5,473.2
 product,imf-hardware,option1,US,exports,2023-Q3,114.4,465.4
@@ -1674,7 +1674,7 @@ product,imf-hardware,option1,EU,imports,2019-Q4,853.5,3396.3
 product,imf-hardware,option1,EU,imports,2020-Q1,852.8,3300.1
 product,imf-hardware,option1,EU,imports,2020-Q2,739.6,3266.8
 product,imf-hardware,option1,EU,imports,2020-Q3,765.4,3211.3
-product,imf-hardware,option1,EU,imports,2020-Q4,849.1,3207.0
+product,imf-hardware,option1,EU,imports,2020-Q4,849.1,3206.9
 product,imf-hardware,option1,EU,imports,2021-Q1,684.0,3038.2
 product,imf-hardware,option1,EU,imports,2021-Q2,600.2,2898.8
 product,imf-hardware,option1,EU,imports,2021-Q3,519.3,2652.7
@@ -1725,7 +1725,7 @@ product,imf-hardware,option1,US,imports,2022-Q1,164.1,692.5
 product,imf-hardware,option1,US,imports,2022-Q2,201.8,736.2
 product,imf-hardware,option1,US,imports,2022-Q3,242.2,790.2
 product,imf-hardware,option1,US,imports,2022-Q4,289.2,897.3
-product,imf-hardware,option1,US,imports,2023-Q1,284.9,1018.1
+product,imf-hardware,option1,US,imports,2023-Q1,284.9,1018.0
 product,imf-hardware,option1,US,imports,2023-Q2,238.5,1054.7
 product,imf-hardware,option1,US,imports,2023-Q3,210.2,1022.8
 product,imf-hardware,option1,US,imports,2023-Q4,188.8,922.4
@@ -1802,7 +1802,7 @@ product,imf-hardware,option1,Rest of world,imports,2020-Q2,101.2,538.6
 product,imf-hardware,option1,Rest of world,imports,2020-Q3,151.8,556.2
 product,imf-hardware,option1,Rest of world,imports,2020-Q4,137.3,553.8
 product,imf-hardware,option1,Rest of world,imports,2021-Q1,104.9,495.3
-product,imf-hardware,option1,Rest of world,imports,2021-Q2,121.0,515.0
+product,imf-hardware,option1,Rest of world,imports,2021-Q2,121.0,515.1
 product,imf-hardware,option1,Rest of world,imports,2021-Q3,107.9,471.1
 product,imf-hardware,option1,Rest of world,imports,2021-Q4,114.1,448.0
 product,imf-hardware,option1,Rest of world,imports,2022-Q1,137.3,480.4
@@ -1962,7 +1962,7 @@ product,imf-hardware,option1-origin,Rest of world,imports,2018-Q2,212.0,832.1
 product,imf-hardware,option1-origin,Rest of world,imports,2018-Q3,197.5,852.6
 product,imf-hardware,option1-origin,Rest of world,imports,2018-Q4,275.2,905.1
 product,imf-hardware,option1-origin,Rest of world,imports,2019-Q1,222.3,907.1
-product,imf-hardware,option1-origin,Rest of world,imports,2019-Q2,177.0,872.1
+product,imf-hardware,option1-origin,Rest of world,imports,2019-Q2,177.0,872.0
 product,imf-hardware,option1-origin,Rest of world,imports,2019-Q3,177.8,852.4
 product,imf-hardware,option1-origin,Rest of world,imports,2019-Q4,188.3,765.4
 product,imf-hardware,option1-origin,Rest of world,imports,2020-Q1,209.3,752.4
@@ -1984,7 +1984,7 @@ product,imf-hardware,option1-origin,Rest of world,imports,2023-Q4,182.1,737.0
 product,imf-hardware,option1-origin,Rest of world,imports,2024-Q1,218.5,765.3
 product,imf-hardware,option1-origin,Rest of world,imports,2024-Q2,199.1,770.2
 product,imf-hardware,option1-origin,Rest of world,imports,2024-Q3,231.6,831.3
-product,imf-hardware,option1-origin,Rest of world,imports,2024-Q4,244.9,894.2
+product,imf-hardware,option1-origin,Rest of world,imports,2024-Q4,244.9,894.1
 product,imf-hardware,option1-origin,Rest of world,imports,2025-Q1,420.5,1096.1
 product,imf-hardware,option1-origin,Rest of world,imports,2025-Q2,390.5,1287.6
 product,imf-hardware,option1-origin,Rest of world,imports,2025-Q3,480.1,1536.1
