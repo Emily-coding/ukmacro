@@ -1,0 +1,88 @@
+{
+ "slug": "ai-trade-uk-at-us-pace",
+ "category": "trade",
+ "title": "If the UK had matched the US: \u00a38.6bn more AI hardware imports in 2025",
+ "type": "line",
+ "freq": "A",
+ "units": "UK imports of AI compute hardware, \u00a3 billion",
+ "source": "HMRC Overseas Trade Statistics; UN Comtrade; ukmacro calculations",
+ "note": "AI compute hardware = IMF AI hardware basket (servers, storage, computer units, GPU boards and other assemblies, processor and memory chips, chip-making machines). The counterfactual applies US import growth since 2022 (US-reported imports, in dollars) to the UK's 2022 level. Much UK AI use runs on US data centres and arrives as services, so this overstates the gap in AI use. ",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK, actual"
+  },
+  {
+   "key": "cf",
+   "label": "UK at the US growth rate since 2022"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2025",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016",
+   "uk": 5.7
+  },
+  {
+   "date": "2017",
+   "uk": 5.6
+  },
+  {
+   "date": "2018",
+   "uk": 6.4
+  },
+  {
+   "date": "2019",
+   "uk": 6.1
+  },
+  {
+   "date": "2020",
+   "uk": 6.0
+  },
+  {
+   "date": "2021",
+   "uk": 5.2
+  },
+  {
+   "date": "2022",
+   "uk": 7.4,
+   "cf": 7.4
+  },
+  {
+   "date": "2023",
+   "uk": 7.2,
+   "cf": 6.4
+  },
+  {
+   "date": "2024",
+   "uk": 7.3,
+   "cf": 10.1
+  },
+  {
+   "date": "2025",
+   "uk": 10.0,
+   "cf": 18.6
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

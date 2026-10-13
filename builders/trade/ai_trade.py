@@ -32,6 +32,7 @@ Outputs:
     data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
     data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
+    data/trade/ai/ai_uk_at_us_pace.csv    UK AI hardware imports at the US growth rate (thought experiment)
     data/trade/ai/ai_uk_stack.csv         UK AI stack by CMA level: inputs, model development, deployment
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
@@ -979,6 +980,49 @@ def cma_stack_charts(components: list[dict], stack: list[dict], base: str = "201
     return out
 
 
+def us_pace_chart(components: list[dict], base: str = "2022") -> list[dict]:
+    """Thought experiment: UK imports of AI compute hardware (IMF basket) if they had grown
+    as fast as US imports since `base` (ChatGPT's launch year). US imports from UN Comtrade
+    (as the US reports them, $), UK from HMRC (£); growth is compared in each country's own
+    currency, so exchange rates don't enter. Annual. Returns rows for a CSV."""
+    import time
+    uk: dict = {}
+    for r in components:
+        if r["flow"] == "imports":
+            uk[r["year"]] = uk.get(r["year"], 0.0) + r["value_gbp_bn"]
+    us: dict = {}
+    try:
+        for y in sorted(uk):
+            v = comtrade.world_total(842, DEFS["imf_hardware"]["hs6"], y)
+            if v is not None:
+                us[y] = v / 1e9
+            time.sleep(6)   # Comtrade's preview rate limit
+    except Exception as e:  # noqa: BLE001 - skip, keep the last published version
+        print(f"[ai-trade] Comtrade unavailable, US-pace chart skipped: {e}")
+        return []
+    years = [y for y in sorted(uk) if y in us]
+    rows, data = [], []
+    for y in years:
+        cf = uk[base] * us[y] / us[base] if y >= base else None
+        rows.append({"year": y, "uk_actual_gbp_bn": round(uk[y], 2), "us_imports_usd_bn": round(us[y], 1),
+                     "uk_at_us_pace_gbp_bn": round(cf, 2) if cf is not None else None})
+        data.append({"date": y, "uk": round(uk[y], 1), **({"cf": round(cf, 1)} if cf is not None else {})})
+    last = years[-1]
+    gap = uk[base] * us[last] / us[base] - uk[last]
+    c = chart("ai-trade-uk-at-us-pace",
+              f"If the UK had matched the US: £{gap:.1f}bn more AI hardware imports in {last}",
+              "UK imports of AI compute hardware, £ billion", "line",
+              [{"key": "uk", "label": "UK, actual"}, {"key": "cf", "label": f"UK at the US growth rate since {base}"}],
+              data,
+              "AI compute hardware = IMF AI hardware basket (servers, storage, computer units, GPU boards and "
+              f"other assemblies, processor and memory chips, chip-making machines). The counterfactual applies "
+              f"US import growth since {base} (US-reported imports, in dollars) to the UK's {base} level. Much "
+              "UK AI use runs on US data centres and arrives as services, so this overstates the gap in AI use. ",
+              "HMRC Overseas Trade Statistics; UN Comtrade; ukmacro calculations", freq="A")
+    publish(c)
+    return rows
+
+
 # ---------------------------------------------------------------- 4c. chip supply chain
 
 SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "Germany", "MX": "Mexico",
@@ -1244,6 +1288,9 @@ def build() -> None:
     stack = ai_stack_charts(mq, prods, imf_quarterly, tiers)
     write_csv(stack, OUT / "ai_stack.csv")
     write_csv(cma_stack_charts(components, stack), OUT / "ai_uk_stack.csv")
+    pace = us_pace_chart(components)
+    if pace:
+        write_csv(pace, OUT / "ai_uk_at_us_pace.csv")
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     if hub_trade() is not None:
         write_csv(hub_summary(), OUT / "ai_hub_origins.csv")

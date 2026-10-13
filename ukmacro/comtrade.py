@@ -43,3 +43,12 @@ def annual(reporter: int, hs6: list[str], year: str, pause: float = 6.0) -> dict
                     out[key] = out.get(key, 0.0) + (r["primaryValue"] or 0)
             time.sleep(pause)   # stay under the preview's rate limit
     return out
+
+
+def world_total(reporter: int, hs6: list[str], year: str, flow: str = "M") -> float | None:
+    """A reporter's total trade with the world in a set of HS6 codes in one year ($),
+    imports ("M") or exports ("X"); None if the year isn't reported yet. One request."""
+    d = get_json(f"{API}?reporterCode={reporter}&flowCode={flow}&partnerCode=0&period={year}"
+                 f"&cmdCode={','.join(hs6)}&partner2Code=0&customsCode=C00&motCode=0", timeout=120)
+    rows = d.get("data") or []
+    return sum(r["primaryValue"] or 0 for r in rows) if rows else None
