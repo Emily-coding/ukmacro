@@ -455,22 +455,19 @@ def imf_price_charts(mq: dict, prods: list[dict]) -> list[dict]:
             a[0] += r["value_gbp_m"] * 1e6
             a[1] += r["units"] or 0
     data = {}
-    for flow in ("imports", "exports"):
-        qs = sorted(q for f, q in agg if f == flow)
-        for i in range(3, len(qs)):
-            v = sum(agg[(flow, q)][0] for q in qs[i - 3:i + 1])
-            u = sum(agg[(flow, q)][1] for q in qs[i - 3:i + 1])
-            if u:
-                data.setdefault(qs[i], {"date": qs[i]})[flow] = round(v / u)
-                rows.append({"measure": "server_value_per_unit_gbp", "item": "HS 847150", "flow": flow,
-                             "quarter": qs[i], "value": round(v / u)})
+    for (flow, q), (v, u) in sorted(agg.items(), key=lambda kv: kv[0][1]):
+        if u:
+            data.setdefault(q, {"date": q})[flow] = round(v / u)
+            rows.append({"measure": "server_value_per_unit_gbp", "item": "HS 847150", "flow": flow,
+                         "quarter": q, "value": round(v / u)})
     publish(chart("ai-trade-imf-hardware-server-unit-values",
                   "Average value per server in UK trade",
-                  "£ per unit, rolling four quarters", "line",
+                  "£ per unit, quarterly", "line",
                   [{"key": "imports", "label": "Imports"}, {"key": "exports", "label": "Exports"}],
                   [data[q] for q in sorted(data)],
                   "HS 847150 (processing units, incl. servers), the largest item in the IMF AI hardware "
-                  "basket. Value / supplementary units over the latest four quarters. Not a like-for-like "
+                  "basket. Value / supplementary units each quarter; not seasonally adjusted (HMRC publishes "
+                  "no seasonally adjusted series at this level). Not a like-for-like "
                   "price: it rises when the mix shifts towards expensive units such as GPU servers. ",
                   "HMRC Overseas Trade Statistics; ukmacro calculations"))
     return rows

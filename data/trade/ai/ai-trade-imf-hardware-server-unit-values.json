@@ -4,9 +4,9 @@
  "title": "Average value per server in UK trade",
  "type": "line",
  "freq": "Q",
- "units": "\u00a3 per unit, rolling four quarters",
+ "units": "\u00a3 per unit, quarterly",
  "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
- "note": "HS 847150 (processing units, incl. servers), the largest item in the IMF AI hardware basket. Value / supplementary units over the latest four quarters. Not a like-for-like price: it rises when the mix shifts towards expensive units such as GPU servers. ",
+ "note": "HS 847150 (processing units, incl. servers), the largest item in the IMF AI hardware basket. Value / supplementary units each quarter; not seasonally adjusted (HMRC publishes no seasonally adjusted series at this level). Not a like-for-like price: it rises when the mix shifts towards expensive units such as GPU servers. ",
  "series": [
   {
    "key": "imports",
@@ -35,199 +35,214 @@
  "status": "ok",
  "data": [
   {
+   "date": "2016-Q1",
+   "exports": 181,
+   "imports": 444
+  },
+  {
+   "date": "2016-Q2",
+   "exports": 302,
+   "imports": 413
+  },
+  {
+   "date": "2016-Q3",
+   "exports": 305,
+   "imports": 119
+  },
+  {
    "date": "2016-Q4",
-   "imports": 249,
-   "exports": 268
+   "exports": 317,
+   "imports": 380
   },
   {
    "date": "2017-Q1",
-   "imports": 240,
-   "exports": 277
+   "exports": 201,
+   "imports": 349
   },
   {
    "date": "2017-Q2",
-   "imports": 232,
-   "exports": 231
+   "exports": 152,
+   "imports": 299
   },
   {
    "date": "2017-Q3",
-   "imports": 286,
-   "exports": 188
+   "exports": 134,
+   "imports": 206
   },
   {
    "date": "2017-Q4",
-   "imports": 163,
-   "exports": 166
+   "exports": 187,
+   "imports": 82
   },
   {
    "date": "2018-Q1",
-   "imports": 143,
-   "exports": 164
+   "exports": 182,
+   "imports": 144
   },
   {
    "date": "2018-Q2",
-   "imports": 114,
-   "exports": 170
+   "exports": 179,
+   "imports": 94
   },
   {
    "date": "2018-Q3",
-   "imports": 112,
-   "exports": 174
+   "exports": 147,
+   "imports": 161
   },
   {
    "date": "2018-Q4",
-   "imports": 142,
-   "exports": 150
+   "exports": 112,
+   "imports": 252
   },
   {
    "date": "2019-Q1",
-   "imports": 151,
-   "exports": 147
+   "exports": 162,
+   "imports": 191
   },
   {
    "date": "2019-Q2",
-   "imports": 218,
-   "exports": 158
+   "exports": 214,
+   "imports": 366
   },
   {
    "date": "2019-Q3",
-   "imports": 246,
-   "exports": 161
+   "exports": 164,
+   "imports": 240
   },
   {
    "date": "2019-Q4",
-   "imports": 247,
-   "exports": 179
+   "exports": 183,
+   "imports": 257
   },
   {
    "date": "2020-Q1",
-   "imports": 281,
-   "exports": 177
+   "exports": 153,
+   "imports": 293
   },
   {
    "date": "2020-Q2",
-   "imports": 258,
-   "exports": 168
+   "exports": 171,
+   "imports": 247
   },
   {
    "date": "2020-Q3",
-   "imports": 259,
-   "exports": 162
+   "exports": 142,
+   "imports": 243
   },
   {
    "date": "2020-Q4",
-   "imports": 244,
-   "exports": 167
+   "exports": 214,
+   "imports": 202
   },
   {
    "date": "2021-Q1",
-   "imports": 235,
-   "exports": 173
+   "exports": 175,
+   "imports": 260
   },
   {
    "date": "2021-Q2",
-   "imports": 230,
-   "exports": 189
+   "exports": 242,
+   "imports": 228
   },
   {
    "date": "2021-Q3",
-   "imports": 230,
-   "exports": 206
+   "exports": 195,
+   "imports": 250
   },
   {
    "date": "2021-Q4",
-   "imports": 267,
-   "exports": 213
+   "exports": 242,
+   "imports": 356
   },
   {
    "date": "2022-Q1",
-   "imports": 299,
-   "exports": 228
+   "exports": 235,
+   "imports": 375
   },
   {
    "date": "2022-Q2",
-   "imports": 376,
-   "exports": 221
+   "exports": 213,
+   "imports": 520
   },
   {
    "date": "2022-Q3",
-   "imports": 468,
-   "exports": 228
+   "exports": 226,
+   "imports": 584
   },
   {
    "date": "2022-Q4",
-   "imports": 541,
-   "exports": 223
+   "exports": 219,
+   "imports": 680
   },
   {
    "date": "2023-Q1",
-   "imports": 587,
-   "exports": 225
+   "exports": 247,
+   "imports": 558
   },
   {
    "date": "2023-Q2",
-   "imports": 518,
-   "exports": 189
+   "exports": 116,
+   "imports": 338
   },
   {
    "date": "2023-Q3",
-   "imports": 468,
-   "exports": 153
+   "exports": 101,
+   "imports": 387
   },
   {
    "date": "2023-Q4",
-   "imports": 374,
-   "exports": 131
+   "exports": 121,
+   "imports": 281
   },
   {
    "date": "2024-Q1",
-   "imports": 349,
-   "exports": 104
+   "exports": 85,
+   "imports": 414
   },
   {
    "date": "2024-Q2",
-   "imports": 394,
-   "exports": 102
+   "exports": 107,
+   "imports": 602
   },
   {
    "date": "2024-Q3",
-   "imports": 500,
-   "exports": 114
+   "exports": 171,
+   "imports": 874
   },
   {
    "date": "2024-Q4",
-   "imports": 690,
-   "exports": 107
+   "exports": 100,
+   "imports": 932
   },
   {
    "date": "2025-Q1",
-   "imports": 952,
-   "exports": 133
+   "exports": 184,
+   "imports": 1531
   },
   {
    "date": "2025-Q2",
-   "imports": 1084,
-   "exports": 144
+   "exports": 156,
+   "imports": 1154
   },
   {
    "date": "2025-Q3",
-   "imports": 1268,
-   "exports": 137
+   "exports": 132,
+   "imports": 1534
   },
   {
    "date": "2025-Q4",
-   "imports": 1389,
-   "exports": 184
+   "exports": 262,
+   "imports": 1357
   },
   {
    "date": "2026-Q1",
-   "imports": 1474,
-   "exports": 301
+   "exports": 668,
+   "imports": 1867
   },
   {
    "date": "2026-Q2",
-   "imports": 1671,
-   "exports": 361
+   "exports": 448,
+   "imports": 1917
   }
  ],
  "theme": "blue-amber",
