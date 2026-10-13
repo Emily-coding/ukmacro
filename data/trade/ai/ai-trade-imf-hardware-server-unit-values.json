@@ -1,0 +1,239 @@
+{
+ "slug": "ai-trade-imf-hardware-server-unit-values",
+ "category": "trade",
+ "title": "Average value per server in UK trade",
+ "type": "line",
+ "freq": "Q",
+ "units": "\u00a3 per unit, rolling four quarters",
+ "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
+ "note": "HS 847150 (processing units, incl. servers), the largest item in the IMF AI hardware basket. Value / supplementary units over the latest four quarters. Not a like-for-like price: it rises when the mix shifts towards expensive units such as GPU servers. ",
+ "series": [
+  {
+   "key": "imports",
+   "label": "Imports"
+  },
+  {
+   "key": "exports",
+   "label": "Exports"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016-Q4",
+   "imports": 249,
+   "exports": 268
+  },
+  {
+   "date": "2017-Q1",
+   "imports": 240,
+   "exports": 277
+  },
+  {
+   "date": "2017-Q2",
+   "imports": 232,
+   "exports": 231
+  },
+  {
+   "date": "2017-Q3",
+   "imports": 286,
+   "exports": 188
+  },
+  {
+   "date": "2017-Q4",
+   "imports": 163,
+   "exports": 166
+  },
+  {
+   "date": "2018-Q1",
+   "imports": 143,
+   "exports": 164
+  },
+  {
+   "date": "2018-Q2",
+   "imports": 114,
+   "exports": 170
+  },
+  {
+   "date": "2018-Q3",
+   "imports": 112,
+   "exports": 174
+  },
+  {
+   "date": "2018-Q4",
+   "imports": 142,
+   "exports": 150
+  },
+  {
+   "date": "2019-Q1",
+   "imports": 151,
+   "exports": 147
+  },
+  {
+   "date": "2019-Q2",
+   "imports": 218,
+   "exports": 158
+  },
+  {
+   "date": "2019-Q3",
+   "imports": 246,
+   "exports": 161
+  },
+  {
+   "date": "2019-Q4",
+   "imports": 247,
+   "exports": 179
+  },
+  {
+   "date": "2020-Q1",
+   "imports": 281,
+   "exports": 177
+  },
+  {
+   "date": "2020-Q2",
+   "imports": 258,
+   "exports": 168
+  },
+  {
+   "date": "2020-Q3",
+   "imports": 259,
+   "exports": 162
+  },
+  {
+   "date": "2020-Q4",
+   "imports": 244,
+   "exports": 167
+  },
+  {
+   "date": "2021-Q1",
+   "imports": 235,
+   "exports": 173
+  },
+  {
+   "date": "2021-Q2",
+   "imports": 230,
+   "exports": 189
+  },
+  {
+   "date": "2021-Q3",
+   "imports": 230,
+   "exports": 206
+  },
+  {
+   "date": "2021-Q4",
+   "imports": 267,
+   "exports": 213
+  },
+  {
+   "date": "2022-Q1",
+   "imports": 299,
+   "exports": 228
+  },
+  {
+   "date": "2022-Q2",
+   "imports": 376,
+   "exports": 221
+  },
+  {
+   "date": "2022-Q3",
+   "imports": 468,
+   "exports": 228
+  },
+  {
+   "date": "2022-Q4",
+   "imports": 541,
+   "exports": 223
+  },
+  {
+   "date": "2023-Q1",
+   "imports": 587,
+   "exports": 225
+  },
+  {
+   "date": "2023-Q2",
+   "imports": 518,
+   "exports": 189
+  },
+  {
+   "date": "2023-Q3",
+   "imports": 468,
+   "exports": 153
+  },
+  {
+   "date": "2023-Q4",
+   "imports": 374,
+   "exports": 131
+  },
+  {
+   "date": "2024-Q1",
+   "imports": 349,
+   "exports": 104
+  },
+  {
+   "date": "2024-Q2",
+   "imports": 394,
+   "exports": 102
+  },
+  {
+   "date": "2024-Q3",
+   "imports": 500,
+   "exports": 114
+  },
+  {
+   "date": "2024-Q4",
+   "imports": 690,
+   "exports": 107
+  },
+  {
+   "date": "2025-Q1",
+   "imports": 952,
+   "exports": 133
+  },
+  {
+   "date": "2025-Q2",
+   "imports": 1084,
+   "exports": 144
+  },
+  {
+   "date": "2025-Q3",
+   "imports": 1268,
+   "exports": 137
+  },
+  {
+   "date": "2025-Q4",
+   "imports": 1389,
+   "exports": 184
+  },
+  {
+   "date": "2026-Q1",
+   "imports": 1474,
+   "exports": 301
+  },
+  {
+   "date": "2026-Q2",
+   "imports": 1671,
+   "exports": 361
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 9
+}

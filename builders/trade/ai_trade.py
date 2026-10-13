@@ -27,6 +27,7 @@ Outputs:
     data/trade/ai/ai_trade_by_country.csv services tiers and products by partner group
     data/trade/ai/ai_trade_by_country_rolling.csv  by-partner chart series, quarterly and rolling 4Q
     data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
+    data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
 
@@ -413,6 +414,68 @@ def country_charts(rows: list[dict]) -> list[dict]:
     return out_rows
 
 
+# ---------------------------------------------------------------- 4b. prices (IMF basket)
+
+def imf_price_charts(mq: dict, prods: list[dict]) -> list[dict]:
+    """Two views of prices for AI compute hardware (the IMF basket), returning rows for a CSV.
+    1. Official: ONS implied prices (current prices / chained volumes, seasonally adjusted)
+       for CPA 26.2 computers and 26.1 electronic components, EU + non-EU combined: the
+       closest official match to the IMF basket (servers, storage, chips). Quarterly.
+    2. Servers (HS 847150): average value per unit from HMRC, rolling four quarters. Not a
+       like-for-like price: it moves with the MIX of servers (e.g. towards GPU servers).
+    Most other IMF codes have no usable unit counts (processors and chip-making machines
+    report weight only), so no unit-value index is built for the whole basket."""
+    rows, series, data = [], [], {}
+    for code, name in (("26.2", "Computers"), ("26.1", "Electronic components")):
+        for flow, f in (("imports", "IM"), ("exports", "EX")):
+            cp = [mq10_series(mq, code, g, f, "CP") for g in ("EU", "RW")]
+            cvm = [mq10_series(mq, code, g, f, "CVM") for g in ("EU", "RW")]
+            qs = sorted(set.intersection(*(set(x) for x in cp + cvm)))
+            price = to_index({q: sum(x[q] for x in cp) / sum(x[q] for x in cvm) for q in qs})
+            key = f"{code}_{flow}"
+            series.append({"key": key, "label": f"{name}, {flow}"})
+            for q in qs:
+                data.setdefault(q, {"date": q})[key] = price[q]
+                rows.append({"measure": "official_price_index", "item": f"CPA {code}", "flow": flow,
+                             "quarter": q, "value": price[q]})
+    publish(chart("ai-trade-imf-hardware-prices-official",
+                  "Prices of computers and electronic components in UK trade",
+                  f"Implied price index, {BASE_YEAR} = 100", "line", series,
+                  [data[q] for q in sorted(data)],
+                  "Implied prices = current-price value / chained volume, EU and non-EU combined. "
+                  "CPA 26.2 (computers, incl. servers and storage) and 26.1 (electronic components, "
+                  "incl. processors and memory) are the closest official match to the IMF AI hardware "
+                  "basket; they also contain non-AI products. In sterling, so exchange-rate moves count. ",
+                  "ONS UK trade in goods by CPA (MQ10), seasonally adjusted; ukmacro calculations"))
+    # servers: value per unit, rolling four quarters (EU + non-EU)
+    agg: dict = {}
+    for r in prods:
+        if r["product"] == "servers":
+            a = agg.setdefault((r["flow"], r["quarter"]), [0.0, 0.0])
+            a[0] += r["value_gbp_m"] * 1e6
+            a[1] += r["units"] or 0
+    data = {}
+    for flow in ("imports", "exports"):
+        qs = sorted(q for f, q in agg if f == flow)
+        for i in range(3, len(qs)):
+            v = sum(agg[(flow, q)][0] for q in qs[i - 3:i + 1])
+            u = sum(agg[(flow, q)][1] for q in qs[i - 3:i + 1])
+            if u:
+                data.setdefault(qs[i], {"date": qs[i]})[flow] = round(v / u)
+                rows.append({"measure": "server_value_per_unit_gbp", "item": "HS 847150", "flow": flow,
+                             "quarter": qs[i], "value": round(v / u)})
+    publish(chart("ai-trade-imf-hardware-server-unit-values",
+                  "Average value per server in UK trade",
+                  "£ per unit, rolling four quarters", "line",
+                  [{"key": "imports", "label": "Imports"}, {"key": "exports", "label": "Exports"}],
+                  [data[q] for q in sorted(data)],
+                  "HS 847150 (processing units, incl. servers), the largest item in the IMF AI hardware "
+                  "basket. Value / supplementary units over the latest four quarters. Not a like-for-like "
+                  "price: it rises when the mix shifts towards expensive units such as GPU servers. ",
+                  "HMRC Overseas Trade Statistics; ukmacro calculations"))
+    return rows
+
+
 # ---------------------------------------------------------------- 5. summary tables
 
 def product_summary(rows: list[dict], base: str = "2019", latest: str = "2025") -> list[dict]:
@@ -542,7 +605,8 @@ def write_csv(rows: list[dict], path: Path) -> None:
 
 
 def build() -> None:
-    tiers = goods_tiers(mq10()) + services_tiers()
+    mq = mq10()
+    tiers = goods_tiers(mq) + services_tiers()
     write_csv(tiers, OUT / "ai_trade_tiers.csv")
     tier_charts(tiers)
     prods = products()
@@ -551,6 +615,7 @@ def build() -> None:
     by_country = services_by_country() + products_by_country()
     write_csv(by_country, OUT / "ai_trade_by_country.csv")
     write_csv(country_charts(by_country), OUT / "ai_trade_by_country_rolling.csv")
+    write_csv(imf_price_charts(mq, prods), OUT / "ai_hardware_prices.csv")
     summary = product_summary(prods)
     write_csv(summary, OUT / "ai_products_summary.csv")
     write_markdown_tables(summary, OUT / "ai_products_summary.md")
