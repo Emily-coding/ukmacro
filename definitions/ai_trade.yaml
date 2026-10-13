@@ -169,6 +169,23 @@ coverage:
   - {ons: "Robotaxi and drone delivery services (H49.3-H49.5, H53)", products: [], note: "services; not operating in 2023"}
   - {ons: "AI software, IT, information, consulting, R&D, other services (J, M, N, P, Q)", products: [], note: "services: covered by the services tiers"}
 
+# --------------------------------------------------------------------- origins
+# HMRC records EU imports by country of DISPATCH, so goods made in Asia or the US but
+# shipped via EU distribution hubs count as imports from the hub. "Origin-adjusted"
+# outputs reassign UK imports recorded from these hubs to likely countries of origin,
+# using each hub's own imports by origin (Eurostat Comext); the part the hub makes
+# itself stays with it: products it genuinely makes (`keep_with_hub`) are not reassigned,
+# and for the rest a small made-in-hub share is estimated from its net exports. Germany is left out: it makes
+# much of what it exports, so treating it as a hub would misattribute real production.
+origin_hubs:
+  countries: [BE, NL]   # in this order: much of Belgium's trade comes via the Netherlands,
+                        # so what Belgium passes to the Netherlands is reassigned again
+  # Goods the hubs genuinely make are NOT reassigned (kept as recorded), by HS prefix:
+  # chips (NXP and others in the Netherlands), chip-making machines (ASML), medical
+  # scanners and diagnostics (Philips). Net exports understate production where a hub
+  # both makes and redistributes a product, so these are exempted outright.
+  keep_with_hub: ["8542", "8486", "9018", "9022"]
+
 # --------------------------------------------------------------------- countries
 # Partner groups for the country split (one chart set per option) (services by country, and products).
 # Services: ONS "UK trade in services: service type by partner country" (quarterly, not

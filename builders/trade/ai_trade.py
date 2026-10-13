@@ -17,6 +17,9 @@ BOUND: whole product groups containing AI and non-AI output.
    `country_groups`), values only. Services: partner shares from the ONS by-country file
    applied to the latest QNA EU / non-EU totals. Products: HMRC. Both are charted as
    rolling four-quarter totals. Goods tiers stay EU / non-EU (no crosswalk).
+   Products also come "origin-adjusted": imports recorded from EU distribution hubs
+   (Netherlands, Belgium) reassigned to likely origins using the hubs' own imports by
+   origin (Eurostat Comext). An estimate, shown alongside the data as recorded.
 Key AI dates (definitions/ai_events.yaml) are drawn as vertical lines on the charts.
 
 All quarterly from 2016 Q1. Values in £m; volumes and prices as indices, 2019 = 100.
@@ -30,6 +33,7 @@ Outputs:
     data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
+    data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
     data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended goods tier, AI services (values and volumes)
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
@@ -37,10 +41,10 @@ Outputs:
 from __future__ import annotations
 
 import csv
+import datetime
 import io
 import re
 import sys
-import urllib.parse
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -49,7 +53,7 @@ sys.path.insert(0, str(REPO))
 
 import yaml  # noqa: E402
 
-from ukmacro import charts, ons  # noqa: E402
+from ukmacro import charts, comext, hmrc_trade, ons  # noqa: E402
 from ukmacro.http import get_json, get_text  # noqa: E402
 
 DEFS = yaml.safe_load((REPO / "definitions" / "ai_trade.yaml").read_text())
@@ -71,6 +75,13 @@ LINES = [("EU", "exports", "EU exports"), ("NonEU", "exports", "Non-EU exports")
          ("EU", "imports", "EU imports"), ("NonEU", "imports", "Non-EU imports")]
 UPPER_BOUND = ("Upper bound: whole product groups, which contain AI and non-AI products "
                "(ONS has not yet published AI shares). ")
+ORIGIN_NOTE = ("Origin-adjusted: UK imports recorded from the Netherlands and Belgium (EU distribution "
+               "hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries "
+               "of origin in proportion to those countries' own imports of the same products (Eurostat "
+               "Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) "
+               "are not reassigned. An estimate. ")
+EU27 = {"AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
+        "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"}
 EU_BREAK = ("EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to "
             "customs declarations. ")
 
@@ -171,8 +182,7 @@ def hmrc_product(hs6_codes: list[str]) -> dict[tuple[str, str, str], dict[str, f
     ranges = " or ".join(f"(CommodityId ge {c}00 and CommodityId le {c}99)" for c in hs6_codes)
     apply = (f"filter(MonthId ge {START[:4]}01 and ({ranges}))/groupby((MonthId,FlowTypeId),"
              "aggregate(Value with sum as Value,SuppUnit with sum as Units,NetMass with sum as Mass))")
-    url = f"{HMRC_OTS}?$apply={urllib.parse.quote(apply)}"
-    rows = get_json(url, timeout=180)["value"]
+    rows = hmrc_trade.apply("OTS", apply)
     out: dict = {}
     for r in rows:
         m = r["MonthId"]
@@ -201,6 +211,126 @@ def products() -> list[dict]:
                          "net_mass_kg": c["mass"],
                          "value_per_unit_gbp": round(c["value"] / c["units"], 2) if c["units"] else None})
         print(f"[ai-trade] product {p['id']}: {sum(1 for r in rows if r['product'] == p['id'])} rows")
+    return rows
+
+
+# ---------------------------------------------------------------- 3b. origins (EU hubs)
+
+_HUBS: dict = {}
+
+
+def hub_trade() -> dict | None:
+    """Each hub's (definitions/ai_trade.yaml `origin_hubs`) imports and exports of every
+    code used here, by partner and year, from Eurostat Comext; fetched once per run.
+    None if Comext can't be reached: origin-adjusted outputs are then skipped and their
+    last published versions kept."""
+    if not _HUBS:
+        codes = sorted({c for p in DEFS["products"] for c in p["hs6"]} | set(DEFS["imf_hardware"]["hs6"]))
+        years = [str(y) for y in range(int(START[:4]), datetime.date.today().year)]
+        try:
+            for hub in DEFS["origin_hubs"]["countries"]:
+                _HUBS[hub] = comext.annual(hub, codes, years)
+        except Exception as e:  # noqa: BLE001 - any failure: skip, keep what's published
+            print(f"[ai-trade] Comext unavailable, origin-adjusted outputs skipped: {e}")
+            _HUBS.clear()
+            return None
+    return _HUBS
+
+
+def _is_origin(code: str, hub: str) -> bool:
+    """A real partner country in Comext: not an aggregate (WORLD, EXT_EU27_2020...) or a
+    special code (Q...), and not the hub itself or the UK (UK goods coming back)."""
+    return len(code) == 2 and code.isalpha() and not code.startswith("Q") and code not in ("EU", "EA", "GB", "XI", hub)
+
+
+def hub_split(hub: str, codes: list[str], year: str) -> tuple[float, dict[str, float]] | None:
+    """(share made in the hub, {origin: share of the rest}) for a set of codes in a year.
+    Made in the hub ~ net exports / exports, floored at 0: a pure distribution hub exports
+    about what it imports, so this is near zero; where the hub makes the goods (e.g. Dutch
+    medical scanners) exports exceed imports. Origins = the hub's own imports by partner.
+    A year Comext doesn't have yet uses the latest one it has."""
+    data = _HUBS.get(hub, {})
+    have = sorted({k[3] for k in data})
+    if not have:
+        return None
+    y = year if year in have else (have[-1] if year > have[-1] else have[0])
+    codes = set(codes)
+    x = sum(v for (f, c, p, yy), v in data.items() if f == "exports" and c in codes and p == "WORLD" and yy == y)
+    m = sum(v for (f, c, p, yy), v in data.items() if f == "imports" and c in codes and p == "WORLD" and yy == y)
+    made = min(1.0, max(0.0, (x - m) / x)) if x else 0.0
+    origins: dict = {}
+    for (f, c, p, yy), v in data.items():
+        if f == "imports" and c in codes and yy == y and _is_origin(p, hub):
+            origins[p] = origins.get(p, 0.0) + v
+    total = sum(origins.values())
+    return made, ({p: v / total for p, v in origins.items()} if total else {})
+
+
+def reassign(by_partner: dict[str, float], codes: list[str], year: str) -> dict[str, float]:
+    """UK imports by partner {country code: £} with each hub's trade reassigned: the part
+    made in the hub stays, the rest is spread over the hub's own import origins. Products
+    the hubs genuinely make (`keep_with_hub`: chips, chip-making machines, medical
+    scanners) aren't reassigned at all, since net exports understate production where a
+    hub both makes and redistributes a product. Call it
+    for ONE code at a time (see `reassign_by_code`): pooling codes would let one the hub
+    really makes (e.g. Dutch chip-making machines) keep others it only distributes. Hubs
+    are taken in order, so what the first passes to the second is reassigned again."""
+    out = dict(by_partner)
+    if any(c.startswith(tuple(DEFS["origin_hubs"]["keep_with_hub"])) for c in codes):
+        return out   # a product the hubs genuinely make: kept as recorded
+    for hub in DEFS["origin_hubs"]["countries"]:
+        v = out.pop(hub, 0.0)
+        split = hub_split(hub, codes, year) if v else None
+        if not split or not split[1]:
+            if v:
+                out[hub] = v
+            continue
+        made, origins = split
+        out[hub] = v * made
+        for p, sh in origins.items():
+            out[p] = out.get(p, 0.0) + v * (1 - made) * sh
+    return out
+
+
+def reassign_by_code(by_code: dict[str, dict[str, float]], year: str) -> dict[str, float]:
+    """{hs6: {partner code: £}} -> {partner code: £}, each code reassigned on its own."""
+    out: dict = {}
+    for code, vals in by_code.items():
+        for c, v in reassign(vals, [code], year).items():
+            out[c] = out.get(c, 0.0) + v
+    return out
+
+
+def _summed(by_code: dict[str, dict[str, float]]) -> dict[str, float]:
+    """{hs6: {partner code: £}} -> {partner code: £}, as recorded."""
+    out: dict = {}
+    for vals in by_code.values():
+        for c, v in vals.items():
+            out[c] = out.get(c, 0.0) + v
+    return out
+
+
+def hub_summary() -> list[dict]:
+    """For the CSV: each hub's estimated made-in-hub share and top five origins, for the
+    IMF basket and each partner category, in the latest year Comext has, for the codes
+    that are reassigned (pooled, as a description; the reassignment works code by code),
+    plus the codes kept as recorded."""
+    products = {p["id"]: p["hs6"] for p in DEFS["products"]}
+    rows = []
+    for hub in DEFS["origin_hubs"]["countries"]:
+        year = max(k[3] for k in _HUBS[hub])
+        keep = tuple(DEFS["origin_hubs"]["keep_with_hub"])
+        for cat in DEFS["partner_categories"]:
+            codes = DEFS["imf_hardware"]["hs6"] if cat.get("imf") else [c for pid in cat["products"] for c in products[pid]]
+            moved = [c for c in codes if not c.startswith(keep)]
+            row = {"hub": hub, "year": year, "category": cat["label"],
+                   "kept_as_recorded": " ".join(c for c in codes if c.startswith(keep))}
+            if moved:
+                made, origins = hub_split(hub, moved, year)
+                top = sorted(origins.items(), key=lambda kv: -kv[1])[:5]
+                row["made_in_hub_pct_reassigned_codes"] = round(100 * made, 1)
+                row.update({f"origin_{i + 1}": f"{o} {100 * sh:.1f}%" for i, (o, sh) in enumerate(top)})
+            rows.append(row)
     return rows
 
 
@@ -307,44 +437,70 @@ def services_by_country() -> list[dict]:
     return out
 
 
+def _partner_code(alpha: str, partner: str) -> str:
+    """HMRC country code, with HMRC's special codes in EU flows (e.g. estimates for small
+    traders) marked "EU-..." so they stay in the EU group whatever the basis."""
+    return alpha if partner != "EU" or alpha in EU27 else f"EU-{alpha}"
+
+
+def _is_eu(code: str) -> bool:
+    return code in EU27 or code.startswith("EU-")
+
+
+def _grouped(values: dict[str, float], option: str) -> dict[str, float]:
+    """{group: £} from {partner code: £} for a grouping option (EU = EU members)."""
+    groups = group_members(option)
+    out = {}
+    for group, members in groups.items():
+        if members == ["EU"]:
+            out[group] = sum(v for c, v in values.items() if _is_eu(c))
+        elif members != ["REST"]:
+            out[group] = sum(v for c, v in values.items() if c in members)
+    if "Rest of world" in groups:
+        out["Rest of world"] = sum(values.values()) - sum(out.values())
+    return out
+
+
 def products_by_country() -> list[dict]:
-    """HMRC product values by partner group (£m). EU vs non-EU comes from the flow type;
-    non-EU partners from HMRC country codes. The IMF AI hardware basket is included as
-    one extra item, "imf_hardware" (its codes summed), for its own chart."""
+    """HMRC product values by partner group (£m), quarterly, on two bases:
+      as recorded (option "option1"): EU members by country of dispatch, others by HMRC
+        country code;
+      origin-adjusted ("option1-origin", imports only): imports recorded from EU hubs
+        reassigned to likely origins (see `reassign`).
+    The IMF AI hardware basket is included as one extra item, "imf_hardware" (its codes
+    summed), for its own chart."""
     alpha = {c["CountryId"]: (c["CountryCodeAlpha"] or "").strip()
              for c in get_json(f"{HMRC_COUNTRY}?$select=CountryId,CountryCodeAlpha", timeout=120)["value"]}
+    hubs_ok = hub_trade() is not None
     out = []
     imf = {"id": "imf_hardware", "hs6": DEFS["imf_hardware"]["hs6"]}
     for p in DEFS["products"] + [imf]:
         ranges = " or ".join(f"(CommodityId ge {c}00 and CommodityId le {c}99)" for c in p["hs6"])
-        apply = (f"filter(MonthId ge {START[:4]}01 and ({ranges}))/groupby((MonthId,FlowTypeId,CountryId),"
-                 "aggregate(Value with sum as Value))")
-        data = get_json(f"{HMRC_OTS}?$apply={urllib.parse.quote(apply)}", timeout=180)["value"]
-        cells: dict = {}   # (flow, country code or 'EU', quarter) -> £; plus months seen per quarter
+        apply = (f"filter(MonthId ge {START[:4]}01 and ({ranges}))/groupby((MonthId,FlowTypeId,CountryId,"
+                 "CommodityId),aggregate(Value with sum as Value))")
+        data = hmrc_trade.apply("OTS", apply)
+        cells: dict = {}   # (flow, quarter) -> {hs6: {partner code: £}}
         months: dict = {}
         for r in data:
             m = r["MonthId"]
             q = f"{m // 100}-Q{(m % 100 - 1) // 3 + 1}"
             partner, flow = FLOWS[r["FlowTypeId"]]
-            code = "EU" if partner == "EU" else alpha.get(r["CountryId"], "")
-            cells[(flow, code, q)] = cells.get((flow, code, q), 0.0) + (r["Value"] or 0)
+            code = _partner_code(alpha.get(r["CountryId"], ""), partner)
+            cell = cells.setdefault((flow, q), {}).setdefault(str(r["CommodityId"])[:6], {})
+            cell[code] = cell.get(code, 0.0) + (r["Value"] or 0)
             months.setdefault(q, set()).add(m)
         quarters = sorted(q for q, ms in months.items() if len(ms) == 3
                           and not (p.get("from") and int(q[:4]) < p["from"]))
         for flow in ("exports", "imports"):
             for option in DEFS["country_groups"]:
-                named = {}
-                for group, members in group_members(option).items():
-                    if members == ["REST"]:
-                        continue
-                    named[group] = {q: sum(v for (f, c, qq), v in cells.items()
-                                           if f == flow and qq == q and c in members) for q in quarters}
-                if "Rest of world" in group_members(option):
-                    total = {q: sum(v for (f, c, qq), v in cells.items() if f == flow and qq == q) for q in quarters}
-                    named["Rest of world"] = {q: total[q] - sum(v[q] for v in named.values()) for q in quarters}
-                for group, vals in named.items():
-                    out += [{"kind": "product", "item": p["id"], "option": option, "group": group,
-                             "flow": flow, "quarter": q, "value_gbp_m": round(v / 1e6, 2)} for q, v in vals.items()]
+                bases = [(option, False)] + ([(f"{option}-origin", True)] if flow == "imports" and hubs_ok else [])
+                for name, adjust in bases:
+                    for q in quarters:
+                        by_code = cells.get((flow, q), {})
+                        vals = reassign_by_code(by_code, q[:4]) if adjust else _summed(by_code)
+                        out += [{"kind": "product", "item": p["id"], "option": name, "group": g, "flow": flow,
+                                 "quarter": q, "value_gbp_m": round(v / 1e6, 2)}
+                                for g, v in _grouped(vals, option).items()]
         print(f"[ai-trade] by country: {p['id']}")
     return out
 
@@ -365,7 +521,8 @@ def country_charts(rows: list[dict]) -> list[dict]:
     sources = {"services": "ONS trade in services by type (QNA), split by partner using shares from ONS trade "
                            "in services by partner country; ukmacro calculations",
                "product": "HMRC Overseas Trade Statistics; ukmacro calculations"}
-    groups_of = {o: list(group_members(o)) for o in DEFS["country_groups"]}
+    def groups_of(option: str) -> list[str]:
+        return list(group_members(option.removesuffix("-origin")))
     # products total: products with a full series only (smartphones are inside mobile
     # phones; codes created in 2022 would put a break in the total)
     total_products = [p["id"] for p in DEFS["products"] if p["id"] != "smartphones" and not p.get("from")]
@@ -376,7 +533,10 @@ def country_charts(rows: list[dict]) -> list[dict]:
     out_rows = []
     for kind, slug_part, what, items in blocks:
         for flow in ("exports", "imports"):
-            for option in DEFS["country_groups"]:
+            # as recorded, plus origin-adjusted where built (product imports)
+            options = sorted({r["option"] for r in rows if r["kind"] == kind and r["flow"] == flow})
+            for option in options:
+                origin = option.endswith("-origin")
                 sums: dict = {}
                 for r in rows:
                     if r["kind"] == kind and r["item"] in items and r["flow"] == flow and r["option"] == option:
@@ -388,10 +548,10 @@ def country_charts(rows: list[dict]) -> list[dict]:
                               "rolling_4q_gbp_m": round(rolled[g][q], 1) if q in rolled[g] else None}
                              for g, v in sums.items() for q in sorted(v)]
                 quarters = sorted({q for v in rolled.values() for q in v})
-                data = [{"date": q, **{g: round(rolled.get(g, {}).get(q, 0.0) / 1000, 1) for g in groups_of[option]}}
+                data = [{"date": q, **{g: round(rolled.get(g, {}).get(q, 0.0) / 1000, 1) for g in groups_of(option)}}
                         for q in quarters]
                 note = UPPER_BOUND + "Rolling four-quarter totals (each point = the latest four quarters), which remove seasonal swings. "
-                if option == "option1":
+                if option.startswith("option1"):
                     note += "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. "
                 if kind == "services":
                     note += ("Partner shares from the by-country file are applied to the latest QNA EU and "
@@ -402,18 +562,24 @@ def country_charts(rows: list[dict]) -> list[dict]:
                             "computer assemblies (incl. graphics cards), processor and memory chips, and "
                             "semiconductor manufacturing equipment. Whole codes, so an upper bound. "
                             "Rolling four-quarter totals (each point = the latest four quarters). "
-                            "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. EU trade is "
-                            "recorded by country of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
+                            "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. "
+                            + ("" if origin else "EU trade is recorded by country of dispatch, so goods routed "
+                               "via the EU count as EU. ") + EU_BREAK)
                 else:
                     note += ("Products: chips, computers and servers, storage, graphics cards, laptops and tablets, "
                              "mobile phones, network equipment, cameras, medical scanners and diagnostics, "
-                             "vacuum cleaners (incl. robotic), industrial robots. EU trade is recorded by country "
-                             "of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
+                             "vacuum cleaners (incl. robotic), industrial robots. "
+                             + ("" if origin else "EU trade is recorded by country of dispatch, so goods routed "
+                                "via the EU count as EU. ") + EU_BREAK)
+                if origin:
+                    note += ORIGIN_NOTE
                 publish(chart(f"ai-trade-{kind}-{slug_part}-{flow}-{option}",
-                              f"UK {flow} of {what}, by partner",
+                              f"UK {flow} of {what}, by partner" + (" (origin-adjusted)" if origin else ""),
                               "£ billion, rolling four-quarter total", "line",
-                              [{"key": g, "label": g} for g in groups_of[option]],
-                              data, note, sources[kind]))
+                              [{"key": g, "label": g} for g in groups_of(option)],
+                              data, note,
+                              "HMRC Overseas Trade Statistics; Eurostat Comext; ukmacro calculations"
+                              if origin else sources[kind]))
     return out_rows
 
 
@@ -639,14 +805,17 @@ def ai_stack_charts(mq: dict, prods: list[dict], imf_q: dict, tiers: list[dict])
 
 def top_partner_charts(n_top: int = 3) -> list[dict]:
     """Top partners for each product group (definitions/ai_trade.yaml `partner_categories`)
-    over the latest two complete calendar years: each partner's share of UK imports (and,
-    in a second chart, exports) of the group. EU members are named individually (HMRC
-    records EU trade by country of dispatch). Shares are of all trade in the group,
-    including trade whose country HMRC suppresses, which is never ranked. Returns rows
-    (top ten per group) for a CSV."""
+    over the latest two complete calendar years: each partner's share of UK imports, and
+    of exports, of the group; plus imports origin-adjusted (EU hub trade reassigned to
+    likely origins, see `reassign`). EU members are named individually. Shares are of
+    all trade in the group, including trade whose country HMRC suppresses, which is never
+    ranked. Returns rows (top ten per group and basis) for a CSV."""
     countries = get_json(f"{HMRC_COUNTRY}?$select=CountryId,CountryCodeAlpha,CountryName", timeout=120)["value"]
     alpha = {c["CountryId"]: (c["CountryCodeAlpha"] or "").strip() for c in countries}
-    name = {c["CountryId"]: c["CountryName"].strip() for c in countries}
+    name_by_id = {c["CountryId"]: c["CountryName"].strip() for c in countries}
+    name: dict = {}   # partner code -> name; ids seen in the data first (HMRC has several ids for
+    for c in countries:   # some codes, e.g. "United States" and the historical "USA")
+        name.setdefault((c["CountryCodeAlpha"] or "").strip(), c["CountryName"].strip())
     products = {p["id"]: p["hs6"] for p in DEFS["products"]}
     # the latest two complete calendar years in HMRC (any product's quarters will do)
     probe = hmrc_product(DEFS["imf_hardware"]["hs6"][:1])
@@ -654,46 +823,64 @@ def top_partner_charts(n_top: int = 3) -> list[dict]:
             if partner == "EU" and flow == "imports" and len(c["months"]) == 3}   # complete quarters
     full = sorted(y for y in {q[:4] for q in done} if sum(1 for q in done if q[:4] == y) == 4)
     years = full[-2:]
-    rows, data = [], {"imports": [], "exports": []}
+    period = f"{years[0]}-{years[-1]}"
+    hubs_ok = hub_trade() is not None
+    bases = [("imports", False), ("exports", False)] + ([("imports", True)] if hubs_ok else [])
+    seen_name: dict = {}   # partner code -> name of the HMRC country id used in the data
+    rows, data = [], {b: [] for b in bases}
     for cat in DEFS["partner_categories"]:
         codes = DEFS["imf_hardware"]["hs6"] if cat.get("imf") else [c for pid in cat["products"] for c in products[pid]]
-        cells: dict = {}   # (flow, CountryId) -> £
-        eu: set = set()    # countries seen in EU flows
+        cells: dict = {}   # (flow, year) -> {hs6: {partner code: £}}
         for code in codes:
             apply = (f"filter(MonthId ge {years[0]}01 and MonthId le {years[-1]}12 and CommodityId ge {code}00 "
-                     f"and CommodityId le {code}99)/groupby((FlowTypeId,CountryId),aggregate(Value with sum as V))")
-            for r in get_json(f"{HMRC_OTS}?$apply={urllib.parse.quote(apply)}", timeout=300)["value"]:
+                     f"and CommodityId le {code}99)/groupby((MonthId,FlowTypeId,CountryId),aggregate(Value with sum as V))")
+            for r in hmrc_trade.apply("OTS", apply):
                 partner, flow = FLOWS[r["FlowTypeId"]]
-                cells[(flow, r["CountryId"])] = cells.get((flow, r["CountryId"]), 0.0) + (r["V"] or 0)
-                if partner == "EU":
-                    eu.add(r["CountryId"])
-        for flow in ("imports", "exports"):
-            total = sum(v for (f, _), v in cells.items() if f == flow)
+                c = _partner_code(alpha.get(r["CountryId"], ""), partner)
+                if r["V"] and r["CountryId"] in name_by_id:
+                    seen_name.setdefault(c, name_by_id[r["CountryId"]])
+                cell = cells.setdefault((flow, str(r["MonthId"] // 100)), {}).setdefault(code, {})
+                cell[c] = cell.get(c, 0.0) + (r["V"] or 0)
+        for flow, adjust in bases:
+            totals: dict = {}
+            for y in years:
+                by_code = cells.get((flow, y), {})
+                vals = reassign_by_code(by_code, y) if adjust else _summed(by_code)
+                for c, v in vals.items():
+                    totals[c] = totals.get(c, 0.0) + v
+            total = sum(totals.values())
             # rank real countries only: HMRC's special codes (suppressed, estimates, stores...)
-            # have a blank alpha code or one starting with Q
-            ranked = sorted(((c, v) for (f, c), v in cells.items()
-                             if f == flow and alpha.get(c) and not alpha[c].startswith("Q")), key=lambda cv: -cv[1])
+            # are blank, start with Q or are marked EU-
+            name.update(seen_name)
+            ranked = sorted(((c, v) for c, v in totals.items() if c in name and c and not c.startswith("Q")),
+                            key=lambda cv: -cv[1])
+            basis = "origin-adjusted" if adjust else "as recorded"
             for i, (c, v) in enumerate(ranked[:10]):
-                rows.append({"category": cat["label"], "flow": flow, "period": f"{years[0]}-{years[-1]}",
-                             "rank": i + 1, "country": name[c], "eu": c in eu,
+                rows.append({"category": cat["label"], "flow": flow, "basis": basis, "period": period,
+                             "rank": i + 1, "country": name[c], "eu": c in EU27,
                              "value_gbp_m": round(v / 1e6, 1), "share_pct": round(100 * v / total, 1)})
-            data[flow].append({"date": cat["label"],
-                               "ranks": [{"label": name[c], "value": round(100 * v / total, 1),
-                                          "key": "EU" if c in eu else "nonEU"} for c, v in ranked[:n_top]]})
-    for flow, word in (("imports", "sources"), ("exports", "destinations")):
-        c = chart(f"ai-trade-top-partners-{flow}",
-                  f"Top {n_top} {word} of UK AI {flow}, by product group, {years[0]}-{years[-1]}",
+            data[(flow, adjust)].append({"date": cat["label"],
+                                         "ranks": [{"label": name[c], "value": round(100 * v / total, 1),
+                                                    "key": "EU" if c in EU27 else "nonEU"} for c, v in ranked[:n_top]]})
+    for (flow, adjust), d in data.items():
+        word = "sources" if flow == "imports" else "destinations"
+        if adjust:
+            where = ORIGIN_NOTE
+        elif flow == "imports":
+            where = ("EU imports are recorded by country of dispatch (so goods routed via e.g. Dutch distribution "
+                     "hubs count as the Netherlands); non-EU imports by country of origin. ")
+        else:
+            where = "Exports are recorded by country of destination. "
+        c = chart(f"ai-trade-top-partners-{flow}" + ("-origin" if adjust else ""),
+                  f"Top {n_top} {word} of UK AI {flow}, by product group, {period}"
+                  + (" (origin-adjusted)" if adjust else ""),
                   f"Share of UK {flow} of each product group, %", "ranked-bars",
-                  [{"key": "EU", "label": "EU member state"}, {"key": "nonEU", "label": "Outside the EU"}],
-                  data[flow],
+                  [{"key": "EU", "label": "EU member state"}, {"key": "nonEU", "label": "Outside the EU"}], d,
                   UPPER_BOUND + "AI compute hardware = IMF AI hardware basket; the other groups are the "
-                  "ONS-based AI products by type. "
-                  + ("EU imports are recorded by country of dispatch (so goods routed via e.g. Dutch "
-                     "distribution hubs count as the Netherlands); non-EU imports by country of origin. "
-                     if flow == "imports" else "Exports are recorded by country of destination. ")
-                  + "Shares are of all trade, including trade whose partner HMRC suppresses for "
-                  "confidentiality.",
-                  "HMRC Overseas Trade Statistics; ukmacro calculations", freq="A")
+                  "ONS-based AI products by type. " + where + "Shares are of all trade, including trade whose "
+                  "partner HMRC suppresses for confidentiality.",
+                  "HMRC Overseas Trade Statistics; " + ("Eurostat Comext; " if adjust else "") + "ukmacro calculations",
+                  freq="A")
         c["events"] = None
         c["value_format"] = "{:.1f}%"
         publish(c)
@@ -844,6 +1031,8 @@ def build() -> None:
     write_csv(components, OUT / "ai_hardware_components.csv")
     write_csv(ai_stack_charts(mq, prods, imf_quarterly, tiers), OUT / "ai_stack.csv")
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
+    if hub_trade() is not None:
+        write_csv(hub_summary(), OUT / "ai_hub_origins.csv")
     summary = product_summary(prods)
     write_csv(summary, OUT / "ai_products_summary.csv")
     write_markdown_tables(summary, OUT / "ai_products_summary.md")

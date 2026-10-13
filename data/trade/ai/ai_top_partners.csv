@@ -1,81 +1,121 @@
-category,flow,period,rank,country,eu,value_gbp_m,share_pct
-AI compute hardware (IMF definition),imports,2024-2025,1,Netherlands,True,3799.7,22.1
-AI compute hardware (IMF definition),imports,2024-2025,2,United States,False,2771.1,16.1
-AI compute hardware (IMF definition),imports,2024-2025,3,Poland,True,1427.2,8.3
-AI compute hardware (IMF definition),imports,2024-2025,4,China,False,1205.3,7.0
-AI compute hardware (IMF definition),imports,2024-2025,5,Ireland,True,1054.7,6.1
-AI compute hardware (IMF definition),imports,2024-2025,6,Germany,True,941.3,5.5
-AI compute hardware (IMF definition),imports,2024-2025,7,Hungary,True,885.5,5.1
-AI compute hardware (IMF definition),imports,2024-2025,8,Taiwan,False,855.4,5.0
-AI compute hardware (IMF definition),imports,2024-2025,9,Czechia,True,652.2,3.8
-AI compute hardware (IMF definition),imports,2024-2025,10,Hong Kong,False,563.8,3.3
-AI compute hardware (IMF definition),exports,2024-2025,1,Germany,True,1284.9,17.0
-AI compute hardware (IMF definition),exports,2024-2025,2,United States,False,1077.1,14.3
-AI compute hardware (IMF definition),exports,2024-2025,3,Netherlands,True,1028.1,13.6
-AI compute hardware (IMF definition),exports,2024-2025,4,China,False,393.2,5.2
-AI compute hardware (IMF definition),exports,2024-2025,5,Ireland,True,373.5,5.0
-AI compute hardware (IMF definition),exports,2024-2025,6,Hong Kong,False,317.6,4.2
-AI compute hardware (IMF definition),exports,2024-2025,7,Iceland,False,313.5,4.2
-AI compute hardware (IMF definition),exports,2024-2025,8,France,True,260.4,3.5
-AI compute hardware (IMF definition),exports,2024-2025,9,Taiwan,False,260.3,3.5
-AI compute hardware (IMF definition),exports,2024-2025,10,Norway,False,212.8,2.8
-Networking and telecom equipment (ONS definition),imports,2024-2025,1,Netherlands,True,3808.5,28.7
-Networking and telecom equipment (ONS definition),imports,2024-2025,2,China,False,1774.6,13.4
-Networking and telecom equipment (ONS definition),imports,2024-2025,3,United States,False,1704.9,12.9
-Networking and telecom equipment (ONS definition),imports,2024-2025,4,Ireland,True,1032.6,7.8
-Networking and telecom equipment (ONS definition),imports,2024-2025,5,Vietnam,False,912.7,6.9
-Networking and telecom equipment (ONS definition),imports,2024-2025,6,Germany,True,580.0,4.4
-Networking and telecom equipment (ONS definition),imports,2024-2025,7,Taiwan,False,553.6,4.2
-Networking and telecom equipment (ONS definition),imports,2024-2025,8,Hong Kong,False,337.9,2.5
-Networking and telecom equipment (ONS definition),imports,2024-2025,9,France,True,332.6,2.5
-Networking and telecom equipment (ONS definition),imports,2024-2025,10,Sweden,True,235.6,1.8
-Networking and telecom equipment (ONS definition),exports,2024-2025,1,Netherlands,True,629.8,12.4
-Networking and telecom equipment (ONS definition),exports,2024-2025,2,Germany,True,622.9,12.3
-Networking and telecom equipment (ONS definition),exports,2024-2025,3,United States,False,579.6,11.4
-Networking and telecom equipment (ONS definition),exports,2024-2025,4,Ireland,True,388.9,7.7
-Networking and telecom equipment (ONS definition),exports,2024-2025,5,France,True,332.1,6.5
-Networking and telecom equipment (ONS definition),exports,2024-2025,6,India,False,214.4,4.2
-Networking and telecom equipment (ONS definition),exports,2024-2025,7,Australia,False,195.4,3.8
-Networking and telecom equipment (ONS definition),exports,2024-2025,8,Poland,True,183.2,3.6
-Networking and telecom equipment (ONS definition),exports,2024-2025,9,UAE,False,141.7,2.8
-Networking and telecom equipment (ONS definition),exports,2024-2025,10,Taiwan,False,104.3,2.1
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,1,China,False,17876.3,52.9
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,2,Vietnam,False,4324.8,12.8
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,3,Netherlands,True,2508.5,7.4
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,4,Hong Kong,False,1834.7,5.4
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,5,Germany,True,1595.9,4.7
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,6,India,False,976.5,2.9
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,7,United States,False,901.3,2.7
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,8,South Korea,False,597.6,1.8
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,9,Ireland,True,501.3,1.5
-"Computers, phones and other devices (ONS definition)",imports,2024-2025,10,UAE,False,423.0,1.3
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,1,Ireland,True,1385.0,21.5
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,2,Netherlands,True,949.1,14.7
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,3,UAE,False,843.1,13.1
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,4,Germany,True,506.3,7.8
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,5,United States,False,370.8,5.7
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,6,Hong Kong,False,307.9,4.8
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,7,Thailand,False,288.3,4.5
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,8,France,True,188.6,2.9
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,9,China,False,154.2,2.4
-"Computers, phones and other devices (ONS definition)",exports,2024-2025,10,Italy,True,153.7,2.4
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,1,Netherlands,True,877.0,21.6
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,2,China,False,811.4,20.0
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,3,Germany,True,775.5,19.1
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,4,United States,False,403.2,9.9
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,5,Hong Kong,False,162.3,4.0
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,6,Malaysia,False,119.7,2.9
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,7,France,True,111.7,2.7
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,8,Ireland,True,107.9,2.7
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,9,Belgium,True,88.8,2.2
-"Medical, robotic and autonomous equipment (ONS definition)",imports,2024-2025,10,Vietnam,False,71.5,1.8
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,1,Germany,True,696.0,27.0
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,2,Netherlands,True,454.1,17.6
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,3,United States,False,349.0,13.5
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,4,Ireland,True,186.8,7.2
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,5,Ukraine,False,86.6,3.4
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,6,France,True,65.6,2.5
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,7,Japan,False,40.7,1.6
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,8,China,False,36.5,1.4
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,9,Belgium,True,32.4,1.3
-"Medical, robotic and autonomous equipment (ONS definition)",exports,2024-2025,10,Poland,True,23.7,0.9
+category,flow,basis,period,rank,country,eu,value_gbp_m,share_pct
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,1,Netherlands,True,3799.7,22.1
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,2,United States,False,2771.1,16.1
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,3,Poland,True,1427.2,8.3
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,4,China,False,1205.3,7.0
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,5,Ireland,True,1054.7,6.1
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,6,Germany,True,941.3,5.5
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,7,Hungary,True,885.5,5.1
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,8,Taiwan,False,855.4,5.0
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,9,Czechia,True,652.2,3.8
+AI compute hardware (IMF definition),imports,as recorded,2024-2025,10,Hong Kong,False,563.8,3.3
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,1,Germany,True,1284.9,17.0
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,2,United States,False,1077.1,14.3
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,3,Netherlands,True,1028.1,13.6
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,4,China,False,393.2,5.2
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,5,Ireland,True,373.5,5.0
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,6,Hong Kong,False,317.6,4.2
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,7,Iceland,False,313.5,4.2
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,8,France,True,260.4,3.5
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,9,Taiwan,False,260.3,3.5
+AI compute hardware (IMF definition),exports,as recorded,2024-2025,10,Norway,False,212.8,2.8
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,1,United States,False,3304.6,19.2
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,2,China,False,1886.0,10.9
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,3,Poland,True,1462.6,8.5
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,4,Taiwan,False,1330.1,7.7
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,5,Ireland,True,1086.3,6.3
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,6,Germany,True,1032.2,6.0
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,7,Hungary,True,1017.9,5.9
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,8,Thailand,False,887.3,5.2
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,9,Czechia,True,819.8,4.8
+AI compute hardware (IMF definition),imports,origin-adjusted,2024-2025,10,Mexico,False,663.2,3.9
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,1,Netherlands,True,3808.5,28.7
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,2,China,False,1774.6,13.4
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,3,United States,False,1704.9,12.9
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,4,Ireland,True,1032.6,7.8
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,5,Vietnam,False,912.7,6.9
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,6,Germany,True,580.0,4.4
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,7,Taiwan,False,553.6,4.2
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,8,Hong Kong,False,337.9,2.5
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,9,France,True,332.6,2.5
+Networking and telecom equipment (ONS definition),imports,as recorded,2024-2025,10,Sweden,True,235.6,1.8
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,1,Netherlands,True,629.8,12.4
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,2,Germany,True,622.9,12.3
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,3,United States,False,579.6,11.4
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,4,Ireland,True,388.9,7.7
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,5,France,True,332.1,6.5
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,6,India,False,214.4,4.2
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,7,Australia,False,195.4,3.8
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,8,Poland,True,183.2,3.6
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,9,UAE,False,141.7,2.8
+Networking and telecom equipment (ONS definition),exports,as recorded,2024-2025,10,Taiwan,False,104.3,2.1
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,1,China,False,2848.6,21.5
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,2,United States,False,1954.5,14.7
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,3,Vietnam,False,1393.9,10.5
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,4,Ireland,True,1097.4,8.3
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,5,Taiwan,False,959.3,7.2
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,6,Germany,True,659.2,5.0
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,7,Czechia,True,537.4,4.1
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,8,Mexico,False,386.1,2.9
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,9,Thailand,False,378.7,2.9
+Networking and telecom equipment (ONS definition),imports,origin-adjusted,2024-2025,10,France,True,370.4,2.8
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,1,China,False,17876.3,52.9
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,2,Vietnam,False,4324.8,12.8
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,3,Netherlands,True,2508.5,7.4
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,4,Hong Kong,False,1834.7,5.4
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,5,Germany,True,1595.9,4.7
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,6,India,False,976.5,2.9
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,7,United States,False,901.3,2.7
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,8,South Korea,False,597.6,1.8
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,9,Ireland,True,501.3,1.5
+"Computers, phones and other devices (ONS definition)",imports,as recorded,2024-2025,10,UAE,False,423.0,1.3
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,1,Ireland,True,1385.0,21.5
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,2,Netherlands,True,949.1,14.7
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,3,UAE,False,843.1,13.1
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,4,Germany,True,506.3,7.8
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,5,United States,False,370.8,5.7
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,6,Hong Kong,False,307.9,4.8
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,7,Thailand,False,288.3,4.5
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,8,France,True,188.6,2.9
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,9,China,False,154.2,2.4
+"Computers, phones and other devices (ONS definition)",exports,as recorded,2024-2025,10,Italy,True,153.7,2.4
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,1,China,False,19268.1,57.0
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,2,Vietnam,False,4434.2,13.1
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,3,Hong Kong,False,1837.5,5.4
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,4,Germany,True,1682.0,5.0
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,5,India,False,1035.3,3.1
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,6,United States,False,950.7,2.8
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,7,South Korea,False,608.5,1.8
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,8,Ireland,True,526.9,1.6
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,9,UAE,False,423.9,1.3
+"Computers, phones and other devices (ONS definition)",imports,origin-adjusted,2024-2025,10,Netherlands,True,370.2,1.1
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,1,Netherlands,True,877.0,21.6
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,2,China,False,811.4,20.0
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,3,Germany,True,775.5,19.1
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,4,United States,False,403.2,9.9
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,5,Hong Kong,False,162.3,4.0
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,6,Malaysia,False,119.7,2.9
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,7,France,True,111.7,2.7
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,8,Ireland,True,107.9,2.7
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,9,Belgium,True,88.8,2.2
+"Medical, robotic and autonomous equipment (ONS definition)",imports,as recorded,2024-2025,10,Vietnam,False,71.5,1.8
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,1,Germany,True,696.0,27.0
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,2,Netherlands,True,454.1,17.6
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,3,United States,False,349.0,13.5
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,4,Ireland,True,186.8,7.2
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,5,Ukraine,False,86.6,3.4
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,6,France,True,65.6,2.5
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,7,Japan,False,40.7,1.6
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,8,China,False,36.5,1.4
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,9,Belgium,True,32.4,1.3
+"Medical, robotic and autonomous equipment (ONS definition)",exports,as recorded,2024-2025,10,Poland,True,23.7,0.9
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,1,Netherlands,True,840.3,20.7
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,2,China,False,833.1,20.5
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,3,Germany,True,782.0,19.2
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,4,United States,False,404.4,10.0
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,5,Hong Kong,False,162.3,4.0
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,6,Malaysia,False,122.6,3.0
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,7,France,True,113.5,2.8
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,8,Ireland,True,108.3,2.7
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,9,Belgium,True,75.7,1.9
+"Medical, robotic and autonomous equipment (ONS definition)",imports,origin-adjusted,2024-2025,10,Vietnam,False,71.8,1.8

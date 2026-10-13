@@ -29,6 +29,19 @@ def query(entity: str, filter: str, top: int | None = None) -> list[dict]:
     return rows
 
 
+def apply(entity: str, transformation: str, timeout: int = 300) -> list[dict]:
+    """Run an OData $apply query (filter / groupby / aggregate, summed on HMRC's side),
+    following @odata.nextLink pages: HMRC returns at most 30,000 rows per page, so a
+    detailed groupby (e.g. by month, country and commodity) needs several."""
+    url = f"{BASE}/{entity}?$apply={urllib.parse.quote(transformation)}"
+    rows: list[dict] = []
+    while url:
+        page = get_json(url, timeout=timeout)
+        rows.extend(page.get("value", []))
+        url = page.get("@odata.nextLink")
+    return rows
+
+
 def ots(commodity_id: int, month_from: int, month_to: int) -> list[dict]:
     """Trade rows for one CN8 code between two YYYYMM months (inclusive).
     FlowTypeId: 1/3 = EU/non-EU imports, 2/4 = EU/non-EU exports."""

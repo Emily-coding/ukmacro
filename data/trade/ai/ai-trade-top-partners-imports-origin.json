@@ -1,0 +1,112 @@
+{
+ "slug": "ai-trade-top-partners-imports-origin",
+ "category": "trade",
+ "title": "Top 3 sources of UK AI imports, by product group, 2024-2025 (origin-adjusted)",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "Share of UK imports of each product group, %",
+ "source": "HMRC Overseas Trade Statistics; Eurostat Comext; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). AI compute hardware = IMF AI hardware basket; the other groups are the ONS-based AI products by type. Origin-adjusted: UK imports recorded from the Netherlands and Belgium (EU distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries of origin in proportion to those countries' own imports of the same products (Eurostat Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) are not reassigned. An estimate. Shares are of all trade, including trade whose partner HMRC suppresses for confidentiality.",
+ "series": [
+  {
+   "key": "EU",
+   "label": "EU member state"
+  },
+  {
+   "key": "nonEU",
+   "label": "Outside the EU"
+  }
+ ],
+ "events": null,
+ "data_through": "Medical, robotic and autonomous equipment (ONS definition)",
+ "status": "ok",
+ "data": [
+  {
+   "date": "AI compute hardware (IMF definition)",
+   "ranks": [
+    {
+     "label": "United States",
+     "value": 19.2,
+     "key": "nonEU"
+    },
+    {
+     "label": "China",
+     "value": 10.9,
+     "key": "nonEU"
+    },
+    {
+     "label": "Poland",
+     "value": 8.5,
+     "key": "EU"
+    }
+   ]
+  },
+  {
+   "date": "Networking and telecom equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "China",
+     "value": 21.5,
+     "key": "nonEU"
+    },
+    {
+     "label": "United States",
+     "value": 14.7,
+     "key": "nonEU"
+    },
+    {
+     "label": "Vietnam",
+     "value": 10.5,
+     "key": "nonEU"
+    }
+   ]
+  },
+  {
+   "date": "Computers, phones and other devices (ONS definition)",
+   "ranks": [
+    {
+     "label": "China",
+     "value": 57.0,
+     "key": "nonEU"
+    },
+    {
+     "label": "Vietnam",
+     "value": 13.1,
+     "key": "nonEU"
+    },
+    {
+     "label": "Hong Kong",
+     "value": 5.4,
+     "key": "nonEU"
+    }
+   ]
+  },
+  {
+   "date": "Medical, robotic and autonomous equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "Netherlands",
+     "value": 20.7,
+     "key": "EU"
+    },
+    {
+     "label": "China",
+     "value": 20.5,
+     "key": "nonEU"
+    },
+    {
+     "label": "Germany",
+     "value": 19.2,
+     "key": "EU"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}
