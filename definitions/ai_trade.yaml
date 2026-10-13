@@ -132,6 +132,13 @@ imf_hardware:
   label: "AI compute hardware (IMF basket)"
   source: "IMF AI Hardware basket"   # TODO: paper title and link
   hs6: ["847150", "847170", "847180", "847330", "848610", "848620", "848640", "848690", "854231", "854232"]
+  # components for the stacked bar charts (together = the codes above)
+  components:
+    - {label: "Servers and processing units", hs6: ["847150"]}
+    - {label: "Storage and other computer units", hs6: ["847170", "847180"]}
+    - {label: "Computer assemblies (incl. graphics cards)", hs6: ["847330"]}
+    - {label: "Processor and memory chips", hs6: ["854231", "854232"]}
+    - {label: "Chip-making equipment", hs6: ["848610", "848620", "848640", "848690"]}
 
 # Every AI product in the ONS article, and how it is covered by the product layer.
 coverage:

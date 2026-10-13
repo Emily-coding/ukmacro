@@ -1,0 +1,108 @@
+{
+ "slug": "ai-trade-ai-stack-exports",
+ "category": "trade",
+ "title": "The AI stack in UK goods exports",
+ "type": "stacked-bar",
+ "freq": "A",
+ "units": "\u00a3 billion, calendar year",
+ "source": "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Layers nest from narrowest to broadest; the top of each bar is the ONS extended goods tier (CPA 26-28). IMF basket and other AI products from HMRC by commodity code; the rest is ONS MQ10 (balance of payments basis, seasonally adjusted) minus those, so it absorbs small differences between the sources. Other AI products exclude codes created in 2022 (sensors, handling robots, drones). ",
+ "series": [
+  {
+   "key": "imf",
+   "label": "AI compute hardware (IMF basket)"
+  },
+  {
+   "key": "ons_products",
+   "label": "Other AI products (phones, laptops, network kit, devices)"
+  },
+  {
+   "key": "rest",
+   "label": "Rest of ONS extended tier (all electronics, electrical, machinery)"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2025",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016",
+   "imf": 3.59,
+   "ons_products": 5.37,
+   "rest": 52.89
+  },
+  {
+   "date": "2017",
+   "imf": 3.47,
+   "ons_products": 5.85,
+   "rest": 59.43
+  },
+  {
+   "date": "2018",
+   "imf": 3.68,
+   "ons_products": 5.77,
+   "rest": 62.88
+  },
+  {
+   "date": "2019",
+   "imf": 3.77,
+   "ons_products": 6.34,
+   "rest": 64.82
+  },
+  {
+   "date": "2020",
+   "imf": 3.49,
+   "ons_products": 5.89,
+   "rest": 56.72
+  },
+  {
+   "date": "2021",
+   "imf": 3.39,
+   "ons_products": 5.66,
+   "rest": 62.07
+  },
+  {
+   "date": "2022",
+   "imf": 3.82,
+   "ons_products": 6.78,
+   "rest": 68.71
+  },
+  {
+   "date": "2023",
+   "imf": 3.48,
+   "ons_products": 6.37,
+   "rest": 73.84
+  },
+  {
+   "date": "2024",
+   "imf": 3.16,
+   "ons_products": 6.52,
+   "rest": 72.67
+  },
+  {
+   "date": "2025",
+   "imf": 4.39,
+   "ons_products": 7.09,
+   "rest": 73.0
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 9
+}

@@ -28,6 +28,8 @@ Outputs:
     data/trade/ai/ai_trade_by_country_rolling.csv  by-partner chart series, quarterly and rolling 4Q
     data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
     data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
+    data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
+    data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended tier
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
 
@@ -473,6 +475,96 @@ def imf_price_charts(mq: dict, prods: list[dict]) -> list[dict]:
     return rows
 
 
+def imf_component_charts() -> list[dict]:
+    """IMF AI hardware basket by component (definitions/ai_trade.yaml `imf_hardware.components`):
+    stacked bars of calendar-year totals (£bn), complete years only, one chart each for
+    imports and exports. Returns rows for a CSV."""
+    comps = DEFS["imf_hardware"]["components"]
+    annual: dict = {}   # (component index, flow, year) -> £
+    for k, comp in enumerate(comps):
+        for (partner, flow, q), c in hmrc_product(comp["hs6"]).items():
+            if len(c["months"]) == 3:
+                key = (k, flow, q[:4])
+                annual.setdefault(key, [0.0, 0])
+                annual[key][0] += c["value"]
+                annual[key][1] += 1   # quarter-partner cells: 8 = a complete year (4 quarters x EU/non-EU)
+    rows = []
+    for flow in ("imports", "exports"):
+        years = sorted({y for (k, f, y), (v, n) in annual.items() if f == flow and n == 8})
+        data = [{"date": y, **{f"c{k}": round(annual.get((k, flow, y), [0.0])[0] / 1e9, 2)
+                               for k in range(len(comps))}} for y in years]
+        rows += [{"component": comps[k]["label"], "flow": flow, "year": d["date"], "value_gbp_bn": d[f"c{k}"]}
+                 for d in data for k in range(len(comps))]
+        series = [{"key": f"c{k}", "label": c["label"]} for k, c in enumerate(comps)]
+        series[-1]["color"] = "neutral"   # small; five components, four palette colours
+        publish(chart(f"ai-trade-imf-hardware-components-{flow}",
+                      f"UK {flow} of AI compute hardware (IMF basket), by component",
+                      "£ billion, calendar year", "stacked-bar", series, data,
+                      UPPER_BOUND + "IMF AI hardware basket. Servers and processing units = HS 847150 (also "
+                      "includes desktop PC base units); storage and other units = 847170, 847180; assemblies "
+                      "= 847330; chips = 854231, 854232; chip-making equipment = 848610-848690. Complete "
+                      "calendar years only. " + (EU_BREAK if flow == "imports" else ""),
+                      "HMRC Overseas Trade Statistics; ukmacro calculations", freq="A"))
+    return rows
+
+
+def ai_stack_charts(mq: dict, prods: list[dict], components: list[dict]) -> list[dict]:
+    """The "AI stack" in goods trade, narrowest to broadest, as stacked calendar-year bars
+    (£bn), one chart each for imports and exports. The layers nest, so the bar's top is the
+    ONS extended goods tier:
+      1. IMF AI hardware basket (HMRC; from imf_component_charts' rows)
+      2. other AI products on the ONS-based product list (HMRC; codes not in layer 1;
+         full-series products only, as in the products total)
+      3. the rest of the extended goods tier, CPA 26-28 (ONS MQ10, EU + non-EU, current
+         prices) minus layers 1 and 2. Mixes sources (MQ10 is seasonally adjusted and on a
+         balance of payments basis), which matters little for calendar-year totals."""
+    imf_codes = set(DEFS["imf_hardware"]["hs6"])
+    others = [p["id"] for p in DEFS["products"]
+              if p["id"] != "smartphones" and not p.get("from") and not set(p["hs6"]) & imf_codes]
+    rows = []
+    for flow, f in (("imports", "IM"), ("exports", "EX")):
+        imf = {}
+        for r in components:
+            if r["flow"] == flow:
+                imf[r["year"]] = imf.get(r["year"], 0.0) + r["value_gbp_bn"]
+        prod: dict = {}
+        nq: dict = {}
+        for r in prods:
+            if r["flow"] == flow and r["product"] in others:
+                prod[r["quarter"][:4]] = prod.get(r["quarter"][:4], 0.0) + r["value_gbp_m"] / 1000
+                nq.setdefault(r["quarter"][:4], set()).add(r["quarter"])
+        ext: dict = {}
+        series = [mq10_series(mq, c, g, f, "CP") for c in DEFS["goods_tiers"]["extended"]["cpa"] for g in ("EU", "RW")]
+        for q in set.intersection(*(set(x) for x in series)):
+            ext.setdefault(q[:4], []).append(sum(x[q] for x in series) / 1000)
+        years = sorted(y for y in imf if len(ext.get(y, [])) == 4 and len(nq.get(y, ())) == 4)
+        data = []
+        for y in years:
+            rest = sum(ext[y]) - imf[y] - prod[y]
+            data.append({"date": y, "imf": round(imf[y], 2), "ons_products": round(prod[y], 2),
+                         "rest": round(rest, 2)})
+            rows.append({"flow": flow, "year": y, "imf_hardware_gbp_bn": round(imf[y], 2),
+                         "other_ai_products_gbp_bn": round(prod[y], 2),
+                         "rest_of_extended_tier_gbp_bn": round(rest, 2),
+                         "extended_tier_total_gbp_bn": round(sum(ext[y]), 2)})
+        publish(chart(f"ai-trade-ai-stack-{flow}",
+                      f"The AI stack in UK goods {flow}",
+                      "£ billion, calendar year", "stacked-bar",
+                      [{"key": "imf", "label": "AI compute hardware (IMF basket)"},
+                       {"key": "ons_products", "label": "Other AI products (phones, laptops, network kit, devices)"},
+                       {"key": "rest", "label": "Rest of ONS extended tier (all electronics, electrical, machinery)"}],
+                      data,
+                      UPPER_BOUND + "Layers nest from narrowest to broadest; the top of each bar is the ONS "
+                      "extended goods tier (CPA 26-28). IMF basket and other AI products from HMRC by "
+                      "commodity code; the rest is ONS MQ10 (balance of payments basis, seasonally adjusted) "
+                      "minus those, so it absorbs small differences between the sources. Other AI products "
+                      "exclude codes created in 2022 (sensors, handling robots, drones). "
+                      + (EU_BREAK if flow == "imports" else ""),
+                      "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ukmacro calculations",
+                      freq="A"))
+    return rows
+
+
 # ---------------------------------------------------------------- 5. summary tables
 
 def product_summary(rows: list[dict], base: str = "2019", latest: str = "2025") -> list[dict]:
@@ -613,6 +705,9 @@ def build() -> None:
     write_csv(by_country, OUT / "ai_trade_by_country.csv")
     write_csv(country_charts(by_country), OUT / "ai_trade_by_country_rolling.csv")
     write_csv(imf_price_charts(mq, prods), OUT / "ai_hardware_prices.csv")
+    components = imf_component_charts()
+    write_csv(components, OUT / "ai_hardware_components.csv")
+    write_csv(ai_stack_charts(mq, prods, components), OUT / "ai_stack.csv")
     summary = product_summary(prods)
     write_csv(summary, OUT / "ai_products_summary.csv")
     write_markdown_tables(summary, OUT / "ai_products_summary.md")

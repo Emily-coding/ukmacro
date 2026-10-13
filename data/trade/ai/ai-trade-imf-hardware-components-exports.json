@@ -1,0 +1,137 @@
+{
+ "slug": "ai-trade-imf-hardware-components-exports",
+ "category": "trade",
+ "title": "UK exports of AI compute hardware (IMF basket), by component",
+ "type": "stacked-bar",
+ "freq": "A",
+ "units": "\u00a3 billion, calendar year",
+ "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). IMF AI hardware basket. Servers and processing units = HS 847150 (also includes desktop PC base units); storage and other units = 847170, 847180; assemblies = 847330; chips = 854231, 854232; chip-making equipment = 848610-848690. Complete calendar years only. ",
+ "series": [
+  {
+   "key": "c0",
+   "label": "Servers and processing units"
+  },
+  {
+   "key": "c1",
+   "label": "Storage and other computer units"
+  },
+  {
+   "key": "c2",
+   "label": "Computer assemblies (incl. graphics cards)"
+  },
+  {
+   "key": "c3",
+   "label": "Processor and memory chips"
+  },
+  {
+   "key": "c4",
+   "label": "Chip-making equipment",
+   "color": "neutral"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2025",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016",
+   "c0": 0.61,
+   "c1": 0.98,
+   "c2": 1.06,
+   "c3": 0.64,
+   "c4": 0.3
+  },
+  {
+   "date": "2017",
+   "c0": 0.57,
+   "c1": 0.98,
+   "c2": 0.99,
+   "c3": 0.6,
+   "c4": 0.33
+  },
+  {
+   "date": "2018",
+   "c0": 0.61,
+   "c1": 1.0,
+   "c2": 1.01,
+   "c3": 0.6,
+   "c4": 0.46
+  },
+  {
+   "date": "2019",
+   "c0": 1.01,
+   "c1": 1.02,
+   "c2": 0.75,
+   "c3": 0.59,
+   "c4": 0.4
+  },
+  {
+   "date": "2020",
+   "c0": 0.93,
+   "c1": 0.86,
+   "c2": 0.69,
+   "c3": 0.57,
+   "c4": 0.44
+  },
+  {
+   "date": "2021",
+   "c0": 1.11,
+   "c1": 0.64,
+   "c2": 0.61,
+   "c3": 0.48,
+   "c4": 0.55
+  },
+  {
+   "date": "2022",
+   "c0": 1.28,
+   "c1": 0.74,
+   "c2": 0.57,
+   "c3": 0.57,
+   "c4": 0.66
+  },
+  {
+   "date": "2023",
+   "c0": 1.07,
+   "c1": 0.75,
+   "c2": 0.53,
+   "c3": 0.42,
+   "c4": 0.71
+  },
+  {
+   "date": "2024",
+   "c0": 0.95,
+   "c1": 0.71,
+   "c2": 0.51,
+   "c3": 0.27,
+   "c4": 0.72
+  },
+  {
+   "date": "2025",
+   "c0": 1.58,
+   "c1": 1.02,
+   "c2": 0.78,
+   "c3": 0.3,
+   "c4": 0.71
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 9
+}
