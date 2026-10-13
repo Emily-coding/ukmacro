@@ -34,7 +34,7 @@ Outputs:
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
-    data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch and UK trade
+    data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch, UK and US trade
     data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended goods tier, AI services (values and volumes)
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
@@ -54,7 +54,7 @@ sys.path.insert(0, str(REPO))
 
 import yaml  # noqa: E402
 
-from ukmacro import charts, comext, hmrc_trade, ons  # noqa: E402
+from ukmacro import charts, comext, comtrade, hmrc_trade, ons  # noqa: E402
 from ukmacro.http import get_json, get_text  # noqa: E402
 
 DEFS = yaml.safe_load((REPO / "definitions" / "ai_trade.yaml").read_text())
@@ -925,7 +925,8 @@ def uk_trade_by_partner(hs6: list[str], years: list[str]) -> dict[tuple[str, str
 def chip_supply_chain_chart() -> list[dict]:
     """"Following an AI chip": each supply-chain stage (definitions/ai_trade.yaml
     `chip_supply_chain`) and what each country's trade shows at it in the latest year
-    (EU members from Eurostat Comext, the UK from HMRC; £ at annual average exchange rates):
+    (EU members from Eurostat Comext, the UK from HMRC, the US from UN Comtrade; £ at
+    annual average exchange rates):
     imports, exports, the top sources and destinations, and whether the country is a net
     exporter (largely makes it), a net importer (uses it or passes it on) or trades both
     ways (a hub). Returns rows for a CSV."""
@@ -933,17 +934,28 @@ def chip_supply_chain_chart() -> list[dict]:
     codes = [c for st in spec["stages"] for c in st["hs6"]]
     years = [str(y) for y in range(datetime.date.today().year - 3, datetime.date.today().year)]
     try:
-        # £ per €, annual averages (Eurostat, from ECB reference rates): everything is shown in £
-        fx = get_json("https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a"
-                      f"?format=JSON&currency=GBP&statinfo=AVG&sinceTimePeriod={years[0]}", timeout=60)
-        when = {i: y for y, i in fx["dimension"]["time"]["category"]["index"].items()}
-        gbp_per_eur = {when[int(k)]: v for k, v in fx["value"].items()}
-        trade = {cc: (uk_trade_by_partner(codes, years) if cc == "GB" else
-                      {k: v * gbp_per_eur.get(k[3], float("nan"))
-                       for k, v in comext.annual(cc, codes, years).items()})
-                 for cc in spec["countries"]}
+        # annual average exchange rates (Eurostat, from ECB reference rates): everything is shown in £
+        def per_eur(currency: str) -> dict[str, float]:
+            fx = get_json("https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a"
+                          f"?format=JSON&currency={currency}&statinfo=AVG&sinceTimePeriod={years[0]}", timeout=60)
+            when = {i: y for y, i in fx["dimension"]["time"]["category"]["index"].items()}
+            return {when[int(k)]: v for k, v in fx["value"].items()}
+        gbp, usd = per_eur("GBP"), per_eur("USD")
+        trade = {}
+        for cc in spec["countries"]:
+            if cc == "GB":
+                trade[cc] = uk_trade_by_partner(codes, years)
+            elif cc == "US":   # Comtrade, latest year the US has reported (one year: the API is slow)
+                us = {}
+                for y in reversed(years):
+                    us = comtrade.annual(842, codes, y)
+                    if us:
+                        break
+                trade[cc] = {k: v * gbp[k[3]] / usd[k[3]] for k, v in us.items()}
+            else:
+                trade[cc] = {k: v * gbp.get(k[3], float("nan")) for k, v in comext.annual(cc, codes, years).items()}
     except Exception as e:  # noqa: BLE001 - skip, keep the last published version
-        print(f"[ai-trade] Comext unavailable, chip supply chain skipped: {e}")
+        print(f"[ai-trade] Comext or Comtrade unavailable, chip supply chain skipped: {e}")
         return []
     year = min(max(k[3] for k in d if k[0] == "imports") for d in trade.values())
     rows, grid = [], []
@@ -962,7 +974,7 @@ def chip_supply_chain_chart() -> list[dict]:
                 for (ff, c, p, y), v in d.items():
                     if ff == f and c in codes_ and y == year and (_is_origin(p, cc) or p == "GB" != cc):
                         agg[p] = agg.get(p, 0.0) + v
-                partners[f] = sorted(agg.items(), key=lambda kv: -kv[1])[:3]
+                partners[f] = sorted(agg.items(), key=lambda kv: -kv[1])[:spec.get("top", 3)]
                 rows += [{"country": country, "stage": st["label"], "year": year, "flow": f, "partner": name(p),
                           "gbp_bn": round(v / 1e9, 2)} for p, v in partners[f]]
             m, x = tot["imports"], tot["exports"]
@@ -975,11 +987,13 @@ def chip_supply_chain_chart() -> list[dict]:
             rows.append({"country": country, "stage": st["label"], "year": year, "flow": "total",
                          "partner": f"imports {m / 1e9:.2f}, exports {x / 1e9:.2f}", "gbp_bn": None})
         grid.append({"date": country, "label": country, "cells": cells})
-    grid.append({"date": "context", "label": "Who makes it worldwide", "weight": 0.75,
+    grid.append({"date": "context", "label": "Who makes it worldwide", "weight": 0.68,
                  "cells": [{"lines": [st["context"]]} for st in spec["stages"]]})
-    names = " and ".join(spec["countries"].values()).replace("United Kingdom", "UK")
+    names = ", ".join(spec["countries"].values()).replace("United Kingdom", "UK").replace("United States", "US")
+    names = " and ".join(names.rsplit(", ", 1))
     c = chart("ai-chip-supply-chain", f"Following an AI chip: {names} trade, {year}",
-              f"£ billion, {year}: imports (in) and exports (out), with the top three sources and destinations",
+              f"£ billion, {year}: imports (in) and exports (out), with the top {('two', 'three')[spec.get('top', 3) - 2]} "
+              "sources and destinations",
               "flow-grid",
               [{"key": "makes", "label": "Net exporter: largely made here"},
                {"key": "hub", "label": "Two-way trade: distribution hub"},
@@ -988,9 +1002,10 @@ def chip_supply_chain_chart() -> list[dict]:
               "Each stage is a set of HS6 trade codes: 1. 280461, 381800, 280429, 811292, 370790; 2. 848620, "
               "848690; 3. 854231, 854232; 4. 847330; 5. 847150. Whole codes, so they include non-AI products. "
               "Partners as each country records them (EU trade by member state of dispatch or arrival, "
-              "non-EU imports by origin). Euro values converted at annual average exchange rates (ECB reference rates, via Eurostat). 'Who makes "
+              "non-EU imports by origin). Euro and dollar values converted at annual average exchange rates (ECB "
+              "reference rates, via Eurostat). 'Who makes "
               "it worldwide' is background, not trade data.",
-              "Eurostat Comext; HMRC Overseas Trade Statistics; ukmacro calculations", freq="A")
+              "Eurostat Comext; HMRC Overseas Trade Statistics; UN Comtrade; ukmacro calculations", freq="A")
     c["columns"] = [{"label": st["label"], "sub": st["sub"]} for st in spec["stages"]]
     c["events"] = None
     publish(c)

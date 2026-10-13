@@ -208,28 +208,30 @@ country_groups:
 # --------------------------------------------------------------------- chip supply chain
 # "Following an AI chip" diagram: each stage of the supply chain as trade codes, and what
 # each country's trade shows at each stage (EU members from Eurostat Comext, the UK from
-# HMRC; all in £ at annual average exchange rates). `context` is background on who makes
+# HMRC, the US from UN Comtrade; all in £ at annual average exchange rates). `context` is background on who makes
 # each stage worldwide (general knowledge, not trade data).
 chip_supply_chain:
-  countries: {NL: Netherlands, GB: United Kingdom}   # GB = HMRC; others = Comext
+  # GB = HMRC; US = UN Comtrade (as the US reports it); others = Eurostat Comext
+  countries: {NL: Netherlands, GB: United Kingdom, US: United States}
+  top: 2   # partners shown per flow (2 or 3; 3 only fits with fewer countries)
   stages:
     - label: "1. Materials"
       sub: "Silicon, wafers, neon, gallium, photoresists"
       hs6: ["280461", "381800", "280429", "811292", "370790"]
-      context: "Wafers: Japan, Taiwan, Germany, Korea. Gallium, germanium: mostly China"
+      context: "Wafers: Japan, Taiwan, Germany. Gallium: China"
     - label: "2. Chip machines"
       sub: "Lithography, deposition, etching, and parts"
       hs6: ["848620", "848690"]
-      context: "EUV lithography: only the Netherlands (ASML). Etching, deposition: US, Japan"
+      context: "EUV: only the Netherlands (ASML). Etching: US, Japan"
     - label: "3. Chips"
       sub: "Processors (incl. GPUs) and memory"
       hs6: ["854231", "854232"]
-      context: "AI GPUs: made in Taiwan (TSMC). HBM memory: Korea. Intel: US, Ireland, Israel"
+      context: "AI GPUs: Taiwan (TSMC). Memory (HBM): Korea"
     - label: "4. GPU boards"
       sub: "Boards, modules and other computer assemblies"
       hs6: ["847330"]
-      context: "Assembled by contract manufacturers in Taiwan, China, Vietnam, Mexico"
+      context: "Contract makers in Taiwan, China, Vietnam"
     - label: "5. Servers"
       sub: "Processing units, incl. AI servers"
       hs6: ["847150"]
-      context: "Built in Taiwan, Mexico, China and central Europe for data centres"
+      context: "Taiwan, Mexico, China, central Europe"

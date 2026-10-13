@@ -1,12 +1,12 @@
 {
  "slug": "ai-chip-supply-chain",
  "category": "trade",
- "title": "Following an AI chip: Netherlands and UK trade, 2025",
+ "title": "Following an AI chip: Netherlands, UK and US trade, 2025",
  "type": "flow-grid",
  "freq": "A",
- "units": "\u00a3 billion, 2025: imports (in) and exports (out), with the top three sources and destinations",
- "source": "Eurostat Comext; HMRC Overseas Trade Statistics; ukmacro calculations",
- "note": "Each stage is a set of HS6 trade codes: 1. 280461, 381800, 280429, 811292, 370790; 2. 848620, 848690; 3. 854231, 854232; 4. 847330; 5. 847150. Whole codes, so they include non-AI products. Partners as each country records them (EU trade by member state of dispatch or arrival, non-EU imports by origin). Euro values converted at annual average exchange rates (ECB reference rates, via Eurostat). 'Who makes it worldwide' is background, not trade data.",
+ "units": "\u00a3 billion, 2025: imports (in) and exports (out), with the top two sources and destinations",
+ "source": "Eurostat Comext; HMRC Overseas Trade Statistics; UN Comtrade; ukmacro calculations",
+ "note": "Each stage is a set of HS6 trade codes: 1. 280461, 381800, 280429, 811292, 370790; 2. 848620, 848690; 3. 854231, 854232; 4. 847330; 5. 847150. Whole codes, so they include non-AI products. Partners as each country records them (EU trade by member state of dispatch or arrival, non-EU imports by origin). Euro and dollar values converted at annual average exchange rates (ECB reference rates, via Eurostat). 'Who makes it worldwide' is background, not trade data.",
  "series": [
   {
    "key": "makes",
@@ -41,32 +41,32 @@
      "headline": "In 6.3 \u00b7 Out 21.9",
      "key": "makes",
      "lines": [
-      "From: Germany 3.6, US 1.1, Taiwan 0.4",
-      "To: China 6.6, Taiwan 5.4, Korea 5.3"
+      "From: Germany 3.6, US 1.1",
+      "To: China 6.6, Taiwan 5.4"
      ]
     },
     {
      "headline": "In 7.6 \u00b7 Out 8.5",
      "key": "hub",
      "lines": [
-      "From: Malaysia 2.7, Vietnam 0.9, Costa Rica 0.9",
-      "To: Czechia 1.5, Poland 1.4, Germany 1.2"
+      "From: Malaysia 2.7, Vietnam 0.9",
+      "To: Czechia 1.5, Poland 1.4"
      ]
     },
     {
      "headline": "In 5.5 \u00b7 Out 7.1",
      "key": "hub",
      "lines": [
-      "From: China 1.3, Vietnam 0.9, Korea 0.8",
-      "To: Germany 1.4, Mexico 0.7, France 0.7"
+      "From: China 1.3, Vietnam 0.9",
+      "To: Germany 1.4, Mexico 0.7"
      ]
     },
     {
      "headline": "In 11.6 \u00b7 Out 9.1",
      "key": "hub",
      "lines": [
-      "From: US 2.8, China 2.3, Mexico 2.2",
-      "To: Germany 1.7, UK 1.1, Sweden 0.9"
+      "From: US 2.8, China 2.3",
+      "To: Germany 1.7, UK 1.1"
      ]
     }
    ]
@@ -88,14 +88,14 @@
      "key": "makes",
      "lines": [
       "From: US 0.1",
-      "To: US 0.1, Taiwan 0.1, China 0.1"
+      "To: US 0.1, Taiwan 0.1"
      ]
     },
     {
      "headline": "In 0.9 \u00b7 Out 0.3",
      "key": "uses",
      "lines": [
-      "From: Netherlands 0.2, Germany 0.2, US 0.1",
+      "From: Netherlands 0.2, Germany 0.2",
       "To: all small"
      ]
     },
@@ -103,16 +103,62 @@
      "headline": "In 1.2 \u00b7 Out 0.8",
      "key": "uses",
      "lines": [
-      "From: Netherlands 0.2, US 0.2, China 0.2",
-      "To: Germany 0.2, Netherlands 0.1, Hong Kong 0.1"
+      "From: Netherlands 0.2, US 0.2",
+      "To: Germany 0.2, Netherlands 0.1"
      ]
     },
     {
      "headline": "In 5.5 \u00b7 Out 1.6",
      "key": "uses",
      "lines": [
-      "From: Netherlands 1.3, US 1.1, Poland 0.7",
-      "To: Netherlands 0.3, Germany 0.2, US 0.2"
+      "From: Netherlands 1.3, US 1.1",
+      "To: Netherlands 0.3, Germany 0.2"
+     ]
+    }
+   ]
+  },
+  {
+   "date": "United States",
+   "label": "United States",
+   "cells": [
+    {
+     "headline": "In 2.1 \u00b7 Out 2.9",
+     "key": "hub",
+     "lines": [
+      "From: Japan 0.9, Taiwan 0.2",
+      "To: Japan 0.6, Malaysia 0.4"
+     ]
+    },
+    {
+     "headline": "In 8.6 \u00b7 Out 14.0",
+     "key": "makes",
+     "lines": [
+      "From: Japan 2.0, Netherlands 2.0",
+      "To: Taiwan 3.6, Korea 3.1"
+     ]
+    },
+    {
+     "headline": "In 26.5 \u00b7 Out 28.2",
+     "key": "hub",
+     "lines": [
+      "From: Taiwan 8.3, Malaysia 7.2",
+      "To: Mexico 8.3, China 5.6"
+     ]
+    },
+    {
+     "headline": "In 67.8 \u00b7 Out 26.6",
+     "key": "uses",
+     "lines": [
+      "From: Taiwan 35.4, Vietnam 10.3",
+      "To: Mexico 15.5, Taiwan 3.9"
+     ]
+    },
+    {
+     "headline": "In 124.8 \u00b7 Out 23.4",
+     "key": "uses",
+     "lines": [
+      "From: Mexico 61.0, Taiwan 52.7",
+      "To: Mexico 4.7, Netherlands 2.8"
      ]
     }
    ]
@@ -120,31 +166,31 @@
   {
    "date": "context",
    "label": "Who makes it worldwide",
-   "weight": 0.75,
+   "weight": 0.68,
    "cells": [
     {
      "lines": [
-      "Wafers: Japan, Taiwan, Germany, Korea. Gallium, germanium: mostly China"
+      "Wafers: Japan, Taiwan, Germany. Gallium: China"
      ]
     },
     {
      "lines": [
-      "EUV lithography: only the Netherlands (ASML). Etching, deposition: US, Japan"
+      "EUV: only the Netherlands (ASML). Etching: US, Japan"
      ]
     },
     {
      "lines": [
-      "AI GPUs: made in Taiwan (TSMC). HBM memory: Korea. Intel: US, Ireland, Israel"
+      "AI GPUs: Taiwan (TSMC). Memory (HBM): Korea"
      ]
     },
     {
      "lines": [
-      "Assembled by contract manufacturers in Taiwan, China, Vietnam, Mexico"
+      "Contract makers in Taiwan, China, Vietnam"
      ]
     },
     {
      "lines": [
-      "Built in Taiwan, Mexico, China and central Europe for data centres"
+      "Taiwan, Mexico, China, central Europe"
      ]
     }
    ]
