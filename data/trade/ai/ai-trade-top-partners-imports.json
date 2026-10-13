@@ -1,0 +1,112 @@
+{
+ "slug": "ai-trade-top-partners-imports",
+ "category": "trade",
+ "title": "Top 3 sources of UK AI imports, by product group, 2024-2025",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "Share of UK imports of each product group, %",
+ "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). AI compute hardware = IMF AI hardware basket; the other groups are the ONS-based AI products by type. EU imports are recorded by country of dispatch (so goods routed via e.g. Dutch distribution hubs count as the Netherlands); non-EU imports by country of origin. Shares are of all trade, including trade whose partner HMRC suppresses for confidentiality.",
+ "series": [
+  {
+   "key": "EU",
+   "label": "EU member state"
+  },
+  {
+   "key": "nonEU",
+   "label": "Outside the EU"
+  }
+ ],
+ "events": null,
+ "data_through": "Medical, robotic and autonomous equipment (ONS definition)",
+ "status": "ok",
+ "data": [
+  {
+   "date": "AI compute hardware (IMF definition)",
+   "ranks": [
+    {
+     "label": "Netherlands",
+     "value": 22.1,
+     "key": "EU"
+    },
+    {
+     "label": "United States",
+     "value": 16.1,
+     "key": "nonEU"
+    },
+    {
+     "label": "Poland",
+     "value": 8.3,
+     "key": "EU"
+    }
+   ]
+  },
+  {
+   "date": "Networking and telecom equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "Netherlands",
+     "value": 28.7,
+     "key": "EU"
+    },
+    {
+     "label": "China",
+     "value": 13.4,
+     "key": "nonEU"
+    },
+    {
+     "label": "United States",
+     "value": 12.9,
+     "key": "nonEU"
+    }
+   ]
+  },
+  {
+   "date": "Computers, phones and other devices (ONS definition)",
+   "ranks": [
+    {
+     "label": "China",
+     "value": 52.9,
+     "key": "nonEU"
+    },
+    {
+     "label": "Vietnam",
+     "value": 12.8,
+     "key": "nonEU"
+    },
+    {
+     "label": "Netherlands",
+     "value": 7.4,
+     "key": "EU"
+    }
+   ]
+  },
+  {
+   "date": "Medical, robotic and autonomous equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "Netherlands",
+     "value": 21.6,
+     "key": "EU"
+    },
+    {
+     "label": "China",
+     "value": 20.0,
+     "key": "nonEU"
+    },
+    {
+     "label": "Germany",
+     "value": 19.1,
+     "key": "EU"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

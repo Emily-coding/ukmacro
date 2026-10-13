@@ -1,0 +1,112 @@
+{
+ "slug": "ai-trade-top-partners-exports",
+ "category": "trade",
+ "title": "Top 3 destinations of UK AI exports, by product group, 2024-2025",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "Share of UK exports of each product group, %",
+ "source": "HMRC Overseas Trade Statistics; ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). AI compute hardware = IMF AI hardware basket; the other groups are the ONS-based AI products by type. Exports are recorded by country of destination. Shares are of all trade, including trade whose partner HMRC suppresses for confidentiality.",
+ "series": [
+  {
+   "key": "EU",
+   "label": "EU member state"
+  },
+  {
+   "key": "nonEU",
+   "label": "Outside the EU"
+  }
+ ],
+ "events": null,
+ "data_through": "Medical, robotic and autonomous equipment (ONS definition)",
+ "status": "ok",
+ "data": [
+  {
+   "date": "AI compute hardware (IMF definition)",
+   "ranks": [
+    {
+     "label": "Germany",
+     "value": 17.0,
+     "key": "EU"
+    },
+    {
+     "label": "United States",
+     "value": 14.3,
+     "key": "nonEU"
+    },
+    {
+     "label": "Netherlands",
+     "value": 13.6,
+     "key": "EU"
+    }
+   ]
+  },
+  {
+   "date": "Networking and telecom equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "Netherlands",
+     "value": 12.4,
+     "key": "EU"
+    },
+    {
+     "label": "Germany",
+     "value": 12.3,
+     "key": "EU"
+    },
+    {
+     "label": "United States",
+     "value": 11.4,
+     "key": "nonEU"
+    }
+   ]
+  },
+  {
+   "date": "Computers, phones and other devices (ONS definition)",
+   "ranks": [
+    {
+     "label": "Ireland",
+     "value": 21.5,
+     "key": "EU"
+    },
+    {
+     "label": "Netherlands",
+     "value": 14.7,
+     "key": "EU"
+    },
+    {
+     "label": "UAE",
+     "value": 13.1,
+     "key": "nonEU"
+    }
+   ]
+  },
+  {
+   "date": "Medical, robotic and autonomous equipment (ONS definition)",
+   "ranks": [
+    {
+     "label": "Germany",
+     "value": 27.0,
+     "key": "EU"
+    },
+    {
+     "label": "Netherlands",
+     "value": 17.6,
+     "key": "EU"
+    },
+    {
+     "label": "United States",
+     "value": 13.5,
+     "key": "nonEU"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

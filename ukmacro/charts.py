@@ -20,7 +20,8 @@ Series beyond the fourth are grey (see _colour).
 
 Chart types: line; bar (several series sit side by side); stacked-bar (positive and
 negative parts stack away from zero); in both bar types a series with "mark": "line" is
-drawn as a line on top; grouped-hbar (categories down the side).
+drawn as a line on top; grouped-hbar (categories down the side); ranked-bars (groups of
+ranked horizontal bars, each bar with its own label, e.g. top partners by product group).
 """
 
 from __future__ import annotations
@@ -426,10 +427,48 @@ def _grouped_hbar(chart):
     return fig
 
 
+def _ranked_bars(chart):
+    """Groups of ranked horizontal bars, e.g. the top partners for each product group.
+    data[].date holds the group's name and data[].ranks its bars, largest first, as
+    [{label, value, key}]; a bar's colour is that of the series whose key it names (so
+    the legend explains the colours, e.g. EU vs non-EU). chart["value_format"] formats
+    the value labels (default "{:.1f}")."""
+    from matplotlib.patches import Patch
+    bars, heads, y = [], [], 0.0
+    for d in chart["data"]:
+        heads.append((y, d["date"]))
+        y += 1
+        for r in d["ranks"]:
+            bars.append((y, r["label"], r["value"], r["key"]))
+            y += 1
+        y += 0.5   # space between groups
+    longest = max(len(b[1]) for b in bars)
+    fig, ax = _frame(chart, left_cm=max(LEFT_CM, 0.6 + longest * 0.186))  # room for the bar labels
+    ax.grid(axis="y", visible=False)
+    ax.grid(axis="x", color=GRID, linewidth=0.6)
+    colours = {s["key"]: _colour(s, i) for i, s in enumerate(chart["series"])}
+    fmt = chart.get("value_format", "{:.1f}")
+    for yy, _, v, k in bars:
+        ax.barh(yy, v, height=0.72, color=colours[k], zorder=3)
+        ax.annotate(fmt.format(v), (v, yy), xytext=(5, 0), textcoords="offset points",
+                    ha="left", va="center", fontsize=10, color=TEXT_2)
+    ax.set_yticks([b[0] for b in bars], [b[1] for b in bars])
+    for yy, text in heads:   # group names, in bold, above their bars
+        ax.text(0, yy + 0.1, text, fontsize=11, fontweight="semibold", color=INK, va="center", ha="left")
+    ax.set_ylim(y - 0.5, -0.8)
+    ax.spines["bottom"].set_visible(False)
+    ax.axvline(0, color=BASELINE, linewidth=0.9, zorder=2)
+    lo, hi = ax.get_xlim()
+    ax.set_xlim(0, hi * 1.08)  # room for the value labels
+    used = [s for s in chart["series"] if any(b[3] == s["key"] for b in bars)]
+    _legend(fig, [Patch(color=colours[s["key"]]) for s in used], [s["label"] for s in used])
+    return fig
+
+
 def _fill_periods(chart: dict) -> dict:
     """Insert empty rows for missing quarters/months so the x-axis is a true timeline."""
     dates = [d["date"] for d in chart["data"]]
-    if chart["type"] == "grouped-hbar" or not dates:
+    if chart["type"] in ("grouped-hbar", "ranked-bars") or not dates:
         return chart
     # `step` gives the next period after d
     if all(len(d) == 7 and d[5] == "Q" for d in dates):
@@ -446,7 +485,8 @@ def _fill_periods(chart: dict) -> dict:
     return {**chart, "data": full}
 
 
-RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": _grouped_hbar}
+RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": _grouped_hbar,
+             "ranked-bars": _ranked_bars}
 
 
 def render(chart: dict, path: Path, theme: str | None = None) -> Path:

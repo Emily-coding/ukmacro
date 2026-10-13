@@ -141,6 +141,17 @@ imf_hardware:
     - {label: "Processor and memory chips", cpa: "26.1", hs6: ["854231", "854232"]}
     - {label: "Chip-making equipment", cpa: "28.9", hs6: ["848610", "848620", "848640", "848690"]}
 
+# Categories for the "top partners" charts: the IMF basket plus the ONS-based products
+# (above) grouped by type. Products are listed by id; `imf: true` = the IMF basket.
+# Together they cover every product above (smartphones are inside mobile phones).
+partner_categories:
+  - {label: "AI compute hardware (IMF definition)", imf: true}
+  - {label: "Networking and telecom equipment (ONS definition)", products: [network_equipment]}
+  - {label: "Computers, phones and other devices (ONS definition)",
+     products: [computer_systems, laptops_tablets, mobile_phones, cameras, chips_other]}
+  - {label: "Medical, robotic and autonomous equipment (ONS definition)",
+     products: [mri_ultrasound, ct_scanners, medical_diagnostics, robots, handling_robots, vacuum_cleaners, drones, sensors]}
+
 # Every AI product in the ONS article, and how it is covered by the product layer.
 coverage:
   - {ons: "AI chips, servers and storage manufacturing (C26)", products: [chips_processors, chips_memory, chips_other, servers, computer_systems, computer_units_other, storage, computer_assemblies]}

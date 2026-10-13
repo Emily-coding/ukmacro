@@ -29,6 +29,7 @@ Outputs:
     data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
     data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
+    data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended goods tier, AI services (values and volumes)
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
@@ -636,6 +637,69 @@ def ai_stack_charts(mq: dict, prods: list[dict], imf_q: dict, tiers: list[dict])
     return rows
 
 
+def top_partner_charts(n_top: int = 3) -> list[dict]:
+    """Top partners for each product group (definitions/ai_trade.yaml `partner_categories`)
+    over the latest two complete calendar years: each partner's share of UK imports (and,
+    in a second chart, exports) of the group. EU members are named individually (HMRC
+    records EU trade by country of dispatch). Shares are of all trade in the group,
+    including trade whose country HMRC suppresses, which is never ranked. Returns rows
+    (top ten per group) for a CSV."""
+    countries = get_json(f"{HMRC_COUNTRY}?$select=CountryId,CountryCodeAlpha,CountryName", timeout=120)["value"]
+    alpha = {c["CountryId"]: (c["CountryCodeAlpha"] or "").strip() for c in countries}
+    name = {c["CountryId"]: c["CountryName"].strip() for c in countries}
+    products = {p["id"]: p["hs6"] for p in DEFS["products"]}
+    # the latest two complete calendar years in HMRC (any product's quarters will do)
+    probe = hmrc_product(DEFS["imf_hardware"]["hs6"][:1])
+    done = {q for (partner, flow, q), c in probe.items()
+            if partner == "EU" and flow == "imports" and len(c["months"]) == 3}   # complete quarters
+    full = sorted(y for y in {q[:4] for q in done} if sum(1 for q in done if q[:4] == y) == 4)
+    years = full[-2:]
+    rows, data = [], {"imports": [], "exports": []}
+    for cat in DEFS["partner_categories"]:
+        codes = DEFS["imf_hardware"]["hs6"] if cat.get("imf") else [c for pid in cat["products"] for c in products[pid]]
+        cells: dict = {}   # (flow, CountryId) -> £
+        eu: set = set()    # countries seen in EU flows
+        for code in codes:
+            apply = (f"filter(MonthId ge {years[0]}01 and MonthId le {years[-1]}12 and CommodityId ge {code}00 "
+                     f"and CommodityId le {code}99)/groupby((FlowTypeId,CountryId),aggregate(Value with sum as V))")
+            for r in get_json(f"{HMRC_OTS}?$apply={urllib.parse.quote(apply)}", timeout=300)["value"]:
+                partner, flow = FLOWS[r["FlowTypeId"]]
+                cells[(flow, r["CountryId"])] = cells.get((flow, r["CountryId"]), 0.0) + (r["V"] or 0)
+                if partner == "EU":
+                    eu.add(r["CountryId"])
+        for flow in ("imports", "exports"):
+            total = sum(v for (f, _), v in cells.items() if f == flow)
+            # rank real countries only: HMRC's special codes (suppressed, estimates, stores...)
+            # have a blank alpha code or one starting with Q
+            ranked = sorted(((c, v) for (f, c), v in cells.items()
+                             if f == flow and alpha.get(c) and not alpha[c].startswith("Q")), key=lambda cv: -cv[1])
+            for i, (c, v) in enumerate(ranked[:10]):
+                rows.append({"category": cat["label"], "flow": flow, "period": f"{years[0]}-{years[-1]}",
+                             "rank": i + 1, "country": name[c], "eu": c in eu,
+                             "value_gbp_m": round(v / 1e6, 1), "share_pct": round(100 * v / total, 1)})
+            data[flow].append({"date": cat["label"],
+                               "ranks": [{"label": name[c], "value": round(100 * v / total, 1),
+                                          "key": "EU" if c in eu else "nonEU"} for c, v in ranked[:n_top]]})
+    for flow, word in (("imports", "sources"), ("exports", "destinations")):
+        c = chart(f"ai-trade-top-partners-{flow}",
+                  f"Top {n_top} {word} of UK AI {flow}, by product group, {years[0]}-{years[-1]}",
+                  f"Share of UK {flow} of each product group, %", "ranked-bars",
+                  [{"key": "EU", "label": "EU member state"}, {"key": "nonEU", "label": "Outside the EU"}],
+                  data[flow],
+                  UPPER_BOUND + "AI compute hardware = IMF AI hardware basket; the other groups are the "
+                  "ONS-based AI products by type. "
+                  + ("EU imports are recorded by country of dispatch (so goods routed via e.g. Dutch "
+                     "distribution hubs count as the Netherlands); non-EU imports by country of origin. "
+                     if flow == "imports" else "Exports are recorded by country of destination. ")
+                  + "Shares are of all trade, including trade whose partner HMRC suppresses for "
+                  "confidentiality.",
+                  "HMRC Overseas Trade Statistics; ukmacro calculations", freq="A")
+        c["events"] = None
+        c["value_format"] = "{:.1f}%"
+        publish(c)
+    return rows
+
+
 # ---------------------------------------------------------------- 5. summary tables
 
 def product_summary(rows: list[dict], base: str = "2019", latest: str = "2025") -> list[dict]:
@@ -779,6 +843,7 @@ def build() -> None:
     components, imf_quarterly = imf_component_charts()
     write_csv(components, OUT / "ai_hardware_components.csv")
     write_csv(ai_stack_charts(mq, prods, imf_quarterly, tiers), OUT / "ai_stack.csv")
+    write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     summary = product_summary(prods)
     write_csv(summary, OUT / "ai_products_summary.csv")
     write_markdown_tables(summary, OUT / "ai_products_summary.md")
