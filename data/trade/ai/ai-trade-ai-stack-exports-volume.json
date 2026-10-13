@@ -1,0 +1,123 @@
+{
+ "slug": "ai-trade-ai-stack-exports-volume",
+ "category": "trade",
+ "title": "The AI stack in UK exports in volume terms",
+ "type": "stacked-bar",
+ "freq": "A",
+ "units": "\u00a3 billion at 2019 prices, calendar year",
+ "source": "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ONS trade in services (QNA); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Layers nest from narrowest to broadest: the IMF hardware basket and other AI products (HMRC, by commodity code) are inside the ONS extended goods tier (CPA 26-28, MQ10), and the grey layer is the rest of that tier. AI services = ONS core services tier (QNA). Other AI products exclude codes created in 2022 (sensors, handling robots, drones). Volumes at 2019 prices: HMRC values deflated by the ONS implied price of each product's CPA group; ONS chained volumes rescaled to 2019 values. Chained volumes aren't strictly additive, so the layers are approximate. ",
+ "series": [
+  {
+   "key": "imf",
+   "label": "AI compute hardware (IMF basket)"
+  },
+  {
+   "key": "ons_products",
+   "label": "Other AI products (phones, laptops, network kit, devices)"
+  },
+  {
+   "key": "rest",
+   "label": "Rest of ONS extended goods tier",
+   "color": "neutral"
+  },
+  {
+   "key": "services",
+   "label": "AI services (computer, telecoms and information; IP charges)"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2025",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2016",
+   "imf": 3.85,
+   "ons_products": 5.75,
+   "rest": 55.58,
+   "services": 37.1
+  },
+  {
+   "date": "2017",
+   "imf": 3.68,
+   "ons_products": 6.18,
+   "rest": 60.99,
+   "services": 41.66
+  },
+  {
+   "date": "2018",
+   "imf": 3.9,
+   "ons_products": 6.09,
+   "rest": 64.04,
+   "services": 45.04
+  },
+  {
+   "date": "2019",
+   "imf": 3.77,
+   "ons_products": 6.34,
+   "rest": 64.81,
+   "services": 47.65
+  },
+  {
+   "date": "2020",
+   "imf": 3.54,
+   "ons_products": 5.91,
+   "rest": 55.66,
+   "services": 50.2
+  },
+  {
+   "date": "2021",
+   "imf": 3.62,
+   "ons_products": 5.91,
+   "rest": 61.36,
+   "services": 52.25
+  },
+  {
+   "date": "2022",
+   "imf": 3.7,
+   "ons_products": 6.52,
+   "rest": 59.94,
+   "services": 60.82
+  },
+  {
+   "date": "2023",
+   "imf": 3.29,
+   "ons_products": 5.95,
+   "rest": 61.18,
+   "services": 66.01
+  },
+  {
+   "date": "2024",
+   "imf": 3.01,
+   "ons_products": 6.16,
+   "rest": 59.28,
+   "services": 68.8
+  },
+  {
+   "date": "2025",
+   "imf": 4.28,
+   "ons_products": 6.71,
+   "rest": 59.39,
+   "services": 76.86
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 9
+}

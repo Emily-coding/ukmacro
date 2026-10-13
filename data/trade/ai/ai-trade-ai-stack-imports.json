@@ -1,12 +1,12 @@
 {
  "slug": "ai-trade-ai-stack-imports",
  "category": "trade",
- "title": "The AI stack in UK goods imports",
+ "title": "The AI stack in UK imports",
  "type": "stacked-bar",
  "freq": "A",
- "units": "\u00a3 billion, calendar year",
- "source": "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ukmacro calculations",
- "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Layers nest from narrowest to broadest; the top of each bar is the ONS extended goods tier (CPA 26-28). IMF basket and other AI products from HMRC by commodity code; the rest is ONS MQ10 (balance of payments basis, seasonally adjusted) minus those, so it absorbs small differences between the sources. Other AI products exclude codes created in 2022 (sensors, handling robots, drones). EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. ",
+ "units": "\u00a3 billion, current prices, calendar year",
+ "source": "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ONS trade in services (QNA); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Layers nest from narrowest to broadest: the IMF hardware basket and other AI products (HMRC, by commodity code) are inside the ONS extended goods tier (CPA 26-28, MQ10), and the grey layer is the rest of that tier. AI services = ONS core services tier (QNA). Other AI products exclude codes created in 2022 (sensors, handling robots, drones). EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. ",
  "series": [
   {
    "key": "imf",
@@ -18,7 +18,12 @@
   },
   {
    "key": "rest",
-   "label": "Rest of ONS extended tier (all electronics, electrical, machinery)"
+   "label": "Rest of ONS extended goods tier",
+   "color": "neutral"
+  },
+  {
+   "key": "services",
+   "label": "AI services (computer, telecoms and information; IP charges)"
   }
  ],
  "events": [
@@ -40,63 +45,73 @@
  "data": [
   {
    "date": "2016",
-   "imf": 5.66,
+   "imf": 5.65,
    "ons_products": 18.23,
-   "rest": 72.69
+   "rest": 72.7,
+   "services": 19.98
   },
   {
    "date": "2017",
-   "imf": 5.63,
+   "imf": 5.62,
    "ons_products": 20.65,
-   "rest": 78.77
+   "rest": 78.78,
+   "services": 22.36
   },
   {
    "date": "2018",
-   "imf": 6.44,
+   "imf": 6.43,
    "ons_products": 22.49,
-   "rest": 80.39
+   "rest": 80.39,
+   "services": 24.77
   },
   {
    "date": "2019",
    "imf": 6.14,
    "ons_products": 23.44,
-   "rest": 82.93
+   "rest": 82.93,
+   "services": 27.63
   },
   {
    "date": "2020",
    "imf": 6.01,
    "ons_products": 24.1,
-   "rest": 71.46
+   "rest": 71.46,
+   "services": 28.61
   },
   {
    "date": "2021",
-   "imf": 5.24,
+   "imf": 5.25,
    "ons_products": 22.74,
-   "rest": 81.65
+   "rest": 81.64,
+   "services": 27.18
   },
   {
    "date": "2022",
-   "imf": 7.36,
+   "imf": 7.35,
    "ons_products": 28.18,
-   "rest": 96.76
+   "rest": 96.76,
+   "services": 31.98
   },
   {
    "date": "2023",
-   "imf": 7.21,
+   "imf": 7.2,
    "ons_products": 26.19,
-   "rest": 102.97
+   "rest": 102.98,
+   "services": 35.84
   },
   {
    "date": "2024",
-   "imf": 7.25,
+   "imf": 7.26,
    "ons_products": 24.58,
-   "rest": 100.17
+   "rest": 100.17,
+   "services": 39.48
   },
   {
    "date": "2025",
    "imf": 9.97,
-   "ons_products": 26.09,
-   "rest": 103.77
+   "ons_products": 26.1,
+   "rest": 103.77,
+   "services": 43.59
   }
  ],
  "theme": "blue-amber",
