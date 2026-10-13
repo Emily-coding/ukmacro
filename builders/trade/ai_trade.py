@@ -586,10 +586,11 @@ def ai_stack_charts(mq: dict, prods: list[dict], imf_q: dict, tiers: list[dict])
         years = sorted({q[:4] for q in layers["rest"][0]})
         years = [y for y in years if all(
             sum(1 for q, v in layers[n][1].items() if q[:4] == y and v is not None) == 4 for n in layers)]
-        series = [{"key": "imf", "label": "AI compute hardware (IMF basket)"},
-                  {"key": "ons_products", "label": "Other AI products (phones, laptops, network kit, devices)"},
-                  {"key": "rest", "label": "Rest of ONS extended goods tier", "color": "neutral"},
-                  {"key": "services", "label": "AI services (computer, telecoms and information; IP charges)"}]
+        series = [{"key": "imf", "label": "AI compute hardware (IMF definition)"},
+                  {"key": "ons_products", "label": "Other AI products, e.g. phones, laptops, network kit (ONS definition)"},
+                  {"key": "rest", "label": "Wider electronics, electrical and machinery goods (ONS extended tier)",
+                   "color": "neutral"},
+                  {"key": "services", "label": "AI services, e.g. computing, telecoms, IP charges (ONS definition)"}]
         for measure, idx, units, what in (("value", 0, "£ billion, current prices, calendar year", ""),
                                           ("volume", 1, f"£ billion at {BASE_YEAR} prices, calendar year", " in volume terms")):
             data = []
@@ -613,6 +614,25 @@ def ai_stack_charts(mq: dict, prods: list[dict], imf_q: dict, tiers: list[dict])
                           f"The AI stack in UK {flow}{what}", units, "stacked-bar", series, data, note,
                           "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ONS trade in "
                           "services (QNA); ukmacro calculations", freq="A"))
+    # the latest complete year: imports and exports side by side, in value and volume
+    year = max(r["year"] for r in rows if r["flow"] == "exports" and
+               any(x["year"] == r["year"] and x["flow"] == "imports" for x in rows))
+    for measure, units, what in (("value", f"£ billion, current prices, {year}", ""),
+                                 ("volume", f"£ billion at {BASE_YEAR} prices, {year}", " in volume terms")):
+        data = [{"date": flow.capitalize(), **{n: r[f"{n}_gbp_bn"] for n in layers}}
+                for flow in ("imports", "exports")
+                for r in rows if r["flow"] == flow and r["measure"] == measure and r["year"] == year]
+        c = chart(f"ai-trade-ai-stack-{year}" + ("-volume" if measure == "volume" else ""),
+                  f"The AI stack in UK trade{what}: imports and exports, {year}", units, "stacked-bar",
+                  series, data,
+                  UPPER_BOUND + "Layers as in the AI stack charts: the IMF hardware basket and other AI "
+                  "products (HMRC) are inside the ONS extended goods tier (CPA 26-28), and AI services are "
+                  "the ONS core services tier. " + ("Volumes at 2019 prices; approximate, as chained volumes "
+                  "aren't strictly additive. " if measure == "volume" else ""),
+                  "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ONS trade in "
+                  "services (QNA); ukmacro calculations", freq="A")
+        c["events"] = None
+        publish(c)
     return rows
 
 

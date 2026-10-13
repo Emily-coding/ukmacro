@@ -10,20 +10,20 @@
  "series": [
   {
    "key": "imf",
-   "label": "AI compute hardware (IMF basket)"
+   "label": "AI compute hardware (IMF definition)"
   },
   {
    "key": "ons_products",
-   "label": "Other AI products (phones, laptops, network kit, devices)"
+   "label": "Other AI products, e.g. phones, laptops, network kit (ONS definition)"
   },
   {
    "key": "rest",
-   "label": "Rest of ONS extended goods tier",
+   "label": "Wider electronics, electrical and machinery goods (ONS extended tier)",
    "color": "neutral"
   },
   {
    "key": "services",
-   "label": "AI services (computer, telecoms and information; IP charges)"
+   "label": "AI services, e.g. computing, telecoms, IP charges (ONS definition)"
   }
  ],
  "events": [
@@ -119,5 +119,5 @@
   25,
   15
  ],
- "style_version": 9
+ "style_version": 10
 }

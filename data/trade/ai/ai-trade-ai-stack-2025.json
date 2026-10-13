@@ -1,0 +1,54 @@
+{
+ "slug": "ai-trade-ai-stack-2025",
+ "category": "trade",
+ "title": "The AI stack in UK trade: imports and exports, 2025",
+ "type": "stacked-bar",
+ "freq": "A",
+ "units": "\u00a3 billion, current prices, 2025",
+ "source": "HMRC Overseas Trade Statistics; ONS UK trade in goods by CPA (MQ10); ONS trade in services (QNA); ukmacro calculations",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Layers as in the AI stack charts: the IMF hardware basket and other AI products (HMRC) are inside the ONS extended goods tier (CPA 26-28), and AI services are the ONS core services tier. ",
+ "series": [
+  {
+   "key": "imf",
+   "label": "AI compute hardware (IMF definition)"
+  },
+  {
+   "key": "ons_products",
+   "label": "Other AI products, e.g. phones, laptops, network kit (ONS definition)"
+  },
+  {
+   "key": "rest",
+   "label": "Wider electronics, electrical and machinery goods (ONS extended tier)",
+   "color": "neutral"
+  },
+  {
+   "key": "services",
+   "label": "AI services, e.g. computing, telecoms, IP charges (ONS definition)"
+  }
+ ],
+ "events": null,
+ "data_through": "Exports",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Imports",
+   "imf": 9.97,
+   "ons_products": 26.1,
+   "rest": 103.77,
+   "services": 43.59
+  },
+  {
+   "date": "Exports",
+   "imf": 4.38,
+   "ons_products": 7.09,
+   "rest": 73.01,
+   "services": 84.26
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

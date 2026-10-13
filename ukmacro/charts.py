@@ -69,7 +69,7 @@ THEMES = {
         "grid": "#E4E7EB", "baseline": "#9AA5B1", "surface": "#F5F7FA"},
 }
 DEFAULT_THEME = "blue-amber"
-STYLE_VERSION = 9  # bump when the drawing code changes, so every PNG is redrawn
+STYLE_VERSION = 10  # bump when the drawing code changes, so every PNG is redrawn
 
 # Figure size. Layout below is in centimetres (margins) and scales with the width
 # (how much text fits per line), so changing the size keeps the layout intact.
@@ -148,17 +148,20 @@ def _frame(chart: dict, left_cm: float = LEFT_CM):
 
 
 def _legend(fig, handles, labels):
-    """Legend in a row above the plot. One series needs none (the title names it).
-    If the labels won't fit on one row (roughly 130 characters including the colour
-    keys at 30 cm wide, scaled to the width), wrap onto two rows and shrink the plot."""
+    """Legend in rows above the plot. One series needs none (the title names it). Uses as
+    many columns as fit across the chart (roughly 130 characters including the colour
+    keys at 30 cm wide, scaled to the width); each extra row shrinks the plot a little."""
     if len(handles) < 2:
         return
-    ncol = len(handles)
-    if sum(len(lab) + 8 for lab in labels) > 130 * TEXT_SCALE:
-        ncol = (len(handles) + 1) // 2
-        for ax in fig.axes:
-            x0, y0, w, h = ax.get_position().bounds
-            ax.set_position([x0, y0, w, h - 0.05])
+    n = len(handles)
+    for ncol in range(n, 0, -1):
+        nrows = -(-n // ncol)
+        cols = [labels[c * nrows:(c + 1) * nrows] for c in range(ncol)]  # filled column by column
+        if sum(max(len(lab) for lab in col) + 8 for col in cols if col) <= 130 * TEXT_SCALE:
+            break
+    for ax in fig.axes:
+        x0, y0, w, h = ax.get_position().bounds
+        ax.set_position([x0, y0, w, h - 0.05 * (nrows - 1)])
     fig.legend(handles, labels, loc="upper left", bbox_to_anchor=(_x(LEFT_CM - 0.2), 0.86), ncol=ncol,
                frameon=False, fontsize=11, labelcolor=TEXT_2, handlelength=1.6, columnspacing=1.8)
 
@@ -172,13 +175,15 @@ def _period_ticks(ax, dates: list[str]):
     """Date labels on the x-axis, as fine as fits: every quarter, else every half-year
     (Q1/Q3, Jan/Jul), else every year. The year is written under the first label of
     each year (e.g. "Q1" over "2024", then "Q3"). Works for quarters (2024-Q1), months
-    (2024-01), exact dates (2024-01-31, e.g. BICS waves) and years."""
+    (2024-01), exact dates (2024-01-31, e.g. BICS waves), years and plain categories."""
     n = len(dates)
     ax.set_xlim(-0.6, n - 0.4)
     if not dates:
         return
 
     def kind(d):
+        if not d[:4].isdigit():  # categories (e.g. "Imports"), labelled as they are
+            return "A"
         if len(d) == 7 and d[5] == "Q":
             return "Q"
         if len(d) == 7:
