@@ -34,6 +34,7 @@ Outputs:
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
+    data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch and Irish trade
     data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended goods tier, AI services (values and volumes)
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
@@ -891,6 +892,81 @@ def top_partner_charts(n_top: int = 3) -> list[dict]:
     return rows
 
 
+# ---------------------------------------------------------------- 4c. chip supply chain
+
+SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "Germany", "MX": "Mexico",
+               "MY": "Malaysia", "VN": "Vietnam", "IL": "Israel", "JP": "Japan", "GB": "UK", "CZ": "Czechia",
+               "PL": "Poland", "HU": "Hungary", "CR": "Costa Rica", "SE": "Sweden", "ES": "Spain", "FR": "France",
+               "CA": "Canada", "NO": "Norway", "BR": "Brazil", "DK": "Denmark", "BE": "Belgium", "NL": "Netherlands",
+               "IE": "Ireland", "IT": "Italy", "AT": "Austria", "SG": "Singapore", "TH": "Thailand", "HK": "Hong Kong",
+               "IN": "India", "PH": "Philippines", "CH": "Switzerland"}
+
+
+def chip_supply_chain_chart() -> list[dict]:
+    """"Following an AI chip": each supply-chain stage (definitions/ai_trade.yaml
+    `chip_supply_chain`) and what Dutch and Irish trade (Eurostat Comext, latest year)
+    shows at it: imports, exports, the top sources and destinations, and whether the
+    country is a net exporter (largely makes it), a net importer (uses it or passes it
+    on) or trades both ways (a hub). Returns rows for a CSV."""
+    spec = DEFS["chip_supply_chain"]
+    codes = [c for st in spec["stages"] for c in st["hs6"]]
+    years = [str(y) for y in range(datetime.date.today().year - 3, datetime.date.today().year)]
+    try:
+        trade = {cc: comext.annual(cc, codes, years) for cc in spec["countries"]}
+    except Exception as e:  # noqa: BLE001 - skip, keep the last published version
+        print(f"[ai-trade] Comext unavailable, chip supply chain skipped: {e}")
+        return []
+    year = min(max(k[3] for k in d) for d in trade.values())
+    rows, grid = [], []
+
+    def name(code: str) -> str:
+        return SHORT_NAMES.get(code, code)
+    for cc, country in spec["countries"].items():
+        d, cells = trade[cc], []
+        for st in spec["stages"]:
+            codes_ = set(st["hs6"])
+            tot = {f: sum(v for (ff, c, p, y), v in d.items() if ff == f and c in codes_ and p == "WORLD" and y == year)
+                   for f in ("imports", "exports")}
+            partners = {}
+            for f in ("imports", "exports"):
+                agg: dict = {}
+                for (ff, c, p, y), v in d.items():
+                    if ff == f and c in codes_ and y == year and _is_origin(p, cc) or (
+                            ff == f and c in codes_ and y == year and p == "GB"):
+                        agg[p] = agg.get(p, 0.0) + v
+                partners[f] = sorted(agg.items(), key=lambda kv: -kv[1])[:3]
+                rows += [{"country": country, "stage": st["label"], "year": year, "flow": f, "partner": name(p),
+                          "eur_bn": round(v / 1e9, 2)} for p, v in partners[f]]
+            m, x = tot["imports"], tot["exports"]
+            key = "makes" if x >= 1.5 * m else ("uses" if m >= 1.5 * x else "hub")
+            def fmt(ps):   # partners of at least €0.05bn
+                big = [f"{name(p)} {v / 1e9:.1f}" for p, v in ps if v >= 5e7]
+                return ", ".join(big) if big else "all small"
+            cells.append({"headline": f"In {m / 1e9:.1f} · Out {x / 1e9:.1f}", "key": key,
+                          "lines": [f"From: {fmt(partners['imports'])}", f"To: {fmt(partners['exports'])}"]})
+            rows.append({"country": country, "stage": st["label"], "year": year, "flow": "total",
+                         "partner": f"imports {m / 1e9:.2f}, exports {x / 1e9:.2f}", "eur_bn": None})
+        grid.append({"date": country, "label": country, "cells": cells})
+    grid.append({"date": "context", "label": "Who makes it worldwide", "weight": 0.75,
+                 "cells": [{"lines": [st["context"]]} for st in spec["stages"]]})
+    c = chart("ai-chip-supply-chain", f"Following an AI chip through Dutch and Irish trade, {year}",
+              f"€ billion, {year}: imports (in) and exports (out), with the top three sources and destinations",
+              "flow-grid",
+              [{"key": "makes", "label": "Net exporter: largely made here"},
+               {"key": "hub", "label": "Two-way trade: distribution hub"},
+               {"key": "uses", "label": "Net importer: used here or passed on"}],
+              grid,
+              "Each stage is a set of HS6 trade codes: 1. 280461, 381800, 280429, 811292, 370790; 2. 848620, "
+              "848690; 3. 854231, 854232; 4. 847330; 5. 847150. Whole codes, so they include non-AI products. "
+              "Partners as recorded by the Netherlands and Ireland (EU trade by member state of dispatch or "
+              "arrival, non-EU imports by origin). 'Who makes it worldwide' is background, not trade data.",
+              "Eurostat Comext; ukmacro calculations", freq="A")
+    c["columns"] = [{"label": st["label"], "sub": st["sub"]} for st in spec["stages"]]
+    c["events"] = None
+    publish(c)
+    return rows
+
+
 # ---------------------------------------------------------------- 5. summary tables
 
 def product_summary(rows: list[dict], base: str = "2019", latest: str = "2025") -> list[dict]:
@@ -1037,6 +1113,9 @@ def build() -> None:
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     if hub_trade() is not None:
         write_csv(hub_summary(), OUT / "ai_hub_origins.csv")
+    chain = chip_supply_chain_chart()
+    if chain:
+        write_csv(chain, OUT / "ai_chip_supply_chain.csv")
     summary = product_summary(prods)
     write_csv(summary, OUT / "ai_products_summary.csv")
     write_markdown_tables(summary, OUT / "ai_products_summary.md")

@@ -21,7 +21,8 @@ Series beyond the fourth are grey (see _colour).
 Chart types: line; bar (several series sit side by side); stacked-bar (positive and
 negative parts stack away from zero); in both bar types a series with "mark": "line" is
 drawn as a line on top; grouped-hbar (categories down the side); ranked-bars (groups of
-ranked horizontal bars, each bar with its own label, e.g. top partners by product group).
+ranked horizontal bars, each bar with its own label, e.g. top partners by product group);
+flow-grid (supply-chain stages across, places down, a text cell for each).
 """
 
 from __future__ import annotations
@@ -465,10 +466,72 @@ def _ranked_bars(chart):
     return fig
 
 
+def _flow_grid(chart):
+    """A supply-chain grid: stages across the top (chart["columns"]: [{label, sub}]),
+    one row per place (chart["data"]: [{label, cells: [{headline, lines, key}]}]). A
+    cell's tint is that of the series whose key it names (explained in the legend); a
+    cell without a key is plain (e.g. a context row). A row's "weight" sets its relative
+    height. Arrows join the stages."""
+    from matplotlib.patches import FancyBboxPatch, Patch
+    fig, ax = _frame(chart)
+    ax.set_axis_off()
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    x0, y0, w, h = ax.get_position().bounds
+    ax.set_position([x0, y0 - 0.08, w, h + 0.08])   # no date labels below, so use their space
+    cols, rows = chart["columns"], chart["data"]
+    label_w = 0.11                       # row-label column
+    gap = 0.018
+    col_w = (1 - label_w - gap * (len(cols) - 1)) / len(cols)
+    head_h = 0.15
+    weights = [r.get("weight", 1.0) for r in rows]   # relative row heights
+    unit_h = (1 - head_h - 0.01) / sum(weights)
+    width_cm = (WIDTH_CM - LEFT_CM - RIGHT_CM) * col_w
+    chars = int(width_cm * 6.2)          # roughly how many 8pt characters fit across a cell
+    tint = {s["key"]: _colour(s, i) for i, s in enumerate(chart["series"])}
+
+    def soft(colour, a=0.16):
+        r, g, b = (int(colour[i:i + 2], 16) / 255 for i in (1, 3, 5))
+        return (1 - a + a * r, 1 - a + a * g, 1 - a + a * b)
+    for j, col in enumerate(cols):
+        x = label_w + j * (col_w + gap)
+        ax.text(x, 1 - 0.01, col["label"], fontsize=10, fontweight="semibold", color=INK, va="top")
+        ax.text(x, 1 - 0.06, "\n".join(textwrap.wrap(col.get("sub", ""), chars)), fontsize=8, color=MUTED,
+                va="top", linespacing=1.15)
+        if j < len(cols) - 1:            # arrow to the next stage
+            ax.annotate("", xy=(x + col_w + gap * 0.95, 1 - head_h / 2 + 0.03), xytext=(x + col_w + gap * 0.05, 1 - head_h / 2 + 0.03),
+                        arrowprops={"arrowstyle": "-|>", "color": MUTED, "lw": 0.9})
+    y_top = 1 - head_h
+    for row in rows:
+        row_h = unit_h * row.get("weight", 1.0)
+        ax.text(0, y_top - 0.015, "\n".join(textwrap.wrap(row["label"], 12)), fontsize=10,
+                fontweight="semibold", color=INK, va="top")
+        for j, cell in enumerate(row["cells"]):
+            x = label_w + j * (col_w + gap)
+            key = cell.get("key")
+            ax.add_patch(FancyBboxPatch((x, y_top - row_h + 0.012), col_w, row_h - 0.024,
+                                        boxstyle="round,pad=0,rounding_size=0.008",
+                                        fc=soft(tint[key]) if key else SURFACE,
+                                        ec=GRID if not key else soft(tint[key], 0.45), lw=0.8))
+            text_y = y_top - 0.025
+            if cell.get("headline"):
+                head = "\n".join(textwrap.wrap(cell["headline"], chars - 2))
+                ax.text(x + 0.006, text_y, head, fontsize=8.5, fontweight="semibold", color=INK, va="top",
+                        linespacing=1.15)
+                text_y -= 0.045 * (head.count("\n") + 1) + 0.006
+            body = "\n".join(line for ln in cell.get("lines", []) for line in textwrap.wrap(ln, chars))
+            ax.text(x + 0.006, text_y, body, fontsize=8, color=TEXT_2 if key else MUTED, va="top",
+                    linespacing=1.2, style="normal" if key else "italic")
+        y_top -= row_h
+    used = [s for s in chart["series"] if any(c.get("key") == s["key"] for r in rows for c in r["cells"])]
+    _legend(fig, [Patch(fc=soft(tint[s["key"]], 0.5), ec="none") for s in used], [s["label"] for s in used])
+    return fig
+
+
 def _fill_periods(chart: dict) -> dict:
     """Insert empty rows for missing quarters/months so the x-axis is a true timeline."""
     dates = [d["date"] for d in chart["data"]]
-    if chart["type"] in ("grouped-hbar", "ranked-bars") or not dates:
+    if chart["type"] in ("grouped-hbar", "ranked-bars", "flow-grid") or not dates:
         return chart
     # `step` gives the next period after d
     if all(len(d) == 7 and d[5] == "Q" for d in dates):
@@ -486,7 +549,7 @@ def _fill_periods(chart: dict) -> dict:
 
 
 RENDERERS = {"line": _line, "bar": _bars, "stacked-bar": _bars, "grouped-hbar": _grouped_hbar,
-             "ranked-bars": _ranked_bars}
+             "ranked-bars": _ranked_bars, "flow-grid": _flow_grid}
 
 
 def render(chart: dict, path: Path, theme: str | None = None) -> Path:

@@ -1,0 +1,71 @@
+country,stage,year,flow,partner,eur_bn
+Netherlands,1. Materials,2025,imports,Germany,0.08
+Netherlands,1. Materials,2025,imports,Japan,0.08
+Netherlands,1. Materials,2025,imports,China,0.05
+Netherlands,1. Materials,2025,exports,Germany,0.15
+Netherlands,1. Materials,2025,exports,Belgium,0.05
+Netherlands,1. Materials,2025,exports,US,0.05
+Netherlands,1. Materials,2025,total,"imports 0.52, exports 0.48",
+Netherlands,2. Chip machines,2025,imports,Germany,4.23
+Netherlands,2. Chip machines,2025,imports,US,1.29
+Netherlands,2. Chip machines,2025,imports,Taiwan,0.47
+Netherlands,2. Chip machines,2025,exports,China,7.68
+Netherlands,2. Chip machines,2025,exports,Taiwan,6.35
+Netherlands,2. Chip machines,2025,exports,Korea,6.14
+Netherlands,2. Chip machines,2025,total,"imports 7.35, exports 25.61",
+Netherlands,3. Chips,2025,imports,Malaysia,3.13
+Netherlands,3. Chips,2025,imports,Vietnam,1.08
+Netherlands,3. Chips,2025,imports,Costa Rica,1.07
+Netherlands,3. Chips,2025,exports,Czechia,1.7
+Netherlands,3. Chips,2025,exports,Poland,1.65
+Netherlands,3. Chips,2025,exports,Germany,1.43
+Netherlands,3. Chips,2025,total,"imports 8.88, exports 9.91",
+Netherlands,4. GPU boards,2025,imports,China,1.48
+Netherlands,4. GPU boards,2025,imports,Vietnam,1.09
+Netherlands,4. GPU boards,2025,imports,Korea,0.97
+Netherlands,4. GPU boards,2025,exports,Germany,1.61
+Netherlands,4. GPU boards,2025,exports,Mexico,0.85
+Netherlands,4. GPU boards,2025,exports,France,0.84
+Netherlands,4. GPU boards,2025,total,"imports 6.40, exports 8.25",
+Netherlands,5. Servers,2025,imports,US,3.31
+Netherlands,5. Servers,2025,imports,China,2.69
+Netherlands,5. Servers,2025,imports,Mexico,2.6
+Netherlands,5. Servers,2025,exports,Germany,2.0
+Netherlands,5. Servers,2025,exports,UK,1.23
+Netherlands,5. Servers,2025,exports,Sweden,1.11
+Netherlands,5. Servers,2025,total,"imports 13.51, exports 10.63",
+Ireland,1. Materials,2025,imports,US,0.07
+Ireland,1. Materials,2025,imports,Belgium,0.05
+Ireland,1. Materials,2025,imports,Japan,0.03
+Ireland,1. Materials,2025,exports,Japan,0.0
+Ireland,1. Materials,2025,exports,Israel,0.0
+Ireland,1. Materials,2025,exports,UK,0.0
+Ireland,1. Materials,2025,total,"imports 0.20, exports 0.01",
+Ireland,2. Chip machines,2025,imports,US,0.23
+Ireland,2. Chip machines,2025,imports,Netherlands,0.12
+Ireland,2. Chip machines,2025,imports,Japan,0.11
+Ireland,2. Chip machines,2025,exports,US,0.13
+Ireland,2. Chip machines,2025,exports,Netherlands,0.08
+Ireland,2. Chip machines,2025,exports,Taiwan,0.01
+Ireland,2. Chip machines,2025,total,"imports 0.68, exports 0.26",
+Ireland,3. Chips,2025,imports,Israel,3.19
+Ireland,3. Chips,2025,imports,US,0.44
+Ireland,3. Chips,2025,imports,Malaysia,0.13
+Ireland,3. Chips,2025,exports,China,3.35
+Ireland,3. Chips,2025,exports,Malaysia,2.47
+Ireland,3. Chips,2025,exports,Israel,0.88
+Ireland,3. Chips,2025,total,"imports 4.00, exports 7.22",
+Ireland,4. GPU boards,2025,imports,Vietnam,1.07
+Ireland,4. GPU boards,2025,imports,Taiwan,0.91
+Ireland,4. GPU boards,2025,imports,Korea,0.45
+Ireland,4. GPU boards,2025,exports,Poland,0.7
+Ireland,4. GPU boards,2025,exports,US,0.34
+Ireland,4. GPU boards,2025,exports,Korea,0.18
+Ireland,4. GPU boards,2025,total,"imports 4.34, exports 1.67",
+Ireland,5. Servers,2025,imports,Mexico,0.94
+Ireland,5. Servers,2025,imports,Taiwan,0.53
+Ireland,5. Servers,2025,imports,Denmark,0.39
+Ireland,5. Servers,2025,exports,UK,0.41
+Ireland,5. Servers,2025,exports,US,0.4
+Ireland,5. Servers,2025,exports,Canada,0.2
+Ireland,5. Servers,2025,total,"imports 3.02, exports 1.67",

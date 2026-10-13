@@ -204,3 +204,31 @@ country_groups:
     Rest of world: [REST]
 # (An East Asia-by-country option was tried and dropped: too small to read. To bring
 # it back, add e.g. option2: {China incl. Hong Kong: [CN, HK, MO], Japan: [JP], ...}.)
+
+# --------------------------------------------------------------------- chip supply chain
+# "Following an AI chip" diagram: each stage of the supply chain as trade codes, and what
+# the Netherlands' and Ireland's trade (Eurostat Comext) shows at each stage. `context`
+# is background on who makes each stage worldwide (general knowledge, not trade data).
+chip_supply_chain:
+  countries: {NL: Netherlands, IE: Ireland}
+  stages:
+    - label: "1. Materials"
+      sub: "Silicon, wafers, neon, gallium, photoresists"
+      hs6: ["280461", "381800", "280429", "811292", "370790"]
+      context: "Wafers: Japan, Taiwan, Germany, Korea. Gallium, germanium: mostly China"
+    - label: "2. Chip machines"
+      sub: "Lithography, deposition, etching, and parts"
+      hs6: ["848620", "848690"]
+      context: "EUV lithography: only the Netherlands (ASML). Etching, deposition: US, Japan"
+    - label: "3. Chips"
+      sub: "Processors (incl. GPUs) and memory"
+      hs6: ["854231", "854232"]
+      context: "AI GPUs: made in Taiwan (TSMC). HBM memory: Korea. Intel: US, Ireland, Israel"
+    - label: "4. GPU boards"
+      sub: "Boards, modules and other computer assemblies"
+      hs6: ["847330"]
+      context: "Assembled by contract manufacturers in Taiwan, China, Vietnam, Mexico"
+    - label: "5. Servers"
+      sub: "Processing units, incl. AI servers"
+      hs6: ["847150"]
+      context: "Built in Taiwan, Mexico, China and central Europe for data centres"
