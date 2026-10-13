@@ -235,3 +235,20 @@ chip_supply_chain:
       sub: "Processing units, incl. AI servers"
       hs6: ["847150"]
       context: "Taiwan, Mexico, China, central Europe"
+
+# --------------------------------------------------------------------- UK AI stack (CMA levels)
+# The UK's AI trade arranged by the CMA's foundation-model value chain: inputs, model
+# development, deployment (CMA, AI foundation models review, 2023-24). Each row is goods
+# (`goods`: imf = IMF hardware basket; ons_products = the other ONS-based AI products) or
+# services types (`services`: EBOPS codes in ONS "trade in services by partner country",
+# scaled to the latest QNA total for their broad type). Expertise isn't traded, so has no
+# row. Licences for R&D outcomes (EBOPS 8.2) are left out: mostly pharmaceutical patents.
+cma_stack:
+  - {level: Inputs, label: "Compute hardware (IMF)", goods: imf}
+  - {level: Inputs, label: "Data (information services)", services: ["9.3"]}
+  - {level: Model development, label: "R&D services", services: ["10.1"]}
+  - {level: Model development, label: "Software licensing", services: ["8.3"]}
+  - {level: Deployment, label: "Cloud, software, AI services", services: ["9.2"]}
+  - {level: Deployment, label: "Telecoms networks", services: ["9.1"]}
+  - {level: Deployment, label: "AI-embedded goods (ONS)", goods: ons_products}
+  - {level: Deployment, label: "Consulting and technical*", services: ["10.2", "10.3.1"]}

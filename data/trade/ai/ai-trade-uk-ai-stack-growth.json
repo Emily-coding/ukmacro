@@ -1,0 +1,103 @@
+{
+ "slug": "ai-trade-uk-ai-stack-growth",
+ "category": "trade",
+ "title": "The UK's AI stack: change in trade, 2019 to 2025",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "% change in value (current prices)",
+ "source": "HMRC Overseas Trade Statistics; ONS trade in services by partner country and QNA; ukmacro calculations",
+ "note": "Arranged by the CMA's foundation-model value chain (inputs, model development, deployment). Expertise, the other input, isn't traded. Compute hardware = IMF AI hardware basket; AI-embedded goods = the other ONS-based AI products (phones, laptops, network kit, devices). Services by ONS service type (information, R&D, software licences, computer, telecoms, consulting and technical), scaled to the latest QNA totals. Whole categories, so upper bounds: *consulting and technical services are included in full, though AI is a small part of them. ",
+ "series": [
+  {
+   "key": "imports",
+   "label": "Imports"
+  },
+  {
+   "key": "exports",
+   "label": "Exports"
+  }
+ ],
+ "events": null,
+ "data_through": "Deployment",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Inputs",
+   "ranks": [
+    {
+     "label": "Compute hardware (IMF)",
+     "values": {
+      "imports": 62,
+      "exports": 16
+     }
+    },
+    {
+     "label": "Data (information services)",
+     "values": {
+      "imports": 37,
+      "exports": 157
+     }
+    }
+   ]
+  },
+  {
+   "date": "Model development",
+   "ranks": [
+    {
+     "label": "R&D services",
+     "values": {
+      "imports": 36,
+      "exports": 29
+     }
+    },
+    {
+     "label": "Software licensing",
+     "values": {
+      "imports": 133,
+      "exports": 7
+     }
+    }
+   ]
+  },
+  {
+   "date": "Deployment",
+   "ranks": [
+    {
+     "label": "Cloud, software, AI services",
+     "values": {
+      "imports": 127,
+      "exports": 133
+     }
+    },
+    {
+     "label": "Telecoms networks",
+     "values": {
+      "imports": -14,
+      "exports": 6
+     }
+    },
+    {
+     "label": "AI-embedded goods (ONS)",
+     "values": {
+      "imports": 11,
+      "exports": 12
+     }
+    },
+    {
+     "label": "Consulting and technical*",
+     "values": {
+      "imports": 54,
+      "exports": 49
+     }
+    }
+   ]
+  }
+ ],
+ "value_format": "{:+.0f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

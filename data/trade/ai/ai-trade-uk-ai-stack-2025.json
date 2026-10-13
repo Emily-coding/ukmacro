@@ -1,0 +1,103 @@
+{
+ "slug": "ai-trade-uk-ai-stack-2025",
+ "category": "trade",
+ "title": "The UK's AI stack: imports and exports, 2025",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "\u00a3 billion",
+ "source": "HMRC Overseas Trade Statistics; ONS trade in services by partner country and QNA; ukmacro calculations",
+ "note": "Arranged by the CMA's foundation-model value chain (inputs, model development, deployment). Expertise, the other input, isn't traded. Compute hardware = IMF AI hardware basket; AI-embedded goods = the other ONS-based AI products (phones, laptops, network kit, devices). Services by ONS service type (information, R&D, software licences, computer, telecoms, consulting and technical), scaled to the latest QNA totals. Whole categories, so upper bounds: *consulting and technical services are included in full, though AI is a small part of them. ",
+ "series": [
+  {
+   "key": "imports",
+   "label": "Imports"
+  },
+  {
+   "key": "exports",
+   "label": "Exports"
+  }
+ ],
+ "events": null,
+ "data_through": "Deployment",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Inputs",
+   "ranks": [
+    {
+     "label": "Compute hardware (IMF)",
+     "values": {
+      "imports": 10.0,
+      "exports": 4.4
+     }
+    },
+    {
+     "label": "Data (information services)",
+     "values": {
+      "imports": 1.8,
+      "exports": 11.5
+     }
+    }
+   ]
+  },
+  {
+   "date": "Model development",
+   "ranks": [
+    {
+     "label": "R&D services",
+     "values": {
+      "imports": 12.6,
+      "exports": 16.4
+     }
+    },
+    {
+     "label": "Software licensing",
+     "values": {
+      "imports": 5.7,
+      "exports": 3.5
+     }
+    }
+   ]
+  },
+  {
+   "date": "Deployment",
+   "ranks": [
+    {
+     "label": "Cloud, software, AI services",
+     "values": {
+      "imports": 12.1,
+      "exports": 34.2
+     }
+    },
+    {
+     "label": "Telecoms networks",
+     "values": {
+      "imports": 4.2,
+      "exports": 8.0
+     }
+    },
+    {
+     "label": "AI-embedded goods (ONS)",
+     "values": {
+      "imports": 26.1,
+      "exports": 7.1
+     }
+    },
+    {
+     "label": "Consulting and technical*",
+     "values": {
+      "imports": 41.6,
+      "exports": 94.2
+     }
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

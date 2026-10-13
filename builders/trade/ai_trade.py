@@ -32,6 +32,7 @@ Outputs:
     data/trade/ai/ai_products_summary.csv / .md   product changes 2019-2025 and ONS coverage
     data/trade/ai/ai_hardware_prices.csv  IMF basket prices: official implied prices, server unit values
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
+    data/trade/ai/ai_uk_stack.csv         UK AI stack by CMA level: inputs, model development, deployment
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
     data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch, UK and US trade
@@ -345,6 +346,50 @@ def group_members(option: str) -> dict[str, list[str]]:
     return DEFS["country_groups"][option]
 
 
+_SVC_FILE: list = []
+
+
+def services_file() -> list[tuple]:
+    """Rows of the ONS "trade in services: service type by partner country" time-series
+    sheet (downloaded once per run)."""
+    if not _SVC_FILE:
+        import openpyxl
+
+        from ukmacro.http import get
+
+        link = re.search(r'/file\?uri=[^"]+\.xlsx', get_text(SVC_PAGE)).group(0)
+        wb = openpyxl.load_workbook(io.BytesIO(get("https://www.ons.gov.uk" + link, timeout=180)),
+                                    read_only=True, data_only=True)
+        _SVC_FILE.extend(wb["Sheet 1. Time Series"].iter_rows(values_only=True))
+    return _SVC_FILE
+
+
+def service_types_annual(year: str) -> dict[tuple[str, str], float]:
+    """UK services trade with the world by detailed EBOPS type for a calendar year,
+    {(flow, type code): £m}, each scaled to the latest QNA total for its broad type
+    (the by-country file predates the latest revisions). Types missing a quarter are
+    left out."""
+    rows = services_file()
+    hi = next(i for i, r in enumerate(rows) if r and r[0] == "Direction")
+    cols = [j for j, h in enumerate(rows[hi]) if isinstance(h, str) and h.startswith(f"{year}Q")]
+    raw = {}
+    for r in rows[hi + 1:]:
+        if r and r[0] and str(r[3]).strip() == SVC_WORLD and len(cols) == 4:
+            vals = [r[j] for j in cols]
+            if all(isinstance(v, (int, float)) for v in vals):
+                raw[(str(r[0]).lower(), str(r[1]).strip())] = sum(vals)
+    out = {}
+    by_ebops = {spec["ebops"]: spec for spec in DEFS["services_series"].values()}
+    for (flow, code), v in raw.items():
+        spec = by_ebops.get(code.split(".")[0])
+        if not spec or (flow, code.split(".")[0]) not in raw:
+            continue
+        qs = [f"{year}-Q{i}" for i in range(1, 5)]
+        q = sum(qna(spec[f"{g}_{flow}_CP"])[x] for g in ("EU", "NonEU") for x in qs)
+        out[(flow, code)] = v * q / raw[(flow, code.split(".")[0])]
+    return out
+
+
 def services_by_country() -> list[dict]:
     """Services tiers by partner group, quarterly (£m), consistent with the EU / non-EU
     tier charts. The by-country file (published earlier, before the latest revisions)
@@ -356,14 +401,7 @@ def services_by_country() -> list[dict]:
     Done for each service type, then summed into tiers. Where ONS suppressed a partner's
     value ('C'), its share is interpolated from the neighbouring quarters (rest of world
     absorbs the difference). Quarters run to the latest one both sources have."""
-    import openpyxl
-
-    from ukmacro.http import get
-
-    link = re.search(r'/file\?uri=[^"]+\.xlsx', get_text(SVC_PAGE)).group(0)
-    wb = openpyxl.load_workbook(io.BytesIO(get("https://www.ons.gov.uk" + link, timeout=180)),
-                                read_only=True, data_only=True)
-    rows = list(wb["Sheet 1. Time Series"].iter_rows(values_only=True))
+    rows = services_file()
     hi = next(i for i, r in enumerate(rows) if r and r[0] == "Direction")
     qcols = {j: f"{h[:4]}-{h[4:]}" for j, h in enumerate(rows[hi])
              if isinstance(h, str) and re.match(r"^\d{4}Q[1-4]$", h) and f"{h[:4]}-{h[4:]}" >= START}
@@ -892,6 +930,55 @@ def top_partner_charts(n_top: int = 3) -> list[dict]:
     return rows
 
 
+def cma_stack_charts(components: list[dict], stack: list[dict], base: str = "2019") -> list[dict]:
+    """The UK's AI trade by the CMA's foundation-model value chain (definitions/ai_trade.yaml
+    `cma_stack`): inputs, model development, deployment. Two charts: imports and exports
+    in the latest complete year (£bn), and the change since `base` (%). Goods from HMRC
+    (IMF basket; other ONS-based products), services from the ONS by-country file scaled
+    to the latest QNA totals. Returns rows for a CSV."""
+    imf = {}
+    for r in components:
+        imf[(r["flow"], r["year"])] = imf.get((r["flow"], r["year"]), 0.0) + r["value_gbp_bn"]
+    ons = {(r["flow"], r["year"]): r["ons_products_gbp_bn"] for r in stack if r["measure"] == "value"}
+    year = max(y for f, y in ons)
+    svc = {y: service_types_annual(y) for y in (base, year)}
+
+    def value(row: dict, flow: str, y: str) -> float:
+        if row.get("goods"):
+            return (imf if row["goods"] == "imf" else ons)[(flow, y)]
+        return sum(svc[y][(flow, c)] for c in row["services"]) / 1000
+    out, levels, growth = [], {}, {}
+    for row in DEFS["cma_stack"]:
+        v = {f: value(row, f, year) for f in ("imports", "exports")}
+        v0 = {f: value(row, f, base) for f in ("imports", "exports")}
+        out.append({"level": row["level"], "layer": row["label"], "year": year,
+                    **{f"{f}_gbp_bn": round(v[f], 2) for f in v},
+                    **{f"{f}_{base}_gbp_bn": round(v0[f], 2) for f in v0}})
+        levels.setdefault(row["level"], []).append({"label": row["label"], "values": {f: round(v[f], 1) for f in v}})
+        growth.setdefault(row["level"], []).append(
+            {"label": row["label"], "values": {f: round(100 * (v[f] / v0[f] - 1)) for f in v}})
+    series = [{"key": "imports", "label": "Imports"}, {"key": "exports", "label": "Exports"}]
+    note = ("Arranged by the CMA's foundation-model value chain (inputs, model development, deployment). "
+            "Expertise, the other input, isn't traded. Compute hardware = IMF AI hardware basket; AI-embedded "
+            "goods = the other ONS-based AI products (phones, laptops, network kit, devices). Services by "
+            "ONS service type (information, R&D, software licences, computer, telecoms, consulting and "
+            "technical), scaled to the latest QNA totals. Whole categories, so upper bounds: *consulting "
+            "and technical services are included in full, though AI is a small part of them. ")
+    for slug, title, units, data, fmt in (
+            (f"ai-trade-uk-ai-stack-{year}", f"The UK's AI stack: imports and exports, {year}",
+             "£ billion", levels, "{:.1f}"),
+            (f"ai-trade-uk-ai-stack-growth", f"The UK's AI stack: change in trade, {base} to {year}",
+             "% change in value (current prices)", growth, "{:+.0f}%")):
+        c = chart(slug, title, units, "ranked-bars", series,
+                  [{"date": lvl, "ranks": rows} for lvl, rows in data.items()], note,
+                  "HMRC Overseas Trade Statistics; ONS trade in services by partner country and QNA; "
+                  "ukmacro calculations", freq="A")
+        c["events"] = None
+        c["value_format"] = fmt
+        publish(c)
+    return out
+
+
 # ---------------------------------------------------------------- 4c. chip supply chain
 
 SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "Germany", "MX": "Mexico",
@@ -1154,7 +1241,9 @@ def build() -> None:
     write_csv(imf_price_charts(mq, prods), OUT / "ai_hardware_prices.csv")
     components, imf_quarterly = imf_component_charts()
     write_csv(components, OUT / "ai_hardware_components.csv")
-    write_csv(ai_stack_charts(mq, prods, imf_quarterly, tiers), OUT / "ai_stack.csv")
+    stack = ai_stack_charts(mq, prods, imf_quarterly, tiers)
+    write_csv(stack, OUT / "ai_stack.csv")
+    write_csv(cma_stack_charts(components, stack), OUT / "ai_uk_stack.csv")
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     if hub_trade() is not None:
         write_csv(hub_summary(), OUT / "ai_hub_origins.csv")

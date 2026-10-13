@@ -429,39 +429,48 @@ def _grouped_hbar(chart):
 
 
 def _ranked_bars(chart):
-    """Groups of ranked horizontal bars, e.g. the top partners for each product group.
-    data[].date holds the group's name and data[].ranks its bars, largest first, as
-    [{label, value, key}]; a bar's colour is that of the series whose key it names (so
-    the legend explains the colours, e.g. EU vs non-EU). chart["value_format"] formats
-    the value labels (default "{:.1f}")."""
+    """Groups of labelled horizontal bars, e.g. the top partners for each product group.
+    data[].date holds the group's name and data[].ranks its rows, as [{label, value,
+    key}] (one bar, coloured as the series whose key it names) or [{label, values:
+    {key: value}}] (one bar per series, side by side, e.g. imports and exports). The
+    legend explains the colours. chart["value_format"] formats the value labels
+    (default "{:.1f}")."""
     from matplotlib.patches import Patch
-    bars, heads, y = [], [], 0.0
+    rows, heads, y = [], [], 0.0
     for d in chart["data"]:
         heads.append((y, d["date"]))
         y += 1
         for r in d["ranks"]:
-            bars.append((y, r["label"], r["value"], r["key"]))
+            rows.append((y, r["label"], r.get("values") or {r["key"]: r["value"]}))
             y += 1
         y += 0.5   # space between groups
-    longest = max(len(b[1]) for b in bars)
+    longest = max(len(r[1]) for r in rows)
     fig, ax = _frame(chart, left_cm=max(LEFT_CM, 0.6 + longest * 0.186))  # room for the bar labels
     ax.grid(axis="y", visible=False)
     ax.grid(axis="x", color=GRID, linewidth=0.6)
     colours = {s["key"]: _colour(s, i) for i, s in enumerate(chart["series"])}
+    order = [s["key"] for s in chart["series"]]
     fmt = chart.get("value_format", "{:.1f}")
-    for yy, _, v, k in bars:
-        ax.barh(yy, v, height=0.72, color=colours[k], zorder=3)
-        ax.annotate(fmt.format(v), (v, yy), xytext=(5, 0), textcoords="offset points",
-                    ha="left", va="center", fontsize=10, color=TEXT_2)
-    ax.set_yticks([b[0] for b in bars], [b[1] for b in bars])
+    for yy, _, values in rows:
+        keys = [k for k in order if k in values]
+        h = 0.72 / len(keys)
+        for i, k in enumerate(keys):
+            pos = yy + (i - (len(keys) - 1) / 2) * h
+            ax.barh(pos, values[k], height=h * 0.92, color=colours[k], zorder=3)
+            neg = values[k] < 0
+            ax.annotate(fmt.format(values[k]).replace("-", "\u2212"), (values[k], pos), xytext=(-5 if neg else 5, 0),
+                        textcoords="offset points", ha="right" if neg else "left", va="center",
+                        fontsize=10 if len(keys) == 1 else 8.5, color=TEXT_2)
+    ax.set_yticks([r[0] for r in rows], [r[1] for r in rows])
     for yy, text in heads:   # group names, in bold, above their bars
         ax.text(0, yy + 0.1, text, fontsize=11, fontweight="semibold", color=INK, va="center", ha="left")
     ax.set_ylim(y - 0.5, -0.8)
     ax.spines["bottom"].set_visible(False)
     ax.axvline(0, color=BASELINE, linewidth=0.9, zorder=2)
     lo, hi = ax.get_xlim()
-    ax.set_xlim(0, hi * 1.08)  # room for the value labels
-    used = [s for s in chart["series"] if any(b[3] == s["key"] for b in bars)]
+    low = min(v for r in rows for v in r[2].values())
+    ax.set_xlim(min(0, low) - (hi - lo) * 0.08 * (low < 0), hi * 1.08)  # room for the value labels
+    used = [s for s in chart["series"] if any(s["key"] in r[2] for r in rows)]
     _legend(fig, [Patch(color=colours[s["key"]]) for s in used], [s["label"] for s in used])
     return fig
 
