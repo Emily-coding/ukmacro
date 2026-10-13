@@ -305,11 +305,13 @@ def services_by_country() -> list[dict]:
 
 def products_by_country() -> list[dict]:
     """HMRC product values by partner group (£m). EU vs non-EU comes from the flow type;
-    non-EU partners from HMRC country codes."""
+    non-EU partners from HMRC country codes. The IMF AI hardware basket is included as
+    one extra item, "imf_hardware" (its codes summed), for its own chart."""
     alpha = {c["CountryId"]: (c["CountryCodeAlpha"] or "").strip()
              for c in get_json(f"{HMRC_COUNTRY}?$select=CountryId,CountryCodeAlpha", timeout=120)["value"]}
     out = []
-    for p in DEFS["products"]:
+    imf = {"id": "imf_hardware", "hs6": DEFS["imf_hardware"]["hs6"]}
+    for p in DEFS["products"] + [imf]:
         ranges = " or ".join(f"(CommodityId ge {c}00 and CommodityId le {c}99)" for c in p["hs6"])
         apply = (f"filter(MonthId ge {START[:4]}01 and ({ranges}))/groupby((MonthId,FlowTypeId,CountryId),"
                  "aggregate(Value with sum as Value))")
@@ -366,6 +368,7 @@ def country_charts(rows: list[dict]) -> list[dict]:
     blocks = [("services", t, "AI-relevant services, " + DEFS["services_tiers"][t]["label"].split(":")[0].lower()
                + " tier", [t]) for t in DEFS["services_tiers"]]
     blocks.append(("product", "total", "selected AI-relevant products (goods)", total_products))
+    blocks.append(("product", "imf-hardware", DEFS["imf_hardware"]["label"], ["imf_hardware"]))
     out_rows = []
     for kind, slug_part, what, items in blocks:
         for flow in ("exports", "imports"):
@@ -389,6 +392,14 @@ def country_charts(rows: list[dict]) -> list[dict]:
                 if kind == "services":
                     note += ("Partner shares from the by-country file are applied to the latest QNA EU and "
                              "non-EU totals; suppressed partner values are interpolated. ")
+                elif slug_part == "imf-hardware":
+                    note = ("IMF AI hardware basket (HS 847150, 847170, 847180, 847330, 848610, 848620, "
+                            "848640, 848690, 854231, 854232): servers and other computer units, storage, "
+                            "computer assemblies (incl. graphics cards), processor and memory chips, and "
+                            "semiconductor manufacturing equipment. Whole codes, so an upper bound. "
+                            "Rolling four-quarter totals (each point = the latest four quarters). "
+                            "East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. EU trade is "
+                            "recorded by country of dispatch, so goods routed via the EU count as EU. " + EU_BREAK)
                 else:
                     note += ("Products: chips, computers and servers, storage, graphics cards, laptops and tablets, "
                              "mobile phones, network equipment, cameras, medical scanners and diagnostics, "

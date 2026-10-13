@@ -7271,3 +7271,339 @@ product,drones,option1,Rest of world,imports,2025-Q3,1.79
 product,drones,option1,Rest of world,imports,2025-Q4,3.52
 product,drones,option1,Rest of world,imports,2026-Q1,7.76
 product,drones,option1,Rest of world,imports,2026-Q2,1.89
+product,imf_hardware,option1,EU,exports,2016-Q1,538.53
+product,imf_hardware,option1,EU,exports,2016-Q2,530.02
+product,imf_hardware,option1,EU,exports,2016-Q3,561.87
+product,imf_hardware,option1,EU,exports,2016-Q4,678.44
+product,imf_hardware,option1,EU,exports,2017-Q1,541.08
+product,imf_hardware,option1,EU,exports,2017-Q2,460.09
+product,imf_hardware,option1,EU,exports,2017-Q3,491.54
+product,imf_hardware,option1,EU,exports,2017-Q4,600.63
+product,imf_hardware,option1,EU,exports,2018-Q1,552.25
+product,imf_hardware,option1,EU,exports,2018-Q2,558.26
+product,imf_hardware,option1,EU,exports,2018-Q3,516.01
+product,imf_hardware,option1,EU,exports,2018-Q4,567.42
+product,imf_hardware,option1,EU,exports,2019-Q1,557.34
+product,imf_hardware,option1,EU,exports,2019-Q2,581.29
+product,imf_hardware,option1,EU,exports,2019-Q3,567.41
+product,imf_hardware,option1,EU,exports,2019-Q4,557.26
+product,imf_hardware,option1,EU,exports,2020-Q1,516.87
+product,imf_hardware,option1,EU,exports,2020-Q2,496.94
+product,imf_hardware,option1,EU,exports,2020-Q3,549.3
+product,imf_hardware,option1,EU,exports,2020-Q4,625.2
+product,imf_hardware,option1,EU,exports,2021-Q1,417.53
+product,imf_hardware,option1,EU,exports,2021-Q2,535.75
+product,imf_hardware,option1,EU,exports,2021-Q3,467.73
+product,imf_hardware,option1,EU,exports,2021-Q4,562.48
+product,imf_hardware,option1,EU,exports,2022-Q1,486.57
+product,imf_hardware,option1,EU,exports,2022-Q2,462.22
+product,imf_hardware,option1,EU,exports,2022-Q3,564.48
+product,imf_hardware,option1,EU,exports,2022-Q4,604.43
+product,imf_hardware,option1,EU,exports,2023-Q1,571.79
+product,imf_hardware,option1,EU,exports,2023-Q2,434.92
+product,imf_hardware,option1,EU,exports,2023-Q3,408.08
+product,imf_hardware,option1,EU,exports,2023-Q4,489.62
+product,imf_hardware,option1,EU,exports,2024-Q1,394.59
+product,imf_hardware,option1,EU,exports,2024-Q2,333.63
+product,imf_hardware,option1,EU,exports,2024-Q3,361.69
+product,imf_hardware,option1,EU,exports,2024-Q4,424.87
+product,imf_hardware,option1,EU,exports,2025-Q1,433.94
+product,imf_hardware,option1,EU,exports,2025-Q2,421.13
+product,imf_hardware,option1,EU,exports,2025-Q3,501.72
+product,imf_hardware,option1,EU,exports,2025-Q4,726.38
+product,imf_hardware,option1,EU,exports,2026-Q1,1668.75
+product,imf_hardware,option1,EU,exports,2026-Q2,980.22
+product,imf_hardware,option1,US,exports,2016-Q1,91.23
+product,imf_hardware,option1,US,exports,2016-Q2,125.16
+product,imf_hardware,option1,US,exports,2016-Q3,110.83
+product,imf_hardware,option1,US,exports,2016-Q4,106.75
+product,imf_hardware,option1,US,exports,2017-Q1,101.78
+product,imf_hardware,option1,US,exports,2017-Q2,118.75
+product,imf_hardware,option1,US,exports,2017-Q3,106.29
+product,imf_hardware,option1,US,exports,2017-Q4,119.85
+product,imf_hardware,option1,US,exports,2018-Q1,94.56
+product,imf_hardware,option1,US,exports,2018-Q2,105.01
+product,imf_hardware,option1,US,exports,2018-Q3,99.74
+product,imf_hardware,option1,US,exports,2018-Q4,124.48
+product,imf_hardware,option1,US,exports,2019-Q1,106.2
+product,imf_hardware,option1,US,exports,2019-Q2,118.0
+product,imf_hardware,option1,US,exports,2019-Q3,110.24
+product,imf_hardware,option1,US,exports,2019-Q4,134.89
+product,imf_hardware,option1,US,exports,2020-Q1,89.95
+product,imf_hardware,option1,US,exports,2020-Q2,89.15
+product,imf_hardware,option1,US,exports,2020-Q3,95.08
+product,imf_hardware,option1,US,exports,2020-Q4,121.11
+product,imf_hardware,option1,US,exports,2021-Q1,98.11
+product,imf_hardware,option1,US,exports,2021-Q2,111.23
+product,imf_hardware,option1,US,exports,2021-Q3,109.26
+product,imf_hardware,option1,US,exports,2021-Q4,116.72
+product,imf_hardware,option1,US,exports,2022-Q1,94.77
+product,imf_hardware,option1,US,exports,2022-Q2,110.1
+product,imf_hardware,option1,US,exports,2022-Q3,122.17
+product,imf_hardware,option1,US,exports,2022-Q4,121.91
+product,imf_hardware,option1,US,exports,2023-Q1,108.62
+product,imf_hardware,option1,US,exports,2023-Q2,120.53
+product,imf_hardware,option1,US,exports,2023-Q3,114.38
+product,imf_hardware,option1,US,exports,2023-Q4,112.73
+product,imf_hardware,option1,US,exports,2024-Q1,154.45
+product,imf_hardware,option1,US,exports,2024-Q2,114.93
+product,imf_hardware,option1,US,exports,2024-Q3,117.25
+product,imf_hardware,option1,US,exports,2024-Q4,119.69
+product,imf_hardware,option1,US,exports,2025-Q1,146.41
+product,imf_hardware,option1,US,exports,2025-Q2,130.54
+product,imf_hardware,option1,US,exports,2025-Q3,138.01
+product,imf_hardware,option1,US,exports,2025-Q4,155.87
+product,imf_hardware,option1,US,exports,2026-Q1,122.84
+product,imf_hardware,option1,US,exports,2026-Q2,211.31
+product,imf_hardware,option1,East Asia,exports,2016-Q1,101.83
+product,imf_hardware,option1,East Asia,exports,2016-Q2,80.48
+product,imf_hardware,option1,East Asia,exports,2016-Q3,95.36
+product,imf_hardware,option1,East Asia,exports,2016-Q4,96.37
+product,imf_hardware,option1,East Asia,exports,2017-Q1,72.0
+product,imf_hardware,option1,East Asia,exports,2017-Q2,96.96
+product,imf_hardware,option1,East Asia,exports,2017-Q3,114.19
+product,imf_hardware,option1,East Asia,exports,2017-Q4,104.39
+product,imf_hardware,option1,East Asia,exports,2018-Q1,98.43
+product,imf_hardware,option1,East Asia,exports,2018-Q2,149.21
+product,imf_hardware,option1,East Asia,exports,2018-Q3,121.72
+product,imf_hardware,option1,East Asia,exports,2018-Q4,121.7
+product,imf_hardware,option1,East Asia,exports,2019-Q1,112.74
+product,imf_hardware,option1,East Asia,exports,2019-Q2,107.95
+product,imf_hardware,option1,East Asia,exports,2019-Q3,119.58
+product,imf_hardware,option1,East Asia,exports,2019-Q4,155.23
+product,imf_hardware,option1,East Asia,exports,2020-Q1,107.9
+product,imf_hardware,option1,East Asia,exports,2020-Q2,110.12
+product,imf_hardware,option1,East Asia,exports,2020-Q3,73.36
+product,imf_hardware,option1,East Asia,exports,2020-Q4,105.14
+product,imf_hardware,option1,East Asia,exports,2021-Q1,82.41
+product,imf_hardware,option1,East Asia,exports,2021-Q2,101.83
+product,imf_hardware,option1,East Asia,exports,2021-Q3,133.7
+product,imf_hardware,option1,East Asia,exports,2021-Q4,113.65
+product,imf_hardware,option1,East Asia,exports,2022-Q1,125.93
+product,imf_hardware,option1,East Asia,exports,2022-Q2,146.77
+product,imf_hardware,option1,East Asia,exports,2022-Q3,153.85
+product,imf_hardware,option1,East Asia,exports,2022-Q4,199.96
+product,imf_hardware,option1,East Asia,exports,2023-Q1,102.42
+product,imf_hardware,option1,East Asia,exports,2023-Q2,110.92
+product,imf_hardware,option1,East Asia,exports,2023-Q3,136.82
+product,imf_hardware,option1,East Asia,exports,2023-Q4,180.15
+product,imf_hardware,option1,East Asia,exports,2024-Q1,99.96
+product,imf_hardware,option1,East Asia,exports,2024-Q2,124.52
+product,imf_hardware,option1,East Asia,exports,2024-Q3,159.57
+product,imf_hardware,option1,East Asia,exports,2024-Q4,154.42
+product,imf_hardware,option1,East Asia,exports,2025-Q1,122.8
+product,imf_hardware,option1,East Asia,exports,2025-Q2,140.73
+product,imf_hardware,option1,East Asia,exports,2025-Q3,145.82
+product,imf_hardware,option1,East Asia,exports,2025-Q4,233.27
+product,imf_hardware,option1,East Asia,exports,2026-Q1,268.12
+product,imf_hardware,option1,East Asia,exports,2026-Q2,333.68
+product,imf_hardware,option1,Rest of world,exports,2016-Q1,111.36
+product,imf_hardware,option1,Rest of world,exports,2016-Q2,100.53
+product,imf_hardware,option1,Rest of world,exports,2016-Q3,117.13
+product,imf_hardware,option1,Rest of world,exports,2016-Q4,134.99
+product,imf_hardware,option1,Rest of world,exports,2017-Q1,132.95
+product,imf_hardware,option1,Rest of world,exports,2017-Q2,121.93
+product,imf_hardware,option1,Rest of world,exports,2017-Q3,126.12
+product,imf_hardware,option1,Rest of world,exports,2017-Q4,154.39
+product,imf_hardware,option1,Rest of world,exports,2018-Q1,139.37
+product,imf_hardware,option1,Rest of world,exports,2018-Q2,139.61
+product,imf_hardware,option1,Rest of world,exports,2018-Q3,140.61
+product,imf_hardware,option1,Rest of world,exports,2018-Q4,148.77
+product,imf_hardware,option1,Rest of world,exports,2019-Q1,153.23
+product,imf_hardware,option1,Rest of world,exports,2019-Q2,122.11
+product,imf_hardware,option1,Rest of world,exports,2019-Q3,141.17
+product,imf_hardware,option1,Rest of world,exports,2019-Q4,129.17
+product,imf_hardware,option1,Rest of world,exports,2020-Q1,126.44
+product,imf_hardware,option1,Rest of world,exports,2020-Q2,116.65
+product,imf_hardware,option1,Rest of world,exports,2020-Q3,130.9
+product,imf_hardware,option1,Rest of world,exports,2020-Q4,130.02
+product,imf_hardware,option1,Rest of world,exports,2021-Q1,114.17
+product,imf_hardware,option1,Rest of world,exports,2021-Q2,142.6
+product,imf_hardware,option1,Rest of world,exports,2021-Q3,135.94
+product,imf_hardware,option1,Rest of world,exports,2021-Q4,144.03
+product,imf_hardware,option1,Rest of world,exports,2022-Q1,143.17
+product,imf_hardware,option1,Rest of world,exports,2022-Q2,169.16
+product,imf_hardware,option1,Rest of world,exports,2022-Q3,155.06
+product,imf_hardware,option1,Rest of world,exports,2022-Q4,167.97
+product,imf_hardware,option1,Rest of world,exports,2023-Q1,137.77
+product,imf_hardware,option1,Rest of world,exports,2023-Q2,158.5
+product,imf_hardware,option1,Rest of world,exports,2023-Q3,137.81
+product,imf_hardware,option1,Rest of world,exports,2023-Q4,157.22
+product,imf_hardware,option1,Rest of world,exports,2024-Q1,141.02
+product,imf_hardware,option1,Rest of world,exports,2024-Q2,136.42
+product,imf_hardware,option1,Rest of world,exports,2024-Q3,148.0
+product,imf_hardware,option1,Rest of world,exports,2024-Q4,170.42
+product,imf_hardware,option1,Rest of world,exports,2025-Q1,196.51
+product,imf_hardware,option1,Rest of world,exports,2025-Q2,331.62
+product,imf_hardware,option1,Rest of world,exports,2025-Q3,247.09
+product,imf_hardware,option1,Rest of world,exports,2025-Q4,312.08
+product,imf_hardware,option1,Rest of world,exports,2026-Q1,325.09
+product,imf_hardware,option1,Rest of world,exports,2026-Q2,422.67
+product,imf_hardware,option1,EU,imports,2016-Q1,678.8
+product,imf_hardware,option1,EU,imports,2016-Q2,629.96
+product,imf_hardware,option1,EU,imports,2016-Q3,749.56
+product,imf_hardware,option1,EU,imports,2016-Q4,838.64
+product,imf_hardware,option1,EU,imports,2017-Q1,719.2
+product,imf_hardware,option1,EU,imports,2017-Q2,743.93
+product,imf_hardware,option1,EU,imports,2017-Q3,756.5
+product,imf_hardware,option1,EU,imports,2017-Q4,763.97
+product,imf_hardware,option1,EU,imports,2018-Q1,866.64
+product,imf_hardware,option1,EU,imports,2018-Q2,890.01
+product,imf_hardware,option1,EU,imports,2018-Q3,854.48
+product,imf_hardware,option1,EU,imports,2018-Q4,914.81
+product,imf_hardware,option1,EU,imports,2019-Q1,948.99
+product,imf_hardware,option1,EU,imports,2019-Q2,772.91
+product,imf_hardware,option1,EU,imports,2019-Q3,820.95
+product,imf_hardware,option1,EU,imports,2019-Q4,853.47
+product,imf_hardware,option1,EU,imports,2020-Q1,852.75
+product,imf_hardware,option1,EU,imports,2020-Q2,739.63
+product,imf_hardware,option1,EU,imports,2020-Q3,765.44
+product,imf_hardware,option1,EU,imports,2020-Q4,849.13
+product,imf_hardware,option1,EU,imports,2021-Q1,684.01
+product,imf_hardware,option1,EU,imports,2021-Q2,600.23
+product,imf_hardware,option1,EU,imports,2021-Q3,519.3
+product,imf_hardware,option1,EU,imports,2021-Q4,587.78
+product,imf_hardware,option1,EU,imports,2022-Q1,854.14
+product,imf_hardware,option1,EU,imports,2022-Q2,945.69
+product,imf_hardware,option1,EU,imports,2022-Q3,1186.7
+product,imf_hardware,option1,EU,imports,2022-Q4,1231.12
+product,imf_hardware,option1,EU,imports,2023-Q1,1216.48
+product,imf_hardware,option1,EU,imports,2023-Q2,1058.54
+product,imf_hardware,option1,EU,imports,2023-Q3,1107.21
+product,imf_hardware,option1,EU,imports,2023-Q4,1172.64
+product,imf_hardware,option1,EU,imports,2024-Q1,1042.87
+product,imf_hardware,option1,EU,imports,2024-Q2,1036.75
+product,imf_hardware,option1,EU,imports,2024-Q3,1302.44
+product,imf_hardware,option1,EU,imports,2024-Q4,1108.83
+product,imf_hardware,option1,EU,imports,2025-Q1,1572.67
+product,imf_hardware,option1,EU,imports,2025-Q2,1307.94
+product,imf_hardware,option1,EU,imports,2025-Q3,1359.24
+product,imf_hardware,option1,EU,imports,2025-Q4,1172.44
+product,imf_hardware,option1,EU,imports,2026-Q1,2116.02
+product,imf_hardware,option1,EU,imports,2026-Q2,2427.61
+product,imf_hardware,option1,US,imports,2016-Q1,153.26
+product,imf_hardware,option1,US,imports,2016-Q2,171.67
+product,imf_hardware,option1,US,imports,2016-Q3,156.46
+product,imf_hardware,option1,US,imports,2016-Q4,170.27
+product,imf_hardware,option1,US,imports,2017-Q1,184.73
+product,imf_hardware,option1,US,imports,2017-Q2,149.94
+product,imf_hardware,option1,US,imports,2017-Q3,171.31
+product,imf_hardware,option1,US,imports,2017-Q4,176.34
+product,imf_hardware,option1,US,imports,2018-Q1,174.25
+product,imf_hardware,option1,US,imports,2018-Q2,159.99
+product,imf_hardware,option1,US,imports,2018-Q3,203.93
+product,imf_hardware,option1,US,imports,2018-Q4,200.34
+product,imf_hardware,option1,US,imports,2019-Q1,231.24
+product,imf_hardware,option1,US,imports,2019-Q2,176.05
+product,imf_hardware,option1,US,imports,2019-Q3,182.66
+product,imf_hardware,option1,US,imports,2019-Q4,213.85
+product,imf_hardware,option1,US,imports,2020-Q1,189.58
+product,imf_hardware,option1,US,imports,2020-Q2,192.09
+product,imf_hardware,option1,US,imports,2020-Q3,169.17
+product,imf_hardware,option1,US,imports,2020-Q4,204.97
+product,imf_hardware,option1,US,imports,2021-Q1,203.75
+product,imf_hardware,option1,US,imports,2021-Q2,158.13
+product,imf_hardware,option1,US,imports,2021-Q3,188.19
+product,imf_hardware,option1,US,imports,2021-Q4,182.06
+product,imf_hardware,option1,US,imports,2022-Q1,164.13
+product,imf_hardware,option1,US,imports,2022-Q2,201.78
+product,imf_hardware,option1,US,imports,2022-Q3,242.21
+product,imf_hardware,option1,US,imports,2022-Q4,289.17
+product,imf_hardware,option1,US,imports,2023-Q1,284.89
+product,imf_hardware,option1,US,imports,2023-Q2,238.47
+product,imf_hardware,option1,US,imports,2023-Q3,210.23
+product,imf_hardware,option1,US,imports,2023-Q4,188.77
+product,imf_hardware,option1,US,imports,2024-Q1,170.95
+product,imf_hardware,option1,US,imports,2024-Q2,157.49
+product,imf_hardware,option1,US,imports,2024-Q3,346.65
+product,imf_hardware,option1,US,imports,2024-Q4,476.13
+product,imf_hardware,option1,US,imports,2025-Q1,242.58
+product,imf_hardware,option1,US,imports,2025-Q2,362.23
+product,imf_hardware,option1,US,imports,2025-Q3,596.04
+product,imf_hardware,option1,US,imports,2025-Q4,419.03
+product,imf_hardware,option1,US,imports,2026-Q1,314.65
+product,imf_hardware,option1,US,imports,2026-Q2,254.04
+product,imf_hardware,option1,East Asia,imports,2016-Q1,348.28
+product,imf_hardware,option1,East Asia,imports,2016-Q2,312.58
+product,imf_hardware,option1,East Asia,imports,2016-Q3,345.78
+product,imf_hardware,option1,East Asia,imports,2016-Q4,456.23
+product,imf_hardware,option1,East Asia,imports,2017-Q1,275.26
+product,imf_hardware,option1,East Asia,imports,2017-Q2,270.48
+product,imf_hardware,option1,East Asia,imports,2017-Q3,377.23
+product,imf_hardware,option1,East Asia,imports,2017-Q4,415.94
+product,imf_hardware,option1,East Asia,imports,2018-Q1,365.59
+product,imf_hardware,option1,East Asia,imports,2018-Q2,343.44
+product,imf_hardware,option1,East Asia,imports,2018-Q3,346.4
+product,imf_hardware,option1,East Asia,imports,2018-Q4,439.17
+product,imf_hardware,option1,East Asia,imports,2019-Q1,372.85
+product,imf_hardware,option1,East Asia,imports,2019-Q2,315.23
+product,imf_hardware,option1,East Asia,imports,2019-Q3,324.23
+product,imf_hardware,option1,East Asia,imports,2019-Q4,348.36
+product,imf_hardware,option1,East Asia,imports,2020-Q1,311.65
+product,imf_hardware,option1,East Asia,imports,2020-Q2,354.66
+product,imf_hardware,option1,East Asia,imports,2020-Q3,352.53
+product,imf_hardware,option1,East Asia,imports,2020-Q4,476.66
+product,imf_hardware,option1,East Asia,imports,2021-Q1,369.36
+product,imf_hardware,option1,East Asia,imports,2021-Q2,423.77
+product,imf_hardware,option1,East Asia,imports,2021-Q3,424.89
+product,imf_hardware,option1,East Asia,imports,2021-Q4,464.79
+product,imf_hardware,option1,East Asia,imports,2022-Q1,387.06
+product,imf_hardware,option1,East Asia,imports,2022-Q2,440.17
+product,imf_hardware,option1,East Asia,imports,2022-Q3,393.27
+product,imf_hardware,option1,East Asia,imports,2022-Q4,451.82
+product,imf_hardware,option1,East Asia,imports,2023-Q1,336.19
+product,imf_hardware,option1,East Asia,imports,2023-Q2,292.54
+product,imf_hardware,option1,East Asia,imports,2023-Q3,297.95
+product,imf_hardware,option1,East Asia,imports,2023-Q4,353.89
+product,imf_hardware,option1,East Asia,imports,2024-Q1,270.26
+product,imf_hardware,option1,East Asia,imports,2024-Q2,247.4
+product,imf_hardware,option1,East Asia,imports,2024-Q3,282.46
+product,imf_hardware,option1,East Asia,imports,2024-Q4,378.62
+product,imf_hardware,option1,East Asia,imports,2025-Q1,348.51
+product,imf_hardware,option1,East Asia,imports,2025-Q2,384.35
+product,imf_hardware,option1,East Asia,imports,2025-Q3,415.69
+product,imf_hardware,option1,East Asia,imports,2025-Q4,532.68
+product,imf_hardware,option1,East Asia,imports,2026-Q1,481.36
+product,imf_hardware,option1,East Asia,imports,2026-Q2,493.37
+product,imf_hardware,option1,Rest of world,imports,2016-Q1,170.15
+product,imf_hardware,option1,Rest of world,imports,2016-Q2,165.23
+product,imf_hardware,option1,Rest of world,imports,2016-Q3,145.99
+product,imf_hardware,option1,Rest of world,imports,2016-Q4,158.04
+product,imf_hardware,option1,Rest of world,imports,2017-Q1,178.54
+product,imf_hardware,option1,Rest of world,imports,2017-Q2,137.09
+product,imf_hardware,option1,Rest of world,imports,2017-Q3,127.56
+product,imf_hardware,option1,Rest of world,imports,2017-Q4,175.78
+product,imf_hardware,option1,Rest of world,imports,2018-Q1,164.29
+product,imf_hardware,option1,Rest of world,imports,2018-Q2,145.87
+product,imf_hardware,option1,Rest of world,imports,2018-Q3,140.13
+product,imf_hardware,option1,Rest of world,imports,2018-Q4,224.46
+product,imf_hardware,option1,Rest of world,imports,2019-Q1,170.22
+product,imf_hardware,option1,Rest of world,imports,2019-Q2,134.42
+product,imf_hardware,option1,Rest of world,imports,2019-Q3,134.19
+product,imf_hardware,option1,Rest of world,imports,2019-Q4,139.78
+product,imf_hardware,option1,Rest of world,imports,2020-Q1,163.4
+product,imf_hardware,option1,Rest of world,imports,2020-Q2,101.22
+product,imf_hardware,option1,Rest of world,imports,2020-Q3,151.84
+product,imf_hardware,option1,Rest of world,imports,2020-Q4,137.3
+product,imf_hardware,option1,Rest of world,imports,2021-Q1,104.9
+product,imf_hardware,option1,Rest of world,imports,2021-Q2,121.01
+product,imf_hardware,option1,Rest of world,imports,2021-Q3,107.93
+product,imf_hardware,option1,Rest of world,imports,2021-Q4,114.14
+product,imf_hardware,option1,Rest of world,imports,2022-Q1,137.28
+product,imf_hardware,option1,Rest of world,imports,2022-Q2,114.89
+product,imf_hardware,option1,Rest of world,imports,2022-Q3,122.85
+product,imf_hardware,option1,Rest of world,imports,2022-Q4,192.27
+product,imf_hardware,option1,Rest of world,imports,2023-Q1,101.27
+product,imf_hardware,option1,Rest of world,imports,2023-Q2,118.88
+product,imf_hardware,option1,Rest of world,imports,2023-Q3,104.74
+product,imf_hardware,option1,Rest of world,imports,2023-Q4,118.89
+product,imf_hardware,option1,Rest of world,imports,2024-Q1,119.09
+product,imf_hardware,option1,Rest of world,imports,2024-Q2,100.35
+product,imf_hardware,option1,Rest of world,imports,2024-Q3,92.64
+product,imf_hardware,option1,Rest of world,imports,2024-Q4,122.49
+product,imf_hardware,option1,Rest of world,imports,2025-Q1,183.01
+product,imf_hardware,option1,Rest of world,imports,2025-Q2,201.19
+product,imf_hardware,option1,Rest of world,imports,2025-Q3,278.82
+product,imf_hardware,option1,Rest of world,imports,2025-Q4,593.17
+product,imf_hardware,option1,Rest of world,imports,2026-Q1,207.69
+product,imf_hardware,option1,Rest of world,imports,2026-Q2,513.23

@@ -123,6 +123,16 @@ products:
   # C30.3: autonomous drones
   - {id: drones, label: "Unmanned aircraft (drones)", cpa: "30.3", hs6: ["880621", "880622", "880623", "880624", "880629", "880691", "880692", "880693", "880694", "880699"], from: 2022}
 
+# IMF "AI Hardware" basket: a narrower, supply-chain view (compute hardware plus the
+# machines that make chips), charted separately and NOT added to the products above.
+# Differs from the ONS-based list: no consumer devices (phones, laptops, network kit),
+# and adds semiconductor manufacturing equipment (8486), which ONS doesn't count as an
+# AI product. Codes as given by the IMF; add the paper reference to `source`.
+imf_hardware:
+  label: "AI compute hardware (IMF basket)"
+  source: "IMF AI Hardware basket"   # TODO: paper title and link
+  hs6: ["847150", "847170", "847180", "847330", "848610", "848620", "848640", "848690", "854231", "854232"]
+
 # Every AI product in the ONS article, and how it is covered by the product layer.
 coverage:
   - {ons: "AI chips, servers and storage manufacturing (C26)", products: [chips_processors, chips_memory, chips_other, servers, computer_systems, computer_units_other, storage, computer_assemblies]}
