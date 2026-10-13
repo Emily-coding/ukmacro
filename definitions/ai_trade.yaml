@@ -207,10 +207,11 @@ country_groups:
 
 # --------------------------------------------------------------------- chip supply chain
 # "Following an AI chip" diagram: each stage of the supply chain as trade codes, and what
-# the Netherlands' and Ireland's trade (Eurostat Comext) shows at each stage. `context`
-# is background on who makes each stage worldwide (general knowledge, not trade data).
+# each country's trade shows at each stage (EU members from Eurostat Comext, the UK from
+# HMRC; all in £ at annual average exchange rates). `context` is background on who makes
+# each stage worldwide (general knowledge, not trade data).
 chip_supply_chain:
-  countries: {NL: Netherlands, IE: Ireland}
+  countries: {NL: Netherlands, GB: United Kingdom}   # GB = HMRC; others = Comext
   stages:
     - label: "1. Materials"
       sub: "Silicon, wafers, neon, gallium, photoresists"

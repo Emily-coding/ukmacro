@@ -34,7 +34,7 @@ Outputs:
     data/trade/ai/ai_hardware_components.csv  IMF basket by component, calendar years
     data/trade/ai/ai_top_partners.csv     top ten partners by AI product group, latest two years
     data/trade/ai/ai_hub_origins.csv      EU hubs: estimated made-in-hub share and top origins
-    data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch and Irish trade
+    data/trade/ai/ai_chip_supply_chain.csv  an AI chip's supply chain in Dutch and UK trade
     data/trade/ai/ai_stack.csv            AI stack: IMF basket, other AI products, rest of extended goods tier, AI services (values and volumes)
     data/trade/ai/<slug>.json + img/trade/ai/<slug>.png   charts
 """
@@ -902,21 +902,50 @@ SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "
                "IN": "India", "PH": "Philippines", "CH": "Switzerland"}
 
 
+def uk_trade_by_partner(hs6: list[str], years: list[str]) -> dict[tuple[str, str, str, str], float]:
+    """UK trade from HMRC in the shape of comext.annual: {(flow, hs6, partner, year): £},
+    with "WORLD" totals. Partners are HMRC country codes (EU trade by member state of
+    dispatch or arrival); only complete years."""
+    alpha = {c["CountryId"]: (c["CountryCodeAlpha"] or "").strip()
+             for c in get_json(f"{HMRC_COUNTRY}?$select=CountryId,CountryCodeAlpha", timeout=120)["value"]}
+    out: dict = {}
+    months: dict = {}
+    for code in hs6:
+        apply = (f"filter(MonthId ge {years[0]}01 and MonthId le {years[-1]}12 and CommodityId ge {code}00 "
+                 f"and CommodityId le {code}99)/groupby((MonthId,FlowTypeId,CountryId),aggregate(Value with sum as V))")
+        for r in hmrc_trade.apply("OTS", apply):
+            flow, y = FLOWS[r["FlowTypeId"]][1], str(r["MonthId"] // 100)
+            months.setdefault(y, set()).add(r["MonthId"])
+            for p in (alpha.get(r["CountryId"], ""), "WORLD"):
+                out[(flow, code, p, y)] = out.get((flow, code, p, y), 0.0) + (r["V"] or 0)
+    complete = {y for y, ms in months.items() if len(ms) == 12}
+    return {k: v for k, v in out.items() if k[3] in complete}
+
+
 def chip_supply_chain_chart() -> list[dict]:
     """"Following an AI chip": each supply-chain stage (definitions/ai_trade.yaml
-    `chip_supply_chain`) and what Dutch and Irish trade (Eurostat Comext, latest year)
-    shows at it: imports, exports, the top sources and destinations, and whether the
-    country is a net exporter (largely makes it), a net importer (uses it or passes it
-    on) or trades both ways (a hub). Returns rows for a CSV."""
+    `chip_supply_chain`) and what each country's trade shows at it in the latest year
+    (EU members from Eurostat Comext, the UK from HMRC; £ at annual average exchange rates):
+    imports, exports, the top sources and destinations, and whether the country is a net
+    exporter (largely makes it), a net importer (uses it or passes it on) or trades both
+    ways (a hub). Returns rows for a CSV."""
     spec = DEFS["chip_supply_chain"]
     codes = [c for st in spec["stages"] for c in st["hs6"]]
     years = [str(y) for y in range(datetime.date.today().year - 3, datetime.date.today().year)]
     try:
-        trade = {cc: comext.annual(cc, codes, years) for cc in spec["countries"]}
+        # £ per €, annual averages (Eurostat, from ECB reference rates): everything is shown in £
+        fx = get_json("https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a"
+                      f"?format=JSON&currency=GBP&statinfo=AVG&sinceTimePeriod={years[0]}", timeout=60)
+        when = {i: y for y, i in fx["dimension"]["time"]["category"]["index"].items()}
+        gbp_per_eur = {when[int(k)]: v for k, v in fx["value"].items()}
+        trade = {cc: (uk_trade_by_partner(codes, years) if cc == "GB" else
+                      {k: v * gbp_per_eur.get(k[3], float("nan"))
+                       for k, v in comext.annual(cc, codes, years).items()})
+                 for cc in spec["countries"]}
     except Exception as e:  # noqa: BLE001 - skip, keep the last published version
         print(f"[ai-trade] Comext unavailable, chip supply chain skipped: {e}")
         return []
-    year = min(max(k[3] for k in d) for d in trade.values())
+    year = min(max(k[3] for k in d if k[0] == "imports") for d in trade.values())
     rows, grid = [], []
 
     def name(code: str) -> str:
@@ -931,26 +960,26 @@ def chip_supply_chain_chart() -> list[dict]:
             for f in ("imports", "exports"):
                 agg: dict = {}
                 for (ff, c, p, y), v in d.items():
-                    if ff == f and c in codes_ and y == year and _is_origin(p, cc) or (
-                            ff == f and c in codes_ and y == year and p == "GB"):
+                    if ff == f and c in codes_ and y == year and (_is_origin(p, cc) or p == "GB" != cc):
                         agg[p] = agg.get(p, 0.0) + v
                 partners[f] = sorted(agg.items(), key=lambda kv: -kv[1])[:3]
                 rows += [{"country": country, "stage": st["label"], "year": year, "flow": f, "partner": name(p),
-                          "eur_bn": round(v / 1e9, 2)} for p, v in partners[f]]
+                          "gbp_bn": round(v / 1e9, 2)} for p, v in partners[f]]
             m, x = tot["imports"], tot["exports"]
             key = "makes" if x >= 1.5 * m else ("uses" if m >= 1.5 * x else "hub")
-            def fmt(ps):   # partners of at least €0.05bn
+            def fmt(ps):   # partners of at least £0.05bn
                 big = [f"{name(p)} {v / 1e9:.1f}" for p, v in ps if v >= 5e7]
                 return ", ".join(big) if big else "all small"
             cells.append({"headline": f"In {m / 1e9:.1f} · Out {x / 1e9:.1f}", "key": key,
                           "lines": [f"From: {fmt(partners['imports'])}", f"To: {fmt(partners['exports'])}"]})
             rows.append({"country": country, "stage": st["label"], "year": year, "flow": "total",
-                         "partner": f"imports {m / 1e9:.2f}, exports {x / 1e9:.2f}", "eur_bn": None})
+                         "partner": f"imports {m / 1e9:.2f}, exports {x / 1e9:.2f}", "gbp_bn": None})
         grid.append({"date": country, "label": country, "cells": cells})
     grid.append({"date": "context", "label": "Who makes it worldwide", "weight": 0.75,
                  "cells": [{"lines": [st["context"]]} for st in spec["stages"]]})
-    c = chart("ai-chip-supply-chain", f"Following an AI chip through Dutch and Irish trade, {year}",
-              f"€ billion, {year}: imports (in) and exports (out), with the top three sources and destinations",
+    names = " and ".join(spec["countries"].values()).replace("United Kingdom", "UK")
+    c = chart("ai-chip-supply-chain", f"Following an AI chip: {names} trade, {year}",
+              f"£ billion, {year}: imports (in) and exports (out), with the top three sources and destinations",
               "flow-grid",
               [{"key": "makes", "label": "Net exporter: largely made here"},
                {"key": "hub", "label": "Two-way trade: distribution hub"},
@@ -958,9 +987,10 @@ def chip_supply_chain_chart() -> list[dict]:
               grid,
               "Each stage is a set of HS6 trade codes: 1. 280461, 381800, 280429, 811292, 370790; 2. 848620, "
               "848690; 3. 854231, 854232; 4. 847330; 5. 847150. Whole codes, so they include non-AI products. "
-              "Partners as recorded by the Netherlands and Ireland (EU trade by member state of dispatch or "
-              "arrival, non-EU imports by origin). 'Who makes it worldwide' is background, not trade data.",
-              "Eurostat Comext; ukmacro calculations", freq="A")
+              "Partners as each country records them (EU trade by member state of dispatch or arrival, "
+              "non-EU imports by origin). Euro values converted at annual average exchange rates (ECB reference rates, via Eurostat). 'Who makes "
+              "it worldwide' is background, not trade data.",
+              "Eurostat Comext; HMRC Overseas Trade Statistics; ukmacro calculations", freq="A")
     c["columns"] = [{"label": st["label"], "sub": st["sub"]} for st in spec["stages"]]
     c["events"] = None
     publish(c)
