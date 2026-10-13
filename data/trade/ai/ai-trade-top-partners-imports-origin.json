@@ -6,7 +6,7 @@
  "freq": "A",
  "units": "Share of UK imports of each product group, %",
  "source": "HMRC Overseas Trade Statistics; Eurostat Comext; ukmacro calculations",
- "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). AI compute hardware = IMF AI hardware basket; the other groups are the ONS-based AI products by type. Origin-adjusted: UK imports recorded from the Netherlands and Belgium (EU distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries of origin in proportion to those countries' own imports of the same products (Eurostat Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) are not reassigned. An estimate. Shares are of all trade, including trade whose partner HMRC suppresses for confidentiality.",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). AI compute hardware = IMF AI hardware basket; the other groups are the ONS-based AI products by type. Origin-adjusted: UK imports recorded from the Netherlands, Belgium and Ireland (EU distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries of origin in proportion to those countries' own imports of the same products (Eurostat Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) are not reassigned. An estimate. Shares are of all trade, including trade whose partner HMRC suppresses for confidentiality.",
  "series": [
   {
    "key": "EU",
@@ -26,12 +26,12 @@
    "ranks": [
     {
      "label": "United States",
-     "value": 19.2,
+     "value": 19.5,
      "key": "nonEU"
     },
     {
      "label": "China",
-     "value": 10.9,
+     "value": 11.5,
      "key": "nonEU"
     },
     {
@@ -46,17 +46,17 @@
    "ranks": [
     {
      "label": "China",
-     "value": 21.5,
+     "value": 22.9,
      "key": "nonEU"
     },
     {
      "label": "United States",
-     "value": 14.7,
+     "value": 15.4,
      "key": "nonEU"
     },
     {
      "label": "Vietnam",
-     "value": 10.5,
+     "value": 11.2,
      "key": "nonEU"
     }
    ]
@@ -66,12 +66,12 @@
    "ranks": [
     {
      "label": "China",
-     "value": 57.0,
+     "value": 58.0,
      "key": "nonEU"
     },
     {
      "label": "Vietnam",
-     "value": 13.1,
+     "value": 13.3,
      "key": "nonEU"
     },
     {
@@ -85,18 +85,18 @@
    "date": "Medical, robotic and autonomous equipment (ONS definition)",
    "ranks": [
     {
+     "label": "China",
+     "value": 20.8,
+     "key": "nonEU"
+    },
+    {
      "label": "Netherlands",
      "value": 20.7,
      "key": "EU"
     },
     {
-     "label": "China",
-     "value": 20.5,
-     "key": "nonEU"
-    },
-    {
      "label": "Germany",
-     "value": 19.2,
+     "value": 19.3,
      "key": "EU"
     }
    ]

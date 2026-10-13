@@ -6,7 +6,7 @@
  "freq": "Q",
  "units": "\u00a3 billion, rolling four-quarter total",
  "source": "HMRC Overseas Trade Statistics; Eurostat Comext; ukmacro calculations",
- "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Rolling four-quarter totals (each point = the latest four quarters), which remove seasonal swings. East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. Products: chips, computers and servers, storage, graphics cards, laptops and tablets, mobile phones, network equipment, cameras, medical scanners and diagnostics, vacuum cleaners (incl. robotic), industrial robots. EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. Origin-adjusted: UK imports recorded from the Netherlands and Belgium (EU distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries of origin in proportion to those countries' own imports of the same products (Eurostat Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) are not reassigned. An estimate. ",
+ "note": "Upper bound: whole product groups, which contain AI and non-AI products (ONS has not yet published AI shares). Rolling four-quarter totals (each point = the latest four quarters), which remove seasonal swings. East Asia = China, Hong Kong, Macao, Japan, South Korea, Taiwan. Products: chips, computers and servers, storage, graphics cards, laptops and tablets, mobile phones, network equipment, cameras, medical scanners and diagnostics, vacuum cleaners (incl. robotic), industrial robots. EU imports have a break in 2022 Q1, when HMRC moved them from Intrastat to customs declarations. Origin-adjusted: UK imports recorded from the Netherlands, Belgium and Ireland (EU distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries of origin in proportion to those countries' own imports of the same products (Eurostat Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) are not reassigned. An estimate. ",
  "series": [
   {
    "key": "EU",
@@ -44,276 +44,276 @@
  "data": [
   {
    "date": "2016-Q4",
-   "EU": 7.0,
-   "US": 1.6,
-   "East Asia": 11.7,
-   "Rest of world": 3.5
+   "EU": 5.7,
+   "US": 1.7,
+   "East Asia": 12.8,
+   "Rest of world": 3.6
   },
   {
    "date": "2017-Q1",
-   "EU": 7.2,
-   "US": 1.6,
-   "East Asia": 12.3,
-   "Rest of world": 3.5
+   "EU": 5.9,
+   "US": 1.7,
+   "East Asia": 13.5,
+   "Rest of world": 3.6
   },
   {
    "date": "2017-Q2",
-   "EU": 7.4,
-   "US": 1.6,
-   "East Asia": 12.7,
-   "Rest of world": 3.6
-  },
-  {
-   "date": "2017-Q3",
-   "EU": 7.3,
+   "EU": 6.0,
    "US": 1.7,
-   "East Asia": 13.0,
-   "Rest of world": 3.6
-  },
-  {
-   "date": "2017-Q4",
-   "EU": 7.4,
-   "US": 1.7,
-   "East Asia": 13.4,
+   "East Asia": 13.8,
    "Rest of world": 3.7
   },
   {
-   "date": "2018-Q1",
-   "EU": 7.4,
-   "US": 1.7,
-   "East Asia": 13.5,
-   "Rest of world": 3.9
+   "date": "2017-Q3",
+   "EU": 6.1,
+   "US": 1.8,
+   "East Asia": 14.0,
+   "Rest of world": 3.7
   },
   {
-   "date": "2018-Q2",
-   "EU": 7.4,
-   "US": 1.7,
-   "East Asia": 13.9,
+   "date": "2017-Q4",
+   "EU": 6.1,
+   "US": 1.8,
+   "East Asia": 14.4,
    "Rest of world": 3.8
   },
   {
-   "date": "2018-Q3",
-   "EU": 7.3,
+   "date": "2018-Q1",
+   "EU": 6.3,
+   "US": 1.7,
+   "East Asia": 14.4,
+   "Rest of world": 4.0
+  },
+  {
+   "date": "2018-Q2",
+   "EU": 6.5,
    "US": 1.8,
    "East Asia": 14.6,
    "Rest of world": 3.9
   },
   {
+   "date": "2018-Q3",
+   "EU": 6.5,
+   "US": 1.8,
+   "East Asia": 15.2,
+   "Rest of world": 4.0
+  },
+  {
    "date": "2018-Q4",
-   "EU": 7.3,
+   "EU": 6.7,
    "US": 1.9,
-   "East Asia": 15.7,
+   "East Asia": 16.1,
    "Rest of world": 4.0
   },
   {
    "date": "2019-Q1",
-   "EU": 7.5,
-   "US": 1.9,
-   "East Asia": 16.6,
+   "EU": 6.9,
+   "US": 2.0,
+   "East Asia": 17.0,
    "Rest of world": 4.0
   },
   {
    "date": "2019-Q2",
-   "EU": 7.2,
-   "US": 1.9,
-   "East Asia": 16.8,
-   "Rest of world": 3.9
+   "EU": 6.7,
+   "US": 2.0,
+   "East Asia": 17.2,
+   "Rest of world": 4.0
   },
   {
    "date": "2019-Q3",
-   "EU": 7.1,
+   "EU": 6.6,
    "US": 1.9,
-   "East Asia": 16.6,
-   "Rest of world": 3.9
+   "East Asia": 17.0,
+   "Rest of world": 4.0
   },
   {
    "date": "2019-Q4",
-   "EU": 6.8,
-   "US": 1.8,
-   "East Asia": 17.0,
-   "Rest of world": 3.8
-  },
-  {
-   "date": "2020-Q1",
    "EU": 6.3,
-   "US": 1.8,
-   "East Asia": 16.3,
-   "Rest of world": 3.7
-  },
-  {
-   "date": "2020-Q2",
-   "EU": 6.3,
-   "US": 1.8,
-   "East Asia": 17.3,
-   "Rest of world": 3.6
-  },
-  {
-   "date": "2020-Q3",
-   "EU": 6.3,
-   "US": 1.8,
-   "East Asia": 17.9,
-   "Rest of world": 3.6
-  },
-  {
-   "date": "2020-Q4",
-   "EU": 6.2,
-   "US": 1.8,
-   "East Asia": 18.5,
-   "Rest of world": 3.4
-  },
-  {
-   "date": "2021-Q1",
-   "EU": 5.9,
-   "US": 1.8,
-   "East Asia": 19.5,
-   "Rest of world": 3.4
-  },
-  {
-   "date": "2021-Q2",
-   "EU": 5.6,
-   "US": 1.8,
-   "East Asia": 19.1,
-   "Rest of world": 3.5
-  },
-  {
-   "date": "2021-Q3",
-   "EU": 5.1,
-   "US": 1.8,
-   "East Asia": 18.7,
-   "Rest of world": 3.4
-  },
-  {
-   "date": "2021-Q4",
-   "EU": 4.7,
-   "US": 1.8,
-   "East Asia": 17.9,
-   "Rest of world": 3.5
-  },
-  {
-   "date": "2022-Q1",
-   "EU": 5.3,
-   "US": 1.7,
-   "East Asia": 18.2,
-   "Rest of world": 3.7
-  },
-  {
-   "date": "2022-Q2",
-   "EU": 6.0,
    "US": 1.9,
-   "East Asia": 19.0,
+   "East Asia": 17.3,
    "Rest of world": 3.9
   },
   {
+   "date": "2020-Q1",
+   "EU": 5.9,
+   "US": 1.9,
+   "East Asia": 16.6,
+   "Rest of world": 3.8
+  },
+  {
+   "date": "2020-Q2",
+   "EU": 5.9,
+   "US": 1.9,
+   "East Asia": 17.6,
+   "Rest of world": 3.7
+  },
+  {
+   "date": "2020-Q3",
+   "EU": 5.8,
+   "US": 1.9,
+   "East Asia": 18.1,
+   "Rest of world": 3.7
+  },
+  {
+   "date": "2020-Q4",
+   "EU": 5.8,
+   "US": 1.8,
+   "East Asia": 18.7,
+   "Rest of world": 3.5
+  },
+  {
+   "date": "2021-Q1",
+   "EU": 5.5,
+   "US": 1.8,
+   "East Asia": 19.8,
+   "Rest of world": 3.5
+  },
+  {
+   "date": "2021-Q2",
+   "EU": 5.2,
+   "US": 1.8,
+   "East Asia": 19.3,
+   "Rest of world": 3.6
+  },
+  {
+   "date": "2021-Q3",
+   "EU": 4.8,
+   "US": 1.8,
+   "East Asia": 18.9,
+   "Rest of world": 3.5
+  },
+  {
+   "date": "2021-Q4",
+   "EU": 4.4,
+   "US": 1.8,
+   "East Asia": 18.1,
+   "Rest of world": 3.6
+  },
+  {
+   "date": "2022-Q1",
+   "EU": 4.9,
+   "US": 1.8,
+   "East Asia": 18.5,
+   "Rest of world": 3.8
+  },
+  {
+   "date": "2022-Q2",
+   "EU": 5.6,
+   "US": 1.9,
+   "East Asia": 19.3,
+   "Rest of world": 4.0
+  },
+  {
    "date": "2022-Q3",
-   "EU": 7.0,
+   "EU": 6.5,
    "US": 2.0,
-   "East Asia": 20.3,
-   "Rest of world": 4.2
+   "East Asia": 20.7,
+   "Rest of world": 4.3
   },
   {
    "date": "2022-Q4",
-   "EU": 7.9,
-   "US": 2.2,
-   "East Asia": 20.4,
-   "Rest of world": 4.7
+   "EU": 7.3,
+   "US": 2.3,
+   "East Asia": 20.9,
+   "Rest of world": 4.8
   },
   {
    "date": "2023-Q1",
-   "EU": 8.2,
+   "EU": 7.6,
    "US": 2.5,
-   "East Asia": 19.9,
-   "Rest of world": 5.1
-  },
-  {
-   "date": "2023-Q2",
-   "EU": 8.3,
-   "US": 2.5,
-   "East Asia": 19.1,
-   "Rest of world": 5.4
-  },
-  {
-   "date": "2023-Q3",
-   "EU": 8.0,
-   "US": 2.6,
-   "East Asia": 17.9,
+   "East Asia": 20.3,
    "Rest of world": 5.2
   },
   {
-   "date": "2023-Q4",
-   "EU": 7.9,
-   "US": 2.5,
-   "East Asia": 17.8,
-   "Rest of world": 5.0
-  },
-  {
-   "date": "2024-Q1",
+   "date": "2023-Q2",
    "EU": 7.6,
-   "US": 2.3,
-   "East Asia": 17.4,
-   "Rest of world": 4.8
+   "US": 2.6,
+   "East Asia": 19.5,
+   "Rest of world": 5.5
   },
   {
-   "date": "2024-Q2",
-   "EU": 7.5,
-   "US": 2.2,
-   "East Asia": 17.3,
-   "Rest of world": 4.7
-  },
-  {
-   "date": "2024-Q3",
-   "EU": 7.7,
-   "US": 2.3,
-   "East Asia": 16.5,
-   "Rest of world": 4.8
-  },
-  {
-   "date": "2024-Q4",
-   "EU": 7.9,
-   "US": 2.7,
-   "East Asia": 15.7,
+   "date": "2023-Q3",
+   "EU": 7.4,
+   "US": 2.6,
+   "East Asia": 18.2,
    "Rest of world": 5.4
   },
   {
-   "date": "2025-Q1",
-   "EU": 8.7,
-   "US": 3.0,
-   "East Asia": 15.3,
-   "Rest of world": 5.9
+   "date": "2023-Q4",
+   "EU": 7.3,
+   "US": 2.5,
+   "East Asia": 18.1,
+   "Rest of world": 5.1
   },
   {
-   "date": "2025-Q2",
-   "EU": 8.9,
-   "US": 3.4,
-   "East Asia": 15.1,
+   "date": "2024-Q1",
+   "EU": 7.1,
+   "US": 2.4,
+   "East Asia": 17.7,
+   "Rest of world": 4.9
+  },
+  {
+   "date": "2024-Q2",
+   "EU": 7.0,
+   "US": 2.2,
+   "East Asia": 17.6,
+   "Rest of world": 4.8
+  },
+  {
+   "date": "2024-Q3",
+   "EU": 7.2,
+   "US": 2.4,
+   "East Asia": 16.8,
+   "Rest of world": 5.0
+  },
+  {
+   "date": "2024-Q4",
+   "EU": 7.2,
+   "US": 2.7,
+   "East Asia": 16.1,
+   "Rest of world": 5.6
+  },
+  {
+   "date": "2025-Q1",
+   "EU": 7.8,
+   "US": 3.1,
+   "East Asia": 15.8,
    "Rest of world": 6.2
   },
   {
+   "date": "2025-Q2",
+   "EU": 7.9,
+   "US": 3.5,
+   "East Asia": 15.6,
+   "Rest of world": 6.6
+  },
+  {
    "date": "2025-Q3",
-   "EU": 9.1,
-   "US": 3.7,
-   "East Asia": 15.4,
-   "Rest of world": 6.9
+   "EU": 8.0,
+   "US": 3.8,
+   "East Asia": 16.0,
+   "Rest of world": 7.3
   },
   {
    "date": "2025-Q4",
-   "EU": 9.3,
-   "US": 3.7,
-   "East Asia": 15.4,
-   "Rest of world": 7.4
+   "EU": 8.2,
+   "US": 3.8,
+   "East Asia": 16.0,
+   "Rest of world": 7.8
   },
   {
    "date": "2026-Q1",
-   "EU": 10.1,
-   "US": 3.6,
-   "East Asia": 15.7,
-   "Rest of world": 7.1
+   "EU": 8.4,
+   "US": 3.7,
+   "East Asia": 16.6,
+   "Rest of world": 7.7
   },
   {
    "date": "2026-Q2",
-   "EU": 11.6,
-   "US": 3.5,
-   "East Asia": 16.0,
-   "Rest of world": 7.6
+   "EU": 9.3,
+   "US": 3.7,
+   "East Asia": 17.2,
+   "Rest of world": 8.6
   }
  ],
  "theme": "blue-amber",

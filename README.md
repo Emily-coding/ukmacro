@@ -185,8 +185,8 @@ total investment (the OECD has no harmonised business investment series).
   (suppressed partner values interpolated); products use HMRC country codes. Both
   are charted as rolling four-quarter totals.
 - **Origin-adjusted** product imports: HMRC records EU imports by country of
-  dispatch, so goods routed via Dutch and Belgian distribution hubs count as Dutch or
-  Belgian. These versions reassign that trade to likely origins using the hubs' own
+  dispatch, so goods routed via Dutch, Belgian and Irish distribution hubs count as
+  Dutch, Belgian or Irish. These versions reassign that trade to likely origins using the hubs' own
   imports by origin (Eurostat Comext), product code by product code; goods the hubs
   genuinely make (chips, chip-making machines, medical scanners) are left as recorded.
   An estimate, shown alongside the as-recorded charts.

@@ -18,7 +18,7 @@ BOUND: whole product groups containing AI and non-AI output.
    applied to the latest QNA EU / non-EU totals. Products: HMRC. Both are charted as
    rolling four-quarter totals. Goods tiers stay EU / non-EU (no crosswalk).
    Products also come "origin-adjusted": imports recorded from EU distribution hubs
-   (Netherlands, Belgium) reassigned to likely origins using the hubs' own imports by
+   (Netherlands, Belgium, Ireland) reassigned to likely origins using the hubs' own imports by
    origin (Eurostat Comext). An estimate, shown alongside the data as recorded.
 Key AI dates (definitions/ai_events.yaml) are drawn as vertical lines on the charts.
 
@@ -75,8 +75,8 @@ LINES = [("EU", "exports", "EU exports"), ("NonEU", "exports", "Non-EU exports")
          ("EU", "imports", "EU imports"), ("NonEU", "imports", "Non-EU imports")]
 UPPER_BOUND = ("Upper bound: whole product groups, which contain AI and non-AI products "
                "(ONS has not yet published AI shares). ")
-ORIGIN_NOTE = ("Origin-adjusted: UK imports recorded from the Netherlands and Belgium (EU distribution "
-               "hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries "
+ORIGIN_NOTE = ("Origin-adjusted: UK imports recorded from the Netherlands, Belgium and Ireland (EU "
+               "distribution hubs; HMRC records EU imports by country of dispatch) are reassigned to likely countries "
                "of origin in proportion to those countries' own imports of the same products (Eurostat "
                "Comext). Goods the hubs genuinely make (chips, chip-making machines, medical scanners) "
                "are not reassigned. An estimate. ")
@@ -271,24 +271,28 @@ def reassign(by_partner: dict[str, float], codes: list[str], year: str) -> dict[
     made in the hub stays, the rest is spread over the hub's own import origins. Products
     the hubs genuinely make (`keep_with_hub`: chips, chip-making machines, medical
     scanners) aren't reassigned at all, since net exports understate production where a
-    hub both makes and redistributes a product. Call it
-    for ONE code at a time (see `reassign_by_code`): pooling codes would let one the hub
-    really makes (e.g. Dutch chip-making machines) keep others it only distributes. Hubs
-    are taken in order, so what the first passes to the second is reassigned again."""
+    hub both makes and redistributes a product. Hubs import from each other, so passes
+    repeat until almost nothing is left labelled as passing through a hub (the order of
+    hubs then doesn't matter). Call it for ONE code at a time (see `reassign_by_code`):
+    pooling codes would let one the hub really makes keep others it only distributes."""
     out = dict(by_partner)
     if any(c.startswith(tuple(DEFS["origin_hubs"]["keep_with_hub"])) for c in codes):
         return out   # a product the hubs genuinely make: kept as recorded
-    for hub in DEFS["origin_hubs"]["countries"]:
-        v = out.pop(hub, 0.0)
-        split = hub_split(hub, codes, year) if v else None
-        if not split or not split[1]:
-            if v:
-                out[hub] = v
-            continue
-        made, origins = split
-        out[hub] = v * made
-        for p, sh in origins.items():
-            out[p] = out.get(p, 0.0) + v * (1 - made) * sh
+    hubs = DEFS["origin_hubs"]["countries"]
+    splits = {h: hub_split(h, codes, year) for h in hubs}
+    splits = {h: sp for h, sp in splits.items() if sp and sp[1]}   # hubs with origin data
+    made: dict = {}   # £ estimated as made in each hub: final, not passed on again
+    total = sum(out.values())
+    for _ in range(20):
+        for hub, (share_made, origins) in splits.items():
+            v = out.pop(hub, 0.0)
+            made[hub] = made.get(hub, 0.0) + v * share_made
+            for p, sh in origins.items():
+                out[p] = out.get(p, 0.0) + v * (1 - share_made) * sh
+        if sum(out.get(h, 0.0) for h in splits) <= 1e-4 * max(total, 1.0):
+            break
+    for hub, v in made.items():
+        out[hub] = out.get(hub, 0.0) + v
     return out
 
 

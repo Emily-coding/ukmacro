@@ -178,10 +178,12 @@ coverage:
 # and for the rest a small made-in-hub share is estimated from its net exports. Germany is left out: it makes
 # much of what it exports, so treating it as a hub would misattribute real production.
 origin_hubs:
-  countries: [BE, NL]   # in this order: much of Belgium's trade comes via the Netherlands,
-                        # so what Belgium passes to the Netherlands is reassigned again
+  # Ireland: a pass-through for servers and computer assemblies (imports nearly double
+  # exports, mainly from Mexico and Taiwan); its chips (Intel) are kept, see below.
+  # Hubs trade with each other, so reassignment repeats until no hub-routed trade is left.
+  countries: [NL, BE, IE]
   # Goods the hubs genuinely make are NOT reassigned (kept as recorded), by HS prefix:
-  # chips (NXP and others in the Netherlands), chip-making machines (ASML), medical
+  # chips (NXP in the Netherlands, Intel in Ireland), chip-making machines (ASML), medical
   # scanners and diagnostics (Philips). Net exports understate production where a hub
   # both makes and redistributes a product, so these are exempted outright.
   keep_with_hub: ["8542", "8486", "9018", "9022"]
