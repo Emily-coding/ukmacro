@@ -9049,6 +9049,347 @@ ai_plan_firm,ai,"Businesses planning to adopt AI in the next three months (""not
 ai_plan_firm,ai,"Businesses planning to adopt AI in the next three months (""not sure"" counted as no)",complement,count,165,2026-08-01,2026-08-31,industry,Real estate activities,14.0,1
 ai_plan_firm,ai,"Businesses planning to adopt AI in the next three months (""not sure"" counted as no)",complement,count,165,2026-08-01,2026-08-31,industry,Transportation and storage,0.9,1
 ai_plan_firm,ai,"Businesses planning to adopt AI in the next three months (""not sure"" counted as no)",complement,count,165,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,15.3,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,0 - 9,1.418,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,10 - 49,1.248,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,100 - 249,1.22,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,250 +,1.283,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,50 - 99,1.317,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,total,All businesses,1.383,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,size,All size bands excluding 0 - 9,1.261,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,industry,"Arts, entertainment and recreation",1.291,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,industry,Information and communication,1.562,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,industry,Other service activities,3.936,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,industry,"Professional, scientific and technical activities",1.436,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,92,2023-08-01,2023-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.269,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,0 - 9,1.396,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,10 - 49,1.266,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,100 - 249,1.274,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,250 +,1.293,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,50 - 99,1.353,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,total,All businesses,1.364,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,size,All size bands excluding 0 - 9,1.28,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,Education,1.378,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,Human health and social work activities,1.026,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,Information and communication,1.559,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,Other service activities,1.722,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,"Professional, scientific and technical activities",1.453,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,98,2023-11-01,2023-11-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.566,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,0 - 9,1.388,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,10 - 49,1.406,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,100 - 249,1.353,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,250 +,1.328,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,50 - 99,1.307,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,industry,Administrative and support service activities,1.297,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,total,All businesses,1.399,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,size,All size bands excluding 0 - 9,1.391,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,industry,Information and communication,1.743,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,industry,Other service activities,1.46,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,105,2024-02-01,2024-02-29,industry,"Professional, scientific and technical activities",1.47,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,0 - 9,1.392,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,10 - 49,1.314,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,100 - 249,1.329,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,250 +,1.264,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,50 - 99,1.383,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,Administrative and support service activities,1.254,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,total,All businesses,1.386,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,size,All size bands excluding 0 - 9,1.311,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,Education,1.842,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,Information and communication,1.614,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,"Professional, scientific and technical activities",1.376,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,Real estate activities,2.142,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,111,2024-05-01,2024-05-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.415,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,0 - 9,1.319,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,10 - 49,1.359,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,100 - 249,1.395,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,250 +,1.391,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,50 - 99,1.422,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,total,All businesses,1.32,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,size,All size bands excluding 0 - 9,1.371,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,industry,"Arts, entertainment and recreation",1.384,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,industry,Information and communication,1.521,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,industry,Manufacturing,1.042,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,industry,"Professional, scientific and technical activities",1.335,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,117,2024-08-01,2024-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.36,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,0 - 9,1.358,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,10 - 49,1.345,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,100 - 249,1.398,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,250 +,1.411,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,50 - 99,1.368,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,industry,Accommodation and food service activities,1.5,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,industry,Administrative and support service activities,1.175,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,total,All businesses,1.36,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,size,All size bands excluding 0 - 9,1.357,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,industry,Information and communication,1.613,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,123,2024-11-01,2024-11-30,industry,"Professional, scientific and technical activities",1.394,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,0 - 9,1.341,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,10 - 49,1.335,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,100 - 249,1.352,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,250 +,1.433,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,50 - 99,1.382,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,Accommodation and food service activities,1.169,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,Administrative and support service activities,1.144,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,total,All businesses,1.348,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,size,All size bands excluding 0 - 9,1.345,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,Information and communication,1.597,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,Manufacturing,1.298,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,"Professional, scientific and technical activities",1.383,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,129,2025-02-01,2025-02-28,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.458,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,0 - 9,1.402,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,10 - 49,1.414,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,100 - 249,1.433,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,250 +,1.467,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,50 - 99,1.45,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Accommodation and food service activities,1.144,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Administrative and support service activities,1.307,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,total,All businesses,1.405,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,size,All size bands excluding 0 - 9,1.422,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Construction,0.943,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Education,1.821,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Information and communication,1.575,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Manufacturing,1.129,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,"Professional, scientific and technical activities",1.423,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,135,2025-05-01,2025-05-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.656,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,0 - 9,1.424,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,10 - 49,1.438,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,100 - 249,1.462,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,250 +,1.543,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,50 - 99,1.473,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Accommodation and food service activities,1.182,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Administrative and support service activities,1.682,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,total,All businesses,1.426,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,size,All size bands excluding 0 - 9,1.438,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Construction,1.0,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Education,1.427,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Human health and social work activities,0.704,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Information and communication,1.673,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Manufacturing,0.954,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,"Professional, scientific and technical activities",1.526,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,141,2025-08-01,2025-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.435,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,0 - 9,1.51,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,10 - 49,1.415,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,100 - 249,1.466,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,250 +,1.536,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,50 - 99,1.494,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Administrative and support service activities,1.333,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,total,All businesses,1.502,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,size,All size bands excluding 0 - 9,1.429,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,"Arts, entertainment and recreation",1.385,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Construction,1.354,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Education,1.527,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Information and communication,1.824,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Manufacturing,1.384,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,"Professional, scientific and technical activities",1.613,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Real estate activities,1.663,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,147,2025-11-01,2025-11-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.41,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,0 - 9,1.61,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,10 - 49,1.436,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,100 - 249,1.511,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,250 +,1.664,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,50 - 99,1.501,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Accommodation and food service activities,1.327,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Administrative and support service activities,1.464,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,total,All businesses,1.579,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,size,All size bands excluding 0 - 9,1.458,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Education,1.585,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Information and communication,1.953,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Manufacturing,1.365,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Other service activities,1.678,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,"Professional, scientific and technical activities",1.648,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Transportation and storage,1.821,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,153,2026-02-01,2026-02-28,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.645,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,0 - 9,1.514,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,10 - 49,1.45,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,100 - 249,1.596,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,250 +,1.687,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,50 - 99,1.562,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Administrative and support service activities,1.546,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,total,All businesses,1.512,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,size,All size bands excluding 0 - 9,1.479,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Construction,1.077,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Education,1.742,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Human health and social work activities,0.762,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Information and communication,1.674,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Manufacturing,1.579,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Other service activities,1.25,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,"Professional, scientific and technical activities",1.594,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,159,2026-05-01,2026-05-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.712,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,0 - 9,1.582,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,10 - 49,1.529,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,100 - 249,1.562,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,250 +,1.676,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,50 - 99,1.572,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Accommodation and food service activities,1.363,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Administrative and support service activities,1.596,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,total,All businesses,1.579,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,size,All size bands excluding 0 - 9,1.541,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,"Arts, entertainment and recreation",1.826,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Construction,1.22,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Human health and social work activities,1.26,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Information and communication,1.627,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Manufacturing,1.426,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,"Professional, scientific and technical activities",1.66,1
+ai_use_depth,ai,"Kinds of AI used, average per firm using AI",depth,count,165,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.603,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,0 - 9,1.469,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,10 - 49,1.403,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,100 - 249,1.276,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,250 +,1.28,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,50 - 99,1.467,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,total,All businesses,1.475,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,size,All size bands excluding 0 - 9,1.392,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,industry,Education,1.819,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,industry,Information and communication,1.693,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,industry,Other service activities,1.975,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,industry,"Professional, scientific and technical activities",1.328,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,92,2023-08-01,2023-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.575,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,0 - 9,1.493,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,10 - 49,1.462,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,100 - 249,1.259,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,250 +,1.43,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,50 - 99,1.465,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,total,All businesses,1.493,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,size,All size bands excluding 0 - 9,1.446,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,industry,Information and communication,1.684,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,industry,Other service activities,2.371,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,industry,"Professional, scientific and technical activities",1.468,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,98,2023-11-01,2023-11-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.707,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,0 - 9,1.556,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,10 - 49,1.407,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,100 - 249,1.278,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,250 +,1.41,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,50 - 99,1.371,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Administrative and support service activities,1.245,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,total,All businesses,1.541,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,size,All size bands excluding 0 - 9,1.4,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Construction,0.957,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Information and communication,1.852,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Manufacturing,1.278,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Other service activities,1.838,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,"Professional, scientific and technical activities",1.456,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,105,2024-02-01,2024-02-29,industry,Real estate activities,1.0,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,0 - 9,1.416,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,10 - 49,1.43,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,100 - 249,1.52,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,250 +,1.308,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,50 - 99,1.438,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,total,All businesses,1.432,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,size,All size bands excluding 0 - 9,1.434,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,industry,Education,1.692,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,industry,Information and communication,1.687,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,111,2024-05-01,2024-05-31,industry,"Professional, scientific and technical activities",1.429,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,0 - 9,1.392,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,10 - 49,1.494,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,100 - 249,1.427,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,250 +,1.561,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,50 - 99,1.492,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,total,All businesses,1.381,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,size,All size bands excluding 0 - 9,1.495,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,industry,Information and communication,1.697,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,industry,"Professional, scientific and technical activities",1.284,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,industry,Transportation and storage,0.882,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,117,2024-08-01,2024-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.611,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,0 - 9,1.566,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,10 - 49,1.5,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,100 - 249,1.485,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,250 +,1.604,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,50 - 99,1.563,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,total,All businesses,1.56,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,size,All size bands excluding 0 - 9,1.513,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,industry,Information and communication,1.729,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,industry,"Professional, scientific and technical activities",1.826,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,123,2024-11-01,2024-11-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.591,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,0 - 9,1.509,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,10 - 49,1.493,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,100 - 249,1.429,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,250 +,1.493,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,50 - 99,1.437,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,industry,Administrative and support service activities,1.26,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,total,All businesses,1.5,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,size,All size bands excluding 0 - 9,1.479,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,industry,Information and communication,1.926,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,industry,"Professional, scientific and technical activities",1.558,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,129,2025-02-01,2025-02-28,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.637,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,0 - 9,1.549,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,10 - 49,1.575,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,100 - 249,1.593,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,250 +,1.64,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,50 - 99,1.607,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Administrative and support service activities,1.386,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,total,All businesses,1.556,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,size,All size bands excluding 0 - 9,1.576,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Construction,1.134,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Education,2.58,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Information and communication,2.072,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Manufacturing,1.351,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,"Professional, scientific and technical activities",1.549,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,135,2025-05-01,2025-05-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.708,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,0 - 9,1.664,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,10 - 49,1.641,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,100 - 249,1.569,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,250 +,1.641,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,50 - 99,1.588,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Administrative and support service activities,1.774,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,total,All businesses,1.651,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,size,All size bands excluding 0 - 9,1.625,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Education,1.735,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Information and communication,2.4,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Manufacturing,1.347,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Other service activities,2.814,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,"Professional, scientific and technical activities",1.688,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,141,2025-08-01,2025-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.586,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,0 - 9,1.647,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,10 - 49,1.527,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,100 - 249,1.482,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,250 +,1.639,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,50 - 99,1.648,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,Administrative and support service activities,1.596,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,total,All businesses,1.634,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,size,All size bands excluding 0 - 9,1.543,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,Education,1.663,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,Human health and social work activities,1.44,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,Information and communication,2.087,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,Manufacturing,1.51,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,147,2025-11-01,2025-11-30,industry,"Professional, scientific and technical activities",1.726,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,0 - 9,1.586,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,10 - 49,1.633,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,100 - 249,1.535,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,250 +,1.662,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,50 - 99,1.607,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,Administrative and support service activities,1.475,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,total,All businesses,1.6,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,size,All size bands excluding 0 - 9,1.629,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,Information and communication,1.986,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,Manufacturing,1.352,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,Other service activities,1.796,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,"Professional, scientific and technical activities",1.706,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,153,2026-02-01,2026-02-28,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.564,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,0 - 9,1.619,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,10 - 49,1.554,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,100 - 249,1.627,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,250 +,1.768,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,50 - 99,1.677,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Accommodation and food service activities,1.761,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Administrative and support service activities,1.699,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,total,All businesses,1.614,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,size,All size bands excluding 0 - 9,1.578,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,"Arts, entertainment and recreation",2.146,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Education,1.823,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Information and communication,1.479,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Manufacturing,1.772,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,"Professional, scientific and technical activities",1.694,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,159,2026-05-01,2026-05-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.725,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,0 - 9,1.626,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,10 - 49,1.631,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,100 - 249,1.72,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,250 +,1.685,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,50 - 99,1.671,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,Accommodation and food service activities,1.553,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,Administrative and support service activities,1.96,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,total,All businesses,1.627,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,size,All size bands excluding 0 - 9,1.651,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,Information and communication,1.707,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,Manufacturing,1.746,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,"Professional, scientific and technical activities",1.635,1
+ai_plan_depth,ai,"Kinds of AI planned, average per firm planning to adopt AI",depth,count,165,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.797,1
 ai_type_llm,ai,AI used: text generation (large language models),share,count,92,2023-08-01,2023-08-31,size,0 - 9,5.2,1
 ai_type_llm,ai,AI used: text generation (large language models),share,count,92,2023-08-01,2023-08-31,size,10 - 49,5.0,1
 ai_type_llm,ai,AI used: text generation (large language models),share,count,92,2023-08-01,2023-08-31,size,100 - 249,4.4,1

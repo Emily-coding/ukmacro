@@ -1,0 +1,350 @@
+{
+ "slug": "ai_plan_depth",
+ "category": "bics",
+ "topic": "ai",
+ "title": "Kinds of AI planned, average per firm planning to adopt AI",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "% of businesses",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
+ "note": null,
+ "measure": "depth",
+ "answers": [
+  "Text generation using Large Language Models",
+  "Visual content creation",
+  "Data processing using machine learning",
+  "Image processing using machine learning"
+ ],
+ "exclude": null,
+ "breaks": null,
+ "versions": [
+  {
+   "version": 1,
+   "question": "Which of the following artificial intelligence technologies, if any, does your business plan to adopt within the next three months?",
+   "population": "As a percentage of businesses not permanently stopped trading",
+   "weighting": "count",
+   "waves_used": "92-165 (13)"
+  }
+ ],
+ "version_breaks": [],
+ "series": [
+  {
+   "key": "all-businesses",
+   "label": "All businesses",
+   "group": "total"
+  },
+  {
+   "key": "0-9",
+   "label": "0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "10-49",
+   "label": "10 - 49",
+   "group": "size"
+  },
+  {
+   "key": "50-99",
+   "label": "50 - 99",
+   "group": "size"
+  },
+  {
+   "key": "100-249",
+   "label": "100 - 249",
+   "group": "size"
+  },
+  {
+   "key": "250",
+   "label": "250 +",
+   "group": "size"
+  },
+  {
+   "key": "all-size-bands-excluding-0-9",
+   "label": "All size bands excluding 0 - 9",
+   "group": "size"
+  },
+  {
+   "key": "accommodation-and-food-service-activities",
+   "label": "Accommodation and food service activities",
+   "group": "industry"
+  },
+  {
+   "key": "administrative-and-support-service-activities",
+   "label": "Administrative and support service activities",
+   "group": "industry"
+  },
+  {
+   "key": "arts-entertainment-and-recreation",
+   "label": "Arts, entertainment and recreation",
+   "group": "industry"
+  },
+  {
+   "key": "construction",
+   "label": "Construction",
+   "group": "industry"
+  },
+  {
+   "key": "education",
+   "label": "Education",
+   "group": "industry"
+  },
+  {
+   "key": "human-health-and-social-work-activities",
+   "label": "Human health and social work activities",
+   "group": "industry"
+  },
+  {
+   "key": "information-and-communication",
+   "label": "Information and communication",
+   "group": "industry"
+  },
+  {
+   "key": "manufacturing",
+   "label": "Manufacturing",
+   "group": "industry"
+  },
+  {
+   "key": "other-service-activities",
+   "label": "Other service activities",
+   "group": "industry"
+  },
+  {
+   "key": "professional-scientific-and-technical-activities",
+   "label": "Professional, scientific and technical activities",
+   "group": "industry"
+  },
+  {
+   "key": "real-estate-activities",
+   "label": "Real estate activities",
+   "group": "industry"
+  },
+  {
+   "key": "transportation-and-storage",
+   "label": "Transportation and storage",
+   "group": "industry"
+  },
+  {
+   "key": "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles",
+   "label": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+   "group": "industry"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2023-08-31",
+   "wave": 92,
+   "0-9": 1.469,
+   "10-49": 1.403,
+   "100-249": 1.276,
+   "250": 1.28,
+   "50-99": 1.467,
+   "all-businesses": 1.475,
+   "all-size-bands-excluding-0-9": 1.392,
+   "education": 1.819,
+   "information-and-communication": 1.693,
+   "other-service-activities": 1.975,
+   "professional-scientific-and-technical-activities": 1.328,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.575
+  },
+  {
+   "date": "2023-11-30",
+   "wave": 98,
+   "0-9": 1.493,
+   "10-49": 1.462,
+   "100-249": 1.259,
+   "250": 1.43,
+   "50-99": 1.465,
+   "all-businesses": 1.493,
+   "all-size-bands-excluding-0-9": 1.446,
+   "information-and-communication": 1.684,
+   "other-service-activities": 2.371,
+   "professional-scientific-and-technical-activities": 1.468,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.707
+  },
+  {
+   "date": "2024-02-29",
+   "wave": 105,
+   "0-9": 1.556,
+   "10-49": 1.407,
+   "100-249": 1.278,
+   "250": 1.41,
+   "50-99": 1.371,
+   "administrative-and-support-service-activities": 1.245,
+   "all-businesses": 1.541,
+   "all-size-bands-excluding-0-9": 1.4,
+   "construction": 0.957,
+   "information-and-communication": 1.852,
+   "manufacturing": 1.278,
+   "other-service-activities": 1.838,
+   "professional-scientific-and-technical-activities": 1.456,
+   "real-estate-activities": 1.0
+  },
+  {
+   "date": "2024-05-31",
+   "wave": 111,
+   "0-9": 1.416,
+   "10-49": 1.43,
+   "100-249": 1.52,
+   "250": 1.308,
+   "50-99": 1.438,
+   "all-businesses": 1.432,
+   "all-size-bands-excluding-0-9": 1.434,
+   "education": 1.692,
+   "information-and-communication": 1.687,
+   "professional-scientific-and-technical-activities": 1.429
+  },
+  {
+   "date": "2024-08-31",
+   "wave": 117,
+   "0-9": 1.392,
+   "10-49": 1.494,
+   "100-249": 1.427,
+   "250": 1.561,
+   "50-99": 1.492,
+   "all-businesses": 1.381,
+   "all-size-bands-excluding-0-9": 1.495,
+   "information-and-communication": 1.697,
+   "professional-scientific-and-technical-activities": 1.284,
+   "transportation-and-storage": 0.882,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.611
+  },
+  {
+   "date": "2024-11-30",
+   "wave": 123,
+   "0-9": 1.566,
+   "10-49": 1.5,
+   "100-249": 1.485,
+   "250": 1.604,
+   "50-99": 1.563,
+   "all-businesses": 1.56,
+   "all-size-bands-excluding-0-9": 1.513,
+   "information-and-communication": 1.729,
+   "professional-scientific-and-technical-activities": 1.826,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.591
+  },
+  {
+   "date": "2025-02-28",
+   "wave": 129,
+   "0-9": 1.509,
+   "10-49": 1.493,
+   "100-249": 1.429,
+   "250": 1.493,
+   "50-99": 1.437,
+   "administrative-and-support-service-activities": 1.26,
+   "all-businesses": 1.5,
+   "all-size-bands-excluding-0-9": 1.479,
+   "information-and-communication": 1.926,
+   "professional-scientific-and-technical-activities": 1.558,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.637
+  },
+  {
+   "date": "2025-05-31",
+   "wave": 135,
+   "0-9": 1.549,
+   "10-49": 1.575,
+   "100-249": 1.593,
+   "250": 1.64,
+   "50-99": 1.607,
+   "administrative-and-support-service-activities": 1.386,
+   "all-businesses": 1.556,
+   "all-size-bands-excluding-0-9": 1.576,
+   "construction": 1.134,
+   "education": 2.58,
+   "information-and-communication": 2.072,
+   "manufacturing": 1.351,
+   "professional-scientific-and-technical-activities": 1.549,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.708
+  },
+  {
+   "date": "2025-08-31",
+   "wave": 141,
+   "0-9": 1.664,
+   "10-49": 1.641,
+   "100-249": 1.569,
+   "250": 1.641,
+   "50-99": 1.588,
+   "administrative-and-support-service-activities": 1.774,
+   "all-businesses": 1.651,
+   "all-size-bands-excluding-0-9": 1.625,
+   "education": 1.735,
+   "information-and-communication": 2.4,
+   "manufacturing": 1.347,
+   "other-service-activities": 2.814,
+   "professional-scientific-and-technical-activities": 1.688,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.586
+  },
+  {
+   "date": "2025-11-30",
+   "wave": 147,
+   "0-9": 1.647,
+   "10-49": 1.527,
+   "100-249": 1.482,
+   "250": 1.639,
+   "50-99": 1.648,
+   "administrative-and-support-service-activities": 1.596,
+   "all-businesses": 1.634,
+   "all-size-bands-excluding-0-9": 1.543,
+   "education": 1.663,
+   "human-health-and-social-work-activities": 1.44,
+   "information-and-communication": 2.087,
+   "manufacturing": 1.51,
+   "professional-scientific-and-technical-activities": 1.726
+  },
+  {
+   "date": "2026-02-28",
+   "wave": 153,
+   "0-9": 1.586,
+   "10-49": 1.633,
+   "100-249": 1.535,
+   "250": 1.662,
+   "50-99": 1.607,
+   "administrative-and-support-service-activities": 1.475,
+   "all-businesses": 1.6,
+   "all-size-bands-excluding-0-9": 1.629,
+   "information-and-communication": 1.986,
+   "manufacturing": 1.352,
+   "other-service-activities": 1.796,
+   "professional-scientific-and-technical-activities": 1.706,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.564
+  },
+  {
+   "date": "2026-05-31",
+   "wave": 159,
+   "0-9": 1.619,
+   "10-49": 1.554,
+   "100-249": 1.627,
+   "250": 1.768,
+   "50-99": 1.677,
+   "accommodation-and-food-service-activities": 1.761,
+   "administrative-and-support-service-activities": 1.699,
+   "all-businesses": 1.614,
+   "all-size-bands-excluding-0-9": 1.578,
+   "arts-entertainment-and-recreation": 2.146,
+   "education": 1.823,
+   "information-and-communication": 1.479,
+   "manufacturing": 1.772,
+   "professional-scientific-and-technical-activities": 1.694,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.725
+  },
+  {
+   "date": "2026-08-31",
+   "wave": 165,
+   "0-9": 1.626,
+   "10-49": 1.631,
+   "100-249": 1.72,
+   "250": 1.685,
+   "50-99": 1.671,
+   "accommodation-and-food-service-activities": 1.553,
+   "administrative-and-support-service-activities": 1.96,
+   "all-businesses": 1.627,
+   "all-size-bands-excluding-0-9": 1.651,
+   "information-and-communication": 1.707,
+   "manufacturing": 1.746,
+   "professional-scientific-and-technical-activities": 1.635,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.797
+  }
+ ]
+}

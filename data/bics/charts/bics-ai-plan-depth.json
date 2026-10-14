@@ -1,0 +1,161 @@
+{
+ "slug": "bics-ai-plan-depth",
+ "category": "bics",
+ "title": "Depth of AI plans: how many kinds of AI planning firms intend to adopt",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "Average number of kinds of AI, per firm planning to adopt",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Sum of the shares planning each of four kinds of AI (text generation, visual content, data processing, image processing) divided by the share planning any kind. Robotics, autonomous vehicles and \"other\" aren't counted (often suppressed). \"Not sure\" counts as not planning. Maximum 4.",
+ "series": [
+  {
+   "key": "ai_plan_depth__250",
+   "label": "Large (250+ employees)"
+  },
+  {
+   "key": "ai_plan_depth__100-249",
+   "label": "Medium (100-249)"
+  },
+  {
+   "key": "ai_plan_depth__50-99",
+   "label": "Medium (50-99)"
+  },
+  {
+   "key": "ai_plan_depth__10-49",
+   "label": "Small (10-49)"
+  },
+  {
+   "key": "ai_plan_depth__0-9",
+   "label": "Micro (0-9)"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2023-08-31",
+   "ai_plan_depth__250": 1.28,
+   "ai_plan_depth__100-249": 1.276,
+   "ai_plan_depth__50-99": 1.467,
+   "ai_plan_depth__10-49": 1.403,
+   "ai_plan_depth__0-9": 1.469
+  },
+  {
+   "date": "2023-11-30",
+   "ai_plan_depth__250": 1.43,
+   "ai_plan_depth__100-249": 1.259,
+   "ai_plan_depth__50-99": 1.465,
+   "ai_plan_depth__10-49": 1.462,
+   "ai_plan_depth__0-9": 1.493
+  },
+  {
+   "date": "2024-02-29",
+   "ai_plan_depth__250": 1.41,
+   "ai_plan_depth__100-249": 1.278,
+   "ai_plan_depth__50-99": 1.371,
+   "ai_plan_depth__10-49": 1.407,
+   "ai_plan_depth__0-9": 1.556
+  },
+  {
+   "date": "2024-05-31",
+   "ai_plan_depth__250": 1.308,
+   "ai_plan_depth__100-249": 1.52,
+   "ai_plan_depth__50-99": 1.438,
+   "ai_plan_depth__10-49": 1.43,
+   "ai_plan_depth__0-9": 1.416
+  },
+  {
+   "date": "2024-08-31",
+   "ai_plan_depth__250": 1.561,
+   "ai_plan_depth__100-249": 1.427,
+   "ai_plan_depth__50-99": 1.492,
+   "ai_plan_depth__10-49": 1.494,
+   "ai_plan_depth__0-9": 1.392
+  },
+  {
+   "date": "2024-11-30",
+   "ai_plan_depth__250": 1.604,
+   "ai_plan_depth__100-249": 1.485,
+   "ai_plan_depth__50-99": 1.563,
+   "ai_plan_depth__10-49": 1.5,
+   "ai_plan_depth__0-9": 1.566
+  },
+  {
+   "date": "2025-02-28",
+   "ai_plan_depth__250": 1.493,
+   "ai_plan_depth__100-249": 1.429,
+   "ai_plan_depth__50-99": 1.437,
+   "ai_plan_depth__10-49": 1.493,
+   "ai_plan_depth__0-9": 1.509
+  },
+  {
+   "date": "2025-05-31",
+   "ai_plan_depth__250": 1.64,
+   "ai_plan_depth__100-249": 1.593,
+   "ai_plan_depth__50-99": 1.607,
+   "ai_plan_depth__10-49": 1.575,
+   "ai_plan_depth__0-9": 1.549
+  },
+  {
+   "date": "2025-08-31",
+   "ai_plan_depth__250": 1.641,
+   "ai_plan_depth__100-249": 1.569,
+   "ai_plan_depth__50-99": 1.588,
+   "ai_plan_depth__10-49": 1.641,
+   "ai_plan_depth__0-9": 1.664
+  },
+  {
+   "date": "2025-11-30",
+   "ai_plan_depth__250": 1.639,
+   "ai_plan_depth__100-249": 1.482,
+   "ai_plan_depth__50-99": 1.648,
+   "ai_plan_depth__10-49": 1.527,
+   "ai_plan_depth__0-9": 1.647
+  },
+  {
+   "date": "2026-02-28",
+   "ai_plan_depth__250": 1.662,
+   "ai_plan_depth__100-249": 1.535,
+   "ai_plan_depth__50-99": 1.607,
+   "ai_plan_depth__10-49": 1.633,
+   "ai_plan_depth__0-9": 1.586
+  },
+  {
+   "date": "2026-05-31",
+   "ai_plan_depth__250": 1.768,
+   "ai_plan_depth__100-249": 1.627,
+   "ai_plan_depth__50-99": 1.677,
+   "ai_plan_depth__10-49": 1.554,
+   "ai_plan_depth__0-9": 1.619
+  },
+  {
+   "date": "2026-08-31",
+   "ai_plan_depth__250": 1.685,
+   "ai_plan_depth__100-249": 1.72,
+   "ai_plan_depth__50-99": 1.671,
+   "ai_plan_depth__10-49": 1.631,
+   "ai_plan_depth__0-9": 1.626
+  }
+ ],
+ "decimals": 2,
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

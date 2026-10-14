@@ -131,6 +131,9 @@ def compute(spec: dict, rows: list[tuple[int, str, str, float]]) -> dict[tuple[i
         up, down = match_answers(spec["answers"], available), set()
         needed = up
     excl = match_answers(spec.get("exclude", []), available)
+    # depth: the answers per firm that gave at least one of them, i.e. sum of the
+    # answers / (100 - the "none" answers). Only meaningful for multi-select questions.
+    none = match_answers(spec.get("none", []), available) if measure == "depth" else set()
 
     cells: dict[tuple[int, str], dict[str, float]] = {}
     in_wave: dict[int, set[str]] = {}
@@ -142,7 +145,7 @@ def compute(spec: dict, rows: list[tuple[int, str, str, float]]) -> dict[tuple[i
     for (w, b), vals in cells.items():
         # an answer published for this wave in other breakdowns but missing here was
         # suppressed ([c]); summing without it would understate, so skip the cell
-        req = (needed | excl) & in_wave[w]
+        req = (needed | excl | none) & in_wave[w]
         if not req & needed or any(a not in vals for a in req):
             continue
         def s(labels):  # sum of these answers in this cell
@@ -154,6 +157,11 @@ def compute(spec: dict, rows: list[tuple[int, str, str, float]]) -> dict[tuple[i
             v = 100 - s(up)
         elif measure == "share":
             v = s(up)
+        elif measure == "depth":
+            if 100 - s(none) <= 0:
+                continue
+            out[(w, b)] = round(s(up) / (100 - s(none)), 3)
+            continue
         else:
             raise ValueError(f"unknown measure {measure!r}")
         base = 100 - s(excl)
@@ -259,7 +267,7 @@ def build_charts(cfg: dict, built: dict[str, dict]) -> list[str]:
         chart = {"slug": spec["slug"], "category": "bics", "title": spec["title"], "type": "line",
                  "freq": "irregular (BICS waves)", "units": spec["units"], "source": SOURCE,
                  "note": spec.get("note"), "series": lines, "events": events, "data_through": dates[-1],
-                 "status": "ok", "data": data}
+                 "status": "ok", "data": data, **({"decimals": spec["decimals"]} if "decimals" in spec else {})}
         charts.publish(chart, OUT / "charts" / f"{spec['slug']}.json",
                        REPO / "img" / "bics" / f"{spec['slug']}.png")
         print(f"[bics] chart {spec['slug']}: {len(lines)} lines, {len(data)} waves")

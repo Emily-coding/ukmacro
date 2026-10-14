@@ -315,7 +315,7 @@ def _line(chart):
         present = [j for j, y in enumerate(ys) if y is not None]
         if present:
             j = present[-1]
-            text = s["label"] if colour == BASELINE else f"{ys[j]:.1f}".replace("-", "\u2212")
+            text = s["label"] if colour == BASELINE else f"{ys[j]:.{chart.get('decimals', 1)}f}".replace("-", "\u2212")
             ends.append((j, ys[j], text))
     _period_ticks(ax, dates)
     _events(ax, chart, dates)

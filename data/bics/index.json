@@ -344,6 +344,26 @@
    "versions": 1
   },
   {
+   "id": "ai_use_depth",
+   "topic": "ai",
+   "title": "Kinds of AI used, average per firm using AI",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 1.579,
+   "versions": 1
+  },
+  {
+   "id": "ai_plan_depth",
+   "topic": "ai",
+   "title": "Kinds of AI planned, average per firm planning to adopt AI",
+   "n_waves": 13,
+   "first": "2023-08-31",
+   "data_through": "2026-08-31",
+   "latest_total": 1.627,
+   "versions": 1
+  },
+  {
    "id": "ai_type_llm",
    "topic": "ai",
    "title": "AI used: text generation (large language models)",

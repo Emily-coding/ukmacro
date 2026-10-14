@@ -1,0 +1,161 @@
+{
+ "slug": "bics-ai-use-depth",
+ "category": "bics",
+ "title": "Depth of AI use: how many kinds of AI using firms use",
+ "type": "line",
+ "freq": "irregular (BICS waves)",
+ "units": "Average number of kinds of AI, per firm using AI",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Sum of the shares using each of four kinds of AI (text generation, visual content, data processing, image processing) divided by the share using any kind. Robotics, autonomous vehicles and \"other\" aren't counted (often suppressed). \"Not sure\" counts as not using. Maximum 4.",
+ "series": [
+  {
+   "key": "ai_use_depth__250",
+   "label": "Large (250+ employees)"
+  },
+  {
+   "key": "ai_use_depth__100-249",
+   "label": "Medium (100-249)"
+  },
+  {
+   "key": "ai_use_depth__50-99",
+   "label": "Medium (50-99)"
+  },
+  {
+   "key": "ai_use_depth__10-49",
+   "label": "Small (10-49)"
+  },
+  {
+   "key": "ai_use_depth__0-9",
+   "label": "Micro (0-9)"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2023-08-31",
+   "ai_use_depth__250": 1.283,
+   "ai_use_depth__100-249": 1.22,
+   "ai_use_depth__50-99": 1.317,
+   "ai_use_depth__10-49": 1.248,
+   "ai_use_depth__0-9": 1.418
+  },
+  {
+   "date": "2023-11-30",
+   "ai_use_depth__250": 1.293,
+   "ai_use_depth__100-249": 1.274,
+   "ai_use_depth__50-99": 1.353,
+   "ai_use_depth__10-49": 1.266,
+   "ai_use_depth__0-9": 1.396
+  },
+  {
+   "date": "2024-02-29",
+   "ai_use_depth__250": 1.328,
+   "ai_use_depth__100-249": 1.353,
+   "ai_use_depth__50-99": 1.307,
+   "ai_use_depth__10-49": 1.406,
+   "ai_use_depth__0-9": 1.388
+  },
+  {
+   "date": "2024-05-31",
+   "ai_use_depth__250": 1.264,
+   "ai_use_depth__100-249": 1.329,
+   "ai_use_depth__50-99": 1.383,
+   "ai_use_depth__10-49": 1.314,
+   "ai_use_depth__0-9": 1.392
+  },
+  {
+   "date": "2024-08-31",
+   "ai_use_depth__250": 1.391,
+   "ai_use_depth__100-249": 1.395,
+   "ai_use_depth__50-99": 1.422,
+   "ai_use_depth__10-49": 1.359,
+   "ai_use_depth__0-9": 1.319
+  },
+  {
+   "date": "2024-11-30",
+   "ai_use_depth__250": 1.411,
+   "ai_use_depth__100-249": 1.398,
+   "ai_use_depth__50-99": 1.368,
+   "ai_use_depth__10-49": 1.345,
+   "ai_use_depth__0-9": 1.358
+  },
+  {
+   "date": "2025-02-28",
+   "ai_use_depth__250": 1.433,
+   "ai_use_depth__100-249": 1.352,
+   "ai_use_depth__50-99": 1.382,
+   "ai_use_depth__10-49": 1.335,
+   "ai_use_depth__0-9": 1.341
+  },
+  {
+   "date": "2025-05-31",
+   "ai_use_depth__250": 1.467,
+   "ai_use_depth__100-249": 1.433,
+   "ai_use_depth__50-99": 1.45,
+   "ai_use_depth__10-49": 1.414,
+   "ai_use_depth__0-9": 1.402
+  },
+  {
+   "date": "2025-08-31",
+   "ai_use_depth__250": 1.543,
+   "ai_use_depth__100-249": 1.462,
+   "ai_use_depth__50-99": 1.473,
+   "ai_use_depth__10-49": 1.438,
+   "ai_use_depth__0-9": 1.424
+  },
+  {
+   "date": "2025-11-30",
+   "ai_use_depth__250": 1.536,
+   "ai_use_depth__100-249": 1.466,
+   "ai_use_depth__50-99": 1.494,
+   "ai_use_depth__10-49": 1.415,
+   "ai_use_depth__0-9": 1.51
+  },
+  {
+   "date": "2026-02-28",
+   "ai_use_depth__250": 1.664,
+   "ai_use_depth__100-249": 1.511,
+   "ai_use_depth__50-99": 1.501,
+   "ai_use_depth__10-49": 1.436,
+   "ai_use_depth__0-9": 1.61
+  },
+  {
+   "date": "2026-05-31",
+   "ai_use_depth__250": 1.687,
+   "ai_use_depth__100-249": 1.596,
+   "ai_use_depth__50-99": 1.562,
+   "ai_use_depth__10-49": 1.45,
+   "ai_use_depth__0-9": 1.514
+  },
+  {
+   "date": "2026-08-31",
+   "ai_use_depth__250": 1.676,
+   "ai_use_depth__100-249": 1.562,
+   "ai_use_depth__50-99": 1.572,
+   "ai_use_depth__10-49": 1.529,
+   "ai_use_depth__0-9": 1.582
+  }
+ ],
+ "decimals": 2,
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

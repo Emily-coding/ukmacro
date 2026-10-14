@@ -17,6 +17,9 @@
 #   answers    list of answers to add up. For measure: net, give {up: [...], down: [...]}.
 #              End an answer with * to match every answer starting with that text.
 #   measure    share (default) | complement (100 minus the answers) | net (up minus down)
+#              | depth (multi-select only: sum of the answers / (100 - the `none` answers),
+#              the average number of answers per firm that gave at least one)
+#   none       for measure: depth, the answers that mean "none of these" (incl. Not sure)
 #   exclude    answers to remove from the base before computing, e.g. [Not sure, Not applicable]
 #   weighting  count (default: each business counts once) | employment (weighted by
 #              headcount). Only some questions have employment weighting; see catalogue.
@@ -289,6 +292,30 @@ series:
     measure: complement
     answers: [Business does not plan to*, Not sure]
 
+  # Depth: how many kinds of AI each using (or planning) firm names, on average. The
+  # question is multi-select, so the kinds' shares add up to more than the share of
+  # firms naming any; the ratio is the average number of kinds per firm naming one.
+  # Only the four main kinds are counted: robotics, autonomous vehicles and "other" are
+  # suppressed in many size bands and waves. Firms naming only those count as 0, so
+  # this slightly understates depth.
+  - id: ai_use_depth
+    label: Kinds of AI used, average per firm using AI
+    topic: ai
+    question: artificial intelligence technologies, if any, does your business currently use
+    measure: depth
+    answers: [Text generation using Large Language Models, Visual content creation,
+              Data processing using machine learning, Image processing using machine learning]
+    none: [Business does not currently use artificial intelligence*, Not sure]
+
+  - id: ai_plan_depth
+    label: Kinds of AI planned, average per firm planning to adopt AI
+    topic: ai
+    question: artificial intelligence technologies, if any, does your business plan to adopt
+    measure: depth
+    answers: [Text generation using Large Language Models, Visual content creation,
+              Data processing using machine learning, Image processing using machine learning]
+    none: [Business does not plan to*, Not sure]
+
   # The AI series below are shares of all businesses: "not sure" (and "not
   # applicable") stay in the base.
 
@@ -415,6 +442,40 @@ charts:
       Firms naming at least one kind of AI they plan to adopt, as a share of all businesses
       in each size band. Firms answering "not sure" (12-45%, most among the largest) stay
       in the base but are not counted as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.
+
+  - slug: bics-ai-plan-depth
+    decimals: 2
+    events: true   # key AI dates from definitions/ai_events.yaml
+    title: "Depth of AI plans: how many kinds of AI planning firms intend to adopt"
+    units: "Average number of kinds of AI, per firm planning to adopt"
+    series:
+      - {id: ai_plan_depth, breakdown: "250 +", label: "Large (250+ employees)"}
+      - {id: ai_plan_depth, breakdown: "100 - 249", label: "Medium (100-249)"}
+      - {id: ai_plan_depth, breakdown: "50 - 99", label: "Medium (50-99)"}
+      - {id: ai_plan_depth, breakdown: "10 - 49", label: "Small (10-49)"}
+      - {id: ai_plan_depth, breakdown: "0 - 9", label: "Micro (0-9)"}
+    note: >-
+      Sum of the shares planning each of four kinds of AI (text generation, visual content,
+      data processing, image processing) divided by the share planning any kind. Robotics,
+      autonomous vehicles and "other" aren't counted (often suppressed). "Not sure" counts
+      as not planning. Maximum 4.
+
+  - slug: bics-ai-use-depth
+    decimals: 2
+    events: true   # key AI dates from definitions/ai_events.yaml
+    title: "Depth of AI use: how many kinds of AI using firms use"
+    units: "Average number of kinds of AI, per firm using AI"
+    series:
+      - {id: ai_use_depth, breakdown: "250 +", label: "Large (250+ employees)"}
+      - {id: ai_use_depth, breakdown: "100 - 249", label: "Medium (100-249)"}
+      - {id: ai_use_depth, breakdown: "50 - 99", label: "Medium (50-99)"}
+      - {id: ai_use_depth, breakdown: "10 - 49", label: "Small (10-49)"}
+      - {id: ai_use_depth, breakdown: "0 - 9", label: "Micro (0-9)"}
+    note: >-
+      Sum of the shares using each of four kinds of AI (text generation, visual content,
+      data processing, image processing) divided by the share using any kind. Robotics,
+      autonomous vehicles and "other" aren't counted (often suppressed). "Not sure" counts
+      as not using. Maximum 4.
 
   - slug: bics-ai-types
     events: true   # key AI dates from definitions/ai_events.yaml
