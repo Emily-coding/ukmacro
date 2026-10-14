@@ -410,12 +410,13 @@ def _grouped_hbar(chart):
     handles = []
     # show "+" only when the chart has negative values (i.e. the sign carries information)
     signed = any((d.get(s["key"]) or 0) < 0 for d in chart["data"] for s in chart["series"])
+    fmt = f"{{:{'+' if signed else ''}.{chart.get('decimals', 2)}f}}"
     for i, s in enumerate(chart["series"]):
         ys = [d.get(s["key"]) or 0.0 for d in chart["data"]]
         pos = [c + (i - (n - 1) / 2) * h_bar for c in range(len(cats))]
         handles.append(ax.barh(pos, ys, height=h_bar * 0.92, color=_colour(s, i), zorder=3))
         for p, y in zip(pos, ys):
-            ax.annotate((f"{y:+.2f}" if signed else f"{y:.2f}").replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
+            ax.annotate(fmt.format(y).replace("-", "\u2212"), (y, p), xytext=(5 if y >= 0 else -5, 0), textcoords="offset points",
                         ha="left" if y >= 0 else "right", va="center", fontsize=10, color=TEXT_2)
     ax.set_yticks(range(len(cats)), cats)
     ax.invert_yaxis()

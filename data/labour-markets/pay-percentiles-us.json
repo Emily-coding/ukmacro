@@ -1,0 +1,208 @@
+{
+ "slug": "pay-percentiles-us",
+ "category": "labour-markets",
+ "title": "US pay by percentile, weekly earnings, full-time workers (CPS)",
+ "type": "line",
+ "freq": "Q",
+ "units": "Index, 2019 = 100 (cash terms)",
+ "source": "HMRC PAYE Real Time Information (ONS); BLS Current Population Survey via FRED; ONS CPI; BLS CPI-U; ukmacro calculations",
+ "note": "UK: monthly pay of all payrolled employees (full and part time), HMRC PAYE RTI. US: usual weekly earnings of full-time wage and salary workers, CPS. Both seasonally adjusted. Coverage differs, so compare growth, not levels. No 2025 Q4: the CPS wasn't collected in October 2025 (federal shutdown).",
+ "series": [
+  {
+   "key": "p10",
+   "label": "10th percentile"
+  },
+  {
+   "key": "p50",
+   "label": "Median"
+  },
+  {
+   "key": "p90",
+   "label": "90th percentile"
+  }
+ ],
+ "data_through": "2026-Q2",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2019-Q1",
+   "p10": 96.93,
+   "p50": 98.69,
+   "p90": 99.67
+  },
+  {
+   "date": "2019-Q2",
+   "p10": 99.56,
+   "p50": 99.02,
+   "p90": 99.89
+  },
+  {
+   "date": "2019-Q3",
+   "p10": 101.1,
+   "p50": 100.22,
+   "p90": 100.11
+  },
+  {
+   "date": "2019-Q4",
+   "p10": 102.41,
+   "p50": 102.07,
+   "p90": 100.33
+  },
+  {
+   "date": "2020-Q1",
+   "p10": 102.63,
+   "p50": 104.36,
+   "p90": 102.09
+  },
+  {
+   "date": "2020-Q2",
+   "p10": 108.77,
+   "p50": 109.27,
+   "p90": 104.86
+  },
+  {
+   "date": "2020-Q3",
+   "p10": 107.46,
+   "p50": 108.4,
+   "p90": 104.86
+  },
+  {
+   "date": "2020-Q4",
+   "p10": 107.02,
+   "p50": 107.31,
+   "p90": 102.13
+  },
+  {
+   "date": "2021-Q1",
+   "p10": 106.58,
+   "p50": 107.85,
+   "p90": 106.67
+  },
+  {
+   "date": "2021-Q2",
+   "p10": 110.09,
+   "p50": 107.96,
+   "p90": 105.83
+  },
+  {
+   "date": "2021-Q3",
+   "p10": 111.84,
+   "p50": 109.16,
+   "p90": 106.14
+  },
+  {
+   "date": "2021-Q4",
+   "p10": 114.04,
+   "p50": 110.14,
+   "p90": 107.55
+  },
+  {
+   "date": "2022-Q1",
+   "p10": 116.45,
+   "p50": 113.09,
+   "p90": 110.54
+  },
+  {
+   "date": "2022-Q2",
+   "p10": 119.96,
+   "p50": 113.52,
+   "p90": 112.7
+  },
+  {
+   "date": "2022-Q3",
+   "p10": 122.81,
+   "p50": 116.68,
+   "p90": 113.66
+  },
+  {
+   "date": "2022-Q4",
+   "p10": 125.22,
+   "p50": 118.32,
+   "p90": 113.71
+  },
+  {
+   "date": "2023-Q1",
+   "p10": 125.88,
+   "p50": 119.96,
+   "p90": 119.6
+  },
+  {
+   "date": "2023-Q2",
+   "p10": 127.41,
+   "p50": 119.96,
+   "p90": 119.03
+  },
+  {
+   "date": "2023-Q3",
+   "p10": 128.73,
+   "p50": 121.92,
+   "p90": 122.38
+  },
+  {
+   "date": "2023-Q4",
+   "p10": 129.39,
+   "p50": 124.86,
+   "p90": 120.66
+  },
+  {
+   "date": "2024-Q1",
+   "p10": 130.26,
+   "p50": 124.21,
+   "p90": 124.09
+  },
+  {
+   "date": "2024-Q2",
+   "p10": 130.7,
+   "p50": 124.65,
+   "p90": 123.65
+  },
+  {
+   "date": "2024-Q3",
+   "p10": 133.11,
+   "p50": 127.04,
+   "p90": 127.26
+  },
+  {
+   "date": "2024-Q4",
+   "p10": 133.99,
+   "p50": 129.99,
+   "p90": 126.91
+  },
+  {
+   "date": "2025-Q1",
+   "p10": 135.75,
+   "p50": 130.21,
+   "p90": 127.83
+  },
+  {
+   "date": "2025-Q2",
+   "p10": 134.87,
+   "p50": 130.43,
+   "p90": 127.66
+  },
+  {
+   "date": "2025-Q3",
+   "p10": 135.09,
+   "p50": 132.39,
+   "p90": 127.74
+  },
+  {
+   "date": "2026-Q1",
+   "p10": 136.62,
+   "p50": 134.68,
+   "p90": 128.54
+  },
+  {
+   "date": "2026-Q2",
+   "p10": 140.79,
+   "p50": 136.42,
+   "p90": 128.67
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

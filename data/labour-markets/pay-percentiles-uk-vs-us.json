@@ -1,0 +1,60 @@
+{
+ "slug": "pay-percentiles-uk-vs-us",
+ "category": "labour-markets",
+ "title": "Pay growth by percentile, 2019 to 2026 Q2: UK vs US",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "% change since 2019 average",
+ "source": "HMRC PAYE Real Time Information (ONS); BLS Current Population Survey via FRED; ONS CPI; BLS CPI-U; ukmacro calculations",
+ "note": "UK: monthly pay of all payrolled employees (full and part time), HMRC PAYE RTI. US: usual weekly earnings of full-time wage and salary workers, CPS. Both seasonally adjusted. Coverage differs, so compare growth, not levels. Deflated by UK CPI and US CPI-U.",
+ "series": [
+  {
+   "key": "uk_cash",
+   "label": "UK, cash"
+  },
+  {
+   "key": "us_cash",
+   "label": "US, cash"
+  },
+  {
+   "key": "uk_real",
+   "label": "UK, after inflation"
+  },
+  {
+   "key": "us_real",
+   "label": "US, after inflation"
+  }
+ ],
+ "data_through": "90th percentile",
+ "status": "ok",
+ "data": [
+  {
+   "date": "10th percentile",
+   "uk_cash": 44.4,
+   "us_cash": 40.8,
+   "uk_real": 9.5,
+   "us_real": 8.1
+  },
+  {
+   "date": "Median",
+   "uk_cash": 44.7,
+   "us_cash": 36.4,
+   "uk_real": 9.7,
+   "us_real": 4.7
+  },
+  {
+   "date": "90th percentile",
+   "uk_cash": 35.9,
+   "us_cash": 28.7,
+   "uk_real": 3.0,
+   "us_real": -1.2
+  }
+ ],
+ "decimals": 1,
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

@@ -7,6 +7,7 @@
                          the age/sex mix vs employment rates within groups (LFS)
      composition_rti.py  the same with HMRC PAYE RTI, and LFS vs RTI compared
      neet.py             the same for the NEET rate (16-24)
+     pay_distribution.py pay at the 10th, 50th and 90th percentiles, UK (RTI) vs US (CPS)
 
 Each analysis is independent: if one fails the others still publish, but the run
 exits 1 so the failure shows in GitHub Actions.
@@ -23,6 +24,7 @@ from ukmacro.builder import run  # noqa: E402
 import composition  # noqa: E402
 import composition_rti  # noqa: E402
 import neet  # noqa: E402
+import pay_distribution  # noqa: E402
 
 
 def attempt(name, fn, *args):
@@ -40,4 +42,5 @@ if __name__ == "__main__":
     lfs_cells, ok1 = attempt("composition", composition.build)
     _, ok2 = attempt("composition_rti", composition_rti.build, lfs_cells)
     _, ok3 = attempt("neet", neet.build)
-    sys.exit(0 if ok and ok1 and ok2 and ok3 else 1)
+    _, ok4 = attempt("pay_distribution", pay_distribution.build)
+    sys.exit(0 if ok and ok1 and ok2 and ok3 and ok4 else 1)
