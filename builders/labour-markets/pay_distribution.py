@@ -8,7 +8,9 @@ The two most current sources of pay by percentile, but they measure different th
       household survey; quarterly, seasonally adjusted (BLS, via FRED).
 Because RTI includes part-timers, its lower percentiles are far below a full-time
 measure, so the levels can't be compared directly. The charts compare growth since
-2019 instead, in cash terms and after consumer price inflation (UK CPI, US CPI-U).
+2022 instead, after consumer price inflation (UK CPI, US CPI-U), and in cash terms.
+The CPS has no 2025 Q4 (October 2025 wasn't surveyed during the federal shutdown);
+that quarter is interpolated.
 """
 
 from __future__ import annotations
@@ -35,7 +37,8 @@ PERCENTILES = {"p10": ("10th percentile", "10th percentile"),
 # FRED copies of BLS series LEU0252911200, LEU0252881500, LEU0252911500 (quarterly)
 US_SERIES = {"p10": "LEU0252911200Q", "p50": "LEU0252881500Q", "p90": "LEU0252911500Q"}
 FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
-BASE_YEAR = "2019"
+START = "2019"       # first quarter shown
+BASE_YEAR = "2022"   # index base and growth start
 SOURCE = ("HMRC PAYE Real Time Information (ONS); BLS Current Population Survey via FRED; "
           "ONS CPI; BLS CPI-U; ukmacro calculations")
 NOTE = ("UK: monthly pay of all payrolled employees (full and part time), HMRC PAYE RTI. "
@@ -87,6 +90,21 @@ def fetch_prices() -> dict[str, dict[str, float]]:
     return {"uk": uk, "us": _fred("CPIAUCSL")}
 
 
+def _fill(s: dict[str, float]) -> tuple[dict[str, float], list[str]]:
+    """Fill quarters missing inside a quarterly series by linear interpolation.
+    Returns the filled series and the quarters that were filled."""
+    def n(q): return int(q[:4]) * 4 + int(q[-1]) - 1
+    def q_of(i): return f"{i // 4}-Q{i % 4 + 1}"
+    qs = sorted(s)
+    out, filled = dict(s), []
+    for a, b in zip(qs, qs[1:]):
+        for i in range(n(a) + 1, n(b)):
+            t = (i - n(a)) / (n(b) - n(a))
+            out[q_of(i)] = s[a] + (s[b] - s[a]) * t
+            filled.append(q_of(i))
+    return out, filled
+
+
 def _base(s: dict[str, float]) -> float:
     vals = [v for q, v in s.items() if q.startswith(BASE_YEAR)]
     return sum(vals) / len(vals)
@@ -95,30 +113,36 @@ def _base(s: dict[str, float]) -> float:
 def build() -> None:
     pay = {"uk": fetch_uk(), "us": {k: _fred(s) for k, s in US_SERIES.items()}}
     cpi = fetch_prices()
-    def since_base(qs) -> list[str]:
-        return sorted(q for q in qs if q >= f"{BASE_YEAR}-Q1")
-
-    # the US CPS has no 2025 Q4: October 2025 wasn't surveyed during the federal shutdown
-    own = {c: since_base(set.intersection(*(set(s) for s in pay[c].values()))) for c in pay}
-    quarters = since_base(set(own["uk"]) & set(own["us"]) & set(cpi["uk"]) & set(cpi["us"]))
+    filled: set[str] = set()
+    for c in pay:
+        for k in PERCENTILES:
+            pay[c][k], gaps = _fill(pay[c][k])
+            filled |= {f"{c.upper()} {q.replace('-', ' ')}" for q in gaps if q >= f"{START}-Q1"}
+    quarters = sorted(q for q in set.intersection(*(set(s) for c in pay.values() for s in c.values()),
+                                                  set(cpi["uk"]), set(cpi["us"])) if q >= f"{START}-Q1")
     latest = quarters[-1]
+    gap_note = (f" {', '.join(sorted(filled))} interpolated (no CPS survey in October 2025, during "
+                "the US federal shutdown)." if filled else "")
 
-    # 1. cash pay by percentile, 2019 = 100, one chart per country
+    def real(c: str, k: str, q: str) -> float:
+        """Pay at a quarter in base-year prices."""
+        return pay[c][k][q] / (cpi[c][q] / _base(cpi[c]))
+
+    # 1. real pay by percentile, 2022 = 100, one chart per country
     for c, name, desc in (("uk", "UK", "monthly pay, all payrolled employees (RTI)"),
                           ("us", "US", "weekly earnings, full-time workers (CPS)")):
-        bases = {k: _base(pay[c][k]) for k in PERCENTILES}
+        bases = {k: _base({q: real(c, k, q) for q in quarters}) for k in PERCENTILES}
         lfs.publish(lfs.chart(
-            f"pay-percentiles-{c}", f"{name} pay by percentile, {desc}",
-            f"Index, {BASE_YEAR} = 100 (cash terms)", "line",
+            f"pay-percentiles-{c}", f"{name} real pay by percentile, {desc}",
+            f"Index, {BASE_YEAR} = 100, deflated by {'CPI' if c == 'uk' else 'CPI-U'}", "line",
             [{"key": k, "label": lab} for k, (_, lab) in PERCENTILES.items()],
-            [{"date": q, **{k: round(100 * pay[c][k][q] / bases[k], 2) for k in PERCENTILES}}
-             for q in own[c]], NOTE + (" No 2025 Q4: the CPS wasn't collected in October 2025 "
-                                       "(federal shutdown)." if c == "us" else ""), source=SOURCE))
+            [{"date": q, **{k: round(100 * real(c, k, q) / bases[k], 2) for k in PERCENTILES}}
+             for q in quarters], NOTE + (gap_note if c == "us" else ""), source=SOURCE))
 
-    # 2. growth since 2019 by percentile, UK vs US, in cash and real terms
-    def growth(c: str, k: str, real: bool) -> float:
+    # 2. growth since 2022 by percentile, UK vs US, in cash and real terms
+    def growth(c: str, k: str, is_real: bool) -> float:
         g = pay[c][k][latest] / _base(pay[c][k])
-        if real:
+        if is_real:
             g /= cpi[c][latest] / _base(cpi[c])
         return round(100 * (g - 1), 1)
 
@@ -133,7 +157,7 @@ def build() -> None:
         f"% change since {BASE_YEAR} average", "grouped-hbar", series, rows,
         NOTE + " Deflated by UK CPI and US CPI-U.", source=SOURCE) | {"decimals": 1})
 
-    # workings: levels (£ or $ per week), indices and prices
+    # workings: levels (£ or $ per week) and prices
     lfs.write_csv([{"quarter": q, **{f"{c}_{k}_per_week": round(pay[c][k][q], 1)
                                      for c in pay for k in PERCENTILES},
                     "uk_cpi": cpi["uk"][q], "us_cpi": round(cpi["us"][q], 3)} for q in quarters],
