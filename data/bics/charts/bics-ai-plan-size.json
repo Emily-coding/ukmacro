@@ -9,6 +9,10 @@
  "note": "Firms naming at least one kind of AI they plan to adopt, as a share of all businesses in each size band. Firms answering \"not sure\" (12-45%, most among the largest) stay in the base but are not counted as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.",
  "series": [
   {
+   "key": "ai_plan_firm__all-businesses",
+   "label": "All businesses"
+  },
+  {
    "key": "ai_plan_firm__250",
    "label": "Large (250+ employees)"
   },
@@ -22,11 +26,13 @@
   },
   {
    "key": "ai_plan_firm__10-49",
-   "label": "Small (10-49)"
+   "label": "Small (10-49)",
+   "color": "neutral"
   },
   {
    "key": "ai_plan_firm__0-9",
-   "label": "Micro (0-9)"
+   "label": "Micro (0-9)",
+   "color": "neutral"
   }
  ],
  "events": [
@@ -48,6 +54,7 @@
  "data": [
   {
    "date": "2023-08-31",
+   "ai_plan_firm__all-businesses": 8.0,
    "ai_plan_firm__250": 9.3,
    "ai_plan_firm__100-249": 7.6,
    "ai_plan_firm__50-99": 9.2,
@@ -56,6 +63,7 @@
   },
   {
    "date": "2023-11-30",
+   "ai_plan_firm__all-businesses": 7.3,
    "ai_plan_firm__250": 9.3,
    "ai_plan_firm__100-249": 8.1,
    "ai_plan_firm__50-99": 10.1,
@@ -64,6 +72,7 @@
   },
   {
    "date": "2024-02-29",
+   "ai_plan_firm__all-businesses": 9.8,
    "ai_plan_firm__250": 10.5,
    "ai_plan_firm__100-249": 9.7,
    "ai_plan_firm__50-99": 11.6,
@@ -72,6 +81,7 @@
   },
   {
    "date": "2024-05-31",
+   "ai_plan_firm__all-businesses": 8.8,
    "ai_plan_firm__250": 11.7,
    "ai_plan_firm__100-249": 10.0,
    "ai_plan_firm__50-99": 10.5,
@@ -80,6 +90,7 @@
   },
   {
    "date": "2024-08-31",
+   "ai_plan_firm__all-businesses": 9.7,
    "ai_plan_firm__250": 13.2,
    "ai_plan_firm__100-249": 12.4,
    "ai_plan_firm__50-99": 12.0,
@@ -88,6 +99,7 @@
   },
   {
    "date": "2024-11-30",
+   "ai_plan_firm__all-businesses": 10.0,
    "ai_plan_firm__250": 13.9,
    "ai_plan_firm__100-249": 13.4,
    "ai_plan_firm__50-99": 12.8,
@@ -96,6 +108,7 @@
   },
   {
    "date": "2025-02-28",
+   "ai_plan_firm__all-businesses": 11.2,
    "ai_plan_firm__250": 14.8,
    "ai_plan_firm__100-249": 16.1,
    "ai_plan_firm__50-99": 15.8,
@@ -104,6 +117,7 @@
   },
   {
    "date": "2025-05-31",
+   "ai_plan_firm__all-businesses": 13.5,
    "ai_plan_firm__250": 16.1,
    "ai_plan_firm__100-249": 18.9,
    "ai_plan_firm__50-99": 17.3,
@@ -112,6 +126,7 @@
   },
   {
    "date": "2025-08-31",
+   "ai_plan_firm__all-businesses": 12.9,
    "ai_plan_firm__250": 18.4,
    "ai_plan_firm__100-249": 20.4,
    "ai_plan_firm__50-99": 19.4,
@@ -120,6 +135,7 @@
   },
   {
    "date": "2025-11-30",
+   "ai_plan_firm__all-businesses": 15.3,
    "ai_plan_firm__250": 20.2,
    "ai_plan_firm__100-249": 19.7,
    "ai_plan_firm__50-99": 19.6,
@@ -128,6 +144,7 @@
   },
   {
    "date": "2026-02-28",
+   "ai_plan_firm__all-businesses": 17.5,
    "ai_plan_firm__250": 21.6,
    "ai_plan_firm__100-249": 21.5,
    "ai_plan_firm__50-99": 21.9,
@@ -136,6 +153,7 @@
   },
   {
    "date": "2026-05-31",
+   "ai_plan_firm__all-businesses": 17.1,
    "ai_plan_firm__250": 22.0,
    "ai_plan_firm__100-249": 24.4,
    "ai_plan_firm__50-99": 22.3,
@@ -144,6 +162,7 @@
   },
   {
    "date": "2026-08-31",
+   "ai_plan_firm__all-businesses": 16.1,
    "ai_plan_firm__250": 23.5,
    "ai_plan_firm__100-249": 24.3,
    "ai_plan_firm__50-99": 24.3,

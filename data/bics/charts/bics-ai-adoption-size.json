@@ -9,6 +9,10 @@
  "note": "Firms naming at least one kind of AI they use, as a share of all businesses in each size band. Firms answering \"not sure\" (5-25%, most among the largest) stay in the base but are not counted as using AI. BICS publishes 50-99 and 100-249 separately.",
  "series": [
   {
+   "key": "ai_use_firm__all-businesses",
+   "label": "All businesses"
+  },
+  {
    "key": "ai_use_firm__250",
    "label": "Large (250+ employees)"
   },
@@ -22,11 +26,13 @@
   },
   {
    "key": "ai_use_firm__10-49",
-   "label": "Small (10-49)"
+   "label": "Small (10-49)",
+   "color": "neutral"
   },
   {
    "key": "ai_use_firm__0-9",
-   "label": "Micro (0-9)"
+   "label": "Micro (0-9)",
+   "color": "neutral"
   }
  ],
  "events": [
@@ -48,6 +54,7 @@
  "data": [
   {
    "date": "2023-08-31",
+   "ai_use_firm__all-businesses": 9.4,
    "ai_use_firm__250": 18.7,
    "ai_use_firm__100-249": 15.0,
    "ai_use_firm__50-99": 14.5,
@@ -56,6 +63,7 @@
   },
   {
    "date": "2023-11-30",
+   "ai_use_firm__all-businesses": 9.9,
    "ai_use_firm__250": 19.1,
    "ai_use_firm__100-249": 15.7,
    "ai_use_firm__50-99": 15.6,
@@ -64,6 +72,7 @@
   },
   {
    "date": "2024-02-29",
+   "ai_use_firm__all-businesses": 13.8,
    "ai_use_firm__250": 23.8,
    "ai_use_firm__100-249": 18.4,
    "ai_use_firm__50-99": 19.2,
@@ -72,6 +81,7 @@
   },
   {
    "date": "2024-05-31",
+   "ai_use_firm__all-businesses": 12.7,
    "ai_use_firm__250": 25.4,
    "ai_use_firm__100-249": 21.0,
    "ai_use_firm__50-99": 20.1,
@@ -80,6 +90,7 @@
   },
   {
    "date": "2024-08-31",
+   "ai_use_firm__all-businesses": 14.7,
    "ai_use_firm__250": 30.4,
    "ai_use_firm__100-249": 25.6,
    "ai_use_firm__50-99": 23.2,
@@ -88,6 +99,7 @@
   },
   {
    "date": "2024-11-30",
+   "ai_use_firm__all-businesses": 16.1,
    "ai_use_firm__250": 28.2,
    "ai_use_firm__100-249": 25.6,
    "ai_use_firm__50-99": 21.2,
@@ -96,6 +108,7 @@
   },
   {
    "date": "2025-02-28",
+   "ai_use_firm__all-businesses": 17.8,
    "ai_use_firm__250": 31.2,
    "ai_use_firm__100-249": 26.1,
    "ai_use_firm__50-99": 25.4,
@@ -104,6 +117,7 @@
   },
   {
    "date": "2025-05-31",
+   "ai_use_firm__all-businesses": 20.5,
    "ai_use_firm__250": 36.0,
    "ai_use_firm__100-249": 34.4,
    "ai_use_firm__50-99": 31.1,
@@ -112,6 +126,7 @@
   },
   {
    "date": "2025-08-31",
+   "ai_use_firm__all-businesses": 23.5,
    "ai_use_firm__250": 39.4,
    "ai_use_firm__100-249": 35.1,
    "ai_use_firm__50-99": 33.4,
@@ -120,6 +135,7 @@
   },
   {
    "date": "2025-11-30",
+   "ai_use_firm__all-businesses": 24.7,
    "ai_use_firm__250": 44.4,
    "ai_use_firm__100-249": 38.2,
    "ai_use_firm__50-99": 35.6,
@@ -128,6 +144,7 @@
   },
   {
    "date": "2026-02-28",
+   "ai_use_firm__all-businesses": 25.9,
    "ai_use_firm__250": 44.6,
    "ai_use_firm__100-249": 42.1,
    "ai_use_firm__50-99": 39.3,
@@ -136,6 +153,7 @@
   },
   {
    "date": "2026-05-31",
+   "ai_use_firm__all-businesses": 28.9,
    "ai_use_firm__250": 48.6,
    "ai_use_firm__100-249": 45.1,
    "ai_use_firm__50-99": 42.7,
@@ -144,6 +162,7 @@
   },
   {
    "date": "2026-08-31",
+   "ai_use_firm__all-businesses": 29.7,
    "ai_use_firm__250": 50.9,
    "ai_use_firm__100-249": 50.4,
    "ai_use_firm__50-99": 45.8,

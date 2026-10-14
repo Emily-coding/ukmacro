@@ -418,11 +418,12 @@ charts:
     title: "AI use by business size: businesses currently using AI"
     units: "% of businesses"
     series:
+      - {id: ai_use_firm, label: All businesses}
       - {id: ai_use_firm, breakdown: "250 +", label: "Large (250+ employees)"}
       - {id: ai_use_firm, breakdown: "100 - 249", label: "Medium (100-249)"}
       - {id: ai_use_firm, breakdown: "50 - 99", label: "Medium (50-99)"}
-      - {id: ai_use_firm, breakdown: "10 - 49", label: "Small (10-49)"}
-      - {id: ai_use_firm, breakdown: "0 - 9", label: "Micro (0-9)"}
+      - {id: ai_use_firm, breakdown: "10 - 49", label: "Small (10-49)", color: neutral}
+      - {id: ai_use_firm, breakdown: "0 - 9", label: "Micro (0-9)", color: neutral}
     note: >-
       Firms naming at least one kind of AI they use, as a share of all businesses in each
       size band. Firms answering "not sure" (5-25%, most among the largest) stay in the
@@ -433,11 +434,12 @@ charts:
     title: "AI intentions by business size: planning to adopt AI in the next three months"
     units: "% of businesses"
     series:
+      - {id: ai_plan_firm, label: All businesses}
       - {id: ai_plan_firm, breakdown: "250 +", label: "Large (250+ employees)"}
       - {id: ai_plan_firm, breakdown: "100 - 249", label: "Medium (100-249)"}
       - {id: ai_plan_firm, breakdown: "50 - 99", label: "Medium (50-99)"}
-      - {id: ai_plan_firm, breakdown: "10 - 49", label: "Small (10-49)"}
-      - {id: ai_plan_firm, breakdown: "0 - 9", label: "Micro (0-9)"}
+      - {id: ai_plan_firm, breakdown: "10 - 49", label: "Small (10-49)", color: neutral}
+      - {id: ai_plan_firm, breakdown: "0 - 9", label: "Micro (0-9)", color: neutral}
     note: >-
       Firms naming at least one kind of AI they plan to adopt, as a share of all businesses
       in each size band. Firms answering "not sure" (12-45%, most among the largest) stay

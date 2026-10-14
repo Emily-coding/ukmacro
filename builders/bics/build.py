@@ -255,7 +255,8 @@ def build_charts(cfg: dict, built: dict[str, dict]) -> list[str]:
                 continue
             key = f"{sid}__{slug(breakdown)}"
             columns[key] = {d["date"]: d.get(slug(breakdown)) for d in built[sid]["data"]}
-            lines.append({"key": key, "label": line.get("label", built[sid]["title"])})
+            lines.append({"key": key, "label": line.get("label", built[sid]["title"]),
+                          **{k: line[k] for k in ("color", "slot") if k in line}})
         dates = sorted({d for col in columns.values() for d in col if d})
         data = [{"date": d, **{k: col.get(d) for k, col in columns.items()}} for d in dates]
         if not data:
