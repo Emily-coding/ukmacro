@@ -1,0 +1,83 @@
+{
+ "slug": "bics-ai-extent",
+ "category": "bics",
+ "title": "How much AI-using firms use AI, by business size",
+ "type": "stacked-bar",
+ "freq": "snapshot",
+ "units": "% of firms using AI or not sure",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Wave 165 (2026-08-01 to 2026-08-31). Asked of firms using AI or not sure whether they do.",
+ "series": [
+  {
+   "key": "s0",
+   "label": "Used extensively"
+  },
+  {
+   "key": "s1",
+   "label": "Used on a limited basis"
+  },
+  {
+   "key": "s2",
+   "label": "Testing or pilots only"
+  },
+  {
+   "key": "s3",
+   "label": "Not currently used"
+  },
+  {
+   "key": "s4",
+   "label": "Not sure",
+   "color": "neutral"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Micro (0-9)",
+   "s0": 15.7,
+   "s1": 61.7,
+   "s2": 2.0,
+   "s3": 8.0,
+   "s4": 12.5
+  },
+  {
+   "date": "Small (10-49)",
+   "s0": 12.4,
+   "s1": 59.0,
+   "s2": 3.1,
+   "s3": 8.0,
+   "s4": 17.5
+  },
+  {
+   "date": "Medium (50-99)",
+   "s0": 10.9,
+   "s1": 62.6,
+   "s2": 3.5,
+   "s3": 4.7,
+   "s4": 18.3
+  },
+  {
+   "date": "Medium (100-249)",
+   "s0": 8.5,
+   "s1": 62.9,
+   "s2": 4.2,
+   "s3": 4.2,
+   "s4": 20.1
+  },
+  {
+   "date": "Large (250+)",
+   "s0": 9.1,
+   "s1": 54.8,
+   "s2": 2.7,
+   "s3": 2.9,
+   "s4": 30.6
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

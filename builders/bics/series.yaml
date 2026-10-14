@@ -504,3 +504,56 @@ charts:
       % of firms planning to adopt AI in the next three months or unsure. As published:
       "not sure" and "not applicable" are included in the base. Most firms in both
       groups report or expect no change.
+
+# Snapshots: one question's answers in its latest wave, compared across breakdowns.
+#   breakdowns  {breakdown as published: label on the chart}, in display order
+#   series      bars: each adds up `answers` (same matching as above); neutral: true = grey
+#   type        stacked-bar (answers that add up to 100) or grouped-hbar (multi-select)
+snapshots:
+  - slug: bics-ai-how-adopted
+    title: "How AI-using firms adopted AI, by business size"
+    units: "% of firms using AI or not sure"
+    type: grouped-hbar
+    decimals: 0
+    question: How did your business adopt these artificial intelligence technologies
+    breakdowns: &sizes {"0 - 9": "Micro (0-9)", "10 - 49": "Small (10-49)", "50 - 99": "Medium (50-99)",
+                        "100 - 249": "Medium (100-249)", "250 +": "Large (250+)"}
+    series:
+      - {label: Bought ready-to-use software, answers: [Through purchase of external software*]}
+      - {label: Free-to-use software, answers: [Using free-to-use software]}
+      - {label: Developed in-house, answers: [Developed in-house]}
+      - {label: Outsourced to external providers, answers: [Outsourced to external providers*]}
+    note: >-
+      Firms can give more than one answer. Asked of firms using AI or not sure whether
+      they do; "not sure" (12-31%, most among the largest) not shown.
+
+  - slug: bics-ai-extent
+    title: "How much AI-using firms use AI, by business size"
+    units: "% of firms using AI or not sure"
+    type: stacked-bar
+    question: To what extent does your business use artificial intelligence technologies
+    breakdowns: *sizes
+    series:
+      - {label: Used extensively, answers: [Used extensively]}
+      - {label: Used on a limited basis, answers: [Used on a limited basis]}
+      - {label: Testing or pilots only, answers: [Used only for artificial intelligence technology testing*]}
+      - {label: Not currently used, answers: [Not currently used]}
+      - {label: Not sure, answers: [Not sure], neutral: true}
+    note: Asked of firms using AI or not sure whether they do.
+
+  - slug: bics-ai-workforce-share
+    title: "Share of staff using AI daily, by business size"
+    units: "% of firms using AI or not sure"
+    type: stacked-bar
+    question: what proportion of your workforce, if any, currently use artificial intelligence
+    breakdowns: *sizes
+    series:
+      - {label: "Half or more of staff", answers: [More than 75%, Between 50% and 75%]}
+      - {label: "10-49% of staff", answers: [Between 25% and 49%, Between 10% and 24%]}
+      - {label: "1-9% of staff", answers: [Between 1% and 9%]}
+      - {label: No staff use AI daily, answers: [No staff use artificial intelligence*]}
+      - {label: Not sure, answers: [Not sure], neutral: true}
+    note: >-
+      Asked of firms using AI or not sure whether they do. In micro firms (0-9 employees)
+      one person can be "more than 75%" of staff.
+

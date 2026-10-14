@@ -11,8 +11,9 @@ and write
     data/bics/bics_series.csv      the complete curated dataset, long format
     data/bics/series/<id>.json     one chart file per series
     data/bics/index.json           list of series with freshness
-    data/bics/charts/<slug>.json   charts listed under `charts:` in series.yaml,
-    img/bics/<slug>.png            with their PNGs in the house style
+    data/bics/charts/<slug>.json   charts listed under `charts:` (time series) and
+    img/bics/<slug>.png            `snapshots:` (latest wave, by breakdown) in series.yaml,
+                                   with their PNGs in the house style
 
 Measures (set per series in series.yaml):
     share       sum of the listed answers                          (% of businesses)
@@ -274,6 +275,46 @@ def build_charts(cfg: dict, built: dict[str, dict]) -> list[str]:
     return problems
 
 
+def build_snapshots(cfg: dict, store: bics.Store) -> list[str]:
+    """Draw each chart in series.yaml's `snapshots:` section: one question's answers in
+    its latest wave, across a list of breakdowns (e.g. size bands). Each bar series adds
+    up one or more answers; "neutral: true" draws it grey (e.g. Not sure). Writes the
+    same files as build_charts. Returns problems."""
+    problems = []
+    for spec in cfg.get("snapshots", []):
+        try:
+            q = find_question(spec, store.catalogue)
+            rows = store.load(q["id"])
+            available = {r[2] for r in rows}
+            parts = [(f"s{i}", line, match_answers(line["answers"], available))
+                     for i, line in enumerate(spec["series"])]
+            cells: dict[tuple[int, str], dict[str, float]] = {}
+            for w, b, a, v in rows:
+                cells.setdefault((w, b), {})[a] = v
+            # the latest wave with every breakdown published
+            wave = max(w for w in {k[0] for k in cells}
+                       if all((w, b) in cells for b in spec["breakdowns"]))
+            data = [{"date": label, **{key: round(sum(cells[(wave, b)].get(a) or 0 for a in answers), 1)
+                                       for key, _, answers in parts}}
+                    for b, label in spec["breakdowns"].items()]
+        except Exception as e:  # noqa: BLE001
+            problems.append(f"snapshot {spec['slug']}: {e}")
+            continue
+        period = store.waves.get(wave, {})
+        chart = {"slug": spec["slug"], "category": "bics", "title": spec["title"], "type": spec["type"],
+                 "freq": "snapshot", "units": spec["units"], "source": SOURCE,
+                 "note": f"Wave {wave} ({period.get('ref_start')} to {period.get('ref_end')}). "
+                         + (spec.get("note") or ""),
+                 "series": [{"key": key, "label": line["label"], **({"color": "neutral"} if line.get("neutral") else {})}
+                            for key, line, _ in parts],
+                 "data_through": period.get("ref_end"), "status": "ok", "data": data,
+                 **({"decimals": spec["decimals"]} if "decimals" in spec else {})}
+        charts.publish(chart, OUT / "charts" / f"{spec['slug']}.json",
+                       REPO / "img" / "bics" / f"{spec['slug']}.png")
+        print(f"[bics] snapshot {spec['slug']}: wave {wave}, {len(data)} bars")
+    return problems
+
+
 # ---------------------------------------------------------------- harvesting
 
 def wanted_waves(cfg: dict, store: bics.Store) -> tuple[set[int], list[str]]:
@@ -370,6 +411,7 @@ def main(fetch: bool = True, local_dir: Path | None = None) -> int:
          "series": index}, indent=1) + "\n")
 
     failures += build_charts(cfg, built)
+    failures += build_snapshots(cfg, store)
 
     if failures:
         print(f"\n{len(failures)} problem(s):", *failures, sep="\n  ", file=sys.stderr)

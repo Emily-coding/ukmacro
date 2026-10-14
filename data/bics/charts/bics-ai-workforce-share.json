@@ -1,0 +1,83 @@
+{
+ "slug": "bics-ai-workforce-share",
+ "category": "bics",
+ "title": "Share of staff using AI daily, by business size",
+ "type": "stacked-bar",
+ "freq": "snapshot",
+ "units": "% of firms using AI or not sure",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Wave 165 (2026-08-01 to 2026-08-31). Asked of firms using AI or not sure whether they do. In micro firms (0-9 employees) one person can be \"more than 75%\" of staff.",
+ "series": [
+  {
+   "key": "s0",
+   "label": "Half or more of staff"
+  },
+  {
+   "key": "s1",
+   "label": "10-49% of staff"
+  },
+  {
+   "key": "s2",
+   "label": "1-9% of staff"
+  },
+  {
+   "key": "s3",
+   "label": "No staff use AI daily"
+  },
+  {
+   "key": "s4",
+   "label": "Not sure",
+   "color": "neutral"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Micro (0-9)",
+   "s0": 42.5,
+   "s1": 14.8,
+   "s2": 12.2,
+   "s3": 14.0,
+   "s4": 16.4
+  },
+  {
+   "date": "Small (10-49)",
+   "s0": 15.4,
+   "s1": 26.5,
+   "s2": 30.2,
+   "s3": 8.5,
+   "s4": 19.4
+  },
+  {
+   "date": "Medium (50-99)",
+   "s0": 15.7,
+   "s1": 27.5,
+   "s2": 27.0,
+   "s3": 4.5,
+   "s4": 25.2
+  },
+  {
+   "date": "Medium (100-249)",
+   "s0": 11.9,
+   "s1": 26.0,
+   "s2": 28.9,
+   "s3": 3.1,
+   "s4": 30.1
+  },
+  {
+   "date": "Large (250+)",
+   "s0": 8.2,
+   "s1": 22.7,
+   "s2": 23.5,
+   "s3": 2.5,
+   "s4": 43.1
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

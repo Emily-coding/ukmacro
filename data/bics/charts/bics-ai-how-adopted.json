@@ -1,0 +1,74 @@
+{
+ "slug": "bics-ai-how-adopted",
+ "category": "bics",
+ "title": "How AI-using firms adopted AI, by business size",
+ "type": "grouped-hbar",
+ "freq": "snapshot",
+ "units": "% of firms using AI or not sure",
+ "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
+ "note": "Wave 165 (2026-08-01 to 2026-08-31). Firms can give more than one answer. Asked of firms using AI or not sure whether they do; \"not sure\" (12-31%, most among the largest) not shown.",
+ "series": [
+  {
+   "key": "s0",
+   "label": "Bought ready-to-use software"
+  },
+  {
+   "key": "s1",
+   "label": "Free-to-use software"
+  },
+  {
+   "key": "s2",
+   "label": "Developed in-house"
+  },
+  {
+   "key": "s3",
+   "label": "Outsourced to external providers"
+  }
+ ],
+ "data_through": "2026-08-31",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Micro (0-9)",
+   "s0": 45.3,
+   "s1": 42.2,
+   "s2": 14.0,
+   "s3": 7.3
+  },
+  {
+   "date": "Small (10-49)",
+   "s0": 44.7,
+   "s1": 37.0,
+   "s2": 18.2,
+   "s3": 14.6
+  },
+  {
+   "date": "Medium (50-99)",
+   "s0": 48.9,
+   "s1": 31.3,
+   "s2": 20.5,
+   "s3": 13.9
+  },
+  {
+   "date": "Medium (100-249)",
+   "s0": 47.2,
+   "s1": 28.7,
+   "s2": 17.6,
+   "s3": 15.7
+  },
+  {
+   "date": "Large (250+)",
+   "s0": 45.8,
+   "s1": 22.5,
+   "s2": 19.6,
+   "s3": 16.1
+  }
+ ],
+ "decimals": 0,
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}
