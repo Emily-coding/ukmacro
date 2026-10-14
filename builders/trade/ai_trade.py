@@ -1147,6 +1147,127 @@ def peer_pace_charts(components: list[dict], base: str = "2022") -> list[dict]:
     return rows
 
 
+# The UK in the global AI stack: share of the world at each layer.
+GLOBAL_SERVICES = [("SI2", "Computer services (software, cloud)"), ("SI3", "Information and data services"),
+                   ("SJ1", "R&D services"), ("SH", "IP licences, incl. software"),
+                   ("SI1", "Telecoms services"), ("SJ2+SJ3", "Consulting and technical"),
+                   ("S", "Benchmark: all services")]
+ISO3 = {"USA": "US", "CHN": "China", "GBR": "UK", "IRL": "Ireland", "IND": "India", "DEU": "Germany",
+        "NLD": "Netherlands", "FRA": "France", "JPN": "Japan", "CHE": "Switzerland", "SGP": "Singapore",
+        "ISR": "Israel", "KOR": "Korea", "CAN": "Canada", "SWE": "Sweden", "LUX": "Luxembourg", "BEL": "Belgium",
+        "HKG": "Hong Kong", "ARE": "UAE", "TWN": "Taiwan", "ESP": "Spain", "ITA": "Italy", "POL": "Poland",
+        "MEX": "Mexico", "VNM": "Vietnam", "MYS": "Malaysia", "THA": "Thailand", "PHL": "Philippines",
+        "CZE": "Czechia", "DNK": "Denmark", "AUS": "Australia", "BRA": "Brazil", "NOR": "Norway", "FIN": "Finland",
+        "BRB": "Barbados", "AUT": "Austria", "SAU": "Saudi Arabia", "CYP": "Cyprus", "MLT": "Malta"}
+EPOCH = "https://epoch.ai/data/{}.csv"
+EPOCH_NAMES = {"United States of America": "US", "United Kingdom": "UK", "South Korea": "Korea",
+               "United Arab Emirates": "UAE", "Korea (Republic of)": "Korea"}
+
+
+def _top(shares: dict[str, float], n: int = 3) -> list[dict]:
+    """The top n countries by share, plus the UK if it isn't among them."""
+    key = {"UK": "uk", "US": "us", "China": "cn"}
+    ranked = sorted(shares.items(), key=lambda kv: -kv[1])
+    rows = ranked[:n] + ([("UK", shares.get("UK", 0.0))] if "UK" not in dict(ranked[:n]) else [])
+    return [{"label": c, "value": round(float(v), 1), "key": key.get(c, "other")} for c, v in rows]
+
+
+def global_stack_chart(year: str = "2024") -> list[dict]:
+    """Where the UK sits at each layer of the AI stack worldwide: its share and the top
+    three countries'. Trade layers are shares of world exports in `year`: AI compute
+    hardware (IMF basket) from UN Comtrade, exports as reported plus Taiwan's from its
+    partners' imports (Taiwan doesn't report to the UN); services from the OECD-WTO
+    balanced trade in services dataset (BaTIS). Two layers trade data can't see come from
+    Epoch AI: notable AI models since 2023 by country of the developer, and AI
+    supercomputer capacity (H100-equivalents) by location. Returns rows for a CSV."""
+    import time
+    hs6 = DEFS["imf_hardware"]["hs6"]
+    groups, rows = [], []
+    try:
+        # 1. compute hardware: exports reported by every country, plus Taiwan by mirror
+        iso2 = comtrade.partner_iso2()
+        hw: dict[str, float] = {}
+        for code in hs6:
+            for flow, partner in (("X", 0), ("M", 490)):
+                d = get_json(f"{comtrade.API}?flowCode={flow}&period={year}&cmdCode={code}&partnerCode={partner}"
+                             "&partner2Code=0&customsCode=C00&motCode=0", timeout=120)
+                for r in d.get("data", []):
+                    c = "TW" if partner == 490 else iso2.get(r["reporterCode"])
+                    if c and c != "WORLD":
+                        hw[c] = hw.get(c, 0.0) + (r["primaryValue"] or 0)
+                time.sleep(6)
+        two = {"US": "US", "CN": "China", "GB": "UK", "TW": "Taiwan", "KR": "Korea", "MX": "Mexico",
+               "NL": "Netherlands", "DE": "Germany", "JP": "Japan", "SG": "Singapore", "MY": "Malaysia",
+               "VN": "Vietnam", "HK": "Hong Kong", "IE": "Ireland", "CZ": "Czechia", "TH": "Thailand"}
+        total = sum(hw.values())
+        layers = [("Hardware: chips, servers, chip-making kit",
+                   {two.get(c, c): 100 * v / total for c, v in hw.items()}, f"exports, {year}")]
+        # 2. services exports (BaTIS, balanced values)
+        codes = "+".join("+".join(c.split("+")) for c, _ in GLOBAL_SERVICES)
+        text = get_text("https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_BATIS@DF_BATIS,/"
+                        f".W.X.S.{codes}.A.USD_EXC.B?startPeriod={year}&endPeriod={year}"
+                        "&dimensionAtObservation=AllDimensions&format=csvfile", timeout=180)
+        svc: dict[str, dict[str, float]] = {}
+        for r in csv.DictReader(io.StringIO(text)):
+            svc.setdefault(r["SERVICE"], {})[r["REF_AREA"]] = float(r["OBS_VALUE"])
+        for codes_, label in GLOBAL_SERVICES:
+            by: dict[str, float] = {}
+            for c in codes_.split("+"):
+                for area, v in svc.get(c, {}).items():
+                    by[area] = by.get(area, 0.0) + v
+            world = by.pop("W")
+            by = {ISO3.get(a, a): 100 * v / world for a, v in by.items() if a not in ("OECD", "EU27_2020")}
+            layers.append((label, by, f"exports, {year}"))
+        # 3. what trade data can't see (Epoch AI)
+        import pandas as pd
+        models = pd.read_csv(io.StringIO(get_text(EPOCH.format("notable_ai_models"))), parse_dates=["Publication date"])
+        models = models[models["Publication date"] >= "2023-01-01"]
+        cnt: dict[str, float] = {}
+        for c in models["Country (of organization)"].dropna():
+            cs = [x.strip() for x in str(c).split(",") if x.strip()]
+            for x in cs:
+                x = EPOCH_NAMES.get(x, x)
+                cnt[x] = cnt.get(x, 0.0) + 1 / len(cs)
+        layers.insert(1, ("Models: notable AI models",
+                          {c: 100 * v / sum(cnt.values()) for c, v in cnt.items()}, "since 2023"))
+        sc = pd.read_csv(io.StringIO(get_text(EPOCH.format("gpu_clusters"))))
+        cap = sc.groupby("Country")["H100 equivalents"].sum()
+        layers.insert(1, ("Compute: AI supercomputer capacity",
+                          {EPOCH_NAMES.get(c, c): 100 * v / cap.sum() for c, v in cap.items()}, "H100-equivalents"))
+    except Exception as e:  # noqa: BLE001 - skip, keep the last published version
+        print(f"[ai-trade] global stack data unavailable, chart skipped: {e}")
+        return []
+    for label, shares, basis in layers:
+        for c, v in sorted(shares.items(), key=lambda kv: -kv[1])[:10]:
+            rows.append({"layer": label, "basis": basis, "country": c, "share_pct": round(float(v), 2)})
+        if "UK" not in [r["country"] for r in rows if r["layer"] == label]:
+            rows.append({"layer": label, "basis": basis, "country": "UK", "share_pct": round(float(shares.get("UK", 0.0)), 2)})
+    keys = [{"key": "uk", "label": "UK"}, {"key": "us", "label": "US"}, {"key": "cn", "label": "China"},
+            {"key": "other", "label": "Other countries", "color": "neutral"}]
+    # two charts: the layers that build AI, and the services that sell and deploy it
+    build_layers = [l for l in layers if not l[0].startswith(("Computer services", "Information", "Telecoms",
+                                                               "Consulting", "Benchmark"))]
+    sell_layers = [l for l in layers if l not in build_layers]
+    for slug, title, part, note in (
+            ("ai-trade-global-stack-build", "Building AI: the UK's share of the world at each layer", build_layers,
+             "Hardware: IMF AI hardware basket, share of world exports (UN Comtrade; Taiwan from its partners' "
+             "imports; includes re-exports through Hong Kong and Singapore). Compute: AI supercomputers in Epoch "
+             "AI's public dataset by location (misses many private clusters). Models: notable AI models since 2023 "
+             "by developer's country (Epoch AI; Google DeepMind is mostly recorded as US). R&D and IP: share of "
+             "world services exports (OECD-WTO BaTIS)."),
+            ("ai-trade-global-stack-services", "Selling AI as a service: the UK's share of world exports",
+             sell_layers, "Share of world services exports, 2024 (OECD-WTO balanced trade in services). Ireland's "
+             "computer services exports are mostly US tech firms' European operations. The UK's share of all "
+             "services exports is the benchmark: above it, the UK is specialised.")):
+        groups = [{"date": f"{label} ({basis})", "ranks": _top(shares, 2)} for label, shares, basis in part]
+        c = chart(slug, title, "% of world total", "ranked-bars", keys, groups,
+                  "Top two countries at each layer, and the UK. " + note,
+                  "UN Comtrade; OECD-WTO BaTIS; Epoch AI (CC BY); ukmacro calculations", freq="A")
+        c["value_format"] = "{:.1f}%"
+        publish(c)
+    return rows
+
+
 # ---------------------------------------------------------------- 4c. chip supply chain
 
 SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "Germany", "MX": "Mexico",
@@ -1418,6 +1539,9 @@ def build() -> None:
     peers = peer_pace_charts(components)
     if peers:
         write_csv(peers, OUT / "ai_peer_imports.csv")
+    world = global_stack_chart()
+    if world:
+        write_csv(world, OUT / "ai_global_stack.csv")
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     if hub_trade() is not None:
         write_csv(hub_summary(), OUT / "ai_hub_origins.csv")

@@ -1,0 +1,154 @@
+{
+ "slug": "ai-trade-global-stack-build",
+ "category": "trade",
+ "title": "Building AI: the UK's share of the world at each layer",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "% of world total",
+ "source": "UN Comtrade; OECD-WTO BaTIS; Epoch AI (CC BY); ukmacro calculations",
+ "note": "Top two countries at each layer, and the UK. Hardware: IMF AI hardware basket, share of world exports (UN Comtrade; Taiwan from its partners' imports; includes re-exports through Hong Kong and Singapore). Compute: AI supercomputers in Epoch AI's public dataset by location (misses many private clusters). Models: notable AI models since 2023 by developer's country (Epoch AI; Google DeepMind is mostly recorded as US). R&D and IP: share of world services exports (OECD-WTO BaTIS).",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK"
+  },
+  {
+   "key": "us",
+   "label": "US"
+  },
+  {
+   "key": "cn",
+   "label": "China"
+  },
+  {
+   "key": "other",
+   "label": "Other countries",
+   "color": "neutral"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "IP licences, incl. software (exports, 2024)",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Hardware: chips, servers, chip-making kit (exports, 2024)",
+   "ranks": [
+    {
+     "label": "Taiwan",
+     "value": 31.5,
+     "key": "other"
+    },
+    {
+     "label": "China",
+     "value": 13.4,
+     "key": "cn"
+    },
+    {
+     "label": "UK",
+     "value": 0.3,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Compute: AI supercomputer capacity (H100-equivalents)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 80.9,
+     "key": "us"
+    },
+    {
+     "label": "China",
+     "value": 7.1,
+     "key": "cn"
+    },
+    {
+     "label": "UK",
+     "value": 0.5,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Models: notable AI models (since 2023)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 59.2,
+     "key": "us"
+    },
+    {
+     "label": "China",
+     "value": 27.7,
+     "key": "cn"
+    },
+    {
+     "label": "UK",
+     "value": 1.2,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "R&D services (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 26.5,
+     "key": "us"
+    },
+    {
+     "label": "Germany",
+     "value": 8.6,
+     "key": "other"
+    },
+    {
+     "label": "UK",
+     "value": 6.8,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "IP licences, incl. software (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 38.0,
+     "key": "us"
+    },
+    {
+     "label": "Netherlands",
+     "value": 7.7,
+     "key": "other"
+    },
+    {
+     "label": "UK",
+     "value": 6.6,
+     "key": "uk"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

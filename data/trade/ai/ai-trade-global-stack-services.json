@@ -1,0 +1,134 @@
+{
+ "slug": "ai-trade-global-stack-services",
+ "category": "trade",
+ "title": "Selling AI as a service: the UK's share of world exports",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "% of world total",
+ "source": "UN Comtrade; OECD-WTO BaTIS; Epoch AI (CC BY); ukmacro calculations",
+ "note": "Top two countries at each layer, and the UK. Share of world services exports, 2024 (OECD-WTO balanced trade in services). Ireland's computer services exports are mostly US tech firms' European operations. The UK's share of all services exports is the benchmark: above it, the UK is specialised.",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK"
+  },
+  {
+   "key": "us",
+   "label": "US"
+  },
+  {
+   "key": "cn",
+   "label": "China"
+  },
+  {
+   "key": "other",
+   "label": "Other countries",
+   "color": "neutral"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "Benchmark: all services (exports, 2024)",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Computer services (software, cloud) (exports, 2024)",
+   "ranks": [
+    {
+     "label": "Ireland",
+     "value": 22.0,
+     "key": "other"
+    },
+    {
+     "label": "US",
+     "value": 11.8,
+     "key": "us"
+    },
+    {
+     "label": "UK",
+     "value": 5.4,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Information and data services (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 17.2,
+     "key": "us"
+    },
+    {
+     "label": "UK",
+     "value": 14.4,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Telecoms services (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 9.2,
+     "key": "us"
+    },
+    {
+     "label": "UK",
+     "value": 9.1,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Consulting and technical (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 15.2,
+     "key": "us"
+    },
+    {
+     "label": "UK",
+     "value": 10.2,
+     "key": "uk"
+    }
+   ]
+  },
+  {
+   "date": "Benchmark: all services (exports, 2024)",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 15.3,
+     "key": "us"
+    },
+    {
+     "label": "UK",
+     "value": 7.2,
+     "key": "uk"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:.1f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

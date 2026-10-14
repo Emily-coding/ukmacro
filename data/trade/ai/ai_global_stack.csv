@@ -1,0 +1,103 @@
+layer,basis,country,share_pct
+"Hardware: chips, servers, chip-making kit","exports, 2024",Taiwan,31.49
+"Hardware: chips, servers, chip-making kit","exports, 2024",China,13.44
+"Hardware: chips, servers, chip-making kit","exports, 2024",Hong Kong,12.53
+"Hardware: chips, servers, chip-making kit","exports, 2024",Korea,8.52
+"Hardware: chips, servers, chip-making kit","exports, 2024",Singapore,7.77
+"Hardware: chips, servers, chip-making kit","exports, 2024",US,6.69
+"Hardware: chips, servers, chip-making kit","exports, 2024",Malaysia,3.94
+"Hardware: chips, servers, chip-making kit","exports, 2024",Japan,2.92
+"Hardware: chips, servers, chip-making kit","exports, 2024",Netherlands,2.64
+"Hardware: chips, servers, chip-making kit","exports, 2024",Mexico,2.22
+"Hardware: chips, servers, chip-making kit","exports, 2024",UK,0.26
+Compute: AI supercomputer capacity,H100-equivalents,US,80.91
+Compute: AI supercomputer capacity,H100-equivalents,China,7.08
+Compute: AI supercomputer capacity,H100-equivalents,Germany,1.68
+Compute: AI supercomputer capacity,H100-equivalents,Norway,1.32
+Compute: AI supercomputer capacity,H100-equivalents,Japan,1.21
+Compute: AI supercomputer capacity,H100-equivalents,France,1.19
+Compute: AI supercomputer capacity,H100-equivalents,Switzerland,1.11
+Compute: AI supercomputer capacity,H100-equivalents,Finland,0.77
+Compute: AI supercomputer capacity,H100-equivalents,Saudi Arabia,0.54
+Compute: AI supercomputer capacity,H100-equivalents,Italy,0.53
+Compute: AI supercomputer capacity,H100-equivalents,UK,0.52
+Models: notable AI models,since 2023,US,59.18
+Models: notable AI models,since 2023,China,27.74
+Models: notable AI models,since 2023,Korea,3.77
+Models: notable AI models,since 2023,France,1.84
+Models: notable AI models,since 2023,UK,1.22
+Models: notable AI models,since 2023,Singapore,1.09
+Models: notable AI models,since 2023,Canada,0.8
+Models: notable AI models,since 2023,Hong Kong,0.7
+Models: notable AI models,since 2023,UAE,0.66
+Models: notable AI models,since 2023,Saudi Arabia,0.61
+"Computer services (software, cloud)","exports, 2024",Ireland,22.0
+"Computer services (software, cloud)","exports, 2024",US,11.75
+"Computer services (software, cloud)","exports, 2024",India,9.53
+"Computer services (software, cloud)","exports, 2024",UK,5.38
+"Computer services (software, cloud)","exports, 2024",Germany,5.14
+"Computer services (software, cloud)","exports, 2024",China,4.04
+"Computer services (software, cloud)","exports, 2024",Netherlands,3.92
+"Computer services (software, cloud)","exports, 2024",Singapore,2.76
+"Computer services (software, cloud)","exports, 2024",France,2.54
+"Computer services (software, cloud)","exports, 2024",Sweden,2.23
+Information and data services,"exports, 2024",US,17.15
+Information and data services,"exports, 2024",UK,14.36
+Information and data services,"exports, 2024",Netherlands,10.38
+Information and data services,"exports, 2024",Ireland,8.46
+Information and data services,"exports, 2024",Germany,6.57
+Information and data services,"exports, 2024",Singapore,3.14
+Information and data services,"exports, 2024",France,2.83
+Information and data services,"exports, 2024",Canada,2.27
+Information and data services,"exports, 2024",Barbados,2.15
+Information and data services,"exports, 2024",Spain,2.06
+R&D services,"exports, 2024",US,26.49
+R&D services,"exports, 2024",Germany,8.58
+R&D services,"exports, 2024",UK,6.8
+R&D services,"exports, 2024",China,6.01
+R&D services,"exports, 2024",Ireland,5.58
+R&D services,"exports, 2024",India,4.57
+R&D services,"exports, 2024",France,4.34
+R&D services,"exports, 2024",Israel,3.28
+R&D services,"exports, 2024",Canada,2.85
+R&D services,"exports, 2024",Netherlands,2.48
+"IP licences, incl. software","exports, 2024",US,37.97
+"IP licences, incl. software","exports, 2024",Netherlands,7.69
+"IP licences, incl. software","exports, 2024",Japan,7.18
+"IP licences, incl. software","exports, 2024",UK,6.57
+"IP licences, incl. software","exports, 2024",Ireland,6.48
+"IP licences, incl. software","exports, 2024",Germany,6.19
+"IP licences, incl. software","exports, 2024",Switzerland,5.7
+"IP licences, incl. software","exports, 2024",France,3.02
+"IP licences, incl. software","exports, 2024",Singapore,2.92
+"IP licences, incl. software","exports, 2024",Sweden,1.49
+Telecoms services,"exports, 2024",US,9.17
+Telecoms services,"exports, 2024",UK,9.07
+Telecoms services,"exports, 2024",Netherlands,4.32
+Telecoms services,"exports, 2024",Ireland,4.27
+Telecoms services,"exports, 2024",Luxembourg,4.2
+Telecoms services,"exports, 2024",Germany,4.02
+Telecoms services,"exports, 2024",France,3.97
+Telecoms services,"exports, 2024",China,3.5
+Telecoms services,"exports, 2024",Hong Kong,3.29
+Telecoms services,"exports, 2024",Singapore,3.05
+Consulting and technical,"exports, 2024",US,15.15
+Consulting and technical,"exports, 2024",UK,10.22
+Consulting and technical,"exports, 2024",Germany,5.96
+Consulting and technical,"exports, 2024",Singapore,5.68
+Consulting and technical,"exports, 2024",Ireland,5.52
+Consulting and technical,"exports, 2024",India,4.8
+Consulting and technical,"exports, 2024",France,4.79
+Consulting and technical,"exports, 2024",Netherlands,4.41
+Consulting and technical,"exports, 2024",China,4.18
+Consulting and technical,"exports, 2024",Switzerland,2.2
+Benchmark: all services,"exports, 2024",US,15.3
+Benchmark: all services,"exports, 2024",UK,7.24
+Benchmark: all services,"exports, 2024",Germany,5.48
+Benchmark: all services,"exports, 2024",Ireland,4.97
+Benchmark: all services,"exports, 2024",China,4.22
+Benchmark: all services,"exports, 2024",France,4.18
+Benchmark: all services,"exports, 2024",Singapore,3.9
+Benchmark: all services,"exports, 2024",Netherlands,3.56
+Benchmark: all services,"exports, 2024",India,2.93
+Benchmark: all services,"exports, 2024",Japan,2.58
