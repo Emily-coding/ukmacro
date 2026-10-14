@@ -365,6 +365,20 @@ charts:
       Share of businesses, each counted once whatever its size, so mostly small firms.
       As published: firms answering "not sure" are included in the base.
 
+  - slug: bics-ai-adoption-size
+    events: true   # key AI dates from definitions/ai_events.yaml
+    title: "AI adoption by business size: businesses currently using AI"
+    units: "% of businesses"
+    series:
+      - {id: ai_use, breakdown: "250 +", label: "Large (250+ employees)"}
+      - {id: ai_use, breakdown: "100 - 249", label: "Medium (100-249)"}
+      - {id: ai_use, breakdown: "50 - 99", label: "Medium (50-99)"}
+      - {id: ai_use, label: All businesses}
+    note: >-
+      Share of businesses in each size band, each counted once. BICS publishes 50-99
+      and 100-249 separately, so medium-sized firms are two lines. As published: firms
+      answering "not sure" are included in the base.
+
   - slug: bics-ai-types
     events: true   # key AI dates from definitions/ai_events.yaml
     title: Which kinds of AI businesses use
