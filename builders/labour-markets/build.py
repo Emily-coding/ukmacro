@@ -8,6 +8,8 @@
      composition_rti.py  the same with HMRC PAYE RTI, and LFS vs RTI compared
      neet.py             the same for the NEET rate (16-24)
      pay_distribution.py pay at the 10th, 50th and 90th percentiles, UK (RTI) vs US (CPS)
+     us_hours.py         (run separately: large microdata download) US weekly pay growth
+                         by percentile split into hours and hourly pay
 
 Each analysis is independent: if one fails the others still publish, but the run
 exits 1 so the failure shows in GitHub Actions.

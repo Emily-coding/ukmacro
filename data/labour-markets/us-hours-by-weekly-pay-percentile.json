@@ -1,0 +1,148 @@
+{
+ "slug": "us-hours-by-weekly-pay-percentile",
+ "category": "labour-markets",
+ "title": "US full-time workers: usual weekly hours near each point of the weekly pay distribution",
+ "type": "line",
+ "freq": "Q",
+ "units": "Hours per week",
+ "source": "US Census Bureau / BLS Current Population Survey microdata; ukmacro calculations",
+ "note": "Full-time wage and salary workers (usually 35+ hours), outgoing rotation groups. Hours = usual weekly hours at the main job of people within 2.5 percentiles of each point of the weekly earnings distribution. Not seasonally adjusted. 2025 Q4 is November and December only (no October survey, federal shutdown).",
+ "series": [
+  {
+   "key": "p10",
+   "label": "10th percentile"
+  },
+  {
+   "key": "p50",
+   "label": "Median"
+  },
+  {
+   "key": "p90",
+   "label": "90th percentile"
+  }
+ ],
+ "data_through": "2026-Q3",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2022-Q1",
+   "p10": 39.2,
+   "p50": 41.75,
+   "p90": 43.9
+  },
+  {
+   "date": "2022-Q2",
+   "p10": 39.69,
+   "p50": 41.85,
+   "p90": 43.59
+  },
+  {
+   "date": "2022-Q3",
+   "p10": 39.39,
+   "p50": 41.86,
+   "p90": 43.59
+  },
+  {
+   "date": "2022-Q4",
+   "p10": 39.32,
+   "p50": 41.42,
+   "p90": 44.05
+  },
+  {
+   "date": "2023-Q1",
+   "p10": 39.29,
+   "p50": 41.93,
+   "p90": 43.61
+  },
+  {
+   "date": "2023-Q2",
+   "p10": 39.64,
+   "p50": 41.42,
+   "p90": 43.48
+  },
+  {
+   "date": "2023-Q3",
+   "p10": 39.8,
+   "p50": 41.6,
+   "p90": 43.89
+  },
+  {
+   "date": "2023-Q4",
+   "p10": 39.48,
+   "p50": 41.85,
+   "p90": 44.07
+  },
+  {
+   "date": "2024-Q1",
+   "p10": 39.51,
+   "p50": 41.15,
+   "p90": 43.45
+  },
+  {
+   "date": "2024-Q2",
+   "p10": 39.38,
+   "p50": 41.65,
+   "p90": 43.57
+  },
+  {
+   "date": "2024-Q3",
+   "p10": 39.77,
+   "p50": 41.62,
+   "p90": 44.25
+  },
+  {
+   "date": "2024-Q4",
+   "p10": 39.56,
+   "p50": 41.33,
+   "p90": 43.32
+  },
+  {
+   "date": "2025-Q1",
+   "p10": 39.42,
+   "p50": 41.54,
+   "p90": 43.51
+  },
+  {
+   "date": "2025-Q2",
+   "p10": 39.39,
+   "p50": 41.34,
+   "p90": 43.8
+  },
+  {
+   "date": "2025-Q3",
+   "p10": 39.35,
+   "p50": 41.44,
+   "p90": 42.62
+  },
+  {
+   "date": "2025-Q4",
+   "p10": 39.94,
+   "p50": 41.61,
+   "p90": 42.81
+  },
+  {
+   "date": "2026-Q1",
+   "p10": 39.36,
+   "p50": 41.7,
+   "p90": 43.91
+  },
+  {
+   "date": "2026-Q2",
+   "p10": 39.38,
+   "p50": 41.81,
+   "p90": 43.24
+  },
+  {
+   "date": "2026-Q3",
+   "p10": 39.53,
+   "p50": 41.5,
+   "p90": 42.72
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

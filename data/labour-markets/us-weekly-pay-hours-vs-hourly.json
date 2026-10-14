@@ -1,0 +1,53 @@
+{
+ "slug": "us-weekly-pay-hours-vs-hourly",
+ "category": "labour-markets",
+ "title": "US weekly pay growth by percentile, 2022 to the year to 2026 Q3: hours vs hourly pay",
+ "type": "grouped-hbar",
+ "freq": "Q",
+ "units": "Log % change (hours + hourly pay = weekly pay)",
+ "source": "US Census Bureau / BLS Current Population Survey microdata; ukmacro calculations",
+ "note": "Full-time wage and salary workers (usually 35+ hours), outgoing rotation groups. Hours = usual weekly hours at the main job of people within 2.5 percentiles of each point of the weekly earnings distribution. Not seasonally adjusted. 2022 average vs the latest four quarters (2025 Q4 to 2026 Q3).",
+ "series": [
+  {
+   "key": "weekly",
+   "label": "Weekly pay"
+  },
+  {
+   "key": "hours",
+   "label": "Usual hours"
+  },
+  {
+   "key": "hourly",
+   "label": "Hourly pay"
+  }
+ ],
+ "data_through": "90th percentile",
+ "status": "ok",
+ "data": [
+  {
+   "date": "10th percentile",
+   "weekly": 13.4,
+   "hours": 0.4,
+   "hourly": 13.0
+  },
+  {
+   "date": "Median",
+   "weekly": 15.3,
+   "hours": -0.2,
+   "hourly": 15.5
+  },
+  {
+   "date": "90th percentile",
+   "weekly": 12.3,
+   "hours": -1.4,
+   "hourly": 13.7
+  }
+ ],
+ "decimals": 1,
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}
