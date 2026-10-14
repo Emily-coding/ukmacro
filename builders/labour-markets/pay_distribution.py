@@ -37,7 +37,7 @@ PERCENTILES = {"p10": ("10th percentile", "10th percentile"),
 # FRED copies of BLS series LEU0252911200, LEU0252881500, LEU0252911500 (quarterly)
 US_SERIES = {"p10": "LEU0252911200Q", "p50": "LEU0252881500Q", "p90": "LEU0252911500Q"}
 FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
-START = "2019"       # first quarter shown
+START = "2022"       # first quarter shown
 BASE_YEAR = "2022"   # index base and growth start
 SOURCE = ("HMRC PAYE Real Time Information (ONS); BLS Current Population Survey via FRED; "
           "ONS CPI; BLS CPI-U; ukmacro calculations")
