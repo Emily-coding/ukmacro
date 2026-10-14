@@ -8,7 +8,7 @@
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
  "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
- "note": "100 minus \"does not currently use AI\", so firms answering \"not sure\" count as users. See ai_use_firm for the share that say they use a named kind of AI.",
+ "note": "100 minus \"does not currently use AI\", so firms answering \"not sure\" count as users. See ai_use_firm, which keeps them in the base but not as users.",
  "measure": "complement",
  "answers": [
   "Business does not currently use artificial intelligence*"

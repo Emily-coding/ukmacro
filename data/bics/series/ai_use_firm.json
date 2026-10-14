@@ -2,7 +2,7 @@
  "slug": "ai_use_firm",
  "category": "bics",
  "topic": "ai",
- "title": "Businesses currently using AI (excluding \"not sure\")",
+ "title": "Businesses currently using AI (\"not sure\" counted as no)",
  "type": "line",
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",

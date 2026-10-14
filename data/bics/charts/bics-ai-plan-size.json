@@ -6,7 +6,7 @@
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
- "note": "Firms naming at least one kind of AI they plan to adopt, as a share of all businesses in each size band; \"not sure\" (12-45% of firms, most among the largest) is not counted as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.",
+ "note": "Firms naming at least one kind of AI they plan to adopt, as a share of all businesses in each size band. Firms answering \"not sure\" (12-45%, most among the largest) stay in the base but are not counted as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.",
  "series": [
   {
    "key": "ai_plan_firm__250",

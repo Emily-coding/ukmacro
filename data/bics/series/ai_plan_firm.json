@@ -2,7 +2,7 @@
  "slug": "ai_plan_firm",
  "category": "bics",
  "topic": "ai",
- "title": "Businesses planning to adopt AI in the next three months (excluding \"not sure\")",
+ "title": "Businesses planning to adopt AI in the next three months (\"not sure\" counted as no)",
  "type": "line",
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",

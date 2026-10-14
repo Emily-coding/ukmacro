@@ -326,7 +326,7 @@
   {
    "id": "ai_use_firm",
    "topic": "ai",
-   "title": "Businesses currently using AI (excluding \"not sure\")",
+   "title": "Businesses currently using AI (\"not sure\" counted as no)",
    "n_waves": 13,
    "first": "2023-08-31",
    "data_through": "2026-08-31",
@@ -336,7 +336,7 @@
   {
    "id": "ai_plan_firm",
    "topic": "ai",
-   "title": "Businesses planning to adopt AI in the next three months (excluding \"not sure\")",
+   "title": "Businesses planning to adopt AI in the next three months (\"not sure\" counted as no)",
    "n_waves": 13,
    "first": "2023-08-31",
    "data_through": "2026-08-31",

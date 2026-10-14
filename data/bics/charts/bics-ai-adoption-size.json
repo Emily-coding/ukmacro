@@ -6,7 +6,7 @@
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
- "note": "Firms naming at least one kind of AI they use, as a share of all businesses in each size band; \"not sure\" (5-25% of firms, most among the largest) is not counted as using. BICS publishes 50-99 and 100-249 separately.",
+ "note": "Firms naming at least one kind of AI they use, as a share of all businesses in each size band. Firms answering \"not sure\" (5-25%, most among the largest) stay in the base but are not counted as using AI. BICS publishes 50-99 and 100-249 separately.",
  "series": [
   {
    "key": "ai_use_firm__250",

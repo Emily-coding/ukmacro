@@ -260,7 +260,7 @@ series:
     answers: [Business does not currently use artificial intelligence*]
     note: >-
       100 minus "does not currently use AI", so firms answering "not sure" count as
-      users. See ai_use_firm for the share that say they use a named kind of AI.
+      users. See ai_use_firm, which keeps them in the base but not as users.
 
   - id: ai_plan
     label: Businesses planning to adopt AI in the next three months
@@ -270,20 +270,20 @@ series:
     answers: [Business does not plan to*]
     note: >-
       100 minus "does not plan to adopt AI", so firms answering "not sure" count as
-      planning. See ai_plan_firm for the share that name a kind of AI they plan to adopt.
+      planning. See ai_plan_firm, which keeps them in the base but not as planning.
 
-  # The same two questions without the "not sure" answers: firms that named at least
-  # one kind of AI. "Not sure" varies a lot by size (about 5% of micro firms, 25-45% of
+  # The same two questions with "not sure" kept in the base but not counted as yes:
+  # firms that named at least one kind of AI, as a % of all businesses. "Not sure" varies a lot by size (about 5% of micro firms, 25-45% of
   # firms with 250+ employees), so these are the measures to compare across sizes.
   - id: ai_use_firm
-    label: Businesses currently using AI (excluding "not sure")
+    label: Businesses currently using AI ("not sure" counted as no)
     topic: ai
     question: artificial intelligence technologies, if any, does your business currently use
     measure: complement
     answers: [Business does not currently use artificial intelligence*, Not sure]
 
   - id: ai_plan_firm
-    label: Businesses planning to adopt AI in the next three months (excluding "not sure")
+    label: Businesses planning to adopt AI in the next three months ("not sure" counted as no)
     topic: ai
     question: artificial intelligence technologies, if any, does your business plan to adopt
     measure: complement
@@ -398,8 +398,8 @@ charts:
       - {id: ai_use_firm, breakdown: "0 - 9", label: "Micro (0-9)"}
     note: >-
       Firms naming at least one kind of AI they use, as a share of all businesses in each
-      size band; "not sure" (5-25% of firms, most among the largest) is not counted as
-      using. BICS publishes 50-99 and 100-249 separately.
+      size band. Firms answering "not sure" (5-25%, most among the largest) stay in the
+      base but are not counted as using AI. BICS publishes 50-99 and 100-249 separately.
 
   - slug: bics-ai-plan-size
     events: true   # key AI dates from definitions/ai_events.yaml
@@ -413,8 +413,8 @@ charts:
       - {id: ai_plan_firm, breakdown: "0 - 9", label: "Micro (0-9)"}
     note: >-
       Firms naming at least one kind of AI they plan to adopt, as a share of all businesses
-      in each size band; "not sure" (12-45% of firms, most among the largest) is not counted
-      as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.
+      in each size band. Firms answering "not sure" (12-45%, most among the largest) stay
+      in the base but are not counted as planning. Current users can also answer. BICS publishes 50-99 and 100-249 separately.
 
   - slug: bics-ai-types
     events: true   # key AI dates from definitions/ai_events.yaml

@@ -8,7 +8,7 @@
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
  "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy",
- "note": "100 minus \"does not plan to adopt AI\", so firms answering \"not sure\" count as planning. See ai_plan_firm for the share that name a kind of AI they plan to adopt.",
+ "note": "100 minus \"does not plan to adopt AI\", so firms answering \"not sure\" count as planning. See ai_plan_firm, which keeps them in the base but not as planning.",
  "measure": "complement",
  "answers": [
   "Business does not plan to*"
