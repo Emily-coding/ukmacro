@@ -56,7 +56,7 @@ sys.path.insert(0, str(REPO))
 
 import yaml  # noqa: E402
 
-from ukmacro import charts, comext, comtrade, hmrc_trade, ons  # noqa: E402
+from ukmacro import charts, comext, comtrade, hmrc_trade, oecd, ons  # noqa: E402
 from ukmacro.http import get_json, get_text  # noqa: E402
 
 DEFS = yaml.safe_load((REPO / "definitions" / "ai_trade.yaml").read_text())
@@ -1023,6 +1023,130 @@ def us_pace_chart(components: list[dict], base: str = "2022") -> list[dict]:
     return rows
 
 
+# Peers for the US-pace comparison: (name, Comext reporter or Comtrade M49 code, currency,
+# OECD code). The Netherlands and Ireland are transit hubs, so their imports include goods
+# passing through.
+PEERS = {"US": ("US", 842, "USD", "USA"), "DE": ("Germany", "DE", "EUR", "DEU"),
+         "FR": ("France", "FR", "EUR", "FRA"), "IT": ("Italy", "IT", "EUR", "ITA"),
+         "ES": ("Spain", "ES", "EUR", "ESP"), "NL": ("Netherlands (hub)", "NL", "EUR", "NLD"),
+         "IE": ("Ireland (hub)", "IE", "EUR", "IRL"), "JP": ("Japan", 392, "JPY", "JPN"),
+         "KR": ("Korea", 410, "KRW", "KOR"), "CA": ("Canada", 124, "CAD", "CAN")}
+
+
+def _per_eur(currency: str, since: str) -> dict[str, float]:
+    """Annual average units of `currency` per euro (Eurostat, from ECB reference rates)."""
+    fx = get_json("https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ert_bil_eur_a"
+                  f"?format=JSON&currency={currency}&statinfo=AVG&sinceTimePeriod={since}", timeout=60)
+    when = {i: y for y, i in fx["dimension"]["time"]["category"]["index"].items()}
+    return {when[int(k)]: v for k, v in fx["value"].items()}
+
+
+def peer_pace_charts(components: list[dict], base: str = "2022") -> list[dict]:
+    """Is the UK slow, or is the US unusual? Growth since `base` in imports of
+    (1) AI compute hardware (IMF basket: EU members from Comext, others from Comtrade,
+    the UK from HMRC) and (2) computer services (OECD trade in services, EBOPS SI2; the
+    US figures are BEA's), each in the country's own currency so exchange rates don't
+    enter. Then (3) the US-pace thought experiment again with computer services added:
+    compute bought from abroad as a service as well as kit installed at home.
+    Returns rows for a CSV."""
+    import time
+    hs6 = DEFS["imf_hardware"]["hs6"]
+    years = [str(y) for y in range(2019, datetime.date.today().year)]
+    uk_hw: dict = {}
+    for r in components:
+        if r["flow"] == "imports":
+            uk_hw[r["year"]] = uk_hw.get(r["year"], 0.0) + r["value_gbp_bn"] * 1e9
+    hw = {"GB": uk_hw}
+    try:
+        usd = _per_eur("USD", years[0])
+        for c, (_, src, cur, _) in PEERS.items():
+            tot: dict = {}
+            if isinstance(src, str):   # EU member: Comext, euros
+                for (flow, _, p, y), v in comext.annual(src, hs6, years).items():
+                    if flow == "imports" and p == "WORLD":
+                        tot[y] = tot.get(y, 0.0) + v
+            else:                      # Comtrade, dollars -> own currency via the euro cross rates
+                lcu = _per_eur(cur, years[0]) if cur != "USD" else usd
+                for y in years:
+                    v = comtrade.world_total(src, hs6, y)
+                    if v is not None and y in lcu:
+                        tot[y] = v * lcu[y] / usd[y]
+                    time.sleep(6)   # Comtrade's preview rate limit
+            hw[c] = tot
+        svc_raw = oecd.fetch("OECD.SDD.TPS,DSD_BOP@DF_TIS,",
+                             "+".join([p[3] for p in PEERS.values()] + ["GBR"]) + ".W.SI2.D.T.A.XDC.", start=years[0])
+    except Exception as e:  # noqa: BLE001 - skip, keep the last published versions
+        print(f"[ai-trade] peer data unavailable, peer charts skipped: {e}")
+        return []
+    oecd_code = {p[3]: c for c, p in PEERS.items()} | {"GBR": "GB"}
+    svc = {oecd_code[a]: {y: v * 1e6 for y, v in obs} for a, obs in svc_raw.items()}
+    names = {c: p[0] for c, p in PEERS.items()} | {"GB": "UK"}
+
+    def growth(series: dict, end: str) -> float | None:
+        return 100 * (series[end] / series[base] - 1) if base in series and end in series else None
+
+    def ranked(series_by_country: dict, end: str) -> list[dict]:
+        rows = [(c, growth(s, end)) for c, s in series_by_country.items()]
+        rows = sorted([(c, g) for c, g in rows if g is not None], key=lambda r: -r[1])
+        return [{"label": names[c], "value": round(g, 0),
+                 "key": {"GB": "uk", "US": "us"}.get(c, "peer")} for c, g in rows]
+
+    keys = [{"key": "uk", "label": "UK"}, {"key": "us", "label": "US"},
+            {"key": "peer", "label": "Other countries", "color": "neutral"}]
+    hw_end = max(y for y in uk_hw if all(y in hw[c] for c in ("GB", "US")))
+    c = chart("ai-trade-peer-hardware-growth",
+              f"The US is the outlier: growth in AI compute hardware imports, {base} to {hw_end}",
+              f"% change, {base} to {hw_end}, own currency", "ranked-bars", keys,
+              [{"date": "AI compute hardware imports", "ranks": ranked(hw, hw_end)}],
+              "IMF AI hardware basket. EU members from Eurostat Comext (euros), the UK from HMRC (pounds), "
+              "the US, Japan, Korea and Canada from UN Comtrade (dollars, converted to own currency at annual "
+              "average rates). The Netherlands and Ireland are transit hubs.",
+              "HMRC; Eurostat Comext; UN Comtrade; Eurostat exchange rates; ukmacro calculations", freq="A")
+    c["value_format"] = "{:+.0f}%"
+    publish(c)
+
+    svc_end = max(y for y in years if sum(y in s for s in svc.values()) == len(svc))   # every country
+    c = chart("ai-trade-peer-computer-services-growth",
+              f"Buying compute as a service: growth in computer services imports, {base} to {svc_end}",
+              f"% change, {base} to {svc_end}, own currency", "ranked-bars", keys,
+              [{"date": "Computer services imports", "ranks": ranked(svc, svc_end)}],
+              "Computer services (EBOPS 9.2: software, cloud computing, data processing and hosting, IT "
+              "consulting) imported from all countries. US figures are BEA's. "
+              + (f"{svc_end} is the latest year every country has published; " if svc_end != hw_end else "")
+              + "UK " + f"{base} to {max(svc['GB'])}: {growth(svc['GB'], max(svc['GB'])):+.0f}%, "
+              f"US: {growth(svc['US'], max(svc['US'])):+.0f}%.",
+              "OECD International trade in services (BEA for the US, ONS for the UK); ukmacro calculations", freq="A")
+    c["value_format"] = "{:+.0f}%"
+    publish(c)
+
+    # 3. the thought experiment with services: hardware + computer services, UK vs US pace
+    both = {c: {y: hw[c][y] + svc[c][y] for y in hw[c] if y in svc[c]} for c in ("GB", "US")}
+    yrs = sorted(set(both["GB"]) & set(both["US"]))
+    data, rows = [], []
+    for y in yrs:
+        cf = both["GB"][base] * both["US"][y] / both["US"][base] if y >= base else None
+        data.append({"date": y, "uk": round(both["GB"][y] / 1e9, 1),
+                     **({"cf": round(cf / 1e9, 1)} if cf is not None else {})})
+    last = yrs[-1]
+    gap = (both["GB"][base] * both["US"][last] / both["US"][base] - both["GB"][last]) / 1e9
+    c = chart("ai-trade-uk-at-us-pace-with-services",
+              f"Counting compute bought as a service, the UK gap at the US pace is £{gap:.1f}bn in {last}",
+              "UK imports of AI compute hardware plus computer services, £ billion", "line",
+              [{"key": "uk", "label": "UK, actual"},
+               {"key": "cf", "label": f"UK at the US growth rate since {base}"}], data,
+              "Hardware = IMF AI hardware basket (HMRC; US from UN Comtrade). Computer services = EBOPS 9.2 "
+              "imports (ONS; BEA for the US, via the OECD). Growth compared in each country's own currency.",
+              "HMRC; UN Comtrade; OECD (ONS, BEA); ukmacro calculations", freq="A")
+    publish(c)
+
+    for c in ["GB"] + list(PEERS):
+        for y in years:
+            rows.append({"country": names[c], "year": y,
+                         "hardware_imports_bn_own_currency": round(hw[c][y] / 1e9, 2) if y in hw.get(c, {}) else None,
+                         "computer_services_imports_bn_own_currency": round(svc[c][y] / 1e9, 2) if y in svc.get(c, {}) else None})
+    return rows
+
+
 # ---------------------------------------------------------------- 4c. chip supply chain
 
 SHORT_NAMES = {"CN": "China", "TW": "Taiwan", "KR": "Korea", "US": "US", "DE": "Germany", "MX": "Mexico",
@@ -1291,6 +1415,9 @@ def build() -> None:
     pace = us_pace_chart(components)
     if pace:
         write_csv(pace, OUT / "ai_uk_at_us_pace.csv")
+    peers = peer_pace_charts(components)
+    if peers:
+        write_csv(peers, OUT / "ai_peer_imports.csv")
     write_csv(top_partner_charts(), OUT / "ai_top_partners.csv")
     if hub_trade() is not None:
         write_csv(hub_summary(), OUT / "ai_hub_origins.csv")

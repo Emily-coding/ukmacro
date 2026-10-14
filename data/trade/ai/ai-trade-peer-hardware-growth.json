@@ -1,0 +1,110 @@
+{
+ "slug": "ai-trade-peer-hardware-growth",
+ "category": "trade",
+ "title": "The US is the outlier: growth in AI compute hardware imports, 2022 to 2025",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "% change, 2022 to 2025, own currency",
+ "source": "HMRC; Eurostat Comext; UN Comtrade; Eurostat exchange rates; ukmacro calculations",
+ "note": "IMF AI hardware basket. EU members from Eurostat Comext (euros), the UK from HMRC (pounds), the US, Japan, Korea and Canada from UN Comtrade (dollars, converted to own currency at annual average rates). The Netherlands and Ireland are transit hubs.",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK"
+  },
+  {
+   "key": "us",
+   "label": "US"
+  },
+  {
+   "key": "peer",
+   "label": "Other countries",
+   "color": "neutral"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "AI compute hardware imports",
+ "status": "ok",
+ "data": [
+  {
+   "date": "AI compute hardware imports",
+   "ranks": [
+    {
+     "label": "US",
+     "value": 152.0,
+     "key": "us"
+    },
+    {
+     "label": "Spain",
+     "value": 49.0,
+     "key": "peer"
+    },
+    {
+     "label": "UK",
+     "value": 35.0,
+     "key": "uk"
+    },
+    {
+     "label": "Netherlands (hub)",
+     "value": 32.0,
+     "key": "peer"
+    },
+    {
+     "label": "Japan",
+     "value": 30.0,
+     "key": "peer"
+    },
+    {
+     "label": "Canada",
+     "value": 27.0,
+     "key": "peer"
+    },
+    {
+     "label": "Korea",
+     "value": 22.0,
+     "key": "peer"
+    },
+    {
+     "label": "Ireland (hub)",
+     "value": 8.0,
+     "key": "peer"
+    },
+    {
+     "label": "Germany",
+     "value": 4.0,
+     "key": "peer"
+    },
+    {
+     "label": "Italy",
+     "value": -1.0,
+     "key": "peer"
+    },
+    {
+     "label": "France",
+     "value": -3.0,
+     "key": "peer"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:+.0f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

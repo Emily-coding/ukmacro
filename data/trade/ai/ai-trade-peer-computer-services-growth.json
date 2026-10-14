@@ -1,0 +1,105 @@
+{
+ "slug": "ai-trade-peer-computer-services-growth",
+ "category": "trade",
+ "title": "Buying compute as a service: growth in computer services imports, 2022 to 2024",
+ "type": "ranked-bars",
+ "freq": "A",
+ "units": "% change, 2022 to 2024, own currency",
+ "source": "OECD International trade in services (BEA for the US, ONS for the UK); ukmacro calculations",
+ "note": "Computer services (EBOPS 9.2: software, cloud computing, data processing and hosting, IT consulting) imported from all countries. US figures are BEA's. 2024 is the latest year every country has published; UK 2022 to 2025: +71%, US: +37%.",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK"
+  },
+  {
+   "key": "us",
+   "label": "US"
+  },
+  {
+   "key": "peer",
+   "label": "Other countries",
+   "color": "neutral"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "Computer services imports",
+ "status": "ok",
+ "data": [
+  {
+   "date": "Computer services imports",
+   "ranks": [
+    {
+     "label": "UK",
+     "value": 61.0,
+     "key": "uk"
+    },
+    {
+     "label": "Ireland (hub)",
+     "value": 57.0,
+     "key": "peer"
+    },
+    {
+     "label": "Japan",
+     "value": 55.0,
+     "key": "peer"
+    },
+    {
+     "label": "Spain",
+     "value": 32.0,
+     "key": "peer"
+    },
+    {
+     "label": "US",
+     "value": 22.0,
+     "key": "us"
+    },
+    {
+     "label": "Italy",
+     "value": 20.0,
+     "key": "peer"
+    },
+    {
+     "label": "Germany",
+     "value": 17.0,
+     "key": "peer"
+    },
+    {
+     "label": "Netherlands (hub)",
+     "value": 10.0,
+     "key": "peer"
+    },
+    {
+     "label": "France",
+     "value": 7.0,
+     "key": "peer"
+    },
+    {
+     "label": "Canada",
+     "value": -6.0,
+     "key": "peer"
+    }
+   ]
+  }
+ ],
+ "value_format": "{:+.0f}%",
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}

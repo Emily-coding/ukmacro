@@ -1,0 +1,76 @@
+{
+ "slug": "ai-trade-uk-at-us-pace-with-services",
+ "category": "trade",
+ "title": "Counting compute bought as a service, the UK gap at the US pace is \u00a39.6bn in 2025",
+ "type": "line",
+ "freq": "A",
+ "units": "UK imports of AI compute hardware plus computer services, \u00a3 billion",
+ "source": "HMRC; UN Comtrade; OECD (ONS, BEA); ukmacro calculations",
+ "note": "Hardware = IMF AI hardware basket (HMRC; US from UN Comtrade). Computer services = EBOPS 9.2 imports (ONS; BEA for the US, via the OECD). Growth compared in each country's own currency.",
+ "series": [
+  {
+   "key": "uk",
+   "label": "UK, actual"
+  },
+  {
+   "key": "cf",
+   "label": "UK at the US growth rate since 2022"
+  }
+ ],
+ "events": [
+  {
+   "date": "2020-03-23",
+   "label": "Covid-19 lockdown"
+  },
+  {
+   "date": "2022-02-24",
+   "label": "Russia invades Ukraine"
+  },
+  {
+   "date": "2022-11-30",
+   "label": "ChatGPT launch"
+  }
+ ],
+ "data_through": "2025",
+ "status": "ok",
+ "data": [
+  {
+   "date": "2019",
+   "uk": 11.4
+  },
+  {
+   "date": "2020",
+   "uk": 11.3
+  },
+  {
+   "date": "2021",
+   "uk": 11.2
+  },
+  {
+   "date": "2022",
+   "uk": 14.3,
+   "cf": 14.3
+  },
+  {
+   "date": "2023",
+   "uk": 16.4,
+   "cf": 13.4
+  },
+  {
+   "date": "2024",
+   "uk": 18.5,
+   "cf": 19.0
+  },
+  {
+   "date": "2025",
+   "uk": 21.9,
+   "cf": 31.5
+  }
+ ],
+ "theme": "blue-amber",
+ "size_cm": [
+  25,
+  15
+ ],
+ "style_version": 10
+}
