@@ -1,28 +1,32 @@
 {
  "slug": "bics-ai-adoption-size",
  "category": "bics",
- "title": "AI adoption by business size: businesses currently using AI",
+ "title": "AI use by business size: businesses currently using AI",
  "type": "line",
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
- "note": "Share of businesses in each size band, each counted once. BICS publishes 50-99 and 100-249 separately, so medium-sized firms are two lines. As published: firms answering \"not sure\" are included in the base.",
+ "note": "Firms naming at least one kind of AI they use, as a share of all businesses in each size band; \"not sure\" (5-25% of firms, most among the largest) is not counted as using. BICS publishes 50-99 and 100-249 separately.",
  "series": [
   {
-   "key": "ai_use__250",
+   "key": "ai_use_firm__250",
    "label": "Large (250+ employees)"
   },
   {
-   "key": "ai_use__100-249",
+   "key": "ai_use_firm__100-249",
    "label": "Medium (100-249)"
   },
   {
-   "key": "ai_use__50-99",
+   "key": "ai_use_firm__50-99",
    "label": "Medium (50-99)"
   },
   {
-   "key": "ai_use__all-businesses",
-   "label": "All businesses"
+   "key": "ai_use_firm__10-49",
+   "label": "Small (10-49)"
+  },
+  {
+   "key": "ai_use_firm__0-9",
+   "label": "Micro (0-9)"
   }
  ],
  "events": [
@@ -44,94 +48,107 @@
  "data": [
   {
    "date": "2023-08-31",
-   "ai_use__250": 48.2,
-   "ai_use__100-249": 32.9,
-   "ai_use__50-99": 28.5,
-   "ai_use__all-businesses": 16.3
+   "ai_use_firm__250": 18.7,
+   "ai_use_firm__100-249": 15.0,
+   "ai_use_firm__50-99": 14.5,
+   "ai_use_firm__10-49": 11.3,
+   "ai_use_firm__0-9": 9.1
   },
   {
    "date": "2023-11-30",
-   "ai_use__250": 46.2,
-   "ai_use__100-249": 32.3,
-   "ai_use__50-99": 26.8,
-   "ai_use__all-businesses": 15.4
+   "ai_use_firm__250": 19.1,
+   "ai_use_firm__100-249": 15.7,
+   "ai_use_firm__50-99": 15.6,
+   "ai_use_firm__10-49": 10.9,
+   "ai_use_firm__0-9": 9.6
   },
   {
    "date": "2024-02-29",
-   "ai_use__250": 53.2,
-   "ai_use__100-249": 37.6,
-   "ai_use__50-99": 33.3,
-   "ai_use__all-businesses": 21.0
+   "ai_use_firm__250": 23.8,
+   "ai_use_firm__100-249": 18.4,
+   "ai_use_firm__50-99": 19.2,
+   "ai_use_firm__10-49": 12.8,
+   "ai_use_firm__0-9": 13.9
   },
   {
    "date": "2024-05-31",
-   "ai_use__250": 54.1,
-   "ai_use__100-249": 41.4,
-   "ai_use__50-99": 35.2,
-   "ai_use__all-businesses": 19.8
+   "ai_use_firm__250": 25.4,
+   "ai_use_firm__100-249": 21.0,
+   "ai_use_firm__50-99": 20.1,
+   "ai_use_firm__10-49": 13.7,
+   "ai_use_firm__0-9": 12.5
   },
   {
    "date": "2024-08-31",
-   "ai_use__250": 55.6,
-   "ai_use__100-249": 43.5,
-   "ai_use__50-99": 36.4,
-   "ai_use__all-businesses": 21.4
+   "ai_use_firm__250": 30.4,
+   "ai_use_firm__100-249": 25.6,
+   "ai_use_firm__50-99": 23.2,
+   "ai_use_firm__10-49": 16.7,
+   "ai_use_firm__0-9": 14.4
   },
   {
    "date": "2024-11-30",
-   "ai_use__250": 55.4,
-   "ai_use__100-249": 44.2,
-   "ai_use__50-99": 36.4,
-   "ai_use__all-businesses": 23.9
+   "ai_use_firm__250": 28.2,
+   "ai_use_firm__100-249": 25.6,
+   "ai_use_firm__50-99": 21.2,
+   "ai_use_firm__10-49": 17.4,
+   "ai_use_firm__0-9": 15.9
   },
   {
    "date": "2025-02-28",
-   "ai_use__250": 58.6,
-   "ai_use__100-249": 46.2,
-   "ai_use__50-99": 38.8,
-   "ai_use__all-businesses": 25.3
+   "ai_use_firm__250": 31.2,
+   "ai_use_firm__100-249": 26.1,
+   "ai_use_firm__50-99": 25.4,
+   "ai_use_firm__10-49": 19.7,
+   "ai_use_firm__0-9": 17.6
   },
   {
    "date": "2025-05-31",
-   "ai_use__250": 61.0,
-   "ai_use__100-249": 49.6,
-   "ai_use__50-99": 43.5,
-   "ai_use__all-businesses": 27.3
+   "ai_use_firm__250": 36.0,
+   "ai_use_firm__100-249": 34.4,
+   "ai_use_firm__50-99": 31.1,
+   "ai_use_firm__10-49": 23.9,
+   "ai_use_firm__0-9": 19.9
   },
   {
    "date": "2025-08-31",
-   "ai_use__250": 62.6,
-   "ai_use__100-249": 50.8,
-   "ai_use__50-99": 46.1,
-   "ai_use__all-businesses": 31.5
+   "ai_use_firm__250": 39.4,
+   "ai_use_firm__100-249": 35.1,
+   "ai_use_firm__50-99": 33.4,
+   "ai_use_firm__10-49": 25.8,
+   "ai_use_firm__0-9": 23.1
   },
   {
    "date": "2025-11-30",
-   "ai_use__250": 67.2,
-   "ai_use__100-249": 54.5,
-   "ai_use__50-99": 48.4,
-   "ai_use__all-businesses": 32.6
+   "ai_use_firm__250": 44.4,
+   "ai_use_firm__100-249": 38.2,
+   "ai_use_firm__50-99": 35.6,
+   "ai_use_firm__10-49": 27.2,
+   "ai_use_firm__0-9": 24.3
   },
   {
    "date": "2026-02-28",
-   "ai_use__250": 67.2,
-   "ai_use__100-249": 59.4,
-   "ai_use__50-99": 52.7,
-   "ai_use__all-businesses": 34.9
+   "ai_use_firm__250": 44.6,
+   "ai_use_firm__100-249": 42.1,
+   "ai_use_firm__50-99": 39.3,
+   "ai_use_firm__10-49": 30.3,
+   "ai_use_firm__0-9": 25.1
   },
   {
    "date": "2026-05-31",
-   "ai_use__250": 72.0,
-   "ai_use__100-249": 63.1,
-   "ai_use__50-99": 57.8,
-   "ai_use__all-businesses": 34.7
+   "ai_use_firm__250": 48.6,
+   "ai_use_firm__100-249": 45.1,
+   "ai_use_firm__50-99": 42.7,
+   "ai_use_firm__10-49": 33.1,
+   "ai_use_firm__0-9": 28.2
   },
   {
    "date": "2026-08-31",
-   "ai_use__250": 74.9,
-   "ai_use__100-249": 66.8,
-   "ai_use__50-99": 60.7,
-   "ai_use__all-businesses": 35.9
+   "ai_use_firm__250": 50.9,
+   "ai_use_firm__100-249": 50.4,
+   "ai_use_firm__50-99": 45.8,
+   "ai_use_firm__10-49": 36.1,
+   "ai_use_firm__0-9": 28.7
   }
  ],
  "theme": "blue-amber",

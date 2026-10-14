@@ -6,7 +6,7 @@
  "freq": "irregular (BICS waves)",
  "units": "% of businesses",
  "source": "ONS Business Insights and Conditions Survey (BICS), weighted estimates",
- "note": "Share of businesses, each counted once whatever its size, so mostly small firms. As published: firms answering \"not sure\" are included in the base.",
+ "note": "Share of businesses, each counted once whatever its size, so mostly small firms. 100 minus the share saying they don't use (or plan to adopt) AI, so firms answering \"not sure\" are counted in.",
  "series": [
   {
    "key": "ai_use__all-businesses",
