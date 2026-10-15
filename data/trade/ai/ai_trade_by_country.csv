@@ -3159,11 +3159,11 @@ product,computer_systems,option1,EU,exports,2025-Q4,40.71
 product,computer_systems,option1,US,exports,2025-Q4,8.08
 product,computer_systems,option1,East Asia,exports,2025-Q4,4.82
 product,computer_systems,option1,Rest of world,exports,2025-Q4,11.84
-product,computer_systems,option1,EU,exports,2026-Q1,33.83
+product,computer_systems,option1,EU,exports,2026-Q1,34.0
 product,computer_systems,option1,US,exports,2026-Q1,5.9
 product,computer_systems,option1,East Asia,exports,2026-Q1,4.74
 product,computer_systems,option1,Rest of world,exports,2026-Q1,10.88
-product,computer_systems,option1,EU,exports,2026-Q2,37.63
+product,computer_systems,option1,EU,exports,2026-Q2,37.79
 product,computer_systems,option1,US,exports,2026-Q2,5.72
 product,computer_systems,option1,East Asia,exports,2026-Q2,5.44
 product,computer_systems,option1,Rest of world,exports,2026-Q2,20.21
@@ -4671,11 +4671,11 @@ product,computer_assemblies,option1,EU,exports,2025-Q4,153.18
 product,computer_assemblies,option1,US,exports,2025-Q4,15.43
 product,computer_assemblies,option1,East Asia,exports,2025-Q4,54.21
 product,computer_assemblies,option1,Rest of world,exports,2025-Q4,38.52
-product,computer_assemblies,option1,EU,exports,2026-Q1,172.71
+product,computer_assemblies,option1,EU,exports,2026-Q1,172.83
 product,computer_assemblies,option1,US,exports,2026-Q1,21.15
 product,computer_assemblies,option1,East Asia,exports,2026-Q1,77.79
 product,computer_assemblies,option1,Rest of world,exports,2026-Q1,54.24
-product,computer_assemblies,option1,EU,exports,2026-Q2,141.76
+product,computer_assemblies,option1,EU,exports,2026-Q2,141.84
 product,computer_assemblies,option1,US,exports,2026-Q2,34.7
 product,computer_assemblies,option1,East Asia,exports,2026-Q2,79.92
 product,computer_assemblies,option1,Rest of world,exports,2026-Q2,30.97
@@ -7123,7 +7123,7 @@ product,cameras,option1,EU,exports,2026-Q1,71.86
 product,cameras,option1,US,exports,2026-Q1,13.39
 product,cameras,option1,East Asia,exports,2026-Q1,9.99
 product,cameras,option1,Rest of world,exports,2026-Q1,25.0
-product,cameras,option1,EU,exports,2026-Q2,72.28
+product,cameras,option1,EU,exports,2026-Q2,72.3
 product,cameras,option1,US,exports,2026-Q2,13.23
 product,cameras,option1,East Asia,exports,2026-Q2,6.92
 product,cameras,option1,Rest of world,exports,2026-Q2,25.96
@@ -10575,11 +10575,11 @@ product,imf_hardware,option1,EU,exports,2025-Q4,726.38
 product,imf_hardware,option1,US,exports,2025-Q4,155.87
 product,imf_hardware,option1,East Asia,exports,2025-Q4,233.27
 product,imf_hardware,option1,Rest of world,exports,2025-Q4,312.08
-product,imf_hardware,option1,EU,exports,2026-Q1,1668.75
+product,imf_hardware,option1,EU,exports,2026-Q1,1668.87
 product,imf_hardware,option1,US,exports,2026-Q1,122.84
 product,imf_hardware,option1,East Asia,exports,2026-Q1,268.12
 product,imf_hardware,option1,Rest of world,exports,2026-Q1,325.09
-product,imf_hardware,option1,EU,exports,2026-Q2,980.22
+product,imf_hardware,option1,EU,exports,2026-Q2,980.3
 product,imf_hardware,option1,US,exports,2026-Q2,211.31
 product,imf_hardware,option1,East Asia,exports,2026-Q2,333.68
 product,imf_hardware,option1,Rest of world,exports,2026-Q2,422.67
@@ -10917,5 +10917,5 @@ product,imf_hardware,option1-origin,East Asia,imports,2026-Q1,784.8
 product,imf_hardware,option1-origin,Rest of world,imports,2026-Q1,598.81
 product,imf_hardware,option1-origin,EU,imports,2026-Q2,1438.04
 product,imf_hardware,option1-origin,US,imports,2026-Q2,376.5
-product,imf_hardware,option1-origin,East Asia,imports,2026-Q2,874.23
+product,imf_hardware,option1-origin,East Asia,imports,2026-Q2,874.24
 product,imf_hardware,option1-origin,Rest of world,imports,2026-Q2,999.47

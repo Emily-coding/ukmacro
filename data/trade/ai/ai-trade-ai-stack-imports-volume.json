@@ -45,72 +45,72 @@
  "data": [
   {
    "date": "2016",
-   "imf": 5.6,
-   "ons_products": 18.23,
-   "rest": 77.78,
+   "imf": 5.59,
+   "ons_products": 18.14,
+   "rest": 77.91,
    "services": 18.99
   },
   {
    "date": "2017",
-   "imf": 5.46,
-   "ons_products": 20.22,
-   "rest": 79.48,
+   "imf": 5.44,
+   "ons_products": 20.13,
+   "rest": 79.5,
    "services": 21.22
   },
   {
    "date": "2018",
-   "imf": 6.43,
-   "ons_products": 22.63,
-   "rest": 81.82,
+   "imf": 6.4,
+   "ons_products": 22.51,
+   "rest": 81.72,
    "services": 24.44
   },
   {
    "date": "2019",
    "imf": 6.14,
    "ons_products": 23.47,
-   "rest": 82.9,
+   "rest": 82.91,
    "services": 27.63
   },
   {
    "date": "2020",
-   "imf": 6.3,
-   "ons_products": 25.15,
-   "rest": 71.51,
+   "imf": 6.27,
+   "ons_products": 25.06,
+   "rest": 71.17,
    "services": 29.38
   },
   {
    "date": "2021",
-   "imf": 5.65,
-   "ons_products": 24.6,
-   "rest": 84.42,
+   "imf": 5.62,
+   "ons_products": 24.52,
+   "rest": 84.22,
    "services": 28.38
   },
   {
    "date": "2022",
-   "imf": 7.06,
-   "ons_products": 27.05,
-   "rest": 92.74,
+   "imf": 7.2,
+   "ons_products": 27.64,
+   "rest": 93.33,
    "services": 30.83
   },
   {
    "date": "2023",
-   "imf": 6.85,
-   "ons_products": 23.8,
-   "rest": 93.07,
+   "imf": 6.92,
+   "ons_products": 24.12,
+   "rest": 93.6,
    "services": 33.3
   },
   {
    "date": "2024",
-   "imf": 7.0,
-   "ons_products": 22.58,
-   "rest": 91.01,
+   "imf": 7.42,
+   "ons_products": 23.91,
+   "rest": 92.32,
    "services": 36.09
   },
   {
    "date": "2025",
-   "imf": 9.67,
-   "ons_products": 23.86,
-   "rest": 94.07,
+   "imf": 10.24,
+   "ons_products": 25.27,
+   "rest": 95.41,
    "services": 38.8
   }
  ],

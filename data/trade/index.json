@@ -5,15 +5,15 @@
   {
    "slug": "trade-flows",
    "title": "Exports and imports of goods and services",
-   "data_through": "2026-07",
-   "next_release": "2026-10-15",
+   "data_through": "2026-08",
+   "next_release": "2026-11-12",
    "status": "ok"
   },
   {
    "slug": "trade-balance",
    "title": "Trade balance, goods and services",
-   "data_through": "2026-07",
-   "next_release": "2026-10-15",
+   "data_through": "2026-08",
+   "next_release": "2026-11-12",
    "status": "ok"
   }
  ]
