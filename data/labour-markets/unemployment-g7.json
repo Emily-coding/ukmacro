@@ -54,7 +54,7 @@
    "key": "can",
    "label": "Canada",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   }
  ],
@@ -990,7 +990,7 @@
    "fra": null,
    "ita": null,
    "jpn": null,
-   "can": null
+   "can": 6.5
   }
  ],
  "theme": "blue-amber",
