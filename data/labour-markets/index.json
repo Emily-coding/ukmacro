@@ -5,29 +5,29 @@
   {
    "slug": "lm-rates",
    "title": "Employment and inactivity rates, aged 16-64",
-   "data_through": "2026-06",
-   "next_release": "2026-10-20",
+   "data_through": "2026-07",
+   "next_release": "2026-11-17",
    "status": "ok"
   },
   {
    "slug": "unemployment",
    "title": "Unemployment rate, aged 16+",
-   "data_through": "2026-06",
-   "next_release": "2026-10-20",
+   "data_through": "2026-07",
+   "next_release": "2026-11-17",
    "status": "ok"
   },
   {
    "slug": "vacancies",
    "title": "Vacancies",
-   "data_through": "2026-07",
-   "next_release": "2026-10-20",
+   "data_through": "2026-08",
+   "next_release": "2026-11-17",
    "status": "ok"
   },
   {
    "slug": "pay-growth",
    "title": "Average weekly earnings growth, whole economy",
-   "data_through": "2026-07",
-   "next_release": "2026-10-20",
+   "data_through": "2026-08",
+   "next_release": "2026-11-17",
    "status": "ok"
   },
   {

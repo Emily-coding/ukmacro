@@ -28,7 +28,7 @@
    "date": "Total change",
    "lfs_age_sex": -0.92,
    "lfs_age": -0.92,
-   "rti_age": -0.65
+   "rti_age": -0.63
   },
   {
    "date": "Composition",
@@ -40,7 +40,7 @@
    "date": "Within-group",
    "lfs_age_sex": -0.08,
    "lfs_age": -0.08,
-   "rti_age": 0.17
+   "rti_age": 0.18
   }
  ],
  "theme": "blue-amber",

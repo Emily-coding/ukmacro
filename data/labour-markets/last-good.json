@@ -1,6 +1,6 @@
 {
 "lm-rates/employment": {
-"next_release": "2026-10-20",
+"next_release": "2026-11-17",
 "obs": [
 [
 "1971-02",
@@ -2661,13 +2661,17 @@
 [
 "2026-06",
 75.1
+],
+[
+"2026-07",
+75.3
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/lf24/lms",
-"stored": "2026-10-08"
+"stored": "2026-10-20"
 },
 "lm-rates/inactivity": {
-"next_release": "2026-10-20",
+"next_release": "2026-11-17",
 "obs": [
 [
 "1971-02",
@@ -5328,13 +5332,17 @@
 [
 "2026-06",
 20.9
+],
+[
+"2026-07",
+20.9
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms",
-"stored": "2026-10-08"
+"stored": "2026-10-20"
 },
 "pay-growth/awe_total": {
-"next_release": "2026-10-20",
+"next_release": "2026-11-17",
 "obs": [
 [
 "2001-03",
@@ -6506,7 +6514,7 @@
 ],
 [
 "2025-07",
-4.9
+4.8
 ],
 [
 "2025-08",
@@ -6555,10 +6563,14 @@
 [
 "2026-07",
 3.9
+],
+[
+"2026-08",
+3.7
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kac3/lms",
-"stored": "2026-10-08"
+"stored": "2026-10-20"
 },
 "unemployment-g7/can": {
 "obs": [
@@ -9175,7 +9187,7 @@
 "stored": "2026-10-08"
 },
 "unemployment/unemployment": {
-"next_release": "2026-10-20",
+"next_release": "2026-11-17",
 "obs": [
 [
 "1971-02",
@@ -11836,13 +11848,17 @@
 [
 "2026-06",
 4.9
+],
+[
+"2026-07",
+4.7
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms",
-"stored": "2026-10-08"
+"stored": "2026-10-20"
 },
 "vacancies/vacancies": {
-"next_release": "2026-10-20",
+"next_release": "2026-11-17",
 "obs": [
 [
 "2001-05",
@@ -13010,7 +13026,7 @@
 ],
 [
 "2025-08",
-729.0
+728.0
 ],
 [
 "2025-09",
@@ -13050,14 +13066,18 @@
 ],
 [
 "2026-06",
-706.0
+707.0
 ],
 [
 "2026-07",
-702.0
+704.0
+],
+[
+"2026-08",
+691.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms",
-"stored": "2026-10-08"
+"stored": "2026-10-20"
 }
 }
