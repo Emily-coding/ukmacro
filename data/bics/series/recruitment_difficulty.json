@@ -21,7 +21,7 @@
    "question": "Did your business experience any difficulties recruiting employees in [month] [year]?",
    "population": "As a percentage of businesses not permanently stopped trading",
    "weighting": "count",
-   "waves_used": "55-164 (57)"
+   "waves_used": "55-166 (58)"
   }
  ],
  "version_breaks": [],
@@ -132,7 +132,7 @@
    "group": "industry"
   }
  ],
- "data_through": "2026-08-31",
+ "data_through": "2026-09-30",
  "status": "ok",
  "data": [
   {
@@ -1486,6 +1486,29 @@
    "professional-scientific-and-technical-activities": 4.6,
    "transportation-and-storage": 4.6,
    "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 5.7
+  },
+  {
+   "date": "2026-09-30",
+   "wave": 166,
+   "0-9": 5.9,
+   "10-49": 17.2,
+   "100-249": 16.9,
+   "250": 12.1,
+   "50-99": 17.9,
+   "accommodation-and-food-service-activities": 12.7,
+   "administrative-and-support-service-activities": 8.1,
+   "all-businesses": 7.1,
+   "all-size-bands-excluding-0-9": 17.1,
+   "arts-entertainment-and-recreation": 1.1,
+   "construction": 11.5,
+   "education": 8.6,
+   "human-health-and-social-work-activities": 4.4,
+   "information-and-communication": 2.9,
+   "manufacturing": 7.6,
+   "other-service-activities": 7.6,
+   "professional-scientific-and-technical-activities": 4.6,
+   "transportation-and-storage": 1.8,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 8.1
   }
  ]
 }
