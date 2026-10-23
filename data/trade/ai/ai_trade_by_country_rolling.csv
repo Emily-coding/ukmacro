@@ -40,129 +40,133 @@ services,core,option1,EU,exports,2025-Q2,10266.0,37343.0
 services,core,option1,EU,exports,2025-Q3,9887.0,38276.0
 services,core,option1,EU,exports,2025-Q4,10564.0,39984.0
 services,core,option1,EU,exports,2026-Q1,10472.0,41189.0
-services,core,option1,US,exports,2016-Q1,1967.5,
-services,core,option1,US,exports,2016-Q2,2091.0,
-services,core,option1,US,exports,2016-Q3,1996.4,
-services,core,option1,US,exports,2016-Q4,2294.3,8349.2
-services,core,option1,US,exports,2017-Q1,2333.6,8715.3
-services,core,option1,US,exports,2017-Q2,2175.8,8800.1
-services,core,option1,US,exports,2017-Q3,2600.2,9403.9
-services,core,option1,US,exports,2017-Q4,2253.5,9363.1
-services,core,option1,US,exports,2018-Q1,2229.1,9258.6
-services,core,option1,US,exports,2018-Q2,2297.8,9380.6
-services,core,option1,US,exports,2018-Q3,2627.3,9407.7
-services,core,option1,US,exports,2018-Q4,2708.3,9862.5
-services,core,option1,US,exports,2019-Q1,2531.9,10165.3
-services,core,option1,US,exports,2019-Q2,2598.3,10465.8
-services,core,option1,US,exports,2019-Q3,2558.3,10396.8
-services,core,option1,US,exports,2019-Q4,2745.0,10433.5
-services,core,option1,US,exports,2020-Q1,2396.1,10297.7
-services,core,option1,US,exports,2020-Q2,2481.0,10180.4
-services,core,option1,US,exports,2020-Q3,2186.3,9808.4
-services,core,option1,US,exports,2020-Q4,2769.4,9832.8
-services,core,option1,US,exports,2021-Q1,2536.9,9973.6
-services,core,option1,US,exports,2021-Q2,2793.1,10285.7
-services,core,option1,US,exports,2021-Q3,2741.7,10841.1
-services,core,option1,US,exports,2021-Q4,3736.9,11808.6
-services,core,option1,US,exports,2022-Q1,3305.3,12577.0
-services,core,option1,US,exports,2022-Q2,3854.6,13638.5
-services,core,option1,US,exports,2022-Q3,3539.8,14436.6
-services,core,option1,US,exports,2022-Q4,4266.9,14966.6
-services,core,option1,US,exports,2023-Q1,4105.2,15766.5
-services,core,option1,US,exports,2023-Q2,3680.3,15592.2
-services,core,option1,US,exports,2023-Q3,3832.2,15884.6
-services,core,option1,US,exports,2023-Q4,4105.3,15723.0
-services,core,option1,US,exports,2024-Q1,4090.7,15708.5
-services,core,option1,US,exports,2024-Q2,4322.3,16350.5
-services,core,option1,US,exports,2024-Q3,4029.6,16547.9
-services,core,option1,US,exports,2024-Q4,4205.2,16647.8
-services,core,option1,US,exports,2025-Q1,4487.2,17044.3
-services,core,option1,US,exports,2025-Q2,4515.3,17237.3
-services,core,option1,US,exports,2025-Q3,5014.5,18222.2
-services,core,option1,US,exports,2025-Q4,5221.7,19238.7
-services,core,option1,US,exports,2026-Q1,4964.2,19715.7
-services,core,option1,East Asia,exports,2016-Q1,413.0,
-services,core,option1,East Asia,exports,2016-Q2,431.8,
-services,core,option1,East Asia,exports,2016-Q3,415.1,
-services,core,option1,East Asia,exports,2016-Q4,478.7,1738.6
-services,core,option1,East Asia,exports,2017-Q1,523.0,1848.6
-services,core,option1,East Asia,exports,2017-Q2,524.0,1940.8
-services,core,option1,East Asia,exports,2017-Q3,578.7,2104.4
-services,core,option1,East Asia,exports,2017-Q4,508.8,2134.5
-services,core,option1,East Asia,exports,2018-Q1,664.5,2276.0
-services,core,option1,East Asia,exports,2018-Q2,562.6,2314.6
-services,core,option1,East Asia,exports,2018-Q3,841.9,2577.8
-services,core,option1,East Asia,exports,2018-Q4,1065.2,3134.2
-services,core,option1,East Asia,exports,2019-Q1,959.9,3429.6
-services,core,option1,East Asia,exports,2019-Q2,958.9,3825.9
-services,core,option1,East Asia,exports,2019-Q3,888.9,3872.9
-services,core,option1,East Asia,exports,2019-Q4,891.8,3699.5
-services,core,option1,East Asia,exports,2020-Q1,1240.6,3980.2
-services,core,option1,East Asia,exports,2020-Q2,867.7,3889.0
-services,core,option1,East Asia,exports,2020-Q3,1150.2,4150.3
-services,core,option1,East Asia,exports,2020-Q4,918.7,4177.2
-services,core,option1,East Asia,exports,2021-Q1,830.2,3766.8
-services,core,option1,East Asia,exports,2021-Q2,1418.1,4317.2
-services,core,option1,East Asia,exports,2021-Q3,1029.6,4196.6
-services,core,option1,East Asia,exports,2021-Q4,906.0,4183.9
-services,core,option1,East Asia,exports,2022-Q1,1011.0,4364.7
-services,core,option1,East Asia,exports,2022-Q2,1226.2,4172.8
-services,core,option1,East Asia,exports,2022-Q3,1236.7,4379.9
-services,core,option1,East Asia,exports,2022-Q4,1223.5,4697.4
-services,core,option1,East Asia,exports,2023-Q1,1242.1,4928.5
-services,core,option1,East Asia,exports,2023-Q2,937.0,4639.3
-services,core,option1,East Asia,exports,2023-Q3,843.2,4245.8
-services,core,option1,East Asia,exports,2023-Q4,852.3,3874.6
-services,core,option1,East Asia,exports,2024-Q1,1088.9,3721.4
-services,core,option1,East Asia,exports,2024-Q2,1079.1,3863.5
-services,core,option1,East Asia,exports,2024-Q3,1077.2,4097.5
-services,core,option1,East Asia,exports,2024-Q4,1086.8,4332.0
-services,core,option1,East Asia,exports,2025-Q1,945.1,4188.2
-services,core,option1,East Asia,exports,2025-Q2,881.1,3990.2
-services,core,option1,East Asia,exports,2025-Q3,792.5,3705.5
-services,core,option1,East Asia,exports,2025-Q4,902.4,3521.1
-services,core,option1,East Asia,exports,2026-Q1,1155.3,3731.3
-services,core,option1,Rest of world,exports,2016-Q1,2776.4,
-services,core,option1,Rest of world,exports,2016-Q2,2943.1,
-services,core,option1,Rest of world,exports,2016-Q3,2807.5,
-services,core,option1,Rest of world,exports,2016-Q4,3271.1,11798.1
-services,core,option1,Rest of world,exports,2017-Q1,3350.4,12372.1
-services,core,option1,Rest of world,exports,2017-Q2,3665.2,13094.2
-services,core,option1,Rest of world,exports,2017-Q3,3510.1,13796.8
-services,core,option1,Rest of world,exports,2017-Q4,3398.7,13924.4
-services,core,option1,Rest of world,exports,2018-Q1,3653.4,14227.4
-services,core,option1,Rest of world,exports,2018-Q2,3573.6,14135.8
-services,core,option1,Rest of world,exports,2018-Q3,3664.8,14290.5
-services,core,option1,Rest of world,exports,2018-Q4,4072.5,14964.3
-services,core,option1,Rest of world,exports,2019-Q1,3346.1,14657.0
-services,core,option1,Rest of world,exports,2019-Q2,3734.8,14818.2
-services,core,option1,Rest of world,exports,2019-Q3,3729.8,14883.2
-services,core,option1,Rest of world,exports,2019-Q4,3836.3,14647.0
-services,core,option1,Rest of world,exports,2020-Q1,3622.3,14923.2
-services,core,option1,Rest of world,exports,2020-Q2,3406.3,14594.7
-services,core,option1,Rest of world,exports,2020-Q3,3850.5,14715.4
-services,core,option1,Rest of world,exports,2020-Q4,3726.9,14606.0
-services,core,option1,Rest of world,exports,2021-Q1,3174.8,14158.5
-services,core,option1,Rest of world,exports,2021-Q2,3589.8,14342.0
-services,core,option1,Rest of world,exports,2021-Q3,3431.7,13923.2
-services,core,option1,Rest of world,exports,2021-Q4,3907.1,14103.4
-services,core,option1,Rest of world,exports,2022-Q1,3120.7,14049.3
-services,core,option1,Rest of world,exports,2022-Q2,3611.2,14070.7
-services,core,option1,Rest of world,exports,2022-Q3,4303.5,14942.5
-services,core,option1,Rest of world,exports,2022-Q4,5044.6,16080.0
-services,core,option1,Rest of world,exports,2023-Q1,4649.7,17609.0
-services,core,option1,Rest of world,exports,2023-Q2,4877.7,18875.5
-services,core,option1,Rest of world,exports,2023-Q3,4934.5,19506.5
-services,core,option1,Rest of world,exports,2023-Q4,4604.4,19066.3
-services,core,option1,Rest of world,exports,2024-Q1,4526.4,18943.0
-services,core,option1,Rest of world,exports,2024-Q2,4134.5,18199.8
-services,core,option1,Rest of world,exports,2024-Q3,4145.3,17410.6
-services,core,option1,Rest of world,exports,2024-Q4,4390.0,17196.2
-services,core,option1,Rest of world,exports,2025-Q1,4755.8,17425.6
-services,core,option1,Rest of world,exports,2025-Q2,5363.6,18654.7
-services,core,option1,Rest of world,exports,2025-Q3,5470.0,19979.4
-services,core,option1,Rest of world,exports,2025-Q4,5930.8,21520.2
-services,core,option1,Rest of world,exports,2026-Q1,5416.5,22180.9
+services,core,option1,EU,exports,2026-Q2,10760.0,41683.0
+services,core,option1,US,exports,2016-Q1,1959.5,
+services,core,option1,US,exports,2016-Q2,2084.0,
+services,core,option1,US,exports,2016-Q3,1993.2,
+services,core,option1,US,exports,2016-Q4,2294.7,8331.4
+services,core,option1,US,exports,2017-Q1,2327.3,8699.2
+services,core,option1,US,exports,2017-Q2,2177.4,8792.6
+services,core,option1,US,exports,2017-Q3,2603.2,9402.6
+services,core,option1,US,exports,2017-Q4,2254.7,9362.6
+services,core,option1,US,exports,2018-Q1,2227.8,9263.1
+services,core,option1,US,exports,2018-Q2,2309.1,9394.8
+services,core,option1,US,exports,2018-Q3,2505.2,9296.8
+services,core,option1,US,exports,2018-Q4,2712.0,9754.1
+services,core,option1,US,exports,2019-Q1,2531.7,10058.0
+services,core,option1,US,exports,2019-Q2,2596.2,10345.1
+services,core,option1,US,exports,2019-Q3,2565.6,10405.5
+services,core,option1,US,exports,2019-Q4,2735.9,10429.4
+services,core,option1,US,exports,2020-Q1,2443.4,10341.1
+services,core,option1,US,exports,2020-Q2,2570.5,10315.4
+services,core,option1,US,exports,2020-Q3,2447.4,10197.2
+services,core,option1,US,exports,2020-Q4,3011.9,10473.2
+services,core,option1,US,exports,2021-Q1,2537.1,10566.9
+services,core,option1,US,exports,2021-Q2,2787.7,10784.1
+services,core,option1,US,exports,2021-Q3,2746.4,11083.1
+services,core,option1,US,exports,2021-Q4,3737.9,11809.1
+services,core,option1,US,exports,2022-Q1,3315.5,12587.5
+services,core,option1,US,exports,2022-Q2,3860.3,13660.1
+services,core,option1,US,exports,2022-Q3,3551.2,14464.9
+services,core,option1,US,exports,2022-Q4,4278.9,15005.9
+services,core,option1,US,exports,2023-Q1,4087.3,15777.7
+services,core,option1,US,exports,2023-Q2,3711.2,15628.6
+services,core,option1,US,exports,2023-Q3,3868.1,15945.5
+services,core,option1,US,exports,2023-Q4,4121.2,15787.8
+services,core,option1,US,exports,2024-Q1,4079.9,15780.4
+services,core,option1,US,exports,2024-Q2,4250.0,16319.2
+services,core,option1,US,exports,2024-Q3,3996.5,16447.6
+services,core,option1,US,exports,2024-Q4,4175.7,16502.1
+services,core,option1,US,exports,2025-Q1,4502.8,16925.0
+services,core,option1,US,exports,2025-Q2,4453.9,17128.9
+services,core,option1,US,exports,2025-Q3,4877.0,18009.4
+services,core,option1,US,exports,2025-Q4,5224.8,19058.5
+services,core,option1,US,exports,2026-Q1,4824.4,19380.1
+services,core,option1,US,exports,2026-Q2,4973.4,19899.6
+services,core,option1,East Asia,exports,2016-Q1,409.2,
+services,core,option1,East Asia,exports,2016-Q2,435.1,
+services,core,option1,East Asia,exports,2016-Q3,415.6,
+services,core,option1,East Asia,exports,2016-Q4,482.9,1742.8
+services,core,option1,East Asia,exports,2017-Q1,444.1,1777.7
+services,core,option1,East Asia,exports,2017-Q2,960.1,2302.7
+services,core,option1,East Asia,exports,2017-Q3,691.1,2578.2
+services,core,option1,East Asia,exports,2017-Q4,479.9,2575.2
+services,core,option1,East Asia,exports,2018-Q1,673.1,2804.2
+services,core,option1,East Asia,exports,2018-Q2,607.2,2451.3
+services,core,option1,East Asia,exports,2018-Q3,789.9,2550.1
+services,core,option1,East Asia,exports,2018-Q4,873.6,2943.8
+services,core,option1,East Asia,exports,2019-Q1,860.6,3131.3
+services,core,option1,East Asia,exports,2019-Q2,839.9,3364.0
+services,core,option1,East Asia,exports,2019-Q3,895.1,3469.2
+services,core,option1,East Asia,exports,2019-Q4,896.1,3491.7
+services,core,option1,East Asia,exports,2020-Q1,1188.4,3819.5
+services,core,option1,East Asia,exports,2020-Q2,842.6,3822.2
+services,core,option1,East Asia,exports,2020-Q3,1145.1,4072.2
+services,core,option1,East Asia,exports,2020-Q4,936.8,4112.9
+services,core,option1,East Asia,exports,2021-Q1,866.8,3791.3
+services,core,option1,East Asia,exports,2021-Q2,1510.1,4458.8
+services,core,option1,East Asia,exports,2021-Q3,1004.7,4318.4
+services,core,option1,East Asia,exports,2021-Q4,1150.3,4531.9
+services,core,option1,East Asia,exports,2022-Q1,1049.3,4714.4
+services,core,option1,East Asia,exports,2022-Q2,1134.8,4339.1
+services,core,option1,East Asia,exports,2022-Q3,1255.3,4589.7
+services,core,option1,East Asia,exports,2022-Q4,1296.4,4735.8
+services,core,option1,East Asia,exports,2023-Q1,1441.9,5128.4
+services,core,option1,East Asia,exports,2023-Q2,856.4,4850.0
+services,core,option1,East Asia,exports,2023-Q3,835.5,4430.2
+services,core,option1,East Asia,exports,2023-Q4,850.6,3984.4
+services,core,option1,East Asia,exports,2024-Q1,856.9,3399.4
+services,core,option1,East Asia,exports,2024-Q2,901.0,3444.0
+services,core,option1,East Asia,exports,2024-Q3,756.7,3365.2
+services,core,option1,East Asia,exports,2024-Q4,841.6,3356.2
+services,core,option1,East Asia,exports,2025-Q1,839.0,3338.3
+services,core,option1,East Asia,exports,2025-Q2,1004.8,3442.1
+services,core,option1,East Asia,exports,2025-Q3,1035.6,3721.0
+services,core,option1,East Asia,exports,2025-Q4,1103.5,3982.9
+services,core,option1,East Asia,exports,2026-Q1,1140.9,4284.8
+services,core,option1,East Asia,exports,2026-Q2,1125.5,4405.5
+services,core,option1,Rest of world,exports,2016-Q1,2788.3,
+services,core,option1,Rest of world,exports,2016-Q2,2947.0,
+services,core,option1,Rest of world,exports,2016-Q3,2810.3,
+services,core,option1,Rest of world,exports,2016-Q4,3266.4,11812.0
+services,core,option1,Rest of world,exports,2017-Q1,3435.5,12459.2
+services,core,option1,Rest of world,exports,2017-Q2,3227.5,12739.7
+services,core,option1,Rest of world,exports,2017-Q3,3394.7,13324.1
+services,core,option1,Rest of world,exports,2017-Q4,3426.4,13484.1
+services,core,option1,Rest of world,exports,2018-Q1,3646.0,13694.6
+services,core,option1,Rest of world,exports,2018-Q2,3517.7,13984.8
+services,core,option1,Rest of world,exports,2018-Q3,3838.8,14428.9
+services,core,option1,Rest of world,exports,2018-Q4,4260.4,15262.9
+services,core,option1,Rest of world,exports,2019-Q1,3445.6,15062.5
+services,core,option1,Rest of world,exports,2019-Q2,3855.9,15400.7
+services,core,option1,Rest of world,exports,2019-Q3,3716.3,15278.2
+services,core,option1,Rest of world,exports,2019-Q4,3840.9,14858.7
+services,core,option1,Rest of world,exports,2020-Q1,3627.2,15040.3
+services,core,option1,Rest of world,exports,2020-Q2,3341.9,14526.3
+services,core,option1,Rest of world,exports,2020-Q3,3594.4,14404.4
+services,core,option1,Rest of world,exports,2020-Q4,3466.3,14029.8
+services,core,option1,Rest of world,exports,2021-Q1,3138.0,13540.6
+services,core,option1,Rest of world,exports,2021-Q2,3503.2,13701.9
+services,core,option1,Rest of world,exports,2021-Q3,3451.8,13559.3
+services,core,option1,Rest of world,exports,2021-Q4,3661.8,13754.8
+services,core,option1,Rest of world,exports,2022-Q1,3072.2,13689.0
+services,core,option1,Rest of world,exports,2022-Q2,3696.9,13882.7
+services,core,option1,Rest of world,exports,2022-Q3,4273.5,14704.4
+services,core,option1,Rest of world,exports,2022-Q4,4959.6,16002.2
+services,core,option1,Rest of world,exports,2023-Q1,4467.9,17397.9
+services,core,option1,Rest of world,exports,2023-Q2,4927.4,18628.4
+services,core,option1,Rest of world,exports,2023-Q3,4906.4,19261.3
+services,core,option1,Rest of world,exports,2023-Q4,4590.2,18891.9
+services,core,option1,Rest of world,exports,2024-Q1,4769.1,19193.1
+services,core,option1,Rest of world,exports,2024-Q2,4385.0,18650.7
+services,core,option1,Rest of world,exports,2024-Q3,4498.8,18243.1
+services,core,option1,Rest of world,exports,2024-Q4,4664.7,18317.6
+services,core,option1,Rest of world,exports,2025-Q1,4846.3,18394.8
+services,core,option1,Rest of world,exports,2025-Q2,5301.3,19311.1
+services,core,option1,Rest of world,exports,2025-Q3,5364.3,20176.6
+services,core,option1,Rest of world,exports,2025-Q4,5726.7,21238.6
+services,core,option1,Rest of world,exports,2026-Q1,5570.7,21963.0
+services,core,option1,Rest of world,exports,2026-Q2,5727.1,22388.8
 services,core,option1,EU,imports,2016-Q1,2043.0,
 services,core,option1,EU,imports,2016-Q2,2027.0,
 services,core,option1,EU,imports,2016-Q3,2410.0,
@@ -204,129 +208,133 @@ services,core,option1,EU,imports,2025-Q2,3736.0,14626.0
 services,core,option1,EU,imports,2025-Q3,3954.0,15095.0
 services,core,option1,EU,imports,2025-Q4,4208.0,15710.0
 services,core,option1,EU,imports,2026-Q1,4154.0,16052.0
-services,core,option1,US,imports,2016-Q1,1106.4,
-services,core,option1,US,imports,2016-Q2,1128.3,
-services,core,option1,US,imports,2016-Q3,1338.5,
-services,core,option1,US,imports,2016-Q4,1388.4,4961.6
-services,core,option1,US,imports,2017-Q1,1447.0,5302.2
-services,core,option1,US,imports,2017-Q2,1347.7,5521.6
-services,core,option1,US,imports,2017-Q3,1462.5,5645.6
-services,core,option1,US,imports,2017-Q4,1410.2,5667.4
-services,core,option1,US,imports,2018-Q1,1360.8,5581.2
-services,core,option1,US,imports,2018-Q2,1373.8,5607.3
-services,core,option1,US,imports,2018-Q3,1396.0,5540.8
-services,core,option1,US,imports,2018-Q4,1537.8,5668.4
-services,core,option1,US,imports,2019-Q1,1612.9,5920.5
-services,core,option1,US,imports,2019-Q2,1626.1,6172.8
-services,core,option1,US,imports,2019-Q3,1634.9,6411.7
-services,core,option1,US,imports,2019-Q4,1618.0,6491.9
-services,core,option1,US,imports,2020-Q1,1586.0,6465.0
-services,core,option1,US,imports,2020-Q2,1634.3,6473.2
-services,core,option1,US,imports,2020-Q3,1594.6,6432.9
-services,core,option1,US,imports,2020-Q4,1865.7,6680.6
-services,core,option1,US,imports,2021-Q1,1596.5,6691.1
-services,core,option1,US,imports,2021-Q2,1853.7,6910.5
-services,core,option1,US,imports,2021-Q3,1862.9,7178.8
-services,core,option1,US,imports,2021-Q4,1999.1,7312.2
-services,core,option1,US,imports,2022-Q1,2081.3,7797.0
-services,core,option1,US,imports,2022-Q2,2446.3,8389.6
-services,core,option1,US,imports,2022-Q3,2552.1,9078.8
-services,core,option1,US,imports,2022-Q4,2257.1,9336.8
-services,core,option1,US,imports,2023-Q1,2150.4,9405.9
-services,core,option1,US,imports,2023-Q2,2299.1,9258.7
-services,core,option1,US,imports,2023-Q3,2591.0,9297.6
-services,core,option1,US,imports,2023-Q4,2764.2,9804.7
-services,core,option1,US,imports,2024-Q1,2772.0,10426.3
-services,core,option1,US,imports,2024-Q2,2791.5,10918.7
-services,core,option1,US,imports,2024-Q3,2806.7,11134.4
-services,core,option1,US,imports,2024-Q4,3093.8,11464.0
-services,core,option1,US,imports,2025-Q1,3102.6,11794.6
-services,core,option1,US,imports,2025-Q2,3152.6,12155.7
-services,core,option1,US,imports,2025-Q3,3344.5,12693.5
-services,core,option1,US,imports,2025-Q4,3251.9,12851.6
-services,core,option1,US,imports,2026-Q1,3422.4,13171.4
-services,core,option1,East Asia,imports,2016-Q1,416.1,
-services,core,option1,East Asia,imports,2016-Q2,426.4,
-services,core,option1,East Asia,imports,2016-Q3,487.4,
-services,core,option1,East Asia,imports,2016-Q4,504.1,1834.0
-services,core,option1,East Asia,imports,2017-Q1,538.6,1956.5
-services,core,option1,East Asia,imports,2017-Q2,534.0,2064.1
-services,core,option1,East Asia,imports,2017-Q3,597.6,2174.3
-services,core,option1,East Asia,imports,2017-Q4,595.4,2265.6
-services,core,option1,East Asia,imports,2018-Q1,540.6,2267.6
-services,core,option1,East Asia,imports,2018-Q2,529.9,2263.5
-services,core,option1,East Asia,imports,2018-Q3,620.3,2286.2
-services,core,option1,East Asia,imports,2018-Q4,704.8,2395.6
-services,core,option1,East Asia,imports,2019-Q1,750.0,2605.0
-services,core,option1,East Asia,imports,2019-Q2,835.0,2910.1
-services,core,option1,East Asia,imports,2019-Q3,841.6,3131.4
-services,core,option1,East Asia,imports,2019-Q4,763.5,3190.1
-services,core,option1,East Asia,imports,2020-Q1,834.8,3274.9
-services,core,option1,East Asia,imports,2020-Q2,1064.5,3504.4
-services,core,option1,East Asia,imports,2020-Q3,987.7,3650.5
-services,core,option1,East Asia,imports,2020-Q4,1078.9,3965.9
-services,core,option1,East Asia,imports,2021-Q1,849.4,3980.5
-services,core,option1,East Asia,imports,2021-Q2,878.4,3794.4
-services,core,option1,East Asia,imports,2021-Q3,865.9,3672.6
-services,core,option1,East Asia,imports,2021-Q4,879.3,3473.0
-services,core,option1,East Asia,imports,2022-Q1,910.3,3533.9
-services,core,option1,East Asia,imports,2022-Q2,1069.4,3724.9
-services,core,option1,East Asia,imports,2022-Q3,765.2,3624.2
-services,core,option1,East Asia,imports,2022-Q4,763.7,3508.6
-services,core,option1,East Asia,imports,2023-Q1,844.4,3442.7
-services,core,option1,East Asia,imports,2023-Q2,1241.3,3614.6
-services,core,option1,East Asia,imports,2023-Q3,1046.9,3896.3
-services,core,option1,East Asia,imports,2023-Q4,1008.6,4141.2
-services,core,option1,East Asia,imports,2024-Q1,1135.3,4432.1
-services,core,option1,East Asia,imports,2024-Q2,1313.0,4503.8
-services,core,option1,East Asia,imports,2024-Q3,1380.1,4837.0
-services,core,option1,East Asia,imports,2024-Q4,1396.4,5224.8
-services,core,option1,East Asia,imports,2025-Q1,1412.1,5501.6
-services,core,option1,East Asia,imports,2025-Q2,1501.5,5690.1
-services,core,option1,East Asia,imports,2025-Q3,1613.7,5923.7
-services,core,option1,East Asia,imports,2025-Q4,1555.0,6082.3
-services,core,option1,East Asia,imports,2026-Q1,1365.0,6035.2
-services,core,option1,Rest of world,imports,2016-Q1,987.5,
-services,core,option1,Rest of world,imports,2016-Q2,994.3,
-services,core,option1,Rest of world,imports,2016-Q3,1186.1,
-services,core,option1,Rest of world,imports,2016-Q4,1227.5,4395.4
-services,core,option1,Rest of world,imports,2017-Q1,1258.4,4666.3
-services,core,option1,Rest of world,imports,2017-Q2,1247.3,4919.3
-services,core,option1,Rest of world,imports,2017-Q3,1296.9,5030.1
-services,core,option1,Rest of world,imports,2017-Q4,1313.4,5116.0
-services,core,option1,Rest of world,imports,2018-Q1,1196.6,5054.2
-services,core,option1,Rest of world,imports,2018-Q2,1222.3,5029.2
-services,core,option1,Rest of world,imports,2018-Q3,1231.8,4964.1
-services,core,option1,Rest of world,imports,2018-Q4,1436.3,5087.0
-services,core,option1,Rest of world,imports,2019-Q1,1338.1,5228.5
-services,core,option1,Rest of world,imports,2019-Q2,1578.9,5585.1
-services,core,option1,Rest of world,imports,2019-Q3,1514.5,5867.8
-services,core,option1,Rest of world,imports,2019-Q4,1322.4,5753.9
-services,core,option1,Rest of world,imports,2020-Q1,1328.3,5744.1
-services,core,option1,Rest of world,imports,2020-Q2,1533.1,5698.3
-services,core,option1,Rest of world,imports,2020-Q3,1539.8,5723.6
-services,core,option1,Rest of world,imports,2020-Q4,1555.4,5956.6
-services,core,option1,Rest of world,imports,2021-Q1,1248.2,5876.5
-services,core,option1,Rest of world,imports,2021-Q2,1286.9,5630.3
-services,core,option1,Rest of world,imports,2021-Q3,1270.2,5360.7
-services,core,option1,Rest of world,imports,2021-Q4,1348.6,5153.9
-services,core,option1,Rest of world,imports,2022-Q1,1205.4,5111.1
-services,core,option1,Rest of world,imports,2022-Q2,1378.3,5202.5
-services,core,option1,Rest of world,imports,2022-Q3,1648.7,5581.0
-services,core,option1,Rest of world,imports,2022-Q4,1701.2,5933.6
-services,core,option1,Rest of world,imports,2023-Q1,1574.2,6302.4
-services,core,option1,Rest of world,imports,2023-Q2,1771.7,6695.8
-services,core,option1,Rest of world,imports,2023-Q3,1830.2,6877.3
-services,core,option1,Rest of world,imports,2023-Q4,1794.3,6970.4
-services,core,option1,Rest of world,imports,2024-Q1,2134.7,7530.9
-services,core,option1,Rest of world,imports,2024-Q2,2238.6,7997.8
-services,core,option1,Rest of world,imports,2024-Q3,2035.2,8202.8
-services,core,option1,Rest of world,imports,2024-Q4,2118.9,8527.4
-services,core,option1,Rest of world,imports,2025-Q1,2165.3,8558.0
-services,core,option1,Rest of world,imports,2025-Q2,2181.9,8501.3
-services,core,option1,Rest of world,imports,2025-Q3,2258.8,8724.9
-services,core,option1,Rest of world,imports,2025-Q4,2341.1,8947.1
-services,core,option1,Rest of world,imports,2026-Q1,2585.6,9367.4
+services,core,option1,EU,imports,2026-Q2,4083.0,16399.0
+services,core,option1,US,imports,2016-Q1,1115.2,
+services,core,option1,US,imports,2016-Q2,1135.8,
+services,core,option1,US,imports,2016-Q3,1349.9,
+services,core,option1,US,imports,2016-Q4,1399.3,5000.2
+services,core,option1,US,imports,2017-Q1,1458.3,5343.3
+services,core,option1,US,imports,2017-Q2,1359.5,5567.0
+services,core,option1,US,imports,2017-Q3,1467.9,5685.0
+services,core,option1,US,imports,2017-Q4,1415.7,5701.4
+services,core,option1,US,imports,2018-Q1,1366.9,5610.0
+services,core,option1,US,imports,2018-Q2,1376.1,5626.6
+services,core,option1,US,imports,2018-Q3,1402.9,5561.6
+services,core,option1,US,imports,2018-Q4,1547.0,5692.9
+services,core,option1,US,imports,2019-Q1,1616.9,5942.9
+services,core,option1,US,imports,2019-Q2,1632.3,6199.1
+services,core,option1,US,imports,2019-Q3,1637.0,6433.2
+services,core,option1,US,imports,2019-Q4,1620.0,6506.2
+services,core,option1,US,imports,2020-Q1,1522.2,6411.5
+services,core,option1,US,imports,2020-Q2,1635.1,6414.3
+services,core,option1,US,imports,2020-Q3,1590.4,6367.7
+services,core,option1,US,imports,2020-Q4,1865.6,6613.3
+services,core,option1,US,imports,2021-Q1,1599.7,6690.8
+services,core,option1,US,imports,2021-Q2,1858.0,6913.7
+services,core,option1,US,imports,2021-Q3,1869.7,7193.0
+services,core,option1,US,imports,2021-Q4,2004.2,7331.6
+services,core,option1,US,imports,2022-Q1,2080.8,7812.7
+services,core,option1,US,imports,2022-Q2,2090.4,8045.1
+services,core,option1,US,imports,2022-Q3,2555.8,8731.2
+services,core,option1,US,imports,2022-Q4,2317.0,9044.0
+services,core,option1,US,imports,2023-Q1,2167.3,9130.5
+services,core,option1,US,imports,2023-Q2,2314.1,9354.2
+services,core,option1,US,imports,2023-Q3,2606.5,9404.9
+services,core,option1,US,imports,2023-Q4,2767.3,9855.2
+services,core,option1,US,imports,2024-Q1,2724.3,10412.2
+services,core,option1,US,imports,2024-Q2,2720.9,10819.0
+services,core,option1,US,imports,2024-Q3,2735.6,10948.1
+services,core,option1,US,imports,2024-Q4,3031.4,11212.2
+services,core,option1,US,imports,2025-Q1,3054.2,11542.1
+services,core,option1,US,imports,2025-Q2,3095.3,11916.5
+services,core,option1,US,imports,2025-Q3,3236.7,12417.6
+services,core,option1,US,imports,2025-Q4,3256.4,12642.6
+services,core,option1,US,imports,2026-Q1,3496.4,13084.8
+services,core,option1,US,imports,2026-Q2,3742.7,13732.2
+services,core,option1,East Asia,imports,2016-Q1,413.2,
+services,core,option1,East Asia,imports,2016-Q2,422.6,
+services,core,option1,East Asia,imports,2016-Q3,484.2,
+services,core,option1,East Asia,imports,2016-Q4,500.3,1820.3
+services,core,option1,East Asia,imports,2017-Q1,600.7,2007.8
+services,core,option1,East Asia,imports,2017-Q2,558.5,2143.7
+services,core,option1,East Asia,imports,2017-Q3,607.3,2266.8
+services,core,option1,East Asia,imports,2017-Q4,603.4,2369.9
+services,core,option1,East Asia,imports,2018-Q1,571.2,2340.4
+services,core,option1,East Asia,imports,2018-Q2,583.0,2364.9
+services,core,option1,East Asia,imports,2018-Q3,623.0,2380.6
+services,core,option1,East Asia,imports,2018-Q4,720.8,2498.0
+services,core,option1,East Asia,imports,2019-Q1,740.6,2667.4
+services,core,option1,East Asia,imports,2019-Q2,798.7,2883.1
+services,core,option1,East Asia,imports,2019-Q3,779.9,3040.0
+services,core,option1,East Asia,imports,2019-Q4,715.6,3034.8
+services,core,option1,East Asia,imports,2020-Q1,685.6,2979.8
+services,core,option1,East Asia,imports,2020-Q2,802.7,2983.8
+services,core,option1,East Asia,imports,2020-Q3,785.7,2989.6
+services,core,option1,East Asia,imports,2020-Q4,854.8,3128.8
+services,core,option1,East Asia,imports,2021-Q1,684.3,3127.5
+services,core,option1,East Asia,imports,2021-Q2,721.0,3045.8
+services,core,option1,East Asia,imports,2021-Q3,712.1,2972.2
+services,core,option1,East Asia,imports,2021-Q4,733.6,2851.0
+services,core,option1,East Asia,imports,2022-Q1,720.0,2886.7
+services,core,option1,East Asia,imports,2022-Q2,1081.9,3247.6
+services,core,option1,East Asia,imports,2022-Q3,763.8,3299.3
+services,core,option1,East Asia,imports,2022-Q4,756.7,3322.4
+services,core,option1,East Asia,imports,2023-Q1,758.1,3360.5
+services,core,option1,East Asia,imports,2023-Q2,977.7,3256.3
+services,core,option1,East Asia,imports,2023-Q3,1039.2,3531.7
+services,core,option1,East Asia,imports,2023-Q4,1101.3,3876.3
+services,core,option1,East Asia,imports,2024-Q1,1239.0,4357.2
+services,core,option1,East Asia,imports,2024-Q2,1432.3,4811.8
+services,core,option1,East Asia,imports,2024-Q3,1497.4,5270.0
+services,core,option1,East Asia,imports,2024-Q4,1576.8,5745.5
+services,core,option1,East Asia,imports,2025-Q1,1656.7,6163.2
+services,core,option1,East Asia,imports,2025-Q2,1833.0,6563.9
+services,core,option1,East Asia,imports,2025-Q3,1738.2,6804.7
+services,core,option1,East Asia,imports,2025-Q4,1536.5,6764.4
+services,core,option1,East Asia,imports,2026-Q1,1326.1,6433.8
+services,core,option1,East Asia,imports,2026-Q2,1613.6,6214.4
+services,core,option1,Rest of world,imports,2016-Q1,981.6,
+services,core,option1,Rest of world,imports,2016-Q2,990.5,
+services,core,option1,Rest of world,imports,2016-Q3,1177.9,
+services,core,option1,Rest of world,imports,2016-Q4,1220.4,4370.4
+services,core,option1,Rest of world,imports,2017-Q1,1185.0,4573.8
+services,core,option1,Rest of world,imports,2017-Q2,1211.0,4794.3
+services,core,option1,Rest of world,imports,2017-Q3,1281.8,4898.2
+services,core,option1,Rest of world,imports,2017-Q4,1300.0,4977.8
+services,core,option1,Rest of world,imports,2018-Q1,1159.9,4952.7
+services,core,option1,Rest of world,imports,2018-Q2,1167.0,4908.7
+services,core,option1,Rest of world,imports,2018-Q3,1222.1,4849.0
+services,core,option1,Rest of world,imports,2018-Q4,1411.2,4960.2
+services,core,option1,Rest of world,imports,2019-Q1,1343.5,5143.8
+services,core,option1,Rest of world,imports,2019-Q2,1609.0,5585.8
+services,core,option1,Rest of world,imports,2019-Q3,1574.1,5937.8
+services,core,option1,Rest of world,imports,2019-Q4,1368.3,5894.9
+services,core,option1,Rest of world,imports,2020-Q1,1541.3,6092.7
+services,core,option1,Rest of world,imports,2020-Q2,1794.2,6277.9
+services,core,option1,Rest of world,imports,2020-Q3,1745.9,6449.7
+services,core,option1,Rest of world,imports,2020-Q4,1779.6,6861.0
+services,core,option1,Rest of world,imports,2021-Q1,1410.0,6729.7
+services,core,option1,Rest of world,imports,2021-Q2,1440.0,6375.5
+services,core,option1,Rest of world,imports,2021-Q3,1417.2,6046.8
+services,core,option1,Rest of world,imports,2021-Q4,1489.2,5756.4
+services,core,option1,Rest of world,imports,2022-Q1,1396.2,5742.6
+services,core,option1,Rest of world,imports,2022-Q2,1721.7,6024.3
+services,core,option1,Rest of world,imports,2022-Q3,1646.4,6253.5
+services,core,option1,Rest of world,imports,2022-Q4,1648.3,6412.6
+services,core,option1,Rest of world,imports,2023-Q1,1643.6,6660.0
+services,core,option1,Rest of world,imports,2023-Q2,2020.2,6958.5
+services,core,option1,Rest of world,imports,2023-Q3,1822.3,7134.4
+services,core,option1,Rest of world,imports,2023-Q4,1698.4,7184.5
+services,core,option1,Rest of world,imports,2024-Q1,2078.6,7619.5
+services,core,option1,Rest of world,imports,2024-Q2,2189.8,7789.1
+services,core,option1,Rest of world,imports,2024-Q3,1989.0,7955.8
+services,core,option1,Rest of world,imports,2024-Q4,2000.8,8258.2
+services,core,option1,Rest of world,imports,2025-Q1,1969.2,8148.8
+services,core,option1,Rest of world,imports,2025-Q2,1907.7,7866.7
+services,core,option1,Rest of world,imports,2025-Q3,2242.1,8119.8
+services,core,option1,Rest of world,imports,2025-Q4,2355.0,8474.0
+services,core,option1,Rest of world,imports,2026-Q1,2550.4,9055.2
+services,core,option1,Rest of world,imports,2026-Q2,2084.8,9232.3
 services,extended,option1,EU,exports,2016-Q1,11223.0,
 services,extended,option1,EU,exports,2016-Q2,11866.0,
 services,extended,option1,EU,exports,2016-Q3,11872.0,
@@ -368,129 +376,133 @@ services,extended,option1,EU,exports,2025-Q2,27333.0,102544.0
 services,extended,option1,EU,exports,2025-Q3,27824.0,105758.0
 services,extended,option1,EU,exports,2025-Q4,28029.0,109230.0
 services,extended,option1,EU,exports,2026-Q1,27875.0,111061.0
-services,extended,option1,US,exports,2016-Q1,7369.3,
-services,extended,option1,US,exports,2016-Q2,7793.2,
-services,extended,option1,US,exports,2016-Q3,7315.4,
-services,extended,option1,US,exports,2016-Q4,8705.6,31183.5
-services,extended,option1,US,exports,2017-Q1,9093.0,32907.2
-services,extended,option1,US,exports,2017-Q2,8817.4,33931.4
-services,extended,option1,US,exports,2017-Q3,9228.3,35844.3
-services,extended,option1,US,exports,2017-Q4,9148.4,36287.1
-services,extended,option1,US,exports,2018-Q1,9249.6,36443.7
-services,extended,option1,US,exports,2018-Q2,9700.5,37326.8
-services,extended,option1,US,exports,2018-Q3,11244.9,39343.4
-services,extended,option1,US,exports,2018-Q4,12021.9,42216.9
-services,extended,option1,US,exports,2019-Q1,10612.9,43580.2
-services,extended,option1,US,exports,2019-Q2,11888.3,45768.0
-services,extended,option1,US,exports,2019-Q3,11993.7,46516.8
-services,extended,option1,US,exports,2019-Q4,11661.9,46156.8
-services,extended,option1,US,exports,2020-Q1,11654.6,47198.5
-services,extended,option1,US,exports,2020-Q2,11152.4,46462.6
-services,extended,option1,US,exports,2020-Q3,11137.7,45606.6
-services,extended,option1,US,exports,2020-Q4,10856.3,44801.0
-services,extended,option1,US,exports,2021-Q1,11948.3,45094.7
-services,extended,option1,US,exports,2021-Q2,12862.6,46804.9
-services,extended,option1,US,exports,2021-Q3,12834.8,48502.0
-services,extended,option1,US,exports,2021-Q4,15304.7,52950.4
-services,extended,option1,US,exports,2022-Q1,15028.0,56030.1
-services,extended,option1,US,exports,2022-Q2,16938.1,60105.6
-services,extended,option1,US,exports,2022-Q3,17811.7,65082.5
-services,extended,option1,US,exports,2022-Q4,18599.1,68376.9
-services,extended,option1,US,exports,2023-Q1,17656.9,71005.8
-services,extended,option1,US,exports,2023-Q2,16607.9,70675.6
-services,extended,option1,US,exports,2023-Q3,18106.0,70969.9
-services,extended,option1,US,exports,2023-Q4,18220.7,70591.5
-services,extended,option1,US,exports,2024-Q1,17777.2,70711.8
-services,extended,option1,US,exports,2024-Q2,19004.2,73108.1
-services,extended,option1,US,exports,2024-Q3,18069.4,73071.5
-services,extended,option1,US,exports,2024-Q4,18888.6,73739.4
-services,extended,option1,US,exports,2025-Q1,18416.6,74378.8
-services,extended,option1,US,exports,2025-Q2,19281.2,74655.8
-services,extended,option1,US,exports,2025-Q3,19435.1,76021.5
-services,extended,option1,US,exports,2025-Q4,20849.7,77982.6
-services,extended,option1,US,exports,2026-Q1,18551.2,78117.2
-services,extended,option1,East Asia,exports,2016-Q1,1594.8,
-services,extended,option1,East Asia,exports,2016-Q2,1623.4,
-services,extended,option1,East Asia,exports,2016-Q3,1546.3,
-services,extended,option1,East Asia,exports,2016-Q4,1745.9,6510.4
-services,extended,option1,East Asia,exports,2017-Q1,1684.3,6599.9
-services,extended,option1,East Asia,exports,2017-Q2,1706.8,6683.3
-services,extended,option1,East Asia,exports,2017-Q3,1699.3,6836.3
-services,extended,option1,East Asia,exports,2017-Q4,1704.5,6794.9
-services,extended,option1,East Asia,exports,2018-Q1,1901.7,7012.3
-services,extended,option1,East Asia,exports,2018-Q2,1836.8,7142.3
-services,extended,option1,East Asia,exports,2018-Q3,2253.8,7696.8
-services,extended,option1,East Asia,exports,2018-Q4,2595.2,8587.5
-services,extended,option1,East Asia,exports,2019-Q1,2374.7,9060.5
-services,extended,option1,East Asia,exports,2019-Q2,2466.9,9690.6
-services,extended,option1,East Asia,exports,2019-Q3,2471.9,9908.7
-services,extended,option1,East Asia,exports,2019-Q4,2331.7,9645.2
-services,extended,option1,East Asia,exports,2020-Q1,2659.2,9929.7
-services,extended,option1,East Asia,exports,2020-Q2,2162.1,9624.9
-services,extended,option1,East Asia,exports,2020-Q3,2251.8,9404.8
-services,extended,option1,East Asia,exports,2020-Q4,2286.7,9359.8
-services,extended,option1,East Asia,exports,2021-Q1,2261.1,8961.7
-services,extended,option1,East Asia,exports,2021-Q2,2836.4,9636.0
-services,extended,option1,East Asia,exports,2021-Q3,2524.3,9908.5
-services,extended,option1,East Asia,exports,2021-Q4,2455.8,10077.6
-services,extended,option1,East Asia,exports,2022-Q1,2523.9,10340.4
-services,extended,option1,East Asia,exports,2022-Q2,2730.9,10234.9
-services,extended,option1,East Asia,exports,2022-Q3,2864.2,10574.8
-services,extended,option1,East Asia,exports,2022-Q4,2996.0,11115.0
-services,extended,option1,East Asia,exports,2023-Q1,3001.7,11592.8
-services,extended,option1,East Asia,exports,2023-Q2,2878.0,11739.9
-services,extended,option1,East Asia,exports,2023-Q3,2553.0,11428.7
-services,extended,option1,East Asia,exports,2023-Q4,2635.2,11067.9
-services,extended,option1,East Asia,exports,2024-Q1,2870.3,10936.5
-services,extended,option1,East Asia,exports,2024-Q2,3033.0,11091.5
-services,extended,option1,East Asia,exports,2024-Q3,2942.6,11481.1
-services,extended,option1,East Asia,exports,2024-Q4,3084.7,11930.6
-services,extended,option1,East Asia,exports,2025-Q1,2874.0,11934.3
-services,extended,option1,East Asia,exports,2025-Q2,2953.3,11854.6
-services,extended,option1,East Asia,exports,2025-Q3,2680.7,11592.7
-services,extended,option1,East Asia,exports,2025-Q4,2693.7,11201.7
-services,extended,option1,East Asia,exports,2026-Q1,2938.8,11266.5
-services,extended,option1,Rest of world,exports,2016-Q1,9988.9,
-services,extended,option1,Rest of world,exports,2016-Q2,10155.4,
-services,extended,option1,Rest of world,exports,2016-Q3,9940.3,
-services,extended,option1,Rest of world,exports,2016-Q4,11441.5,41526.1
-services,extended,option1,Rest of world,exports,2017-Q1,11084.7,42621.9
-services,extended,option1,Rest of world,exports,2017-Q2,11215.8,43682.3
-services,extended,option1,Rest of world,exports,2017-Q3,10503.5,44245.5
-services,extended,option1,Rest of world,exports,2017-Q4,10553.1,43357.1
-services,extended,option1,Rest of world,exports,2018-Q1,11180.7,43453.1
-services,extended,option1,Rest of world,exports,2018-Q2,11165.7,43403.0
-services,extended,option1,Rest of world,exports,2018-Q3,11674.3,44573.8
-services,extended,option1,Rest of world,exports,2018-Q4,12789.9,46810.6
-services,extended,option1,Rest of world,exports,2019-Q1,11764.4,47394.3
-services,extended,option1,Rest of world,exports,2019-Q2,13152.8,49381.4
-services,extended,option1,Rest of world,exports,2019-Q3,12785.4,50492.5
-services,extended,option1,Rest of world,exports,2019-Q4,12405.4,50108.0
-services,extended,option1,Rest of world,exports,2020-Q1,12181.2,50524.8
-services,extended,option1,Rest of world,exports,2020-Q2,10960.5,48332.5
-services,extended,option1,Rest of world,exports,2020-Q3,11016.5,46563.6
-services,extended,option1,Rest of world,exports,2020-Q4,11858.0,46016.2
-services,extended,option1,Rest of world,exports,2021-Q1,11244.7,45079.7
-services,extended,option1,Rest of world,exports,2021-Q2,11574.0,45693.2
-services,extended,option1,Rest of world,exports,2021-Q3,11422.9,46099.6
-services,extended,option1,Rest of world,exports,2021-Q4,12347.5,46589.1
-services,extended,option1,Rest of world,exports,2022-Q1,12328.2,47672.6
-services,extended,option1,Rest of world,exports,2022-Q2,12933.9,49032.5
-services,extended,option1,Rest of world,exports,2022-Q3,13661.0,51270.6
-services,extended,option1,Rest of world,exports,2022-Q4,15815.9,54739.0
-services,extended,option1,Rest of world,exports,2023-Q1,15166.4,57577.2
-services,extended,option1,Rest of world,exports,2023-Q2,16225.2,60868.5
-services,extended,option1,Rest of world,exports,2023-Q3,15806.0,63013.5
-services,extended,option1,Rest of world,exports,2023-Q4,15897.1,63094.7
-services,extended,option1,Rest of world,exports,2024-Q1,14728.4,62656.7
-services,extended,option1,Rest of world,exports,2024-Q2,15857.8,62289.3
-services,extended,option1,Rest of world,exports,2024-Q3,15514.0,61997.3
-services,extended,option1,Rest of world,exports,2024-Q4,16266.6,62366.8
-services,extended,option1,Rest of world,exports,2025-Q1,15360.4,62998.8
-services,extended,option1,Rest of world,exports,2025-Q2,16511.6,63652.6
-services,extended,option1,Rest of world,exports,2025-Q3,16019.2,64157.8
-services,extended,option1,Rest of world,exports,2025-Q4,17167.6,65058.8
-services,extended,option1,Rest of world,exports,2026-Q1,16071.0,65769.4
+services,extended,option1,EU,exports,2026-Q2,28680.0,112408.0
+services,extended,option1,US,exports,2016-Q1,7370.3,
+services,extended,option1,US,exports,2016-Q2,7774.2,
+services,extended,option1,US,exports,2016-Q3,7317.5,
+services,extended,option1,US,exports,2016-Q4,8726.0,31188.0
+services,extended,option1,US,exports,2017-Q1,9159.4,32977.1
+services,extended,option1,US,exports,2017-Q2,8836.3,34039.2
+services,extended,option1,US,exports,2017-Q3,9172.2,35893.9
+services,extended,option1,US,exports,2017-Q4,9134.2,36302.1
+services,extended,option1,US,exports,2018-Q1,9315.6,36458.3
+services,extended,option1,US,exports,2018-Q2,9773.7,37395.7
+services,extended,option1,US,exports,2018-Q3,11183.3,39406.8
+services,extended,option1,US,exports,2018-Q4,12097.9,42370.5
+services,extended,option1,US,exports,2019-Q1,10657.6,43712.5
+services,extended,option1,US,exports,2019-Q2,11943.7,45882.5
+services,extended,option1,US,exports,2019-Q3,12091.5,46790.7
+services,extended,option1,US,exports,2019-Q4,11768.2,46461.0
+services,extended,option1,US,exports,2020-Q1,11883.3,47686.7
+services,extended,option1,US,exports,2020-Q2,11458.9,47201.9
+services,extended,option1,US,exports,2020-Q3,11670.0,46780.4
+services,extended,option1,US,exports,2020-Q4,11467.8,46480.0
+services,extended,option1,US,exports,2021-Q1,12124.6,46721.3
+services,extended,option1,US,exports,2021-Q2,13045.7,48308.1
+services,extended,option1,US,exports,2021-Q3,13005.6,49643.7
+services,extended,option1,US,exports,2021-Q4,15529.4,53705.3
+services,extended,option1,US,exports,2022-Q1,15252.5,56833.2
+services,extended,option1,US,exports,2022-Q2,17189.1,60976.6
+services,extended,option1,US,exports,2022-Q3,18169.3,66140.3
+services,extended,option1,US,exports,2022-Q4,19074.5,69685.4
+services,extended,option1,US,exports,2023-Q1,18153.1,72586.0
+services,extended,option1,US,exports,2023-Q2,17320.5,72717.4
+services,extended,option1,US,exports,2023-Q3,18833.0,73381.1
+services,extended,option1,US,exports,2023-Q4,18704.9,73011.5
+services,extended,option1,US,exports,2024-Q1,18334.7,73193.1
+services,extended,option1,US,exports,2024-Q2,19434.5,75307.1
+services,extended,option1,US,exports,2024-Q3,18457.5,74931.6
+services,extended,option1,US,exports,2024-Q4,19559.5,75786.2
+services,extended,option1,US,exports,2025-Q1,19274.6,76726.1
+services,extended,option1,US,exports,2025-Q2,19909.2,77200.8
+services,extended,option1,US,exports,2025-Q3,19826.5,78569.8
+services,extended,option1,US,exports,2025-Q4,21615.2,80625.5
+services,extended,option1,US,exports,2026-Q1,19208.1,80559.0
+services,extended,option1,US,exports,2026-Q2,20708.4,81358.2
+services,extended,option1,East Asia,exports,2016-Q1,1429.0,
+services,extended,option1,East Asia,exports,2016-Q2,1477.7,
+services,extended,option1,East Asia,exports,2016-Q3,1419.6,
+services,extended,option1,East Asia,exports,2016-Q4,1654.4,5980.7
+services,extended,option1,East Asia,exports,2017-Q1,1601.3,6153.0
+services,extended,option1,East Asia,exports,2017-Q2,2138.3,6813.6
+services,extended,option1,East Asia,exports,2017-Q3,1805.7,7199.7
+services,extended,option1,East Asia,exports,2017-Q4,1673.0,7218.3
+services,extended,option1,East Asia,exports,2018-Q1,2094.1,7711.1
+services,extended,option1,East Asia,exports,2018-Q2,2040.4,7613.2
+services,extended,option1,East Asia,exports,2018-Q3,2344.2,8151.7
+services,extended,option1,East Asia,exports,2018-Q4,2521.3,9000.0
+services,extended,option1,East Asia,exports,2019-Q1,2335.1,9241.0
+services,extended,option1,East Asia,exports,2019-Q2,2464.8,9665.4
+services,extended,option1,East Asia,exports,2019-Q3,2470.0,9791.2
+services,extended,option1,East Asia,exports,2019-Q4,2354.0,9623.9
+services,extended,option1,East Asia,exports,2020-Q1,2642.9,9931.7
+services,extended,option1,East Asia,exports,2020-Q2,2142.5,9609.4
+services,extended,option1,East Asia,exports,2020-Q3,2412.6,9552.0
+services,extended,option1,East Asia,exports,2020-Q4,2221.1,9419.1
+services,extended,option1,East Asia,exports,2021-Q1,2236.9,9013.1
+services,extended,option1,East Asia,exports,2021-Q2,2909.4,9780.0
+services,extended,option1,East Asia,exports,2021-Q3,2400.3,9767.7
+services,extended,option1,East Asia,exports,2021-Q4,2674.3,10220.9
+services,extended,option1,East Asia,exports,2022-Q1,2544.7,10528.7
+services,extended,option1,East Asia,exports,2022-Q2,2724.9,10344.2
+services,extended,option1,East Asia,exports,2022-Q3,2931.8,10875.7
+services,extended,option1,East Asia,exports,2022-Q4,3077.0,11278.4
+services,extended,option1,East Asia,exports,2023-Q1,3149.8,11883.5
+services,extended,option1,East Asia,exports,2023-Q2,2734.3,11892.9
+services,extended,option1,East Asia,exports,2023-Q3,2495.8,11456.9
+services,extended,option1,East Asia,exports,2023-Q4,2569.7,10949.6
+services,extended,option1,East Asia,exports,2024-Q1,2521.0,10320.8
+services,extended,option1,East Asia,exports,2024-Q2,2746.5,10333.0
+services,extended,option1,East Asia,exports,2024-Q3,2507.9,10345.1
+services,extended,option1,East Asia,exports,2024-Q4,2639.0,10414.4
+services,extended,option1,East Asia,exports,2025-Q1,2654.0,10547.4
+services,extended,option1,East Asia,exports,2025-Q2,2907.3,10708.2
+services,extended,option1,East Asia,exports,2025-Q3,2838.8,11039.1
+services,extended,option1,East Asia,exports,2025-Q4,2754.6,11154.7
+services,extended,option1,East Asia,exports,2026-Q1,2895.3,11396.0
+services,extended,option1,East Asia,exports,2026-Q2,2870.3,11359.0
+services,extended,option1,Rest of world,exports,2016-Q1,10153.7,
+services,extended,option1,Rest of world,exports,2016-Q2,10320.0,
+services,extended,option1,Rest of world,exports,2016-Q3,10064.9,
+services,extended,option1,Rest of world,exports,2016-Q4,11512.6,42051.2
+services,extended,option1,Rest of world,exports,2017-Q1,11101.2,42998.7
+services,extended,option1,Rest of world,exports,2017-Q2,10765.4,43444.1
+services,extended,option1,Rest of world,exports,2017-Q3,10453.0,43832.2
+services,extended,option1,Rest of world,exports,2017-Q4,10598.8,42918.4
+services,extended,option1,Rest of world,exports,2018-Q1,10922.3,42739.5
+services,extended,option1,Rest of world,exports,2018-Q2,10888.9,42863.0
+services,extended,option1,Rest of world,exports,2018-Q3,11645.5,44055.5
+services,extended,option1,Rest of world,exports,2018-Q4,12787.7,46244.4
+services,extended,option1,Rest of world,exports,2019-Q1,11759.4,47081.5
+services,extended,option1,Rest of world,exports,2019-Q2,13099.5,49292.1
+services,extended,option1,Rest of world,exports,2019-Q3,12689.6,50336.2
+services,extended,option1,Rest of world,exports,2019-Q4,12276.7,49825.2
+services,extended,option1,Rest of world,exports,2020-Q1,11968.8,50034.6
+services,extended,option1,Rest of world,exports,2020-Q2,10673.6,47608.7
+services,extended,option1,Rest of world,exports,2020-Q3,10323.3,45242.4
+services,extended,option1,Rest of world,exports,2020-Q4,11312.1,44277.8
+services,extended,option1,Rest of world,exports,2021-Q1,11092.5,43401.5
+services,extended,option1,Rest of world,exports,2021-Q2,11317.9,44045.8
+services,extended,option1,Rest of world,exports,2021-Q3,11376.1,45098.6
+services,extended,option1,Rest of world,exports,2021-Q4,11904.3,45690.8
+services,extended,option1,Rest of world,exports,2022-Q1,12082.9,46681.2
+services,extended,option1,Rest of world,exports,2022-Q2,12689.0,48052.3
+services,extended,option1,Rest of world,exports,2022-Q3,13236.0,49912.2
+services,extended,option1,Rest of world,exports,2022-Q4,15259.5,53267.4
+services,extended,option1,Rest of world,exports,2023-Q1,14522.2,55706.7
+services,extended,option1,Rest of world,exports,2023-Q2,15656.2,58673.9
+services,extended,option1,Rest of world,exports,2023-Q3,15136.1,60574.0
+services,extended,option1,Rest of world,exports,2023-Q4,15478.5,60793.0
+services,extended,option1,Rest of world,exports,2024-Q1,14520.3,60791.1
+services,extended,option1,Rest of world,exports,2024-Q2,15714.0,60848.9
+services,extended,option1,Rest of world,exports,2024-Q3,15560.6,61273.4
+services,extended,option1,Rest of world,exports,2024-Q4,16041.6,61836.5
+services,extended,option1,Rest of world,exports,2025-Q1,14722.4,62038.6
+services,extended,option1,Rest of world,exports,2025-Q2,15929.6,62254.2
+services,extended,option1,Rest of world,exports,2025-Q3,15469.7,62163.3
+services,extended,option1,Rest of world,exports,2025-Q4,16341.2,62462.9
+services,extended,option1,Rest of world,exports,2026-Q1,15457.6,63198.1
+services,extended,option1,Rest of world,exports,2026-Q2,16113.3,63381.8
 services,extended,option1,EU,imports,2016-Q1,6620.0,
 services,extended,option1,EU,imports,2016-Q2,6398.0,
 services,extended,option1,EU,imports,2016-Q3,7625.0,
@@ -532,129 +544,133 @@ services,extended,option1,EU,imports,2025-Q2,14804.0,56019.0
 services,extended,option1,EU,imports,2025-Q3,15420.0,58255.0
 services,extended,option1,EU,imports,2025-Q4,16162.0,61255.0
 services,extended,option1,EU,imports,2026-Q1,16041.0,62427.0
-services,extended,option1,US,imports,2016-Q1,4526.3,
-services,extended,option1,US,imports,2016-Q2,4455.2,
-services,extended,option1,US,imports,2016-Q3,5126.2,
-services,extended,option1,US,imports,2016-Q4,5402.5,19510.2
-services,extended,option1,US,imports,2017-Q1,5487.1,20471.0
-services,extended,option1,US,imports,2017-Q2,5906.3,21922.1
-services,extended,option1,US,imports,2017-Q3,5630.6,22426.5
-services,extended,option1,US,imports,2017-Q4,5622.9,22646.9
-services,extended,option1,US,imports,2018-Q1,5885.0,23044.8
-services,extended,option1,US,imports,2018-Q2,5851.9,22990.4
-services,extended,option1,US,imports,2018-Q3,6325.1,23684.9
-services,extended,option1,US,imports,2018-Q4,6356.7,24418.7
-services,extended,option1,US,imports,2019-Q1,6597.6,25131.3
-services,extended,option1,US,imports,2019-Q2,6975.9,26255.3
-services,extended,option1,US,imports,2019-Q3,7269.5,27199.7
-services,extended,option1,US,imports,2019-Q4,6694.3,27537.3
-services,extended,option1,US,imports,2020-Q1,7289.0,28228.7
-services,extended,option1,US,imports,2020-Q2,7058.5,28311.3
-services,extended,option1,US,imports,2020-Q3,6489.7,27531.5
-services,extended,option1,US,imports,2020-Q4,6660.0,27497.2
-services,extended,option1,US,imports,2021-Q1,6778.1,26986.3
-services,extended,option1,US,imports,2021-Q2,7229.2,27157.0
-services,extended,option1,US,imports,2021-Q3,7980.7,28648.0
-services,extended,option1,US,imports,2021-Q4,8250.4,30238.4
-services,extended,option1,US,imports,2022-Q1,8339.8,31800.1
-services,extended,option1,US,imports,2022-Q2,9577.6,34148.5
-services,extended,option1,US,imports,2022-Q3,9767.4,35935.2
-services,extended,option1,US,imports,2022-Q4,10152.8,37837.6
-services,extended,option1,US,imports,2023-Q1,9324.0,38821.8
-services,extended,option1,US,imports,2023-Q2,9494.6,38738.8
-services,extended,option1,US,imports,2023-Q3,10555.6,39527.0
-services,extended,option1,US,imports,2023-Q4,10403.2,39777.4
-services,extended,option1,US,imports,2024-Q1,10790.2,41243.6
-services,extended,option1,US,imports,2024-Q2,10688.7,42437.7
-services,extended,option1,US,imports,2024-Q3,10351.6,42233.7
-services,extended,option1,US,imports,2024-Q4,10656.7,42487.2
-services,extended,option1,US,imports,2025-Q1,11283.4,42980.4
-services,extended,option1,US,imports,2025-Q2,11172.3,43464.0
-services,extended,option1,US,imports,2025-Q3,10639.1,43751.5
-services,extended,option1,US,imports,2025-Q4,11256.5,44351.3
-services,extended,option1,US,imports,2026-Q1,11112.1,44180.0
-services,extended,option1,East Asia,imports,2016-Q1,1428.5,
-services,extended,option1,East Asia,imports,2016-Q2,1390.3,
-services,extended,option1,East Asia,imports,2016-Q3,1612.7,
-services,extended,option1,East Asia,imports,2016-Q4,1608.6,6040.1
-services,extended,option1,East Asia,imports,2017-Q1,1599.4,6211.0
-services,extended,option1,East Asia,imports,2017-Q2,1545.4,6366.1
-services,extended,option1,East Asia,imports,2017-Q3,1586.6,6340.0
-services,extended,option1,East Asia,imports,2017-Q4,1503.4,6234.8
-services,extended,option1,East Asia,imports,2018-Q1,1519.7,6155.1
-services,extended,option1,East Asia,imports,2018-Q2,1502.8,6112.5
-services,extended,option1,East Asia,imports,2018-Q3,1695.2,6221.1
-services,extended,option1,East Asia,imports,2018-Q4,1833.0,6550.7
-services,extended,option1,East Asia,imports,2019-Q1,1899.5,6930.5
-services,extended,option1,East Asia,imports,2019-Q2,1985.8,7413.5
-services,extended,option1,East Asia,imports,2019-Q3,1945.6,7663.9
-services,extended,option1,East Asia,imports,2019-Q4,1821.9,7652.8
-services,extended,option1,East Asia,imports,2020-Q1,2082.5,7835.8
-services,extended,option1,East Asia,imports,2020-Q2,2290.9,8140.9
-services,extended,option1,East Asia,imports,2020-Q3,2151.2,8346.5
-services,extended,option1,East Asia,imports,2020-Q4,2256.3,8780.9
-services,extended,option1,East Asia,imports,2021-Q1,2250.6,8949.0
-services,extended,option1,East Asia,imports,2021-Q2,2262.9,8921.0
-services,extended,option1,East Asia,imports,2021-Q3,2417.9,9187.7
-services,extended,option1,East Asia,imports,2021-Q4,2502.5,9433.9
-services,extended,option1,East Asia,imports,2022-Q1,2628.5,9811.8
-services,extended,option1,East Asia,imports,2022-Q2,2968.5,10517.4
-services,extended,option1,East Asia,imports,2022-Q3,2505.7,10605.2
-services,extended,option1,East Asia,imports,2022-Q4,2735.0,10837.7
-services,extended,option1,East Asia,imports,2023-Q1,2840.6,11049.8
-services,extended,option1,East Asia,imports,2023-Q2,3023.8,11105.1
-services,extended,option1,East Asia,imports,2023-Q3,2701.9,11301.3
-services,extended,option1,East Asia,imports,2023-Q4,2667.0,11233.3
-services,extended,option1,East Asia,imports,2024-Q1,2768.3,11161.0
-services,extended,option1,East Asia,imports,2024-Q2,3018.6,11155.8
-services,extended,option1,East Asia,imports,2024-Q3,3143.9,11597.8
-services,extended,option1,East Asia,imports,2024-Q4,2962.7,11893.5
-services,extended,option1,East Asia,imports,2025-Q1,3218.5,12343.7
-services,extended,option1,East Asia,imports,2025-Q2,3158.4,12483.5
-services,extended,option1,East Asia,imports,2025-Q3,3370.2,12709.8
-services,extended,option1,East Asia,imports,2025-Q4,3253.4,13000.5
-services,extended,option1,East Asia,imports,2026-Q1,3174.5,12956.5
-services,extended,option1,Rest of world,imports,2016-Q1,4545.2,
-services,extended,option1,Rest of world,imports,2016-Q2,4310.5,
-services,extended,option1,Rest of world,imports,2016-Q3,5154.1,
-services,extended,option1,Rest of world,imports,2016-Q4,5189.9,19199.7
-services,extended,option1,Rest of world,imports,2017-Q1,5260.5,19915.0
-services,extended,option1,Rest of world,imports,2017-Q2,4752.3,20356.8
-services,extended,option1,Rest of world,imports,2017-Q3,5438.8,20641.5
-services,extended,option1,Rest of world,imports,2017-Q4,5467.8,20919.4
-services,extended,option1,Rest of world,imports,2018-Q1,5480.2,21139.1
-services,extended,option1,Rest of world,imports,2018-Q2,5292.3,21679.1
-services,extended,option1,Rest of world,imports,2018-Q3,5530.7,21771.0
-services,extended,option1,Rest of world,imports,2018-Q4,6084.3,22387.5
-services,extended,option1,Rest of world,imports,2019-Q1,5786.0,22693.3
-services,extended,option1,Rest of world,imports,2019-Q2,6189.3,23590.3
-services,extended,option1,Rest of world,imports,2019-Q3,6514.9,24574.5
-services,extended,option1,Rest of world,imports,2019-Q4,6290.8,24781.0
-services,extended,option1,Rest of world,imports,2020-Q1,6663.5,25658.5
-services,extended,option1,Rest of world,imports,2020-Q2,6260.6,25729.8
-services,extended,option1,Rest of world,imports,2020-Q3,5686.0,24900.9
-services,extended,option1,Rest of world,imports,2020-Q4,5375.7,23985.8
-services,extended,option1,Rest of world,imports,2021-Q1,5744.3,23066.6
-services,extended,option1,Rest of world,imports,2021-Q2,5928.0,22734.0
-services,extended,option1,Rest of world,imports,2021-Q3,6828.5,23876.5
-services,extended,option1,Rest of world,imports,2021-Q4,7627.1,26127.9
-services,extended,option1,Rest of world,imports,2022-Q1,7486.7,27870.3
-services,extended,option1,Rest of world,imports,2022-Q2,7470.9,29413.2
-services,extended,option1,Rest of world,imports,2022-Q3,8620.9,31205.6
-services,extended,option1,Rest of world,imports,2022-Q4,9672.3,33250.8
-services,extended,option1,Rest of world,imports,2023-Q1,9628.4,35392.5
-services,extended,option1,Rest of world,imports,2023-Q2,10225.6,38147.2
-services,extended,option1,Rest of world,imports,2023-Q3,9952.5,39478.8
-services,extended,option1,Rest of world,imports,2023-Q4,10383.9,40190.4
-services,extended,option1,Rest of world,imports,2024-Q1,11178.5,41740.5
-services,extended,option1,Rest of world,imports,2024-Q2,10464.7,41979.6
-services,extended,option1,Rest of world,imports,2024-Q3,10183.4,42210.5
-services,extended,option1,Rest of world,imports,2024-Q4,10167.6,41994.2
-services,extended,option1,Rest of world,imports,2025-Q1,10986.1,41801.8
-services,extended,option1,Rest of world,imports,2025-Q2,10415.4,41752.5
-services,extended,option1,Rest of world,imports,2025-Q3,10401.7,41970.8
-services,extended,option1,Rest of world,imports,2025-Q4,10599.1,42402.3
-services,extended,option1,Rest of world,imports,2026-Q1,11595.4,43011.6
+services,extended,option1,EU,imports,2026-Q2,16189.0,63812.0
+services,extended,option1,US,imports,2016-Q1,4553.0,
+services,extended,option1,US,imports,2016-Q2,4478.9,
+services,extended,option1,US,imports,2016-Q3,5178.3,
+services,extended,option1,US,imports,2016-Q4,5448.3,19658.5
+services,extended,option1,US,imports,2017-Q1,5514.2,20619.7
+services,extended,option1,US,imports,2017-Q2,5950.7,22091.5
+services,extended,option1,US,imports,2017-Q3,5657.2,22570.4
+services,extended,option1,US,imports,2017-Q4,5641.3,22763.4
+services,extended,option1,US,imports,2018-Q1,5699.1,22948.3
+services,extended,option1,US,imports,2018-Q2,5732.1,22729.7
+services,extended,option1,US,imports,2018-Q3,6365.1,23437.6
+services,extended,option1,US,imports,2018-Q4,6378.4,24174.7
+services,extended,option1,US,imports,2019-Q1,6672.1,25147.7
+services,extended,option1,US,imports,2019-Q2,7002.0,26417.6
+services,extended,option1,US,imports,2019-Q3,7318.2,27370.7
+services,extended,option1,US,imports,2019-Q4,6723.3,27715.6
+services,extended,option1,US,imports,2020-Q1,7292.7,28336.2
+services,extended,option1,US,imports,2020-Q2,7040.4,28374.6
+services,extended,option1,US,imports,2020-Q3,6430.6,27487.0
+services,extended,option1,US,imports,2020-Q4,6659.3,27423.0
+services,extended,option1,US,imports,2021-Q1,6790.3,26920.6
+services,extended,option1,US,imports,2021-Q2,7212.4,27092.6
+services,extended,option1,US,imports,2021-Q3,8017.2,28679.2
+services,extended,option1,US,imports,2021-Q4,8266.9,30286.8
+services,extended,option1,US,imports,2022-Q1,8425.5,31922.0
+services,extended,option1,US,imports,2022-Q2,9241.1,33950.7
+services,extended,option1,US,imports,2022-Q3,9877.3,35810.8
+services,extended,option1,US,imports,2022-Q4,10326.3,37870.2
+services,extended,option1,US,imports,2023-Q1,9415.4,38860.1
+services,extended,option1,US,imports,2023-Q2,9598.4,39217.4
+services,extended,option1,US,imports,2023-Q3,10649.4,39989.5
+services,extended,option1,US,imports,2023-Q4,10564.9,40228.1
+services,extended,option1,US,imports,2024-Q1,11101.6,41914.3
+services,extended,option1,US,imports,2024-Q2,10919.0,43234.9
+services,extended,option1,US,imports,2024-Q3,10582.7,43168.2
+services,extended,option1,US,imports,2024-Q4,10840.4,43443.7
+services,extended,option1,US,imports,2025-Q1,11359.1,43701.2
+services,extended,option1,US,imports,2025-Q2,11198.6,43980.8
+services,extended,option1,US,imports,2025-Q3,10631.1,44029.2
+services,extended,option1,US,imports,2025-Q4,11656.0,44844.8
+services,extended,option1,US,imports,2026-Q1,11926.5,45412.2
+services,extended,option1,US,imports,2026-Q2,11960.9,46174.5
+services,extended,option1,East Asia,imports,2016-Q1,1518.4,
+services,extended,option1,East Asia,imports,2016-Q2,1341.5,
+services,extended,option1,East Asia,imports,2016-Q3,1534.1,
+services,extended,option1,East Asia,imports,2016-Q4,1550.5,5944.5
+services,extended,option1,East Asia,imports,2017-Q1,1660.5,6086.6
+services,extended,option1,East Asia,imports,2017-Q2,1622.0,6367.1
+services,extended,option1,East Asia,imports,2017-Q3,1704.3,6537.3
+services,extended,option1,East Asia,imports,2017-Q4,1704.8,6691.6
+services,extended,option1,East Asia,imports,2018-Q1,1741.0,6772.1
+services,extended,option1,East Asia,imports,2018-Q2,1682.4,6832.5
+services,extended,option1,East Asia,imports,2018-Q3,1770.9,6899.1
+services,extended,option1,East Asia,imports,2018-Q4,1858.2,7052.5
+services,extended,option1,East Asia,imports,2019-Q1,1849.2,7160.7
+services,extended,option1,East Asia,imports,2019-Q2,1933.8,7412.1
+services,extended,option1,East Asia,imports,2019-Q3,1948.7,7589.9
+services,extended,option1,East Asia,imports,2019-Q4,1792.3,7524.0
+services,extended,option1,East Asia,imports,2020-Q1,1845.1,7519.9
+services,extended,option1,East Asia,imports,2020-Q2,2058.6,7644.7
+services,extended,option1,East Asia,imports,2020-Q3,1824.6,7520.6
+services,extended,option1,East Asia,imports,2020-Q4,2034.0,7762.3
+services,extended,option1,East Asia,imports,2021-Q1,2071.3,7988.5
+services,extended,option1,East Asia,imports,2021-Q2,2114.5,8044.4
+services,extended,option1,East Asia,imports,2021-Q3,2273.5,8493.3
+services,extended,option1,East Asia,imports,2021-Q4,2401.9,8861.2
+services,extended,option1,East Asia,imports,2022-Q1,2407.7,9197.6
+services,extended,option1,East Asia,imports,2022-Q2,2879.6,9962.7
+services,extended,option1,East Asia,imports,2022-Q3,2665.2,10354.4
+services,extended,option1,East Asia,imports,2022-Q4,2895.0,10847.5
+services,extended,option1,East Asia,imports,2023-Q1,2831.3,11271.1
+services,extended,option1,East Asia,imports,2023-Q2,2803.0,11194.5
+services,extended,option1,East Asia,imports,2023-Q3,2713.1,11242.4
+services,extended,option1,East Asia,imports,2023-Q4,2771.0,11118.4
+services,extended,option1,East Asia,imports,2024-Q1,2886.6,11173.7
+services,extended,option1,East Asia,imports,2024-Q2,3104.5,11475.2
+services,extended,option1,East Asia,imports,2024-Q3,3197.9,11960.0
+services,extended,option1,East Asia,imports,2024-Q4,3084.1,12273.1
+services,extended,option1,East Asia,imports,2025-Q1,3416.8,12803.3
+services,extended,option1,East Asia,imports,2025-Q2,3484.8,13183.6
+services,extended,option1,East Asia,imports,2025-Q3,3466.4,13452.1
+services,extended,option1,East Asia,imports,2025-Q4,3151.7,13519.7
+services,extended,option1,East Asia,imports,2026-Q1,3018.8,13121.7
+services,extended,option1,East Asia,imports,2026-Q2,3253.2,12890.1
+services,extended,option1,Rest of world,imports,2016-Q1,4428.6,
+services,extended,option1,Rest of world,imports,2016-Q2,4335.6,
+services,extended,option1,Rest of world,imports,2016-Q3,5180.6,
+services,extended,option1,Rest of world,imports,2016-Q4,5202.2,19147.0
+services,extended,option1,Rest of world,imports,2017-Q1,5172.3,19890.7
+services,extended,option1,Rest of world,imports,2017-Q2,4631.2,20186.3
+services,extended,option1,Rest of world,imports,2017-Q3,5294.5,20300.2
+services,extended,option1,Rest of world,imports,2017-Q4,5247.9,20345.9
+services,extended,option1,Rest of world,imports,2018-Q1,5444.8,20618.4
+services,extended,option1,Rest of world,imports,2018-Q2,5232.5,21219.7
+services,extended,option1,Rest of world,imports,2018-Q3,5415.0,21340.2
+services,extended,option1,Rest of world,imports,2018-Q4,6037.4,22129.7
+services,extended,option1,Rest of world,imports,2019-Q1,5761.8,22446.7
+services,extended,option1,Rest of world,imports,2019-Q2,6215.1,23429.3
+services,extended,option1,Rest of world,imports,2019-Q3,6463.0,24477.3
+services,extended,option1,Rest of world,imports,2019-Q4,6291.3,24731.2
+services,extended,option1,Rest of world,imports,2020-Q1,6897.3,25866.7
+services,extended,option1,Rest of world,imports,2020-Q2,6511.0,26162.6
+services,extended,option1,Rest of world,imports,2020-Q3,6071.8,25771.4
+services,extended,option1,Rest of world,imports,2020-Q4,5598.8,25078.9
+services,extended,option1,Rest of world,imports,2021-Q1,5911.4,24093.0
+services,extended,option1,Rest of world,imports,2021-Q2,6093.0,23675.0
+services,extended,option1,Rest of world,imports,2021-Q3,6936.3,24539.5
+services,extended,option1,Rest of world,imports,2021-Q4,7711.2,26651.9
+services,extended,option1,Rest of world,imports,2022-Q1,7621.7,28362.2
+services,extended,option1,Rest of world,imports,2022-Q2,7896.3,30165.5
+services,extended,option1,Rest of world,imports,2022-Q3,8351.6,31580.8
+services,extended,option1,Rest of world,imports,2022-Q4,9338.7,33208.3
+services,extended,option1,Rest of world,imports,2023-Q1,9546.3,35132.9
+services,extended,option1,Rest of world,imports,2023-Q2,10342.6,37579.2
+services,extended,option1,Rest of world,imports,2023-Q3,9847.5,39075.1
+services,extended,option1,Rest of world,imports,2023-Q4,10118.1,39854.5
+services,extended,option1,Rest of world,imports,2024-Q1,10748.8,41057.0
+services,extended,option1,Rest of world,imports,2024-Q2,10148.5,40862.9
+services,extended,option1,Rest of world,imports,2024-Q3,9898.4,40913.8
+services,extended,option1,Rest of world,imports,2024-Q4,9862.4,40658.1
+services,extended,option1,Rest of world,imports,2025-Q1,10712.1,40621.4
+services,extended,option1,Rest of world,imports,2025-Q2,10062.6,40535.5
+services,extended,option1,Rest of world,imports,2025-Q3,10313.5,40950.6
+services,extended,option1,Rest of world,imports,2025-Q4,10301.3,41389.5
+services,extended,option1,Rest of world,imports,2026-Q1,10936.7,41614.1
+services,extended,option1,Rest of world,imports,2026-Q2,10156.0,41707.5
 services,full,option1,EU,exports,2016-Q1,11553.0,
 services,full,option1,EU,exports,2016-Q2,12197.0,
 services,full,option1,EU,exports,2016-Q3,12198.0,
@@ -696,129 +712,133 @@ services,full,option1,EU,exports,2025-Q2,28178.0,105348.0
 services,full,option1,EU,exports,2025-Q3,28662.0,108776.0
 services,full,option1,EU,exports,2025-Q4,28915.0,112489.0
 services,full,option1,EU,exports,2026-Q1,28767.0,114522.0
-services,full,option1,US,exports,2016-Q1,7706.6,
-services,full,option1,US,exports,2016-Q2,8127.5,
-services,full,option1,US,exports,2016-Q3,7622.5,
-services,full,option1,US,exports,2016-Q4,9055.8,32512.4
-services,full,option1,US,exports,2017-Q1,9342.3,34148.1
-services,full,option1,US,exports,2017-Q2,9146.6,35167.2
-services,full,option1,US,exports,2017-Q3,9732.6,37277.3
-services,full,option1,US,exports,2017-Q4,9650.9,37872.4
-services,full,option1,US,exports,2018-Q1,9574.2,38104.3
-services,full,option1,US,exports,2018-Q2,10090.9,39048.6
-services,full,option1,US,exports,2018-Q3,11614.6,40930.6
-services,full,option1,US,exports,2018-Q4,12387.8,43667.5
-services,full,option1,US,exports,2019-Q1,11147.2,45240.5
-services,full,option1,US,exports,2019-Q2,12252.2,47401.8
-services,full,option1,US,exports,2019-Q3,12458.0,48245.2
-services,full,option1,US,exports,2019-Q4,12160.7,48018.1
-services,full,option1,US,exports,2020-Q1,12002.1,48873.0
-services,full,option1,US,exports,2020-Q2,11422.9,48043.7
-services,full,option1,US,exports,2020-Q3,11435.5,47021.2
-services,full,option1,US,exports,2020-Q4,11169.7,46030.2
-services,full,option1,US,exports,2021-Q1,12234.3,46262.4
-services,full,option1,US,exports,2021-Q2,13172.0,48011.5
-services,full,option1,US,exports,2021-Q3,13117.0,49693.0
-services,full,option1,US,exports,2021-Q4,15809.9,54333.2
-services,full,option1,US,exports,2022-Q1,15468.2,57567.1
-services,full,option1,US,exports,2022-Q2,17412.5,61807.6
-services,full,option1,US,exports,2022-Q3,18293.5,66984.1
-services,full,option1,US,exports,2022-Q4,19119.8,70294.0
-services,full,option1,US,exports,2023-Q1,18105.9,72931.7
-services,full,option1,US,exports,2023-Q2,17152.5,72671.7
-services,full,option1,US,exports,2023-Q3,18662.6,73040.8
-services,full,option1,US,exports,2023-Q4,18678.7,72599.7
-services,full,option1,US,exports,2024-Q1,18516.8,73010.6
-services,full,option1,US,exports,2024-Q2,19600.0,75458.1
-services,full,option1,US,exports,2024-Q3,18704.3,75499.8
-services,full,option1,US,exports,2024-Q4,19527.7,76348.8
-services,full,option1,US,exports,2025-Q1,19218.9,77050.9
-services,full,option1,US,exports,2025-Q2,19918.7,77369.6
-services,full,option1,US,exports,2025-Q3,19925.5,78590.8
-services,full,option1,US,exports,2025-Q4,21475.6,80538.7
-services,full,option1,US,exports,2026-Q1,19326.2,80646.0
-services,full,option1,East Asia,exports,2016-Q1,1697.2,
-services,full,option1,East Asia,exports,2016-Q2,1722.1,
-services,full,option1,East Asia,exports,2016-Q3,1644.0,
-services,full,option1,East Asia,exports,2016-Q4,1855.1,6918.4
-services,full,option1,East Asia,exports,2017-Q1,1797.4,7018.6
-services,full,option1,East Asia,exports,2017-Q2,1800.7,7097.2
-services,full,option1,East Asia,exports,2017-Q3,1817.9,7271.1
-services,full,option1,East Asia,exports,2017-Q4,1802.9,7218.9
-services,full,option1,East Asia,exports,2018-Q1,1988.6,7410.1
-services,full,option1,East Asia,exports,2018-Q2,1919.6,7529.0
-services,full,option1,East Asia,exports,2018-Q3,2347.5,8058.6
-services,full,option1,East Asia,exports,2018-Q4,2668.9,8924.6
-services,full,option1,East Asia,exports,2019-Q1,2460.2,9396.2
-services,full,option1,East Asia,exports,2019-Q2,2542.6,10019.2
-services,full,option1,East Asia,exports,2019-Q3,2575.8,10247.5
-services,full,option1,East Asia,exports,2019-Q4,2433.5,10012.1
-services,full,option1,East Asia,exports,2020-Q1,2740.8,10292.7
-services,full,option1,East Asia,exports,2020-Q2,2245.3,9995.4
-services,full,option1,East Asia,exports,2020-Q3,2321.0,9740.6
-services,full,option1,East Asia,exports,2020-Q4,2343.5,9650.6
-services,full,option1,East Asia,exports,2021-Q1,2393.9,9303.7
-services,full,option1,East Asia,exports,2021-Q2,2963.8,10022.2
-services,full,option1,East Asia,exports,2021-Q3,2642.1,10343.3
-services,full,option1,East Asia,exports,2021-Q4,2561.1,10560.9
-services,full,option1,East Asia,exports,2022-Q1,2648.5,10815.5
-services,full,option1,East Asia,exports,2022-Q2,2896.0,10747.7
-services,full,option1,East Asia,exports,2022-Q3,3017.9,11123.5
-services,full,option1,East Asia,exports,2022-Q4,3159.8,11722.2
-services,full,option1,East Asia,exports,2023-Q1,3139.6,12213.3
-services,full,option1,East Asia,exports,2023-Q2,3030.9,12348.2
-services,full,option1,East Asia,exports,2023-Q3,2691.9,12022.2
-services,full,option1,East Asia,exports,2023-Q4,2832.6,11695.0
-services,full,option1,East Asia,exports,2024-Q1,3099.5,11654.9
-services,full,option1,East Asia,exports,2024-Q2,3236.9,11860.9
-services,full,option1,East Asia,exports,2024-Q3,3144.1,12313.1
-services,full,option1,East Asia,exports,2024-Q4,3280.5,12761.0
-services,full,option1,East Asia,exports,2025-Q1,3209.7,12871.2
-services,full,option1,East Asia,exports,2025-Q2,3149.9,12784.2
-services,full,option1,East Asia,exports,2025-Q3,2957.8,12597.9
-services,full,option1,East Asia,exports,2025-Q4,3061.6,12379.0
-services,full,option1,East Asia,exports,2026-Q1,3426.2,12595.5
-services,full,option1,Rest of world,exports,2016-Q1,10326.2,
-services,full,option1,Rest of world,exports,2016-Q2,10487.5,
-services,full,option1,Rest of world,exports,2016-Q3,10248.5,
-services,full,option1,Rest of world,exports,2016-Q4,11773.1,42835.3
-services,full,option1,Rest of world,exports,2017-Q1,11470.3,43979.4
-services,full,option1,Rest of world,exports,2017-Q2,11534.8,45026.7
-services,full,option1,Rest of world,exports,2017-Q3,10949.5,45727.7
-services,full,option1,Rest of world,exports,2017-Q4,10920.2,44874.8
-services,full,option1,Rest of world,exports,2018-Q1,11557.1,44961.6
-services,full,option1,Rest of world,exports,2018-Q2,11563.5,44990.3
-services,full,option1,Rest of world,exports,2018-Q3,12077.9,46118.7
-services,full,option1,Rest of world,exports,2018-Q4,13195.2,48393.7
-services,full,option1,Rest of world,exports,2019-Q1,12175.5,49012.1
-services,full,option1,Rest of world,exports,2019-Q2,13548.2,50996.8
-services,full,option1,Rest of world,exports,2019-Q3,13364.2,52283.1
-services,full,option1,Rest of world,exports,2019-Q4,12847.8,51935.7
-services,full,option1,Rest of world,exports,2020-Q1,12540.1,52300.3
-services,full,option1,Rest of world,exports,2020-Q2,11342.8,50094.9
-services,full,option1,Rest of world,exports,2020-Q3,11393.5,48124.2
-services,full,option1,Rest of world,exports,2020-Q4,12229.9,47506.3
-services,full,option1,Rest of world,exports,2021-Q1,11607.8,46574.0
-services,full,option1,Rest of world,exports,2021-Q2,11941.2,47172.4
-services,full,option1,Rest of world,exports,2021-Q3,11855.9,47634.8
-services,full,option1,Rest of world,exports,2021-Q4,12785.9,48190.8
-services,full,option1,Rest of world,exports,2022-Q1,12754.3,49337.3
-services,full,option1,Rest of world,exports,2022-Q2,13386.5,50782.6
-services,full,option1,Rest of world,exports,2022-Q3,14096.6,53023.3
-services,full,option1,Rest of world,exports,2022-Q4,16337.5,56574.9
-services,full,option1,Rest of world,exports,2023-Q1,15683.5,59504.1
-services,full,option1,Rest of world,exports,2023-Q2,16868.6,62986.2
-services,full,option1,Rest of world,exports,2023-Q3,16457.5,65347.1
-services,full,option1,Rest of world,exports,2023-Q4,16710.7,65720.3
-services,full,option1,Rest of world,exports,2024-Q1,15461.7,65498.5
-services,full,option1,Rest of world,exports,2024-Q2,16569.1,65199.0
-services,full,option1,Rest of world,exports,2024-Q3,16167.6,64909.1
-services,full,option1,Rest of world,exports,2024-Q4,16876.8,65075.2
-services,full,option1,Rest of world,exports,2025-Q1,16695.3,66308.8
-services,full,option1,Rest of world,exports,2025-Q2,17435.3,67175.0
-services,full,option1,Rest of world,exports,2025-Q3,16883.6,67891.0
-services,full,option1,Rest of world,exports,2025-Q4,18361.8,69376.0
-services,full,option1,Rest of world,exports,2026-Q1,17485.6,70166.3
+services,full,option1,EU,exports,2026-Q2,29631.0,115975.0
+services,full,option1,US,exports,2016-Q1,7687.3,
+services,full,option1,US,exports,2016-Q2,8085.6,
+services,full,option1,US,exports,2016-Q3,7602.5,
+services,full,option1,US,exports,2016-Q4,9047.8,32423.2
+services,full,option1,US,exports,2017-Q1,9390.0,34125.9
+services,full,option1,US,exports,2017-Q2,9163.3,35203.6
+services,full,option1,US,exports,2017-Q3,9722.7,37323.8
+services,full,option1,US,exports,2017-Q4,9669.0,37945.0
+services,full,option1,US,exports,2018-Q1,9651.0,38206.0
+services,full,option1,US,exports,2018-Q2,10176.4,39219.1
+services,full,option1,US,exports,2018-Q3,11568.2,41064.6
+services,full,option1,US,exports,2018-Q4,12463.7,43859.3
+services,full,option1,US,exports,2019-Q1,11209.3,45417.6
+services,full,option1,US,exports,2019-Q2,12264.0,47505.2
+services,full,option1,US,exports,2019-Q3,12581.6,48518.6
+services,full,option1,US,exports,2019-Q4,12280.2,48335.1
+services,full,option1,US,exports,2020-Q1,12184.9,49310.7
+services,full,option1,US,exports,2020-Q2,11736.3,48783.0
+services,full,option1,US,exports,2020-Q3,11969.3,48170.7
+services,full,option1,US,exports,2020-Q4,11761.3,47651.8
+services,full,option1,US,exports,2021-Q1,12414.0,47880.9
+services,full,option1,US,exports,2021-Q2,13359.2,49503.8
+services,full,option1,US,exports,2021-Q3,13292.7,50827.2
+services,full,option1,US,exports,2021-Q4,16042.7,55108.6
+services,full,option1,US,exports,2022-Q1,15694.4,58389.0
+services,full,option1,US,exports,2022-Q2,17663.8,62693.6
+services,full,option1,US,exports,2022-Q3,18648.7,68049.6
+services,full,option1,US,exports,2022-Q4,19593.3,71600.2
+services,full,option1,US,exports,2023-Q1,18599.5,74505.3
+services,full,option1,US,exports,2023-Q2,17866.3,74707.8
+services,full,option1,US,exports,2023-Q3,19399.9,75459.0
+services,full,option1,US,exports,2023-Q4,19172.1,75037.8
+services,full,option1,US,exports,2024-Q1,19080.2,75518.5
+services,full,option1,US,exports,2024-Q2,20037.3,77689.5
+services,full,option1,US,exports,2024-Q3,19097.6,77387.2
+services,full,option1,US,exports,2024-Q4,20205.6,78420.7
+services,full,option1,US,exports,2025-Q1,20031.4,79371.9
+services,full,option1,US,exports,2025-Q2,20524.7,79859.3
+services,full,option1,US,exports,2025-Q3,20417.4,81179.1
+services,full,option1,US,exports,2025-Q4,22304.4,83277.9
+services,full,option1,US,exports,2026-Q1,20065.1,83311.6
+services,full,option1,US,exports,2026-Q2,21325.9,84112.8
+services,full,option1,East Asia,exports,2016-Q1,1534.3,
+services,full,option1,East Asia,exports,2016-Q2,1578.8,
+services,full,option1,East Asia,exports,2016-Q3,1520.2,
+services,full,option1,East Asia,exports,2016-Q4,1768.7,6402.0
+services,full,option1,East Asia,exports,2017-Q1,1722.6,6590.3
+services,full,option1,East Asia,exports,2017-Q2,2238.1,7249.6
+services,full,option1,East Asia,exports,2017-Q3,1926.4,7655.8
+services,full,option1,East Asia,exports,2017-Q4,1767.9,7655.0
+services,full,option1,East Asia,exports,2018-Q1,2191.9,8124.3
+services,full,option1,East Asia,exports,2018-Q2,2136.2,8022.4
+services,full,option1,East Asia,exports,2018-Q3,2448.9,8544.9
+services,full,option1,East Asia,exports,2018-Q4,2595.4,9372.4
+services,full,option1,East Asia,exports,2019-Q1,2432.6,9613.1
+services,full,option1,East Asia,exports,2019-Q2,2554.9,10031.8
+services,full,option1,East Asia,exports,2019-Q3,2584.7,10167.6
+services,full,option1,East Asia,exports,2019-Q4,2463.7,10035.9
+services,full,option1,East Asia,exports,2020-Q1,2744.9,10348.2
+services,full,option1,East Asia,exports,2020-Q2,2240.8,10034.1
+services,full,option1,East Asia,exports,2020-Q3,2495.7,9945.1
+services,full,option1,East Asia,exports,2020-Q4,2325.1,9806.5
+services,full,option1,East Asia,exports,2021-Q1,2368.8,9430.4
+services,full,option1,East Asia,exports,2021-Q2,3035.2,10224.8
+services,full,option1,East Asia,exports,2021-Q3,2519.4,10248.5
+services,full,option1,East Asia,exports,2021-Q4,2778.6,10702.0
+services,full,option1,East Asia,exports,2022-Q1,2649.4,10982.6
+services,full,option1,East Asia,exports,2022-Q2,2847.2,10794.6
+services,full,option1,East Asia,exports,2022-Q3,3058.4,11333.6
+services,full,option1,East Asia,exports,2022-Q4,3227.1,11782.1
+services,full,option1,East Asia,exports,2023-Q1,3294.0,12426.7
+services,full,option1,East Asia,exports,2023-Q2,2904.9,12484.4
+services,full,option1,East Asia,exports,2023-Q3,2635.0,12061.0
+services,full,option1,East Asia,exports,2023-Q4,2766.8,11600.7
+services,full,option1,East Asia,exports,2024-Q1,2753.9,11060.6
+services,full,option1,East Asia,exports,2024-Q2,2957.2,11112.9
+services,full,option1,East Asia,exports,2024-Q3,2719.5,11197.4
+services,full,option1,East Asia,exports,2024-Q4,2847.9,11278.5
+services,full,option1,East Asia,exports,2025-Q1,3018.1,11542.7
+services,full,option1,East Asia,exports,2025-Q2,3116.6,11702.1
+services,full,option1,East Asia,exports,2025-Q3,3038.4,12021.0
+services,full,option1,East Asia,exports,2025-Q4,3043.4,12216.5
+services,full,option1,East Asia,exports,2026-Q1,3306.6,12505.0
+services,full,option1,East Asia,exports,2026-Q2,3112.5,12500.9
+services,full,option1,Rest of world,exports,2016-Q1,10508.4,
+services,full,option1,Rest of world,exports,2016-Q2,10672.6,
+services,full,option1,Rest of world,exports,2016-Q3,10392.3,
+services,full,option1,Rest of world,exports,2016-Q4,11867.5,43440.8
+services,full,option1,Rest of world,exports,2017-Q1,11497.4,44429.8
+services,full,option1,Rest of world,exports,2017-Q2,11080.6,44837.8
+services,full,option1,Rest of world,exports,2017-Q3,10850.9,45296.4
+services,full,option1,Rest of world,exports,2017-Q4,10937.2,44366.1
+services,full,option1,Rest of world,exports,2018-Q1,11277.1,44145.8
+services,full,option1,Rest of world,exports,2018-Q2,11261.5,44326.7
+services,full,option1,Rest of world,exports,2018-Q3,12022.9,45498.7
+services,full,option1,Rest of world,exports,2018-Q4,13192.9,47754.4
+services,full,option1,Rest of world,exports,2019-Q1,12141.1,48618.4
+services,full,option1,Rest of world,exports,2019-Q2,13524.1,50881.0
+services,full,option1,Rest of world,exports,2019-Q3,13231.8,52089.9
+services,full,option1,Rest of world,exports,2019-Q4,12698.1,51595.1
+services,full,option1,Rest of world,exports,2020-Q1,12353.3,51807.3
+services,full,option1,Rest of world,exports,2020-Q2,11033.9,49317.1
+services,full,option1,Rest of world,exports,2020-Q3,10685.0,46770.3
+services,full,option1,Rest of world,exports,2020-Q4,11656.6,45728.8
+services,full,option1,Rest of world,exports,2021-Q1,11453.2,44828.7
+services,full,option1,Rest of world,exports,2021-Q2,11682.6,45477.4
+services,full,option1,Rest of world,exports,2021-Q3,11802.9,46595.3
+services,full,option1,Rest of world,exports,2021-Q4,12335.6,47274.3
+services,full,option1,Rest of world,exports,2022-Q1,12527.1,48348.2
+services,full,option1,Rest of world,exports,2022-Q2,13184.0,49849.6
+services,full,option1,Rest of world,exports,2022-Q3,13700.9,51747.6
+services,full,option1,Rest of world,exports,2022-Q4,15796.7,55208.7
+services,full,option1,Rest of world,exports,2023-Q1,15035.5,57717.1
+services,full,option1,Rest of world,exports,2023-Q2,16280.8,60813.9
+services,full,option1,Rest of world,exports,2023-Q3,15777.1,62890.1
+services,full,option1,Rest of world,exports,2023-Q4,16283.1,63376.5
+services,full,option1,Rest of world,exports,2024-Q1,15243.9,63584.9
+services,full,option1,Rest of world,exports,2024-Q2,16411.6,63715.7
+services,full,option1,Rest of world,exports,2024-Q3,16198.9,64137.5
+services,full,option1,Rest of world,exports,2024-Q4,16631.5,64485.9
+services,full,option1,Rest of world,exports,2025-Q1,16074.5,65316.5
+services,full,option1,Rest of world,exports,2025-Q2,16862.7,65767.6
+services,full,option1,Rest of world,exports,2025-Q3,16311.2,65879.9
+services,full,option1,Rest of world,exports,2025-Q4,17551.3,66799.7
+services,full,option1,Rest of world,exports,2026-Q1,16866.3,67591.5
+services,full,option1,Rest of world,exports,2026-Q2,17029.6,67758.4
 services,full,option1,EU,imports,2016-Q1,6844.0,
 services,full,option1,EU,imports,2016-Q2,6629.0,
 services,full,option1,EU,imports,2016-Q3,7898.0,
@@ -860,129 +880,133 @@ services,full,option1,EU,imports,2025-Q2,15491.0,58786.0
 services,full,option1,EU,imports,2025-Q3,16111.0,61036.0
 services,full,option1,EU,imports,2025-Q4,16832.0,63973.0
 services,full,option1,EU,imports,2026-Q1,16607.0,65041.0
-services,full,option1,US,imports,2016-Q1,4613.4,
-services,full,option1,US,imports,2016-Q2,4542.3,
-services,full,option1,US,imports,2016-Q3,5231.0,
-services,full,option1,US,imports,2016-Q4,5511.9,19898.6
-services,full,option1,US,imports,2017-Q1,5611.3,20896.5
-services,full,option1,US,imports,2017-Q2,6018.8,22373.0
-services,full,option1,US,imports,2017-Q3,5738.3,22880.3
-services,full,option1,US,imports,2017-Q4,5735.0,23103.4
-services,full,option1,US,imports,2018-Q1,5972.6,23464.7
-services,full,option1,US,imports,2018-Q2,5953.0,23398.9
-services,full,option1,US,imports,2018-Q3,6449.1,24109.7
-services,full,option1,US,imports,2018-Q4,6454.3,24829.0
-services,full,option1,US,imports,2019-Q1,6723.4,25579.8
-services,full,option1,US,imports,2019-Q2,7107.0,26733.8
-services,full,option1,US,imports,2019-Q3,7394.0,27678.7
-services,full,option1,US,imports,2019-Q4,6826.6,28051.0
-services,full,option1,US,imports,2020-Q1,7423.8,28751.4
-services,full,option1,US,imports,2020-Q2,7137.2,28781.6
-services,full,option1,US,imports,2020-Q3,6615.1,28002.7
-services,full,option1,US,imports,2020-Q4,6775.8,27951.9
-services,full,option1,US,imports,2021-Q1,6881.9,27410.0
-services,full,option1,US,imports,2021-Q2,7318.5,27591.3
-services,full,option1,US,imports,2021-Q3,8071.8,29048.0
-services,full,option1,US,imports,2021-Q4,8431.1,30703.3
-services,full,option1,US,imports,2022-Q1,8420.0,32241.4
-services,full,option1,US,imports,2022-Q2,9680.2,34603.1
-services,full,option1,US,imports,2022-Q3,9908.8,36440.1
-services,full,option1,US,imports,2022-Q4,10321.3,38330.3
-services,full,option1,US,imports,2023-Q1,9447.7,39358.0
-services,full,option1,US,imports,2023-Q2,9646.8,39324.6
-services,full,option1,US,imports,2023-Q3,10667.8,40083.6
-services,full,option1,US,imports,2023-Q4,10542.0,40304.3
-services,full,option1,US,imports,2024-Q1,10992.8,41849.4
-services,full,option1,US,imports,2024-Q2,10860.4,43063.0
-services,full,option1,US,imports,2024-Q3,10537.9,42933.1
-services,full,option1,US,imports,2024-Q4,10840.6,43231.7
-services,full,option1,US,imports,2025-Q1,11582.1,43821.0
-services,full,option1,US,imports,2025-Q2,11486.3,44446.9
-services,full,option1,US,imports,2025-Q3,10952.6,44861.6
-services,full,option1,US,imports,2025-Q4,11550.2,45571.2
-services,full,option1,US,imports,2026-Q1,11448.2,45437.3
-services,full,option1,East Asia,imports,2016-Q1,1433.8,
-services,full,option1,East Asia,imports,2016-Q2,1394.4,
-services,full,option1,East Asia,imports,2016-Q3,1616.9,
-services,full,option1,East Asia,imports,2016-Q4,1612.7,6057.8
-services,full,option1,East Asia,imports,2017-Q1,1602.7,6226.7
-services,full,option1,East Asia,imports,2017-Q2,1546.5,6378.8
-services,full,option1,East Asia,imports,2017-Q3,1592.1,6354.0
-services,full,option1,East Asia,imports,2017-Q4,1505.5,6246.8
-services,full,option1,East Asia,imports,2018-Q1,1530.7,6174.8
-services,full,option1,East Asia,imports,2018-Q2,1506.1,6134.4
-services,full,option1,East Asia,imports,2018-Q3,1699.0,6241.3
-services,full,option1,East Asia,imports,2018-Q4,1837.2,6573.0
-services,full,option1,East Asia,imports,2019-Q1,1904.1,6946.4
-services,full,option1,East Asia,imports,2019-Q2,1994.7,7435.0
-services,full,option1,East Asia,imports,2019-Q3,1955.8,7691.8
-services,full,option1,East Asia,imports,2019-Q4,1829.8,7684.4
-services,full,option1,East Asia,imports,2020-Q1,2092.8,7873.1
-services,full,option1,East Asia,imports,2020-Q2,2296.4,8174.8
-services,full,option1,East Asia,imports,2020-Q3,2156.8,8375.8
-services,full,option1,East Asia,imports,2020-Q4,2259.5,8805.5
-services,full,option1,East Asia,imports,2021-Q1,2257.9,8970.6
-services,full,option1,East Asia,imports,2021-Q2,2270.7,8944.9
-services,full,option1,East Asia,imports,2021-Q3,2425.5,9213.6
-services,full,option1,East Asia,imports,2021-Q4,2511.2,9465.3
-services,full,option1,East Asia,imports,2022-Q1,2637.4,9844.8
-services,full,option1,East Asia,imports,2022-Q2,2978.8,10552.9
-services,full,option1,East Asia,imports,2022-Q3,2516.4,10643.8
-services,full,option1,East Asia,imports,2022-Q4,2747.3,10879.9
-services,full,option1,East Asia,imports,2023-Q1,2854.0,11096.5
-services,full,option1,East Asia,imports,2023-Q2,3036.9,11154.6
-services,full,option1,East Asia,imports,2023-Q3,2716.7,11354.9
-services,full,option1,East Asia,imports,2023-Q4,2690.9,11298.5
-services,full,option1,East Asia,imports,2024-Q1,2783.6,11228.1
-services,full,option1,East Asia,imports,2024-Q2,3035.5,11226.7
-services,full,option1,East Asia,imports,2024-Q3,3158.0,11668.0
-services,full,option1,East Asia,imports,2024-Q4,2978.3,11955.4
-services,full,option1,East Asia,imports,2025-Q1,3234.0,12405.8
-services,full,option1,East Asia,imports,2025-Q2,3171.4,12541.7
-services,full,option1,East Asia,imports,2025-Q3,3386.6,12770.3
-services,full,option1,East Asia,imports,2025-Q4,3269.9,13061.9
-services,full,option1,East Asia,imports,2026-Q1,3188.5,13016.4
-services,full,option1,Rest of world,imports,2016-Q1,5633.8,
-services,full,option1,Rest of world,imports,2016-Q2,5487.2,
-services,full,option1,Rest of world,imports,2016-Q3,6320.2,
-services,full,option1,Rest of world,imports,2016-Q4,6266.3,23707.5
-services,full,option1,Rest of world,imports,2017-Q1,6517.0,24590.7
-services,full,option1,Rest of world,imports,2017-Q2,5961.8,25065.3
-services,full,option1,Rest of world,imports,2017-Q3,6669.6,25414.7
-services,full,option1,Rest of world,imports,2017-Q4,6840.6,25989.0
-services,full,option1,Rest of world,imports,2018-Q1,6776.7,26248.7
-services,full,option1,Rest of world,imports,2018-Q2,6670.8,26957.7
-services,full,option1,Rest of world,imports,2018-Q3,6923.9,27212.0
-services,full,option1,Rest of world,imports,2018-Q4,7472.5,27843.9
-services,full,option1,Rest of world,imports,2019-Q1,7148.6,28215.8
-services,full,option1,Rest of world,imports,2019-Q2,7670.4,29215.4
-services,full,option1,Rest of world,imports,2019-Q3,7987.2,30278.7
-services,full,option1,Rest of world,imports,2019-Q4,7814.6,30620.8
-services,full,option1,Rest of world,imports,2020-Q1,8170.5,31642.7
-services,full,option1,Rest of world,imports,2020-Q2,7835.4,31807.7
-services,full,option1,Rest of world,imports,2020-Q3,7260.2,31080.7
-services,full,option1,Rest of world,imports,2020-Q4,7162.7,30428.8
-services,full,option1,Rest of world,imports,2021-Q1,7325.2,29583.5
-services,full,option1,Rest of world,imports,2021-Q2,7485.8,29233.9
-services,full,option1,Rest of world,imports,2021-Q3,8214.8,30188.5
-services,full,option1,Rest of world,imports,2021-Q4,9026.7,32052.5
-services,full,option1,Rest of world,imports,2022-Q1,8916.7,33644.0
-services,full,option1,Rest of world,imports,2022-Q2,9012.0,35170.2
-services,full,option1,Rest of world,imports,2022-Q3,10083.9,37039.3
-services,full,option1,Rest of world,imports,2022-Q4,11257.4,39270.0
-services,full,option1,Rest of world,imports,2023-Q1,11300.3,41653.6
-services,full,option1,Rest of world,imports,2023-Q2,11848.3,44489.9
-services,full,option1,Rest of world,imports,2023-Q3,11404.6,45810.6
-services,full,option1,Rest of world,imports,2023-Q4,12084.1,46637.3
-services,full,option1,Rest of world,imports,2024-Q1,12830.6,48167.6
-services,full,option1,Rest of world,imports,2024-Q2,11997.1,48316.4
-services,full,option1,Rest of world,imports,2024-Q3,11695.1,48606.9
-services,full,option1,Rest of world,imports,2024-Q4,11694.0,48216.8
-services,full,option1,Rest of world,imports,2025-Q1,12475.9,47862.1
-services,full,option1,Rest of world,imports,2025-Q2,11856.4,47721.4
-services,full,option1,Rest of world,imports,2025-Q3,11898.8,47925.1
-services,full,option1,Rest of world,imports,2025-Q4,12053.8,48284.9
-services,full,option1,Rest of world,imports,2026-Q1,12965.4,48774.4
+services,full,option1,EU,imports,2026-Q2,16763.0,66313.0
+services,full,option1,US,imports,2016-Q1,4720.0,
+services,full,option1,US,imports,2016-Q2,4649.9,
+services,full,option1,US,imports,2016-Q3,5361.3,
+services,full,option1,US,imports,2016-Q4,5633.3,20364.5
+services,full,option1,US,imports,2017-Q1,5798.2,21442.7
+services,full,option1,US,imports,2017-Q2,6217.7,23010.5
+services,full,option1,US,imports,2017-Q3,5904.2,23553.4
+services,full,option1,US,imports,2017-Q4,5888.3,23808.4
+services,full,option1,US,imports,2018-Q1,5959.1,23969.3
+services,full,option1,US,imports,2018-Q2,5993.1,23744.7
+services,full,option1,US,imports,2018-Q3,6663.1,24503.6
+services,full,option1,US,imports,2018-Q4,6648.4,25263.7
+services,full,option1,US,imports,2019-Q1,7020.1,26324.7
+services,full,option1,US,imports,2019-Q2,7329.0,27660.6
+services,full,option1,US,imports,2019-Q3,7657.2,28654.7
+services,full,option1,US,imports,2019-Q4,7062.3,29068.6
+services,full,option1,US,imports,2020-Q1,7682.7,29731.2
+services,full,option1,US,imports,2020-Q2,7385.4,29787.6
+services,full,option1,US,imports,2020-Q3,6810.6,28941.0
+services,full,option1,US,imports,2020-Q4,7025.3,28904.0
+services,full,option1,US,imports,2021-Q1,6902.3,28123.6
+services,full,option1,US,imports,2021-Q2,7308.4,28046.6
+services,full,option1,US,imports,2021-Q3,8113.2,29349.2
+services,full,option1,US,imports,2021-Q4,8457.9,30781.8
+services,full,option1,US,imports,2022-Q1,8510.5,32390.0
+services,full,option1,US,imports,2022-Q2,9345.1,34426.7
+services,full,option1,US,imports,2022-Q3,10020.3,36333.8
+services,full,option1,US,imports,2022-Q4,10499.3,38375.2
+services,full,option1,US,imports,2023-Q1,9544.4,39409.1
+services,full,option1,US,imports,2023-Q2,9754.4,39818.4
+services,full,option1,US,imports,2023-Q3,10760.4,40558.5
+services,full,option1,US,imports,2023-Q4,10699.9,40759.1
+services,full,option1,US,imports,2024-Q1,11278.6,42493.3
+services,full,option1,US,imports,2024-Q2,11045.0,43783.9
+services,full,option1,US,imports,2024-Q3,10709.7,43733.2
+services,full,option1,US,imports,2024-Q4,10963.4,43996.7
+services,full,option1,US,imports,2025-Q1,11505.1,44223.2
+services,full,option1,US,imports,2025-Q2,11363.6,44541.8
+services,full,option1,US,imports,2025-Q3,10829.1,44661.2
+services,full,option1,US,imports,2025-Q4,11816.0,45513.8
+services,full,option1,US,imports,2026-Q1,12071.4,46080.1
+services,full,option1,US,imports,2026-Q2,12100.9,46817.4
+services,full,option1,East Asia,imports,2016-Q1,1525.4,
+services,full,option1,East Asia,imports,2016-Q2,1347.5,
+services,full,option1,East Asia,imports,2016-Q3,1542.1,
+services,full,option1,East Asia,imports,2016-Q4,1556.5,5971.5
+services,full,option1,East Asia,imports,2017-Q1,1664.5,6110.6
+services,full,option1,East Asia,imports,2017-Q2,1623.0,6386.1
+services,full,option1,East Asia,imports,2017-Q3,1711.3,6555.3
+services,full,option1,East Asia,imports,2017-Q4,1708.8,6707.6
+services,full,option1,East Asia,imports,2018-Q1,1746.0,6789.1
+services,full,option1,East Asia,imports,2018-Q2,1688.9,6855.0
+services,full,option1,East Asia,imports,2018-Q3,1778.9,6922.6
+services,full,option1,East Asia,imports,2018-Q4,1877.2,7091.0
+services,full,option1,East Asia,imports,2019-Q1,1865.5,7210.5
+services,full,option1,East Asia,imports,2019-Q2,1948.6,7470.2
+services,full,option1,East Asia,imports,2019-Q3,1960.4,7651.7
+services,full,option1,East Asia,imports,2019-Q4,1801.3,7575.8
+services,full,option1,East Asia,imports,2020-Q1,1854.1,7564.4
+services,full,option1,East Asia,imports,2020-Q2,2062.6,7678.4
+services,full,option1,East Asia,imports,2020-Q3,1830.6,7548.6
+services,full,option1,East Asia,imports,2020-Q4,2036.0,7783.3
+services,full,option1,East Asia,imports,2021-Q1,2074.7,8003.9
+services,full,option1,East Asia,imports,2021-Q2,2119.6,8060.9
+services,full,option1,East Asia,imports,2021-Q3,2279.5,8509.8
+services,full,option1,East Asia,imports,2021-Q4,2418.9,8892.7
+services,full,option1,East Asia,imports,2022-Q1,2415.7,9233.7
+services,full,option1,East Asia,imports,2022-Q2,2892.6,10006.7
+services,full,option1,East Asia,imports,2022-Q3,2676.2,10403.4
+services,full,option1,East Asia,imports,2022-Q4,2911.0,10895.5
+services,full,option1,East Asia,imports,2023-Q1,2846.1,11325.9
+services,full,option1,East Asia,imports,2023-Q2,2816.0,11249.3
+services,full,option1,East Asia,imports,2023-Q3,2728.1,11301.2
+services,full,option1,East Asia,imports,2023-Q4,2786.9,11177.1
+services,full,option1,East Asia,imports,2024-Q1,2900.8,11231.8
+services,full,option1,East Asia,imports,2024-Q2,3116.0,11531.8
+services,full,option1,East Asia,imports,2024-Q3,3207.8,12011.5
+services,full,option1,East Asia,imports,2024-Q4,3092.5,12317.1
+services,full,option1,East Asia,imports,2025-Q1,3423.8,12840.1
+services,full,option1,East Asia,imports,2025-Q2,3491.7,13215.8
+services,full,option1,East Asia,imports,2025-Q3,3473.7,13481.7
+services,full,option1,East Asia,imports,2025-Q4,3158.8,13548.0
+services,full,option1,East Asia,imports,2026-Q1,3025.8,13150.0
+services,full,option1,East Asia,imports,2026-Q2,3263.2,12921.5
+services,full,option1,Rest of world,imports,2016-Q1,5435.6,
+services,full,option1,Rest of world,imports,2016-Q2,5426.6,
+services,full,option1,Rest of world,imports,2016-Q3,6264.6,
+services,full,option1,Rest of world,imports,2016-Q4,6201.2,23328.0
+services,full,option1,Rest of world,imports,2017-Q1,6268.3,24160.7
+services,full,option1,Rest of world,imports,2017-Q2,5686.2,24420.3
+services,full,option1,Rest of world,imports,2017-Q3,6384.5,24540.2
+services,full,option1,Rest of world,imports,2017-Q4,6483.9,24822.9
+services,full,option1,Rest of world,imports,2018-Q1,6574.9,25129.5
+services,full,option1,Rest of world,imports,2018-Q2,6448.0,25891.3
+services,full,option1,Rest of world,imports,2018-Q3,6630.0,26136.8
+services,full,option1,Rest of world,imports,2018-Q4,7238.4,26891.3
+services,full,option1,Rest of world,imports,2019-Q1,6890.5,27206.9
+services,full,option1,Rest of world,imports,2019-Q2,7494.4,28253.3
+services,full,option1,Rest of world,imports,2019-Q3,7719.4,29342.7
+services,full,option1,Rest of world,imports,2019-Q4,7607.3,29711.6
+services,full,option1,Rest of world,imports,2020-Q1,8150.3,30971.4
+services,full,option1,Rest of world,imports,2020-Q2,7821.0,31298.0
+services,full,option1,Rest of world,imports,2020-Q3,7390.8,30969.4
+services,full,option1,Rest of world,imports,2020-Q4,7136.8,30498.9
+services,full,option1,Rest of world,imports,2021-Q1,7487.9,29836.5
+services,full,option1,Rest of world,imports,2021-Q2,7647.0,29662.5
+services,full,option1,Rest of world,imports,2021-Q3,8319.3,30591.0
+services,full,option1,Rest of world,imports,2021-Q4,9092.2,32546.4
+services,full,option1,Rest of world,imports,2022-Q1,9047.7,34106.2
+services,full,option1,Rest of world,imports,2022-Q2,9433.3,35892.5
+services,full,option1,Rest of world,imports,2022-Q3,9812.6,37385.8
+services,full,option1,Rest of world,imports,2022-Q4,10915.7,39209.3
+services,full,option1,Rest of world,imports,2023-Q1,11211.5,41373.1
+services,full,option1,Rest of world,imports,2023-Q2,11961.6,43901.4
+services,full,option1,Rest of world,imports,2023-Q3,11300.5,45389.3
+services,full,option1,Rest of world,imports,2023-Q4,11830.1,46303.7
+services,full,option1,Rest of world,imports,2024-Q1,12427.5,47519.7
+services,full,option1,Rest of world,imports,2024-Q2,11732.0,47290.1
+services,full,option1,Rest of world,imports,2024-Q3,11473.5,47463.1
+services,full,option1,Rest of world,imports,2024-Q4,11457.1,47090.1
+services,full,option1,Rest of world,imports,2025-Q1,12363.1,47025.7
+services,full,option1,Rest of world,imports,2025-Q2,11658.7,46952.4
+services,full,option1,Rest of world,imports,2025-Q3,11935.2,47414.1
+services,full,option1,Rest of world,imports,2025-Q4,11899.2,47856.2
+services,full,option1,Rest of world,imports,2026-Q1,12504.8,47997.9
+services,full,option1,Rest of world,imports,2026-Q2,11804.0,48143.2
 product,total,option1,EU,exports,2016-Q1,1178.3,
 product,total,option1,EU,exports,2016-Q2,1173.4,
 product,total,option1,EU,exports,2016-Q3,1251.4,
