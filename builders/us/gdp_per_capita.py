@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """US real GDP per capita growth since 1800, with recession bouncebacks hatched.
 
-Two charts:
+Two charts, each as a line (quarterly from 1948) and as bars (annual throughout):
   us-gdp-per-capita-growth            growth on a year earlier
   us-gdp-per-capita-growth-vs-peak    growth on the higher of a year earlier and the
                                       previous all-time peak, so rebounds that only
@@ -70,6 +70,27 @@ def levels() -> list[tuple[date, float, str]]:
     return [(date(y, 7, 1), mad[y] * scale, "A") for y in years] + [(d, v, "Q") for d, v in bea]
 
 
+def annual(lv: list[tuple[date, float, str]]) -> tuple[list[tuple[date, float, str]], str | None]:
+    """The same levels, annual throughout: BEA quarters averaged by year. A part year at
+    the end is the previous year's level grown by the year-to-date change on the same
+    quarters a year earlier. Returns (levels, part-year label or None)."""
+    out = [x for x in lv if x[2] == "A" and x[0].year < 1947]
+    by: dict[int, list[float]] = {}
+    for d, v, f in lv:
+        if f == "Q":
+            by.setdefault(d.year, []).append(v)
+    part = None
+    for y in sorted(by):
+        q = by[y]
+        if len(q) == 4:
+            out.append((date(y, 7, 1), sum(q) / 4, "A"))
+        else:   # year to date: grow last year's level by the change on the same quarters
+            k, prev = len(q), by[y - 1]
+            out.append((date(y, 7, 1), sum(prev) / 4 * (sum(q) / sum(prev[:k])), "A"))
+            part = f"{y} is Q1 to Q{k} on the same quarters of {y - 1}."
+    return out, part
+
+
 def growth(lv: list[tuple[date, float, str]], vs_peak: bool) -> list[tuple[date, float]]:
     """Growth on a year earlier (4 quarters, or 1 year on the annual data); with
     vs_peak, on the higher of that and the highest level reached up to then."""
@@ -106,24 +127,42 @@ def bouncebacks(lv: list[tuple[date, float, str]]) -> list[tuple[date, date]]:
     return spans
 
 
-def draw(series: list[tuple[date, float]], spans, slug: str, title: str, units: str, note: str) -> None:
+BAR_SOURCE = ("Source: Maddison Project Database 2023 to 1946, rescaled to join BEA; BEA via FRED "
+              "(A939RX0Q048SBEA) from 1947, quarters averaged by year; NBER business-cycle dates; ukmacro calculations.")
+
+
+def draw(series: list[tuple[date, float]], spans, slug: str, title: str, units: str, note: str,
+         bars: bool = False, start: int = 1800, source: str = SOURCE) -> None:
+    """A growth chart from `start`: a line, or bars one year wide (annual points, at
+    mid-year) or one quarter wide (quarterly points); recession bouncebacks hatched."""
     hs.apply()
-    fig, ax = hs.figure(title, units, source=SOURCE + " " + note)
+    series = [(d, g) for d, g in series if d.year >= start]
+    fig, ax = hs.figure(title, units, source=source + " " + note)
     c = hs.COLOURS
     for s, e in spans:
-        ax.axvspan(s, e, facecolor="none", edgecolor=c["grey"], hatch="////", linewidth=0, zorder=1)
-    ax.axhline(0, color=c["grey"], linewidth=0.9, zorder=2)
+        if e.year >= start:
+            ax.axvspan(max(s, date(start, 1, 1)), e, facecolor="none", edgecolor=c["grey"], hatch="////",
+                       linewidth=0, zorder=1)
     ax.axhline(LINE, color=c["ink"], linewidth=1.2, zorder=3)
-    ax.annotate(f"{LINE:.0f}%", (series[0][0], LINE), xytext=(2, 4), textcoords="offset points",
+    ax.annotate(f"{LINE:.0f}%", (date(start, 1, 1), LINE), xytext=(2, 4), textcoords="offset points",
                 fontsize=10.5, color=c["ink"], va="bottom")
-    ax.plot([d for d, _ in series], [g for _, g in series], color=c["series"][0], linewidth=1.4, zorder=4)
-    last = series[-1]
-    ax.annotate(f"{last[1]:.1f}".replace("-", "−"), last, xytext=(5, 0), textcoords="offset points",
-                va="center", fontsize=10.5, color=c["text_2"])
-    ax.set_xlim(date(1800, 1, 1), date(series[-1][0].year + 4, 1, 1))
-    ax.set_xticks([date(y, 1, 1) for y in range(1800, series[-1][0].year + 1, 20)])
+    if bars:
+        # annual points sit at 1 July, quarterly at the 15th of the quarter's middle month
+        widths = [300 if d.month == 7 and d.day == 1 else 75 for d, _ in series]
+        ax.bar([d for d, _ in series], [g for _, g in series], width=widths, color=c["series"][0],
+               linewidth=0, zorder=4)
+    else:
+        ax.plot([d for d, _ in series], [g for _, g in series], color=c["series"][0], linewidth=1.4, zorder=4)
+        last = series[-1]
+        ax.annotate(f"{last[1]:.1f}".replace("-", "\u2212"), last, xytext=(5, 0), textcoords="offset points",
+                    va="center", fontsize=10.5, color=c["text_2"])
+    ax.axhline(0, color=c["grey"], linewidth=0.9, zorder=5)
+    step = 20 if start < 1900 else 10
+    ax.set_xlim(date(start, 1, 1), date(series[-1][0].year + (4 if step == 20 else 2), 1, 1))
+    first = -(-start // step) * step   # first round decade
+    ax.set_xticks([date(y, 1, 1) for y in range(first, series[-1][0].year + 1, step)])
     ax.xaxis.set_major_formatter(__import__("matplotlib.dates", fromlist=["DateFormatter"]).DateFormatter("%Y"))
-    ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}".replace("-", "−"))
+    ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}".replace("-", "\u2212"))
     fig.legend([Patch(facecolor="none", edgecolor=c["grey"], hatch="////", linewidth=0)],
                ["Recession bounceback: NBER trough until back above the previous all-time high"],
                loc="upper left", bbox_to_anchor=(hs._x(hs.LEFT_CM - 0.2), 0.86), handlelength=1.6)
@@ -142,7 +181,34 @@ def main() -> None:
          "% change on the higher of a year earlier and the previous all-time high",
          "Growth is measured from the year-earlier level or, if higher, the highest level reached up to "
          "then, so a rebound that only regains lost ground counts as negative growth.")
+    # bar versions: annual throughout
+    alv, part = annual(lv)
+    ay, ap, aspans = growth(alv, False), growth(alv, True), bouncebacks(alv)
+    tail = f" {part}" if part else ""
+    draw(ay, aspans, "us-gdp-per-capita-growth-bars", "US real GDP per capita growth since 1800",
+         "% change on the previous year", "Annual averages throughout." + tail, bars=True, source=BAR_SOURCE)
+    draw(ap, aspans, "us-gdp-per-capita-growth-vs-peak-bars",
+         "US real GDP per capita growth, measured against the previous peak",
+         "% change on the higher of the previous year and the previous all-time high",
+         "Annual averages throughout. A rebound that only regains lost ground counts as negative growth." + tail,
+         bars=True, source=BAR_SOURCE)
+    # the last 100 years as bars: annual to 1947 (no quarterly per-capita data before), then quarterly
+    start = date.today().year - 100
+    q_note = (f"Wide bars: annual growth, {start} to 1947 (BEA's quarterly series starts in 1947). Narrow bars: "
+              "growth on the same quarter a year earlier, from 1948.")
+    draw(yoy, spans, "us-gdp-per-capita-growth-100y-bars", f"US real GDP per capita growth since {start}",
+         "% change on a year earlier", q_note, bars=True, start=start)
+    draw(vs_peak, spans, "us-gdp-per-capita-growth-vs-peak-100y-bars",
+         f"US real GDP per capita growth since {start}, measured against the previous peak",
+         "% change on the higher of a year earlier and the previous all-time high",
+         q_note + " A rebound that only regains lost ground counts as negative growth.", bars=True, start=start)
     OUT.mkdir(parents=True, exist_ok=True)
+    with (OUT / "us_gdp_per_capita_growth_annual.csv").open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["year", "gdp_per_capita_2017_usd", "growth_pct", "growth_vs_peak_pct"])
+        g1, g2 = dict(ay), dict(ap)
+        for d, v, _ in alv:
+            w.writerow([d.year, round(v, 1), round(g1[d], 2) if d in g1 else "", round(g2[d], 2) if d in g2 else ""])
     with (OUT / "us_gdp_per_capita_growth.csv").open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["date", "frequency", "gdp_per_capita_2017_usd", "growth_yoy_pct", "growth_vs_peak_pct"])
