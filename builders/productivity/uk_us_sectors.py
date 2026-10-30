@@ -7,7 +7,7 @@ figures 6 and 10, rebuilt on the latest data.
                                    sector's share of 2019 GVA, so a bar's area is roughly
                                    its contribution to aggregate productivity growth
   uk-us-productivity-contributions figure 10: average annual within-industry contribution
-                                   to GVA-per-hour growth from 2019 (growth in 2020 onwards),
+                                   to GVA-per-hour growth from 2018 (growth in 2019 onwards),
                                    by sector, UK vs US
 
 UK hours follow RF's method (their Annex 1), which avoids leaning on the Labour Force
@@ -74,7 +74,8 @@ BEA_VA = "https://apps.bea.gov/industry/Release/XLS/GDPxInd/ValueAdded.xlsx"
 BLS_EP = "https://www.bls.gov/emp/industry-employment/industry.zip"
 BLS_ZIP = Path.home() / ".cache" / "ukmacro" / "bls" / "industry.zip"   # saved by hand: see us_data()
 OUT, IMG = REPO / "data" / "productivity", REPO / "img" / "productivity"
-BASE_YEAR, START = 2019, 2020   # figure 6 base year; figure 10's first growth year
+BASE_YEAR, START = 2019, 2019   # figure 6 base year; figure 10's first growth year (on 2018,
+                                # so the average isn't dominated by the 2020-21 Covid swing)
 
 # UK sections as the ONS productivity tables label them: (short name, figure 6 group)
 SECTIONS = {
@@ -285,7 +286,7 @@ def fig10_rows(uk: dict, us: dict) -> tuple[list[dict], int]:
         for c, con in (("uk", uk_c), ("us", us_c)):
             row[f"{c}_contribution"] = round(mean([con[t][0] for t in years]), 3)
             row[f"{c}_gva_share"] = round(mean([con[t][1] for t in years]), 2)
-            row[f"{c}_contribution_2020_2023"] = round(mean([con[t][0] for t in range(START, 2024)]), 3)
+            row[f"{c}_contribution_2020_2023"] = round(mean([con[t][0] for t in range(2020, 2024)]), 3)  # RF's window
             for t in years:
                 row[f"{c}_{t}"] = round(con[t][0], 3)
         rows.append(row)
@@ -389,7 +390,7 @@ def main() -> None:
     for r in r6:
         print(f"  {r['sector']:20s} share {r['gva_share_2019']:5.1f}  RF-method {r['change_gva_per_hour']:+6.1f}  "
               f"ONS {r['change_ons_output_per_hour']:+6.1f}")
-    print(f"[fig10] {START - 1}-{last}  (2019-2023 in brackets)")
+    print(f"[fig10] {START - 1}-{last}  (RF's 2019-2023 in brackets)")
     for r in r10:
         print(f"  {r['sector']:20s} UK {r['uk_contribution']:+.3f} ({r['uk_contribution_2020_2023']:+.3f})  "
               f"US {r['us_contribution']:+.3f} ({r['us_contribution_2020_2023']:+.3f})")
