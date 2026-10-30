@@ -7,7 +7,8 @@ figures 6 and 10, rebuilt on the latest data.
                                    sector's share of 2019 GVA, so a bar's area is roughly
                                    its contribution to aggregate productivity growth
   uk-us-productivity-contributions figure 10: average annual within-industry contribution
-                                   to GVA-per-hour growth from 2020, by sector, UK vs US
+                                   to GVA-per-hour growth from 2019 (growth in 2020 onwards),
+                                   by sector, UK vs US
 
 UK hours follow RF's method (their Annex 1), which avoids leaning on the Labour Force
 Survey for the level of employment:
@@ -258,7 +259,8 @@ def _contributions(real, cp, hours, total, years) -> dict[int, tuple[float, floa
 
 
 def fig10_rows(uk: dict, us: dict) -> tuple[list[dict], int]:
-    """Average annual within-industry contributions, START to the latest year both have."""
+    """Average annual within-industry contributions over the growth years START (on START - 1)
+    to the latest year both have."""
     def annual(s: dict[str, float], how=sum) -> dict[int, float]:
         by: dict[int, list[float]] = {}
         for q, v in s.items():
@@ -337,7 +339,7 @@ def chart_fig6(rows: list[dict], latest: list[str]) -> None:
 
 
 def chart_fig10(rows: list[dict], last: int) -> None:
-    fig, ax = hs.figure(f"Contributions to productivity growth by sector, {START}–{last}: UK vs US",
+    fig, ax = hs.figure(f"Contributions to productivity growth by sector, {START - 1}–{last}: UK vs US",
                         "Average annual within-industry contribution to growth in GVA per hour, percentage points; "
                         "bubble size = share of GVA",
                         source=SOURCE_US + " Excludes education, health, public administration and real estate. "
@@ -387,7 +389,7 @@ def main() -> None:
     for r in r6:
         print(f"  {r['sector']:20s} share {r['gva_share_2019']:5.1f}  RF-method {r['change_gva_per_hour']:+6.1f}  "
               f"ONS {r['change_ons_output_per_hour']:+6.1f}")
-    print(f"[fig10] {START}-{last}  (2020-2023 in brackets)")
+    print(f"[fig10] {START - 1}-{last}  (2019-2023 in brackets)")
     for r in r10:
         print(f"  {r['sector']:20s} UK {r['uk_contribution']:+.3f} ({r['uk_contribution_2020_2023']:+.3f})  "
               f"US {r['us_contribution']:+.3f} ({r['us_contribution_2020_2023']:+.3f})")
