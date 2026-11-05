@@ -2,7 +2,7 @@ wave,breakdown,Industry/Size Band,Exported goods only,Exported services only,Exp
 107,Currently trading,,5.0,7.3,1.1,6.5,80.1
 113,Currently trading,,4.8,8.0,1.1,5.3,80.7
 113,Not permanently stopped trading,,4.7,7.8,1.2,5.6,80.8
-119,Currently trading,,5.7,7.3,3.0,5.5,80.6
+119,Currently trading,,5.7,7.3,3.4,5.5,80.6
 119,Not permanently stopped trading,,5.5,7.3,3.0,5.7,80.6
 125,Currently trading,,5.2,6.3,1.1,5.2,82.2
 125,Not permanently stopped trading,,5.0,6.2,1.1,5.5,82.3
@@ -38,3 +38,5 @@ wave,breakdown,Industry/Size Band,Exported goods only,Exported services only,Exp
 163,Not permanently stopped trading,,6.0,6.3,3.4,8.1,78.8
 165,Currently trading,,6.6,7.7,1.3,6.1,78.3
 165,Not permanently stopped trading,,6.5,7.5,1.2,6.1,78.6
+167,Currently trading,,6.1,7.8,1.0,4.9,80.2
+167,Not permanently stopped trading,,6.0,7.6,1.0,5.0,80.4
