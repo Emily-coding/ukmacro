@@ -32,16 +32,16 @@
  "data": [
   {
    "date": "Imports",
-   "imf": 9.67,
-   "ons_products": 23.86,
-   "rest": 94.07,
+   "imf": 10.24,
+   "ons_products": 25.27,
+   "rest": 95.41,
    "services": 38.8
   },
   {
    "date": "Exports",
-   "imf": 4.28,
-   "ons_products": 6.71,
-   "rest": 59.39,
+   "imf": 4.3,
+   "ons_products": 6.73,
+   "rest": 58.99,
    "services": 76.86
   }
  ],

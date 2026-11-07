@@ -22,7 +22,7 @@
    "mark": "line"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -53,7 +53,7 @@
    "date": "2020-Q1",
    "composition": -0.09,
    "within": 0.21,
-   "change": 0.13
+   "change": 0.12
   },
   {
    "date": "2020-Q2",
@@ -76,7 +76,7 @@
   {
    "date": "2021-Q1",
    "composition": -0.23,
-   "within": -1.47,
+   "within": -1.48,
    "change": -1.71
   },
   {
@@ -136,7 +136,7 @@
   {
    "date": "2023-Q3",
    "composition": -0.36,
-   "within": 0.71,
+   "within": 0.72,
    "change": 0.36
   },
   {
@@ -154,8 +154,8 @@
   {
    "date": "2024-Q2",
    "composition": -0.43,
-   "within": 0.71,
-   "change": 0.28
+   "within": 0.72,
+   "change": 0.29
   },
   {
    "date": "2024-Q3",
@@ -167,7 +167,7 @@
    "date": "2024-Q4",
    "composition": -0.52,
    "within": 0.64,
-   "change": 0.12
+   "change": 0.11
   },
   {
    "date": "2025-Q1",
@@ -185,7 +185,7 @@
    "date": "2025-Q3",
    "composition": -0.67,
    "within": 0.39,
-   "change": -0.28
+   "change": -0.27
   },
   {
    "date": "2025-Q4",
@@ -202,8 +202,14 @@
   {
    "date": "2026-Q2",
    "composition": -0.81,
-   "within": 0.17,
-   "change": -0.65
+   "within": 0.18,
+   "change": -0.63
+  },
+  {
+   "date": "2026-Q3",
+   "composition": -0.86,
+   "within": 0.1,
+   "change": -0.76
   }
  ],
  "theme": "blue-amber",

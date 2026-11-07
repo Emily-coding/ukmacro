@@ -711,8 +711,8 @@ computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q1,30.27,253522.0,
 computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q2,37.6,55043.0,343029.0,683.06
 computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q3,42.03,56675.0,380571.0,741.61
 computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q4,40.71,64319.0,372069.0,632.9
-computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q1,33.83,84734.0,425184.0,399.21
-computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q2,37.63,86686.0,531907.0,434.15
+computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q1,34.0,84797.0,426822.0,400.94
+computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q2,37.79,86742.0,533363.0,435.61
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q1,134.61,230837.0,3513520.0,583.14
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q2,132.18,191014.0,2782704.0,691.97
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q3,166.88,272758.0,3935819.0,611.83
@@ -922,7 +922,7 @@ computer_units_other,Other computer units (incl. accelerator units),26.2,847180,
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2025-Q3,104.8,421966.0,834853.0,248.36
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2025-Q4,119.62,480666.0,618754.0,248.86
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q1,133.73,463526.0,539371.0,288.51
-computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q2,147.43,365893.0,460445.0,402.93
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q2,147.43,365894.0,460447.0,402.94
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q1,58.13,128247.0,276895.0,453.26
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q2,86.05,159667.0,297497.0,538.94
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q3,64.26,213148.0,291950.0,301.48
@@ -1048,7 +1048,7 @@ storage,Storage units,26.2,847170,EU,exports,2025-Q2,63.54,788719.0,248394.0,80.
 storage,Storage units,26.2,847170,EU,exports,2025-Q3,93.8,1180253.0,228514.0,79.47
 storage,Storage units,26.2,847170,EU,exports,2025-Q4,104.42,1072879.0,200032.0,97.33
 storage,Storage units,26.2,847170,EU,exports,2026-Q1,133.45,626725.0,219801.0,212.93
-storage,Storage units,26.2,847170,EU,exports,2026-Q2,74.85,436111.0,188553.0,171.63
+storage,Storage units,26.2,847170,EU,exports,2026-Q2,74.85,436611.0,188554.0,171.44
 storage,Storage units,26.2,847170,EU,imports,2016-Q1,192.89,1879160.0,1846110.0,102.65
 storage,Storage units,26.2,847170,EU,imports,2016-Q2,179.5,1637164.0,1855079.0,109.64
 storage,Storage units,26.2,847170,EU,imports,2016-Q3,199.58,1557887.0,6234899.0,128.11
@@ -1215,8 +1215,8 @@ computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,8
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2025-Q2,108.91,0.0,376191.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2025-Q3,108.68,0.0,329502.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2025-Q4,153.18,0.0,377335.0,
-computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q1,172.71,0.0,311937.0,
-computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q2,141.76,0.0,270789.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q1,172.83,0.0,313617.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q2,141.84,0.0,271929.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q1,161.99,0.0,1461869.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q2,139.61,0.0,1389011.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q3,170.65,0.0,2393683.0,
@@ -1792,7 +1792,7 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2025-Q3,395.39,0.0,2135637.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2025-Q4,380.85,0.0,2075498.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q1,395.16,0.0,1872887.0,
-network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q2,348.61,0.0,1584361.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q2,348.61,0.0,1584364.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q1,449.62,0.0,3208390.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q2,456.78,0.0,3177620.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q3,522.2,0.0,24581300.0,
@@ -1834,7 +1834,7 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2025-Q3,911.24,0.0,4888510.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2025-Q4,987.18,0.0,4847261.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q1,1057.11,0.0,5083063.0,
-network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q2,1144.91,0.0,4850166.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q2,1144.91,0.0,4850206.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q1,163.13,0.0,468513.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q2,151.75,0.0,486799.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q3,178.74,0.0,613078.0,
@@ -2032,7 +2032,7 @@ cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q2,52.89,12
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q3,58.2,142312.0,147120.0,408.98
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q4,73.64,195730.0,227435.0,376.25
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q1,71.86,164177.0,178413.0,437.72
-cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q2,72.28,167086.0,248530.0,432.57
+cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q2,72.3,170648.0,248557.0,423.65
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q1,80.56,873559.0,653072.0,92.22
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q2,82.52,941655.0,935407.0,87.64
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q3,88.0,842255.0,720238.0,104.48
@@ -2746,7 +2746,7 @@ vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q2,9
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q3,11.68,152199.0,794390.0,76.75
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q4,12.34,229235.0,824211.0,53.81
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q1,12.53,157215.0,799027.0,79.68
-vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q2,11.68,162711.0,935727.0,71.8
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q2,11.68,162722.0,935956.0,71.81
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q1,2.17,24530.0,134696.0,88.64
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q2,1.14,52286.0,106245.0,21.78
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q3,1.12,11905.0,103181.0,93.96

@@ -19,14 +19,14 @@
   {
    "slug": "gdp-monthly",
    "title": "Monthly GDP",
-   "data_through": "2026-07",
-   "next_release": "2026-10-15",
+   "data_through": "2026-08",
+   "next_release": "2026-11-12",
    "status": "ok"
   },
   {
    "slug": "gdp-g7",
    "title": "Real GDP since the pandemic, G7",
-   "data_through": "2026-Q2",
+   "data_through": "2026-Q3",
    "next_release": null,
    "status": "ok"
   }

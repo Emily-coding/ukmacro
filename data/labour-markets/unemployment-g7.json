@@ -12,7 +12,7 @@
    "key": "gbr",
    "label": "United Kingdom",
    "_source": "live",
-   "_date": "2026-06",
+   "_date": "2026-07",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
@@ -26,35 +26,35 @@
    "key": "deu",
    "label": "Germany",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
    "key": "fra",
    "label": "France",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
    "key": "ita",
    "label": "Italy",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
    "key": "jpn",
    "label": "Japan",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
    "key": "can",
    "label": "Canada",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://data-explorer.oecd.org"
   }
  ],
@@ -187,7 +187,7 @@
    "gbr": 3.9,
    "usa": 3.6,
    "deu": 3.2,
-   "fra": 8.3,
+   "fra": 8.2,
    "ita": 9.6,
    "jpn": 2.4,
    "can": 5.5
@@ -247,7 +247,7 @@
    "gbr": 4.6,
    "usa": 10.2,
    "deu": 3.8,
-   "fra": 8.6,
+   "fra": 8.7,
    "ita": 10.2,
    "jpn": 2.9,
    "can": 10.9
@@ -387,7 +387,7 @@
    "gbr": 4.3,
    "usa": 4.7,
    "deu": 3.4,
-   "fra": 7.8,
+   "fra": 7.7,
    "ita": 9.1,
    "jpn": 2.7,
    "can": 7.0
@@ -416,7 +416,7 @@
    "date": "2021-12",
    "gbr": 4.1,
    "usa": 3.9,
-   "deu": 3.3,
+   "deu": 3.4,
    "fra": 7.4,
    "ita": 8.9,
    "jpn": 2.7,
@@ -597,7 +597,7 @@
    "gbr": 4.4,
    "usa": 3.6,
    "deu": 3.0,
-   "fra": 7.3,
+   "fra": 7.4,
    "ita": 7.5,
    "jpn": 2.5,
    "can": 5.4
@@ -607,7 +607,7 @@
    "gbr": 4.3,
    "usa": 3.5,
    "deu": 3.0,
-   "fra": 7.4,
+   "fra": 7.5,
    "ita": 7.8,
    "jpn": 2.6,
    "can": 5.4
@@ -627,7 +627,7 @@
    "gbr": 4.0,
    "usa": 3.7,
    "deu": 3.1,
-   "fra": 7.5,
+   "fra": 7.4,
    "ita": 7.7,
    "jpn": 2.6,
    "can": 5.5
@@ -767,7 +767,7 @@
    "gbr": 4.4,
    "usa": 4.2,
    "deu": 3.4,
-   "fra": 7.4,
+   "fra": 7.3,
    "ita": 6.2,
    "jpn": 2.5,
    "can": 7.0
@@ -846,8 +846,8 @@
    "date": "2025-07",
    "gbr": 4.8,
    "usa": 4.3,
-   "deu": 3.7,
-   "fra": 7.7,
+   "deu": 3.8,
+   "fra": 7.8,
    "ita": 5.9,
    "jpn": 2.4,
    "can": 6.9
@@ -858,7 +858,7 @@
    "usa": 4.3,
    "deu": 3.8,
    "fra": 7.8,
-   "ita": 5.7,
+   "ita": 5.8,
    "jpn": 2.6,
    "can": 7.1
   },
@@ -868,7 +868,7 @@
    "usa": 4.4,
    "deu": 3.8,
    "fra": 7.9,
-   "ita": 6.0,
+   "ita": 5.9,
    "jpn": 2.6,
    "can": 7.1
   },
@@ -887,7 +887,7 @@
    "gbr": 5.2,
    "usa": 4.5,
    "deu": 3.9,
-   "fra": 8.0,
+   "fra": 7.9,
    "ita": 5.7,
    "jpn": 2.6,
    "can": 6.6
@@ -907,7 +907,7 @@
    "gbr": 4.9,
    "usa": 4.3,
    "deu": 3.9,
-   "fra": 8.1,
+   "fra": 8.0,
    "ita": 5.5,
    "jpn": 2.7,
    "can": 6.5
@@ -938,7 +938,7 @@
    "usa": 4.3,
    "deu": 3.9,
    "fra": 8.3,
-   "ita": 5.6,
+   "ita": 5.7,
    "jpn": 2.5,
    "can": 6.9
   },
@@ -958,17 +958,17 @@
    "usa": 4.2,
    "deu": 4.0,
    "fra": 8.3,
-   "ita": 6.0,
+   "ita": 6.1,
    "jpn": 2.5,
    "can": 6.5
   },
   {
    "date": "2026-07",
-   "gbr": null,
+   "gbr": 4.7,
    "usa": 4.1,
    "deu": 4.0,
    "fra": 8.3,
-   "ita": 6.0,
+   "ita": 6.1,
    "jpn": 2.4,
    "can": 6.4
   },
@@ -976,8 +976,8 @@
    "date": "2026-08",
    "gbr": null,
    "usa": 4.1,
-   "deu": 4.0,
-   "fra": 8.2,
+   "deu": 4.1,
+   "fra": 8.3,
    "ita": 6.2,
    "jpn": 2.5,
    "can": 6.4
@@ -986,11 +986,11 @@
    "date": "2026-09",
    "gbr": null,
    "usa": 4.2,
-   "deu": null,
-   "fra": null,
-   "ita": null,
-   "jpn": null,
-   "can": null
+   "deu": 4.1,
+   "fra": 8.5,
+   "ita": 6.3,
+   "jpn": 2.4,
+   "can": 6.5
   }
  ],
  "theme": "blue-amber",

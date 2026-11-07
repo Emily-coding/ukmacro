@@ -1320,6 +1320,25 @@ worker_shortage,labour,Businesses experiencing a shortage of workers,share,count
 worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,164,2026-08-01,2026-08-31,industry,"Professional, scientific and technical activities",5.4,1
 worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,164,2026-08-01,2026-08-31,industry,Transportation and storage,2.0,1
 worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,164,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,10.1,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,0 - 9,7.3,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,10 - 49,15.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,100 - 249,15.5,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,250 +,11.6,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,50 - 99,16.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Accommodation and food service activities,11.6,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Administrative and support service activities,6.5,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,total,All businesses,8.3,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,size,All size bands excluding 0 - 9,15.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,"Arts, entertainment and recreation",6.6,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Construction,12.6,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Education,8.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Human health and social work activities,9.7,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Information and communication,5.2,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Manufacturing,9.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Other service activities,10.8,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,"Professional, scientific and technical activities",5.2,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Transportation and storage,1.9,1
+worker_shortage,labour,Businesses experiencing a shortage of workers,share,count,166,2026-09-01,2026-09-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,9.2,1
 worker_shortage_10plus,labour,Businesses experiencing a shortage of workers (10+ employees),share,count,42,2021-10-04,2021-10-31,industry,Accommodation and food service activities,59.8,1
 worker_shortage_10plus,labour,Businesses experiencing a shortage of workers (10+ employees),share,count,42,2021-10-04,2021-10-31,industry,Administrative and support service activities,40.7,1
 worker_shortage_10plus,labour,Businesses experiencing a shortage of workers (10+ employees),share,count,42,2021-10-04,2021-10-31,total,All businesses,36.5,1
@@ -3394,6 +3413,25 @@ recruitment_difficulty,labour,Businesses with difficulty recruiting employees,sh
 recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,164,2026-08-01,2026-08-31,industry,"Professional, scientific and technical activities",4.6,1
 recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,164,2026-08-01,2026-08-31,industry,Transportation and storage,4.6,1
 recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,164,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,5.7,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,0 - 9,5.9,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,10 - 49,17.2,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,100 - 249,16.9,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,250 +,12.1,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,50 - 99,17.9,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Accommodation and food service activities,12.7,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Administrative and support service activities,8.1,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,total,All businesses,7.1,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,size,All size bands excluding 0 - 9,17.1,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,"Arts, entertainment and recreation",1.1,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Construction,11.5,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Education,8.6,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Human health and social work activities,4.4,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Information and communication,2.9,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Manufacturing,7.6,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Other service activities,7.6,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,"Professional, scientific and technical activities",4.6,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Transportation and storage,1.8,1
+recruitment_difficulty,labour,Businesses with difficulty recruiting employees,share,count,166,2026-09-01,2026-09-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,8.1,1
 recruit_type_skilled_2021_23,labour,"Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)",share,count,55,2022-03-01,2022-03-31,size,0 - 9,55.0,1
 recruit_type_skilled_2021_23,labour,"Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)",share,count,55,2022-03-01,2022-03-31,size,10 - 49,40.6,1
 recruit_type_skilled_2021_23,labour,"Hard to recruit: skilled, manual or technical employees (% of firms with difficulties, 2021-23)",share,count,55,2022-03-01,2022-03-31,size,100 - 249,44.6,1
@@ -6100,6 +6138,23 @@ employee_expectations_net,labour,"Expected number of employees, net balance (inc
 employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,164,2026-08-01,2026-08-31,industry,"Professional, scientific and technical activities",-2.0,1
 employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,164,2026-08-01,2026-08-31,industry,Transportation and storage,6.1,1
 employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,164,2026-08-01,2026-08-31,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,-2.9,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,0 - 9,-0.8,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,10 - 49,-0.9,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,100 - 249,8.0,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,250 +,10.3,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,50 - 99,5.5,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Accommodation and food service activities,-10.3,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Administrative and support service activities,-1.0,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,total,All businesses,-0.7,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,size,All size bands excluding 0 - 9,0.4,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Construction,-2.9,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Education,6.8,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Human health and social work activities,2.6,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Information and communication,-0.2,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Manufacturing,0.7,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,"Professional, scientific and technical activities",3.4,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Transportation and storage,-2.6,1
+employee_expectations_net,labour,"Expected number of employees, net balance (increase minus decrease)",net,count,166,2026-09-01,2026-09-30,industry,Wholesale and retail trade; repair of motor vehicles and motorcycles,1.2,1
 hourly_wages_net,labour,"Hourly wages vs previous month, net balance (increased minus decreased)",net,count,61,2022-06-01,2022-06-30,size,0 - 9,6.0,1
 hourly_wages_net,labour,"Hourly wages vs previous month, net balance (increased minus decreased)",net,count,61,2022-06-01,2022-06-30,size,50 - 99,23.0,1
 hourly_wages_net,labour,"Hourly wages vs previous month, net balance (increased minus decreased)",net,count,61,2022-06-01,2022-06-30,industry,Accommodation and food service activities,18.7,1

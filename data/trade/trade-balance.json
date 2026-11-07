@@ -12,233 +12,237 @@
    "key": "balance",
    "label": "Trade balance",
    "_source": "live",
-   "_date": "2026-07",
+   "_date": "2026-08",
    "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbj/mret"
   }
  ],
- "data_through": "2026-07",
- "next_release": "2026-10-15",
+ "data_through": "2026-08",
+ "next_release": "2026-11-12",
  "status": "ok",
  "data": [
   {
    "date": "2022-01",
-   "balance": -10899.0
+   "balance": -11362.0
   },
   {
    "date": "2022-02",
-   "balance": -7112.0
+   "balance": -7584.0
   },
   {
    "date": "2022-03",
-   "balance": -7384.0
+   "balance": -7382.0
   },
   {
    "date": "2022-04",
-   "balance": -5840.0
+   "balance": -5926.0
   },
   {
    "date": "2022-05",
-   "balance": -6255.0
+   "balance": -7384.0
   },
   {
    "date": "2022-06",
-   "balance": -6375.0
+   "balance": -6319.0
   },
   {
    "date": "2022-07",
-   "balance": -1380.0
+   "balance": -1902.0
   },
   {
    "date": "2022-08",
-   "balance": 1478.0
+   "balance": 987.0
   },
   {
    "date": "2022-09",
-   "balance": 4942.0
+   "balance": 4210.0
   },
   {
    "date": "2022-10",
-   "balance": 7253.0
+   "balance": 7629.0
   },
   {
    "date": "2022-11",
-   "balance": 4556.0
+   "balance": 5306.0
   },
   {
    "date": "2022-12",
-   "balance": -731.0
+   "balance": -706.0
   },
   {
    "date": "2023-01",
-   "balance": -1530.0
+   "balance": -1318.0
   },
   {
    "date": "2023-02",
-   "balance": -1451.0
+   "balance": -1297.0
   },
   {
    "date": "2023-03",
-   "balance": -1161.0
+   "balance": -241.0
   },
   {
    "date": "2023-04",
-   "balance": -616.0
+   "balance": 148.0
   },
   {
    "date": "2023-05",
-   "balance": -5454.0
+   "balance": -5170.0
   },
   {
    "date": "2023-06",
-   "balance": -2953.0
+   "balance": -2123.0
   },
   {
    "date": "2023-07",
-   "balance": -1748.0
+   "balance": -840.0
   },
   {
    "date": "2023-08",
-   "balance": -3289.0
+   "balance": -2693.0
   },
   {
    "date": "2023-09",
-   "balance": -1628.0
+   "balance": -1259.0
   },
   {
    "date": "2023-10",
-   "balance": -5735.0
+   "balance": -3966.0
   },
   {
    "date": "2023-11",
-   "balance": -3343.0
+   "balance": -1720.0
   },
   {
    "date": "2023-12",
-   "balance": -3233.0
+   "balance": -187.0
   },
   {
    "date": "2024-01",
-   "balance": -1126.0
+   "balance": 25.0
   },
   {
    "date": "2024-02",
-   "balance": -1081.0
+   "balance": -314.0
   },
   {
    "date": "2024-03",
-   "balance": -2314.0
+   "balance": -1420.0
   },
   {
    "date": "2024-04",
-   "balance": -5124.0
+   "balance": -4305.0
   },
   {
    "date": "2024-05",
-   "balance": -2888.0
+   "balance": -2914.0
   },
   {
    "date": "2024-06",
-   "balance": -3274.0
+   "balance": -2462.0
   },
   {
    "date": "2024-07",
-   "balance": -2712.0
+   "balance": -3742.0
   },
   {
    "date": "2024-08",
-   "balance": 1986.0
+   "balance": 1866.0
   },
   {
    "date": "2024-09",
-   "balance": 2218.0
+   "balance": 2176.0
   },
   {
    "date": "2024-10",
-   "balance": -3149.0
+   "balance": -4103.0
   },
   {
    "date": "2024-11",
-   "balance": -3282.0
+   "balance": -4614.0
   },
   {
    "date": "2024-12",
-   "balance": -18.0
+   "balance": -1290.0
   },
   {
    "date": "2025-01",
-   "balance": -1548.0
+   "balance": -1300.0
   },
   {
    "date": "2025-02",
-   "balance": -4513.0
+   "balance": -3947.0
   },
   {
    "date": "2025-03",
-   "balance": -2967.0
+   "balance": -2399.0
   },
   {
    "date": "2025-04",
-   "balance": -3895.0
+   "balance": -3520.0
   },
   {
    "date": "2025-05",
-   "balance": -3280.0
+   "balance": -3572.0
   },
   {
    "date": "2025-06",
-   "balance": -4109.0
+   "balance": -3822.0
   },
   {
    "date": "2025-07",
-   "balance": -1750.0
+   "balance": -2174.0
   },
   {
    "date": "2025-08",
-   "balance": -1798.0
+   "balance": -2110.0
   },
   {
    "date": "2025-09",
-   "balance": -4137.0
+   "balance": -4282.0
   },
   {
    "date": "2025-10",
-   "balance": -5844.0
+   "balance": -6108.0
   },
   {
    "date": "2025-11",
-   "balance": -4758.0
+   "balance": -4863.0
   },
   {
    "date": "2025-12",
-   "balance": -866.0
+   "balance": -1350.0
   },
   {
    "date": "2026-01",
-   "balance": 1498.0
+   "balance": 852.0
   },
   {
    "date": "2026-02",
-   "balance": -5757.0
+   "balance": -6573.0
   },
   {
    "date": "2026-03",
-   "balance": -10467.0
+   "balance": -10433.0
   },
   {
    "date": "2026-04",
-   "balance": -7539.0
+   "balance": -6059.0
   },
   {
    "date": "2026-05",
-   "balance": -3464.0
+   "balance": -2494.0
   },
   {
    "date": "2026-06",
-   "balance": -5537.0
+   "balance": -4221.0
   },
   {
    "date": "2026-07",
-   "balance": -3450.0
+   "balance": -2322.0
+  },
+  {
+   "date": "2026-08",
+   "balance": -920.0
   }
  ],
  "theme": "blue-amber",

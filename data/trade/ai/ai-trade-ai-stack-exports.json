@@ -68,28 +68,28 @@
    "date": "2019",
    "imf": 3.77,
    "ons_products": 6.34,
-   "rest": 64.82,
+   "rest": 64.83,
    "services": 47.65
   },
   {
    "date": "2020",
    "imf": 3.48,
    "ons_products": 5.89,
-   "rest": 56.72,
+   "rest": 56.73,
    "services": 49.67
   },
   {
    "date": "2021",
    "imf": 3.39,
    "ons_products": 5.66,
-   "rest": 62.07,
+   "rest": 62.09,
    "services": 51.17
   },
   {
    "date": "2022",
    "imf": 3.83,
    "ons_products": 6.78,
-   "rest": 68.7,
+   "rest": 68.71,
    "services": 63.86
   },
   {
@@ -103,14 +103,14 @@
    "date": "2024",
    "imf": 3.16,
    "ons_products": 6.52,
-   "rest": 72.68,
+   "rest": 72.27,
    "services": 74.94
   },
   {
    "date": "2025",
    "imf": 4.38,
    "ons_products": 7.09,
-   "rest": 73.01,
+   "rest": 72.73,
    "services": 84.26
   }
  ],

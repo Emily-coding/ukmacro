@@ -44,297 +44,297 @@
  "data": [
   {
    "date": "2016-Q1",
-   "26.2_imports": 100.1,
-   "26.2_exports": 87.2,
-   "26.1_imports": 98.3,
-   "26.1_exports": 98.2
+   "26.2_imports": 99.9,
+   "26.2_exports": 86.2,
+   "26.1_imports": 98.1,
+   "26.1_exports": 97.1
   },
   {
    "date": "2016-Q2",
-   "26.2_imports": 100.5,
-   "26.2_exports": 89.0,
-   "26.1_imports": 93.2,
-   "26.1_exports": 99.5
+   "26.2_imports": 100.3,
+   "26.2_exports": 87.7,
+   "26.1_imports": 92.9,
+   "26.1_exports": 98.4
   },
   {
    "date": "2016-Q3",
-   "26.2_imports": 102.5,
-   "26.2_exports": 93.2,
-   "26.1_imports": 96.7,
-   "26.1_exports": 103.2
+   "26.2_imports": 103.0,
+   "26.2_exports": 92.4,
+   "26.1_imports": 96.3,
+   "26.1_exports": 103.6
   },
   {
    "date": "2016-Q4",
-   "26.2_imports": 103.2,
-   "26.2_exports": 94.0,
-   "26.1_imports": 100.5,
+   "26.2_imports": 104.5,
+   "26.2_exports": 93.6,
+   "26.1_imports": 100.3,
    "26.1_exports": 105.1
   },
   {
    "date": "2017-Q1",
-   "26.2_imports": 104.8,
-   "26.2_exports": 93.3,
-   "26.1_imports": 105.5,
-   "26.1_exports": 105.6
+   "26.2_imports": 104.9,
+   "26.2_exports": 93.1,
+   "26.1_imports": 104.9,
+   "26.1_exports": 105.0
   },
   {
    "date": "2017-Q2",
    "26.2_imports": 104.2,
-   "26.2_exports": 93.5,
-   "26.1_imports": 103.9,
+   "26.2_exports": 92.7,
+   "26.1_imports": 104.0,
    "26.1_exports": 102.2
   },
   {
    "date": "2017-Q3",
-   "26.2_imports": 103.0,
-   "26.2_exports": 92.7,
-   "26.1_imports": 102.1,
-   "26.1_exports": 99.0
+   "26.2_imports": 103.6,
+   "26.2_exports": 92.1,
+   "26.1_imports": 102.2,
+   "26.1_exports": 98.7
   },
   {
    "date": "2017-Q4",
-   "26.2_imports": 101.1,
-   "26.2_exports": 91.2,
-   "26.1_imports": 99.8,
-   "26.1_exports": 97.7
+   "26.2_imports": 102.0,
+   "26.2_exports": 90.6,
+   "26.1_imports": 100.6,
+   "26.1_exports": 98.1
   },
   {
    "date": "2018-Q1",
-   "26.2_imports": 99.8,
-   "26.2_exports": 88.9,
-   "26.1_imports": 97.0,
-   "26.1_exports": 97.5
+   "26.2_imports": 100.5,
+   "26.2_exports": 89.0,
+   "26.1_imports": 97.7,
+   "26.1_exports": 97.2
   },
   {
    "date": "2018-Q2",
-   "26.2_imports": 99.8,
-   "26.2_exports": 91.0,
-   "26.1_imports": 97.8,
-   "26.1_exports": 99.8
+   "26.2_imports": 100.2,
+   "26.2_exports": 90.1,
+   "26.1_imports": 98.3,
+   "26.1_exports": 100.2
   },
   {
    "date": "2018-Q3",
-   "26.2_imports": 100.3,
-   "26.2_exports": 92.2,
-   "26.1_imports": 99.6,
-   "26.1_exports": 102.0
+   "26.2_imports": 100.9,
+   "26.2_exports": 91.9,
+   "26.1_imports": 99.8,
+   "26.1_exports": 102.6
   },
   {
    "date": "2018-Q4",
-   "26.2_imports": 101.0,
-   "26.2_exports": 97.5,
-   "26.1_imports": 100.9,
-   "26.1_exports": 102.0
+   "26.2_imports": 101.4,
+   "26.2_exports": 97.6,
+   "26.1_imports": 101.6,
+   "26.1_exports": 102.4
   },
   {
    "date": "2019-Q1",
-   "26.2_imports": 99.8,
-   "26.2_exports": 98.9,
+   "26.2_imports": 100.6,
+   "26.2_exports": 99.8,
    "26.1_imports": 99.8,
-   "26.1_exports": 100.8
+   "26.1_exports": 101.0
   },
   {
    "date": "2019-Q2",
-   "26.2_imports": 100.9,
-   "26.2_exports": 100.9,
+   "26.2_imports": 100.7,
+   "26.2_exports": 100.2,
    "26.1_imports": 100.3,
-   "26.1_exports": 99.0
+   "26.1_exports": 98.8
   },
   {
    "date": "2019-Q3",
-   "26.2_imports": 101.4,
-   "26.2_exports": 102.0,
-   "26.1_imports": 102.2,
-   "26.1_exports": 101.6
+   "26.2_imports": 101.0,
+   "26.2_exports": 101.7,
+   "26.1_imports": 101.7,
+   "26.1_exports": 101.5
   },
   {
    "date": "2019-Q4",
-   "26.2_imports": 97.9,
+   "26.2_imports": 97.7,
    "26.2_exports": 98.3,
-   "26.1_imports": 97.7,
+   "26.1_imports": 98.2,
    "26.1_exports": 98.6
   },
   {
    "date": "2020-Q1",
-   "26.2_imports": 94.1,
-   "26.2_exports": 99.3,
-   "26.1_imports": 97.5,
-   "26.1_exports": 101.1
+   "26.2_imports": 95.6,
+   "26.2_exports": 100.0,
+   "26.1_imports": 98.3,
+   "26.1_exports": 100.9
   },
   {
    "date": "2020-Q2",
-   "26.2_imports": 96.7,
-   "26.2_exports": 101.5,
-   "26.1_imports": 100.7,
-   "26.1_exports": 102.7
+   "26.2_imports": 97.0,
+   "26.2_exports": 100.7,
+   "26.1_imports": 101.9,
+   "26.1_exports": 102.3
   },
   {
    "date": "2020-Q3",
-   "26.2_imports": 94.4,
-   "26.2_exports": 97.8,
-   "26.1_imports": 97.3,
-   "26.1_exports": 90.0
+   "26.2_imports": 94.2,
+   "26.2_exports": 97.6,
+   "26.1_imports": 97.8,
+   "26.1_exports": 90.6
   },
   {
    "date": "2020-Q4",
-   "26.2_imports": 93.8,
-   "26.2_exports": 95.1,
-   "26.1_imports": 97.4,
-   "26.1_exports": 89.2
-  },
-  {
-   "date": "2021-Q1",
-   "26.2_imports": 88.2,
-   "26.2_exports": 93.2,
-   "26.1_imports": 91.4,
-   "26.1_exports": 88.7
-  },
-  {
-   "date": "2021-Q2",
-   "26.2_imports": 91.3,
-   "26.2_exports": 92.2,
-   "26.1_imports": 94.9,
-   "26.1_exports": 87.4
-  },
-  {
-   "date": "2021-Q3",
-   "26.2_imports": 93.4,
-   "26.2_exports": 91.8,
-   "26.1_imports": 97.5,
+   "26.2_imports": 93.7,
+   "26.2_exports": 95.3,
+   "26.1_imports": 98.4,
    "26.1_exports": 89.4
   },
   {
+   "date": "2021-Q1",
+   "26.2_imports": 91.0,
+   "26.2_exports": 93.7,
+   "26.1_imports": 92.8,
+   "26.1_exports": 88.8
+  },
+  {
+   "date": "2021-Q2",
+   "26.2_imports": 91.6,
+   "26.2_exports": 91.7,
+   "26.1_imports": 96.6,
+   "26.1_exports": 87.2
+  },
+  {
+   "date": "2021-Q3",
+   "26.2_imports": 92.6,
+   "26.2_exports": 91.5,
+   "26.1_imports": 98.4,
+   "26.1_exports": 89.8
+  },
+  {
    "date": "2021-Q4",
-   "26.2_imports": 95.2,
-   "26.2_exports": 93.6,
-   "26.1_imports": 100.2,
-   "26.1_exports": 90.9
+   "26.2_imports": 94.2,
+   "26.2_exports": 94.2,
+   "26.1_imports": 101.0,
+   "26.1_exports": 90.8
   },
   {
    "date": "2022-Q1",
-   "26.2_imports": 96.1,
-   "26.2_exports": 95.5,
-   "26.1_imports": 104.6,
-   "26.1_exports": 93.3
+   "26.2_imports": 95.9,
+   "26.2_exports": 95.3,
+   "26.1_imports": 103.8,
+   "26.1_exports": 93.6
   },
   {
    "date": "2022-Q2",
-   "26.2_imports": 102.0,
-   "26.2_exports": 99.3,
-   "26.1_imports": 113.7,
-   "26.1_exports": 97.2
+   "26.2_imports": 99.1,
+   "26.2_exports": 99.1,
+   "26.1_imports": 112.7,
+   "26.1_exports": 96.7
   },
   {
    "date": "2022-Q3",
-   "26.2_imports": 105.0,
-   "26.2_exports": 104.0,
-   "26.1_imports": 116.8,
-   "26.1_exports": 102.2
+   "26.2_imports": 101.6,
+   "26.2_exports": 103.9,
+   "26.1_imports": 115.5,
+   "26.1_exports": 102.5
   },
   {
    "date": "2022-Q4",
-   "26.2_imports": 104.4,
-   "26.2_exports": 103.2,
-   "26.1_imports": 116.8,
-   "26.1_exports": 106.3
-  },
-  {
-   "date": "2023-Q1",
-   "26.2_imports": 103.4,
-   "26.2_exports": 102.1,
-   "26.1_imports": 119.1,
+   "26.2_imports": 101.6,
+   "26.2_exports": 103.4,
+   "26.1_imports": 116.9,
    "26.1_exports": 105.7
   },
   {
+   "date": "2023-Q1",
+   "26.2_imports": 103.6,
+   "26.2_exports": 101.3,
+   "26.1_imports": 118.6,
+   "26.1_exports": 105.3
+  },
+  {
    "date": "2023-Q2",
-   "26.2_imports": 102.1,
-   "26.2_exports": 100.2,
-   "26.1_imports": 119.0,
-   "26.1_exports": 104.4
+   "26.2_imports": 101.3,
+   "26.2_exports": 99.5,
+   "26.1_imports": 119.9,
+   "26.1_exports": 102.8
   },
   {
    "date": "2023-Q3",
-   "26.2_imports": 101.7,
-   "26.2_exports": 100.7,
-   "26.1_imports": 115.5,
-   "26.1_exports": 104.1
+   "26.2_imports": 100.3,
+   "26.2_exports": 99.6,
+   "26.1_imports": 116.6,
+   "26.1_exports": 103.2
   },
   {
    "date": "2023-Q4",
-   "26.2_imports": 103.7,
-   "26.2_exports": 100.8,
-   "26.1_imports": 115.3,
-   "26.1_exports": 103.8
+   "26.2_imports": 100.3,
+   "26.2_exports": 99.6,
+   "26.1_imports": 114.2,
+   "26.1_exports": 103.0
   },
   {
    "date": "2024-Q1",
-   "26.2_imports": 101.4,
-   "26.2_exports": 100.3,
-   "26.1_imports": 113.3,
-   "26.1_exports": 105.0
+   "26.2_imports": 97.2,
+   "26.2_exports": 99.9,
+   "26.1_imports": 108.8,
+   "26.1_exports": 104.9
   },
   {
    "date": "2024-Q2",
-   "26.2_imports": 102.9,
-   "26.2_exports": 100.3,
-   "26.1_imports": 118.1,
-   "26.1_exports": 103.5
+   "26.2_imports": 96.6,
+   "26.2_exports": 99.4,
+   "26.1_imports": 112.2,
+   "26.1_exports": 103.2
   },
   {
    "date": "2024-Q3",
-   "26.2_imports": 101.7,
+   "26.2_imports": 95.0,
    "26.2_exports": 98.1,
-   "26.1_imports": 113.9,
-   "26.1_exports": 104.1
+   "26.1_imports": 108.2,
+   "26.1_exports": 102.9
   },
   {
    "date": "2024-Q4",
-   "26.2_imports": 101.9,
-   "26.2_exports": 98.6,
-   "26.1_imports": 111.4,
+   "26.2_imports": 95.6,
+   "26.2_exports": 98.2,
+   "26.1_imports": 106.3,
    "26.1_exports": 102.4
   },
   {
    "date": "2025-Q1",
-   "26.2_imports": 102.2,
-   "26.2_exports": 101.6,
-   "26.1_imports": 112.2,
-   "26.1_exports": 102.5
+   "26.2_imports": 96.5,
+   "26.2_exports": 101.2,
+   "26.1_imports": 107.6,
+   "26.1_exports": 102.0
   },
   {
    "date": "2025-Q2",
-   "26.2_imports": 101.3,
-   "26.2_exports": 97.3,
-   "26.1_imports": 111.6,
-   "26.1_exports": 98.9
+   "26.2_imports": 95.3,
+   "26.2_exports": 96.7,
+   "26.1_imports": 107.2,
+   "26.1_exports": 98.7
   },
   {
    "date": "2025-Q3",
-   "26.2_imports": 102.1,
-   "26.2_exports": 98.2,
-   "26.1_imports": 111.6,
-   "26.1_exports": 98.1
+   "26.2_imports": 96.3,
+   "26.2_exports": 98.1,
+   "26.1_imports": 106.3,
+   "26.1_exports": 98.3
   },
   {
    "date": "2025-Q4",
-   "26.2_imports": 102.9,
-   "26.2_exports": 99.5,
-   "26.1_imports": 108.4,
-   "26.1_exports": 97.6
+   "26.2_imports": 96.7,
+   "26.2_exports": 99.2,
+   "26.1_imports": 103.2,
+   "26.1_exports": 97.5
   },
   {
    "date": "2026-Q1",
-   "26.2_imports": 103.8,
-   "26.2_exports": 98.3,
-   "26.1_imports": 108.7,
-   "26.1_exports": 97.6
+   "26.2_imports": 97.6,
+   "26.2_exports": 99.0,
+   "26.1_imports": 104.1,
+   "26.1_exports": 98.3
   },
   {
    "date": "2026-Q2",
-   "26.2_imports": 105.3,
-   "26.2_exports": 97.3,
-   "26.1_imports": 112.8,
-   "26.1_exports": 98.1
+   "26.2_imports": 98.8,
+   "26.2_exports": 97.0,
+   "26.1_imports": 107.9,
+   "26.1_exports": 98.9
   }
  ],
  "theme": "blue-amber",

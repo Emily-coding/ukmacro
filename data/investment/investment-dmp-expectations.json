@@ -17,7 +17,7 @@
    "label": "Firms' expected capital spending growth a year earlier (DMP)"
   }
  ],
- "data_through": "2027-Q1",
+ "data_through": "2027-Q2",
  "status": "ok",
  "data": [
   {
@@ -193,7 +193,7 @@
   {
    "date": "2026-Q3",
    "actual": null,
-   "expected": -1.5
+   "expected": -1.6
   },
   {
    "date": "2026-Q4",
@@ -203,7 +203,12 @@
   {
    "date": "2027-Q1",
    "actual": null,
-   "expected": 0.5
+   "expected": 0.4
+  },
+  {
+   "date": "2027-Q2",
+   "actual": null,
+   "expected": 6.1
   }
  ],
  "theme": "blue-amber",

@@ -12,12 +12,12 @@
    "key": "awe_total",
    "label": "Total pay",
    "_source": "live",
-   "_date": "2026-07",
+   "_date": "2026-08",
    "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kac3/lms"
   }
  ],
- "data_through": "2026-07",
- "next_release": "2026-10-20",
+ "data_through": "2026-08",
+ "next_release": "2026-11-17",
  "status": "ok",
  "data": [
   {
@@ -526,7 +526,7 @@
   },
   {
    "date": "2025-07",
-   "awe_total": 4.9
+   "awe_total": 4.8
   },
   {
    "date": "2025-08",
@@ -575,6 +575,10 @@
   {
    "date": "2026-07",
    "awe_total": 3.9
+  },
+  {
+   "date": "2026-08",
+   "awe_total": 3.7
   }
  ],
  "theme": "blue-amber",

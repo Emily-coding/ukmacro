@@ -34,8 +34,8 @@
     {
      "label": "Data (information services)",
      "values": {
-      "imports": 37,
-      "exports": 157
+      "imports": 87,
+      "exports": 181
      }
     }
    ]
@@ -46,15 +46,15 @@
     {
      "label": "R&D services",
      "values": {
-      "imports": 36,
-      "exports": 29
+      "imports": 63,
+      "exports": 44
      }
     },
     {
      "label": "Software licensing",
      "values": {
-      "imports": 133,
-      "exports": 7
+      "imports": 106,
+      "exports": 58
      }
     }
    ]
@@ -65,15 +65,15 @@
     {
      "label": "Cloud, software, AI services",
      "values": {
-      "imports": 127,
-      "exports": 133
+      "imports": 107,
+      "exports": 122
      }
     },
     {
      "label": "Telecoms networks",
      "values": {
-      "imports": -14,
-      "exports": 6
+      "imports": -5,
+      "exports": 15
      }
     },
     {
@@ -86,8 +86,8 @@
     {
      "label": "Consulting and technical*",
      "values": {
-      "imports": 54,
-      "exports": 49
+      "imports": 63,
+      "exports": 47
      }
     }
    ]
