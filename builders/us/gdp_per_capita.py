@@ -8,13 +8,17 @@ Two charts, each as a line (quarterly from 1948) and as bars (annual throughout)
                                       regain lost ground don't count as growth
 
 Data:
-  1801-1947  Maddison Project Database 2023, annual GDP per capita (2011 dollars)
+  1801-1928  Maddison Project Database 2023, annual GDP per capita (2011 dollars)
+  1929-1947  BEA annual real GDP (FRED GDPCA) divided by BEA population
+             (B230RC0A052NBEA), chained 2017 dollars
   1947-      BEA real GDP per capita (FRED A939RX0Q048SBEA), quarterly, chained
              2017 dollars, seasonally adjusted; growth on the same quarter a year
              earlier from 1948 Q1
-The Maddison series is rescaled to match BEA's 1947 average, so the two join into one
-level series and the all-time peak runs across both (the Second World War peak
-matters for the late 1940s).
+The annual series are rescaled to join the next source (BEA annual to the 1947 average
+of the quarters, Maddison to BEA annual in 1929), so they form one level series and
+the all-time peak runs across them (the Second World War peak matters for the late
+1940s). Rescaling keeps each source's own growth rates: 1929 is Maddison's growth on
+1928, 1930-47 are BEA's.
 
 Bouncebacks: from each NBER business-cycle trough (dates from 1854) until GDP per
 capita is back above its previous all-time high. On the annual data a short
@@ -44,30 +48,43 @@ from matplotlib.patches import Patch  # noqa: E402
 
 from ukmacro.http import get, get_text  # noqa: E402
 
-FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=A939RX0Q048SBEA"
+FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id="
+QUARTERLY, ANNUAL_GDP, ANNUAL_POP = "A939RX0Q048SBEA", "GDPCA", "B230RC0A052NBEA"
 MADDISON = "https://dataverse.nl/api/access/datafile/421302"   # Maddison Project Database 2023
 NBER = "https://data.nber.org/data/cycles/business_cycle_dates.json"
 OUT, IMG = REPO / "data" / "us", REPO / "img" / "us"
 LINE = 15.0   # reference growth rate, %
-SOURCE = ("Source: BEA via FRED (A939RX0Q048SBEA), quarterly from 1947; Maddison Project Database 2023, "
-          "annual before 1947, rescaled to join BEA in 1947; NBER business-cycle dates; ukmacro calculations.")
+SOURCE = ("Source: BEA via FRED, real GDP per capita (A939RX0Q048SBEA) quarterly from 1947, real GDP (GDPCA) "
+          "over population (B230RC0A052NBEA) annual 1929-47; Maddison Project Database 2023 before 1929, rescaled "
+          "to join BEA; NBER business-cycle dates; ukmacro calculations.")
+
+
+def fred(series: str) -> list[tuple[date, float]]:
+    """A FRED series as [(date, value)], without missing observations."""
+    rows = list(csv.reader(io.StringIO(get_text(FRED + series))))[1:]
+    return [(date.fromisoformat(r[0]), float(r[1])) for r in rows if r[1] not in ("", ".")]
 
 
 def levels() -> list[tuple[date, float, str]]:
-    """[(date, GDP per capita, "A" or "Q")], annual to 1947 then quarterly, on BEA's scale.
-    Annual values sit at mid-year, quarterly at mid-quarter."""
+    """[(date, GDP per capita, "A" or "Q")], annual to 1947 then quarterly, on the scale of
+    BEA's quarterly series. Annual values sit at mid-year, quarterly at mid-quarter."""
     wb = openpyxl.load_workbook(io.BytesIO(get(MADDISON, timeout=180)), read_only=True)
     rows = wb["Full data"].iter_rows(values_only=True)
     next(rows)
     mad = {r[3]: r[4] for r in rows if r[0] == "USA" and r[4] is not None and r[3] >= 1800}
-    bea = []
-    for r in list(csv.reader(io.StringIO(get_text(FRED))))[1:]:
-        if r[1] not in ("", "."):
-            d = date.fromisoformat(r[0])
-            bea.append((date(d.year, d.month + 1, 15), float(r[1])))
-    scale = sum(v for d, v in bea if d.year == 1947) / 4 / mad[1947]
-    years = [y for y in sorted(mad) if y <= 1947 and all(z in mad for z in range(y, 1948))]  # unbroken run
-    return [(date(y, 7, 1), mad[y] * scale, "A") for y in years] + [(d, v, "Q") for d, v in bea]
+    bea = [(date(d.year, d.month + 1, 15), v) for d, v in fred(QUARTERLY)]
+    gdp, pop = ({d.year: v for d, v in fred(s)} for s in (ANNUAL_GDP, ANNUAL_POP))
+    # per capita: both in FRED's units (billions of dollars, thousands of people)
+    bea_a = {y: gdp[y] * 1e6 / pop[y] for y in gdp if y in pop and y <= 1947}
+    # join backwards: BEA annual to the 1947 quarters, then Maddison to BEA annual
+    scale = sum(v for d, v in bea if d.year == 1947) / 4 / bea_a[1947]
+    bea_a = {y: v * scale for y, v in bea_a.items()}
+    first = min(bea_a)
+    scale = bea_a[first] / mad[first]
+    years = [y for y in sorted(mad) if y < first and all(z in mad for z in range(y, first))]  # unbroken run
+    return ([(date(y, 7, 1), mad[y] * scale, "A") for y in years]
+            + [(date(y, 7, 1), bea_a[y], "A") for y in sorted(bea_a)]
+            + [(d, v, "Q") for d, v in bea])
 
 
 def annual(lv: list[tuple[date, float, str]]) -> tuple[list[tuple[date, float, str]], str | None]:
@@ -127,8 +144,9 @@ def bouncebacks(lv: list[tuple[date, float, str]]) -> list[tuple[date, date]]:
     return spans
 
 
-BAR_SOURCE = ("Source: Maddison Project Database 2023 to 1946, rescaled to join BEA; BEA via FRED "
-              "(A939RX0Q048SBEA) from 1947, quarters averaged by year; NBER business-cycle dates; ukmacro calculations.")
+BAR_SOURCE = ("Source: Maddison Project Database 2023 to 1928, rescaled to join BEA; BEA via FRED, real GDP (GDPCA) "
+              "over population (B230RC0A052NBEA) 1929-46, real GDP per capita (A939RX0Q048SBEA) from 1947, quarters "
+              "averaged by year; NBER business-cycle dates; ukmacro calculations.")
 
 
 def draw(series: list[tuple[date, float]], spans, slug: str, title: str, units: str, note: str,
@@ -194,8 +212,7 @@ def main() -> None:
          bars=True, source=BAR_SOURCE)
     # the last 100 years as bars: annual to 1947 (no quarterly per-capita data before), then quarterly
     start = date.today().year - 100
-    q_note = (f"Wide bars: annual growth, {start} to 1947 (BEA's quarterly series starts in 1947). Narrow bars: "
-              "growth on the same quarter a year earlier, from 1948.")
+    q_note = "Wide bars: annual growth to 1947. Narrow bars: growth on the same quarter a year earlier, from 1948."
     draw(yoy, spans, "us-gdp-per-capita-growth-100y-bars", f"US real GDP per capita growth since {start}",
          "% change on a year earlier", q_note, bars=True, start=start)
     draw(vs_peak, spans, "us-gdp-per-capita-growth-vs-peak-100y-bars",
