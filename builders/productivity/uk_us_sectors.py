@@ -6,9 +6,14 @@ figures 6 and 10, rebuilt on the latest data.
                                    2019 to the latest four quarters; bar widths are each
                                    sector's share of 2019 GVA, so a bar's area is roughly
                                    its contribution to aggregate productivity growth
+  uk-productivity-by-sector-per-job  the same, for real GVA per job (RTI employee jobs
+                                   plus WFJ self-employment jobs) instead of per hour
   uk-us-productivity-contributions figure 10: average annual within-industry contribution
                                    to GVA-per-hour growth from 2018 (growth in 2019 onwards),
                                    by sector, UK vs US
+  uk-us-productivity-contributions-per-job  the same for GVA per job (UK: RTI + WFJ
+                                   self-employment jobs; US: BLS total jobs, wage and
+                                   salary plus self-employed)
 
 UK hours follow RF's method (their Annex 1), which avoids leaning on the Labour Force
 Survey for the level of employment:
@@ -191,18 +196,19 @@ def uk_data() -> dict:
     rti, sej = fetch_rti(), fetch_self_employed()
     quarters = sorted(set.intersection(*(set(s[sec]) for s in (cvm, ons_hours, ons_jobs, rti, sej)
                                          for sec in SECTIONS)))
-    rf_hours = {sec: {q: (rti[sec][q] + sej[sec][q]) * ons_hours[sec][q] / ons_jobs[sec][q]
-                      for q in quarters} for sec in SECTIONS}
+    rf_jobs = {sec: {q: rti[sec][q] + sej[sec][q] for q in quarters} for sec in SECTIONS}
+    rf_hours = {sec: {q: rf_jobs[sec][q] * ons_hours[sec][q] / ons_jobs[sec][q] for q in quarters}
+                for sec in SECTIONS}
     total = next(c for c in cp if c.startswith("A to T"))
     return {"quarters": quarters, "cvm": cvm, "cp": cp, "hours": rf_hours, "ons_hours": ons_hours,
-            "total_cp": cp[total]}
+            "jobs": rf_jobs, "ons_jobs": ons_jobs, "total_cp": cp[total]}
 
 
 # ---- US -------------------------------------------------------------------------------
 
 def us_data() -> dict:
     """Annual US series by BEA line: real quantity index and current-price value added;
-    and BLS total hours by EP sector."""
+    and BLS total hours and total jobs by EP sector."""
     wb = openpyxl.load_workbook(io.BytesIO(get(BEA_VA, timeout=180)), read_only=True)
 
     def table(sheet: str) -> dict[int, dict[int, float]]:
@@ -218,8 +224,10 @@ def us_data() -> dict:
         name = next(n for n in z.namelist() if re.fullmatch(r"emp\d{4}\.csv", n.lower()))
         rows = list(csv.reader(io.TextIOWrapper(z.open(name), encoding="utf-8-sig")))
     years = [int(y) for y in rows[0][2:]]
-    hours = {int(r[1]): dict(zip(years, map(float, r[2:]))) for r in rows[1:] if r and r[0] == "5"}
-    return {"real": table("TVA103-A"), "cp": table("TVA105-A"), "hours": hours}
+    # EP series 4 = total jobs (thousands), 5 = total hours of all persons (millions)
+    ep = {k: {int(r[1]): dict(zip(years, map(float, r[2:]))) for r in rows[1:] if r and r[0] == k}
+          for k in ("4", "5")}
+    return {"real": table("TVA103-A"), "cp": table("TVA105-A"), "hours": ep["5"], "jobs": ep["4"]}
 
 
 # ---- calculations -------------------------------------------------------------------------
@@ -229,27 +237,31 @@ def _avg(s: dict[str, float], periods: list[str]) -> float:
 
 
 def fig6_rows(uk: dict) -> tuple[list[dict], list[str]]:
-    """Change in GVA per hour by section, 2019 to the latest four quarters."""
+    """Change in GVA per hour and per job by section, 2019 to the latest four quarters."""
     base = [f"{BASE_YEAR} Q{i}" for i in range(1, 5)]
     latest = uk["quarters"][-4:]
     total_2019 = _avg(uk["total_cp"], base)
     rows = []
     for sec, (name, group) in SECTIONS.items():
-        def change(hours):
-            return 100 * ((_avg(uk["cvm"][sec], latest) / _avg(hours, latest)) /
-                          (_avg(uk["cvm"][sec], base) / _avg(hours, base)) - 1)
+        def change(labour):   # % change in real GVA per unit of labour (hours or jobs)
+            return 100 * ((_avg(uk["cvm"][sec], latest) / _avg(labour, latest)) /
+                          (_avg(uk["cvm"][sec], base) / _avg(labour, base)) - 1)
         rows.append({"section": sec, "sector": name, "group": group,
                      "gva_share_2019": round(100 * _avg(uk["cp"][sec], base) / total_2019, 2),
                      "change_gva_per_hour": round(change(uk["hours"][sec]), 1),
                      "change_ons_output_per_hour": round(change(uk["ons_hours"][sec]), 1),
                      "change_gva": round(100 * (_avg(uk["cvm"][sec], latest) / _avg(uk["cvm"][sec], base) - 1), 1),
-                     "change_hours": round(100 * (_avg(uk["hours"][sec], latest) / _avg(uk["hours"][sec], base) - 1), 1)})
+                     "change_hours": round(100 * (_avg(uk["hours"][sec], latest) / _avg(uk["hours"][sec], base) - 1), 1),
+                     "change_gva_per_job": round(change(uk["jobs"][sec]), 1),
+                     "change_ons_output_per_job": round(change(uk["ons_jobs"][sec]), 1),
+                     "change_jobs": round(100 * (_avg(uk["jobs"][sec], latest) / _avg(uk["jobs"][sec], base) - 1), 1)})
     return rows, latest
 
 
 def _contributions(real, cp, hours, total, years) -> dict[int, tuple[float, float]]:
     """{year: (contribution in ppts, share of GVA in the year before)} for one merged sector.
-    real/cp: lists of {year: value} for the sector's parts; hours: {year: total hours}."""
+    real/cp: lists of {year: value} for the sector's parts; hours: {year: total hours}
+    (or total jobs, for GVA per job)."""
     out = {}
     for t in years:
         weights = [c[t - 1] for c in cp]
@@ -259,9 +271,9 @@ def _contributions(real, cp, hours, total, years) -> dict[int, tuple[float, floa
     return out
 
 
-def fig10_rows(uk: dict, us: dict) -> tuple[list[dict], int]:
+def fig10_rows(uk: dict, us: dict, labour: str = "hours") -> tuple[list[dict], int]:
     """Average annual within-industry contributions over the growth years START (on START - 1)
-    to the latest year both have."""
+    to the latest year both have; labour is "hours" or "jobs"."""
     def annual(s: dict[str, float], how=sum) -> dict[int, float]:
         by: dict[int, list[float]] = {}
         for q, v in s.items():
@@ -278,10 +290,10 @@ def fig10_rows(uk: dict, us: dict) -> tuple[list[dict], int]:
     rows = []
     for name, (secs, lines, bls) in COMPARE.items():
         uk_c = _contributions([annual(uk["cvm"][s], mean) for s in secs], [annual(uk["cp"][s]) for s in secs],
-                              {y: sum(annual(uk["hours"][s])[y] for s in secs) for y in uk_years},
+                              {y: sum(annual(uk[labour][s], mean)[y] for s in secs) for y in uk_years},
                               uk_total, years)
         us_c = _contributions([us["real"][ln] for ln in lines], [us["cp"][ln] for ln in lines],
-                              {y: sum(us["hours"][n][y] for n in bls) for y in us_years}, us_total, years)
+                              {y: sum(us[labour][n][y] for n in bls) for y in us_years}, us_total, years)
         row = {"sector": name}
         for c, con in (("uk", uk_c), ("us", us_c)):
             row[f"{c}_contribution"] = round(mean([con[t][0] for t in years]), 3)
@@ -299,19 +311,29 @@ def _sign(v: float, d: int = 0) -> str:
     return f"{v:+.{d}f}".replace("-", "−")
 
 
-def chart_fig6(rows: list[dict], latest: list[str]) -> None:
-    fig, ax = hs.figure("UK productivity growth by sector since 2019",
-                        f"% change in real GVA per hour, {BASE_YEAR} to the year to {latest[-1]}; "
+FIG6 = {   # measure: (CSV column, units wording, labour note for the footer, file name)
+    "hour": ("change_gva_per_hour", "real GVA per hour",
+             "Hours: payrolled employees (RTI) plus self-employment jobs (WFJ), times ONS average hours per job.",
+             "uk-productivity-by-sector"),
+    "job": ("change_gva_per_job", "real GVA per job",
+            "Jobs: payrolled employees (RTI) plus self-employment jobs (WFJ); people with two jobs count twice.",
+            "uk-productivity-by-sector-per-job"),
+}
+
+
+def chart_fig6(rows: list[dict], latest: list[str], measure: str = "hour") -> None:
+    col, what, note, slug = FIG6[measure]
+    title = "UK productivity growth by sector since 2019" + (": output per job" if measure == "job" else "")
+    fig, ax = hs.figure(title,
+                        f"% change in {what}, {BASE_YEAR} to the year to {latest[-1]}; "
                         f"bar width = share of {BASE_YEAR} GVA",
-                        source=SOURCE_UK + " Hours: payrolled employees (RTI) plus self-employment jobs (WFJ), "
-                        "times ONS average hours per job. Real estate excludes imputed rent.")
+                        source=SOURCE_UK + " " + note + " Real estate excludes imputed rent.")
     ax.set_position([hs._x(hs.LEFT_CM), 0.39, 1 - hs._x(hs.LEFT_CM) - hs._x(hs.RIGHT_CM), 0.40])
     colour = dict(zip(GROUPS, hs.COLOURS["series"]))
-    order = [r for g in GROUPS for r in sorted((r for r in rows if r["group"] == g),
-                                               key=lambda r: -r["change_gva_per_hour"])]
+    order = sorted(rows, key=lambda r: -r[col])   # biggest growth first; colour shows the group
     x, gap, labels = 0.0, 0.25, []
     for r in order:
-        w, v = r["gva_share_2019"], r["change_gva_per_hour"]
+        w, v = r["gva_share_2019"], r[col]
         ax.bar(x, v, width=w, align="edge", color=colour[r["group"]], linewidth=0)
         labels.append([x + w / 2, f"{r['sector']} {_sign(v) if round(v) else '0'}%"])
         x += w + gap
@@ -325,8 +347,8 @@ def chart_fig6(rows: list[dict], latest: list[str]) -> None:
     for lx, text in labels:
         ax.text(lx, -0.03, text, transform=ax.get_xaxis_transform(), rotation=90, ha="center", va="top",
                 fontsize=9, color=hs.COLOURS["text_2"])
-    lo = min(r["change_gva_per_hour"] for r in rows)
-    hi = max(r["change_gva_per_hour"] for r in rows)
+    lo = min(r[col] for r in rows)
+    hi = max(r[col] for r in rows)
     ax.set_ylim(10 * (lo // 10) - 2, 10 * (hi // 10 + 1) + 2)
     ax.axhline(0, color=hs.COLOURS["grey"], linewidth=0.9)
     ax.set_xlim(-0.5, x + 0.3)
@@ -336,14 +358,20 @@ def chart_fig6(rows: list[dict], latest: list[str]) -> None:
     fig.legend(handles=[Patch(color=colour[g], label=g) for g in GROUPS], loc="upper left",
                bbox_to_anchor=(hs._x(hs.LEFT_CM - 0.2), 0.86), ncol=4, handlelength=1.2, columnspacing=1.8)
     IMG.mkdir(parents=True, exist_ok=True)
-    hs.save_png(fig, IMG / "uk-productivity-by-sector.png")
+    hs.save_png(fig, IMG / f"{slug}.png")
 
 
-def chart_fig10(rows: list[dict], last: int) -> None:
-    fig, ax = hs.figure(f"Contributions to productivity growth by sector, {START - 1}–{last}: UK vs US",
-                        "Average annual within-industry contribution to growth in GVA per hour, percentage points; "
+def chart_fig10(rows: list[dict], last: int, labour: str = "hours") -> None:
+    per = "job" if labour == "jobs" else "hour"
+    note = (" US jobs: BLS total jobs (wage and salary plus self-employed); UK jobs: RTI employees plus WFJ "
+            "self-employment jobs." if per == "job" else "")
+    fig, ax = hs.figure(f"Contributions to productivity growth by sector, {START - 1}–{last}: UK vs US"
+                        + (", output per job" if per == "job" else ""),
+                        f"Average annual within-industry contribution to growth in GVA per {per}, percentage points; "
                         "bubble size = share of GVA",
-                        source=SOURCE_US + " Excludes education, health, public administration and real estate. "
+                        source=(SOURCE_US if per == "hour" else
+                                SOURCE_US.replace("UK hours", "UK jobs").replace("industry hours", "industry jobs"))
+                        + note + " Excludes education, health, public administration and real estate. "
                         "US sectors aligned to UK SIC sections as in RF's Annex 1. PSTA = professional, "
                         "scientific and technical.", left_cm=4.4)
     order = sorted(rows, key=lambda r: r["us_contribution"] - r["uk_contribution"])
@@ -366,7 +394,7 @@ def chart_fig10(rows: list[dict], last: int) -> None:
     fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(hs._x(hs.LEFT_CM - 0.2), 0.86), ncol=2,
                handlelength=1.0, columnspacing=1.8)
     IMG.mkdir(parents=True, exist_ok=True)
-    hs.save_png(fig, IMG / "uk-us-productivity-contributions.png")
+    hs.save_png(fig, IMG / ("uk-us-productivity-contributions" + ("-per-job" if per == "job" else "") + ".png"))
 
 
 def _write(rows: list[dict], path: Path) -> None:
@@ -382,18 +410,27 @@ def main() -> None:
     uk, us = uk_data(), us_data()
     r6, latest = fig6_rows(uk)
     chart_fig6(r6, latest)
+    chart_fig6(r6, latest, "job")
     _write(r6, OUT / "uk_productivity_by_sector.csv")
     r10, last = fig10_rows(uk, us)
     chart_fig10(r10, last)
     _write(r10, OUT / "uk_us_productivity_contributions.csv")
+    r10j, _ = fig10_rows(uk, us, "jobs")
+    chart_fig10(r10j, last, "jobs")
+    _write(r10j, OUT / "uk_us_productivity_contributions_per_job.csv")
     print(f"[fig6] 2019 to {latest[0]}-{latest[-1]}")
     for r in r6:
         print(f"  {r['sector']:20s} share {r['gva_share_2019']:5.1f}  RF-method {r['change_gva_per_hour']:+6.1f}  "
-              f"ONS {r['change_ons_output_per_hour']:+6.1f}")
+              f"ONS {r['change_ons_output_per_hour']:+6.1f}  per job {r['change_gva_per_job']:+6.1f} "
+              f"(ONS {r['change_ons_output_per_job']:+6.1f})")
     print(f"[fig10] {START - 1}-{last}  (RF's 2019-2023 in brackets)")
     for r in r10:
         print(f"  {r['sector']:20s} UK {r['uk_contribution']:+.3f} ({r['uk_contribution_2020_2023']:+.3f})  "
               f"US {r['us_contribution']:+.3f} ({r['us_contribution_2020_2023']:+.3f})")
+    print(f"[fig10 per job] {START - 1}-{last}")
+    for r in r10j:
+        print(f"  {r['sector']:20s} UK {r['uk_contribution']:+.3f}  US {r['us_contribution']:+.3f}  "
+              f"gap {r['us_contribution'] - r['uk_contribution']:+.3f}")
 
 
 if __name__ == "__main__":
