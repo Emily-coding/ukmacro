@@ -54,11 +54,11 @@
    "key": "can",
    "label": "Canada",
    "_source": "live",
-   "_date": "2026-09",
+   "_date": "2026-10",
    "source_url": "https://data-explorer.oecd.org"
   }
  ],
- "data_through": "2026-09",
+ "data_through": "2026-10",
  "next_release": null,
  "status": "ok",
  "data": [
@@ -991,6 +991,16 @@
    "ita": 6.3,
    "jpn": 2.4,
    "can": 6.5
+  },
+  {
+   "date": "2026-10",
+   "gbr": null,
+   "usa": null,
+   "deu": null,
+   "fra": null,
+   "ita": null,
+   "jpn": null,
+   "can": 6.7
   }
  ],
  "theme": "blue-amber",

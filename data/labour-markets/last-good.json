@@ -6945,10 +6945,14 @@
 [
 "2026-09",
 6.5
+],
+[
+"2026-10",
+6.7
 ]
 ],
 "source_url": "https://data-explorer.oecd.org",
-"stored": "2026-10-19"
+"stored": "2026-11-09"
 },
 "unemployment-g7/deu": {
 "obs": [

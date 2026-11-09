@@ -30,23 +30,23 @@
  "data": [
   {
    "date": "10th percentile",
-   "uk_cash": 27.0,
+   "uk_cash": 26.9,
    "us_cash": 16.3,
-   "uk_real": 8.6,
+   "uk_real": 8.5,
    "us_real": 2.2
   },
   {
    "date": "Median",
-   "uk_cash": 24.4,
+   "uk_cash": 24.3,
    "us_cash": 18.2,
-   "uk_real": 6.4,
+   "uk_real": 6.3,
    "us_real": 3.9
   },
   {
    "date": "90th percentile",
-   "uk_cash": 18.0,
+   "uk_cash": 17.9,
    "us_cash": 14.2,
-   "uk_real": 0.9,
+   "uk_real": 0.8,
    "us_real": 0.4
   }
  ],

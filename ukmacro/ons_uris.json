@@ -1,6 +1,7 @@
 {
  "ABMI/QNA": "/economy/grossdomesticproductgdp/timeseries/abmi/qna",
  "AP2Y/LMS": "/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms",
+ "D7BT/MM23": "/economy/inflationandpriceindices/timeseries/d7bt/mm23",
  "ECY2/MGDP": "/economy/grossdomesticproductgdp/timeseries/ecy2/mgdp",
  "EDOH/CXNV": "/economy/grossdomesticproductgdp/timeseries/edoh/cxnv",
  "EDOP/CXNV": "/economy/grossdomesticproductgdp/timeseries/edop/cxnv",
