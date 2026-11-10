@@ -9205,10 +9205,14 @@
 [
 "2026-09",
 4.2
+],
+[
+"2026-10",
+4.1
 ]
 ],
 "source_url": "https://data-explorer.oecd.org",
-"stored": "2026-10-08"
+"stored": "2026-11-10"
 },
 "unemployment/unemployment": {
 "next_release": "2026-11-17",

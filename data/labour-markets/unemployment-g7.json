@@ -19,7 +19,7 @@
    "key": "usa",
    "label": "United States",
    "_source": "live",
-   "_date": "2026-09",
+   "_date": "2026-10",
    "source_url": "https://data-explorer.oecd.org"
   },
   {
@@ -995,7 +995,7 @@
   {
    "date": "2026-10",
    "gbr": null,
-   "usa": null,
+   "usa": 4.1,
    "deu": null,
    "fra": null,
    "ita": null,
