@@ -12,19 +12,19 @@
    "key": "exports",
    "label": "Exports",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbh/mret"
   },
   {
    "key": "imports",
    "label": "Imports",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbi/mret"
   }
  ],
- "data_through": "2026-08",
- "next_release": "2026-11-12",
+ "data_through": "2026-09",
+ "next_release": "2026-12-11",
  "status": "ok",
  "data": [
   {
@@ -539,13 +539,18 @@
   },
   {
    "date": "2026-07",
-   "exports": 82211.0,
-   "imports": 84533.0
+   "exports": 81963.0,
+   "imports": 84765.0
   },
   {
    "date": "2026-08",
-   "exports": 82332.0,
-   "imports": 83252.0
+   "exports": 81197.0,
+   "imports": 83764.0
+  },
+  {
+   "date": "2026-09",
+   "exports": 83382.0,
+   "imports": 88516.0
   }
  ],
  "theme": "blue-amber",

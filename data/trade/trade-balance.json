@@ -12,12 +12,12 @@
    "key": "balance",
    "label": "Trade balance",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbj/mret"
   }
  ],
- "data_through": "2026-08",
- "next_release": "2026-11-12",
+ "data_through": "2026-09",
+ "next_release": "2026-12-11",
  "status": "ok",
  "data": [
   {
@@ -238,11 +238,15 @@
   },
   {
    "date": "2026-07",
-   "balance": -2322.0
+   "balance": -2802.0
   },
   {
    "date": "2026-08",
-   "balance": -920.0
+   "balance": -2567.0
+  },
+  {
+   "date": "2026-09",
+   "balance": -5134.0
   }
  ],
  "theme": "blue-amber",

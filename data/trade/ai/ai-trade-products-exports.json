@@ -1,7 +1,7 @@
 {
  "slug": "ai-trade-products-exports",
  "category": "trade",
- "title": "UK exports of selected AI-relevant products, 2025 Q3 to 2026 Q2",
+ "title": "UK exports of selected AI-relevant products, 2025 Q4 to 2026 Q3",
  "type": "grouped-hbar",
  "freq": "Q",
  "units": "\u00a3 billion, last four quarters",
@@ -23,38 +23,38 @@
  "data": [
   {
    "date": "Processing units (incl. servers)",
-   "EU": 2.27,
-   "NonEU": 1.15
+   "EU": 2.36,
+   "NonEU": 1.3
   },
   {
    "date": "Network equipment (switches, routers)",
-   "EU": 1.52,
-   "NonEU": 1.5
+   "EU": 1.47,
+   "NonEU": 1.78
   },
   {
    "date": "Mobile phones (incl. smartphones)",
-   "EU": 0.85,
-   "NonEU": 0.52
+   "EU": 0.86,
+   "NonEU": 0.54
   },
   {
    "date": "Computer electronic assemblies (incl. graphics cards)",
-   "EU": 0.58,
-   "NonEU": 0.49
+   "EU": 0.65,
+   "NonEU": 0.62
   },
   {
    "date": "Laptops and tablets",
    "EU": 0.69,
-   "NonEU": 0.21
+   "NonEU": 0.24
   },
   {
    "date": "Storage units",
-   "EU": 0.41,
-   "NonEU": 0.23
+   "EU": 0.42,
+   "NonEU": 0.39
   },
   {
    "date": "Other integrated circuits (incl. some AI accelerators)",
-   "EU": 0.39,
-   "NonEU": 0.18
+   "EU": 0.44,
+   "NonEU": 0.19
   },
   {
    "date": "Digital and video cameras",
@@ -62,14 +62,19 @@
    "NonEU": 0.19
   },
   {
+   "date": "Other computer units (incl. accelerator units)",
+   "EU": 0.2,
+   "NonEU": 0.26
+  },
+  {
    "date": "MRI and ultrasound scanners",
-   "EU": 0.4,
+   "EU": 0.41,
    "NonEU": 0.05
   },
   {
-   "date": "Other computer units (incl. accelerator units)",
-   "EU": 0.19,
-   "NonEU": 0.22
+   "date": "Memory chips",
+   "EU": 0.15,
+   "NonEU": 0.3
   },
   {
    "date": "Electro-diagnostic and medical X-ray equipment",
@@ -78,32 +83,27 @@
   },
   {
    "date": "Unmanned aircraft (drones)",
-   "EU": 0.06,
-   "NonEU": 0.26
-  },
-  {
-   "date": "Memory chips",
-   "EU": 0.09,
-   "NonEU": 0.19
+   "EU": 0.05,
+   "NonEU": 0.28
   },
   {
    "date": "Computer systems",
    "EU": 0.15,
-   "NonEU": 0.1
+   "NonEU": 0.12
   },
   {
    "date": "Processors and controllers (chips)",
-   "EU": 0.11,
-   "NonEU": 0.14
+   "EU": 0.12,
+   "NonEU": 0.15
   },
   {
    "date": "Industrial robots",
    "EU": 0.03,
-   "NonEU": 0.06
+   "NonEU": 0.05
   },
   {
    "date": "CT scanners",
-   "EU": 0.03,
+   "EU": 0.02,
    "NonEU": 0.05
   },
   {
@@ -114,7 +114,7 @@
   {
    "date": "Semiconductor-based sensors",
    "EU": 0.01,
-   "NonEU": 0.03
+   "NonEU": 0.02
   },
   {
    "date": "Handling robots",

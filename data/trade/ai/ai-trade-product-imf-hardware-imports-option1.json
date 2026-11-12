@@ -39,7 +39,7 @@
    "label": "ChatGPT launch"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -314,6 +314,13 @@
    "US": 1.6,
    "East Asia": 1.9,
    "Rest of world": 1.6
+  },
+  {
+   "date": "2026-Q3",
+   "EU": 8.3,
+   "US": 1.5,
+   "East Asia": 2.3,
+   "Rest of world": 1.7
   }
  ],
  "theme": "blue-amber",
