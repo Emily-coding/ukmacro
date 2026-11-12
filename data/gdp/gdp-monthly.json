@@ -12,12 +12,12 @@
    "key": "gva",
    "label": "Monthly GDP (GVA)",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ecy2/mgdp"
   }
  ],
- "data_through": "2026-08",
- "next_release": "2026-11-12",
+ "data_through": "2026-09",
+ "next_release": "2026-12-11",
  "status": "ok",
  "data": [
   {
@@ -242,7 +242,11 @@
   },
   {
    "date": "2026-08",
-   "gva": 103.1
+   "gva": 103.0
+  },
+  {
+   "date": "2026-09",
+   "gva": 103.3
   }
  ],
  "theme": "blue-amber",

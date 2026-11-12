@@ -19,8 +19,8 @@
   {
    "slug": "gdp-monthly",
    "title": "Monthly GDP",
-   "data_through": "2026-08",
-   "next_release": "2026-11-12",
+   "data_through": "2026-09",
+   "next_release": "2026-12-11",
    "status": "ok"
   },
   {

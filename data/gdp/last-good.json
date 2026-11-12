@@ -5518,7 +5518,7 @@
 "stored": "2026-10-08"
 },
 "gdp-monthly/gva": {
-"next_release": "2026-11-12",
+"next_release": "2026-12-11",
 "obs": [
 [
 "1997-01",
@@ -6942,10 +6942,14 @@
 ],
 [
 "2026-08",
-103.1
+103.0
+],
+[
+"2026-09",
+103.3
 ]
 ],
 "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ecy2/mgdp",
-"stored": "2026-10-15"
+"stored": "2026-11-12"
 }
 }
