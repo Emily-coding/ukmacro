@@ -3173,7 +3173,7 @@
 "stored": "2026-10-08"
 },
 "investment-level/total_gfcf": {
-"next_release": "2026-11-12",
+"next_release": "2026-12-22",
 "obs": [
 [
 "1955-Q1",
@@ -4318,9 +4318,13 @@
 [
 "2026-Q2",
 144517.0
+],
+[
+"2026-Q3",
+147025.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/npqt/cxnv",
-"stored": "2026-10-08"
+"stored": "2026-11-12"
 }
 }

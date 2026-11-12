@@ -19,11 +19,11 @@
    "key": "total_gfcf",
    "label": "Total investment (GFCF)",
    "_source": "live",
-   "_date": "2026-Q2",
+   "_date": "2026-Q3",
    "source_url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/npqt/cxnv"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "next_release": "2026-11-12",
  "status": "ok",
  "data": [
@@ -256,6 +256,11 @@
    "date": "2026-Q2",
    "business": 112.687,
    "total_gfcf": 113.79
+  },
+  {
+   "date": "2026-Q3",
+   "business": null,
+   "total_gfcf": 115.765
   }
  ],
  "theme": "blue-amber",
