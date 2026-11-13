@@ -6,14 +6,14 @@
    "slug": "gdp-level",
    "title": "Real GDP and GDP per head",
    "data_through": "2026-Q2",
-   "next_release": "2026-11-12",
+   "next_release": null,
    "status": "ok"
   },
   {
    "slug": "gdp-growth",
    "title": "Real GDP growth",
    "data_through": "2026-Q2",
-   "next_release": "2026-11-12",
+   "next_release": null,
    "status": "ok"
   },
   {
