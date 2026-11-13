@@ -83,18 +83,18 @@
      "key": "peer"
     },
     {
+     "label": "Italy",
+     "value": 7.0,
+     "key": "peer"
+    },
+    {
      "label": "Germany",
      "value": 4.0,
      "key": "peer"
     },
     {
-     "label": "Italy",
-     "value": -1.0,
-     "key": "peer"
-    },
-    {
      "label": "France",
-     "value": -3.0,
+     "value": -9.0,
      "key": "peer"
     }
    ]

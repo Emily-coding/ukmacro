@@ -3043,34 +3043,34 @@ product,servers,option1-origin,EU,imports,2024-Q4,413.9
 product,servers,option1-origin,US,imports,2024-Q4,384.44
 product,servers,option1-origin,East Asia,imports,2024-Q4,146.74
 product,servers,option1-origin,Rest of world,imports,2024-Q4,107.41
-product,servers,option1-origin,EU,imports,2025-Q1,596.01
+product,servers,option1-origin,EU,imports,2025-Q1,595.99
 product,servers,option1-origin,US,imports,2025-Q1,204.72
-product,servers,option1-origin,East Asia,imports,2025-Q1,225.17
-product,servers,option1-origin,Rest of world,imports,2025-Q1,244.98
-product,servers,option1-origin,EU,imports,2025-Q2,394.46
-product,servers,option1-origin,US,imports,2025-Q2,309.79
-product,servers,option1-origin,East Asia,imports,2025-Q2,211.5
+product,servers,option1-origin,East Asia,imports,2025-Q1,225.19
+product,servers,option1-origin,Rest of world,imports,2025-Q1,244.97
+product,servers,option1-origin,EU,imports,2025-Q2,394.45
+product,servers,option1-origin,US,imports,2025-Q2,309.8
+product,servers,option1-origin,East Asia,imports,2025-Q2,211.51
 product,servers,option1-origin,Rest of world,imports,2025-Q2,222.12
-product,servers,option1-origin,EU,imports,2025-Q3,452.68
+product,servers,option1-origin,EU,imports,2025-Q3,452.67
 product,servers,option1-origin,US,imports,2025-Q3,565.95
-product,servers,option1-origin,East Asia,imports,2025-Q3,243.63
+product,servers,option1-origin,East Asia,imports,2025-Q3,243.65
 product,servers,option1-origin,Rest of world,imports,2025-Q3,322.24
-product,servers,option1-origin,EU,imports,2025-Q4,436.59
-product,servers,option1-origin,US,imports,2025-Q4,324.67
-product,servers,option1-origin,East Asia,imports,2025-Q4,201.98
+product,servers,option1-origin,EU,imports,2025-Q4,436.58
+product,servers,option1-origin,US,imports,2025-Q4,324.68
+product,servers,option1-origin,East Asia,imports,2025-Q4,201.99
 product,servers,option1-origin,Rest of world,imports,2025-Q4,538.66
-product,servers,option1-origin,EU,imports,2026-Q1,863.96
+product,servers,option1-origin,EU,imports,2026-Q1,863.95
 product,servers,option1-origin,US,imports,2026-Q1,266.1
-product,servers,option1-origin,East Asia,imports,2026-Q1,306.66
+product,servers,option1-origin,East Asia,imports,2026-Q1,306.67
 product,servers,option1-origin,Rest of world,imports,2026-Q1,386.11
-product,servers,option1-origin,EU,imports,2026-Q2,949.19
+product,servers,option1-origin,EU,imports,2026-Q2,949.17
 product,servers,option1-origin,US,imports,2026-Q2,229.59
-product,servers,option1-origin,East Asia,imports,2026-Q2,397.61
+product,servers,option1-origin,East Asia,imports,2026-Q2,397.63
 product,servers,option1-origin,Rest of world,imports,2026-Q2,736.85
-product,servers,option1-origin,EU,imports,2026-Q3,1254.02
+product,servers,option1-origin,EU,imports,2026-Q3,1254.0
 product,servers,option1-origin,US,imports,2026-Q3,475.44
-product,servers,option1-origin,East Asia,imports,2026-Q3,394.43
-product,servers,option1-origin,Rest of world,imports,2026-Q3,363.93
+product,servers,option1-origin,East Asia,imports,2026-Q3,394.45
+product,servers,option1-origin,Rest of world,imports,2026-Q3,363.92
 product,computer_systems,option1,EU,exports,2016-Q1,20.24
 product,computer_systems,option1,US,exports,2016-Q1,3.35
 product,computer_systems,option1,East Asia,exports,2016-Q1,3.71
@@ -3559,33 +3559,33 @@ product,computer_systems,option1-origin,EU,imports,2024-Q4,60.31
 product,computer_systems,option1-origin,US,imports,2024-Q4,46.73
 product,computer_systems,option1-origin,East Asia,imports,2024-Q4,42.87
 product,computer_systems,option1-origin,Rest of world,imports,2024-Q4,8.35
-product,computer_systems,option1-origin,EU,imports,2025-Q1,401.42
+product,computer_systems,option1-origin,EU,imports,2025-Q1,401.41
 product,computer_systems,option1-origin,US,imports,2025-Q1,115.89
-product,computer_systems,option1-origin,East Asia,imports,2025-Q1,30.85
+product,computer_systems,option1-origin,East Asia,imports,2025-Q1,30.86
 product,computer_systems,option1-origin,Rest of world,imports,2025-Q1,5.46
-product,computer_systems,option1-origin,EU,imports,2025-Q2,84.61
+product,computer_systems,option1-origin,EU,imports,2025-Q2,84.6
 product,computer_systems,option1-origin,US,imports,2025-Q2,25.07
-product,computer_systems,option1-origin,East Asia,imports,2025-Q2,30.93
+product,computer_systems,option1-origin,East Asia,imports,2025-Q2,30.94
 product,computer_systems,option1-origin,Rest of world,imports,2025-Q2,3.5
-product,computer_systems,option1-origin,EU,imports,2025-Q3,57.59
+product,computer_systems,option1-origin,EU,imports,2025-Q3,57.58
 product,computer_systems,option1-origin,US,imports,2025-Q3,16.5
-product,computer_systems,option1-origin,East Asia,imports,2025-Q3,26.95
+product,computer_systems,option1-origin,East Asia,imports,2025-Q3,26.96
 product,computer_systems,option1-origin,Rest of world,imports,2025-Q3,7.2
 product,computer_systems,option1-origin,EU,imports,2025-Q4,62.34
 product,computer_systems,option1-origin,US,imports,2025-Q4,19.1
-product,computer_systems,option1-origin,East Asia,imports,2025-Q4,37.62
+product,computer_systems,option1-origin,East Asia,imports,2025-Q4,37.63
 product,computer_systems,option1-origin,Rest of world,imports,2025-Q4,10.8
-product,computer_systems,option1-origin,EU,imports,2026-Q1,86.01
+product,computer_systems,option1-origin,EU,imports,2026-Q1,86.0
 product,computer_systems,option1-origin,US,imports,2026-Q1,27.33
 product,computer_systems,option1-origin,East Asia,imports,2026-Q1,27.37
 product,computer_systems,option1-origin,Rest of world,imports,2026-Q1,3.0
-product,computer_systems,option1-origin,EU,imports,2026-Q2,64.07
+product,computer_systems,option1-origin,EU,imports,2026-Q2,64.06
 product,computer_systems,option1-origin,US,imports,2026-Q2,27.13
-product,computer_systems,option1-origin,East Asia,imports,2026-Q2,30.59
+product,computer_systems,option1-origin,East Asia,imports,2026-Q2,30.6
 product,computer_systems,option1-origin,Rest of world,imports,2026-Q2,7.66
-product,computer_systems,option1-origin,EU,imports,2026-Q3,62.26
+product,computer_systems,option1-origin,EU,imports,2026-Q3,62.25
 product,computer_systems,option1-origin,US,imports,2026-Q3,16.96
-product,computer_systems,option1-origin,East Asia,imports,2026-Q3,29.98
+product,computer_systems,option1-origin,East Asia,imports,2026-Q3,29.99
 product,computer_systems,option1-origin,Rest of world,imports,2026-Q3,28.78
 product,computer_units_other,option1,EU,exports,2016-Q1,30.57
 product,computer_units_other,option1,US,exports,2016-Q1,10.2
@@ -4075,34 +4075,34 @@ product,computer_units_other,option1-origin,EU,imports,2024-Q4,56.83
 product,computer_units_other,option1-origin,US,imports,2024-Q4,21.41
 product,computer_units_other,option1-origin,East Asia,imports,2024-Q4,63.44
 product,computer_units_other,option1-origin,Rest of world,imports,2024-Q4,9.75
-product,computer_units_other,option1-origin,EU,imports,2025-Q1,44.99
+product,computer_units_other,option1-origin,EU,imports,2025-Q1,44.91
 product,computer_units_other,option1-origin,US,imports,2025-Q1,40.14
-product,computer_units_other,option1-origin,East Asia,imports,2025-Q1,96.68
-product,computer_units_other,option1-origin,Rest of world,imports,2025-Q1,16.27
-product,computer_units_other,option1-origin,EU,imports,2025-Q2,110.84
+product,computer_units_other,option1-origin,East Asia,imports,2025-Q1,96.74
+product,computer_units_other,option1-origin,Rest of world,imports,2025-Q1,16.28
+product,computer_units_other,option1-origin,EU,imports,2025-Q2,110.78
 product,computer_units_other,option1-origin,US,imports,2025-Q2,20.1
-product,computer_units_other,option1-origin,East Asia,imports,2025-Q2,130.25
-product,computer_units_other,option1-origin,Rest of world,imports,2025-Q2,19.77
-product,computer_units_other,option1-origin,EU,imports,2025-Q3,60.34
+product,computer_units_other,option1-origin,East Asia,imports,2025-Q2,130.29
+product,computer_units_other,option1-origin,Rest of world,imports,2025-Q2,19.78
+product,computer_units_other,option1-origin,EU,imports,2025-Q3,60.3
 product,computer_units_other,option1-origin,US,imports,2025-Q3,17.24
-product,computer_units_other,option1-origin,East Asia,imports,2025-Q3,104.98
+product,computer_units_other,option1-origin,East Asia,imports,2025-Q3,105.01
 product,computer_units_other,option1-origin,Rest of world,imports,2025-Q3,16.81
-product,computer_units_other,option1-origin,EU,imports,2025-Q4,79.61
+product,computer_units_other,option1-origin,EU,imports,2025-Q4,79.54
 product,computer_units_other,option1-origin,US,imports,2025-Q4,24.48
-product,computer_units_other,option1-origin,East Asia,imports,2025-Q4,125.86
-product,computer_units_other,option1-origin,Rest of world,imports,2025-Q4,19.35
-product,computer_units_other,option1-origin,EU,imports,2026-Q1,95.36
+product,computer_units_other,option1-origin,East Asia,imports,2025-Q4,125.92
+product,computer_units_other,option1-origin,Rest of world,imports,2025-Q4,19.36
+product,computer_units_other,option1-origin,EU,imports,2026-Q1,95.3
 product,computer_units_other,option1-origin,US,imports,2026-Q1,15.09
-product,computer_units_other,option1-origin,East Asia,imports,2026-Q1,84.73
-product,computer_units_other,option1-origin,Rest of world,imports,2026-Q1,26.3
-product,computer_units_other,option1-origin,EU,imports,2026-Q2,110.91
+product,computer_units_other,option1-origin,East Asia,imports,2026-Q1,84.78
+product,computer_units_other,option1-origin,Rest of world,imports,2026-Q1,26.31
+product,computer_units_other,option1-origin,EU,imports,2026-Q2,110.84
 product,computer_units_other,option1-origin,US,imports,2026-Q2,17.67
-product,computer_units_other,option1-origin,East Asia,imports,2026-Q2,84.41
-product,computer_units_other,option1-origin,Rest of world,imports,2026-Q2,47.04
-product,computer_units_other,option1-origin,EU,imports,2026-Q3,94.96
+product,computer_units_other,option1-origin,East Asia,imports,2026-Q2,84.46
+product,computer_units_other,option1-origin,Rest of world,imports,2026-Q2,47.05
+product,computer_units_other,option1-origin,EU,imports,2026-Q3,94.89
 product,computer_units_other,option1-origin,US,imports,2026-Q3,24.0
-product,computer_units_other,option1-origin,East Asia,imports,2026-Q3,83.02
-product,computer_units_other,option1-origin,Rest of world,imports,2026-Q3,59.92
+product,computer_units_other,option1-origin,East Asia,imports,2026-Q3,83.08
+product,computer_units_other,option1-origin,Rest of world,imports,2026-Q3,59.93
 product,storage,option1,EU,exports,2016-Q1,99.46
 product,storage,option1,US,exports,2016-Q1,10.71
 product,storage,option1,East Asia,exports,2016-Q1,8.43
@@ -4597,25 +4597,25 @@ product,storage,option1-origin,East Asia,imports,2025-Q1,75.57
 product,storage,option1-origin,Rest of world,imports,2025-Q1,85.68
 product,storage,option1-origin,EU,imports,2025-Q2,98.04
 product,storage,option1-origin,US,imports,2025-Q2,30.74
-product,storage,option1-origin,East Asia,imports,2025-Q2,53.71
+product,storage,option1-origin,East Asia,imports,2025-Q2,53.72
 product,storage,option1-origin,Rest of world,imports,2025-Q2,84.9
 product,storage,option1-origin,EU,imports,2025-Q3,99.96
 product,storage,option1-origin,US,imports,2025-Q3,31.35
 product,storage,option1-origin,East Asia,imports,2025-Q3,92.73
 product,storage,option1-origin,Rest of world,imports,2025-Q3,70.87
-product,storage,option1-origin,EU,imports,2025-Q4,86.39
+product,storage,option1-origin,EU,imports,2025-Q4,86.38
 product,storage,option1-origin,US,imports,2025-Q4,21.93
 product,storage,option1-origin,East Asia,imports,2025-Q4,106.46
 product,storage,option1-origin,Rest of world,imports,2025-Q4,93.21
 product,storage,option1-origin,EU,imports,2026-Q1,121.88
 product,storage,option1-origin,US,imports,2026-Q1,29.47
 product,storage,option1-origin,East Asia,imports,2026-Q1,86.24
-product,storage,option1-origin,Rest of world,imports,2026-Q1,95.98
+product,storage,option1-origin,Rest of world,imports,2026-Q1,95.97
 product,storage,option1-origin,EU,imports,2026-Q2,99.68
 product,storage,option1-origin,US,imports,2026-Q2,25.17
-product,storage,option1-origin,East Asia,imports,2026-Q2,66.67
-product,storage,option1-origin,Rest of world,imports,2026-Q2,91.02
-product,storage,option1-origin,EU,imports,2026-Q3,159.23
+product,storage,option1-origin,East Asia,imports,2026-Q2,66.68
+product,storage,option1-origin,Rest of world,imports,2026-Q2,91.01
+product,storage,option1-origin,EU,imports,2026-Q3,159.22
 product,storage,option1-origin,US,imports,2026-Q3,47.57
 product,storage,option1-origin,East Asia,imports,2026-Q3,123.27
 product,storage,option1-origin,Rest of world,imports,2026-Q3,161.91
@@ -5107,33 +5107,33 @@ product,computer_assemblies,option1-origin,EU,imports,2024-Q4,49.56
 product,computer_assemblies,option1-origin,US,imports,2024-Q4,47.38
 product,computer_assemblies,option1-origin,East Asia,imports,2024-Q4,190.9
 product,computer_assemblies,option1-origin,Rest of world,imports,2024-Q4,35.48
-product,computer_assemblies,option1-origin,EU,imports,2025-Q1,63.19
+product,computer_assemblies,option1-origin,EU,imports,2025-Q1,63.17
 product,computer_assemblies,option1-origin,US,imports,2025-Q1,24.18
-product,computer_assemblies,option1-origin,East Asia,imports,2025-Q1,141.38
+product,computer_assemblies,option1-origin,East Asia,imports,2025-Q1,141.39
 product,computer_assemblies,option1-origin,Rest of world,imports,2025-Q1,39.14
-product,computer_assemblies,option1-origin,EU,imports,2025-Q2,59.72
+product,computer_assemblies,option1-origin,EU,imports,2025-Q2,59.7
 product,computer_assemblies,option1-origin,US,imports,2025-Q2,62.28
-product,computer_assemblies,option1-origin,East Asia,imports,2025-Q2,126.86
+product,computer_assemblies,option1-origin,East Asia,imports,2025-Q2,126.87
 product,computer_assemblies,option1-origin,Rest of world,imports,2025-Q2,41.55
-product,computer_assemblies,option1-origin,EU,imports,2025-Q3,55.19
+product,computer_assemblies,option1-origin,EU,imports,2025-Q3,55.18
 product,computer_assemblies,option1-origin,US,imports,2025-Q3,37.17
-product,computer_assemblies,option1-origin,East Asia,imports,2025-Q3,134.31
+product,computer_assemblies,option1-origin,East Asia,imports,2025-Q3,134.32
 product,computer_assemblies,option1-origin,Rest of world,imports,2025-Q3,47.42
-product,computer_assemblies,option1-origin,EU,imports,2025-Q4,63.83
+product,computer_assemblies,option1-origin,EU,imports,2025-Q4,63.82
 product,computer_assemblies,option1-origin,US,imports,2025-Q4,61.51
-product,computer_assemblies,option1-origin,East Asia,imports,2025-Q4,178.17
+product,computer_assemblies,option1-origin,East Asia,imports,2025-Q4,178.18
 product,computer_assemblies,option1-origin,Rest of world,imports,2025-Q4,55.02
-product,computer_assemblies,option1-origin,EU,imports,2026-Q1,65.08
+product,computer_assemblies,option1-origin,EU,imports,2026-Q1,65.07
 product,computer_assemblies,option1-origin,US,imports,2026-Q1,45.11
-product,computer_assemblies,option1-origin,East Asia,imports,2026-Q1,200.93
+product,computer_assemblies,option1-origin,East Asia,imports,2026-Q1,200.95
 product,computer_assemblies,option1-origin,Rest of world,imports,2026-Q1,60.06
-product,computer_assemblies,option1-origin,EU,imports,2026-Q2,73.44
+product,computer_assemblies,option1-origin,EU,imports,2026-Q2,73.43
 product,computer_assemblies,option1-origin,US,imports,2026-Q2,55.97
-product,computer_assemblies,option1-origin,East Asia,imports,2026-Q2,192.75
+product,computer_assemblies,option1-origin,East Asia,imports,2026-Q2,192.76
 product,computer_assemblies,option1-origin,Rest of world,imports,2026-Q2,93.71
-product,computer_assemblies,option1-origin,EU,imports,2026-Q3,78.12
+product,computer_assemblies,option1-origin,EU,imports,2026-Q3,78.11
 product,computer_assemblies,option1-origin,US,imports,2026-Q3,67.04
-product,computer_assemblies,option1-origin,East Asia,imports,2026-Q3,272.21
+product,computer_assemblies,option1-origin,East Asia,imports,2026-Q3,272.22
 product,computer_assemblies,option1-origin,Rest of world,imports,2026-Q3,96.07
 product,laptops_tablets,option1,EU,exports,2016-Q1,106.43
 product,laptops_tablets,option1,US,exports,2016-Q1,4.61
@@ -5623,33 +5623,33 @@ product,laptops_tablets,option1-origin,EU,imports,2024-Q4,143.04
 product,laptops_tablets,option1-origin,US,imports,2024-Q4,31.9
 product,laptops_tablets,option1-origin,East Asia,imports,2024-Q4,1486.49
 product,laptops_tablets,option1-origin,Rest of world,imports,2024-Q4,239.13
-product,laptops_tablets,option1-origin,EU,imports,2025-Q1,126.65
+product,laptops_tablets,option1-origin,EU,imports,2025-Q1,126.64
 product,laptops_tablets,option1-origin,US,imports,2025-Q1,26.96
-product,laptops_tablets,option1-origin,East Asia,imports,2025-Q1,1203.48
+product,laptops_tablets,option1-origin,East Asia,imports,2025-Q1,1203.49
 product,laptops_tablets,option1-origin,Rest of world,imports,2025-Q1,176.08
-product,laptops_tablets,option1-origin,EU,imports,2025-Q2,109.95
+product,laptops_tablets,option1-origin,EU,imports,2025-Q2,109.94
 product,laptops_tablets,option1-origin,US,imports,2025-Q2,26.57
-product,laptops_tablets,option1-origin,East Asia,imports,2025-Q2,1158.59
+product,laptops_tablets,option1-origin,East Asia,imports,2025-Q2,1158.6
 product,laptops_tablets,option1-origin,Rest of world,imports,2025-Q2,137.32
-product,laptops_tablets,option1-origin,EU,imports,2025-Q3,167.82
+product,laptops_tablets,option1-origin,EU,imports,2025-Q3,167.81
 product,laptops_tablets,option1-origin,US,imports,2025-Q3,29.19
-product,laptops_tablets,option1-origin,East Asia,imports,2025-Q3,1126.21
+product,laptops_tablets,option1-origin,East Asia,imports,2025-Q3,1126.22
 product,laptops_tablets,option1-origin,Rest of world,imports,2025-Q3,277.01
-product,laptops_tablets,option1-origin,EU,imports,2025-Q4,120.24
+product,laptops_tablets,option1-origin,EU,imports,2025-Q4,120.23
 product,laptops_tablets,option1-origin,US,imports,2025-Q4,32.94
-product,laptops_tablets,option1-origin,East Asia,imports,2025-Q4,1369.13
+product,laptops_tablets,option1-origin,East Asia,imports,2025-Q4,1369.14
 product,laptops_tablets,option1-origin,Rest of world,imports,2025-Q4,270.56
-product,laptops_tablets,option1-origin,EU,imports,2026-Q1,100.12
+product,laptops_tablets,option1-origin,EU,imports,2026-Q1,100.11
 product,laptops_tablets,option1-origin,US,imports,2026-Q1,36.17
-product,laptops_tablets,option1-origin,East Asia,imports,2026-Q1,1305.76
+product,laptops_tablets,option1-origin,East Asia,imports,2026-Q1,1305.77
 product,laptops_tablets,option1-origin,Rest of world,imports,2026-Q1,124.17
-product,laptops_tablets,option1-origin,EU,imports,2026-Q2,159.81
-product,laptops_tablets,option1-origin,US,imports,2026-Q2,31.7
-product,laptops_tablets,option1-origin,East Asia,imports,2026-Q2,1260.17
+product,laptops_tablets,option1-origin,EU,imports,2026-Q2,159.8
+product,laptops_tablets,option1-origin,US,imports,2026-Q2,31.71
+product,laptops_tablets,option1-origin,East Asia,imports,2026-Q2,1260.18
 product,laptops_tablets,option1-origin,Rest of world,imports,2026-Q2,201.05
-product,laptops_tablets,option1-origin,EU,imports,2026-Q3,144.25
+product,laptops_tablets,option1-origin,EU,imports,2026-Q3,144.24
 product,laptops_tablets,option1-origin,US,imports,2026-Q3,32.87
-product,laptops_tablets,option1-origin,East Asia,imports,2026-Q3,1331.14
+product,laptops_tablets,option1-origin,East Asia,imports,2026-Q3,1331.15
 product,laptops_tablets,option1-origin,Rest of world,imports,2026-Q3,254.18
 product,mobile_phones,option1,EU,exports,2016-Q1,142.12
 product,mobile_phones,option1,US,exports,2016-Q1,6.13
@@ -6141,32 +6141,32 @@ product,mobile_phones,option1-origin,East Asia,imports,2024-Q4,2016.1
 product,mobile_phones,option1-origin,Rest of world,imports,2024-Q4,728.77
 product,mobile_phones,option1-origin,EU,imports,2025-Q1,68.67
 product,mobile_phones,option1-origin,US,imports,2025-Q1,7.8
-product,mobile_phones,option1-origin,East Asia,imports,2025-Q1,1098.74
+product,mobile_phones,option1-origin,East Asia,imports,2025-Q1,1098.75
 product,mobile_phones,option1-origin,Rest of world,imports,2025-Q1,794.35
 product,mobile_phones,option1-origin,EU,imports,2025-Q2,67.55
 product,mobile_phones,option1-origin,US,imports,2025-Q2,6.98
-product,mobile_phones,option1-origin,East Asia,imports,2025-Q2,1249.79
-product,mobile_phones,option1-origin,Rest of world,imports,2025-Q2,488.08
-product,mobile_phones,option1-origin,EU,imports,2025-Q3,63.61
+product,mobile_phones,option1-origin,East Asia,imports,2025-Q2,1249.8
+product,mobile_phones,option1-origin,Rest of world,imports,2025-Q2,488.07
+product,mobile_phones,option1-origin,EU,imports,2025-Q3,63.6
 product,mobile_phones,option1-origin,US,imports,2025-Q3,10.38
-product,mobile_phones,option1-origin,East Asia,imports,2025-Q3,1160.06
+product,mobile_phones,option1-origin,East Asia,imports,2025-Q3,1160.07
 product,mobile_phones,option1-origin,Rest of world,imports,2025-Q3,626.43
-product,mobile_phones,option1-origin,EU,imports,2025-Q4,68.77
+product,mobile_phones,option1-origin,EU,imports,2025-Q4,68.76
 product,mobile_phones,option1-origin,US,imports,2025-Q4,16.26
-product,mobile_phones,option1-origin,East Asia,imports,2025-Q4,1991.17
+product,mobile_phones,option1-origin,East Asia,imports,2025-Q4,1991.18
 product,mobile_phones,option1-origin,Rest of world,imports,2025-Q4,566.06
 product,mobile_phones,option1-origin,EU,imports,2026-Q1,63.11
 product,mobile_phones,option1-origin,US,imports,2026-Q1,10.56
-product,mobile_phones,option1-origin,East Asia,imports,2026-Q1,1188.34
-product,mobile_phones,option1-origin,Rest of world,imports,2026-Q1,527.14
+product,mobile_phones,option1-origin,East Asia,imports,2026-Q1,1188.35
+product,mobile_phones,option1-origin,Rest of world,imports,2026-Q1,527.13
 product,mobile_phones,option1-origin,EU,imports,2026-Q2,66.31
 product,mobile_phones,option1-origin,US,imports,2026-Q2,6.87
-product,mobile_phones,option1-origin,East Asia,imports,2026-Q2,1235.54
+product,mobile_phones,option1-origin,East Asia,imports,2026-Q2,1235.55
 product,mobile_phones,option1-origin,Rest of world,imports,2026-Q2,511.39
 product,mobile_phones,option1-origin,EU,imports,2026-Q3,79.48
 product,mobile_phones,option1-origin,US,imports,2026-Q3,6.04
-product,mobile_phones,option1-origin,East Asia,imports,2026-Q3,1521.72
-product,mobile_phones,option1-origin,Rest of world,imports,2026-Q3,717.47
+product,mobile_phones,option1-origin,East Asia,imports,2026-Q3,1521.73
+product,mobile_phones,option1-origin,Rest of world,imports,2026-Q3,717.46
 product,smartphones,option1,EU,exports,2022-Q1,130.29
 product,smartphones,option1,US,exports,2022-Q1,0.89
 product,smartphones,option1,East Asia,exports,2022-Q1,7.17
@@ -6370,31 +6370,31 @@ product,smartphones,option1-origin,Rest of world,imports,2024-Q4,728.11
 product,smartphones,option1-origin,EU,imports,2025-Q1,58.96
 product,smartphones,option1-origin,US,imports,2025-Q1,6.71
 product,smartphones,option1-origin,East Asia,imports,2025-Q1,1095.31
-product,smartphones,option1-origin,Rest of world,imports,2025-Q1,793.67
+product,smartphones,option1-origin,Rest of world,imports,2025-Q1,793.66
 product,smartphones,option1-origin,EU,imports,2025-Q2,55.08
 product,smartphones,option1-origin,US,imports,2025-Q2,6.28
 product,smartphones,option1-origin,East Asia,imports,2025-Q2,1246.08
-product,smartphones,option1-origin,Rest of world,imports,2025-Q2,487.72
+product,smartphones,option1-origin,Rest of world,imports,2025-Q2,487.71
 product,smartphones,option1-origin,EU,imports,2025-Q3,53.94
 product,smartphones,option1-origin,US,imports,2025-Q3,7.66
 product,smartphones,option1-origin,East Asia,imports,2025-Q3,1154.91
 product,smartphones,option1-origin,Rest of world,imports,2025-Q3,625.66
 product,smartphones,option1-origin,EU,imports,2025-Q4,58.21
 product,smartphones,option1-origin,US,imports,2025-Q4,15.57
-product,smartphones,option1-origin,East Asia,imports,2025-Q4,1984.58
-product,smartphones,option1-origin,Rest of world,imports,2025-Q4,565.28
+product,smartphones,option1-origin,East Asia,imports,2025-Q4,1984.59
+product,smartphones,option1-origin,Rest of world,imports,2025-Q4,565.27
 product,smartphones,option1-origin,EU,imports,2026-Q1,54.38
 product,smartphones,option1-origin,US,imports,2026-Q1,10.0
 product,smartphones,option1-origin,East Asia,imports,2026-Q1,1182.12
-product,smartphones,option1-origin,Rest of world,imports,2026-Q1,526.26
-product,smartphones,option1-origin,EU,imports,2026-Q2,60.56
+product,smartphones,option1-origin,Rest of world,imports,2026-Q1,526.25
+product,smartphones,option1-origin,EU,imports,2026-Q2,60.55
 product,smartphones,option1-origin,US,imports,2026-Q2,5.77
-product,smartphones,option1-origin,East Asia,imports,2026-Q2,1232.5
+product,smartphones,option1-origin,East Asia,imports,2026-Q2,1232.51
 product,smartphones,option1-origin,Rest of world,imports,2026-Q2,510.77
 product,smartphones,option1-origin,EU,imports,2026-Q3,72.39
 product,smartphones,option1-origin,US,imports,2026-Q3,5.63
 product,smartphones,option1-origin,East Asia,imports,2026-Q3,1517.45
-product,smartphones,option1-origin,Rest of world,imports,2026-Q3,716.42
+product,smartphones,option1-origin,Rest of world,imports,2026-Q3,716.41
 product,network_equipment,option1,EU,exports,2016-Q1,220.09
 product,network_equipment,option1,US,exports,2016-Q1,41.43
 product,network_equipment,option1,East Asia,exports,2016-Q1,9.28
@@ -6883,34 +6883,34 @@ product,network_equipment,option1-origin,EU,imports,2024-Q4,354.55
 product,network_equipment,option1-origin,US,imports,2024-Q4,227.36
 product,network_equipment,option1-origin,East Asia,imports,2024-Q4,632.75
 product,network_equipment,option1-origin,Rest of world,imports,2024-Q4,459.24
-product,network_equipment,option1-origin,EU,imports,2025-Q1,372.77
-product,network_equipment,option1-origin,US,imports,2025-Q1,347.5
-product,network_equipment,option1-origin,East Asia,imports,2025-Q1,441.98
-product,network_equipment,option1-origin,Rest of world,imports,2025-Q1,432.05
-product,network_equipment,option1-origin,EU,imports,2025-Q2,398.81
+product,network_equipment,option1-origin,EU,imports,2025-Q1,372.71
+product,network_equipment,option1-origin,US,imports,2025-Q1,347.49
+product,network_equipment,option1-origin,East Asia,imports,2025-Q1,442.08
+product,network_equipment,option1-origin,Rest of world,imports,2025-Q1,432.02
+product,network_equipment,option1-origin,EU,imports,2025-Q2,398.74
 product,network_equipment,option1-origin,US,imports,2025-Q2,261.89
-product,network_equipment,option1-origin,East Asia,imports,2025-Q2,483.2
-product,network_equipment,option1-origin,Rest of world,imports,2025-Q2,443.15
-product,network_equipment,option1-origin,EU,imports,2025-Q3,447.57
-product,network_equipment,option1-origin,US,imports,2025-Q3,271.9
-product,network_equipment,option1-origin,East Asia,imports,2025-Q3,538.5
-product,network_equipment,option1-origin,Rest of world,imports,2025-Q3,513.06
-product,network_equipment,option1-origin,EU,imports,2025-Q4,467.31
-product,network_equipment,option1-origin,US,imports,2025-Q4,266.78
-product,network_equipment,option1-origin,East Asia,imports,2025-Q4,654.09
-product,network_equipment,option1-origin,Rest of world,imports,2025-Q4,560.1
-product,network_equipment,option1-origin,EU,imports,2026-Q1,504.78
+product,network_equipment,option1-origin,East Asia,imports,2025-Q2,483.31
+product,network_equipment,option1-origin,Rest of world,imports,2025-Q2,443.12
+product,network_equipment,option1-origin,EU,imports,2025-Q3,447.51
+product,network_equipment,option1-origin,US,imports,2025-Q3,271.89
+product,network_equipment,option1-origin,East Asia,imports,2025-Q3,538.6
+product,network_equipment,option1-origin,Rest of world,imports,2025-Q3,513.03
+product,network_equipment,option1-origin,EU,imports,2025-Q4,467.23
+product,network_equipment,option1-origin,US,imports,2025-Q4,266.77
+product,network_equipment,option1-origin,East Asia,imports,2025-Q4,654.22
+product,network_equipment,option1-origin,Rest of world,imports,2025-Q4,560.06
+product,network_equipment,option1-origin,EU,imports,2026-Q1,504.71
 product,network_equipment,option1-origin,US,imports,2026-Q1,280.16
-product,network_equipment,option1-origin,East Asia,imports,2026-Q1,574.14
-product,network_equipment,option1-origin,Rest of world,imports,2026-Q1,506.3
-product,network_equipment,option1-origin,EU,imports,2026-Q2,522.84
-product,network_equipment,option1-origin,US,imports,2026-Q2,264.24
-product,network_equipment,option1-origin,East Asia,imports,2026-Q2,639.05
-product,network_equipment,option1-origin,Rest of world,imports,2026-Q2,563.59
-product,network_equipment,option1-origin,EU,imports,2026-Q3,570.91
-product,network_equipment,option1-origin,US,imports,2026-Q3,291.31
-product,network_equipment,option1-origin,East Asia,imports,2026-Q3,693.94
-product,network_equipment,option1-origin,Rest of world,imports,2026-Q3,654.37
+product,network_equipment,option1-origin,East Asia,imports,2026-Q1,574.24
+product,network_equipment,option1-origin,Rest of world,imports,2026-Q1,506.27
+product,network_equipment,option1-origin,EU,imports,2026-Q2,522.75
+product,network_equipment,option1-origin,US,imports,2026-Q2,264.23
+product,network_equipment,option1-origin,East Asia,imports,2026-Q2,639.18
+product,network_equipment,option1-origin,Rest of world,imports,2026-Q2,563.55
+product,network_equipment,option1-origin,EU,imports,2026-Q3,570.83
+product,network_equipment,option1-origin,US,imports,2026-Q3,291.3
+product,network_equipment,option1-origin,East Asia,imports,2026-Q3,694.06
+product,network_equipment,option1-origin,Rest of world,imports,2026-Q3,654.34
 product,sensors,option1,EU,exports,2022-Q1,1.72
 product,sensors,option1,US,exports,2022-Q1,0.7
 product,sensors,option1,East Asia,exports,2022-Q1,0.27
@@ -7627,34 +7627,34 @@ product,cameras,option1-origin,EU,imports,2024-Q4,102.46
 product,cameras,option1-origin,US,imports,2024-Q4,11.01
 product,cameras,option1-origin,East Asia,imports,2024-Q4,132.57
 product,cameras,option1-origin,Rest of world,imports,2024-Q4,54.37
-product,cameras,option1-origin,EU,imports,2025-Q1,101.58
+product,cameras,option1-origin,EU,imports,2025-Q1,101.57
 product,cameras,option1-origin,US,imports,2025-Q1,10.71
-product,cameras,option1-origin,East Asia,imports,2025-Q1,106.72
+product,cameras,option1-origin,East Asia,imports,2025-Q1,106.73
 product,cameras,option1-origin,Rest of world,imports,2025-Q1,46.47
-product,cameras,option1-origin,EU,imports,2025-Q2,94.61
+product,cameras,option1-origin,EU,imports,2025-Q2,94.6
 product,cameras,option1-origin,US,imports,2025-Q2,16.68
-product,cameras,option1-origin,East Asia,imports,2025-Q2,114.25
+product,cameras,option1-origin,East Asia,imports,2025-Q2,114.27
 product,cameras,option1-origin,Rest of world,imports,2025-Q2,44.12
-product,cameras,option1-origin,EU,imports,2025-Q3,106.98
+product,cameras,option1-origin,EU,imports,2025-Q3,106.97
 product,cameras,option1-origin,US,imports,2025-Q3,17.45
-product,cameras,option1-origin,East Asia,imports,2025-Q3,129.2
+product,cameras,option1-origin,East Asia,imports,2025-Q3,129.21
 product,cameras,option1-origin,Rest of world,imports,2025-Q3,73.85
-product,cameras,option1-origin,EU,imports,2025-Q4,111.58
+product,cameras,option1-origin,EU,imports,2025-Q4,111.56
 product,cameras,option1-origin,US,imports,2025-Q4,25.05
-product,cameras,option1-origin,East Asia,imports,2025-Q4,148.31
+product,cameras,option1-origin,East Asia,imports,2025-Q4,148.34
 product,cameras,option1-origin,Rest of world,imports,2025-Q4,61.16
-product,cameras,option1-origin,EU,imports,2026-Q1,116.47
+product,cameras,option1-origin,EU,imports,2026-Q1,116.45
 product,cameras,option1-origin,US,imports,2026-Q1,24.38
-product,cameras,option1-origin,East Asia,imports,2026-Q1,130.1
-product,cameras,option1-origin,Rest of world,imports,2026-Q1,46.69
-product,cameras,option1-origin,EU,imports,2026-Q2,109.4
+product,cameras,option1-origin,East Asia,imports,2026-Q1,130.12
+product,cameras,option1-origin,Rest of world,imports,2026-Q1,46.68
+product,cameras,option1-origin,EU,imports,2026-Q2,109.39
 product,cameras,option1-origin,US,imports,2026-Q2,24.62
-product,cameras,option1-origin,East Asia,imports,2026-Q2,146.78
+product,cameras,option1-origin,East Asia,imports,2026-Q2,146.79
 product,cameras,option1-origin,Rest of world,imports,2026-Q2,67.5
-product,cameras,option1-origin,EU,imports,2026-Q3,121.24
+product,cameras,option1-origin,EU,imports,2026-Q3,121.22
 product,cameras,option1-origin,US,imports,2026-Q3,18.78
-product,cameras,option1-origin,East Asia,imports,2026-Q3,152.62
-product,cameras,option1-origin,Rest of world,imports,2026-Q3,54.47
+product,cameras,option1-origin,East Asia,imports,2026-Q3,152.64
+product,cameras,option1-origin,Rest of world,imports,2026-Q3,54.46
 product,mri_ultrasound,option1,EU,exports,2016-Q1,45.8
 product,mri_ultrasound,option1,US,exports,2016-Q1,3.06
 product,mri_ultrasound,option1,East Asia,exports,2016-Q1,3.28
@@ -9697,27 +9697,27 @@ product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q1,77.92
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2025-Q1,24.06
 product,vacuum_cleaners,option1-origin,EU,imports,2025-Q2,7.09
 product,vacuum_cleaners,option1-origin,US,imports,2025-Q2,0.12
-product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q2,81.16
+product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q2,81.17
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2025-Q2,24.03
-product,vacuum_cleaners,option1-origin,EU,imports,2025-Q3,9.3
+product,vacuum_cleaners,option1-origin,EU,imports,2025-Q3,9.29
 product,vacuum_cleaners,option1-origin,US,imports,2025-Q3,0.05
 product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q3,82.9
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2025-Q3,25.22
-product,vacuum_cleaners,option1-origin,EU,imports,2025-Q4,9.02
+product,vacuum_cleaners,option1-origin,EU,imports,2025-Q4,9.01
 product,vacuum_cleaners,option1-origin,US,imports,2025-Q4,0.25
-product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q4,104.12
+product,vacuum_cleaners,option1-origin,East Asia,imports,2025-Q4,104.13
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2025-Q4,30.52
-product,vacuum_cleaners,option1-origin,EU,imports,2026-Q1,9.63
+product,vacuum_cleaners,option1-origin,EU,imports,2026-Q1,9.62
 product,vacuum_cleaners,option1-origin,US,imports,2026-Q1,0.22
-product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q1,84.54
+product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q1,84.55
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2026-Q1,23.39
-product,vacuum_cleaners,option1-origin,EU,imports,2026-Q2,8.91
+product,vacuum_cleaners,option1-origin,EU,imports,2026-Q2,8.9
 product,vacuum_cleaners,option1-origin,US,imports,2026-Q2,0.18
-product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q2,84.6
+product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q2,84.61
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2026-Q2,18.82
 product,vacuum_cleaners,option1-origin,EU,imports,2026-Q3,9.36
 product,vacuum_cleaners,option1-origin,US,imports,2026-Q3,0.22
-product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q3,102.21
+product,vacuum_cleaners,option1-origin,East Asia,imports,2026-Q3,102.22
 product,vacuum_cleaners,option1-origin,Rest of world,imports,2026-Q3,25.27
 product,robots,option1,EU,exports,2016-Q1,2.88
 product,robots,option1,US,exports,2016-Q1,2.88
@@ -10214,7 +10214,7 @@ product,robots,option1-origin,Rest of world,imports,2025-Q1,2.41
 product,robots,option1-origin,EU,imports,2025-Q2,22.86
 product,robots,option1-origin,US,imports,2025-Q2,1.12
 product,robots,option1-origin,East Asia,imports,2025-Q2,5.15
-product,robots,option1-origin,Rest of world,imports,2025-Q2,2.08
+product,robots,option1-origin,Rest of world,imports,2025-Q2,2.09
 product,robots,option1-origin,EU,imports,2025-Q3,24.44
 product,robots,option1-origin,US,imports,2025-Q3,1.58
 product,robots,option1-origin,East Asia,imports,2025-Q3,3.7
@@ -10227,10 +10227,10 @@ product,robots,option1-origin,EU,imports,2026-Q1,21.41
 product,robots,option1-origin,US,imports,2026-Q1,4.67
 product,robots,option1-origin,East Asia,imports,2026-Q1,3.17
 product,robots,option1-origin,Rest of world,imports,2026-Q1,2.42
-product,robots,option1-origin,EU,imports,2026-Q2,17.53
+product,robots,option1-origin,EU,imports,2026-Q2,17.52
 product,robots,option1-origin,US,imports,2026-Q2,1.76
 product,robots,option1-origin,East Asia,imports,2026-Q2,2.94
-product,robots,option1-origin,Rest of world,imports,2026-Q2,3.69
+product,robots,option1-origin,Rest of world,imports,2026-Q2,3.7
 product,robots,option1-origin,EU,imports,2026-Q3,19.65
 product,robots,option1-origin,US,imports,2026-Q3,2.02
 product,robots,option1-origin,East Asia,imports,2026-Q3,5.05
@@ -10673,7 +10673,7 @@ product,drones,option1-origin,East Asia,imports,2025-Q2,30.5
 product,drones,option1-origin,Rest of world,imports,2025-Q2,3.93
 product,drones,option1-origin,EU,imports,2025-Q3,3.14
 product,drones,option1-origin,US,imports,2025-Q3,13.24
-product,drones,option1-origin,East Asia,imports,2025-Q3,28.84
+product,drones,option1-origin,East Asia,imports,2025-Q3,28.83
 product,drones,option1-origin,Rest of world,imports,2025-Q3,2.11
 product,drones,option1-origin,EU,imports,2025-Q4,7.62
 product,drones,option1-origin,US,imports,2025-Q4,4.89
@@ -10683,7 +10683,7 @@ product,drones,option1-origin,EU,imports,2026-Q1,10.0
 product,drones,option1-origin,US,imports,2026-Q1,18.2
 product,drones,option1-origin,East Asia,imports,2026-Q1,13.27
 product,drones,option1-origin,Rest of world,imports,2026-Q1,7.93
-product,drones,option1-origin,EU,imports,2026-Q2,8.28
+product,drones,option1-origin,EU,imports,2026-Q2,8.29
 product,drones,option1-origin,US,imports,2026-Q2,3.02
 product,drones,option1-origin,East Asia,imports,2026-Q2,16.61
 product,drones,option1-origin,Rest of world,imports,2026-Q2,2.06
@@ -11179,31 +11179,31 @@ product,imf_hardware,option1-origin,EU,imports,2024-Q4,775.21
 product,imf_hardware,option1-origin,US,imports,2024-Q4,525.68
 product,imf_hardware,option1-origin,East Asia,imports,2024-Q4,540.24
 product,imf_hardware,option1-origin,Rest of world,imports,2024-Q4,244.94
-product,imf_hardware,option1-origin,EU,imports,2025-Q1,972.58
+product,imf_hardware,option1-origin,EU,imports,2025-Q1,972.46
 product,imf_hardware,option1-origin,US,imports,2025-Q1,366.23
-product,imf_hardware,option1-origin,East Asia,imports,2025-Q1,587.47
+product,imf_hardware,option1-origin,East Asia,imports,2025-Q1,587.57
 product,imf_hardware,option1-origin,Rest of world,imports,2025-Q1,420.5
-product,imf_hardware,option1-origin,EU,imports,2025-Q2,828.42
-product,imf_hardware,option1-origin,US,imports,2025-Q2,458.0
-product,imf_hardware,option1-origin,East Asia,imports,2025-Q2,578.76
+product,imf_hardware,option1-origin,EU,imports,2025-Q2,828.33
+product,imf_hardware,option1-origin,US,imports,2025-Q2,458.01
+product,imf_hardware,option1-origin,East Asia,imports,2025-Q2,578.83
 product,imf_hardware,option1-origin,Rest of world,imports,2025-Q2,390.53
-product,imf_hardware,option1-origin,EU,imports,2025-Q3,850.66
+product,imf_hardware,option1-origin,EU,imports,2025-Q3,850.59
 product,imf_hardware,option1-origin,US,imports,2025-Q3,696.21
-product,imf_hardware,option1-origin,East Asia,imports,2025-Q3,622.82
+product,imf_hardware,option1-origin,East Asia,imports,2025-Q3,622.89
 product,imf_hardware,option1-origin,Rest of world,imports,2025-Q3,480.1
-product,imf_hardware,option1-origin,EU,imports,2025-Q4,835.65
+product,imf_hardware,option1-origin,EU,imports,2025-Q4,835.55
 product,imf_hardware,option1-origin,US,imports,2025-Q4,471.84
-product,imf_hardware,option1-origin,East Asia,imports,2025-Q4,673.61
-product,imf_hardware,option1-origin,Rest of world,imports,2025-Q4,736.22
-product,imf_hardware,option1-origin,EU,imports,2026-Q1,1330.78
-product,imf_hardware,option1-origin,US,imports,2026-Q1,405.44
-product,imf_hardware,option1-origin,East Asia,imports,2026-Q1,784.72
-product,imf_hardware,option1-origin,Rest of world,imports,2026-Q1,598.78
-product,imf_hardware,option1-origin,EU,imports,2026-Q2,1438.13
-product,imf_hardware,option1-origin,US,imports,2026-Q2,376.51
-product,imf_hardware,option1-origin,East Asia,imports,2026-Q2,874.16
-product,imf_hardware,option1-origin,Rest of world,imports,2026-Q2,999.45
-product,imf_hardware,option1-origin,EU,imports,2026-Q3,1790.15
+product,imf_hardware,option1-origin,East Asia,imports,2025-Q4,673.69
+product,imf_hardware,option1-origin,Rest of world,imports,2025-Q4,736.23
+product,imf_hardware,option1-origin,EU,imports,2026-Q1,1330.69
+product,imf_hardware,option1-origin,US,imports,2026-Q1,405.45
+product,imf_hardware,option1-origin,East Asia,imports,2026-Q1,784.8
+product,imf_hardware,option1-origin,Rest of world,imports,2026-Q1,598.79
+product,imf_hardware,option1-origin,EU,imports,2026-Q2,1438.03
+product,imf_hardware,option1-origin,US,imports,2026-Q2,376.52
+product,imf_hardware,option1-origin,East Asia,imports,2026-Q2,874.25
+product,imf_hardware,option1-origin,Rest of world,imports,2026-Q2,999.46
+product,imf_hardware,option1-origin,EU,imports,2026-Q3,1790.04
 product,imf_hardware,option1-origin,US,imports,2026-Q3,677.38
-product,imf_hardware,option1-origin,East Asia,imports,2026-Q3,1078.0
-product,imf_hardware,option1-origin,Rest of world,imports,2026-Q3,736.64
+product,imf_hardware,option1-origin,East Asia,imports,2026-Q3,1078.09
+product,imf_hardware,option1-origin,Rest of world,imports,2026-Q3,736.65
