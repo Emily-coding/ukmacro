@@ -1,7 +1,7 @@
 {
  "slug": "composition-lfs-vs-rti-16-64",
  "category": "labour-markets",
- "title": "Change in the employment rate aged 16-64, 2019 to 2026 Q2: LFS vs RTI",
+ "title": "Change in the employment rate aged 16-64, 2019 to 2026 Q3: LFS vs RTI",
  "type": "grouped-hbar",
  "freq": "Q",
  "units": "Percentage points",
@@ -26,21 +26,21 @@
  "data": [
   {
    "date": "Total change",
-   "lfs_age_sex": -0.96,
-   "lfs_age": -0.96,
-   "rti_age": -0.38
+   "lfs_age_sex": -0.66,
+   "lfs_age": -0.66,
+   "rti_age": -0.52
   },
   {
    "date": "Composition",
-   "lfs_age_sex": -0.18,
-   "lfs_age": -0.18,
-   "rti_age": -0.13
+   "lfs_age_sex": -0.17,
+   "lfs_age": -0.17,
+   "rti_age": -0.14
   },
   {
    "date": "Within-group",
-   "lfs_age_sex": -0.78,
-   "lfs_age": -0.79,
-   "rti_age": -0.24
+   "lfs_age_sex": -0.49,
+   "lfs_age": -0.49,
+   "rti_age": -0.38
   }
  ],
  "theme": "blue-amber",

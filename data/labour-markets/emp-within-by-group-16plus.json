@@ -1,7 +1,7 @@
 {
  "slug": "emp-within-by-group-16plus",
  "category": "labour-markets",
- "title": "Contributions to the change in the employment rate aged 16 and over, 2019 to 2026 Q2",
+ "title": "Contributions to the change in the employment rate aged 16 and over, 2019 to 2026 Q3",
  "type": "grouped-hbar",
  "freq": "Q",
  "units": "Percentage points",
@@ -22,33 +22,33 @@
  "data": [
   {
    "date": "16-17",
-   "Men": -0.044,
-   "Women": -0.073
+   "Men": -0.078,
+   "Women": -0.1
   },
   {
    "date": "18-24",
-   "Men": -0.158,
-   "Women": -0.186
+   "Men": -0.042,
+   "Women": -0.18
   },
   {
    "date": "25-34",
-   "Men": -0.209,
-   "Women": 0.21
+   "Men": -0.184,
+   "Women": 0.193
   },
   {
    "date": "35-49",
-   "Men": -0.156,
-   "Women": 0.099
+   "Men": -0.191,
+   "Women": 0.186
   },
   {
    "date": "50-64",
-   "Men": -0.167,
-   "Women": 0.081
+   "Men": -0.098,
+   "Women": 0.117
   },
   {
    "date": "65+",
-   "Men": 0.248,
-   "Women": 0.277
+   "Men": 0.216,
+   "Women": 0.254
   }
  ],
  "theme": "blue-amber",

@@ -26,7 +26,7 @@
    "mark": "line"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -268,6 +268,14 @@
    "within_16_64": -0.61,
    "within_65plus": 0.53,
    "change": -0.92
+  },
+  {
+   "date": "2026-Q3",
+   "composition": -0.86,
+   "within": 0.09,
+   "within_16_64": -0.38,
+   "within_65plus": 0.47,
+   "change": -0.77
   }
  ],
  "theme": "blue-amber",

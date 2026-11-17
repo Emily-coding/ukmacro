@@ -21,7 +21,7 @@
    "label": "90th percentile"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -131,6 +131,12 @@
    "p10": 102.18,
    "p50": 103.89,
    "p90": 100.36
+  },
+  {
+   "date": "2026-Q3",
+   "p10": 100.47,
+   "p50": 101.87,
+   "p90": 99.76
   }
  ],
  "theme": "blue-amber",

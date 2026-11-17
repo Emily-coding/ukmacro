@@ -17,7 +17,7 @@
    "label": "Holding the age/sex mix at 2019"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -249,6 +249,11 @@
    "date": "2026-Q2",
    "actual": 75.13,
    "fixed_mix": 75.32
+  },
+  {
+   "date": "2026-Q3",
+   "actual": 75.43,
+   "fixed_mix": 75.61
   }
  ],
  "theme": "blue-amber",
