@@ -3,6 +3,13 @@
 
   international-productivity-levels          GDP per hour worked as % of the US level
   international-productivity-levels-germany  the same, as % of the German level
+  international-productivity-levels-germany-constant
+                                             the Germany chart at constant prices and 2020
+                                             PPPs (each country's 2020 level moved with its
+                                             real growth)
+  uk-germany-productivity-ppp-hours          UK as % of Germany at current or constant PPPs,
+                                             on new or old ONS hours: how much each choice
+                                             moves the gap
   uk-hours-old-vs-new                        UK total hours worked to 2024: the ONS's new
                                              estimate, its old one, and the OECD's
 
@@ -79,18 +86,19 @@ COLOUR = {"UK": hs.COLOURS["series"][0], "Germany": hs.COLOURS["series"][1],
           "US": hs.COLOURS["ink"]}
 START = 1987   # first year of US hours in the OECD database
 HOURS_LAST = 2024   # the hours chart stops here
+CONSTANT_PPP_YEAR = 2020   # the OECD's base year for its constant-PPP series
 
 OUT, IMG = REPO / "data" / "productivity", REPO / "img" / "productivity"
 
 
-def oecd_series() -> tuple[dict[str, dict[int, float]], dict[int, float], dict[int, float]]:
-    """GDP per hour worked (US$ at current PPPs) for each country, UK GDP (US$ million at
-    current PPPs) and UK total hours on the OECD's (old) basis, as {country: {year: value}},
-    {year: value} and {year: value}."""
+def oecd_series(prices: str = "V") -> tuple[dict[str, dict[int, float]], dict[int, float], dict[int, float]]:
+    """GDP per hour worked (US$ at PPPs) for each country, UK GDP (US$ million at PPPs) and UK
+    total hours on the OECD's basis, as {country: {year: value}}, {year: value} and {year: value}.
+    prices: "V" = current prices and current PPPs; "LR" = constant prices at 2020 PPPs."""
     areas = "+".join(COUNTRIES)
     # key slots: country.frequency.measure.industry.unit.prices.transformation.asset.conversion
-    per_hour = oecd.fetch(PDB, f"{areas}.A.GDPHRS._T.USD_PPP_H.V.N..PPP", str(START))
-    gdp = oecd.fetch(PDB, "GBR.A.GDP._T.USD_PPP.V.N..PPP", str(START))["GBR"]
+    per_hour = oecd.fetch(PDB, f"{areas}.A.GDPHRS._T.USD_PPP_H.{prices}.N..PPP", str(START))
+    gdp = oecd.fetch(PDB, f"GBR.A.GDP._T.USD_PPP.{prices}.N..PPP", str(START))["GBR"]
     uk_hours = oecd.fetch(PDB, "GBR.A.HRSTO._T.H._Z.N..", str(START))["GBR"]
     years = lambda obs: {int(y): v for y, v in obs}  # noqa: E731
     return {c: years(obs) for c, obs in per_hour.items()}, years(gdp), years(uk_hours)
@@ -128,12 +136,12 @@ def old_ons_hours() -> dict[int, float]:
         return {int(r["year"]): float(r["hours"]) for r in csv.DictReader(f)}
 
 
-def build() -> tuple[list[dict], list[dict], str]:
-    """Two tables, one row per year.
-    levels: each country's GDP per hour in US$ at current PPPs (blank before its data start),
+def build(prices: str = "V") -> tuple[list[dict], list[dict], str]:
+    """Two tables, one row per year (prices as in oecd_series).
+    levels: each country's GDP per hour in US$ at PPPs (blank before its data start),
             with the UK on the ONS's new hours, its old hours, and as the OECD publishes it.
     hours:  UK total hours on the three bases."""
-    per_hour, uk_gdp, oecd_uk_hours = oecd_series()
+    per_hour, uk_gdp, oecd_uk_hours = oecd_series(prices)
     hours, published = ons_hours()
     old = old_ons_hours()
     first_ons = min(hours)
@@ -174,13 +182,17 @@ def _write(rows: list[dict], path: Path) -> None:
         w.writerows(rows)
 
 
-def chart(rows: list[dict], base: str, published: str, slug: str) -> None:
+def chart(rows: list[dict], base: str, published: str, slug: str, prices: str = "V") -> None:
     years = [r["year"] for r in rows]
     last = rows[-1]
+    basis = ("at current prices and PPPs" if prices == "V"
+             else f"at constant prices and {CONSTANT_PPP_YEAR} PPPs")
     fig, ax = hs.figure(f"Productivity levels relative to {'the US' if base == 'US' else base}, "
-                        f"{years[0]}–{years[-1]}",
-                        f"GDP per hour worked, at current prices and PPPs ({base} = 100)",
-                        source=("Source: OECD Productivity Database (GDP per hour worked, current PPPs); "
+                        f"{years[0]}–{years[-1]}"
+                        + ("" if prices == "V" else f", {CONSTANT_PPP_YEAR} PPPs"),
+                        f"GDP per hour worked, {basis} ({base} = 100)",
+                        source=(f"Source: OECD Productivity Database (GDP per hour worked, "
+                                f"{'current PPPs' if prices == 'V' else f'constant prices, {CONSTANT_PPP_YEAR} PPPs'}); "
                                 f"UK hours from ONS Output per hour, UK ({published}), which now uses the "
                                 "component approach (before 1997: ONS 1997 hours moved back in line with the old "
                                 "series). Old ONS hours: from the August 2026 release, the last on the old method. "
@@ -267,6 +279,52 @@ def hours_chart(rows: list[dict], published: str) -> None:
     hs.save_png(fig, IMG / "uk-hours-old-vs-new.png")
 
 
+def ppp_hours_rows(rows_cur: list[dict], rows_const: list[dict]) -> list[dict]:
+    """UK GDP per hour as % of Germany's on four bases: current or constant (2020) PPPs, and
+    the ONS's new or old hours. Shows how much each choice moves the gap."""
+    const = {r["year"]: r for r in rows_const}
+    gap = lambda r, k: round(100 * r[k] / r["Germany"], 1)   # noqa: E731  (UK as % of Germany)
+    return [{"year": r["year"],
+             "current_ppp_new_hours": gap(r, "UK"), "current_ppp_old_hours": gap(r, UK_OLD),
+             "constant_ppp_new_hours": gap(const[r["year"]], "UK"),
+             "constant_ppp_old_hours": gap(const[r["year"]], UK_OLD)}
+            for r in rows_cur if r["Germany"] is not None]
+
+
+def ppp_hours_chart(rows: list[dict], published: str) -> None:
+    years = [r["year"] for r in rows]
+    last = rows[-1]
+    fig, ax = hs.figure(f"UK productivity relative to Germany: PPPs and hours, {years[0]}–{years[-1]}",
+                        f"UK GDP per hour worked as % of Germany's, at current or constant ({CONSTANT_PPP_YEAR}) PPPs",
+                        source=("Source: OECD Productivity Database (GDP and GDP per hour worked, current PPPs and "
+                                f"constant prices at {CONSTANT_PPP_YEAR} PPPs); UK hours from ONS Output per hour, UK: "
+                                f"new ({published}, component approach) and old (18 August 2026). Before 1997, new "
+                                "hours follow the old series' growth. ukmacro calculations."))
+    pos = ax.get_position()
+    ax.set_position([pos.x0, pos.y0, pos.width - hs._x(4.6), pos.height])
+    ax.axhline(100, color=hs.COLOURS["ink"], linewidth=1.2)
+
+    # colour = PPP basis, line style = hours basis (solid new, dashed old)
+    blue, amber = hs.COLOURS["series"][:2]
+    dashed = (0, (3, 2))
+    series = [("constant_ppp_old_hours", "Constant PPPs, old hours", amber, dashed),
+              ("current_ppp_old_hours", "Current PPPs, old hours", blue, dashed),
+              ("constant_ppp_new_hours", "Constant PPPs, new hours", amber, "-"),
+              ("current_ppp_new_hours", "Current PPPs, new hours", blue, "-")]
+    ends = [[100, "Germany 100", hs.COLOURS["ink"], None]]
+    for key, name, colour, style in series:
+        ax.plot(years, [r[key] for r in rows], color=colour,
+                linewidth=2.4 if style == "-" else 1.6, linestyle=style)
+        ends.append([last[key], f"{name} {last[key]:.0f}", colour, style])
+
+    values = [r[k] for r in rows for k, _, _, _ in series]
+    ax.set_ylim(5 * (min(values) // 5) - 2, 5 * (max(values + [100]) // 5 + 1) + 2)
+    ax.set_xlim(years[0], years[-1])
+    ax.set_xticks([y for y in years if (years[-1] - y) % 3 == 0])   # every third year, ending on the last
+    _end_labels(fig, ax, ends, years[-1])
+    hs.save_png(fig, IMG / "uk-germany-productivity-ppp-hours.png")
+
+
 def main() -> None:
     rows, hours_rows, published = build()
     OUT.mkdir(parents=True, exist_ok=True)
@@ -279,6 +337,23 @@ def main() -> None:
         _write(rel, OUT / f"{slug.replace('-', '_')}.csv")
         chart(rel, base, published, slug)
         print(base, rel[-1])
+
+    # constant-PPP version of the Germany chart: each country's 2020 level, carried backwards
+    # and forwards with its own real growth, so year-to-year moves reflect real productivity
+    # growth only (not changes in relative prices)
+    rows_k, _, _ = build("LR")
+    _write(rows_k, OUT / "international_productivity_levels_usd_ppp_constant.csv")
+    rel = relative(rows_k, "Germany")
+    slug = "international-productivity-levels-germany-constant"
+    _write(rel, OUT / f"{slug.replace('-', '_')}.csv")
+    chart(rel, "Germany", published, slug, prices="LR")
+    print("Germany, constant PPPs", rel[-1])
+
+    # how much do the PPP and hours choices move the UK-Germany gap?
+    ph = ppp_hours_rows(rows, rows_k)
+    _write(ph, OUT / "uk_germany_productivity_ppp_hours.csv")
+    ppp_hours_chart(ph, published)
+    print("PPPs x hours", ph[-1])
 
 
 if __name__ == "__main__":
