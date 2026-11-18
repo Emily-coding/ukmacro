@@ -41,6 +41,7 @@ official_price_index,CPA 26.2,imports,2025-Q3,96.3
 official_price_index,CPA 26.2,imports,2025-Q4,96.7
 official_price_index,CPA 26.2,imports,2026-Q1,97.6
 official_price_index,CPA 26.2,imports,2026-Q2,98.8
+official_price_index,CPA 26.2,imports,2026-Q3,99.3
 official_price_index,CPA 26.2,exports,2016-Q1,86.2
 official_price_index,CPA 26.2,exports,2016-Q2,87.7
 official_price_index,CPA 26.2,exports,2016-Q3,92.4
@@ -83,6 +84,7 @@ official_price_index,CPA 26.2,exports,2025-Q3,98.1
 official_price_index,CPA 26.2,exports,2025-Q4,99.2
 official_price_index,CPA 26.2,exports,2026-Q1,99.0
 official_price_index,CPA 26.2,exports,2026-Q2,97.0
+official_price_index,CPA 26.2,exports,2026-Q3,95.6
 official_price_index,CPA 26.1,imports,2016-Q1,98.1
 official_price_index,CPA 26.1,imports,2016-Q2,92.9
 official_price_index,CPA 26.1,imports,2016-Q3,96.3
@@ -125,6 +127,7 @@ official_price_index,CPA 26.1,imports,2025-Q3,106.3
 official_price_index,CPA 26.1,imports,2025-Q4,103.2
 official_price_index,CPA 26.1,imports,2026-Q1,104.1
 official_price_index,CPA 26.1,imports,2026-Q2,107.9
+official_price_index,CPA 26.1,imports,2026-Q3,106.2
 official_price_index,CPA 26.1,exports,2016-Q1,97.1
 official_price_index,CPA 26.1,exports,2016-Q2,98.4
 official_price_index,CPA 26.1,exports,2016-Q3,103.6
@@ -167,6 +170,7 @@ official_price_index,CPA 26.1,exports,2025-Q3,98.3
 official_price_index,CPA 26.1,exports,2025-Q4,97.5
 official_price_index,CPA 26.1,exports,2026-Q1,98.3
 official_price_index,CPA 26.1,exports,2026-Q2,98.9
+official_price_index,CPA 26.1,exports,2026-Q3,99.0
 server_value_per_unit_gbp,HS 847150,exports,2016-Q1,181
 server_value_per_unit_gbp,HS 847150,imports,2016-Q1,444
 server_value_per_unit_gbp,HS 847150,exports,2016-Q2,302
@@ -251,3 +255,5 @@ server_value_per_unit_gbp,HS 847150,exports,2026-Q1,668
 server_value_per_unit_gbp,HS 847150,imports,2026-Q1,1867
 server_value_per_unit_gbp,HS 847150,exports,2026-Q2,448
 server_value_per_unit_gbp,HS 847150,imports,2026-Q2,1917
+server_value_per_unit_gbp,HS 847150,exports,2026-Q3,254
+server_value_per_unit_gbp,HS 847150,imports,2026-Q3,1937

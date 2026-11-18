@@ -12,12 +12,12 @@
    "key": "vacancies",
    "label": "Vacancies",
    "_source": "live",
-   "_date": "2026-08",
+   "_date": "2026-09",
    "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms"
   }
  ],
- "data_through": "2026-08",
- "next_release": "2026-11-17",
+ "data_through": "2026-09",
+ "next_release": "2026-12-15",
  "status": "ok",
  "data": [
   {
@@ -534,7 +534,7 @@
   },
   {
    "date": "2025-09",
-   "vacancies": 728.0
+   "vacancies": 726.0
   },
   {
    "date": "2025-10",
@@ -570,15 +570,19 @@
   },
   {
    "date": "2026-06",
-   "vacancies": 707.0
+   "vacancies": 711.0
   },
   {
    "date": "2026-07",
-   "vacancies": 704.0
+   "vacancies": 708.0
   },
   {
    "date": "2026-08",
-   "vacancies": 691.0
+   "vacancies": 697.0
+  },
+  {
+   "date": "2026-09",
+   "vacancies": 690.0
   }
  ],
  "theme": "blue-amber",

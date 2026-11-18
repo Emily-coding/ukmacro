@@ -13,9 +13,14 @@
    "label": "Outturn (ONS, latest data)"
   },
   {
-   "key": "march_2026",
-   "label": "OBR March 2026",
+   "key": "october_2026",
+   "label": "OBR October 2026",
    "slot": 1
+  },
+  {
+   "key": "march_2026",
+   "label": "March 2026",
+   "color": "neutral"
   },
   {
    "key": "march_2025",
@@ -48,7 +53,7 @@
    "color": "neutral"
   }
  ],
- "data_through": "2030",
+ "data_through": "2031",
  "status": "ok",
  "data": [
   {
@@ -60,7 +65,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2017",
@@ -71,7 +77,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2018",
@@ -82,7 +89,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2019",
@@ -93,7 +101,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2020",
@@ -104,7 +113,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2021",
@@ -115,7 +125,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2022",
@@ -126,7 +137,8 @@
    "march_2023": 102.3,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2023",
@@ -137,7 +149,8 @@
    "march_2023": 99.4,
    "march_2024": 102.6,
    "march_2025": null,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2024",
@@ -148,7 +161,8 @@
    "march_2023": 100.7,
    "march_2024": 97.4,
    "march_2025": 103.8,
-   "march_2026": null
+   "march_2026": null,
+   "october_2026": null
   },
   {
    "date": "2025",
@@ -159,7 +173,8 @@
    "march_2023": 106.8,
    "march_2024": 98.7,
    "march_2025": 103.5,
-   "march_2026": 107.9
+   "march_2026": 107.9,
+   "october_2026": 107.9
   },
   {
    "date": "2026",
@@ -170,7 +185,8 @@
    "march_2023": 108.8,
    "march_2024": 101.2,
    "march_2025": 105.4,
-   "march_2026": 106.8
+   "march_2026": 106.8,
+   "october_2026": 107.9
   },
   {
    "date": "2027",
@@ -181,7 +197,8 @@
    "march_2023": 106.8,
    "march_2024": 103.2,
    "march_2025": 107.2,
-   "march_2026": 107.2
+   "march_2026": 107.2,
+   "october_2026": 107.3
   },
   {
    "date": "2028",
@@ -192,7 +209,8 @@
    "march_2023": null,
    "march_2024": 104.5,
    "march_2025": 108.8,
-   "march_2026": 108.1
+   "march_2026": 108.1,
+   "october_2026": 108.3
   },
   {
    "date": "2029",
@@ -203,7 +221,8 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": 110.5,
-   "march_2026": 109.2
+   "march_2026": 109.2,
+   "october_2026": 109.7
   },
   {
    "date": "2030",
@@ -214,7 +233,20 @@
    "march_2023": null,
    "march_2024": null,
    "march_2025": null,
-   "march_2026": 110.6
+   "march_2026": 110.6,
+   "october_2026": 111.0
+  },
+  {
+   "date": "2031",
+   "outturn": null,
+   "march_2020": null,
+   "march_2021": null,
+   "march_2022": null,
+   "march_2023": null,
+   "march_2024": null,
+   "march_2025": null,
+   "march_2026": null,
+   "october_2026": 112.4
   }
  ],
  "theme": "blue-amber",

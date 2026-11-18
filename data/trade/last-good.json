@@ -1,6 +1,6 @@
 {
 "trade-balance/balance": {
-"next_release": "2026-11-12",
+"next_release": "2026-12-11",
 "obs": [
 [
 "1997-01",
@@ -1420,18 +1420,22 @@
 ],
 [
 "2026-07",
--2322.0
+-2802.0
 ],
 [
 "2026-08",
--920.0
+-2567.0
+],
+[
+"2026-09",
+-5134.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbj/mret",
-"stored": "2026-10-15"
+"stored": "2026-11-12"
 },
 "trade-flows/exports": {
-"next_release": "2026-11-12",
+"next_release": "2026-12-11",
 "obs": [
 [
 "1997-01",
@@ -2851,18 +2855,22 @@
 ],
 [
 "2026-07",
-82211.0
+81963.0
 ],
 [
 "2026-08",
-82332.0
+81197.0
+],
+[
+"2026-09",
+83382.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbh/mret",
-"stored": "2026-10-15"
+"stored": "2026-11-12"
 },
 "trade-flows/imports": {
-"next_release": "2026-11-12",
+"next_release": "2026-12-11",
 "obs": [
 [
 "1997-01",
@@ -4282,14 +4290,18 @@
 ],
 [
 "2026-07",
-84533.0
+84765.0
 ],
 [
 "2026-08",
-83252.0
+83764.0
+],
+[
+"2026-09",
+88516.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/ikbi/mret",
-"stored": "2026-10-15"
+"stored": "2026-11-12"
 }
 }

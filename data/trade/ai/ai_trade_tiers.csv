@@ -41,6 +41,7 @@ goods,core,EU,exports,2025-Q3,3590.0,3606.0,103.8,111.8
 goods,core,EU,exports,2025-Q4,3681.0,3658.0,105.3,113.0
 goods,core,EU,exports,2026-Q1,4797.0,4708.0,135.6,114.4
 goods,core,EU,exports,2026-Q2,4130.0,4028.0,116.0,115.2
+goods,core,EU,exports,2026-Q3,3949.0,3871.0,111.5,114.6
 goods,core,NonEU,exports,2016-Q1,3054.0,3632.0,90.7,93.1
 goods,core,NonEU,exports,2016-Q2,3077.0,3628.0,90.6,93.9
 goods,core,NonEU,exports,2016-Q3,3154.0,3550.0,88.6,98.3
@@ -83,6 +84,7 @@ goods,core,NonEU,exports,2025-Q3,3982.0,4061.0,101.4,108.5
 goods,core,NonEU,exports,2025-Q4,4123.0,4195.0,104.7,108.8
 goods,core,NonEU,exports,2026-Q1,4207.0,4293.0,107.2,108.5
 goods,core,NonEU,exports,2026-Q2,4722.0,4848.0,121.0,107.8
+goods,core,NonEU,exports,2026-Q3,5352.0,5476.0,136.7,108.2
 goods,core,EU,imports,2016-Q1,4346.0,4654.0,89.7,98.6
 goods,core,EU,imports,2016-Q2,4457.0,4771.0,92.0,98.6
 goods,core,EU,imports,2016-Q3,5013.0,5222.0,100.6,101.3
@@ -125,6 +127,7 @@ goods,core,EU,imports,2025-Q3,5827.0,5781.0,111.4,106.4
 goods,core,EU,imports,2025-Q4,5863.0,5799.0,111.8,106.7
 goods,core,EU,imports,2026-Q1,6863.0,6729.0,129.7,107.6
 goods,core,EU,imports,2026-Q2,7526.0,7266.0,140.0,109.3
+goods,core,EU,imports,2026-Q3,7824.0,7574.0,146.0,109.0
 goods,core,NonEU,imports,2016-Q1,5277.0,5612.0,78.7,94.6
 goods,core,NonEU,imports,2016-Q2,5617.0,6008.0,84.2,94.0
 goods,core,NonEU,imports,2016-Q3,5611.0,5693.0,79.8,99.1
@@ -167,6 +170,7 @@ goods,core,NonEU,imports,2025-Q3,8917.0,9001.0,126.2,99.6
 goods,core,NonEU,imports,2025-Q4,8965.0,8996.0,126.1,100.2
 goods,core,NonEU,imports,2026-Q1,8533.0,8566.0,120.1,100.2
 goods,core,NonEU,imports,2026-Q2,9228.0,9164.0,128.4,101.3
+goods,core,NonEU,imports,2026-Q3,10120.0,10173.0,142.6,100.0
 goods,extended,EU,exports,2016-Q1,6412.0,8563.0,82.7,91.5
 goods,extended,EU,exports,2016-Q2,6830.0,9018.0,87.1,92.5
 goods,extended,EU,exports,2016-Q3,7026.0,8900.0,85.9,96.4
@@ -209,6 +213,7 @@ goods,extended,EU,exports,2025-Q3,9903.0,9737.0,94.0,124.2
 goods,extended,EU,exports,2025-Q4,10015.0,9750.0,94.1,125.5
 goods,extended,EU,exports,2026-Q1,11241.0,10885.0,105.1,126.2
 goods,extended,EU,exports,2026-Q2,10632.0,10214.0,98.6,127.2
+goods,extended,EU,exports,2026-Q3,10575.0,10128.0,97.8,127.6
 goods,extended,NonEU,exports,2016-Q1,8250.0,10567.0,86.6,92.9
 goods,extended,NonEU,exports,2016-Q2,8475.0,10786.0,88.4,93.5
 goods,extended,NonEU,exports,2016-Q3,8426.0,10305.0,84.4,97.3
@@ -251,6 +256,7 @@ goods,extended,NonEU,exports,2025-Q3,11309.0,11601.0,95.1,116.0
 goods,extended,NonEU,exports,2025-Q4,11694.0,11932.0,97.8,116.6
 goods,extended,NonEU,exports,2026-Q1,11822.0,12160.0,99.6,115.6
 goods,extended,NonEU,exports,2026-Q2,12775.0,13147.0,107.7,115.6
+goods,extended,NonEU,exports,2026-Q3,13515.0,13827.0,113.3,116.3
 goods,extended,EU,imports,2016-Q1,11431.0,13740.0,91.3,92.0
 goods,extended,EU,imports,2016-Q2,12159.0,14414.0,95.7,93.3
 goods,extended,EU,imports,2016-Q3,12706.0,14441.0,95.9,97.3
@@ -293,6 +299,7 @@ goods,extended,EU,imports,2025-Q3,17302.0,16970.0,112.7,112.7
 goods,extended,EU,imports,2025-Q4,17218.0,16860.0,112.0,112.9
 goods,extended,EU,imports,2026-Q1,18228.0,17867.0,118.7,112.8
 goods,extended,EU,imports,2026-Q2,18886.0,18308.0,121.6,114.1
+goods,extended,EU,imports,2026-Q3,19550.0,19148.0,127.2,112.9
 goods,extended,NonEU,imports,2016-Q1,11034.0,12423.0,83.5,91.0
 goods,extended,NonEU,imports,2016-Q2,11746.0,13149.0,88.4,91.6
 goods,extended,NonEU,imports,2016-Q3,11745.0,12433.0,83.5,96.8
@@ -335,6 +342,7 @@ goods,extended,NonEU,imports,2025-Q3,17914.0,18145.0,121.9,101.2
 goods,extended,NonEU,imports,2025-Q4,18129.0,18329.0,123.2,101.4
 goods,extended,NonEU,imports,2026-Q1,18092.0,18229.0,122.5,101.7
 goods,extended,NonEU,imports,2026-Q2,18870.0,18788.0,126.3,102.9
+goods,extended,NonEU,imports,2026-Q3,20168.0,20266.0,136.2,102.0
 goods,full,EU,exports,2016-Q1,12737.0,16014.0,85.4,90.5
 goods,full,EU,exports,2016-Q2,14116.0,17466.0,93.1,92.0
 goods,full,EU,exports,2016-Q3,14607.0,17441.0,93.0,95.3
@@ -377,6 +385,7 @@ goods,full,EU,exports,2025-Q3,18977.0,18880.0,100.7,114.4
 goods,full,EU,exports,2025-Q4,18867.0,18605.0,99.2,115.4
 goods,full,EU,exports,2026-Q1,20480.0,20171.0,107.5,115.5
 goods,full,EU,exports,2026-Q2,20717.0,19681.0,104.9,119.8
+goods,full,EU,exports,2026-Q3,20122.0,19070.0,101.7,120.1
 goods,full,NonEU,exports,2016-Q1,17744.0,23168.0,86.6,89.9
 goods,full,NonEU,exports,2016-Q2,20119.0,26032.0,97.3,90.7
 goods,full,NonEU,exports,2016-Q3,19607.0,24253.0,90.6,94.9
@@ -419,6 +428,7 @@ goods,full,NonEU,exports,2025-Q3,26202.0,26530.0,99.1,115.9
 goods,full,NonEU,exports,2025-Q4,25952.0,26155.0,97.7,116.4
 goods,full,NonEU,exports,2026-Q1,26575.0,26625.0,99.5,117.1
 goods,full,NonEU,exports,2026-Q2,28046.0,27845.0,104.1,118.2
+goods,full,NonEU,exports,2026-Q3,28810.0,28418.0,106.2,119.0
 goods,full,EU,imports,2016-Q1,24312.0,29564.0,93.2,91.9
 goods,full,EU,imports,2016-Q2,26294.0,31960.0,100.8,91.9
 goods,full,EU,imports,2016-Q3,26797.0,31707.0,100.0,94.4
@@ -461,6 +471,7 @@ goods,full,EU,imports,2025-Q3,35167.0,34565.0,109.0,113.7
 goods,full,EU,imports,2025-Q4,34421.0,33763.0,106.5,113.9
 goods,full,EU,imports,2026-Q1,36097.0,35593.0,112.2,113.3
 goods,full,EU,imports,2026-Q2,37402.0,36229.0,114.3,115.3
+goods,full,EU,imports,2026-Q3,37346.0,36824.0,116.1,113.3
 goods,full,NonEU,imports,2016-Q1,18989.0,22538.0,91.0,92.0
 goods,full,NonEU,imports,2016-Q2,20362.0,23780.0,96.0,93.5
 goods,full,NonEU,imports,2016-Q3,21558.0,24833.0,100.3,94.8
@@ -503,6 +514,7 @@ goods,full,NonEU,imports,2025-Q3,31125.0,32024.0,129.3,106.1
 goods,full,NonEU,imports,2025-Q4,29250.0,30093.0,121.5,106.2
 goods,full,NonEU,imports,2026-Q1,30729.0,31095.0,125.6,107.9
 goods,full,NonEU,imports,2026-Q2,29828.0,29611.0,119.6,110.0
+goods,full,NonEU,imports,2026-Q3,34430.0,33765.0,136.4,111.4
 services,core,EU,exports,2016-Q1,3784.0,4023.0,78.8,101.7
 services,core,EU,exports,2016-Q2,3927.0,4220.0,82.7,100.6
 services,core,EU,exports,2016-Q3,3833.0,4042.0,79.2,102.6

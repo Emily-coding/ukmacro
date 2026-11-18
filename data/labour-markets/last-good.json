@@ -1,6 +1,6 @@
 {
 "lm-rates/employment": {
-"next_release": "2026-11-17",
+"next_release": "2026-12-15",
 "obs": [
 [
 "1971-02",
@@ -2665,13 +2665,17 @@
 [
 "2026-07",
 75.3
+],
+[
+"2026-08",
+75.4
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/lf24/lms",
-"stored": "2026-10-20"
+"stored": "2026-11-17"
 },
 "lm-rates/inactivity": {
-"next_release": "2026-11-17",
+"next_release": "2026-12-15",
 "obs": [
 [
 "1971-02",
@@ -5336,13 +5340,17 @@
 [
 "2026-07",
 20.9
+],
+[
+"2026-08",
+20.8
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf2s/lms",
-"stored": "2026-10-20"
+"stored": "2026-11-17"
 },
 "pay-growth/awe_total": {
-"next_release": "2026-11-17",
+"next_release": "2026-12-15",
 "obs": [
 [
 "2001-03",
@@ -6526,7 +6534,7 @@
 ],
 [
 "2025-10",
-4.8
+4.9
 ],
 [
 "2025-11",
@@ -6566,11 +6574,15 @@
 ],
 [
 "2026-08",
-3.7
+3.8
+],
+[
+"2026-09",
+3.6
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kac3/lms",
-"stored": "2026-10-20"
+"stored": "2026-11-17"
 },
 "unemployment-g7/can": {
 "obs": [
@@ -6945,10 +6957,14 @@
 [
 "2026-09",
 6.5
+],
+[
+"2026-10",
+6.7
 ]
 ],
 "source_url": "https://data-explorer.oecd.org",
-"stored": "2026-10-19"
+"stored": "2026-11-09"
 },
 "unemployment-g7/deu": {
 "obs": [
@@ -9201,13 +9217,17 @@
 [
 "2026-09",
 4.2
+],
+[
+"2026-10",
+4.1
 ]
 ],
 "source_url": "https://data-explorer.oecd.org",
-"stored": "2026-10-08"
+"stored": "2026-11-10"
 },
 "unemployment/unemployment": {
-"next_release": "2026-11-17",
+"next_release": "2026-12-15",
 "obs": [
 [
 "1971-02",
@@ -11872,13 +11892,17 @@
 [
 "2026-07",
 4.7
+],
+[
+"2026-08",
+4.6
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms",
-"stored": "2026-10-20"
+"stored": "2026-11-17"
 },
 "vacancies/vacancies": {
-"next_release": "2026-11-17",
+"next_release": "2026-12-15",
 "obs": [
 [
 "2001-05",
@@ -13050,7 +13074,7 @@
 ],
 [
 "2025-09",
-728.0
+726.0
 ],
 [
 "2025-10",
@@ -13086,18 +13110,22 @@
 ],
 [
 "2026-06",
-707.0
+711.0
 ],
 [
 "2026-07",
-704.0
+708.0
 ],
 [
 "2026-08",
-691.0
+697.0
+],
+[
+"2026-09",
+690.0
 ]
 ],
 "source_url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/lms",
-"stored": "2026-10-20"
+"stored": "2026-11-17"
 }
 }

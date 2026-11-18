@@ -41,6 +41,7 @@ chips_processors,Processors and controllers (chips),26.1,854231,EU,exports,2025-
 chips_processors,Processors and controllers (chips),26.1,854231,EU,exports,2025-Q4,25.41,0.0,48893.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,exports,2026-Q1,25.05,0.0,46038.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,exports,2026-Q2,34.23,0.0,39657.0,
+chips_processors,Processors and controllers (chips),26.1,854231,EU,exports,2026-Q3,35.56,0.0,53252.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2016-Q1,83.72,0.0,800041.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2016-Q2,85.8,0.0,911325.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2016-Q3,93.85,0.0,804905.0,
@@ -83,6 +84,7 @@ chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2025-
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2025-Q4,114.25,0.0,180236.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2026-Q1,116.14,0.0,166252.0,
 chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2026-Q2,127.71,0.0,139025.0,
+chips_processors,Processors and controllers (chips),26.1,854231,EU,imports,2026-Q3,113.78,0.0,141387.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2016-Q1,33.1,0.0,74798.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2016-Q2,31.59,0.0,72003.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2016-Q3,32.7,0.0,74895.0,
@@ -123,8 +125,9 @@ chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,20
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2025-Q2,34.39,0.0,159540.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2025-Q3,29.37,0.0,153194.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2025-Q4,38.47,0.0,165941.0,
-chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2026-Q1,31.52,0.0,136908.0,
-chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2026-Q2,41.01,0.0,161955.0,
+chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2026-Q1,31.52,0.0,136906.0,
+chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2026-Q2,40.99,0.0,161895.0,
+chips_processors,Processors and controllers (chips),26.1,854231,NonEU,exports,2026-Q3,38.63,0.0,160322.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2016-Q1,70.33,0.0,178722.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2016-Q2,81.28,0.0,136932.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2016-Q3,82.5,0.0,127073.0,
@@ -167,6 +170,7 @@ chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,20
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2025-Q4,56.58,0.0,108460.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2026-Q1,82.16,0.0,85136.0,
 chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2026-Q2,67.58,0.0,105947.0,
+chips_processors,Processors and controllers (chips),26.1,854231,NonEU,imports,2026-Q3,89.42,0.0,128509.0,
 chips_memory,Memory chips,26.1,854232,EU,exports,2016-Q1,11.89,36027338.0,55717.0,0.33
 chips_memory,Memory chips,26.1,854232,EU,exports,2016-Q2,10.87,33474960.0,55030.0,0.32
 chips_memory,Memory chips,26.1,854232,EU,exports,2016-Q3,11.64,31074335.0,44054.0,0.37
@@ -209,6 +213,7 @@ chips_memory,Memory chips,26.1,854232,EU,exports,2025-Q3,7.58,360023.0,12038.0,2
 chips_memory,Memory chips,26.1,854232,EU,exports,2025-Q4,11.18,396905.0,12056.0,28.16
 chips_memory,Memory chips,26.1,854232,EU,exports,2026-Q1,27.72,823498.0,15072.0,33.66
 chips_memory,Memory chips,26.1,854232,EU,exports,2026-Q2,46.25,987608.0,19470.0,46.84
+chips_memory,Memory chips,26.1,854232,EU,exports,2026-Q3,62.65,1184619.0,22809.0,52.89
 chips_memory,Memory chips,26.1,854232,EU,imports,2016-Q1,15.21,5324926.0,233981.0,2.86
 chips_memory,Memory chips,26.1,854232,EU,imports,2016-Q2,13.58,5577307.0,216162.0,2.43
 chips_memory,Memory chips,26.1,854232,EU,imports,2016-Q3,13.22,6470253.0,193575.0,2.04
@@ -251,6 +256,7 @@ chips_memory,Memory chips,26.1,854232,EU,imports,2025-Q3,18.31,3603761.0,38814.0
 chips_memory,Memory chips,26.1,854232,EU,imports,2025-Q4,23.09,2650447.0,35559.0,8.71
 chips_memory,Memory chips,26.1,854232,EU,imports,2026-Q1,42.69,4712369.0,32772.0,9.06
 chips_memory,Memory chips,26.1,854232,EU,imports,2026-Q2,50.96,4431578.0,39751.0,11.5
+chips_memory,Memory chips,26.1,854232,EU,imports,2026-Q3,64.96,4183352.0,41444.0,15.53
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2016-Q1,2.62,1038009.0,11614.0,2.52
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2016-Q2,3.02,1724288.0,10609.0,1.75
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2016-Q3,3.22,649921.0,11053.0,4.95
@@ -292,7 +298,8 @@ chips_memory,Memory chips,26.1,854232,NonEU,exports,2025-Q2,11.73,497184.0,10366
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2025-Q3,11.81,753561.0,11812.0,15.67
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2025-Q4,25.99,636468.0,13766.0,40.84
 chips_memory,Memory chips,26.1,854232,NonEU,exports,2026-Q1,68.4,886986.0,21425.0,77.11
-chips_memory,Memory chips,26.1,854232,NonEU,exports,2026-Q2,82.43,886754.0,16042.0,92.96
+chips_memory,Memory chips,26.1,854232,NonEU,exports,2026-Q2,82.43,886755.0,16043.0,92.96
+chips_memory,Memory chips,26.1,854232,NonEU,exports,2026-Q3,119.83,951101.0,19311.0,126.0
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2016-Q1,16.26,31319025.0,32063.0,0.52
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2016-Q2,14.06,29242950.0,30814.0,0.48
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2016-Q3,13.15,21768090.0,31799.0,0.6
@@ -335,6 +342,7 @@ chips_memory,Memory chips,26.1,854232,NonEU,imports,2025-Q3,19.57,1520918.0,3980
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2025-Q4,27.02,2180138.0,28802.0,12.4
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2026-Q1,52.96,1647547.0,31510.0,32.15
 chips_memory,Memory chips,26.1,854232,NonEU,imports,2026-Q2,97.72,1310670.0,38075.0,74.56
+chips_memory,Memory chips,26.1,854232,NonEU,imports,2026-Q3,179.2,3314940.0,36510.0,54.06
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2016-Q1,43.02,0.0,785346.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2016-Q2,40.24,0.0,1300785.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2016-Q3,44.87,0.0,645897.0,
@@ -377,6 +385,7 @@ chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,E
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2025-Q4,90.43,0.0,40266.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2026-Q1,102.37,0.0,41318.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2026-Q2,117.81,0.0,43173.0,
+chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,exports,2026-Q3,126.28,0.0,59273.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2016-Q1,57.9,0.0,1251275.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2016-Q2,52.23,0.0,862914.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2016-Q3,54.54,0.0,310407.0,
@@ -419,6 +428,7 @@ chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,E
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2025-Q4,74.78,0.0,114134.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2026-Q1,92.48,0.0,118983.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2026-Q2,102.67,0.0,121224.0,
+chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,EU,imports,2026-Q3,100.53,0.0,92054.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2016-Q1,61.63,0.0,38009.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2016-Q2,68.7,0.0,60587.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2016-Q3,68.96,0.0,48265.0,
@@ -460,7 +470,8 @@ chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,N
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2025-Q3,50.29,0.0,42590.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2025-Q4,38.89,0.0,57678.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2026-Q1,42.1,0.0,70371.0,
-chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2026-Q2,44.18,0.0,66281.0,
+chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2026-Q2,44.13,0.0,66259.0,
+chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,exports,2026-Q3,60.72,0.0,77563.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2016-Q1,51.31,0.0,306225.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2016-Q2,60.66,0.0,313293.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2016-Q3,57.97,0.0,182288.0,
@@ -503,6 +514,7 @@ chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,N
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2025-Q4,91.17,0.0,146203.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2026-Q1,111.34,0.0,133098.0,
 chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2026-Q2,138.32,0.0,149482.0,
+chips_other,Other integrated circuits (incl. some AI accelerators),26.1,854239,NonEU,imports,2026-Q3,130.71,0.0,167239.0,
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2016-Q1,74.35,415208.0,1506168.0,179.06
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2016-Q2,87.07,256683.0,3350006.0,339.19
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2016-Q3,97.77,275233.0,17390635.0,355.22
@@ -544,7 +556,8 @@ servers,Processing units (incl. servers),26.2,847150,EU,exports,2025-Q2,147.28,5
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2025-Q3,161.36,545768.0,833997.0,295.66
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2025-Q4,340.03,737186.0,948978.0,461.26
 servers,Processing units (incl. servers),26.2,847150,EU,exports,2026-Q1,1199.95,796678.0,1131779.0,1506.19
-servers,Processing units (incl. servers),26.2,847150,EU,exports,2026-Q2,568.1,891545.0,935979.0,637.21
+servers,Processing units (incl. servers),26.2,847150,EU,exports,2026-Q2,568.17,891543.0,935991.0,637.28
+servers,Processing units (incl. servers),26.2,847150,EU,exports,2026-Q3,254.51,1061629.0,627232.0,239.73
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2016-Q1,173.51,494833.0,2643517.0,350.64
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2016-Q2,156.73,393245.0,2083064.0,398.55
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2016-Q3,219.53,478493.0,2521764.0,458.8
@@ -587,6 +600,7 @@ servers,Processing units (incl. servers),26.2,847150,EU,imports,2025-Q3,807.82,3
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2025-Q4,621.47,320722.0,2808842.0,1937.73
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2026-Q1,1510.17,395797.0,3453061.0,3815.52
 servers,Processing units (incl. servers),26.2,847150,EU,imports,2026-Q2,1732.29,363243.0,3217537.0,4768.95
+servers,Processing units (incl. servers),26.2,847150,EU,imports,2026-Q3,1785.12,345357.0,3107708.0,5168.93
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2016-Q1,58.04,315398.0,556492.0,184.02
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2016-Q2,60.95,233179.0,501132.0,261.4
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2016-Q3,51.86,214623.0,616485.0,241.65
@@ -628,7 +642,8 @@ servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2025-Q2,132.2
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2025-Q3,198.33,2171888.0,537169.0,91.32
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2025-Q4,292.94,1677480.0,554191.0,174.63
 servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2026-Q1,274.75,1411087.0,527061.0,194.71
-servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2026-Q2,387.15,1238498.0,601645.0,312.59
+servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2026-Q2,387.13,1238497.0,601643.0,312.58
+servers,Processing units (incl. servers),26.2,847150,NonEU,exports,2026-Q3,341.44,1282988.0,551889.0,266.13
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2016-Q1,149.73,233771.0,1649422.0,640.49
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2016-Q2,130.72,301991.0,1611927.0,432.86
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2016-Q3,124.98,2417342.0,1294257.0,51.7
@@ -671,6 +686,7 @@ servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2025-Q3,776.6
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2025-Q4,880.44,786266.0,1668813.0,1119.77
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2026-Q1,312.65,580495.0,1144308.0,538.6
 servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2026-Q2,580.96,843270.0,1420204.0,688.94
+servers,Processing units (incl. servers),26.2,847150,NonEU,imports,2026-Q3,702.69,938893.0,1380747.0,748.43
 computer_systems,Computer systems,26.2,847149,EU,exports,2016-Q1,20.24,146633.0,470974.0,138.03
 computer_systems,Computer systems,26.2,847149,EU,exports,2016-Q2,22.53,241095.0,640680.0,93.44
 computer_systems,Computer systems,26.2,847149,EU,exports,2016-Q3,23.85,166521.0,496684.0,143.24
@@ -712,7 +728,8 @@ computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q2,37.6,55043.0,34
 computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q3,42.03,56675.0,380571.0,741.61
 computer_systems,Computer systems,26.2,847149,EU,exports,2025-Q4,40.71,64319.0,372069.0,632.9
 computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q1,34.0,84797.0,426822.0,400.94
-computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q2,37.79,86742.0,533363.0,435.61
+computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q2,37.78,86741.0,533360.0,435.49
+computer_systems,Computer systems,26.2,847149,EU,exports,2026-Q3,42.11,138920.0,369240.0,303.1
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q1,134.61,230837.0,3513520.0,583.14
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q2,132.18,191014.0,2782704.0,691.97
 computer_systems,Computer systems,26.2,847149,EU,imports,2016-Q3,166.88,272758.0,3935819.0,611.83
@@ -755,6 +772,7 @@ computer_systems,Computer systems,26.2,847149,EU,imports,2025-Q3,66.54,127030.0,
 computer_systems,Computer systems,26.2,847149,EU,imports,2025-Q4,73.35,98068.0,495880.0,747.95
 computer_systems,Computer systems,26.2,847149,EU,imports,2026-Q1,95.04,166348.0,498384.0,571.34
 computer_systems,Computer systems,26.2,847149,EU,imports,2026-Q2,79.01,71278.0,568539.0,1108.54
+computer_systems,Computer systems,26.2,847149,EU,imports,2026-Q3,77.46,51563.0,418617.0,1502.3
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2016-Q1,14.75,99813.0,214933.0,147.8
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2016-Q2,18.68,101706.0,285103.0,183.7
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2016-Q3,19.62,99374.0,235137.0,197.42
@@ -796,7 +814,8 @@ computer_systems,Computer systems,26.2,847149,NonEU,exports,2025-Q2,33.0,20805.0
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2025-Q3,21.37,34248.0,201883.0,623.88
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2025-Q4,24.74,67897.0,213000.0,364.34
 computer_systems,Computer systems,26.2,847149,NonEU,exports,2026-Q1,21.52,63394.0,154690.0,339.46
-computer_systems,Computer systems,26.2,847149,NonEU,exports,2026-Q2,31.37,54286.0,242208.0,577.84
+computer_systems,Computer systems,26.2,847149,NonEU,exports,2026-Q2,31.36,54286.0,242208.0,577.6
+computer_systems,Computer systems,26.2,847149,NonEU,exports,2026-Q3,39.47,41363.0,226912.0,954.19
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2016-Q1,44.33,326648.0,801858.0,135.7
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2016-Q2,35.78,800688.0,783656.0,44.69
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2016-Q3,35.96,359289.0,455706.0,100.08
@@ -839,6 +858,7 @@ computer_systems,Computer systems,26.2,847149,NonEU,imports,2025-Q3,41.7,205428.
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2025-Q4,56.52,162179.0,608795.0,348.49
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2026-Q1,48.67,172237.0,401673.0,282.56
 computer_systems,Computer systems,26.2,847149,NonEU,imports,2026-Q2,50.44,141222.0,455812.0,357.14
+computer_systems,Computer systems,26.2,847149,NonEU,imports,2026-Q3,60.52,147452.0,451334.0,410.41
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2016-Q1,30.57,396464.0,325153.0,77.12
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2016-Q2,28.1,393701.0,262726.0,71.37
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2016-Q3,33.12,420035.0,292580.0,78.84
@@ -880,7 +900,8 @@ computer_units_other,Other computer units (incl. accelerator units),26.2,847180,
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2025-Q3,46.12,487785.0,263247.0,94.54
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2025-Q4,43.96,330323.0,277687.0,133.07
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2026-Q1,46.95,301431.0,227128.0,155.76
-computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2026-Q2,50.53,261684.0,208899.0,193.1
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2026-Q2,50.48,261685.0,208899.0,192.91
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,exports,2026-Q3,63.16,304948.0,205485.0,207.11
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2016-Q1,48.87,839730.0,541920.0,58.2
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2016-Q2,48.84,1495226.0,1838751.0,32.67
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2016-Q3,50.46,965976.0,1666536.0,52.24
@@ -923,6 +944,7 @@ computer_units_other,Other computer units (incl. accelerator units),26.2,847180,
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2025-Q4,119.62,480666.0,618754.0,248.86
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q1,133.73,463526.0,539371.0,288.51
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q2,147.43,365894.0,460447.0,402.94
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,EU,imports,2026-Q3,149.02,437924.0,553865.0,340.28
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q1,58.13,128247.0,276895.0,453.26
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q2,86.05,159667.0,297497.0,538.94
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2016-Q3,64.26,213148.0,291950.0,301.48
@@ -964,7 +986,8 @@ computer_units_other,Other computer units (incl. accelerator units),26.2,847180,
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2025-Q3,39.23,139708.0,119035.0,280.83
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2025-Q4,49.55,179702.0,147353.0,275.75
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2026-Q1,43.86,82049.0,96882.0,534.61
-computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2026-Q2,82.85,129387.0,121088.0,640.36
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2026-Q2,82.85,129386.0,121069.0,640.33
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,exports,2026-Q3,81.03,122742.0,104067.0,660.16
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2016-Q1,50.33,988342.0,521090.0,50.93
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2016-Q2,74.62,1048554.0,636872.0,71.16
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2016-Q3,51.49,1127631.0,501145.0,45.66
@@ -1007,6 +1030,7 @@ computer_units_other,Other computer units (incl. accelerator units),26.2,847180,
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2025-Q4,129.68,1699823.0,656290.0,76.29
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2026-Q1,87.75,1856733.0,565954.0,47.26
 computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2026-Q2,112.59,1405977.0,461428.0,80.08
+computer_units_other,Other computer units (incl. accelerator units),26.2,847180,NonEU,imports,2026-Q3,112.88,1248623.0,430450.0,90.41
 storage,Storage units,26.2,847170,EU,exports,2016-Q1,99.46,1619869.0,932709.0,61.4
 storage,Storage units,26.2,847170,EU,exports,2016-Q2,88.7,1462819.0,716123.0,60.64
 storage,Storage units,26.2,847170,EU,exports,2016-Q3,96.42,1551052.0,849694.0,62.17
@@ -1048,7 +1072,8 @@ storage,Storage units,26.2,847170,EU,exports,2025-Q2,63.54,788719.0,248394.0,80.
 storage,Storage units,26.2,847170,EU,exports,2025-Q3,93.8,1180253.0,228514.0,79.47
 storage,Storage units,26.2,847170,EU,exports,2025-Q4,104.42,1072879.0,200032.0,97.33
 storage,Storage units,26.2,847170,EU,exports,2026-Q1,133.45,626725.0,219801.0,212.93
-storage,Storage units,26.2,847170,EU,exports,2026-Q2,74.85,436611.0,188554.0,171.44
+storage,Storage units,26.2,847170,EU,exports,2026-Q2,74.81,436611.0,188554.0,171.35
+storage,Storage units,26.2,847170,EU,exports,2026-Q3,106.14,745140.0,177620.0,142.45
 storage,Storage units,26.2,847170,EU,imports,2016-Q1,192.89,1879160.0,1846110.0,102.65
 storage,Storage units,26.2,847170,EU,imports,2016-Q2,179.5,1637164.0,1855079.0,109.64
 storage,Storage units,26.2,847170,EU,imports,2016-Q3,199.58,1557887.0,6234899.0,128.11
@@ -1091,6 +1116,7 @@ storage,Storage units,26.2,847170,EU,imports,2025-Q3,151.36,784000.0,603165.0,19
 storage,Storage units,26.2,847170,EU,imports,2025-Q4,139.96,504231.0,365868.0,277.57
 storage,Storage units,26.2,847170,EU,imports,2026-Q1,166.86,478366.0,338951.0,348.82
 storage,Storage units,26.2,847170,EU,imports,2026-Q2,155.78,369463.0,270121.0,421.65
+storage,Storage units,26.2,847170,EU,imports,2026-Q3,254.73,402125.0,406078.0,633.46
 storage,Storage units,26.2,847170,NonEU,exports,2016-Q1,35.72,268408.0,279533.0,133.09
 storage,Storage units,26.2,847170,NonEU,exports,2016-Q2,34.66,323712.0,209003.0,107.06
 storage,Storage units,26.2,847170,NonEU,exports,2016-Q3,42.22,330835.0,224028.0,127.62
@@ -1132,7 +1158,8 @@ storage,Storage units,26.2,847170,NonEU,exports,2025-Q2,26.95,286819.0,748868.0,
 storage,Storage units,26.2,847170,NonEU,exports,2025-Q3,45.64,442621.0,958792.0,103.11
 storage,Storage units,26.2,847170,NonEU,exports,2025-Q4,48.99,482889.0,1032511.0,101.44
 storage,Storage units,26.2,847170,NonEU,exports,2026-Q1,41.65,268744.0,169937.0,154.98
-storage,Storage units,26.2,847170,NonEU,exports,2026-Q2,91.75,229450.0,131811.0,399.88
+storage,Storage units,26.2,847170,NonEU,exports,2026-Q2,91.77,229496.0,131811.0,399.86
+storage,Storage units,26.2,847170,NonEU,exports,2026-Q3,212.58,414309.0,235503.0,513.1
 storage,Storage units,26.2,847170,NonEU,imports,2016-Q1,103.27,1918790.0,590602.0,53.82
 storage,Storage units,26.2,847170,NonEU,imports,2016-Q2,103.69,1943559.0,498516.0,53.35
 storage,Storage units,26.2,847170,NonEU,imports,2016-Q3,107.06,2068297.0,466945.0,51.76
@@ -1175,6 +1202,7 @@ storage,Storage units,26.2,847170,NonEU,imports,2025-Q3,143.56,1987965.0,330591.
 storage,Storage units,26.2,847170,NonEU,imports,2025-Q4,168.03,1629820.0,392071.0,103.1
 storage,Storage units,26.2,847170,NonEU,imports,2026-Q1,166.69,1097436.0,332443.0,151.89
 storage,Storage units,26.2,847170,NonEU,imports,2026-Q2,126.76,635955.0,287014.0,199.32
+storage,Storage units,26.2,847170,NonEU,imports,2026-Q3,237.24,937156.0,376849.0,253.15
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2016-Q1,199.63,0.0,1210279.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2016-Q2,182.71,0.0,1173995.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2016-Q3,191.56,0.0,1065488.0,
@@ -1216,7 +1244,8 @@ computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,8
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2025-Q3,108.68,0.0,329502.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2025-Q4,153.18,0.0,377335.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q1,172.83,0.0,313617.0,
-computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q2,141.84,0.0,271929.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q2,141.74,0.0,271929.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,exports,2026-Q3,180.01,0.0,270112.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q1,161.99,0.0,1461869.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q2,139.61,0.0,1389011.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2016-Q3,170.65,0.0,2393683.0,
@@ -1259,6 +1288,7 @@ computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,8
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2025-Q4,122.17,0.0,1026137.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2026-Q1,120.75,0.0,855027.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2026-Q2,187.2,0.0,791718.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,EU,imports,2026-Q3,167.15,0.0,909755.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2016-Q1,47.35,0.0,1034501.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2016-Q2,50.35,0.0,884035.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2016-Q3,66.31,0.0,690974.0,
@@ -1299,8 +1329,9 @@ computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,8
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2025-Q2,79.25,0.0,539698.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2025-Q3,84.92,0.0,484530.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2025-Q4,108.16,0.0,362172.0,
-computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2026-Q1,153.18,0.0,223655.0,
-computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2026-Q2,145.59,0.0,418142.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2026-Q1,153.18,0.0,223647.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2026-Q2,145.61,0.0,418133.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,exports,2026-Q3,214.86,0.0,485201.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2016-Q1,254.0,0.0,2314152.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2016-Q2,226.33,0.0,2245443.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2016-Q3,247.73,0.0,2243701.0,
@@ -1343,6 +1374,7 @@ computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,8
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2025-Q4,236.36,0.0,2616192.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2026-Q1,250.44,0.0,2093444.0,
 computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2026-Q2,228.68,0.0,1397699.0,
+computer_assemblies,Computer electronic assemblies (incl. graphics cards),26.2,847330,NonEU,imports,2026-Q3,346.28,0.0,1284061.0,
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2016-Q1,106.43,363155.0,880070.0,293.08
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2016-Q2,122.74,417111.0,925923.0,294.25
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2016-Q3,119.35,470015.0,1009690.0,253.93
@@ -1384,7 +1416,8 @@ laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2025-Q2,153.61,839838
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2025-Q3,158.86,457101.0,769623.0,347.53
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2025-Q4,191.08,703002.0,875660.0,271.81
 laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2026-Q1,168.3,525865.0,833678.0,320.05
-laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2026-Q2,169.26,419834.0,825907.0,403.17
+laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2026-Q2,169.26,419798.0,825866.0,403.19
+laptops_tablets,Laptops and tablets,26.2,847130,EU,exports,2026-Q3,157.51,451765.0,701638.0,348.66
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2016-Q1,248.92,1118044.0,2295820.0,222.63
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2016-Q2,239.46,1158809.0,2151567.0,206.65
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2016-Q3,286.26,1352544.0,2812571.0,211.65
@@ -1427,6 +1460,7 @@ laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2025-Q3,328.53,101357
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2025-Q4,280.11,842906.0,1563144.0,332.32
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2026-Q1,338.01,720053.0,1468430.0,469.42
 laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2026-Q2,409.87,1421213.0,1854872.0,288.4
+laptops_tablets,Laptops and tablets,26.2,847130,EU,imports,2026-Q3,395.54,805137.0,1566678.0,491.27
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2016-Q1,34.31,202169.0,870507.0,169.72
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2016-Q2,36.07,381686.0,1150653.0,94.5
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2016-Q3,45.31,307760.0,1359645.0,147.22
@@ -1468,7 +1502,8 @@ laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2025-Q2,69.29,7529
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2025-Q3,49.11,617546.0,1321045.0,79.53
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2025-Q4,58.8,656289.0,1461648.0,89.6
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2026-Q1,45.28,405165.0,1377197.0,111.75
-laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2026-Q2,58.72,438626.0,1506083.0,133.87
+laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2026-Q2,58.86,438633.0,1506083.0,134.19
+laptops_tablets,Laptops and tablets,26.2,847130,NonEU,exports,2026-Q3,82.0,622179.0,1783228.0,131.79
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2016-Q1,648.46,2942874.0,3982294.0,220.35
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2016-Q2,673.14,2900438.0,4062333.0,232.08
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2016-Q3,766.53,3145857.0,4533253.0,243.66
@@ -1511,6 +1546,7 @@ laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2025-Q3,1271.7,449
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2025-Q4,1512.76,4792866.0,6327891.0,315.63
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2026-Q1,1228.22,2994116.0,4746964.0,410.21
 laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2026-Q2,1242.87,3650299.0,4525013.0,340.48
+laptops_tablets,Laptops and tablets,26.2,847130,NonEU,imports,2026-Q3,1366.9,3831794.0,4570319.0,356.73
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2016-Q1,142.12,938650.0,330454.0,151.41
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2016-Q2,133.61,801459.0,291540.0,166.7
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2016-Q3,156.03,854965.0,321363.0,182.5
@@ -1552,7 +1588,8 @@ mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exp
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2025-Q3,218.76,590359.0,229390.0,370.55
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2025-Q4,252.95,606387.0,269059.0,417.14
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2026-Q1,181.63,470000.0,199963.0,386.45
-mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2026-Q2,197.57,513650.0,213065.0,384.63
+mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2026-Q2,197.13,513470.0,212952.0,383.91
+mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,exports,2026-Q3,224.78,575039.0,216906.0,390.89
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2016-Q1,541.18,2367269.0,4218078.0,228.61
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2016-Q2,496.27,2515787.0,989274.0,197.26
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2016-Q3,863.05,4099198.0,4553226.0,210.54
@@ -1595,6 +1632,7 @@ mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imp
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2025-Q4,129.29,662925.0,270044.0,195.04
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2026-Q1,125.19,575344.0,225423.0,217.6
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2026-Q2,137.26,634330.0,270057.0,216.38
+mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,EU,imports,2026-Q3,199.15,851666.0,290335.0,233.84
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2016-Q1,157.35,1045624.0,234946.0,150.49
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2016-Q2,145.33,791168.0,232896.0,183.69
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2016-Q3,147.13,715495.0,241832.0,205.64
@@ -1637,6 +1675,7 @@ mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2025-Q4,127.91,491716.0,156355.0,260.13
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2026-Q1,107.61,464572.0,133231.0,231.63
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2026-Q2,173.27,803715.0,168778.0,215.58
+mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,exports,2026-Q3,136.05,526251.0,155312.0,258.52
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2016-Q1,739.67,5195708.0,1814531.0,142.36
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2016-Q2,1081.08,6220708.0,2034311.0,173.79
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2016-Q3,894.16,5308961.0,1728436.0,168.42
@@ -1679,6 +1718,7 @@ mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2025-Q4,2512.97,6793307.0,2234939.0,369.92
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2026-Q1,1663.96,4749949.0,1545601.0,350.31
 mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2026-Q2,1682.85,4588202.0,1539725.0,366.78
+mobile_phones,Mobile phones (incl. smartphones),26.3,851712 851713 851714,NonEU,imports,2026-Q3,2125.56,4836962.0,1591319.0,439.44
 smartphones,Smartphones,26.3,851713,EU,exports,2022-Q1,130.29,1363541.0,219697.0,95.55
 smartphones,Smartphones,26.3,851713,EU,exports,2022-Q2,143.55,460396.0,192288.0,311.8
 smartphones,Smartphones,26.3,851713,EU,exports,2022-Q3,203.15,1415428.0,248356.0,143.52
@@ -1696,7 +1736,8 @@ smartphones,Smartphones,26.3,851713,EU,exports,2025-Q2,188.67,512603.0,203371.0,
 smartphones,Smartphones,26.3,851713,EU,exports,2025-Q3,211.86,571605.0,223046.0,370.64
 smartphones,Smartphones,26.3,851713,EU,exports,2025-Q4,248.91,588427.0,258603.0,423.01
 smartphones,Smartphones,26.3,851713,EU,exports,2026-Q1,179.88,462103.0,193149.0,389.26
-smartphones,Smartphones,26.3,851713,EU,exports,2026-Q2,192.25,497404.0,206820.0,386.5
+smartphones,Smartphones,26.3,851713,EU,exports,2026-Q2,191.81,497224.0,206707.0,385.75
+smartphones,Smartphones,26.3,851713,EU,exports,2026-Q3,213.82,543140.0,208189.0,393.67
 smartphones,Smartphones,26.3,851713,EU,imports,2022-Q1,115.8,594722.0,149336.0,194.71
 smartphones,Smartphones,26.3,851713,EU,imports,2022-Q2,169.89,1048355.0,186567.0,162.05
 smartphones,Smartphones,26.3,851713,EU,imports,2022-Q3,142.39,455321.0,163931.0,312.73
@@ -1715,6 +1756,7 @@ smartphones,Smartphones,26.3,851713,EU,imports,2025-Q3,105.83,461958.0,179330.0,
 smartphones,Smartphones,26.3,851713,EU,imports,2025-Q4,118.45,523541.0,211679.0,226.24
 smartphones,Smartphones,26.3,851713,EU,imports,2026-Q1,115.96,490845.0,185016.0,236.25
 smartphones,Smartphones,26.3,851713,EU,imports,2026-Q2,131.1,577954.0,230145.0,226.83
+smartphones,Smartphones,26.3,851713,EU,imports,2026-Q3,190.94,773850.0,260673.0,246.75
 smartphones,Smartphones,26.3,851713,NonEU,exports,2022-Q1,21.24,158331.0,47121.0,134.14
 smartphones,Smartphones,26.3,851713,NonEU,exports,2022-Q2,51.21,229902.0,84360.0,222.74
 smartphones,Smartphones,26.3,851713,NonEU,exports,2022-Q3,118.74,369057.0,245534.0,321.74
@@ -1733,6 +1775,7 @@ smartphones,Smartphones,26.3,851713,NonEU,exports,2025-Q3,93.24,377986.0,123283.
 smartphones,Smartphones,26.3,851713,NonEU,exports,2025-Q4,109.37,421765.0,136324.0,259.33
 smartphones,Smartphones,26.3,851713,NonEU,exports,2026-Q1,97.73,424671.0,120230.0,230.13
 smartphones,Smartphones,26.3,851713,NonEU,exports,2026-Q2,167.64,782002.0,161519.0,214.37
+smartphones,Smartphones,26.3,851713,NonEU,exports,2026-Q3,132.16,495968.0,144816.0,266.47
 smartphones,Smartphones,26.3,851713,NonEU,imports,2022-Q1,1869.01,5117576.0,1823930.0,365.21
 smartphones,Smartphones,26.3,851713,NonEU,imports,2022-Q2,1805.64,5400602.0,1702744.0,334.34
 smartphones,Smartphones,26.3,851713,NonEU,imports,2022-Q3,2390.4,6267058.0,1787077.0,381.42
@@ -1751,6 +1794,7 @@ smartphones,Smartphones,26.3,851713,NonEU,imports,2025-Q3,1736.34,5828513.0,1650
 smartphones,Smartphones,26.3,851713,NonEU,imports,2025-Q4,2505.2,6432113.0,2133180.0,389.48
 smartphones,Smartphones,26.3,851713,NonEU,imports,2026-Q1,1656.79,4464545.0,1468130.0,371.1
 smartphones,Smartphones,26.3,851713,NonEU,imports,2026-Q2,1678.5,4440641.0,1488142.0,377.99
+smartphones,Smartphones,26.3,851713,NonEU,imports,2026-Q3,2120.94,4655290.0,1526043.0,455.6
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2016-Q1,220.09,0.0,1710676.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2016-Q2,216.25,0.0,1808793.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2016-Q3,234.18,0.0,1615831.0,
@@ -1792,7 +1836,8 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2025-Q3,395.39,0.0,2135637.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2025-Q4,380.85,0.0,2075498.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q1,395.16,0.0,1872887.0,
-network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q2,348.61,0.0,1584364.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q2,348.53,0.0,1584295.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,exports,2026-Q3,349.29,0.0,1459003.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q1,449.62,0.0,3208390.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q2,456.78,0.0,3177620.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2016-Q3,522.2,0.0,24581300.0,
@@ -1835,6 +1880,7 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2025-Q4,987.18,0.0,4847261.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q1,1057.11,0.0,5083063.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q2,1144.91,0.0,4850206.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,EU,imports,2026-Q3,1235.23,0.0,6298867.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q1,163.13,0.0,468513.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q2,151.75,0.0,486799.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2016-Q3,178.74,0.0,613078.0,
@@ -1875,8 +1921,9 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,expo
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2025-Q2,304.63,0.0,1009854.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2025-Q3,318.14,0.0,960306.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2025-Q4,372.96,0.0,1083925.0,
-network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2026-Q1,362.8,0.0,1120071.0,
-network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2026-Q2,446.17,0.0,1282911.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2026-Q1,362.82,0.0,1120081.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2026-Q2,445.84,0.0,1282926.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,exports,2026-Q3,596.58,0.0,1728821.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2016-Q1,438.62,0.0,4925721.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2016-Q2,444.61,0.0,4656219.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2016-Q3,684.14,0.0,5302740.0,
@@ -1919,6 +1966,7 @@ network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,impo
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2025-Q4,961.1,0.0,6478958.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2026-Q1,808.27,0.0,5105939.0,
 network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2026-Q2,844.8,0.0,6007116.0,
+network_equipment,"Network equipment (switches, routers)",26.3,851762,NonEU,imports,2026-Q3,975.31,0.0,5831634.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2022-Q1,1.72,0.0,717.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2022-Q2,3.15,0.0,1245.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2022-Q3,1.63,0.0,1089.0,
@@ -1937,6 +1985,7 @@ sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2025-Q3,3.14,0.0,2443
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2025-Q4,3.02,0.0,2918.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2026-Q1,2.76,0.0,3818.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2026-Q2,1.57,0.0,661.0,
+sensors,Semiconductor-based sensors,26.1,854151,EU,exports,2026-Q3,2.32,0.0,1144.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2022-Q1,1.55,0.0,8868.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2022-Q2,2.64,0.0,3841.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2022-Q3,2.52,0.0,2443.0,
@@ -1955,6 +2004,7 @@ sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2025-Q3,1.44,0.0,603.
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2025-Q4,1.04,0.0,372.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2026-Q1,1.19,0.0,3848.0,
 sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2026-Q2,0.64,0.0,189.0,
+sensors,Semiconductor-based sensors,26.1,854151,EU,imports,2026-Q3,1.52,0.0,1052.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2022-Q1,1.96,0.0,488.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2022-Q2,2.17,0.0,888.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2022-Q3,2.61,0.0,1437.0,
@@ -1973,6 +2023,7 @@ sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2025-Q3,8.46,0.0,5
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2025-Q4,10.04,0.0,6819.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2026-Q1,5.05,0.0,3065.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2026-Q2,2.2,0.0,620.0,
+sensors,Semiconductor-based sensors,26.1,854151,NonEU,exports,2026-Q3,1.31,0.0,507.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2022-Q1,1.81,0.0,22183.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2022-Q2,2.55,0.0,42806.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2022-Q3,1.38,0.0,35834.0,
@@ -1991,6 +2042,7 @@ sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2025-Q3,2.29,0.0,6
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2025-Q4,2.04,0.0,6103.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2026-Q1,2.81,0.0,7130.0,
 sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2026-Q2,3.58,0.0,13851.0,
+sensors,Semiconductor-based sensors,26.1,854151,NonEU,imports,2026-Q3,2.8,0.0,10389.0,
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2016-Q1,43.58,283849.0,231690.0,153.55
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2016-Q2,36.63,242483.0,177805.0,151.06
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2016-Q3,36.11,220136.0,168441.0,164.05
@@ -2031,8 +2083,9 @@ cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q1,35.95,11
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q2,52.89,126262.0,121660.0,418.89
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q3,58.2,142312.0,147120.0,408.98
 cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2025-Q4,73.64,195730.0,227435.0,376.25
-cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q1,71.86,164177.0,178413.0,437.72
-cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q2,72.3,170648.0,248557.0,423.65
+cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q1,71.87,164178.0,178417.0,437.78
+cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q2,72.23,170642.0,248501.0,423.26
+cameras,Digital and video cameras,26.7,852580 852589,EU,exports,2026-Q3,64.74,210651.0,265388.0,307.34
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q1,80.56,873559.0,653072.0,92.22
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q2,82.52,941655.0,935407.0,87.64
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2016-Q3,88.0,842255.0,720238.0,104.48
@@ -2075,6 +2128,7 @@ cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2025-Q3,150.06,1
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2025-Q4,161.49,1144398.0,734374.0,141.12
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2026-Q1,158.79,1165322.0,891209.0,136.27
 cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2026-Q2,154.31,1074701.0,928273.0,143.59
+cameras,Digital and video cameras,26.7,852580 852589,EU,imports,2026-Q3,168.48,1321430.0,962592.0,127.5
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2016-Q1,34.05,82297.0,110081.0,413.77
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2016-Q2,30.48,137240.0,107540.0,222.08
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2016-Q3,49.59,127430.0,131335.0,389.16
@@ -2116,7 +2170,8 @@ cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2025-Q2,40.04
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2025-Q3,46.16,150889.0,154963.0,305.93
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2025-Q4,47.18,185189.0,131479.0,254.79
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2026-Q1,48.38,145724.0,152228.0,331.97
-cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2026-Q2,46.11,154086.0,115450.0,299.28
+cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2026-Q2,46.1,154082.0,115445.0,299.17
+cameras,Digital and video cameras,26.7,852580 852589,NonEU,exports,2026-Q3,52.94,153342.0,149155.0,345.27
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2016-Q1,74.37,1370605.0,1138825.0,54.26
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2016-Q2,67.3,1380828.0,1106329.0,48.74
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2016-Q3,72.95,2140888.0,1332346.0,34.08
@@ -2159,6 +2214,7 @@ cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2025-Q3,177.4
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2025-Q4,184.61,3481548.0,2043091.0,53.03
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2026-Q1,158.84,2716263.0,1616672.0,58.48
 cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2026-Q2,193.98,3094472.0,1635267.0,62.69
+cameras,Digital and video cameras,26.7,852580 852589,NonEU,imports,2026-Q3,178.63,2986985.0,1867041.0,59.8
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2016-Q1,45.8,0.0,1423934.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2016-Q2,50.08,0.0,1538092.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2016-Q3,54.75,0.0,1594629.0,
@@ -2201,6 +2257,7 @@ mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2025-Q3
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2025-Q4,93.88,0.0,1897872.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2026-Q1,97.23,0.0,1965675.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2026-Q2,99.91,0.0,2011719.0,
+mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,exports,2026-Q3,116.26,0.0,2456339.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2016-Q1,38.61,0.0,192704.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2016-Q2,31.37,0.0,324890.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2016-Q3,32.63,0.0,198357.0,
@@ -2243,6 +2300,7 @@ mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2025-Q3
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2025-Q4,40.39,0.0,543091.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2026-Q1,85.46,0.0,977521.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2026-Q2,35.67,0.0,459048.0,
+mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,EU,imports,2026-Q3,44.6,0.0,707945.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2016-Q1,8.03,0.0,132455.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2016-Q2,8.06,0.0,144850.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2016-Q3,9.51,0.0,230347.0,
@@ -2285,6 +2343,7 @@ mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2025
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2025-Q4,13.24,0.0,161469.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2026-Q1,13.35,0.0,147190.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2026-Q2,10.5,0.0,139774.0,
+mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,exports,2026-Q3,12.36,0.0,140563.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2016-Q1,18.6,0.0,174325.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2016-Q2,13.33,0.0,153240.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2016-Q3,11.94,0.0,138134.0,
@@ -2327,6 +2386,7 @@ mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2025
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2025-Q4,16.88,0.0,382632.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2026-Q1,36.66,0.0,457658.0,
 mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2026-Q2,15.93,0.0,285079.0,
+mri_ultrasound,MRI and ultrasound scanners,26.6,901812 901813,NonEU,imports,2026-Q3,24.21,0.0,552701.0,
 ct_scanners,CT scanners,26.6,902212,EU,exports,2016-Q1,3.7,74.0,38340.0,49945.31
 ct_scanners,CT scanners,26.6,902212,EU,exports,2016-Q2,8.97,120.0,64896.0,74723.96
 ct_scanners,CT scanners,26.6,902212,EU,exports,2016-Q3,5.17,25.0,41021.0,206998.28
@@ -2369,6 +2429,7 @@ ct_scanners,CT scanners,26.6,902212,EU,exports,2025-Q3,6.72,2166.0,274079.0,3102
 ct_scanners,CT scanners,26.6,902212,EU,exports,2025-Q4,8.84,3982.0,288287.0,2220.08
 ct_scanners,CT scanners,26.6,902212,EU,exports,2026-Q1,3.86,3167.0,137325.0,1219.36
 ct_scanners,CT scanners,26.6,902212,EU,exports,2026-Q2,5.66,2478.0,288720.0,2283.29
+ct_scanners,CT scanners,26.6,902212,EU,exports,2026-Q3,5.07,31614.0,215415.0,160.22
 ct_scanners,CT scanners,26.6,902212,EU,imports,2016-Q1,9.21,146.0,61214.0,63104.47
 ct_scanners,CT scanners,26.6,902212,EU,imports,2016-Q2,9.18,125.0,58418.0,73478.75
 ct_scanners,CT scanners,26.6,902212,EU,imports,2016-Q3,4.6,62.0,14478.0,74151.16
@@ -2411,6 +2472,7 @@ ct_scanners,CT scanners,26.6,902212,EU,imports,2025-Q3,17.27,595.0,369195.0,2901
 ct_scanners,CT scanners,26.6,902212,EU,imports,2025-Q4,17.89,3053.0,385057.0,5860.56
 ct_scanners,CT scanners,26.6,902212,EU,imports,2026-Q1,51.1,29500.0,361643.0,1732.21
 ct_scanners,CT scanners,26.6,902212,EU,imports,2026-Q2,11.17,1509.0,292142.0,7400.1
+ct_scanners,CT scanners,26.6,902212,EU,imports,2026-Q3,19.08,812.0,304157.0,23503.4
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2016-Q1,0.83,711.0,15517.0,1165.37
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2016-Q2,0.46,1117.0,7906.0,411.21
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2016-Q3,1.33,597.0,12317.0,2229.04
@@ -2453,6 +2515,7 @@ ct_scanners,CT scanners,26.6,902212,NonEU,exports,2025-Q3,12.46,2444.0,157671.0,
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2025-Q4,13.96,2947.0,261735.0,4735.86
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2026-Q1,19.05,18544.0,348986.0,1027.05
 ct_scanners,CT scanners,26.6,902212,NonEU,exports,2026-Q2,7.4,2872.0,179250.0,2575.98
+ct_scanners,CT scanners,26.6,902212,NonEU,exports,2026-Q3,13.35,5044.0,247256.0,2647.01
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2016-Q1,4.9,52.0,76519.0,94150.35
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2016-Q2,10.61,402.0,118012.0,26387.79
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2016-Q3,7.19,1732.0,95362.0,4148.82
@@ -2495,6 +2558,7 @@ ct_scanners,CT scanners,26.6,902212,NonEU,imports,2025-Q3,4.33,582.0,31716.0,744
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2025-Q4,5.12,19586.0,44229.0,261.6
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2026-Q1,13.9,1990.0,103484.0,6986.11
 ct_scanners,CT scanners,26.6,902212,NonEU,imports,2026-Q2,4.38,2011.0,106032.0,2176.8
+ct_scanners,CT scanners,26.6,902212,NonEU,imports,2026-Q3,10.31,3770.0,99685.0,2735.34
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2016-Q1,18.55,4804.0,224388.0,3862.01
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2016-Q2,23.45,3718.0,262941.0,6308.47
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2016-Q3,18.99,3451.0,234917.0,5502.32
@@ -2535,8 +2599,9 @@ medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 9
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2025-Q2,56.51,345.0,377823.0,163788.57
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2025-Q3,53.18,589.0,372041.0,90285.5
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2025-Q4,61.08,647.0,401086.0,94411.15
-medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2026-Q1,79.88,624.0,439185.0,128014.87
-medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2026-Q2,36.74,377.0,279758.0,97444.91
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2026-Q1,79.88,624.0,439186.0,128015.11
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2026-Q2,36.73,377.0,279758.0,97432.87
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,exports,2026-Q3,49.56,575.0,510165.0,86189.78
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2016-Q1,32.47,197.0,255560.0,164831.32
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2016-Q2,29.27,131.0,183806.0,223437.28
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2016-Q3,29.1,92.0,159000.0,316289.71
@@ -2579,6 +2644,7 @@ medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 9
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2025-Q4,171.76,2731.0,1020314.0,62891.78
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2026-Q1,230.86,1771.0,1155965.0,130353.64
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2026-Q2,173.64,1092.0,717911.0,159011.35
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,EU,imports,2026-Q3,189.69,1106.0,884718.0,171512.32
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2016-Q1,74.16,3432.0,669022.0,21609.28
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2016-Q2,76.14,2809.0,808701.0,27104.43
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2016-Q3,74.33,2339.0,683942.0,31777.49
@@ -2621,6 +2687,7 @@ medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 9
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2025-Q4,33.14,1853.0,302688.0,17883.42
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2026-Q1,25.27,228.0,225567.0,110852.81
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2026-Q2,28.78,523.0,259257.0,55035.31
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,exports,2026-Q3,31.87,5307.0,266040.0,6004.46
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2016-Q1,33.79,3914.0,470002.0,8632.27
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2016-Q2,27.79,18454.0,350511.0,1505.96
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2016-Q3,26.35,3585.0,296507.0,7350.21
@@ -2663,6 +2730,7 @@ medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 9
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2025-Q4,31.14,2851.0,352993.0,10921.67
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2026-Q1,52.73,5532.0,454893.0,9531.62
 medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2026-Q2,42.87,3765.0,388681.0,11387.65
+medical_diagnostics,Electro-diagnostic and medical X-ray equipment,26.6,901819 902214,NonEU,imports,2026-Q3,35.6,6392.0,407882.0,5569.14
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2016-Q1,10.06,146169.0,865712.0,68.85
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2016-Q2,8.22,131993.0,843594.0,62.27
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2016-Q3,9.33,140763.0,857811.0,66.31
@@ -2705,6 +2773,7 @@ vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2025-Q3,1
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2025-Q4,18.42,186856.0,1272192.0,98.6
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2026-Q1,12.69,130196.0,884582.0,97.43
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2026-Q2,14.75,150346.0,1091184.0,98.12
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,exports,2026-Q3,14.83,135202.0,965010.0,109.69
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2016-Q1,11.6,191410.0,975075.0,60.6
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2016-Q2,13.65,192706.0,1065669.0,70.81
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2016-Q3,12.82,184979.0,1152370.0,69.29
@@ -2745,8 +2814,9 @@ vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q1,1
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q2,9.5,137080.0,718720.0,69.28
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q3,11.68,152199.0,794390.0,76.75
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2025-Q4,12.34,229235.0,824211.0,53.81
-vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q1,12.53,157215.0,799027.0,79.68
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q1,12.53,157221.0,799182.0,79.68
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q2,11.68,162722.0,935956.0,71.81
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,EU,imports,2026-Q3,12.26,153505.0,889846.0,79.85
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q1,2.17,24530.0,134696.0,88.64
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q2,1.14,52286.0,106245.0,21.78
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2016-Q3,1.12,11905.0,103181.0,93.96
@@ -2789,6 +2859,7 @@ vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2025-Q
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2025-Q4,1.68,25111.0,144237.0,66.76
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2026-Q1,2.13,29221.0,175736.0,72.77
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2026-Q2,2.05,18171.0,147425.0,112.84
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,exports,2026-Q3,1.83,27132.0,142269.0,67.52
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2016-Q1,75.17,2076305.0,10343644.0,36.21
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2016-Q2,54.09,1460562.0,7620372.0,37.04
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2016-Q3,59.76,1609875.0,7773906.0,37.12
@@ -2831,6 +2902,7 @@ vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2025-Q
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2025-Q4,131.58,3362437.0,12792217.0,39.13
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2026-Q1,105.25,2200466.0,10056049.0,47.83
 vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2026-Q2,100.83,1995898.0,9632359.0,50.52
+vacuum_cleaners,Vacuum cleaners (incl. robotic),27.5,850811,NonEU,imports,2026-Q3,124.8,2305136.0,11277987.0,54.14
 robots,Industrial robots,28.9,847950,EU,exports,2016-Q1,2.88,0.0,97256.0,
 robots,Industrial robots,28.9,847950,EU,exports,2016-Q2,4.55,0.0,116007.0,
 robots,Industrial robots,28.9,847950,EU,exports,2016-Q3,2.94,0.0,86987.0,
@@ -2873,6 +2945,7 @@ robots,Industrial robots,28.9,847950,EU,exports,2025-Q3,6.04,0.0,151569.0,
 robots,Industrial robots,28.9,847950,EU,exports,2025-Q4,9.65,0.0,85591.0,
 robots,Industrial robots,28.9,847950,EU,exports,2026-Q1,4.4,0.0,110208.0,
 robots,Industrial robots,28.9,847950,EU,exports,2026-Q2,10.82,0.0,141729.0,
+robots,Industrial robots,28.9,847950,EU,exports,2026-Q3,7.14,0.0,77281.0,
 robots,Industrial robots,28.9,847950,EU,imports,2016-Q1,6.61,0.0,545863.0,
 robots,Industrial robots,28.9,847950,EU,imports,2016-Q2,7.53,0.0,343955.0,
 robots,Industrial robots,28.9,847950,EU,imports,2016-Q3,8.01,0.0,238492.0,
@@ -2915,6 +2988,7 @@ robots,Industrial robots,28.9,847950,EU,imports,2025-Q3,25.71,0.0,609940.0,
 robots,Industrial robots,28.9,847950,EU,imports,2025-Q4,15.6,0.0,307385.0,
 robots,Industrial robots,28.9,847950,EU,imports,2026-Q1,22.36,0.0,583312.0,
 robots,Industrial robots,28.9,847950,EU,imports,2026-Q2,18.62,0.0,532422.0,
+robots,Industrial robots,28.9,847950,EU,imports,2026-Q3,21.65,0.0,445216.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2016-Q1,6.38,0.0,150537.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2016-Q2,7.11,0.0,135266.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2016-Q3,6.29,0.0,140703.0,
@@ -2957,6 +3031,7 @@ robots,Industrial robots,28.9,847950,NonEU,exports,2025-Q3,21.24,0.0,179016.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2025-Q4,12.54,0.0,84851.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2026-Q1,10.68,0.0,83971.0,
 robots,Industrial robots,28.9,847950,NonEU,exports,2026-Q2,15.79,0.0,69969.0,
+robots,Industrial robots,28.9,847950,NonEU,exports,2026-Q3,9.82,0.0,37903.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2016-Q1,3.99,0.0,150351.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2016-Q2,2.23,0.0,200388.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2016-Q3,4.15,0.0,114630.0,
@@ -2999,6 +3074,7 @@ robots,Industrial robots,28.9,847950,NonEU,imports,2025-Q3,10.21,0.0,181902.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2025-Q4,9.9,0.0,106784.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2026-Q1,9.3,0.0,105841.0,
 robots,Industrial robots,28.9,847950,NonEU,imports,2026-Q2,7.3,0.0,98180.0,
+robots,Industrial robots,28.9,847950,NonEU,imports,2026-Q3,6.99,0.0,97065.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2022-Q1,0.08,0.0,8643.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2022-Q2,0.26,0.0,12829.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2022-Q3,0.37,0.0,11978.0,
@@ -3017,6 +3093,7 @@ handling_robots,Handling robots,28.2,842870,EU,exports,2025-Q3,1.07,0.0,25749.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2025-Q4,5.99,0.0,59241.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2026-Q1,1.76,0.0,21012.0,
 handling_robots,Handling robots,28.2,842870,EU,exports,2026-Q2,0.75,0.0,24543.0,
+handling_robots,Handling robots,28.2,842870,EU,exports,2026-Q3,2.81,0.0,64612.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2022-Q1,0.91,0.0,26216.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2022-Q2,0.55,0.0,77175.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2022-Q3,5.22,0.0,38595.0,
@@ -3035,6 +3112,7 @@ handling_robots,Handling robots,28.2,842870,EU,imports,2025-Q3,4.46,0.0,86974.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2025-Q4,4.39,0.0,67059.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2026-Q1,3.14,0.0,74741.0,
 handling_robots,Handling robots,28.2,842870,EU,imports,2026-Q2,14.84,0.0,251105.0,
+handling_robots,Handling robots,28.2,842870,EU,imports,2026-Q3,5.59,0.0,150219.0,
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2022-Q3,0.21,0.0,12493.0,
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2022-Q4,0.05,0.0,3570.0,
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2023-Q1,2.27,0.0,23780.0,
@@ -3050,6 +3128,7 @@ handling_robots,Handling robots,28.2,842870,NonEU,exports,2025-Q3,1.03,0.0,16847
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2025-Q4,1.99,0.0,44720.0,
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2026-Q1,2.33,0.0,37155.0,
 handling_robots,Handling robots,28.2,842870,NonEU,exports,2026-Q2,1.16,0.0,81768.0,
+handling_robots,Handling robots,28.2,842870,NonEU,exports,2026-Q3,3.34,0.0,77715.0,
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2022-Q2,0.19,0.0,1354.0,
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2022-Q3,3.08,0.0,21478.0,
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2022-Q4,1.75,0.0,175919.0,
@@ -3067,6 +3146,7 @@ handling_robots,Handling robots,28.2,842870,NonEU,imports,2025-Q3,6.35,0.0,29556
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2025-Q4,8.4,0.0,82113.0,
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2026-Q1,1.86,0.0,73373.0,
 handling_robots,Handling robots,28.2,842870,NonEU,imports,2026-Q2,4.45,0.0,62498.0,
+handling_robots,Handling robots,28.2,842870,NonEU,imports,2026-Q3,6.23,0.0,144654.0,
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2022-Q1,1.69,617.0,1095.0,2733.42
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2022-Q2,1.05,454.0,2505.0,2317.96
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2022-Q3,1.88,396.0,3646.0,4751.43
@@ -3085,6 +3165,7 @@ drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2025-Q4,13.41,5876.0,27910.0,2281.81
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2026-Q1,13.71,2959.0,15559.0,4633.49
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2026-Q2,18.12,1873.0,6584.0,9676.1
+drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,exports,2026-Q3,4.09,1576.0,4217.0,2593.2
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2022-Q1,1.46,1206.0,1985.0,1211.65
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2022-Q2,3.38,632.0,2806.0,5340.5
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2022-Q3,6.84,1302.0,5522.0,5250.83
@@ -3103,6 +3184,7 @@ drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2025-Q4,8.66,4503.0,5709.0,1923.15
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2026-Q1,10.72,3272.0,9709.0,3275.57
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2026-Q2,9.67,3716.0,10118.0,2603.29
+drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,EU,imports,2026-Q3,5.99,1004.0,4106.0,5970.99
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2022-Q1,3.06,724.0,5614.0,4227.27
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2022-Q2,1.11,80.0,170.0,13912.59
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2022-Q3,1.75,744.0,1583.0,2354.71
@@ -3121,6 +3203,7 @@ drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2025-Q4,76.11,6713.0,23944.0,11337.06
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2026-Q1,84.76,2324.0,31162.0,36471.56
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2026-Q2,55.58,3918.0,22136.0,14186.66
+drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,exports,2026-Q3,61.43,5830.0,27690.0,10537.73
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2022-Q1,4.12,9547.0,13693.0,431.85
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2022-Q2,15.42,35049.0,59190.0,440.02
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2022-Q3,14.5,22344.0,36227.0,648.91
@@ -3139,3 +3222,4 @@ drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2025-Q4,36.75,76597.0,128992.0,479.8
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2026-Q1,38.69,36917.0,80600.0,1048.03
 drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2026-Q2,20.3,53742.0,76138.0,377.67
+drones,Unmanned aircraft (drones),30.3,880621 880622 880623 880624 880629 880691 880692 880693 880694 880699,NonEU,imports,2026-Q3,21.56,36882.0,59723.0,584.51

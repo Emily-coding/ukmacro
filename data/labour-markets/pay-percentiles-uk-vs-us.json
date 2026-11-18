@@ -1,7 +1,7 @@
 {
  "slug": "pay-percentiles-uk-vs-us",
  "category": "labour-markets",
- "title": "Pay growth by percentile, 2022 to 2026 Q2: UK vs US",
+ "title": "Pay growth by percentile, 2022 to 2026 Q3: UK vs US",
  "type": "grouped-hbar",
  "freq": "Q",
  "units": "% change since 2022 average",
@@ -30,24 +30,24 @@
  "data": [
   {
    "date": "10th percentile",
-   "uk_cash": 27.0,
-   "us_cash": 16.3,
-   "uk_real": 8.6,
-   "us_real": 2.2
+   "uk_cash": 29.3,
+   "us_cash": 14.8,
+   "uk_real": 9.6,
+   "us_real": 0.5
   },
   {
    "date": "Median",
-   "uk_cash": 24.4,
-   "us_cash": 18.2,
-   "uk_real": 6.4,
-   "us_real": 3.9
+   "uk_cash": 25.7,
+   "us_cash": 16.4,
+   "uk_real": 6.5,
+   "us_real": 1.9
   },
   {
    "date": "90th percentile",
-   "uk_cash": 18.0,
-   "us_cash": 14.2,
-   "uk_real": 0.9,
-   "us_real": 0.4
+   "uk_cash": 19.0,
+   "us_cash": 14.0,
+   "uk_real": 0.8,
+   "us_real": -0.2
   }
  ],
  "decimals": 1,
