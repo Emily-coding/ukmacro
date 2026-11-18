@@ -3,8 +3,8 @@
 
   international-productivity-levels          GDP per hour worked as % of the US level
   international-productivity-levels-germany  the same, as % of the German level
-  uk-hours-old-vs-new                        UK total hours worked: the ONS's new estimate,
-                                             its old one, and the OECD's
+  uk-hours-old-vs-new                        UK total hours worked to 2024: the ONS's new
+                                             estimate, its old one, and the OECD's
 
 GDP per hour worked is measured in each year at that year's prices and purchasing power
 parities (PPPs).
@@ -78,6 +78,7 @@ COLOUR = {"UK": hs.COLOURS["series"][0], "Germany": hs.COLOURS["series"][1],
           "France": hs.COLOURS["series"][2], "Italy": hs.COLOURS["series"][3],
           "US": hs.COLOURS["ink"]}
 START = 1987   # first year of US hours in the OECD database
+HOURS_LAST = 2024   # the hours chart stops here
 
 OUT, IMG = REPO / "data" / "productivity", REPO / "img" / "productivity"
 
@@ -238,27 +239,30 @@ def _end_labels(fig, ax, ends: list[list], x) -> None:
 
 
 def hours_chart(rows: list[dict], published: str) -> None:
-    """UK total hours worked a year: new ONS, old ONS and OECD estimates."""
+    """UK total hours worked a year, to HOURS_LAST: the ONS's old and new estimates, and the
+    OECD's (the one behind its international comparisons)."""
+    rows = [r for r in rows if r["year"] <= HOURS_LAST]
     years = [r["year"] for r in rows]
-    fig, ax = hs.figure(f"UK hours worked: old and new ONS estimates, {years[0]}–{years[-1]}",
+    fig, ax = hs.figure(f"UK hours worked: old and new ONS estimates and the OECD's, {years[0]}–{years[-1]}",
                         "Total hours worked in the year, billions",
-                        source=(f"Source: ONS Output per hour, UK ({published}; new component approach) and "
-                                "18 August 2026 (old method), hours = current-price GVA / current-price output "
-                                "per hour; OECD Productivity Database (total hours, used in its international "
-                                "comparisons). ukmacro calculations."))
+                        source=(f"Source: ONS Output per hour, UK, {published} (new: component approach) and "
+                                "18 August 2026 (old: direct approach, from the Labour Force Survey). "
+                                "Hours are current-price GVA divided by current-price output per hour. OECD: Productivity Database "
+                                "total hours. ukmacro calculations."))
     pos = ax.get_position()
     ax.set_position([pos.x0, pos.y0, pos.width - hs._x(2.4), pos.height])
     series = [("ons_new_bn", "New ONS", COLOUR["UK"]), ("ons_old_bn", "Old ONS", hs.COLOURS["series"][1]),
               ("oecd_bn", "OECD", hs.COLOURS["grey"])]
     ends = []
     for key, name, colour in series:
-        ax.plot(years, [math.nan if r[key] is None else r[key] for r in rows], color=colour, linewidth=2)
+        ax.plot(years, [r[key] for r in rows], color=colour, linewidth=2)
         v = rows[-1][key]
+        # grey context line: label in the secondary text colour so it stays legible
         ends.append([v, f"{name} {v:.1f}", hs.COLOURS["text_2"] if colour == hs.COLOURS["grey"] else colour, None])
-    values = [r[k] for r in rows for k, _, _ in series if r[k] is not None]
+    values = [r[k] for r in rows for k, _, _ in series]
     ax.set_ylim(2 * (min(values) // 2) - 1, 2 * (max(values) // 2 + 1))   # room below the lowest line
     ax.set_xlim(years[0], years[-1])
-    ax.set_xticks([y for y in years if y % 2 == 1])   # every other year
+    ax.set_xticks([y for y in years if (years[-1] - y) % 3 == 0])   # every third year, ending on the last
     _end_labels(fig, ax, ends, years[-1])
     hs.save_png(fig, IMG / "uk-hours-old-vs-new.png")
 
