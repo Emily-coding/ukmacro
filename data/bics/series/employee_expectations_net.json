@@ -26,7 +26,7 @@
    "question": "What are your business\u2019s expectations for the number of employees in [month] [year]?",
    "population": "As a percentage of businesses not permanently stopped trading",
    "weighting": "count",
-   "waves_used": "55-166 (55)"
+   "waves_used": "55-168 (56)"
   }
  ],
  "version_breaks": [],
@@ -137,7 +137,7 @@
    "group": "industry"
   }
  ],
- "data_through": "2026-09-30",
+ "data_through": "2026-10-31",
  "status": "ok",
  "data": [
   {
@@ -1340,6 +1340,28 @@
    "professional-scientific-and-technical-activities": 3.4,
    "transportation-and-storage": -2.6,
    "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 1.2
+  },
+  {
+   "date": "2026-10-31",
+   "wave": 168,
+   "0-9": -2.9,
+   "10-49": -2.6,
+   "100-249": 4.0,
+   "250": 7.0,
+   "50-99": 2.8,
+   "accommodation-and-food-service-activities": -5.8,
+   "administrative-and-support-service-activities": 0.8,
+   "all-businesses": -2.8,
+   "all-size-bands-excluding-0-9": -1.6,
+   "arts-entertainment-and-recreation": -1.6,
+   "construction": -8.0,
+   "education": -5.3,
+   "human-health-and-social-work-activities": 0.9,
+   "information-and-communication": -1.8,
+   "manufacturing": -4.5,
+   "other-service-activities": -0.7,
+   "professional-scientific-and-technical-activities": -0.4,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": -1.4
   }
  ]
 }

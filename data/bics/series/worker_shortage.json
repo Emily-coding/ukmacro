@@ -21,7 +21,7 @@
    "question": "Is your business currently experiencing a shortage of workers?",
    "population": "As a percentage of businesses not permanently stopped trading",
    "weighting": "count",
-   "waves_used": "42-166 (68)"
+   "waves_used": "42-168 (69)"
   }
  ],
  "version_breaks": [],
@@ -132,7 +132,7 @@
    "group": "industry"
   }
  ],
- "data_through": "2026-09-30",
+ "data_through": "2026-10-31",
  "status": "ok",
  "data": [
   {
@@ -1746,6 +1746,30 @@
    "professional-scientific-and-technical-activities": 5.2,
    "transportation-and-storage": 1.9,
    "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 9.2
+  },
+  {
+   "date": "2026-10-31",
+   "wave": 168,
+   "0-9": 6.7,
+   "10-49": 16.0,
+   "100-249": 14.1,
+   "250": 9.7,
+   "50-99": 15.6,
+   "accommodation-and-food-service-activities": 15.5,
+   "administrative-and-support-service-activities": 9.7,
+   "all-businesses": 7.7,
+   "all-size-bands-excluding-0-9": 15.7,
+   "arts-entertainment-and-recreation": 4.4,
+   "construction": 13.3,
+   "education": 6.7,
+   "human-health-and-social-work-activities": 9.2,
+   "information-and-communication": 2.2,
+   "manufacturing": 6.6,
+   "other-service-activities": 4.7,
+   "professional-scientific-and-technical-activities": 5.1,
+   "real-estate-activities": 6.5,
+   "transportation-and-storage": 3.4,
+   "wholesale-and-retail-trade-repair-of-motor-vehicles-and-motorcycles": 6.3
   }
  ]
 }

@@ -1,16 +1,16 @@
 {
  "category": "bics",
  "title": "Business Insights and Conditions Survey",
- "latest_published": 167,
+ "latest_published": 168,
  "series": [
   {
    "id": "worker_shortage",
    "topic": "labour",
    "title": "Businesses experiencing a shortage of workers",
-   "n_waves": 68,
+   "n_waves": 69,
    "first": "2021-10-31",
-   "data_through": "2026-09-30",
-   "latest_total": 8.3,
+   "data_through": "2026-10-31",
+   "latest_total": 7.7,
    "versions": 1
   },
   {
@@ -27,10 +27,10 @@
    "id": "recruitment_difficulty",
    "topic": "labour",
    "title": "Businesses with difficulty recruiting employees",
-   "n_waves": 58,
+   "n_waves": 59,
    "first": "2022-03-31",
-   "data_through": "2026-09-30",
-   "latest_total": 7.1,
+   "data_through": "2026-10-31",
+   "latest_total": 7.3,
    "versions": 1
   },
   {
@@ -217,10 +217,10 @@
    "id": "employee_expectations_net",
    "topic": "labour",
    "title": "Expected number of employees, net balance (increase minus decrease)",
-   "n_waves": 55,
+   "n_waves": 56,
    "first": "2022-03-31",
-   "data_through": "2026-09-30",
-   "latest_total": -0.7,
+   "data_through": "2026-10-31",
+   "latest_total": -2.8,
    "versions": 1
   },
   {
