@@ -8087,10 +8087,14 @@
 [
 "2026-07",
 4.7
+],
+[
+"2026-08",
+4.6
 ]
 ],
 "source_url": "https://data-explorer.oecd.org",
-"stored": "2026-10-26"
+"stored": "2026-11-20"
 },
 "unemployment-g7/ita": {
 "obs": [
