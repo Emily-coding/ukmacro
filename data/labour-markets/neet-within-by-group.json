@@ -1,7 +1,7 @@
 {
  "slug": "neet-within-by-group",
  "category": "labour-markets",
- "title": "Contributions to the change in the NEET rate aged 16-24, 2019 to 2026 Q2",
+ "title": "Contributions to the change in the NEET rate aged 16-24, 2019 to 2026 Q3",
  "type": "grouped-hbar",
  "freq": "Q",
  "units": "Percentage points",
@@ -24,23 +24,23 @@
  "data": [
   {
    "date": "Men 16-17",
-   "unemployed": -0.084,
-   "inactive": 0.185
+   "unemployed": -0.087,
+   "inactive": 0.194
   },
   {
    "date": "Men 18-24",
-   "unemployed": 0.531,
-   "inactive": 0.633
+   "unemployed": 0.138,
+   "inactive": 0.381
   },
   {
    "date": "Women 16-17",
-   "unemployed": -0.02,
-   "inactive": 0.128
+   "unemployed": -0.007,
+   "inactive": 0.183
   },
   {
    "date": "Women 18-24",
-   "unemployed": 0.328,
-   "inactive": 0.185
+   "unemployed": 0.299,
+   "inactive": 0.459
   }
  ],
  "theme": "blue-amber",

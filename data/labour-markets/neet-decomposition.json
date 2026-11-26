@@ -31,7 +31,7 @@
    "mark": "line"
   }
  ],
- "data_through": "2026-Q2",
+ "data_through": "2026-Q3",
  "status": "ok",
  "data": [
   {
@@ -273,6 +273,14 @@
    "within_inactive": 1.13,
    "within_suppressed": null,
    "change": 1.77
+  },
+  {
+   "date": "2026-Q3",
+   "composition": -0.12,
+   "within_unemployed": 0.34,
+   "within_inactive": 1.22,
+   "within_suppressed": null,
+   "change": 1.44
   }
  ],
  "theme": "blue-amber",
